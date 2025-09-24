@@ -18,6 +18,8 @@
     display: flex;
     justify-content: center;
     padding: 2rem;
+    flex-direction: column;
+    align-items: center;
   }
   
   #app { width: 100%; max-width: 800px; }
