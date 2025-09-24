@@ -1,5 +1,3 @@
-// generateGrid.js - FINAL, COMPLETE, TEMPLATE-BASED, WITH DEBUGGING
-
 require('dotenv').config();
 const fs = require('fs');
 const { Pool } = require('pg');
@@ -29,10 +27,10 @@ const COUNTRIES = [
     { name: 'france', federation_ids: [14], clubs: frenchClubCategories }
 ];
 
-// --- TEMPLATES FOR GRID STRUCTURE ---
-// T=Club Team, N=National Team, S=Stat, R=Tournament, Y=Year, A=Nationality
+
+
 const dailyTemplates = [
-    //{ rows: ['T', 'T', 'R'], cols: ['N', 'S', 'S'] },
+    { rows: ['T', 'T', 'R'], cols: ['N', 'S', 'S'] },
     { rows: ['T', 'N', 'S'], cols: ['T', 'R', 'S'] },
     { rows: ['T', 'A', 'S'], cols: ['T', 'R', 'S'] },
     { rows: ['R', 'S', 'T'], cols: ['T', 'A', 'N'] },
@@ -56,7 +54,7 @@ async function main() {
         port: process.env.DB_PORT,
     });
 
-    // --- HELPER FUNCTIONS ---
+    
     function shuffle(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -178,7 +176,7 @@ async function main() {
 
         const query = `SELECT COUNT(DISTINCT p.id) FROM player p WHERE ${conditions.join(' AND ')};`;
         
-        // Build the debug query string by replacing placeholders
+        
         let debugQuery = query;
         allValues.forEach((val, index) => {
             const placeholder = `$${index + 1}`;
@@ -188,7 +186,7 @@ async function main() {
         
         try {
             const result = await pool.query(query, allValues);
-            // Return an object containing both the count and the query string
+            
             return {
                 count: parseInt(result.rows[0].count),
                 debugQuery: debugQuery
@@ -199,7 +197,7 @@ async function main() {
             console.error("Failed Values:", allValues);
             console.error("Error Message:", error.message);
             console.error("------------------------------------");
-            // Return a failure object on error
+            
             return {
                 count: 0,
                 debugQuery: debugQuery
@@ -208,7 +206,7 @@ async function main() {
     }
 
 
-    // --- MAIN LOGIC ---
+    
     let teamDataMap;
     try {
         const teamDataResult = await pool.query('SELECT id, name, flag FROM team');
@@ -230,7 +228,7 @@ async function main() {
                     ...cat, 
                     value: teamId,
                     image: teamInfo ? teamInfo.flag : null, 
-                    label: cat.label // MODIFIED: Always use the label from categories.js
+                    label: cat.label
                 };
             }
             return cat;
@@ -248,7 +246,7 @@ async function main() {
         shuffle(templates);
 
         for (const template of templates) {
-            //console.log(`\nAttempting Template: Rows=[${template.rows.join(',')}] vs Cols=[${template.cols.join(',')}]`);
+            
             
             let availablePools = {
                 T: [...pools.T], N: [...pools.N], R: [...pools.R],
@@ -309,17 +307,15 @@ async function main() {
                 const finalRows = [anchorCat, ...remainingRows];
                 const finalCols = compatibleCols;
 
-                //console.log(`  --> Attempting Combination:\n      Rows: [${finalRows.map(r => r.label).join(', ')}]\n      Cols: [${finalCols.map(c => c.label).join(', ')}]`);
+                
 
                 let isGridValid = true;
                 for (const rowCat of remainingRows) {
                     for (const colCat of finalCols) {
-                        // Get both count and debugQuery from the returned object
+                        
                         const { count, debugQuery } = await checkIntersection(rowCat, colCat);
                         if (count < 3) {
-                            //console.log(`      - Checking (${rowCat.label}, ${colCat.label})... [FAIL: ${count}]`);
-                            // Print the full query that failed
-                            //console.log(`        QUERY: ${debugQuery}`);
+                            
                             isGridValid = false;
                             break;
                         }
@@ -330,17 +326,16 @@ async function main() {
                 if (isGridValid) {
                     const goldenGrid = { rows: finalRows, cols: finalCols };
                     const fileName = `todays_grid_${gridName}.json`;
-                    console.log(`\n✅ SUCCESS! Grid found for ${gridName}! Saving to ${fileName}...`);
+                    console.log(`\nGrid found for ${gridName}! Saving to ${fileName}...`);
                     fs.writeFileSync(fileName, JSON.stringify(goldenGrid, null, 2));
                     return;
                 }
             }
         }
-        console.log(`\n❌ FAILED to find a valid grid for ${gridName} after all attempts.`);
+        console.log(`\nFailes to find a valid grid for ${gridName} after all attempts.`);
     }
 
-
-    // --- 1. Generate grid for each country ---
+    
     for (const country of COUNTRIES) {
             const pools = {
                 T: enrich(country.clubs || []),
@@ -354,7 +349,7 @@ async function main() {
         
     }
 
-    // --- 2. Generate the main "Daily" grid ---
+    
     const dailyPools = {
         T: enrich([...italianClubCategories, ...dutchClubCategories, ...austrianClubCategories, ...belgianClubCategories, ...spanishClubCategories, ...czechClubCategories, ...frenchClubCategories]),
         N: enrich(nationalTeamCategories),

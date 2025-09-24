@@ -1,6 +1,4 @@
-// categories.js
 
-// Pool 1: National Teams
 const nationalTeamCategories = [
     { label: 'Austria', type: 'team',value: 8, federation_id: 8 },
     { label: 'Ireland', type: 'team',value: 21, federation_id: 21 },
@@ -30,7 +28,6 @@ const nationalTeamCategories = [
     { label: 'Turkey', type: 'team',value: 162, federation_id: 162 },
 ];
 
-// Pool 2: Italian Club Teams
 const italianClubCategories = [
     { label: 'A.S.D. REGGIO RAYS BASEBALL', type: 'team', value: 285 },
     { label: 'A.S.D. NETTUNO 2 BASEBALL CLUB', type: 'team', value: 329 },
@@ -93,7 +90,7 @@ const italianClubCategories = [
     { label: 'NEW RIMINI BASEBALL SOFTBALL S.S.D. ARL', type: 'team', value: 1286 },
 ];
 
-// Pool 3: Other League Teams (e.g., Dutch)
+
 const dutchClubCategories = [
     { label: 'Neptunus', type: 'team', value: 287 },
     { label: 'Kinheim', type: 'team', value: 1263 },
@@ -242,7 +239,7 @@ const tournamentCategories = [
 
 
 ];
-// Pool 4: Stat-based Categories
+
 const statCategories = [
     { label: '10+ HR Season', type: 'seasonal_homeruns', value: 10 },
     { label: '15+ Hit Season', type: 'seasonal_hits', value: 15 },
@@ -277,7 +274,7 @@ const statCategories = [
 
 ];
 
-// Export all the pools
+
 module.exports = {
     nationalTeamCategories,
     italianClubCategories,

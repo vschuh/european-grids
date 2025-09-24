@@ -1,4 +1,3 @@
-// server.js - FINAL, COMPLETE, AND CORRECTED
 
 require('dotenv').config();
 const express = require('express');
@@ -26,7 +25,7 @@ for (const mainId in merges.players) {
         playerMergeMap.set(anyId.toString(), mainId.toString());
     }
 }
-// --- ROBUST HELPER FUNCTION FOR ALL CATEGORIES ---
+
 const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
     const alias = `${playerAlias}.id`;
     let text = '';
@@ -125,7 +124,7 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
     return { text, values };
 };
 
-// --- API ENDPOINTS ---
+
 
 app.get('/api/grid-of-the-day/:country', (req, res) => {
     const country = req.params.country.toLowerCase();
@@ -139,11 +138,11 @@ app.get('/api/grid-of-the-day/:country', (req, res) => {
             console.error(`Could not read '${fileName}'.`, err);
             return res.status(500).json({ error: 'Grid for that country is not available.' });
         }
-        // MODIFIED BLOCK: Inject the session ID
+        
         const gridData = JSON.parse(data);
-        gridData.serverSessionId = serverSessionId; // Add the session ID
+        gridData.serverSessionId = serverSessionId; 
         res.setHeader('Content-Type', 'application/json');
-        res.send(JSON.stringify(gridData)); // Send the modified data
+        res.send(JSON.stringify(gridData));
     });
 });
 
@@ -160,20 +159,20 @@ app.get('/api/player-search', async (req, res) => {
         `;
         const result = await pool.query(sqlQuery, [`%${query}%`]);
 
-        // De-duplicate the results using the merge map
+        
         const uniquePlayers = new Map();
         result.rows.forEach(p => {
             const mainId = playerMergeMap.get(p.id.toString()) || p.id.toString();
             if (!uniquePlayers.has(mainId)) {
                 uniquePlayers.set(mainId, {
-                    id: mainId, // Return the main ID
+                    id: mainId, 
                     name: `${p.firstname} ${p.lastname}`,
                     year: p.dob
                 });
             }
         });
 
-        res.json(Array.from(uniquePlayers.values()).slice(0, 10)); // Return the de-duplicated list
+        res.json(Array.from(uniquePlayers.values()).slice(0, 10)); 
     } catch (error) {
         console.error('Error during player search', error);
         res.status(500).json({ error: 'Internal server error' });
@@ -257,6 +256,6 @@ app.post('/api/get-cell-answers', async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`✅ Server is running on http://localhost:${port}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
 
