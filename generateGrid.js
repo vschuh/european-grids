@@ -235,7 +235,7 @@ async function main() {
         });
     };
     
-    const yearCategories = [2021, 2022, 2023, 2024, 2025].map(year => ({ label: `${year}`, type: 'year', value: year }));
+    const yearCategories = [2021, 2022, 2023, 2024, 2025].map(year => ({ label: `played in ${year} season`, type: 'year', value: year }));
     const nationalityCodes = [ 'ARU', 'AUS', 'AUT', 'BEL', 'BUL', 'CAN', 'CRO', 'CUW', 'CZE', 'ESP', 'FRA', 'GBR', 'GER', 'GRE', 'HUN', 'IRL', 'ISR', 'ITA', 'JPN', 'LTU', 'NED', 'NOR', 'POL', 'POR', 'SLO', 'SUI', 'SVK', 'SWE', 'UKR', 'USA' ];
     const nationalityCategories = nationalityCodes.map(code => ({ label: `Nationality: ${code}`, type: 'nationality', value: code }));
 
