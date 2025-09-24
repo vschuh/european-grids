@@ -215,7 +215,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (rowResult.isValid && colResult.isValid) {
                 // 3. CORRECT GUESS: Place player on grid and add their ID to the used list.
                 const cellId = `${row}-${col}`;
-                gameState.correctCells[cellId] = { name: playerName, image: rowResult.player.image };
+                gameState.correctCells[cellId] = { name: playerName }; 
+                //gameState.correctCells[cellId] = { name: playerName, image: rowResult.player.image };
                 gameState.guessedPlayerIds.push(playerId);
             } else {
                 // 4. INCORRECT GUESS: Shake the cell. The player is NOT added to the used list.
@@ -260,7 +261,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         const colCat = gridData.cols[j - 1];
                         cell.classList.add('header-cell');
                         if (colCat.image) {
-                            cell.innerHTML = `<img src="${colCat.image}" alt="${colCat.label}" title="${colCat.label}">`;
+                            cell.innerHTML = `<div class="player-name-cell">${data.name}</div>`;
+
+                            //cell.innerHTML = `<img src="${colCat.image}" alt="${colCat.label}" title="${colCat.label}">`;
                         } else {
                             cell.textContent = colCat.label;
                         }
@@ -268,7 +271,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         const rowCat = gridData.rows[i - 1];
                         cell.classList.add('header-cell');
                         if (rowCat.image) {
-                            cell.innerHTML = `<img src="${rowCat.image}" alt="${rowCat.label}" title="${rowCat.label}">`;
+                            cell.innerHTML = `<div class="player-name-cell">${data.name}</div>`;
+
+                            //cell.innerHTML = `<img src="${rowCat.image}" alt="${rowCat.label}" title="${rowCat.label}">`;
                         } else {
                             cell.textContent = rowCat.label;
                         }

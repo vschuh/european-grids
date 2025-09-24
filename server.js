@@ -16,7 +16,13 @@ const pool = new Pool({
 
 const serverSessionId = Date.now().toString()
 const app = express();
-app.use(cors());
+const cors = require('cors');
+
+const corsOptions = {
+    origin: 'https://vschuh.github.io' 
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 const port = 3000;
 const playerMergeMap = new Map();

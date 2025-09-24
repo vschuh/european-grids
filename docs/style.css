@@ -117,6 +117,13 @@
   }
   .incorrect-shake { animation: shake 0.3s ease-in-out; border-color: #dc3545; }
   
+  .player-name-cell {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
   .autocomplete-container, #search-container { position: relative; }
   
   .modal {
