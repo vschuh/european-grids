@@ -22,13 +22,12 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      # This is the step that will fix the AWS authentication issue
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1 # <-- IMPORTANT: Change this to your RDS instance's region
+          aws-region: eu-central-1b 
 
       - name: Get Runner IP Address
         id: get_ip
