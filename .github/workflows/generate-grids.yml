@@ -22,9 +22,17 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Get AWS RDS IP
-        id: aws_ip
-        run: echo "AWS_IP_ADDRESS=$(nslookup ${{ secrets.DB_HOST }} | awk '/^Address: / { print $2 }')" >> $GITHUB_ENV
+      # This is the step that will fix the AWS authentication issue
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1 # <-- IMPORTANT: Change this to your RDS instance's region
+
+      - name: Get Runner IP Address
+        id: get_ip
+        run: echo "RUNNER_IP_ADDRESS=$(curl -s https://api.ipify.org)" >> $GITHUB_ENV
 
       - name: Add Runner IP to AWS Security Group
         run: |
