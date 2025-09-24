@@ -26,12 +26,12 @@
       "value": "SS"
     },
     {
-      "label": "2022",
+      "label": "played in 2022 Season",
       "type": "year",
       "value": 2022
     },
     {
-      "label": "France",
+      "label": "France NT",
       "type": "team",
       "value": "14",
       "federation_id": 14,

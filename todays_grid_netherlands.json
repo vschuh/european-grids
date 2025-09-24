@@ -26,12 +26,12 @@
       "value": 15
     },
     {
-      "label": "2025",
+      "label": "played in 2025 Season",
       "type": "year",
       "value": 2025
     },
     {
-      "label": "Netherlands",
+      "label": "Netherlands NT",
       "type": "team",
       "value": "1",
       "federation_id": 1,

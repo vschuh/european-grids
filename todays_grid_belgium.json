@@ -13,7 +13,7 @@
       "image": "https://static.wbsc.org/upload/ef175e86-8a69-5cb4-6249-5c548df8b041.png"
     },
     {
-      "label": "Belgium",
+      "label": "Belgium NT",
       "type": "team",
       "value": "143",
       "federation_id": 143,
@@ -27,7 +27,7 @@
       "value": "1B"
     },
     {
-      "label": "1.000 OPS Season (min. 10 pa)",
+      "label": ">1.000 OPS Season (min. 10 pa)",
       "type": "seasonal_ops",
       "value": 1
     },

@@ -13,7 +13,7 @@
       "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg"
     },
     {
-      "label": "Czechia",
+      "label": "Czechia NT",
       "type": "team",
       "value": "6",
       "federation_id": 6,
@@ -27,7 +27,7 @@
       "value": "CF"
     },
     {
-      "label": "0.250 wOBA Season (min. 10 pa)",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
       "type": "seasonal_wOBA",
       "value": 0.25
     },

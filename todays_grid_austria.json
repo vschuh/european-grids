@@ -13,7 +13,7 @@
       "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png"
     },
     {
-      "label": "Austria",
+      "label": "Austria NT",
       "type": "team",
       "value": "8",
       "federation_id": 8,
@@ -22,7 +22,7 @@
   ],
   "cols": [
     {
-      "label": "3.00 ERA Season (min. 10 ip)",
+      "label": "<3.00 ERA Season (min. 10 ip)",
       "type": "seasonal_pitching_era",
       "value": 3
     },

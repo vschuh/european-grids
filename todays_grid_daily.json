@@ -13,7 +13,7 @@
       "image": "https://static.wbsc.org/assets/cms/teams/logo/a39fd931-7c83-ffd7-63b9-d21f6f0851d9.jpg"
     },
     {
-      "label": "Czechia",
+      "label": "Czechia NT",
       "type": "team",
       "value": "6",
       "federation_id": 6,
@@ -27,7 +27,7 @@
       "value": "1B"
     },
     {
-      "label": "0.400 OBP Season (min. 10 pa)",
+      "label": ">0.400 OBP Season (min. 10 pa)",
       "type": "seasonal_avg",
       "value": 0.4
     },
