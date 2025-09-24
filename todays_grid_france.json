@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "label": "Stade Toulousain Baseball Softball",
+      "type": "team",
+      "value": "1713",
+      "image": "https://static.wbsc.org/upload/83428e38-f463-52e1-0571-48f71aa9fc31.jpg"
+    },
+    {
+      "label": "Rouen Huskies",
+      "type": "team",
+      "value": "1428",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a18c7fc9-a3ce-81e9-0c12-f2a5ec8eab1e.jpg"
+    },
+    {
+      "value": "FRA-D1FSB",
+      "type": "tournament",
+      "label": "Championnat de France Division 1 Féminine SB (FR)",
+      "federation_id": 14
+    }
+  ],
+  "cols": [
+    {
+      "label": "SS (min 1 PA)",
+      "type": "position",
+      "value": "SS"
+    },
+    {
+      "label": "2022",
+      "type": "year",
+      "value": 2022
+    },
+    {
+      "label": "France",
+      "type": "team",
+      "value": "14",
+      "federation_id": 14,
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg"
+    }
+  ]
+}

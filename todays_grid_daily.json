@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "label": "CROCETTA BASEBALL CLUB A.S.D.",
+      "type": "team",
+      "value": "374",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ca46571b-ff40-12b6-b72f-6adf48977f33.jpg"
+    },
+    {
+      "label": "Brasschaat Braves",
+      "type": "team",
+      "value": "1414",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a39fd931-7c83-ffd7-63b9-d21f6f0851d9.jpg"
+    },
+    {
+      "label": "Czechia",
+      "type": "team",
+      "value": "6",
+      "federation_id": 6,
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg"
+    }
+  ],
+  "cols": [
+    {
+      "label": "1B (min 1 PA)",
+      "type": "position",
+      "value": "1B"
+    },
+    {
+      "label": "0.400 OBP Season (min. 10 pa)",
+      "type": "seasonal_avg",
+      "value": 0.4
+    },
+    {
+      "value": "EU-U-18-EURO-CHAMP-M-BB",
+      "type": "tournament",
+      "label": "U-18 European Baseball Championship (EU)",
+      "federation_id": 278
+    }
+  ]
+}

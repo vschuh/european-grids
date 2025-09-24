@@ -1,0 +1,39 @@
+{
+  "rows": [
+    {
+      "label": "10+ HR Season",
+      "type": "seasonal_homeruns",
+      "value": 10
+    },
+    {
+      "label": "Nationality: NED",
+      "type": "nationality",
+      "value": "NED"
+    },
+    {
+      "label": "2023",
+      "type": "year",
+      "value": 2023
+    }
+  ],
+  "cols": [
+    {
+      "label": "A.S.D. SAN MARINO BASEBALL CLUB",
+      "type": "team",
+      "value": "331",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/09fa8d5d-3beb-0f14-7d8e-8d48078672a2.jpg"
+    },
+    {
+      "label": "BOLLATE SOFTBALL 1969 A.S.D.",
+      "type": "team",
+      "value": "387",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a58c308c-b5b8-113c-a189-141d486177fd.jpg"
+    },
+    {
+      "value": "ITA-SERIE-A1-F-SB",
+      "type": "tournament",
+      "label": "Serie A1 Softball (IT)",
+      "federation_id": 2
+    }
+  ]
+}

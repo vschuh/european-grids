@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "label": "Amsterdam Pirates Softball",
+      "type": "team",
+      "value": "1307",
+      "image": "https://static.wbsc.org/upload/10b0171f-e179-ac20-62b1-ccd30810ac42.png"
+    },
+    {
+      "label": "ROEF!",
+      "type": "team",
+      "value": "1271",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8d053c81-1566-2518-b6ab-ab8274584916.jpg"
+    },
+    {
+      "value": "HOOFDKLASSE-SOFTBAL",
+      "type": "tournament",
+      "label": "Hoofdklasse Softbal (NL)",
+      "federation_id": 1
+    }
+  ],
+  "cols": [
+    {
+      "label": "15+ Runs Season",
+      "type": "seasonal_runs",
+      "value": 15
+    },
+    {
+      "label": "2025",
+      "type": "year",
+      "value": 2025
+    },
+    {
+      "label": "Netherlands",
+      "type": "team",
+      "value": "1",
+      "federation_id": 1,
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "label": "Zonhoven Tigers",
+      "type": "team",
+      "value": "1545",
+      "image": "https://static.wbsc.org/upload/15ddbfc7-3582-aea3-55b6-9d40c3273eb0.png"
+    },
+    {
+      "label": "Cantincrode Baseball en Softball Stars",
+      "type": "team",
+      "value": "1394",
+      "image": "https://static.wbsc.org/upload/ef175e86-8a69-5cb4-6249-5c548df8b041.png"
+    },
+    {
+      "label": "Belgium",
+      "type": "team",
+      "value": "143",
+      "federation_id": 143,
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg"
+    }
+  ],
+  "cols": [
+    {
+      "label": "1B (min 1 PA)",
+      "type": "position",
+      "value": "1B"
+    },
+    {
+      "label": "1.000 OPS Season (min. 10 pa)",
+      "type": "seasonal_ops",
+      "value": 1
+    },
+    {
+      "value": "BD1",
+      "type": "tournament",
+      "label": "Baseball Men D1 (BE)",
+      "federation_id": 143
+    }
+  ]
+}

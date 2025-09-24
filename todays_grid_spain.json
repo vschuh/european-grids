@@ -1,0 +1,42 @@
+{
+  "rows": [
+    {
+      "label": "10+ Doubles Season",
+      "type": "seasonal_doubles",
+      "value": 10,
+      "image": null
+    },
+    {
+      "label": "Nationality: CAN",
+      "type": "nationality",
+      "value": "CAN",
+      "image": null
+    },
+    {
+      "label": "Nationality: GUA",
+      "type": "nationality",
+      "value": "GUA",
+      "image": null
+    }
+  ],
+  "cols": [
+    {
+      "label": "RF (min 1 PA)",
+      "type": "position",
+      "value": "RF",
+      "image": null
+    },
+    {
+      "label": "SS (min 1 PA)",
+      "type": "position",
+      "value": "SS",
+      "image": null
+    },
+    {
+      "label": "2.50 FIP Season (min. 10 ip)",
+      "type": "seasonal_pitching_fip",
+      "value": 3,
+      "image": null
+    }
+  ]
+}

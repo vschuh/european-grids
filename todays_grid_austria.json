@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "label": "Vienna Wanderers",
+      "type": "team",
+      "value": "1222",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png"
+    },
+    {
+      "label": "Attnang-Puchheim Athletics",
+      "type": "team",
+      "value": "1224",
+      "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png"
+    },
+    {
+      "label": "Austria",
+      "type": "team",
+      "value": "8",
+      "federation_id": 8,
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg"
+    }
+  ],
+  "cols": [
+    {
+      "label": "3.00 ERA Season (min. 10 ip)",
+      "type": "seasonal_pitching_era",
+      "value": 3
+    },
+    {
+      "label": "C (min 1 PA)",
+      "type": "position",
+      "value": "C"
+    },
+    {
+      "value": "SB-BUNDESLIGA",
+      "type": "tournament",
+      "label": "Softball Bundesliga (AT)",
+      "federation_id": 8
+    }
+  ]
+}

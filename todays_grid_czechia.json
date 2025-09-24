@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "label": "Žraloci Ledenice",
+      "type": "team",
+      "value": "1381",
+      "image": "https://static.wbsc.org/upload/5a29afcd-b476-f5ea-549e-0a6ca0bf8551.png"
+    },
+    {
+      "label": "SK Joudrs Praha",
+      "type": "team",
+      "value": "1348",
+      "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg"
+    },
+    {
+      "label": "Czechia",
+      "type": "team",
+      "value": "6",
+      "federation_id": 6,
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg"
+    }
+  ],
+  "cols": [
+    {
+      "label": "CF (min 1 PA)",
+      "type": "position",
+      "value": "CF"
+    },
+    {
+      "label": "0.250 wOBA Season (min. 10 pa)",
+      "type": "seasonal_wOBA",
+      "value": 0.25
+    },
+    {
+      "value": "W-EXT-L",
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "federation_id": 148
+    }
+  ]
+}
