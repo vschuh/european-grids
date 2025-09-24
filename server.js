@@ -18,9 +18,19 @@ const serverSessionId = Date.now().toString()
 const app = express();
 const cors = require('cors');
 
+const allowedOrigins = ['https://vschuh.github.io', 'http://127.0.0.1:5500'];
+
 const corsOptions = {
-    origin: 'https://vschuh.github.io' 
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
 };
+
+app.use(cors(corsOptions));
 
 app.use(cors(corsOptions));
 app.use(express.json());

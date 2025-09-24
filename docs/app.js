@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const API_BASE_URL = 'http://localhost:3000';
+    const API_BASE_URL = 'https://vschuh.github.io/european-grids';
     const gridContainer = document.getElementById('grid-container');
     const livesCountSpan = document.getElementById('lives-count');
     const giveUpBtn = document.getElementById('give-up-btn');
