@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let isGameOver = false;
     let activeCell = null;
 
-    // --- STATE MANAGEMENT ---
+    
     function getCountryCode() {
         return window.location.hash.substring(1) || 'daily';
     }
@@ -30,13 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!savedState || savedState.serverSessionId !== newSessionId) {
             gameState = {
                 guesses: 9,
-                guessedPlayerIds: [], // Renamed from guessedPlayers
+                guessedPlayerIds: [], 
                 correctCells: {},
                 serverSessionId: newSessionId
             };
         } else {
             gameState = savedState;
-            // Ensure old states have the new property
+            
             if (!gameState.guessedPlayerIds) {
                 gameState.guessedPlayerIds = [];
             }
@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function setupGrid() {
-        // The first loadGameState() call has been removed.
+        
         const country = getCountryCode();
     
         document.querySelectorAll('.nav-link').forEach(link => {
@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
             renderGridFromState();
-            closeSearchModal(); // ADD THIS LINE AS A SAFEGUARD
+            closeSearchModal(); 
         } catch (error) {
             console.error('CRITICAL: Failed to fetch and set up grid:', error);
             gridContainer.innerHTML = `<h2>CRITICAL ERROR: Could not load grid for ${country}. Check console.</h2>`;
@@ -329,6 +329,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     confirmGiveUpBtn.addEventListener('click', () => {
         giveUpModal.classList.add('modal-hidden');
-        gameOver(true); // isGiveUp = true
+        gameOver(true);
     });
 });

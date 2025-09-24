@@ -32,7 +32,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem; /* Adds space above the controls */
+    margin-top: 2rem; 
 }
   
   #lives-container {
@@ -143,7 +143,7 @@
   
   #search-container {
     width: 90%;
-    max-width: 600px; /* Increased from 500px */
+    max-width: 600px; 
     background-color: var(--card-bg);
     border-radius: 8px;
     border: 1px solid var(--border-color);
@@ -154,7 +154,7 @@
   #search-input {
     width: 100%;
     padding: 0.75rem;
-    padding-right: 45px; /* Add this line to create space for the button */
+    padding-right: 45px;
     font-size: 1.2rem;
     background-color: var(--bg-dark);
     color: var(--text-light);
@@ -184,12 +184,12 @@
   #search-results li:hover { background-color: var(--primary-color); }
   #search-results li.used { text-decoration: line-through; opacity: 0.5; pointer-events: none; }
 
-  /* In style.css */
+  
 .grid-cell.game-over {
     cursor: pointer;
 }
 
-/* Add to your style.css */
+
 #country-nav {
     display: flex;
     justify-content: center;
@@ -220,9 +220,9 @@
     background-color: transparent;
     border: none;
 }
-/* Add to the end of style.css */
 
-/* --- Give Up Modal Styles --- */
+
+
 #give-up-container {
     background-color: var(--card-bg);
     padding: 2rem;
@@ -274,7 +274,7 @@
   }
   
   
-  /* --- Game Over Cell Styles --- */
+  
   .game-over-cell {
       cursor: pointer;
       transition: background-color 0.2s ease;
