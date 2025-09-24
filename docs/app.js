@@ -59,13 +59,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const cellId = `${cell.dataset.row}-${cell.dataset.col}`;
             if (gameState.correctCells[cellId]) {
                 const data = gameState.correctCells[cellId];
-                cell.innerHTML = `<img src="${data.image}" alt="${data.name}" class="player-image">`;
+                cell.innerHTML = `<div class="player-name-cell">${data.name}</div>`;
+                //cell.innerHTML = `<img src="${data.image}" alt="${data.name}" class="player-image">`;
                 cell.classList.add('correct');
             }
         });
     
         if (isGameOver) {
-            // Using a for...of loop for async operations is more reliable
+            
             for (const cell of document.querySelectorAll('.grid-cell:not(.correct)')) {
                 const { row, col } = cell.dataset;
                 const rowCat = gridData.rows[row];
@@ -137,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         saveGameState();
-        renderGridFromState(); // Re-render to show answer counts
+        renderGridFromState(); 
     }
     
     function openSearchModal(cell) {
@@ -169,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 players.forEach(player => {
                     const listItem = document.createElement('li');
                     listItem.textContent = `${player.name} (${player.year})`;
-                    // MODIFIED: Check against the player's ID
+                    
                     if (gameState.guessedPlayerIds.includes(player.id)) {
                         listItem.classList.add('used');
                     }
@@ -194,13 +195,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const playerId = player.id;
         closeSearchModal();
     
-        // 1. Check if the player (by ID) is already correctly on the grid.
+        
         if (gameState.guessedPlayerIds.includes(playerId)) {
             alert(`${playerName} is already on the grid.`);
             return;
         }
     
-        // 2. An attempt always costs a guess.
+        
         gameState.guesses--;
     
         const { row, col } = cellElement.dataset;
@@ -213,13 +214,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const colResponse = await fetch(`${API_BASE_URL}/api/validate?playerName=${encodeURIComponent(playerName)}&playerId=${player.id}&categoryType=${colCategory.type}&categoryValue=${encodeURIComponent(colCategory.value)}`);
             const colResult = await colResponse.json();
             if (rowResult.isValid && colResult.isValid) {
-                // 3. CORRECT GUESS: Place player on grid and add their ID to the used list.
+                
                 const cellId = `${row}-${col}`;
                 gameState.correctCells[cellId] = { name: playerName }; 
                 //gameState.correctCells[cellId] = { name: playerName, image: rowResult.player.image };
                 gameState.guessedPlayerIds.push(playerId);
             } else {
-                // 4. INCORRECT GUESS: Shake the cell. The player is NOT added to the used list.
+                
                 cellElement.classList.add('incorrect-shake');
                 setTimeout(() => cellElement.classList.remove('incorrect-shake'), 300);
             }
@@ -261,7 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         const colCat = gridData.cols[j - 1];
                         cell.classList.add('header-cell');
                         if (colCat.image) {
-                            cell.innerHTML = `<div class="player-name-cell">${data.name}</div>`;
+                            cell.innerHTML = `<div class="player-name-cell">${colCat.label}</div>`;
 
                             //cell.innerHTML = `<img src="${colCat.image}" alt="${colCat.label}" title="${colCat.label}">`;
                         } else {
@@ -271,7 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         const rowCat = gridData.rows[i - 1];
                         cell.classList.add('header-cell');
                         if (rowCat.image) {
-                            cell.innerHTML = `<div class="player-name-cell">${data.name}</div>`;
+                            cell.innerHTML = `<div class="player-name-cell">${rowCat.label}</div>`;
 
                             //cell.innerHTML = `<img src="${rowCat.image}" alt="${rowCat.label}" title="${rowCat.label}">`;
                         } else {
