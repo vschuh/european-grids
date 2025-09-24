@@ -171,7 +171,7 @@ app.get('/api/player-search', async (req, res) => {
         const sqlQuery = `
             SELECT p.id, p.firstname, p.lastname, p.dob
             FROM player p
-            WHERE p.firstname || ' ' || p.lastname ILIKE $1
+            WHERE unaccent(p.firstname || ' ' || p.lastname) ILIKE unaccent($1)
             ORDER BY p.lastname, p.firstname
             LIMIT 20;
         `;

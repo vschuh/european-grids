@@ -377,12 +377,12 @@
   }
 
   .player-count {
-      font-size: 0.8rem;
+      font-size: 1.2rem;
   }
 
   .see-players-btn {
-      font-size: 0.4rem;
-      padding: 0.3rem 0.45rem; 
+      font-size: 0.55rem;
+      padding: 0.3rem 0.5rem; 
   }
 }
 /* --- Footer Styles --- */
