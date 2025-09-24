@@ -6,7 +6,7 @@
     --card-bg: #1c2f45;
     --border-color: rgba(255, 255, 255, 0.1);
     --shadow-color: rgba(0, 0, 0, 0.2);
-    --correct-bg: #28a745;
+    --correct-bg: #20c997;
   }
   
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -287,24 +287,24 @@
   }
   
   .answer-reveal-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.5rem;
-      font-weight: bold;
-  }
-  
-  .player-count {
-      font-size: 2.5rem;
-  }
-  
-  .see-players-btn {
-      font-size: 0.9rem;
-      background-color: var(--primary-color);
-      padding: 0.4rem 0.8rem;
-      border-radius: 5px;
-      color: white;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+}
+
+.player-count {
+    font-size: 2.5rem;
+}
+
+.see-players-btn {
+    font-size: 0.9rem;
+    background-color: var(--primary-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    color: white;
+}
 
   .modal-hidden {
     opacity: 0 !important;
@@ -377,11 +377,11 @@
   }
 
   .player-count {
-      font-size: 1.5rem;
+      font-size: 1rem;
   }
 
   .see-players-btn {
-      font-size: 0.75rem;
+      font-size: 0.4rem;
       padding: 0.3rem 0.6rem; 
   }
 }
