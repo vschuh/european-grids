@@ -367,3 +367,29 @@
       font-size: 0.8rem;
   }
 }
+
+/* --- Footer Styles --- */
+#page-footer {
+  width: 100%;
+  max-width: 800px;
+  margin: 3rem auto 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  font-size: 0.9rem;
+  color: #8899a6; /* A lighter, less prominent color */
+}
+
+#page-footer p {
+  margin-bottom: 0.5rem;
+}
+
+#page-footer a {
+  color: #aab8c2;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+#page-footer a:hover {
+  color: var(--primary-color);
+}
