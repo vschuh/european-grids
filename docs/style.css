@@ -370,6 +370,21 @@
   }
 }
 
+@media (max-width: 480px) {
+  
+  .answer-reveal-container {
+      gap: 0.25rem; 
+  }
+
+  .player-count {
+      font-size: 1.5rem;
+  }
+
+  .see-players-btn {
+      font-size: 0.75rem;
+      padding: 0.3rem 0.6rem; 
+  }
+}
 /* --- Footer Styles --- */
 #page-footer {
   width: 100%;
