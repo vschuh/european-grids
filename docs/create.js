@@ -9,9 +9,9 @@ import {
     frenchClubCategories, 
     statCategories, 
     tournamentCategories,
-    yearCategories,        
-    nationalityCategories  
-} from './categories.mjs';
+    yearCategories,
+    nationalityCategories
+} from './docs/categories.mjs';
 
 const API_BASE_URL = 'https://european-grids-api.onrender.com';
 
@@ -32,6 +32,7 @@ const categoryGroups = {
 
 let selectedCategories = {};
 
+// --- New Dropdown Logic ---
 function createDropdown(targetCell) {
     document.querySelector('.creator-dropdown')?.remove();
 
@@ -39,39 +40,43 @@ function createDropdown(targetCell) {
     dropdown.className = 'creator-dropdown';
 
     for (const groupName in categoryGroups) {
-        const groupTitle = document.createElement('div');
-        groupTitle.className = 'category-group';
-        groupTitle.textContent = groupName;
-        dropdown.appendChild(groupTitle);
-
-        const list = document.createElement('ul');
+        // Create the top-level category (e.g., "National Teams")
+        const groupHeader = document.createElement('div');
+        groupHeader.className = 'category-group-header';
+        groupHeader.textContent = groupName;
+        dropdown.appendChild(groupHeader);
+        
+        // Create the hidden list for the second-level items
+        const subList = document.createElement('ul');
+        subList.className = 'sub-category-list';
+        
         const categories = categoryGroups[groupName];
         categories.sort((a, b) => a.label.localeCompare(b.label));
-
-        if (groupName === "Player Stats") {
-            const createStatLi = document.createElement('li');
-            createStatLi.textContent = "Create Custom Stat...";
-            createStatLi.style.color = "var(--accent-color)";
-            createStatLi.onclick = (e) => {
-                e.stopPropagation();
-                document.querySelector('.creator-dropdown')?.remove();
-                openStatCreator();
-            };
-            list.appendChild(createStatLi);
-        }
         
         categories.forEach(cat => {
             const li = document.createElement('li');
             li.textContent = cat.label;
             li.onclick = () => selectCategory(targetCell, cat);
-            list.appendChild(li);
+            subList.appendChild(li);
         });
-        dropdown.appendChild(list);
+        dropdown.appendChild(subList);
+
+        // Add click event to show/hide the sub-list
+        groupHeader.addEventListener('click', () => {
+            const allSubLists = dropdown.querySelectorAll('.sub-category-list');
+            // Hide all other lists before showing the new one
+            allSubLists.forEach(list => {
+                if (list !== subList) list.style.display = 'none';
+            });
+            // Toggle the clicked list
+            subList.style.display = subList.style.display === 'block' ? 'none' : 'block';
+        });
     }
 
     document.body.appendChild(dropdown);
     positionDropdown(targetCell, dropdown);
 
+    // Close dropdown if clicking anywhere else on the page
     setTimeout(() => {
         document.addEventListener('click', (e) => {
             if (!dropdown.contains(e.target) && e.target !== targetCell) {
@@ -85,7 +90,6 @@ function positionDropdown(target, dropdown) {
     const rect = target.getBoundingClientRect();
     dropdown.style.left = `${rect.left}px`;
     dropdown.style.top = `${rect.bottom + 5}px`;
-    dropdown.style.width = `${rect.width}px`;
 }
 
 function selectCategory(targetCell, category) {
@@ -187,8 +191,9 @@ document.getElementById('create-btn').addEventListener('click', async () => {
     }
 });
 
-document.getElementById('copy-btn').addEventListener('click', () => {
-    const linkInput = document.getElementById('share-link');
-    linkInput.select();
-    document.execCommand('copy');
-});
+document.querySelectorAll('.creator-cell.header').forEach(cell => {
+    cell.addEventListener('click', (e) => {
+        e.stopPropagation();
+        createDropdown(cell);
+    });
+})
