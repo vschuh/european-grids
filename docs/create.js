@@ -31,74 +31,67 @@ const categoryGroups = {
 };
 
 let selectedCategories = {};
+let activeTargetCell = null;
 
-// --- New Dropdown Logic ---
-function createDropdown(targetCell) {
-    document.querySelector('.creator-dropdown')?.remove();
+const categoryModal = document.getElementById('category-modal');
+const mainCategoriesList = document.getElementById('main-categories-list');
+const subCategoriesList = document.getElementById('sub-categories-list');
+const level1 = document.getElementById('level-1');
+const level2 = document.getElementById('level-2');
+const backBtn = document.getElementById('back-to-main-cat-btn');
+const subCatTitle = document.getElementById('sub-category-title');
 
-    const dropdown = document.createElement('div');
-    dropdown.className = 'creator-dropdown';
-
-    for (const groupName in categoryGroups) {
-        // Create the top-level category (e.g., "National Teams")
-        const groupHeader = document.createElement('div');
-        groupHeader.className = 'category-group-header';
-        groupHeader.textContent = groupName;
-        dropdown.appendChild(groupHeader);
-        
-        // Create the hidden list for the second-level items
-        const subList = document.createElement('ul');
-        subList.className = 'sub-category-list';
-        
-        const categories = categoryGroups[groupName];
-        categories.sort((a, b) => a.label.localeCompare(b.label));
-        
-        categories.forEach(cat => {
-            const li = document.createElement('li');
-            li.textContent = cat.label;
-            li.onclick = () => selectCategory(targetCell, cat);
-            subList.appendChild(li);
-        });
-        dropdown.appendChild(subList);
-
-        // Add click event to show/hide the sub-list
-        groupHeader.addEventListener('click', () => {
-            const allSubLists = dropdown.querySelectorAll('.sub-category-list');
-            // Hide all other lists before showing the new one
-            allSubLists.forEach(list => {
-                if (list !== subList) list.style.display = 'none';
-            });
-            // Toggle the clicked list
-            subList.style.display = subList.style.display === 'block' ? 'none' : 'block';
-        });
-    }
-
-    document.body.appendChild(dropdown);
-    positionDropdown(targetCell, dropdown);
-
-    // Close dropdown if clicking anywhere else on the page
-    setTimeout(() => {
-        document.addEventListener('click', (e) => {
-            if (!dropdown.contains(e.target) && e.target !== targetCell) {
-                dropdown.remove();
-            }
-        }, { once: true });
-    }, 0);
+mainCategoriesList.innerHTML = ''; 
+for (const groupName in categoryGroups) {
+    const li = document.createElement('li');
+    li.textContent = groupName;
+    li.addEventListener('click', () => showSubCategories(groupName));
+    mainCategoriesList.appendChild(li);
 }
 
-function positionDropdown(target, dropdown) {
-    const rect = target.getBoundingClientRect();
-    dropdown.style.left = `${rect.left}px`;
-    dropdown.style.top = `${rect.bottom + 5}px`;
+const createStatLi = document.createElement('li');
+createStatLi.textContent = "Create Custom Stat...";
+createStatLi.style.color = "var(--accent-color)";
+createStatLi.addEventListener('click', openStatCreator);
+mainCategoriesList.appendChild(createStatLi);
+
+
+function showSubCategories(groupName) {
+    subCatTitle.textContent = `Select from ${groupName}`;
+    subCategoriesList.innerHTML = '';
+    const categories = categoryGroups[groupName];
+    categories.sort((a, b) => a.label.localeCompare(b.label));
+
+    categories.forEach(cat => {
+        const li = document.createElement('li');
+        li.textContent = cat.label;
+        li.addEventListener('click', () => selectCategory(cat));
+        subCategoriesList.appendChild(li);
+    });
+
+    level1.classList.add('modal-hidden');
+    level2.classList.remove('modal-hidden');
 }
 
-function selectCategory(targetCell, category) {
-    const targetId = targetCell.dataset.target;
+function selectCategory(category) {
+    const targetId = activeTargetCell.dataset.target;
     selectedCategories[targetId] = category;
-    targetCell.textContent = category.label;
-    targetCell.classList.add('selected');
-    document.querySelector('.creator-dropdown')?.remove();
+    activeTargetCell.textContent = category.label;
+    activeTargetCell.classList.add('selected');
+    closeCategoryModal();
 }
+
+function openCategoryModal(cell) {
+    activeTargetCell = cell;
+    categoryModal.classList.remove('modal-hidden');
+    level2.classList.add('modal-hidden');
+    level1.classList.remove('modal-hidden');
+}
+
+function closeCategoryModal() {
+    categoryModal.classList.add('modal-hidden');
+}
+
 
 const statCreatorModal = document.getElementById('stat-creator-modal');
 const statTypeSelect = document.getElementById('stat-type-select');
@@ -115,7 +108,7 @@ const baseStats = {
     'RBIs': { type: 'seasonal_rbi', unit: 'RBI' },
     'Runs': { type: 'seasonal_runs', unit: 'Runs' },
     'Pitching Ks': { type: 'seasonal_pitching_k', unit: 'Ks' },
-    'Innings Pitched': { type: 'seasonal_pitching_ip', unit: 'IP' },
+    'Innings Pitched': { type: 'seasonal_pitching_ip', unit: 'IP' }
 };
 
 for (const statName in baseStats) {
@@ -126,6 +119,7 @@ for (const statName in baseStats) {
 }
 
 function openStatCreator() {
+    closeCategoryModal();
     statCreatorModal.classList.remove('modal-hidden');
 }
 
@@ -146,19 +140,25 @@ document.getElementById('add-stat-btn').addEventListener('click', () => {
 
     categoryGroups["Player Stats"].push(newStatCategory);
     statCreatorModal.classList.add('modal-hidden');
-    alert("Custom stat added to the 'Player Stats' category!");
+    openCategoryModal(activeTargetCell);
 });
 
 document.getElementById('cancel-stat-btn').addEventListener('click', () => {
     statCreatorModal.classList.add('modal-hidden');
 });
 
-
 document.querySelectorAll('.creator-cell.header').forEach(cell => {
-    cell.addEventListener('click', (e) => {
-        e.stopPropagation();
-        createDropdown(cell);
-    });
+    cell.addEventListener('click', () => openCategoryModal(cell));
+});
+
+backBtn.addEventListener('click', () => {
+    level2.classList.add('modal-hidden');
+    level1.classList.remove('modal-hidden');
+});
+
+categoryModal.addEventListener('click', (e) => {
+    if (e.target.id === 'category-container' || e.target.closest('#category-container')) return;
+    closeCategoryModal();
 });
 
 document.getElementById('create-btn').addEventListener('click', async () => {
@@ -181,7 +181,7 @@ document.getElementById('create-btn').addEventListener('click', async () => {
         const data = await response.json();
 
         if (data.id) {
-            const link = `${window.location.origin}/docs/index.html#${data.id}`;
+            const link = `${window.location.protocol}//${window.location.host}${window.location.pathname.replace('create.html', 'index.html')}#${data.id}`;
             document.getElementById('share-link').value = link;
             document.getElementById('result-container').classList.remove('modal-hidden');
         }
@@ -191,9 +191,8 @@ document.getElementById('create-btn').addEventListener('click', async () => {
     }
 });
 
-document.querySelectorAll('.creator-cell.header').forEach(cell => {
-    cell.addEventListener('click', (e) => {
-        e.stopPropagation();
-        createDropdown(cell);
-    });
-})
+document.getElementById('copy-btn').addEventListener('click', () => {
+    const linkInput = document.getElementById('share-link');
+    linkInput.select();
+    document.execCommand('copy');
+});
