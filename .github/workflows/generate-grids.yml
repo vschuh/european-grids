@@ -2,14 +2,15 @@ name: Generate Daily Grids
 
 on:
   schedule:
+    # This runs the job every day at 8:00 AM UTC. You can change the time.
+    # The format is Minute, Hour, Day of Month, Month, Day of Week.
     - cron: '0 8 * * *'
   workflow_dispatch:
+    # This adds a button on the Actions tab to run the workflow manually.
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -22,6 +23,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+<<<<<<< Updated upstream
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -41,6 +43,8 @@ jobs:
             --port 5432 \
             --cidr ${{ env.RUNNER_IP_ADDRESS }}/32
 
+=======
+>>>>>>> Stashed changes
       - name: Generate the Grid Files
         run: node generateGrid.js
         env:
@@ -57,12 +61,3 @@ jobs:
           git add 'todays_grid_*.json'
           git commit -m "Automated: Generate daily grids" || echo "No changes to commit"
           git push
-
-      - name: Remove Runner IP from AWS Security Group
-        if: always()
-        run: |
-          aws ec2 revoke-security-group-ingress \
-            --group-id ${{ secrets.AWS_SECURITY_GROUP_ID }} \
-            --protocol tcp \
-            --port 5432 \
-            --cidr ${{ env.RUNNER_IP_ADDRESS }}/32
