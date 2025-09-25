@@ -22,22 +22,20 @@ document.addEventListener('DOMContentLoaded', () => {
         return window.location.hash.substring(1) || 'daily';
     }
 
-    function loadGameState(newSessionId) {
-        
-        const country = getCountryCode();
+    function loadGameState(newSessionId, gameStateId) {
+        // Uses the passed-in gameStateId to find the correct game in local storage
         const savedStateJSON = localStorage.getItem(`gridGameState_${gameStateId}`);
         const savedState = savedStateJSON ? JSON.parse(savedStateJSON) : null;
     
         if (!savedState || savedState.serverSessionId !== newSessionId) {
             gameState = {
                 guesses: 9,
-                guessedPlayerIds: [], 
+                guessedPlayerIds: [],
                 correctCells: {},
                 serverSessionId: newSessionId
             };
         } else {
             gameState = savedState;
-            
             if (!gameState.guessedPlayerIds) {
                 gameState.guessedPlayerIds = [];
             }
@@ -48,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function saveGameState() {
         const hash = window.location.hash.substring(1);
         const isCustomGrid = !isNaN(hash) && hash !== '';
+        // Determines the correct ID for saving (e.g., 'daily' or 'custom_12345')
         const gameStateId = isCustomGrid ? `custom_${hash}` : (hash || 'daily');
         localStorage.setItem(`gridGameState_${gameStateId}`, JSON.stringify(gameState));
     }
@@ -245,7 +244,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const isCustomGrid = !isNaN(hash) && hash !== '';
         const country = isCustomGrid ? null : (hash || 'daily');
     
-        // Update nav links
+        // Determines the correct ID for loading (e.g., 'daily' or 'custom_12345')
+        const gameStateId = isCustomGrid ? `custom_${hash}` : country;
+    
         document.querySelectorAll('.nav-link').forEach(link => {
             link.classList.toggle('active', link.hash === `#${country}`);
         });
@@ -253,13 +254,11 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             let fetchUrl;
             if (isCustomGrid) {
-                // Fetch a specific custom grid
                 fetchUrl = `${API_BASE_URL}/api/custom-grid/${hash}`;
             } else {
-                // Fetch a daily or country grid
                 fetchUrl = `${API_BASE_URL}/api/grid-of-the-day/${country}`;
             }
-            
+    
             const response = await fetch(fetchUrl);
             if (!response.ok) {
                 if (response.status === 404) {
@@ -271,14 +270,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
     
             gridData = await response.json();
-            
-            // Use the custom grid ID or country name for saving game state
-            const gameStateId = isCustomGrid ? `custom_${hash}` : country;
+    
+            // Passes both the session ID and the determined gameStateId
             loadGameState(gridData.serverSessionId, gameStateId); 
     
-    
-
-            
             gridContainer.innerHTML = '';
             for (let i = 0; i < 4; i++) {
                 for (let j = 0; j < 4; j++) {
@@ -288,23 +283,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     } else if (i === 0) {
                         const colCat = gridData.cols[j - 1];
                         cell.classList.add('header-cell');
-                        if (colCat.image) {
-                            cell.innerHTML = `<div class="player-name-cell">${colCat.label}</div>`;
-
-                            //cell.innerHTML = `<img src="${colCat.image}" alt="${colCat.label}" title="${colCat.label}">`;
-                        } else {
-                            cell.textContent = colCat.label;
-                        }
+                        cell.innerHTML = colCat.label; // Simplified for now
                     } else if (j === 0) {
                         const rowCat = gridData.rows[i - 1];
                         cell.classList.add('header-cell');
-                        if (rowCat.image) {
-                            cell.innerHTML = `<div class="player-name-cell">${rowCat.label}</div>`;
-
-                            //cell.innerHTML = `<img src="${rowCat.image}" alt="${rowCat.label}" title="${rowCat.label}">`;
-                        } else {
-                            cell.textContent = rowCat.label;
-                        }
+                        cell.innerHTML = rowCat.label; // Simplified for now
                     } else {
                         cell.classList.add('grid-cell');
                         cell.dataset.row = i - 1;
@@ -317,7 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
             closeSearchModal(); 
         } catch (error) {
             console.error('CRITICAL: Failed to fetch and set up grid:', error);
-            gridContainer.innerHTML = `<h2>CRITICAL ERROR: Could not load grid for ${country}. Check console.</h2>`;
+            gridContainer.innerHTML = `<h2>CRITICAL ERROR: Could not load grid. Check console.</h2>`;
         }
     }
 
