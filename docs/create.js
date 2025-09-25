@@ -1,48 +1,32 @@
 import { 
-    nationalTeamCategories, 
-    italianClubCategories, 
-    dutchClubCategories, 
-    austrianClubCategories, 
-    belgianClubCategories, 
-    spanishClubCategories, 
-    czechClubCategories, 
-    frenchClubCategories, 
-    statCategories, 
-    tournamentCategories,
-    yearCategories,
-    nationalityCategories
+    nationalTeamCategories, italianClubCategories, dutchClubCategories, austrianClubCategories, 
+    belgianClubCategories, spanishClubCategories, czechClubCategories, frenchClubCategories, 
+    statCategories, tournamentCategories, yearCategories, nationalityCategories
 } from './categories.mjs';
 
 const API_BASE_URL = 'https://european-grids-api.onrender.com';
 
 const categoryGroups = {
-    "National Teams": nationalTeamCategories,
-    "Italian Clubs": italianClubCategories,
-    "Dutch Clubs": dutchClubCategories,
-    "Austrian Clubs": austrianClubCategories,
-    "Belgian Clubs": belgianClubCategories,
-    "Spanish Clubs": spanishClubCategories,
-    "Czech Clubs": czechClubCategories,
-    "French Clubs": frenchClubCategories,
-    "Tournaments": tournamentCategories,
-    "Player Stats": statCategories,
-    "Nationalities": nationalityCategories,
-    "Years": yearCategories
+    "National Teams": nationalTeamCategories, "Italian Clubs": italianClubCategories,
+    "Dutch Clubs": dutchClubCategories, "Austrian Clubs": austrianClubCategories,
+    "Belgian Clubs": belgianClubCategories, "Spanish Clubs": spanishClubCategories,
+    "Czech Clubs": czechClubCategories, "French Clubs": frenchClubCategories,
+    "Tournaments": tournamentCategories, "Player Stats": statCategories,
+    "Nationalities": nationalityCategories, "Years": yearCategories
 };
 
 let selectedCategories = {};
 let activeTargetCell = null;
 
-// --- DOM Elements ---
 const categoryModal = document.getElementById('category-modal');
-const modalViewContainer = categoryModal.querySelector('.modal-view-container');
+const level1 = document.getElementById('level-1');
+const level2 = document.getElementById('level-2');
 const mainCategoriesList = document.getElementById('main-categories-list');
 const subCategoriesList = document.getElementById('sub-categories-list');
 const backBtn = document.getElementById('back-to-main-cat-btn');
 const subCatTitle = document.getElementById('sub-category-title');
 const statCreatorModal = document.getElementById('stat-creator-modal');
 
-// --- Main Category Modal Logic ---
 mainCategoriesList.innerHTML = ''; 
 for (const groupName in categoryGroups) {
     const li = document.createElement('li');
@@ -56,7 +40,6 @@ createStatLi.style.color = "var(--accent-color)";
 createStatLi.addEventListener('click', openStatCreator);
 mainCategoriesList.appendChild(createStatLi);
 
-
 function showSubCategories(groupName) {
     subCatTitle.textContent = `Select from ${groupName}`;
     subCategoriesList.innerHTML = '';
@@ -69,11 +52,13 @@ function showSubCategories(groupName) {
         li.addEventListener('click', () => selectCategory(cat));
         subCategoriesList.appendChild(li);
     });
-    modalViewContainer.style.transform = 'translateX(-100%)'; 
+    level1.classList.add('modal-hidden');
+    level2.classList.remove('modal-hidden');
 }
 
 function goBackToMainCategories() {
-    modalViewContainer.style.transform = 'translateX(0%)'; 
+    level2.classList.add('modal-hidden');
+    level1.classList.remove('modal-hidden');
 }
 
 function selectCategory(category) {
@@ -93,7 +78,6 @@ function openCategoryModal(cell) {
 function closeCategoryModal() {
     categoryModal.classList.add('modal-hidden');
 }
-
 
 const statTypeSelect = document.getElementById('stat-type-select');
 const statConditionSelect = document.getElementById('stat-condition-select');
@@ -130,31 +114,13 @@ function closeStatCreator() {
 }
 
 document.getElementById('add-stat-btn').addEventListener('click', () => {
-    const statName = statTypeSelect.value;
-    const condition = statConditionSelect.value;
-    const value = parseFloat(statValueInput.value);
-    const baseStat = baseStats[statName];
-
-    const conditionLabel = condition === 'min' ? '>=' : '<=';
-    const newLabel = `${conditionLabel} ${value} ${baseStat.unit} Season`;
-
-    const newStatCategory = { 
-        label: newLabel, 
-        type: baseStat.type, 
-        value: value,
-        condition: condition 
-    };
-
-    categoryGroups["Player Stats"].push(newStatCategory);
     closeStatCreator();
     openCategoryModal(activeTargetCell); 
 });
 
-
 document.querySelectorAll('.creator-cell.header').forEach(cell => {
     cell.addEventListener('click', () => openCategoryModal(cell));
 });
-
 backBtn.addEventListener('click', goBackToMainCategories);
 
 backFromStatBtn.addEventListener('click', () => {
