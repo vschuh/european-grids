@@ -2,7 +2,7 @@ import 'dotenv/config';
 import fs from 'fs';
 import pg from 'pg';
 const { Pool } = pg;
-import merges from './merges.json' assert { type: 'json' };
+import merges from './merges.json' with { type: 'json' };
 
 import {
     nationalTeamCategories,
