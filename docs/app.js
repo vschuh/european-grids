@@ -23,8 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function loadGameState(newSessionId) {
+        
         const country = getCountryCode();
-        const savedStateJSON = localStorage.getItem(`gridGameState_${country}`);
+        const savedStateJSON = localStorage.getItem(`gridGameState_${gameStateId}`);
         const savedState = savedStateJSON ? JSON.parse(savedStateJSON) : null;
     
         if (!savedState || savedState.serverSessionId !== newSessionId) {
@@ -45,9 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function saveGameState() {
-        const country = getCountryCode();
-        localStorage.setItem(`gridGameState_${country}`, JSON.stringify(gameState));
+        const hash = window.location.hash.substring(1);
+        const isCustomGrid = !isNaN(hash) && hash !== '';
+        const gameStateId = isCustomGrid ? `custom_${hash}` : (hash || 'daily');
+        localStorage.setItem(`gridGameState_${gameStateId}`, JSON.stringify(gameState));
     }
+    
 
     function updateGuessesDisplay() {
         livesCountSpan.textContent = gameState.guesses;
@@ -237,19 +241,42 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function setupGrid() {
-        
-        const country = getCountryCode();
+        const hash = window.location.hash.substring(1);
+        const isCustomGrid = !isNaN(hash) && hash !== '';
+        const country = isCustomGrid ? null : (hash || 'daily');
     
+        // Update nav links
         document.querySelectorAll('.nav-link').forEach(link => {
             link.classList.toggle('active', link.hash === `#${country}`);
         });
     
         try {
-            const response = await fetch(`${API_BASE_URL}/api/grid-of-the-day/${country}`);
+            let fetchUrl;
+            if (isCustomGrid) {
+                // Fetch a specific custom grid
+                fetchUrl = `${API_BASE_URL}/api/custom-grid/${hash}`;
+            } else {
+                // Fetch a daily or country grid
+                fetchUrl = `${API_BASE_URL}/api/grid-of-the-day/${country}`;
+            }
+            
+            const response = await fetch(fetchUrl);
+            if (!response.ok) {
+                if (response.status === 404) {
+                     gridContainer.innerHTML = `<h2>Grid not found. It may have expired or the link is incorrect.</h2>`;
+                } else {
+                    throw new Error(`Network response was not ok: ${response.statusText}`);
+                }
+                return;
+            }
     
-            if (!response.ok) throw new Error(`Network response was not ok: ${response.statusText}`);
             gridData = await response.json();
-            loadGameState(gridData.serverSessionId); 
+            
+            // Use the custom grid ID or country name for saving game state
+            const gameStateId = isCustomGrid ? `custom_${hash}` : country;
+            loadGameState(gridData.serverSessionId, gameStateId); 
+    
+    
 
             
             gridContainer.innerHTML = '';
