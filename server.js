@@ -20,7 +20,7 @@ const serverSessionId = Date.now().toString()
 const app = express();
 const cors = require('cors');
 
-const allowedOrigins = ['https://vschuh.github.io', 'http://127.0.0.1:5500','http://www.euro-zones.com'];
+const allowedOrigins = ['https://vschuh.github.io', 'http://127.0.0.1:5500','http://www.euro-zones.com',"https://www.euro-zones.com"];
 
 const corsOptions = {
   origin: function (origin, callback) {
