@@ -224,20 +224,12 @@ async function main() {
 
     const enrich = (catArray) => {
         if (!catArray || !Array.isArray(catArray)) return [];
-        return catArray.map(cat => {
-            if (cat.type === 'team') {
-                const teamId = cat.federation_id ? cat.federation_id.toString() : cat.value.toString();
-                const teamInfo = teamDataMap.get(teamId);
-                return { 
-                    ...cat, 
-                    value: teamId,
-                    image: teamInfo ? teamInfo.flag : null, 
-                    label: cat.label
-                };
-            }
-            return cat;
-        });
+        return catArray.map(cat => ({
+            ...cat,
+            value: cat.federation_id ? cat.federation_id.toString() : cat.value.toString()
+        }));
     };
+    
     
     const yearCategories = [2021, 2022, 2023, 2024, 2025].map(year => ({ label: `Played in ${year} season`, type: 'year', value: year }));
     const nationalityCodes = [ 'ARU', 'AUS', 'AUT', 'BEL', 'BUL', 'CAN', 'CRO', 'CUW', 'CZE', 'ESP', 'FRA', 'GBR', 'GER', 'GRE', 'HUN', 'IRL', 'ISR', 'ITA', 'JPN', 'LTU', 'NED', 'NOR', 'POL', 'POR', 'SLO', 'SUI', 'SVK', 'SWE', 'UKR', 'USA' ];
@@ -328,12 +320,40 @@ async function main() {
                 }
                 
                 if (isGridValid) {
+                    const processCategory = (cat) => {
+                        if (cat.type === 'team') {
+                            const teamInfo = teamDataMap.get(cat.value.toString());
+                            return {
+                                label: teamInfo ? teamInfo.name : cat.label,
+                                type: cat.type,
+                                value: cat.value,
+                                image: teamInfo ? teamInfo.flag : null
+                            };
+                        }
+                        return cat;
+                    };
+                
+                    const finalRows = [anchorCat, ...remainingRows].map(processCategory);
+                    const finalCols = compatibleCols.map(processCategory);
+                
                     const goldenGrid = { rows: finalRows, cols: finalCols };
-                    const fileName = `todays_grid_${gridName}.json`;
-                    console.log(`\nGrid found for ${gridName}! Saving to ${fileName}...`);
-                    fs.writeFileSync(fileName, JSON.stringify(goldenGrid, null, 2));
+                    try {
+                        const gridData = JSON.stringify(goldenGrid);
+                        // Insert the new grid. If one for today already exists, do nothing.
+                        const query = `
+                            INSERT INTO grids (type, grid_date, grid_data) 
+                            VALUES ($1, CURRENT_DATE, $2)
+                            ON CONFLICT (type, grid_date) DO NOTHING;
+                        `;
+                        await pool.query(query, [gridName, gridData]);
+                        console.log(`✅ Grid for ${gridName} successfully saved to the database for today.`);
+                    } catch (dbError) {
+                        console.error(`❌ Failed to save grid for ${gridName} to database:`, dbError);
+                    }
                     return;
+            
                 }
+                
             }
         }
         console.log(`\nFailes to find a valid grid for ${gridName} after all attempts.`);

@@ -21,15 +21,29 @@
             <div class="grid-selectors">
                 <div class="selector-group">
                     <h3>Rows</h3>
-                    <select id="row-1"></select>
-                    <select id="row-2"></select>
-                    <select id="row-3"></select>
+                    <button class="category-btn" data-target="row-1">Select Row 1</button>
+                    <button class="category-btn" data-target="row-2">Select Row 2</button>
+                    <button class="category-btn" data-target="row-3">Select Row 3</button>
                 </div>
                 <div class="selector-group">
                     <h3>Columns</h3>
-                    <select id="col-1"></select>
-                    <select id="col-2"></select>
-                    <select id="col-3"></select>
+                    <button class="category-btn" data-target="col-1">Select Column 1</button>
+                    <button class="category-btn" data-target="col-2">Select Column 2</button>
+                    <button class="category-btn" data-target="col-3">Select Column 3</button>
+                </div>
+            </div>
+            
+            <div id="category-modal" class="modal modal-hidden">
+                <div id="category-container">
+                    <div id="level-1">
+                        <h3>Select a Category Type</h3>
+                        <ul id="main-categories"></ul>
+                    </div>
+                    <div id="level-2" class="modal-hidden">
+                        <button id="back-to-main-cat">← Back</button>
+                        <h3 id="sub-category-title"></h3>
+                        <ul id="sub-categories"></ul>
+                    </div>
                 </div>
             </div>
 

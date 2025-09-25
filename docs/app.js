@@ -22,9 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
         return window.location.hash.substring(1) || 'daily';
     }
 
-    function loadGameState(newSessionId, gameStateId) {
-        // Uses the passed-in gameStateId to find the correct game in local storage
-        const savedStateJSON = localStorage.getItem(`gridGameState_${gameStateId}`);
+    function loadGameState(newSessionId, identifier) {
+        const savedStateJSON = localStorage.getItem(`gridGameState_${identifier}`);
         const savedState = savedStateJSON ? JSON.parse(savedStateJSON) : null;
     
         if (!savedState || savedState.serverSessionId !== newSessionId) {
@@ -44,11 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function saveGameState() {
-        const hash = window.location.hash.substring(1);
-        const isCustomGrid = !isNaN(hash) && hash !== '';
-        // Determines the correct ID for saving (e.g., 'daily' or 'custom_12345')
-        const gameStateId = isCustomGrid ? `custom_${hash}` : (hash || 'daily');
-        localStorage.setItem(`gridGameState_${gameStateId}`, JSON.stringify(gameState));
+        const identifier = window.location.hash.substring(1) || 'daily';
+        localStorage.setItem(`gridGameState_${identifier}`, JSON.stringify(gameState));
     }
     
 
@@ -240,39 +236,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function setupGrid() {
-        const hash = window.location.hash.substring(1);
-        const isCustomGrid = !isNaN(hash) && hash !== '';
-        const country = isCustomGrid ? null : (hash || 'daily');
-    
-        // Determines the correct ID for loading (e.g., 'daily' or 'custom_12345')
-        const gameStateId = isCustomGrid ? `custom_${hash}` : country;
+        const identifier = window.location.hash.substring(1) || 'daily';
     
         document.querySelectorAll('.nav-link').forEach(link => {
-            link.classList.toggle('active', link.hash === `#${country}`);
+            link.classList.toggle('active', link.hash === `#${identifier}`);
         });
     
         try {
-            let fetchUrl;
-            if (isCustomGrid) {
-                fetchUrl = `${API_BASE_URL}/api/custom-grid/${hash}`;
-            } else {
-                fetchUrl = `${API_BASE_URL}/api/grid-of-the-day/${country}`;
-            }
-    
+            const fetchUrl = `${API_BASE_URL}/api/grid/${identifier}`;
+            
             const response = await fetch(fetchUrl);
             if (!response.ok) {
-                if (response.status === 404) {
-                     gridContainer.innerHTML = `<h2>Grid not found. It may have expired or the link is incorrect.</h2>`;
-                } else {
-                    throw new Error(`Network response was not ok: ${response.statusText}`);
-                }
+                gridContainer.innerHTML = `<h2>Grid not found. It may have expired or the link is incorrect.</h2>`;
                 return;
             }
     
             gridData = await response.json();
-    
-            // Passes both the session ID and the determined gameStateId
-            loadGameState(gridData.serverSessionId, gameStateId); 
+            
+            loadGameState(gridData.serverSessionId, identifier);
     
             gridContainer.innerHTML = '';
             for (let i = 0; i < 4; i++) {
@@ -283,11 +264,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     } else if (i === 0) {
                         const colCat = gridData.cols[j - 1];
                         cell.classList.add('header-cell');
-                        cell.innerHTML = colCat.label; // Simplified for now
+                        cell.innerHTML = colCat.label; 
                     } else if (j === 0) {
                         const rowCat = gridData.rows[i - 1];
                         cell.classList.add('header-cell');
-                        cell.innerHTML = rowCat.label; // Simplified for now
+                        cell.innerHTML = rowCat.label; 
                     } else {
                         cell.classList.add('grid-cell');
                         cell.dataset.row = i - 1;

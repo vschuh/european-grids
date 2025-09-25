@@ -1,49 +1,102 @@
-import { nationalTeamCategories, italianClubCategories, dutchClubCategories, austrianClubCategories, belgianClubCategories, frenchClubCategories, tournamentCategories, statCategories } from './categories.js';
+import { nationalTeamCategories, italianClubCategories, dutchClubCategories, austrianClubCategories, belgianClubCategories, spanishClubCategories, czechClubCategories, frenchClubCategories, statCategories, tournamentCategories } from './categories.js';
 
-const API_BASE_URL = 'https://your-render-app-name.onrender.com'; // IMPORTANT: Use your live back-end URL
+const API_BASE_URL = 'https://european-grids-api.onrender.com';
 
-const allCategories = [
-    ...nationalTeamCategories,
-    ...italianClubCategories,
-    ...dutchClubCategories,
-    ...austrianClubCategories,
-    ...belgianClubCategories,
-    ...frenchClubCategories,
-    ...tournamentCategories,
-    ...statCategories
-];
+// Group all categories for the modal
+const categoryGroups = {
+    "National Teams": nationalTeamCategories,
+    "Italian Clubs": italianClubCategories,
+    "Dutch Clubs": dutchClubCategories,
+    "Austrian Clubs": austrianClubCategories,
+    "Belgian Clubs": belgianClubCategories,
+    "Spanish Clubs": spanishClubCategories,
+    "Czech Clubs": czechClubCategories,
+    "French Clubs": frenchClubCategories,
+    "Tournaments": tournamentCategories,
+    "Player Stats": statCategories
+};
 
+let selectedCategories = {};
+let activeTarget = null;
 
-allCategories.sort((a, b) => a.label.localeCompare(b.label));
+const categoryModal = document.getElementById('category-modal');
+const mainCategoriesList = document.getElementById('main-categories');
+const subCategoriesList = document.getElementById('sub-categories');
+const level1 = document.getElementById('level-1');
+const level2 = document.getElementById('level-2');
+const backBtn = document.getElementById('back-to-main-cat');
+const subCatTitle = document.getElementById('sub-category-title');
 
-function populateDropdowns() {
-    const selects = document.querySelectorAll('select');
-    selects.forEach(select => {
-        allCategories.forEach(cat => {
-            const option = document.createElement('option');
-            option.value = JSON.stringify(cat);
-            option.textContent = cat.label;
-            select.appendChild(option);
-        });
-    });
+// Populate Level 1
+for (const groupName in categoryGroups) {
+    const li = document.createElement('li');
+    li.textContent = groupName;
+    li.addEventListener('click', () => showSubCategories(groupName));
+    mainCategoriesList.appendChild(li);
 }
 
+function showSubCategories(groupName) {
+    subCatTitle.textContent = `Select a ${groupName}`;
+    subCategoriesList.innerHTML = '';
+    const categories = categoryGroups[groupName];
+    categories.sort((a, b) => a.label.localeCompare(b.label));
+
+    categories.forEach(cat => {
+        const li = document.createElement('li');
+        li.textContent = cat.label;
+        li.addEventListener('click', () => selectCategory(cat));
+        subCategoriesList.appendChild(li);
+    });
+
+    level1.classList.add('modal-hidden');
+    level2.classList.remove('modal-hidden');
+}
+
+function selectCategory(category) {
+    selectedCategories[activeTarget] = category;
+    const button = document.querySelector(`.category-btn[data-target="${activeTarget}"]`);
+    button.textContent = category.label;
+    button.classList.add('selected');
+    closeModal();
+}
+
+function openModal(target) {
+    activeTarget = target;
+    categoryModal.classList.remove('modal-hidden');
+    level2.classList.add('modal-hidden');
+    level1.classList.remove('modal-hidden');
+}
+
+function closeModal() {
+    categoryModal.classList.add('modal-hidden');
+}
+
+document.querySelectorAll('.category-btn').forEach(btn => {
+    btn.addEventListener('click', () => openModal(btn.dataset.target));
+});
+
+backBtn.addEventListener('click', () => {
+    level2.classList.add('modal-hidden');
+    level1.classList.remove('modal-hidden');
+});
+
+categoryModal.addEventListener('click', (e) => {
+    if (e.target === categoryModal) closeModal();
+});
+
 document.getElementById('create-btn').addEventListener('click', async () => {
+    if (Object.keys(selectedCategories).length < 6) {
+        alert("Please select all 6 categories.");
+        return;
+    }
     const grid = {
-        rows: [
-            JSON.parse(document.getElementById('row-1').value),
-            JSON.parse(document.getElementById('row-2').value),
-            JSON.parse(document.getElementById('row-3').value)
-        ],
-        cols: [
-            JSON.parse(document.getElementById('col-1').value),
-            JSON.parse(document.getElementById('col-2').value),
-            JSON.parse(document.getElementById('col-3').value)
-        ]
+        rows: [selectedCategories['row-1'], selectedCategories['row-2'], selectedCategories['row-3']],
+        cols: [selectedCategories['col-1'], selectedCategories['col-2'], selectedCategories['col-3']]
     };
 
+
     try {
-        const response = await fetch(`${API_BASE_URL}/api/custom-grid`, {
+        const response = await fetch(`${API_BASE_URL}/api/grid`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(grid)
