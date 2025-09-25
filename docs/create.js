@@ -120,10 +120,11 @@ document.getElementById('add-stat-btn').addEventListener('click', () => {
 
     categoryGroups["Player Stats"].push(newStatCategory);
     statCreatorModal.classList.add('modal-hidden');
-    mainCategoryModal.classList.remove('modal-hidden');
+
+    
+    showSubCategories("Player Stats");
 });
 
-// --- Main Event Listeners ---
 document.querySelectorAll('.creator-cell.header').forEach(cell => {
     cell.addEventListener('click', () => {
         activeTargetCell = cell;
