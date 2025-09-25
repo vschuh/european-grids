@@ -15,7 +15,7 @@ import {
     frenchClubCategories,
     statCategories,
     tournamentCategories
-} from './categories.js';
+} from './docs/categories.js';
 
 const { count } = require('console');
 

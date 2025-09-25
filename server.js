@@ -159,6 +159,7 @@ app.get('/api/grid/:identifier', async (req, res) => {
         let result;
         if (isCustom) {
             
+            
             result = await pool.query('SELECT grid_data FROM grids WHERE id = $1 AND type = $2', [identifier, 'custom']);
         } else {
             

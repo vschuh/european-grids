@@ -27,7 +27,6 @@ const level2 = document.getElementById('level-2');
 const backBtn = document.getElementById('back-to-main-cat');
 const subCatTitle = document.getElementById('sub-category-title');
 
-// Populate Level 1
 for (const groupName in categoryGroups) {
     const li = document.createElement('li');
     li.textContent = groupName;
@@ -119,5 +118,3 @@ document.getElementById('copy-btn').addEventListener('click', () => {
     linkInput.select();
     document.execCommand('copy');
 });
-
-populateDropdowns();
