@@ -33,14 +33,16 @@ const categoryGroups = {
 let selectedCategories = {};
 let activeTargetCell = null;
 
+// --- DOM Elements ---
 const categoryModal = document.getElementById('category-modal');
+const modalViewContainer = categoryModal.querySelector('.modal-view-container');
 const mainCategoriesList = document.getElementById('main-categories-list');
 const subCategoriesList = document.getElementById('sub-categories-list');
-const level1 = document.getElementById('level-1');
-const level2 = document.getElementById('level-2');
 const backBtn = document.getElementById('back-to-main-cat-btn');
 const subCatTitle = document.getElementById('sub-category-title');
+const statCreatorModal = document.getElementById('stat-creator-modal');
 
+// --- Main Category Modal Logic ---
 mainCategoriesList.innerHTML = ''; 
 for (const groupName in categoryGroups) {
     const li = document.createElement('li');
@@ -48,7 +50,6 @@ for (const groupName in categoryGroups) {
     li.addEventListener('click', () => showSubCategories(groupName));
     mainCategoriesList.appendChild(li);
 }
-
 const createStatLi = document.createElement('li');
 createStatLi.textContent = "Create Custom Stat...";
 createStatLi.style.color = "var(--accent-color)";
@@ -68,9 +69,11 @@ function showSubCategories(groupName) {
         li.addEventListener('click', () => selectCategory(cat));
         subCategoriesList.appendChild(li);
     });
+    modalViewContainer.style.transform = 'translateX(-100%)'; // Slide to Level 2
+}
 
-    level1.classList.add('modal-hidden');
-    level2.classList.remove('modal-hidden');
+function goBackToMainCategories() {
+    modalViewContainer.style.transform = 'translateX(0%)'; // Slide back to Level 1
 }
 
 function selectCategory(category) {
@@ -83,20 +86,19 @@ function selectCategory(category) {
 
 function openCategoryModal(cell) {
     activeTargetCell = cell;
+    goBackToMainCategories(); // Ensure it always starts on Level 1
     categoryModal.classList.remove('modal-hidden');
-    level2.classList.add('modal-hidden');
-    level1.classList.remove('modal-hidden');
 }
 
 function closeCategoryModal() {
     categoryModal.classList.add('modal-hidden');
 }
 
-
-const statCreatorModal = document.getElementById('stat-creator-modal');
+// --- Dynamic Stat Creator Logic ---
 const statTypeSelect = document.getElementById('stat-type-select');
 const statConditionSelect = document.getElementById('stat-condition-select');
 const statValueInput = document.getElementById('stat-value-input');
+const backFromStatBtn = document.getElementById('back-from-stat-creator-btn');
 
 const baseStats = {
     'Home Runs': { type: 'seasonal_homeruns', unit: 'HR' },
@@ -123,6 +125,10 @@ function openStatCreator() {
     statCreatorModal.classList.remove('modal-hidden');
 }
 
+function closeStatCreator() {
+    statCreatorModal.classList.add('modal-hidden');
+}
+
 document.getElementById('add-stat-btn').addEventListener('click', () => {
     const statName = statTypeSelect.value;
     const condition = statConditionSelect.value;
@@ -132,33 +138,36 @@ document.getElementById('add-stat-btn').addEventListener('click', () => {
     const conditionLabel = condition === 'min' ? '>=' : '<=';
     const newLabel = `${conditionLabel} ${value} ${baseStat.unit} Season`;
 
-    const newStatCategory = {
-        label: newLabel,
-        type: baseStat.type, 
-        value: value
+    const newStatCategory = { 
+        label: newLabel, 
+        type: baseStat.type, // Note: Your backend only supports >= right now for most stats
+        value: value 
     };
 
     categoryGroups["Player Stats"].push(newStatCategory);
-    statCreatorModal.classList.add('modal-hidden');
-    openCategoryModal(activeTargetCell);
+    closeStatCreator();
+    openCategoryModal(activeTargetCell); 
 });
 
-document.getElementById('cancel-stat-btn').addEventListener('click', () => {
-    statCreatorModal.classList.add('modal-hidden');
-});
-
+// --- Main Event Listeners ---
 document.querySelectorAll('.creator-cell.header').forEach(cell => {
     cell.addEventListener('click', () => openCategoryModal(cell));
 });
 
-backBtn.addEventListener('click', () => {
-    level2.classList.add('modal-hidden');
-    level1.classList.remove('modal-hidden');
+backBtn.addEventListener('click', goBackToMainCategories);
+
+backFromStatBtn.addEventListener('click', () => {
+    closeStatCreator();
+    openCategoryModal(activeTargetCell); 
 });
 
+document.getElementById('cancel-stat-btn').addEventListener('click', closeStatCreator);
+
 categoryModal.addEventListener('click', (e) => {
-    if (e.target.id === 'category-container' || e.target.closest('#category-container')) return;
-    closeCategoryModal();
+    
+    if (e.target.id === 'category-modal') {
+        closeCategoryModal();
+    }
 });
 
 document.getElementById('create-btn').addEventListener('click', async () => {
