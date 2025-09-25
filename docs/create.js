@@ -19,6 +19,7 @@ let selectedCategories = {};
 let activeTargetCell = null;
 
 const categoryModal = document.getElementById('category-modal');
+const categoryContainer = document.getElementById('category-container');
 const level1 = document.getElementById('level-1');
 const level2 = document.getElementById('level-2');
 const mainCategoriesList = document.getElementById('main-categories-list');
