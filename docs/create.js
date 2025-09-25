@@ -73,10 +73,11 @@ function selectCategory(category) {
     selectedCategories[targetId] = category;
     activeTargetCell.textContent = category.label;
     activeTargetCell.classList.add('selected');
-    subCategoryModal.classList.add('modal-hidden');
-}
 
-// --- Dynamic Stat Creator Logic ---
+    mainCategoryModal.classList.add('modal-hidden');
+    subCategoryModal.classList.add('modal-hidden');
+    statCreatorModal.classList.add('modal-hidden');
+}
 const baseStats = {
     'Home Runs': { type: 'seasonal_homeruns', unit: 'HR' },
     'Hits': { type: 'seasonal_hits', unit: 'Hits' },
@@ -117,12 +118,7 @@ document.getElementById('add-stat-btn').addEventListener('click', () => {
         value: value,
         condition: condition
     };
-
-    categoryGroups["Player Stats"].push(newStatCategory);
-    statCreatorModal.classList.add('modal-hidden');
-
-    
-    showSubCategories("Player Stats");
+    selectCategory(newStatCategory);
 });
 
 document.querySelectorAll('.creator-cell.header').forEach(cell => {
