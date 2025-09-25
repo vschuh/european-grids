@@ -610,42 +610,50 @@
 }
 
 
-/* --- Corrected Modal Styles --- */
+
 #category-container, #stat-creator-container {
     background-color: var(--card-bg);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
     border: 1px solid var(--border-color);
-    box-shadow: 0 5px 15px var(--shadow-color);
+    width: auto; 
+    min-width: 300px;
+    max-width: 90vw;
+    overflow-x: hidden;
     position: relative;
-    overflow: hidden; /* Keep this to hide the slide animation */
-}
-
-.modal-view {
-    width: 100%; /* Each view takes up the full container width */
-    min-width: 500px; /* Set a minimum width for the content */
-    flex-shrink: 0;
 }
 
 
 .modal-view-container {
     display: flex;
+    width: 200%;
     transition: transform 0.3s ease-in-out;
 }
 
+
+#category-container.level-2-active .modal-view-container {
+    transform: translateX(-50%);
+}
+
+
+.modal-view {
+    width: 50%; 
+    flex-shrink: 0;
+    padding: 0 1rem; 
+}
 
 
 
 #main-categories-list {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
 }
 
 #main-categories-list li {
-    padding: 1rem;
+    padding: 0.75rem;
     cursor: pointer;
     border: 1px solid var(--border-color);
     border-radius: 6px;
@@ -657,7 +665,6 @@
     background-color: #34495E;
 }
 
-/* Sub-category list styling */
 #sub-categories-list {
     list-style: none;
     max-height: 400px;
@@ -665,7 +672,7 @@
 }
 
 #sub-categories-list li {
-    padding: 0.75rem 1rem;
+    padding: 0.6rem 1rem;
     cursor: pointer;
     border-bottom: 1px solid var(--border-color);
 }

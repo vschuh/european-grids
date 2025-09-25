@@ -52,13 +52,14 @@ function showSubCategories(groupName) {
         li.addEventListener('click', () => selectCategory(cat));
         subCategoriesList.appendChild(li);
     });
-    level1.classList.add('modal-hidden');
-    level2.classList.remove('modal-hidden');
+
+    
+    categoryContainer.classList.add('level-2-active');
 }
 
 function goBackToMainCategories() {
-    level2.classList.add('modal-hidden');
-    level1.classList.remove('modal-hidden');
+    
+    categoryContainer.classList.remove('level-2-active');
 }
 
 function selectCategory(category) {
