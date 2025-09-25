@@ -1,9 +1,10 @@
-require('dotenv').config();
-const fs = require('fs');
-const { Pool } = require('pg');
-const merges = require('./merges.json');
+import 'dotenv/config';
+import fs from 'fs';
+import pg from 'pg';
+const { Pool } = pg;
+import merges from './merges.json' assert { type: 'json' };
 
-const {
+import {
     nationalTeamCategories,
     italianClubCategories,
     dutchClubCategories,
@@ -14,7 +15,8 @@ const {
     frenchClubCategories,
     statCategories,
     tournamentCategories
-} = require('./docs/categories');
+} from './categories.js';
+
 const { count } = require('console');
 
 const COUNTRIES = [

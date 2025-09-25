@@ -27,7 +27,7 @@ jobs:
         run: echo "The value of the DB_SSL secret is [${{ secrets.DB_SSL }}]"
 
       - name: Generate the Grid Files
-        run: node generateGrid.js
+        run: node generateGrid.mjs
         env:
           DB_HOST: ${{ secrets.DB_HOST }}
           DB_USER: ${{ secrets.DB_USER }}
