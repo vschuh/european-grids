@@ -69,11 +69,11 @@ function showSubCategories(groupName) {
         li.addEventListener('click', () => selectCategory(cat));
         subCategoriesList.appendChild(li);
     });
-    modalViewContainer.style.transform = 'translateX(-100%)'; // Slide to Level 2
+    modalViewContainer.style.transform = 'translateX(-100%)'; 
 }
 
 function goBackToMainCategories() {
-    modalViewContainer.style.transform = 'translateX(0%)'; // Slide back to Level 1
+    modalViewContainer.style.transform = 'translateX(0%)'; 
 }
 
 function selectCategory(category) {
@@ -86,7 +86,7 @@ function selectCategory(category) {
 
 function openCategoryModal(cell) {
     activeTargetCell = cell;
-    goBackToMainCategories(); // Ensure it always starts on Level 1
+    goBackToMainCategories(); 
     categoryModal.classList.remove('modal-hidden');
 }
 
@@ -94,7 +94,7 @@ function closeCategoryModal() {
     categoryModal.classList.add('modal-hidden');
 }
 
-// --- Dynamic Stat Creator Logic ---
+
 const statTypeSelect = document.getElementById('stat-type-select');
 const statConditionSelect = document.getElementById('stat-condition-select');
 const statValueInput = document.getElementById('stat-value-input');
@@ -140,8 +140,9 @@ document.getElementById('add-stat-btn').addEventListener('click', () => {
 
     const newStatCategory = { 
         label: newLabel, 
-        type: baseStat.type, // Note: Your backend only supports >= right now for most stats
-        value: value 
+        type: baseStat.type, 
+        value: value,
+        condition: condition 
     };
 
     categoryGroups["Player Stats"].push(newStatCategory);
@@ -149,7 +150,7 @@ document.getElementById('add-stat-btn').addEventListener('click', () => {
     openCategoryModal(activeTargetCell); 
 });
 
-// --- Main Event Listeners ---
+
 document.querySelectorAll('.creator-cell.header').forEach(cell => {
     cell.addEventListener('click', () => openCategoryModal(cell));
 });

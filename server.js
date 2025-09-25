@@ -56,6 +56,11 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
     let text = '';
     let values = [];
 
+    
+    const getOperator = (cat) => {
+        return cat.condition === 'max' ? '<=' : '>=';
+    };
+
     if (category.type === 'team') {
         const mainTeamId = category.value;
         const allTeamIds = [mainTeamId, ...(merges.teams[mainTeamId.toString()] || [])];
@@ -77,63 +82,63 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
                 values = [category.value];
                 break;
             case 'seasonal_homeruns':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.homerun >= $${startingIndex})`;
+                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.homerun ${getOperator(category)} $${startingIndex})`;
                 values = [parseInt(category.value)];
                 break;
             case 'seasonal_hits':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.h >= $${startingIndex})`;
+                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.h ${getOperator(category)} $${startingIndex})`;
                 values = [parseInt(category.value)];
                 break;
             case 'seasonal_sb':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.sb >= $${startingIndex})`;
+                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.sb ${getOperator(category)} $${startingIndex})`;
                 values = [parseInt(category.value)];
                 break;
             case 'seasonal_bb':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.bb >= $${startingIndex})`;
+                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.bb ${getOperator(category)} $${startingIndex})`;
                 values = [parseInt(category.value)];
                 break;
             case 'seasonal_doubles':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.double >= $${startingIndex})`;
+                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.double ${getOperator(category)} $${startingIndex})`;
                 values = [parseInt(category.value)];
                 break;
             case 'seasonal_triples':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.triple >= $${startingIndex})`;
+                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.triple ${getOperator(category)} $${startingIndex})`;
                 values = [parseInt(category.value)];
                 break;
             case 'seasonal_rbi':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.rbi >= $${startingIndex})`;
+                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.rbi ${getOperator(category)} $${startingIndex})`;
                 values = [parseInt(category.value)];
                 break;
             case 'seasonal_runs':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.r >= $${startingIndex})`;
+                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.r ${getOperator(category)} $${startingIndex})`;
                 values = [parseInt(category.value)];
                 break;
             case 'seasonal_wOBA':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps."wOBA" >= $${startingIndex} AND ps.pa >= 10)`;
+                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps."wOBA" ${getOperator(category)} $${startingIndex} AND ps.pa >= 10)`;
                 values = [parseFloat(category.value)];
                 break;
             case 'seasonal_avg':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.avg >= $${startingIndex} AND ps.pa >= 10)`;
+                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.avg ${getOperator(category)} $${startingIndex} AND ps.pa >= 10)`;
                 values = [parseFloat(category.value)];
                 break;
             case 'seasonal_ops':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps."OPS" >= $${startingIndex} AND ps.pa >= 10)`;
+                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps."OPS" ${getOperator(category)} $${startingIndex} AND ps.pa >= 10)`;
                 values = [parseFloat(category.value)];
                 break;
             case 'seasonal_pitching_k':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_strikeout >= $${startingIndex})`;
+                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_strikeout ${getOperator(category)} $${startingIndex})`;
                 values = [parseInt(category.value)];
                 break;
             case 'seasonal_pitching_ip':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_ip >= $${startingIndex})`;
+                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_ip ${getOperator(category)} $${startingIndex})`;
                 values = [parseInt(category.value)];
                 break;
             case 'seasonal_pitching_era':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_era <= $${startingIndex} AND ps.pitching_ip >= 30)`;
+                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_era ${getOperator(category)} $${startingIndex} AND ps.pitching_ip >= 30)`;
                 values = [parseFloat(category.value)];
                 break;
             case 'seasonal_pitching_fip':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_fip <= $${startingIndex} AND ps.pitching_ip >= 30)`;
+                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_fip ${getOperator(category)} $${startingIndex} AND ps.pitching_ip >= 30)`;
                 values = [parseFloat(category.value)];
                 break;
             case 'position':
