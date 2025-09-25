@@ -610,17 +610,21 @@
 }
 
 
+/* --- Corrected Modal Styles --- */
 #category-container, #stat-creator-container {
     background-color: var(--card-bg);
     padding: 2rem;
     border-radius: 8px;
-    width: 90vw; 
-    max-width: 800px; 
     border: 1px solid var(--border-color);
     box-shadow: 0 5px 15px var(--shadow-color);
     position: relative;
-    overflow: hidden;
-    
+    overflow: hidden; /* Keep this to hide the slide animation */
+}
+
+.modal-view {
+    width: 100%; /* Each view takes up the full container width */
+    min-width: 500px; /* Set a minimum width for the content */
+    flex-shrink: 0;
 }
 
 
@@ -630,10 +634,6 @@
 }
 
 
-.modal-view {
-    width: 100%;
-    flex-shrink: 0;
-}
 
 
 #main-categories-list {
