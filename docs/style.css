@@ -657,17 +657,17 @@
     margin-top: 1.5rem;
 }
 
-#main-categories-list li {
-    padding: 1rem;
-    cursor: pointer;
+#main-category-container, #sub-category-container {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
     border: 1px solid var(--border-color);
-    border-radius: 6px;
-    text-align: center;
-    transition: background-color 0.2s ease;
+    box-shadow: 0 5px 15px var(--shadow-color);
 }
 
-#main-categories-list li:hover {
-    background-color: #34495E;
+#main-category-container {
+    width: 90vw;
+    max-width: 800px;
 }
 
 #sub-category-container {
