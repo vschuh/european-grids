@@ -23,28 +23,6 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-<<<<<<< Updated upstream
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: eu-central-1b 
-
-      - name: Get Runner IP Address
-        id: get_ip
-        run: echo "RUNNER_IP_ADDRESS=$(curl -s https://api.ipify.org)" >> $GITHUB_ENV
-
-      - name: Add Runner IP to AWS Security Group
-        run: |
-          aws ec2 authorize-security-group-ingress \
-            --group-id ${{ secrets.AWS_SECURITY_GROUP_ID }} \
-            --protocol tcp \
-            --port 5432 \
-            --cidr ${{ env.RUNNER_IP_ADDRESS }}/32
-
-=======
->>>>>>> Stashed changes
       - name: Generate the Grid Files
         run: node generateGrid.js
         env:
