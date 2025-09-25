@@ -158,15 +158,23 @@ app.get('/api/grid/:identifier', async (req, res) => {
     try {
         let result;
         if (isCustom) {
-            
-            
+            // Logic for custom grids is correct and remains the same
             result = await pool.query('SELECT grid_data FROM grids WHERE id = $1 AND type = $2', [identifier, 'custom']);
         } else {
-            
+            // NEW LOGIC: Fetch the grid for the CURRENT_DATE
             result = await pool.query(
-                'SELECT grid_data FROM grids WHERE type = $1 ORDER BY grid_date DESC LIMIT 1',
+                'SELECT grid_data FROM grids WHERE type = $1 AND grid_date = CURRENT_DATE',
                 [identifier]
             );
+
+            // Fallback: If no grid is found for today, get the most recent one
+            if (result.rows.length === 0) {
+                console.log(`No grid found for today (${identifier}), fetching most recent as a fallback.`);
+                result = await pool.query(
+                    'SELECT grid_data FROM grids WHERE type = $1 ORDER BY grid_date DESC LIMIT 1',
+                    [identifier]
+                );
+            }
         }
 
         if (result.rows.length > 0) {

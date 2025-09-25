@@ -236,24 +236,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function setupGrid() {
-        const identifier = window.location.hash.substring(1) || 'daily';
+        const hash = window.location.hash.substring(1);
+        const isCustomGrid = !isNaN(hash) && hash !== '';
     
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.classList.toggle('active', link.hash === `#${identifier}`);
+        let fetchUrl;
+        let gridIdentifier;
+    
+        if (isCustomGrid) {
+            
+            fetchUrl = `${API_BASE_URL}/api/grid/${hash}`;
+            gridIdentifier = `custom_${hash}`;
+        } else {
+            
+            gridIdentifier = hash || 'daily';
+            const today = new Date().toISOString().split('T')[0];
+            fetchUrl = `grids/${gridIdentifier}_${today}.json`;
+        }
+    
+        
+        document.querySelectorAll('.link').forEach(link => {
+            link.classList.toggle('active', link.hash === `#${gridIdentifier}`);
         });
     
         try {
-            const fetchUrl = `${API_BASE_URL}/api/grid/${identifier}`;
-            
             const response = await fetch(fetchUrl);
             if (!response.ok) {
-                gridContainer.innerHTML = `<h2>Grid not found. It may have expired or the link is incorrect.</h2>`;
+                gridContainer.innerHTML = `<h2>Grid for today not available yet. Please check back later.</h2>`;
                 return;
             }
     
             gridData = await response.json();
-            
-            loadGameState(gridData.serverSessionId, identifier);
+            loadGameState(gridData.serverSessionId, gridIdentifier); 
     
             gridContainer.innerHTML = '';
             for (let i = 0; i < 4; i++) {
@@ -286,9 +299,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // --- EVENT LISTENERS ---
+    
     window.addEventListener('hashchange', setupGrid);
-    setupGrid(); // Initial load
+    setupGrid(); 
 
     gridContainer.addEventListener('click', (event) => {
         const cell = event.target.closest('.grid-cell');

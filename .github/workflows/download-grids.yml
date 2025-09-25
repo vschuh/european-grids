@@ -1,0 +1,38 @@
+name: Download Daily Grids
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  download-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Download Grid Files from DB
+        run: node downloadGrids.mjs
+        env:
+          AWS_DB_HOST: ${{ secrets.AWS_DB_HOST }}
+          AWS_DB_USER: ${{ secrets.AWS_DB_USER }}
+          AWS_DB_PASSWORD: ${{ secrets.AWS_DB_PASSWORD }}
+          AWS_DB_DATABASE: ${{ secrets.AWS_DB_DATABASE }}
+          AWS_DB_PORT: ${{ secrets.AWS_DB_PORT }}
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add docs/grids/
+          git commit -m "Automated: Update daily grid files" || echo "No changes to commit"
+          git push
