@@ -410,3 +410,99 @@
 #page-footer a:hover {
   color: var(--primary-color);
 }
+.nav-link.create-link {
+  background-color: var(--accent-color);
+  color: var(--bg-dark);
+}
+.nav-link.create-link:hover {
+  background-color: var(--accent-color);
+  opacity: 0.85;
+}
+
+/* --- Creator Page Styles --- */
+#creator-container {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.instructions {
+  text-align: center;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.grid-selectors {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.selector-group h3 {
+  margin-bottom: 0.75rem;
+}
+
+.selector-group select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+#create-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+#create-btn:hover {
+  opacity: 0.9;
+}
+
+#result-container {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px dashed var(--accent-color);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.share-box {
+  display: flex;
+  margin-top: 1rem;
+}
+
+#share-link {
+  width: 100%;
+  flex-grow: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  border: 1px solid var(--border-color);
+  border-radius: 6px 0 0 6px;
+  border-right: none;
+}
+
+#copy-btn {
+  background-color: var(--accent-color);
+  color: var(--bg-dark);
+  border: none;
+  padding: 0 1.5rem;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  font-weight: 700;
+}

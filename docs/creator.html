@@ -4,29 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create a Custom Grid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="app">
-        <header><h1>Create a Custom Grid</h1></header>
+        <header>
+            <h1>Create a Custom Grid</h1>
+            <a href="/" class="nav-link">← Back to Main Grid</a>
+        </header>
+
         <main id="creator-container">
+            <p class="instructions">Select a category for each row and column below. No player validation is needed.</p>
             <div class="grid-selectors">
-                <div class="row-selectors">
+                <div class="selector-group">
+                    <h3>Rows</h3>
                     <select id="row-1"></select>
                     <select id="row-2"></select>
                     <select id="row-3"></select>
                 </div>
-                <div class="col-selectors">
+                <div class="selector-group">
+                    <h3>Columns</h3>
                     <select id="col-1"></select>
                     <select id="col-2"></select>
                     <select id="col-3"></select>
                 </div>
             </div>
-            <button id="create-btn">Create & Get Link</button>
-            <div id="result-container" style="display:none;">
+
+            <button id="create-btn">Create & Get Share Link</button>
+
+            <div id="result-container" class="modal-hidden">
                 <h2>Your Link is Ready!</h2>
-                <input type="text" id="share-link" readonly>
-                <button id="copy-btn">Copy</button>
+                <div class="share-box">
+                    <input type="text" id="share-link" readonly>
+                    <button id="copy-btn">Copy</button>
+                </div>
             </div>
         </main>
     </div>
