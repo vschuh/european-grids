@@ -11,7 +11,7 @@ import {
     tournamentCategories,
     yearCategories,
     nationalityCategories
-} from './docs/categories.mjs';
+} from './categories.mjs';
 
 const API_BASE_URL = 'https://european-grids-api.onrender.com';
 
