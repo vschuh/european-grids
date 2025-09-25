@@ -7,10 +7,28 @@
       "image": "https://static.wbsc.org/upload/5a29afcd-b476-f5ea-549e-0a6ca0bf8551.png"
     },
     {
-      "label": "SK Joudrs Praha",
+      "label": "Tempo Praha",
       "type": "team",
-      "value": "1348",
-      "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg"
+      "value": "2066",
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png"
+    },
+    {
+      "value": "W-EXT-L",
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "federation_id": 148
+    }
+  ],
+  "cols": [
+    {
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "type": "seasonal_ops",
+      "value": 1
+    },
+    {
+      "label": "played in 2023 season",
+      "type": "year",
+      "value": 2023
     },
     {
       "label": "Czechia NT",
@@ -18,24 +36,6 @@
       "value": "6",
       "federation_id": 6,
       "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg"
-    }
-  ],
-  "cols": [
-    {
-      "label": "CF (min 1 PA)",
-      "type": "position",
-      "value": "CF"
-    },
-    {
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "type": "seasonal_wOBA",
-      "value": 0.25
-    },
-    {
-      "value": "W-EXT-L",
-      "type": "tournament",
-      "label": "Extraliga SB (CZ)",
-      "federation_id": 148
     }
   ]
 }

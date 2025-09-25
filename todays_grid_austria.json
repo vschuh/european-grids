@@ -1,16 +1,16 @@
 {
   "rows": [
     {
-      "label": "Vienna Wanderers",
+      "label": "Dornbirn Indians",
       "type": "team",
-      "value": "1222",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png"
+      "value": "1225",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a8c54b1a-0050-5d18-a2f6-2059dde33487.png"
     },
     {
-      "label": "Attnang-Puchheim Athletics",
+      "label": "Vienna Metrostars",
       "type": "team",
-      "value": "1224",
-      "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png"
+      "value": "1223",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1943295d-9bf7-e5b8-291c-021b311137ba.png"
     },
     {
       "label": "Austria NT",
@@ -22,14 +22,14 @@
   ],
   "cols": [
     {
-      "label": "<3.00 ERA Season (min. 10 ip)",
-      "type": "seasonal_pitching_era",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "type": "seasonal_pitching_fip",
       "value": 3
     },
     {
-      "label": "C (min 1 PA)",
+      "label": "3B (min 1 PA)",
       "type": "position",
-      "value": "C"
+      "value": "3B"
     },
     {
       "value": "SB-BUNDESLIGA",

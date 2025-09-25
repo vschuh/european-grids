@@ -1,16 +1,16 @@
 {
   "rows": [
     {
+      "label": "Metz Cometz",
+      "type": "team",
+      "value": "1712",
+      "image": "https://static.wbsc.org/upload/db8cb428-f188-8cd5-1354-4006e912897a.jpg"
+    },
+    {
       "label": "Stade Toulousain Baseball Softball",
       "type": "team",
       "value": "1713",
       "image": "https://static.wbsc.org/upload/83428e38-f463-52e1-0571-48f71aa9fc31.jpg"
-    },
-    {
-      "label": "Rouen Huskies",
-      "type": "team",
-      "value": "1428",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a18c7fc9-a3ce-81e9-0c12-f2a5ec8eab1e.jpg"
     },
     {
       "value": "FRA-D1FSB",
@@ -21,12 +21,12 @@
   ],
   "cols": [
     {
-      "label": "SS (min 1 PA)",
-      "type": "position",
-      "value": "SS"
+      "label": "50 IP+ Season",
+      "type": "seasonal_pitching_ip",
+      "value": 105
     },
     {
-      "label": "played in 2022 Season",
+      "label": "played in 2022 season",
       "type": "year",
       "value": 2022
     },

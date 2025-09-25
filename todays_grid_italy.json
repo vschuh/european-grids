@@ -1,39 +1,41 @@
 {
   "rows": [
     {
-      "label": "10+ HR Season",
-      "type": "seasonal_homeruns",
-      "value": 10
+      "label": "A.S.D. NETTUNO 2 BASEBALL CLUB",
+      "type": "team",
+      "value": "329",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/d8b6d64d-34f3-3a73-90db-8df0d8f36e55.png"
     },
     {
-      "label": "Nationality: NED",
-      "type": "nationality",
-      "value": "NED"
+      "label": "A.S.D. GRIZZLIES TORINO 48 B.S.C.",
+      "type": "team",
+      "value": "337",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/300b244a-687b-e9fe-dead-f938a53ecbed.jpg"
     },
     {
-      "label": "played in 2023 Season",
-      "type": "year",
-      "value": 2023
+      "value": "ITA-SERIE-A1-M-BB",
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "federation_id": 2
     }
   ],
   "cols": [
     {
-      "label": "A.S.D. SAN MARINO BASEBALL CLUB",
-      "type": "team",
-      "value": "331",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/09fa8d5d-3beb-0f14-7d8e-8d48078672a2.jpg"
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "type": "seasonal_ops",
+      "value": 1
     },
     {
-      "label": "BOLLATE SOFTBALL 1969 A.S.D.",
-      "type": "team",
-      "value": "387",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a58c308c-b5b8-113c-a189-141d486177fd.jpg"
+      "label": "played in 2022 season",
+      "type": "year",
+      "value": 2022
     },
     {
-      "value": "ITA-SERIE-A1-F-SB",
-      "type": "tournament",
-      "label": "Serie A1 Softball (IT)",
-      "federation_id": 2
+      "label": "Italy NT",
+      "type": "team",
+      "value": "2",
+      "federation_id": 2,
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg"
     }
   ]
 }

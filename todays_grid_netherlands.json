@@ -7,28 +7,28 @@
       "image": "https://static.wbsc.org/upload/10b0171f-e179-ac20-62b1-ccd30810ac42.png"
     },
     {
-      "label": "ROEF!",
+      "label": "Kinheim",
       "type": "team",
-      "value": "1271",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/8d053c81-1566-2518-b6ab-ab8274584916.jpg"
+      "value": "1263",
+      "image": "https://static.wbsc.org/upload/934e9ec8-bec3-79bd-a8a8-b040f4161d55.png"
     },
     {
-      "value": "HOOFDKLASSE-SOFTBAL",
+      "value": "HOOFDKLASSE-HONKBAL",
       "type": "tournament",
-      "label": "Hoofdklasse Softbal (NL)",
+      "label": "Hoofdklasse Honkbal (NL)",
       "federation_id": 1
     }
   ],
   "cols": [
     {
-      "label": "15+ Runs Season",
-      "type": "seasonal_runs",
+      "label": "15+ RBI Season",
+      "type": "seasonal_rbi",
       "value": 15
     },
     {
-      "label": "played in 2025 Season",
+      "label": "played in 2023 season",
       "type": "year",
-      "value": 2025
+      "value": 2023
     },
     {
       "label": "Netherlands NT",

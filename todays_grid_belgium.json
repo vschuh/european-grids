@@ -1,16 +1,16 @@
 {
   "rows": [
     {
-      "label": "Zonhoven Tigers",
+      "label": "Gent Knights",
       "type": "team",
-      "value": "1545",
-      "image": "https://static.wbsc.org/upload/15ddbfc7-3582-aea3-55b6-9d40c3273eb0.png"
+      "value": "1475",
+      "image": "https://static.wbsc.org/upload/b984f263-2924-2e02-6b23-7257a92a820c.png"
     },
     {
-      "label": "Cantincrode Baseball en Softball Stars",
+      "label": "Brussels Kangaroos",
       "type": "team",
-      "value": "1394",
-      "image": "https://static.wbsc.org/upload/ef175e86-8a69-5cb4-6249-5c548df8b041.png"
+      "value": "1477",
+      "image": "https://static.wbsc.org/upload/c9a330c1-47a1-9f9a-0b51-c9d3b27c3822.png"
     },
     {
       "label": "Belgium NT",
@@ -22,14 +22,14 @@
   ],
   "cols": [
     {
-      "label": "1B (min 1 PA)",
-      "type": "position",
-      "value": "1B"
+      "label": ">0.400 OBP Season (min. 10 pa)",
+      "type": "seasonal_avg",
+      "value": 0.4
     },
     {
-      "label": ">1.000 OPS Season (min. 10 pa)",
-      "type": "seasonal_ops",
-      "value": 1
+      "label": "2B (min 1 PA)",
+      "type": "position",
+      "value": "2B"
     },
     {
       "value": "BD1",
