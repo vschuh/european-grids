@@ -644,16 +644,21 @@
 
 
 
+#main-category-container {
+    width: 90vw;
+    max-width: 800px;
+}
+
 #main-categories-list {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 0.75rem;
-    margin-top: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
 #main-categories-list li {
-    padding: 0.75rem;
+    padding: 1rem;
     cursor: pointer;
     border: 1px solid var(--border-color);
     border-radius: 6px;
@@ -665,6 +670,11 @@
     background-color: #34495E;
 }
 
+#sub-category-container {
+    width: 90vw;
+    max-width: 500px;
+}
+
 #sub-categories-list {
     list-style: none;
     max-height: 400px;
@@ -672,7 +682,7 @@
 }
 
 #sub-categories-list li {
-    padding: 0.6rem 1rem;
+    padding: 0.75rem 1rem;
     cursor: pointer;
     border-bottom: 1px solid var(--border-color);
 }

@@ -7,27 +7,37 @@ import {
 const API_BASE_URL = 'https://european-grids-api.onrender.com';
 
 const categoryGroups = {
-    "National Teams": nationalTeamCategories, "Italian Clubs": italianClubCategories,
-    "Dutch Clubs": dutchClubCategories, "Austrian Clubs": austrianClubCategories,
-    "Belgian Clubs": belgianClubCategories, "Spanish Clubs": spanishClubCategories,
-    "Czech Clubs": czechClubCategories, "French Clubs": frenchClubCategories,
-    "Tournaments": tournamentCategories, "Player Stats": statCategories,
-    "Nationalities": nationalityCategories, "Years": yearCategories
+    "National Teams": nationalTeamCategories,
+    "Italian Clubs": italianClubCategories,
+    "Dutch Clubs": dutchClubCategories,
+    "Austrian Clubs": austrianClubCategories,
+    "Belgian Clubs": belgianClubCategories,
+    "Spanish Clubs": spanishClubCategories,
+    "Czech Clubs": czechClubCategories,
+    "French Clubs": frenchClubCategories,
+    "Tournaments": tournamentCategories,
+    "Player Stats": statCategories,
+    "Nationalities": nationalityCategories,
+    "Years": yearCategories
 };
 
 let selectedCategories = {};
 let activeTargetCell = null;
 
-const categoryModal = document.getElementById('category-modal');
-const categoryContainer = document.getElementById('category-container');
-const level1 = document.getElementById('level-1');
-const level2 = document.getElementById('level-2');
+// --- DOM Elements ---
+const mainCategoryModal = document.getElementById('main-category-modal');
+const subCategoryModal = document.getElementById('sub-category-modal');
+const statCreatorModal = document.getElementById('stat-creator-modal');
 const mainCategoriesList = document.getElementById('main-categories-list');
 const subCategoriesList = document.getElementById('sub-categories-list');
-const backBtn = document.getElementById('back-to-main-cat-btn');
+const backToMainBtn = document.getElementById('back-to-main-cat-btn');
 const subCatTitle = document.getElementById('sub-category-title');
-const statCreatorModal = document.getElementById('stat-creator-modal');
+const statTypeSelect = document.getElementById('stat-type-select');
+const statConditionSelect = document.getElementById('stat-condition-select');
+const statValueInput = document.getElementById('stat-value-input');
+const backFromStatBtn = document.getElementById('back-from-stat-creator-btn');
 
+// --- Main Category Modal Logic ---
 mainCategoriesList.innerHTML = ''; 
 for (const groupName in categoryGroups) {
     const li = document.createElement('li');
@@ -54,13 +64,8 @@ function showSubCategories(groupName) {
         subCategoriesList.appendChild(li);
     });
 
-    
-    categoryContainer.classList.add('level-2-active');
-}
-
-function goBackToMainCategories() {
-    
-    categoryContainer.classList.remove('level-2-active');
+    mainCategoryModal.classList.add('modal-hidden');
+    subCategoryModal.classList.remove('modal-hidden');
 }
 
 function selectCategory(category) {
@@ -68,24 +73,10 @@ function selectCategory(category) {
     selectedCategories[targetId] = category;
     activeTargetCell.textContent = category.label;
     activeTargetCell.classList.add('selected');
-    closeCategoryModal();
+    subCategoryModal.classList.add('modal-hidden');
 }
 
-function openCategoryModal(cell) {
-    activeTargetCell = cell;
-    goBackToMainCategories(); 
-    categoryModal.classList.remove('modal-hidden');
-}
-
-function closeCategoryModal() {
-    categoryModal.classList.add('modal-hidden');
-}
-
-const statTypeSelect = document.getElementById('stat-type-select');
-const statConditionSelect = document.getElementById('stat-condition-select');
-const statValueInput = document.getElementById('stat-value-input');
-const backFromStatBtn = document.getElementById('back-from-stat-creator-btn');
-
+// --- Dynamic Stat Creator Logic ---
 const baseStats = {
     'Home Runs': { type: 'seasonal_homeruns', unit: 'HR' },
     'Hits': { type: 'seasonal_hits', unit: 'Hits' },
@@ -107,36 +98,63 @@ for (const statName in baseStats) {
 }
 
 function openStatCreator() {
-    closeCategoryModal();
+    mainCategoryModal.classList.add('modal-hidden');
     statCreatorModal.classList.remove('modal-hidden');
 }
 
-function closeStatCreator() {
-    statCreatorModal.classList.add('modal-hidden');
-}
-
 document.getElementById('add-stat-btn').addEventListener('click', () => {
-    closeStatCreator();
-    openCategoryModal(activeTargetCell); 
+    const statName = statTypeSelect.value;
+    const condition = statConditionSelect.value;
+    const value = parseFloat(statValueInput.value);
+    const baseStat = baseStats[statName];
+
+    const conditionLabel = condition === 'min' ? '>=' : '<=';
+    const newLabel = `${conditionLabel} ${value} ${baseStat.unit} Season`;
+
+    const newStatCategory = { 
+        label: newLabel, 
+        type: baseStat.type,
+        value: value,
+        condition: condition
+    };
+
+    categoryGroups["Player Stats"].push(newStatCategory);
+    statCreatorModal.classList.add('modal-hidden');
+    mainCategoryModal.classList.remove('modal-hidden');
 });
 
+// --- Main Event Listeners ---
 document.querySelectorAll('.creator-cell.header').forEach(cell => {
-    cell.addEventListener('click', () => openCategoryModal(cell));
+    cell.addEventListener('click', () => {
+        activeTargetCell = cell;
+        mainCategoryModal.classList.remove('modal-hidden');
+    });
 });
-backBtn.addEventListener('click', goBackToMainCategories);
+
+backToMainBtn.addEventListener('click', () => {
+    subCategoryModal.classList.add('modal-hidden');
+    mainCategoryModal.classList.remove('modal-hidden');
+});
 
 backFromStatBtn.addEventListener('click', () => {
-    closeStatCreator();
-    openCategoryModal(activeTargetCell); 
+    statCreatorModal.classList.add('modal-hidden');
+    mainCategoryModal.classList.remove('modal-hidden');
 });
 
-document.getElementById('cancel-stat-btn').addEventListener('click', closeStatCreator);
+document.getElementById('cancel-stat-btn').addEventListener('click', () => {
+    statCreatorModal.classList.add('modal-hidden');
+});
 
-categoryModal.addEventListener('click', (e) => {
-    
-    if (e.target.id === 'category-modal') {
-        closeCategoryModal();
-    }
+mainCategoryModal.addEventListener('click', (e) => {
+    if (e.target.id === 'main-category-modal') mainCategoryModal.classList.add('modal-hidden');
+});
+
+subCategoryModal.addEventListener('click', (e) => {
+    if (e.target.id === 'sub-category-modal') subCategoryModal.classList.add('modal-hidden');
+});
+
+statCreatorModal.addEventListener('click', (e) => {
+    if (e.target.id === 'stat-creator-modal') statCreatorModal.classList.add('modal-hidden');
 });
 
 document.getElementById('create-btn').addEventListener('click', async () => {
