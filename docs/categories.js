@@ -1,5 +1,5 @@
 
-const nationalTeamCategories = [
+export const nationalTeamCategories = [
     { label: 'Austria NT', type: 'team',value: 8, federation_id: 8 },
     { label: 'Ireland NT', type: 'team',value: 21, federation_id: 21 },
     { label: 'Great Britain NT', type: 'team',value: 20, federation_id: 20 },
@@ -28,7 +28,7 @@ const nationalTeamCategories = [
     { label: 'Turkey NT', type: 'team',value: 162, federation_id: 162 },
 ];
 
-const italianClubCategories = [
+export const italianClubCategories = [
     { label: 'A.S.D. REGGIO RAYS BASEBALL', type: 'team', value: 285 },
     { label: 'A.S.D. NETTUNO 2 BASEBALL CLUB', type: 'team', value: 329 },
     { label: 'MACERATA ANGELS A.S.D.', type: 'team', value: 330 },
@@ -91,7 +91,7 @@ const italianClubCategories = [
 ];
 
 
-const dutchClubCategories = [
+export const dutchClubCategories = [
     { label: 'Neptunus', type: 'team', value: 287 },
     { label: 'Kinheim', type: 'team', value: 1263 },
     { label: 'HCAW', type: 'team', value: 1264 },
@@ -114,7 +114,7 @@ const dutchClubCategories = [
     { label: 'Red Lions', type: 'team', value: 2596 },
 ];
 
-const austrianClubCategories = [
+export const austrianClubCategories = [
     { label: 'Vienna Wanderers', type: 'team', value: 1222 },
     { label: 'Vienna Metrostars', type: 'team', value: 1223 },
     { label: 'Attnang-Puchheim Athletics', type: 'team', value: 1224 },
@@ -128,7 +128,7 @@ const austrianClubCategories = [
 ];
 
 
-const belgianClubCategories = [
+export const belgianClubCategories = [
     { label: 'Hoboken Pioneers', type: 'team', value: 1353 },
     { label: 'Stabroek Chicaboo`s', type: 'team', value: 1361 },
     { label: 'Deurne Spartans', type: 'team', value: 1377 },
@@ -147,7 +147,7 @@ const belgianClubCategories = [
 ];
 
 
-const czechClubCategories = [
+export const czechClubCategories = [
     { label: 'SK Joudrs Praha', type: 'team', value: 1348 },
     { label: 'Beavers Chomutov', type: 'team', value: 1380 },
     { label: 'Žraloci Ledenice', type: 'team', value: 1381 },
@@ -170,7 +170,7 @@ const czechClubCategories = [
 ];
 
 
-const frenchClubCategories = [
+export const frenchClubCategories = [
     { label: 'Les Comanches de Saint-Raphaël', type: 'team', value: 1352 },
     { label: 'Les Pharaons d`Evry-Courcouronnes', type: 'team', value: 1367 },
     { label: '3M Barracudas Baseball Université Club', type: 'team', value: 1385 },
@@ -189,7 +189,7 @@ const frenchClubCategories = [
 ];
 
 
-const spanishClubCategories = [
+export const spanishClubCategories = [
     { label: 'Club de Béisbol y Sóftbol Rivas', type: 'team', value: 1354 },
     { label: 'Club Béisbol Viladecans', type: 'team', value: 1355 },
     { label: 'Tenerife Marlins Puerto Cruz', type: 'team', value: 1421 },
@@ -210,7 +210,7 @@ const spanishClubCategories = [
 ];
 
 
-const tournamentCategories = [
+export const tournamentCategories = [
         { value: 'BB-BUNDESLIGA', type: 'tournament', label: 'Baseball Bundesliga (AT)', federation_id: 8 },
         { value: 'SB-BUNDESLIGA', type: 'tournament', label: 'Softball Bundesliga (AT)', federation_id: 8 },
         { value: 'ESP-LNDH-BB', type: 'tournament', label: 'Liga Nacional de Béisbol Oro (ESP)', federation_id: 39 },
@@ -240,7 +240,7 @@ const tournamentCategories = [
 
 ];
 
-const statCategories = [
+export const statCategories = [
     { label: '10+ HR Season', type: 'seasonal_homeruns', value: 10 },
     { label: '15+ Hit Season', type: 'seasonal_hits', value: 15 },
     { label: '10+ SB Season', type: 'seasonal_sb', value: 10 },
