@@ -236,46 +236,46 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function setupGrid() {
-        const hash = window.location.hash.substring(1);
-        const isCustomGrid = !isNaN(hash) && hash !== '';
+        
+    const hash = window.location.hash.substring(1);
+    const isCustomGrid = !isNaN(hash) && hash !== '';
+    const identifier = isCustomGrid ? `custom_${hash}` : (hash || 'daily');
+
     
+    document.querySelectorAll('.nav-link').forEach(link => {
+        const linkIdentifier = link.getAttribute('href').substring(1);
+        link.classList.toggle('active', linkIdentifier === (isCustomGrid ? null : (hash || 'daily')));
+    });
+
+    try {
         let fetchUrl;
-        let gridIdentifier;
-    
         if (isCustomGrid) {
             
             fetchUrl = `${API_BASE_URL}/api/grid/${hash}`;
-            gridIdentifier = `custom_${hash}`;
         } else {
             
-            gridIdentifier = hash || 'daily';
-            const today = new Date().toISOString().split('T')[0];
-            fetchUrl = `grids/${gridIdentifier}_${today}.json`;
+            fetchUrl = `${API_BASE_URL}/api/grid/${identifier}`;
         }
-    
         
-        document.querySelectorAll('.link').forEach(link => {
-            link.classList.toggle('active', link.hash === `#${gridIdentifier}`);
-        });
-    
-        try {
-            const response = await fetch(fetchUrl);
-            if (!response.ok) {
-                gridContainer.innerHTML = `<h2>Grid for today not available yet. Please check back later.</h2>`;
-                return;
-            }
-    
-            gridData = await response.json();
-            
-            const gridTitle = document.querySelector('header h1');
-            if (gridData.name) {
-                gridTitle.textContent = gridData.name;
-            } else {
-                
-                gridTitle.textContent = 'Euro Zones';
-            }
+        const response = await fetch(fetchUrl);
+        if (!response.ok) {
+            gridContainer.innerHTML = `<h2>Grid not found. It may have expired or the link is incorrect.</h2>`;
+            return;
+        }
 
-            loadGameState(gridData.serverSessionId, identifier); 
+        gridData = await response.json();
+        
+        
+        loadGameState(gridData.serverSessionId, identifier); 
+
+        
+        const gridTitle = document.querySelector('header h1');
+        if (gridData.name) {
+            gridTitle.textContent = gridData.name;
+        } else {
+            gridTitle.textContent = 'Euro Zones';
+        }
+
 
     
             gridContainer.innerHTML = '';
@@ -287,11 +287,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     } else if (i === 0) {
                         const colCat = gridData.cols[j - 1];
                         cell.classList.add('header-cell');
-                        cell.innerHTML = colCat.label; 
+                        cell.innerHTML = colCat.label;
                     } else if (j === 0) {
                         const rowCat = gridData.rows[i - 1];
                         cell.classList.add('header-cell');
-                        cell.innerHTML = rowCat.label; 
+                        cell.innerHTML = rowCat.label;
                     } else {
                         cell.classList.add('grid-cell');
                         cell.dataset.row = i - 1;
@@ -301,10 +301,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
             renderGridFromState();
-            closeSearchModal(); 
+            
         } catch (error) {
             console.error('CRITICAL: Failed to fetch and set up grid:', error);
-            gridContainer.innerHTML = `<h2>CRITICAL ERROR: Could not load grid. Check console.</h2>`;
+            gridContainer.innerHTML = `<h2>CRITICAL ERROR: Could not load grid.</h2>`;
         }
     }
 

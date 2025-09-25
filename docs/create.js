@@ -103,7 +103,7 @@ document.getElementById('create-btn').addEventListener('click', async () => {
         const data = await response.json();
 
         if (data.id) {
-            const link = `${window.location.origin}/docs/index.html#${data.id}`;
+            const link = `${window.location.origin}/#${data.id}`;
             document.getElementById('share-link').value = link;
             document.getElementById('result-container').classList.remove('modal-hidden');
         }
