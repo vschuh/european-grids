@@ -4,7 +4,7 @@ on:
   schedule:
     # This runs the job every day at 8:00 AM UTC. You can change the time.
     # The format is Minute, Hour, Day of Month, Month, Day of Week.
-    - cron: '0 8 * * *'
+    - cron: '0 0 * * *'
   workflow_dispatch:
     # This adds a button on the Actions tab to run the workflow manually.
 
@@ -22,7 +22,7 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
-        
+
       - name: Debug DB_SSL Secret
         run: echo "The value of the DB_SSL secret is [${{ secrets.DB_SSL }}]"
 

@@ -35,6 +35,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 app.use(cors(corsOptions));
+
 app.use(express.json());
 const port = 3000;
 const playerMergeMap = new Map();
@@ -43,6 +44,12 @@ for (const mainId in merges.players) {
         playerMergeMap.set(anyId.toString(), mainId.toString());
     }
 }
+app.use((req, res, next) => {
+    if (req.headers['x-forwarded-proto'] !== 'https') {
+        return res.redirect('https://' + req.get('host') + req.url);
+    }
+    next();
+});
 
 const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
     const alias = `${playerAlias}.id`;
