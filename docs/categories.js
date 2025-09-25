@@ -273,17 +273,3 @@ export const statCategories = [
     { label: 'P (min 1 PA)', type: 'position', value: 'P' },
 
 ];
-
-
-module.exports = {
-    nationalTeamCategories,
-    italianClubCategories,
-    dutchClubCategories,
-    austrianClubCategories,
-    belgianClubCategories,
-    spanishClubCategories,
-    czechClubCategories,
-    frenchClubCategories,
-    statCategories,
-    tournamentCategories,
-};
