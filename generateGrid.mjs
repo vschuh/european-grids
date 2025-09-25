@@ -15,7 +15,7 @@ import {
     frenchClubCategories,
     statCategories,
     tournamentCategories
-} from './docs/categories.js';
+} from './docs/categories.mjs';
 
 
 const COUNTRIES = [
