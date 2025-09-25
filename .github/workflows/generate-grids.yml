@@ -2,9 +2,6 @@ name: Generate Daily Grids
 
 on:
   schedule:
-    # This runs the job every day at 8:00 AM UTC. You can change the time.
-    # The format is Minute, Hour, Day of Month, Month, Day of Week.
-    - cron: '0 0 * * *'
   workflow_dispatch:
     # This adds a button on the Actions tab to run the workflow manually.
 
