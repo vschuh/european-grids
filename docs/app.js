@@ -266,7 +266,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }
     
             gridData = await response.json();
-            loadGameState(gridData.serverSessionId, gridIdentifier); 
+            
+            const gridTitle = document.querySelector('header h1');
+            if (gridData.name) {
+                gridTitle.textContent = gridData.name;
+            } else {
+                
+                gridTitle.textContent = 'Euro Zones';
+            }
+
+            loadGameState(gridData.serverSessionId, identifier); 
+
     
             gridContainer.innerHTML = '';
             for (let i = 0; i < 4; i++) {

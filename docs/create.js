@@ -1,8 +1,8 @@
-import { nationalTeamCategories, italianClubCategories, dutchClubCategories, austrianClubCategories, belgianClubCategories, spanishClubCategories, czechClubCategories, frenchClubCategories, statCategories, tournamentCategories } from './categories.mjs';
+import { nationalTeamCategories, italianClubCategories, dutchClubCategories, austrianClubCategories, belgianClubCategories, spanishClubCategories, czechClubCategories, frenchClubCategories, statCategories, tournamentCategories } from './docs/categories.mjs';
 
 const API_BASE_URL = 'https://european-grids-api.onrender.com';
 
-// Group all categories for the modal
+
 const categoryGroups = {
     "National Teams": nationalTeamCategories,
     "Italian Clubs": italianClubCategories,
@@ -35,7 +35,7 @@ for (const groupName in categoryGroups) {
 }
 
 function showSubCategories(groupName) {
-    subCatTitle.textContent = `Select a ${groupName}`;
+    subCatTitle.textContent = `Select from ${groupName}`;
     subCategoriesList.innerHTML = '';
     const categories = categoryGroups[groupName];
     categories.sort((a, b) => a.label.localeCompare(b.label));
@@ -53,9 +53,9 @@ function showSubCategories(groupName) {
 
 function selectCategory(category) {
     selectedCategories[activeTarget] = category;
-    const button = document.querySelector(`.category-btn[data-target="${activeTarget}"]`);
-    button.textContent = category.label;
-    button.classList.add('selected');
+    const buttonCell = document.querySelector(`.creator-cell[data-target="${activeTarget}"]`);
+    buttonCell.textContent = category.label;
+    buttonCell.classList.add('selected');
     closeModal();
 }
 
@@ -70,8 +70,8 @@ function closeModal() {
     categoryModal.classList.add('modal-hidden');
 }
 
-document.querySelectorAll('.category-btn').forEach(btn => {
-    btn.addEventListener('click', () => openModal(btn.dataset.target));
+document.querySelectorAll('.creator-cell.header').forEach(cell => {
+    cell.addEventListener('click', () => openModal(cell.dataset.target));
 });
 
 backBtn.addEventListener('click', () => {
@@ -89,10 +89,10 @@ document.getElementById('create-btn').addEventListener('click', async () => {
         return;
     }
     const grid = {
+        name: document.getElementById('grid-name-input').value || 'Custom Grid',
         rows: [selectedCategories['row-1'], selectedCategories['row-2'], selectedCategories['row-3']],
         cols: [selectedCategories['col-1'], selectedCategories['col-2'], selectedCategories['col-3']]
     };
-
 
     try {
         const response = await fetch(`${API_BASE_URL}/api/grid`, {
@@ -103,9 +103,9 @@ document.getElementById('create-btn').addEventListener('click', async () => {
         const data = await response.json();
 
         if (data.id) {
-            const link = `${window.location.origin}/#${data.id}`;
+            const link = `${window.location.origin}/docs/index.html#${data.id}`;
             document.getElementById('share-link').value = link;
-            document.getElementById('result-container').style.display = 'block';
+            document.getElementById('result-container').classList.remove('modal-hidden');
         }
     } catch (error) {
         console.error("Failed to create grid:", error);

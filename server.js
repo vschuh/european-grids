@@ -158,28 +158,23 @@ app.get('/api/grid/:identifier', async (req, res) => {
     try {
         let result;
         if (isCustom) {
-            // Logic for custom grids is correct and remains the same
-            result = await pool.query('SELECT grid_data FROM grids WHERE id = $1 AND type = $2', [identifier, 'custom']);
+            
+            result = await pool.query('SELECT grid_data, name FROM grids WHERE id = $1 AND type = $2', [identifier, 'custom']);
         } else {
-            // NEW LOGIC: Fetch the grid for the CURRENT_DATE
+            
             result = await pool.query(
-                'SELECT grid_data FROM grids WHERE type = $1 AND grid_date = CURRENT_DATE',
+                'SELECT grid_data FROM grids WHERE type = $1 ORDER BY grid_date DESC LIMIT 1',
                 [identifier]
             );
-
-            // Fallback: If no grid is found for today, get the most recent one
-            if (result.rows.length === 0) {
-                console.log(`No grid found for today (${identifier}), fetching most recent as a fallback.`);
-                result = await pool.query(
-                    'SELECT grid_data FROM grids WHERE type = $1 ORDER BY grid_date DESC LIMIT 1',
-                    [identifier]
-                );
-            }
         }
 
         if (result.rows.length > 0) {
             const gridData = result.rows[0].grid_data;
             gridData.serverSessionId = serverSessionId;
+            
+            if (result.rows[0].name) {
+                gridData.name = result.rows[0].name;
+            }
             res.json(gridData);
         } else {
             res.status(404).json({ error: 'Grid not found.' });
@@ -189,6 +184,7 @@ app.get('/api/grid/:identifier', async (req, res) => {
         res.status(500).json({ error: 'Failed to fetch grid.' });
     }
 });
+
 
 
 app.get('/api/player-search', async (req, res) => {
@@ -300,28 +296,60 @@ app.post('/api/get-cell-answers', async (req, res) => {
     }
 });
 
+
 app.post('/api/grid', async (req, res) => {
-    const { rows, cols } = req.body;
+    const { rows, cols, name } = req.body;
     if (!rows || !cols || rows.length !== 3 || cols.length !== 3) {
         return res.status(400).json({ error: 'Invalid grid data provided.' });
     }
 
+    
     try {
         await pool.query("DELETE FROM grids WHERE type = 'custom' AND created_at < NOW() - INTERVAL '24 hours'");
-    } catch (cleanupError) {
-        console.error("Error during custom grid cleanup:", cleanupError);
-    }
+    } catch (cleanupError) { console.error("Error during custom grid cleanup:", cleanupError); }
 
     try {
         const gridData = JSON.stringify({ rows, cols });
+        
         const result = await pool.query(
-            "INSERT INTO grids (type, grid_data) VALUES ('custom', $1) RETURNING id",
-            [gridData]
+            "INSERT INTO grids (type, name, grid_data) VALUES ('custom', $1, $2) RETURNING id",
+            [name, gridData]
         );
         res.json({ id: result.rows[0].id });
     } catch (error) {
         console.error('Error saving custom grid:', error);
         res.status(500).json({ error: 'Failed to save custom grid.' });
+    }
+});
+app.get('/api/grid/:identifier', async (req, res) => {
+    const { identifier } = req.params;
+    const isCustom = !isNaN(identifier);
+
+    try {
+        let result;
+        if (isCustom) {
+            result = await pool.query('SELECT grid_data, name FROM grids WHERE id = $1 AND type = $2', [identifier, 'custom']);
+        } else {
+            result = await pool.query(
+                'SELECT grid_data FROM grids WHERE type = $1 ORDER BY grid_date DESC LIMIT 1',
+                [identifier]
+            );
+        }
+
+        if (result.rows.length > 0) {
+            const gridData = result.rows[0].grid_data;
+            gridData.serverSessionId = serverSessionId;
+            
+            if (result.rows[0].name) {
+                gridData.name = result.rows[0].name;
+            }
+            res.json(gridData);
+        } else {
+            res.status(404).json({ error: 'Grid not found.' });
+        }
+    } catch (error) {
+        console.error(`Error fetching grid for identifier ${identifier}:`, error);
+        res.status(500).json({ error: 'Failed to fetch grid.' });
     }
 });
 
