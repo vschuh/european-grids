@@ -14,7 +14,7 @@ const {
     frenchClubCategories,
     statCategories,
     tournamentCategories
-} = require('./categories');
+} = require('./docs/categories');
 const { count } = require('console');
 
 const COUNTRIES = [
