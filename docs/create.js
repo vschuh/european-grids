@@ -1,7 +1,19 @@
-import { nationalTeamCategories, italianClubCategories, dutchClubCategories, austrianClubCategories, belgianClubCategories, spanishClubCategories, czechClubCategories, frenchClubCategories, statCategories, tournamentCategories } from './categories.mjs';
+import { 
+    nationalTeamCategories, 
+    italianClubCategories, 
+    dutchClubCategories, 
+    austrianClubCategories, 
+    belgianClubCategories, 
+    spanishClubCategories, 
+    czechClubCategories, 
+    frenchClubCategories, 
+    statCategories, 
+    tournamentCategories,
+    yearCategories,        
+    nationalityCategories  
+} from './docs/categories.mjs';
 
 const API_BASE_URL = 'https://european-grids-api.onrender.com';
-
 
 const categoryGroups = {
     "National Teams": nationalTeamCategories,
@@ -13,74 +25,136 @@ const categoryGroups = {
     "Czech Clubs": czechClubCategories,
     "French Clubs": frenchClubCategories,
     "Tournaments": tournamentCategories,
-    "Player Stats": statCategories
+    "Player Stats": statCategories,
+    "Nationalities": nationalityCategories,
+    "Years": yearCategories
 };
 
 let selectedCategories = {};
-let activeTarget = null;
 
-const categoryModal = document.getElementById('category-modal');
-const mainCategoriesList = document.getElementById('main-categories');
-const subCategoriesList = document.getElementById('sub-categories');
-const level1 = document.getElementById('level-1');
-const level2 = document.getElementById('level-2');
-const backBtn = document.getElementById('back-to-main-cat');
-const subCatTitle = document.getElementById('sub-category-title');
+function createDropdown(targetCell) {
+    document.querySelector('.creator-dropdown')?.remove();
 
-for (const groupName in categoryGroups) {
-    const li = document.createElement('li');
-    li.textContent = groupName;
-    li.addEventListener('click', () => showSubCategories(groupName));
-    mainCategoriesList.appendChild(li);
+    const dropdown = document.createElement('div');
+    dropdown.className = 'creator-dropdown';
+
+    for (const groupName in categoryGroups) {
+        const groupTitle = document.createElement('div');
+        groupTitle.className = 'category-group';
+        groupTitle.textContent = groupName;
+        dropdown.appendChild(groupTitle);
+
+        const list = document.createElement('ul');
+        const categories = categoryGroups[groupName];
+        categories.sort((a, b) => a.label.localeCompare(b.label));
+
+        if (groupName === "Player Stats") {
+            const createStatLi = document.createElement('li');
+            createStatLi.textContent = "Create Custom Stat...";
+            createStatLi.style.color = "var(--accent-color)";
+            createStatLi.onclick = (e) => {
+                e.stopPropagation();
+                document.querySelector('.creator-dropdown')?.remove();
+                openStatCreator();
+            };
+            list.appendChild(createStatLi);
+        }
+        
+        categories.forEach(cat => {
+            const li = document.createElement('li');
+            li.textContent = cat.label;
+            li.onclick = () => selectCategory(targetCell, cat);
+            list.appendChild(li);
+        });
+        dropdown.appendChild(list);
+    }
+
+    document.body.appendChild(dropdown);
+    positionDropdown(targetCell, dropdown);
+
+    setTimeout(() => {
+        document.addEventListener('click', (e) => {
+            if (!dropdown.contains(e.target) && e.target !== targetCell) {
+                dropdown.remove();
+            }
+        }, { once: true });
+    }, 0);
 }
 
-function showSubCategories(groupName) {
-    subCatTitle.textContent = `Select from ${groupName}`;
-    subCategoriesList.innerHTML = '';
-    const categories = categoryGroups[groupName];
-    categories.sort((a, b) => a.label.localeCompare(b.label));
-
-    categories.forEach(cat => {
-        const li = document.createElement('li');
-        li.textContent = cat.label;
-        li.addEventListener('click', () => selectCategory(cat));
-        subCategoriesList.appendChild(li);
-    });
-
-    level1.classList.add('modal-hidden');
-    level2.classList.remove('modal-hidden');
+function positionDropdown(target, dropdown) {
+    const rect = target.getBoundingClientRect();
+    dropdown.style.left = `${rect.left}px`;
+    dropdown.style.top = `${rect.bottom + 5}px`;
+    dropdown.style.width = `${rect.width}px`;
 }
 
-function selectCategory(category) {
-    selectedCategories[activeTarget] = category;
-    const buttonCell = document.querySelector(`.creator-cell[data-target="${activeTarget}"]`);
-    buttonCell.textContent = category.label;
-    buttonCell.classList.add('selected');
-    closeModal();
+function selectCategory(targetCell, category) {
+    const targetId = targetCell.dataset.target;
+    selectedCategories[targetId] = category;
+    targetCell.textContent = category.label;
+    targetCell.classList.add('selected');
+    document.querySelector('.creator-dropdown')?.remove();
 }
 
-function openModal(target) {
-    activeTarget = target;
-    categoryModal.classList.remove('modal-hidden');
-    level2.classList.add('modal-hidden');
-    level1.classList.remove('modal-hidden');
+const statCreatorModal = document.getElementById('stat-creator-modal');
+const statTypeSelect = document.getElementById('stat-type-select');
+const statConditionSelect = document.getElementById('stat-condition-select');
+const statValueInput = document.getElementById('stat-value-input');
+
+const baseStats = {
+    'Home Runs': { type: 'seasonal_homeruns', unit: 'HR' },
+    'Hits': { type: 'seasonal_hits', unit: 'Hits' },
+    'Stolen Bases': { type: 'seasonal_sb', unit: 'SB' },
+    'Walks (BB)': { type: 'seasonal_bb', unit: 'BB' },
+    'Doubles': { type: 'seasonal_doubles', unit: 'Doubles' },
+    'Triples': { type: 'seasonal_triples', unit: 'Triples' },
+    'RBIs': { type: 'seasonal_rbi', unit: 'RBI' },
+    'Runs': { type: 'seasonal_runs', unit: 'Runs' },
+    'Pitching Ks': { type: 'seasonal_pitching_k', unit: 'Ks' },
+    'Innings Pitched': { type: 'seasonal_pitching_ip', unit: 'IP' },
+};
+
+for (const statName in baseStats) {
+    const option = document.createElement('option');
+    option.value = statName;
+    option.textContent = statName;
+    statTypeSelect.appendChild(option);
 }
 
-function closeModal() {
-    categoryModal.classList.add('modal-hidden');
+function openStatCreator() {
+    statCreatorModal.classList.remove('modal-hidden');
 }
+
+document.getElementById('add-stat-btn').addEventListener('click', () => {
+    const statName = statTypeSelect.value;
+    const condition = statConditionSelect.value;
+    const value = parseFloat(statValueInput.value);
+    const baseStat = baseStats[statName];
+
+    const conditionLabel = condition === 'min' ? '>=' : '<=';
+    const newLabel = `${conditionLabel} ${value} ${baseStat.unit} Season`;
+
+    const newStatCategory = {
+        label: newLabel,
+        type: baseStat.type, 
+        value: value
+    };
+
+    categoryGroups["Player Stats"].push(newStatCategory);
+    statCreatorModal.classList.add('modal-hidden');
+    alert("Custom stat added to the 'Player Stats' category!");
+});
+
+document.getElementById('cancel-stat-btn').addEventListener('click', () => {
+    statCreatorModal.classList.add('modal-hidden');
+});
+
 
 document.querySelectorAll('.creator-cell.header').forEach(cell => {
-    cell.addEventListener('click', () => openModal(cell.dataset.target));
-});
-
-backBtn.addEventListener('click', () => {
-    level2.classList.add('modal-hidden');
-    level1.classList.remove('modal-hidden');
-});
-
-categoryModal.addEventListener('click', (e) => {
-    if (e.target === categoryModal) closeModal();
+    cell.addEventListener('click', (e) => {
+        e.stopPropagation();
+        createDropdown(cell);
+    });
 });
 
 document.getElementById('create-btn').addEventListener('click', async () => {
@@ -103,7 +177,7 @@ document.getElementById('create-btn').addEventListener('click', async () => {
         const data = await response.json();
 
         if (data.id) {
-            const link = `${window.location.origin}/#${data.id}`;
+            const link = `${window.location.origin}/docs/index.html#${data.id}`;
             document.getElementById('share-link').value = link;
             document.getElementById('result-container').classList.remove('modal-hidden');
         }

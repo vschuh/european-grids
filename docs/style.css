@@ -560,3 +560,30 @@
     border-color: var(--primary-color);
     font-weight: 700;
 }
+.creator-dropdown {
+    position: absolute;
+    z-index: 100;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+    max-height: 300px;
+    overflow-y: auto;
+}
+.creator-dropdown ul {
+    list-style: none;
+}
+.creator-dropdown li {
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.creator-dropdown li:hover {
+    background-color: var(--primary-color);
+}
+.creator-dropdown .category-group {
+    font-weight: 700;
+    padding: 0.75rem 1rem;
+    color: var(--accent-color);
+    border-bottom: 1px solid var(--border-color);
+}

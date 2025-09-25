@@ -14,7 +14,9 @@ import {
     czechClubCategories,
     frenchClubCategories,
     statCategories,
-    tournamentCategories
+    tournamentCategories,
+    yearCategories,
+    nationalityCategories
 } from './docs/categories.mjs';
 
 
@@ -264,7 +266,6 @@ async function generateAndSaveGrid(gridName, pools, templates, pool, teamDataMap
 }
 
 
-// --- MAIN ORCHESTRATOR ---
 
 async function main() {
     console.log('--- Starting Grid Generation Script ---');
@@ -284,9 +285,6 @@ async function main() {
 
     const enrich = (catArray) => catArray.map(cat => ({ ...cat, value: cat.value.toString() }));
     
-    const yearCategories = [2021, 2022, 2023, 2024, 2025].map(year => ({ label: `Played in ${year} season`, type: 'year', value: year }));
-    const nationalityCodes = [ 'ARU', 'AUS', 'AUT', 'BEL', 'BUL', 'CAN', 'CRO', 'CUW', 'CZE', 'ESP', 'FRA', 'GBR', 'GER', 'GRE', 'HUN', 'IRL', 'ISR', 'ITA', 'JPN', 'LTU', 'NED', 'NOR', 'POL', 'POR', 'SLO', 'SUI', 'SVK', 'SWE', 'UKR', 'USA' ];
-    const nationalityCategories = nationalityCodes.map(code => ({ label: `Nationality: ${code}`, type: 'nationality', value: code }));
     
     const dailyTemplates = [
         { rows: ['T', 'T', 'R'], cols: ['N', 'S', 'S'] },
