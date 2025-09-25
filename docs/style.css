@@ -754,3 +754,42 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #20c997;
 }
+
+
+@media (max-width: 768px) {
+    #creator-container {
+        padding: 1rem;
+    }
+
+    #creator-grid {
+        gap: 5px;
+        max-width: 100%; 
+    }
+
+    .creator-cell.header {
+        font-size: 0.7rem;
+        padding: 0.25rem;
+    }
+
+    #main-category-container, 
+    #sub-category-container, 
+    #stat-creator-container {
+        width: 95vw;
+        max-height: 80vh; 
+        overflow-y: auto; 
+    }
+
+    #main-categories-list {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    #main-categories-list li {
+        padding: 0.75rem;
+    }
+
+    #sub-categories-list {
+      
+        max-height: calc(80vh - 150px); 
+    }
+}
