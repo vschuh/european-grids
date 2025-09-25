@@ -17,7 +17,6 @@ import {
     tournamentCategories
 } from './docs/categories.js';
 
-const { count } = require('console');
 
 const COUNTRIES = [
     { name: 'austria', federation_ids: [8], clubs: austrianClubCategories },
