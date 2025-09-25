@@ -651,12 +651,13 @@
     flex-direction: column;
     gap: 1rem;
 }
-#stat-creator-container select, #stat-creator-container input {
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 1rem;
-    background-color: var(--bg-dark);
-    color: var(--text-light);
+#category-container, #stat-creator-container {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: auto; 
+    min-width: 350px;
+    max-width: 500px;
     border: 1px solid var(--border-color);
-    border-radius: 6px;
+    transition: transform 0.2s ease-in-out; 
 }
