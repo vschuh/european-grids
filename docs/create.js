@@ -1,4 +1,4 @@
-import { nationalTeamCategories, italianClubCategories, dutchClubCategories, austrianClubCategories, belgianClubCategories, spanishClubCategories, czechClubCategories, frenchClubCategories, statCategories, tournamentCategories } from './docs/categories.mjs';
+import { nationalTeamCategories, italianClubCategories, dutchClubCategories, austrianClubCategories, belgianClubCategories, spanishClubCategories, czechClubCategories, frenchClubCategories, statCategories, tournamentCategories } from 'categories.mjs';
 
 const API_BASE_URL = 'https://european-grids-api.onrender.com';
 
