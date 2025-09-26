@@ -236,47 +236,70 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function setupGrid() {
-        
-    const hash = window.location.hash.substring(1);
-    const isCustomGrid = !isNaN(hash) && hash !== '';
-    const identifier = isCustomGrid ? `custom_${hash}` : (hash || 'daily');
-
+        const hash = window.location.hash.substring(1);
+        const isCustomGrid = !isNaN(hash) && hash !== '';
+        const identifier = isCustomGrid ? `custom_${hash}` : (hash || 'daily');
     
-    document.querySelectorAll('.nav-link').forEach(link => {
-        const linkIdentifier = link.getAttribute('href').substring(1);
-        link.classList.toggle('active', linkIdentifier === (isCustomGrid ? null : (hash || 'daily')));
-    });
-
-    try {
-        let fetchUrl;
-        if (isCustomGrid) {
+        
+        document.querySelectorAll('.nav-link').forEach(link => {
+            const linkIdentifier = link.getAttribute('href').substring(1);
+            link.classList.toggle('active', linkIdentifier === (isCustomGrid ? null : (hash || 'daily')));
+        });
+    
+        let gridData;
+    
+        try {
+            let fetchUrl;
+            if (isCustomGrid) {
+                
+                fetchUrl = `${API_BASE_URL}/api/grid/${hash}`;
+            } else {
+                
+                const today = new Date().toISOString().split('T')[0];
+                const gridType = hash || 'daily';
+                
+                fetchUrl = `grids/${gridType}_${today}.json`;
+            }
             
-            fetchUrl = `${API_BASE_URL}/api/grid/${hash}`;
-        } else {
-            
-            fetchUrl = `${API_BASE_URL}/api/grid/${identifier}`;
+            const response = await fetch(fetchUrl);
+            if (!response.ok) {
+                
+                if (response.status === 404 && !isCustomGrid) {
+                    throw new Error('Static grid file not found, trying API fallback.');
+                }
+                gridContainer.innerHTML = `<h2>Grid not found. It may have expired or the link is incorrect.</h2>`;
+                return;
+            }
+            gridData = await response.json();
+    
+        } catch (error) {
+            console.warn(error.message);
+            console.log('Attempting to fetch grid from the server API as a fallback...');
+
+            try {
+                const apiIdentifier = isCustomGrid ? hash : (hash || 'daily');
+                const apiResponse = await fetch(`${API_BASE_URL}/api/grid/${apiIdentifier}`);
+                if (!apiResponse.ok) {
+                    gridContainer.innerHTML = `<h2>Grid for today not available. Please check back later.</h2>`;
+                    return;
+                }
+                gridData = await apiResponse.json();
+            } catch (apiError) {
+                console.error('CRITICAL: Fallback API fetch also failed:', apiError);
+                gridContainer.innerHTML = `<h2>CRITICAL ERROR: Could not load grid.</h2>`;
+                return;
+            }
         }
-        
-        const response = await fetch(fetchUrl);
-        if (!response.ok) {
-            gridContainer.innerHTML = `<h2>Grid not found. It may have expired or the link is incorrect.</h2>`;
-            return;
-        }
-
-        gridData = await response.json();
-        
-        
-        loadGameState(gridData.serverSessionId, identifier); 
-
-        
-        const gridTitle = document.querySelector('header h1');
-        if (gridData.name) {
-            gridTitle.textContent = gridData.name;
-        } else {
-            gridTitle.textContent = 'Euro Zones';
-        }
-
-
+    
+        if (gridData) {
+            loadGameState(gridData.serverSessionId, identifier); 
+    
+            const gridTitle = document.querySelector('header h1');
+            if (gridData.name) {
+                gridTitle.textContent = gridData.name;
+            } else {
+                gridTitle.textContent = 'Euro Zones';
+            }
     
             gridContainer.innerHTML = '';
             for (let i = 0; i < 4; i++) {
@@ -301,10 +324,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
             renderGridFromState();
-            
-        } catch (error) {
-            console.error('CRITICAL: Failed to fetch and set up grid:', error);
-            gridContainer.innerHTML = `<h2>CRITICAL ERROR: Could not load grid.</h2>`;
         }
     }
 
