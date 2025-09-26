@@ -246,10 +246,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    let lastProcessedIdentifier = null;
+
     async function setupGrid() {
         const hash = window.location.hash.substring(1);
         const isCustomGrid = !isNaN(hash) && hash !== '';
         const identifier = isCustomGrid ? `custom_${hash}` : (hash || 'daily');
+
+        if (identifier === lastProcessedIdentifier) {
+            return;
+        }
+        lastProcessedIdentifier = identifier;
     
         
         document.querySelectorAll('.nav-link').forEach(link => {
@@ -341,7 +348,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
     window.addEventListener('hashchange', setupGrid);
-    setupGrid(); 
+    setupGrid();
 
     gridContainer.addEventListener('click', (event) => {
         const cell = event.target.closest('.grid-cell');
