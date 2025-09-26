@@ -87,8 +87,10 @@ const baseStats = {
     'Triples': { type: 'seasonal_triples', unit: 'Triples' },
     'RBIs': { type: 'seasonal_rbi', unit: 'RBI' },
     'Runs': { type: 'seasonal_runs', unit: 'Runs' },
+    'Hit by pitches': { type: 'seasonal_hbp', unit: 'HBP' },
     'Pitching Ks': { type: 'seasonal_pitching_k', unit: 'Ks' },
-    'Innings Pitched': { type: 'seasonal_pitching_ip', unit: 'IP' }
+    'Innings Pitched': { type: 'seasonal_pitching_ip', unit: 'IP' },
+    'Hit Batters': { type: 'seasonal_pitching_hbp', unit: 'HBP' }
 };
 
 for (const statName in baseStats) {

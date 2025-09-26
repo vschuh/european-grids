@@ -125,6 +125,10 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
                 text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps."OPS" ${getOperator(category)} $${startingIndex} AND ps.pa >= 10)`;
                 values = [parseFloat(category.value)];
                 break;
+            case 'seasonal_hbp':
+                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.hbp ${getOperator(category)} $${startingIndex})`;
+                values = [parseFloat(category.value)];
+                break;
             case 'seasonal_pitching_k':
                 text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_strikeout ${getOperator(category)} $${startingIndex})`;
                 values = [parseInt(category.value)];
@@ -139,6 +143,10 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
                 break;
             case 'seasonal_pitching_fip':
                 text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_fip ${getOperator(category)} $${startingIndex} AND ps.pitching_ip >= 30)`;
+                values = [parseFloat(category.value)];
+                break;
+            case 'seasonal_pitching_hbp':
+                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_hbp ${getOperator(category)} $${startingIndex})`;
                 values = [parseFloat(category.value)];
                 break;
             case 'position':
