@@ -252,48 +252,42 @@ document.addEventListener('DOMContentLoaded', () => {
         const hash = window.location.hash.substring(1);
         const isCustomGrid = !isNaN(hash) && hash !== '';
         const identifier = isCustomGrid ? `custom_${hash}` : (hash || 'daily');
-
+    
         if (identifier === lastProcessedIdentifier) {
             return;
         }
         lastProcessedIdentifier = identifier;
     
-        
         document.querySelectorAll('.nav-link').forEach(link => {
             const linkIdentifier = link.getAttribute('href').substring(1);
             link.classList.toggle('active', linkIdentifier === (isCustomGrid ? null : (hash || 'daily')));
         });
     
-        let gridData;
     
         try {
             let fetchUrl;
             if (isCustomGrid) {
-                
                 fetchUrl = `${API_BASE_URL}/api/grid/${hash}`;
             } else {
-                
                 const today = new Date().toISOString().split('T')[0];
                 const gridType = hash || 'daily';
-                
                 fetchUrl = `grids/${gridType}_${today}.json`;
             }
             
             const response = await fetch(fetchUrl);
             if (!response.ok) {
-                
                 if (response.status === 404 && !isCustomGrid) {
                     throw new Error('Static grid file not found, trying API fallback.');
                 }
                 gridContainer.innerHTML = `<h2>Grid not found. It may have expired or the link is incorrect.</h2>`;
                 return;
             }
+            
             gridData = await response.json();
     
         } catch (error) {
             console.warn(error.message);
             console.log('Attempting to fetch grid from the server API as a fallback...');
-
             try {
                 const apiIdentifier = isCustomGrid ? hash : (hash || 'daily');
                 const apiResponse = await fetch(`${API_BASE_URL}/api/grid/${apiIdentifier}`);
@@ -309,9 +303,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     
+        
         if (gridData) {
             loadGameState(gridData.serverSessionId, identifier); 
-    
+            
             const gridTitle = document.querySelector('header h1');
             if (gridData.name) {
                 gridTitle.textContent = gridData.name;
@@ -383,3 +378,5 @@ document.addEventListener('DOMContentLoaded', () => {
         gameOver(true);
     });
 });
+
+//Test
