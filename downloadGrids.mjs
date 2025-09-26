@@ -6,11 +6,11 @@ const { Pool } = pg;
 
 // Connects to your HOSTED AWS database
 const pool = new Pool({
-    user: process.env.AWS_DB_USER,
-    host: process.env.AWS_DB_HOST,
-    database: process.env.AWS_DB_DATABASE,
-    password: process.env.AWS_DB_PASSWORD,
-    port: process.env.AWS_DB_PORT,
+    user: process.env.DB_USER,
+    host: process.env.DB_HOST,
+    database: process.env.DB_DATABASE,
+    password: process.env.DB_PASSWORD,
+    port: process.env.DB_PORT,
     ssl: { require: true, rejectUnauthorized: false }
 });
 
