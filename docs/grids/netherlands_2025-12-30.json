@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "LF (min 1 PA)",
+      "value": "LF"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c0bd7be4-e313-1ce3-fd74-137717685f9f.png",
+      "label": "HCAW",
+      "value": "1264"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2771d01c-919e-c952-c89c-0b6d09fae4a0.png",
+      "label": "Red Lions",
+      "value": "2596"
+    },
+    {
+      "type": "tournament",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
+      "federation_id": 1
+    }
+  ]
+}

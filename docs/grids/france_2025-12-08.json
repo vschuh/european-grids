@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
+    },
+    {
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France Division 1 Féminine SB (FR)",
+      "value": "FRA-D1FSB",
+      "federation_id": 14
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c72832ba-21d5-2872-9a0c-2051b1cac815.png",
+      "label": "Cougars de Montigny-le-Bretonneux",
+      "value": "1716"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/ff7815ce-79aa-def3-c3c1-e7f2065bd8ec.jpg",
+      "label": "Les Rabbits de Clapiers-Jacou",
+      "value": "1514"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
+    }
+  ]
+}

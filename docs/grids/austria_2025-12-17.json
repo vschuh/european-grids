@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "C (min 1 PA)",
+      "value": "C"
+    },
+    {
+      "type": "seasonal_pitching_ip",
+      "label": "35 IP+ Season",
+      "value": 105
+    },
+    {
+      "type": "tournament",
+      "label": "Softball Bundesliga (AT)",
+      "value": "SB-BUNDESLIGA",
+      "federation_id": 8
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a8c54b1a-0050-5d18-a2f6-2059dde33487.png",
+      "label": "Dornbirn Indians",
+      "value": "1225"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/acfef0c2-5af4-e797-cb4b-550d6173bb34.png",
+      "label": "Hard Bulls",
+      "value": "1228"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
+    }
+  ]
+}

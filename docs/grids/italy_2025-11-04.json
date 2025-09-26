@@ -1,0 +1,39 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ef8ef30f-13d8-e1c8-7d06-5b8cb737fefa.jpg",
+      "label": "FIORENTINA BASEBALL  S.S.D. ARL",
+      "value": "349"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/c4bed522-05cc-8294-b525-96f7278aa24b.jpg",
+      "label": "POLISPORTIVA PADULE BASEBALL -  A.S.D.",
+      "value": "366"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "seasonal_doubles",
+      "label": "10+ Doubles Season",
+      "value": 10
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: ITA",
+      "value": "ITA"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    }
+  ]
+}

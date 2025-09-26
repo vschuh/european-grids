@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_rbi",
+      "label": "20+ RBI Season",
+      "value": 20
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c9a330c1-47a1-9f9a-0b51-c9d3b27c3822.png",
+      "label": "Brussels Kangaroos",
+      "value": "1477"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f7f05882-7810-d6a2-6bd7-06648e0a5fa8.png",
+      "label": "Beveren Lions",
+      "value": "1480"
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball Men D1 (BE)",
+      "value": "BD1",
+      "federation_id": 143
+    }
+  ]
+}

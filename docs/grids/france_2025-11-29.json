@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_ops",
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "value": 1
+    },
+    {
+      "type": "seasonal_bb",
+      "label": "10+ BB Season",
+      "value": 10
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France Division 1 Féminine SB (FR)",
+      "value": "FRA-D1FSB",
+      "federation_id": 14
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/229a41eb-e61a-7ab8-e29f-3100fc34a2ce.jpg",
+      "label": "Les Comanches de Saint-Raphaël",
+      "value": "1352"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c6f45770-2b34-bfcf-33e8-1909b6ef7bae.jpg",
+      "label": "Les Grizzlys de Grenoble",
+      "value": "1513"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
+    }
+  ]
+}

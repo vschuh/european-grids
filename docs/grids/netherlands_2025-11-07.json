@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_rbi",
+      "label": "20+ RBI Season",
+      "value": 20
+    },
+    {
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
+    },
+    {
+      "type": "tournament",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
+      "federation_id": 1
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/bdc06e75-2859-a6ba-74da-9a6e16207d72.png",
+      "label": "Twins Oosterhout",
+      "value": "1269"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/7650db8c-fd99-d90e-fe5e-20bd94dff0d3.jpg",
+      "label": "Quick Amersfoort Baseball",
+      "value": "1267"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
+    }
+  ]
+}

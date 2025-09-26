@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_rbi",
+      "label": "15+ RBI Season",
+      "value": 15
+    },
+    {
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France Division 1 Féminine SB (FR)",
+      "value": "FRA-D1FSB",
+      "federation_id": 14
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/229a41eb-e61a-7ab8-e29f-3100fc34a2ce.jpg",
+      "label": "Les Comanches de Saint-Raphaël",
+      "value": "1352"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/07067501-9be9-9d54-0187-4b5ce1bc028d.jpg",
+      "label": "Les Pharaons d`Evry-Courcouronnes",
+      "value": "1367"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_rbi",
+      "label": "15+ RBI Season",
+      "value": 15
+    },
+    {
+      "type": "seasonal_pitching_ip",
+      "label": "35 IP+ Season",
+      "value": 105
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/d3da29df-dd87-12e9-a63d-0c5cd519d09e.jpg",
+      "label": "A.S.D. SENAGO MILANO UNITED B.C.",
+      "value": "340"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/f5260415-3c46-7bca-9104-c3f5df539370.jpg",
+      "label": "A.S.D. PADOVA BAS. SOFT. CLUB",
+      "value": "574"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ]
+}

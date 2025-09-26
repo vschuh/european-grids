@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_pitching_ip",
+      "label": "35 IP+ Season",
+      "value": 105
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/e0cdbe49-5118-1882-4882-f10fd522553d.png",
+      "label": "SaBaT Praha",
+      "value": "2074"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
+      "label": "Tempo Praha",
+      "value": "2066"
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
+    }
+  ]
+}

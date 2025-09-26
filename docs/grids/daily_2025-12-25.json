@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
+    },
+    {
+      "type": "tournament",
+      "label": "Women's Softball European Championship (EU)",
+      "value": "EU-CHAMP-W-SB",
+      "federation_id": 278
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/679d2360-7aba-32ca-cb27-a1818b537f03.jpg",
+      "label": "POL. CASERTA BAS. E SOFT. ACADEMY A.S.D.",
+      "value": "394"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/38ed2f87-d5c1-caae-58f8-ddd93f46cd58.jpg",
+      "label": "Sparks Haarlem",
+      "value": "1272"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ISR.svg",
+      "label": "Israel NT",
+      "value": "33"
+    }
+  ]
+}

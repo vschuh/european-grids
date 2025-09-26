@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
+    },
+    {
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France D1 BB (FR)",
+      "value": "FRA-D1BB",
+      "federation_id": 14
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c72832ba-21d5-2872-9a0c-2051b1cac815.png",
+      "label": "Cougars de Montigny-le-Bretonneux",
+      "value": "1716"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/db8cb428-f188-8cd5-1354-4006e912897a.jpg",
+      "label": "Metz Cometz",
+      "value": "1712"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
+    }
+  ]
+}

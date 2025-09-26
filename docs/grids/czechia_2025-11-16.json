@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
+    },
+    {
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga BB (CZ)",
+      "value": "CZE-EXL",
+      "federation_id": 6
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d7f20b47-403a-b08b-4684-ca741b059bb8.png",
+      "label": "Blesk Jablonec",
+      "value": "2068"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2b4c017d-41ab-0f88-0c43-a63a6080e50e.png",
+      "label": "Technika Brno",
+      "value": "2065"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ]
+}

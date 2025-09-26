@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "LF (min 1 PA)",
+      "value": "LF"
+    },
+    {
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
+    },
+    {
+      "type": "tournament",
+      "label": "Hoofdklasse Softbal (NL)",
+      "value": "HOOFDKLASSE-SOFTBAL",
+      "federation_id": 1
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/10b0171f-e179-ac20-62b1-ccd30810ac42.png",
+      "label": "Amsterdam Pirates Softball",
+      "value": "1307"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/6a057191-c5a2-e328-e9dc-1599fb6d475c.jpg",
+      "label": "Olympia Haarlem",
+      "value": "1270"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
+    }
+  ]
+}

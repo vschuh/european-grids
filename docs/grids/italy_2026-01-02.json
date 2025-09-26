@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/bad78fec-0b23-cfca-8d0f-5fb34cfab49c.jpg",
+      "label": "A.S.D. BOLZANO BASEBALL CLUB",
+      "value": "347"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/5effd52b-7309-0dc5-b483-f973e3ede16e.jpg",
+      "label": "NEW BLACK PANTHERS A.S.D.",
+      "value": "345"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
+    },
+    {
+      "type": "seasonal_pitching_k",
+      "label": "35k+ Season",
+      "value": 35
+    },
+    {
+      "type": "tournament",
+      "label": "Women's Softball European Championship (EU)",
+      "value": "EU-CHAMP-W-SB",
+      "federation_id": 278
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/e0cdbe49-5118-1882-4882-f10fd522553d.png",
+      "label": "SaBaT Praha",
+      "value": "2074"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/dfb15b29-c3d5-e17b-16ce-fea5adbc7c83.png",
+      "label": "Stabroek Chicaboo`s",
+      "value": "1361"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
+    }
+  ]
+}

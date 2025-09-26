@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "LF (min 1 PA)",
+      "value": "LF"
+    },
+    {
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/b8e2f6c7-d381-cb53-2a82-a2f9e92daba9.jpg",
+      "label": "Beavers Chomutov",
+      "value": "1380"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/0df1b8ac-31d1-a8bd-dae5-db1b7c541b03.jpg",
+      "label": "Painbusters Most",
+      "value": "1878"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_rbi",
+      "label": "20+ RBI Season",
+      "value": 20
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/3a067f16-f428-d6b9-450d-7ff6132d4207.png",
+      "label": "Feldkirch Cardinals",
+      "value": "1229"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1943295d-9bf7-e5b8-291c-021b311137ba.png",
+      "label": "Vienna Metrostars",
+      "value": "1223"
+    },
+    {
+      "type": "tournament",
+      "label": "Softball Bundesliga (AT)",
+      "value": "SB-BUNDESLIGA",
+      "federation_id": 8
+    }
+  ]
+}

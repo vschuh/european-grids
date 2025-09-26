@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143"
+    },
+    {
+      "type": "seasonal_runs",
+      "label": "15+ Runs Season",
+      "value": 15
+    },
+    {
+      "type": "seasonal_pitching_k",
+      "label": "35k+ Season",
+      "value": 35
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d430c331-250b-b6d3-fc73-5e9348647ec8.png",
+      "label": "Mont-Saint-Guibert Phoenix",
+      "value": "1479"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/bd187a02-55c9-dbf3-3a25-668902bfcd8d.png",
+      "label": "Borgerhout Squirrels",
+      "value": "1473"
+    },
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup (EU)",
+      "value": "EU-EURO-CUP-W-SB",
+      "federation_id": 278
+    }
+  ]
+}

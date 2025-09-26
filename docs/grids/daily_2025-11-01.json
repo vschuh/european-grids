@@ -1,0 +1,39 @@
+{
+  "cols": [
+    {
+      "type": "nationality",
+      "label": "Nationality: CZE",
+      "value": "CZE"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/a7dffba8-f8b9-2a89-1883-b07093f1e5b4.png",
+      "label": "Kotlářka Praha",
+      "value": "2071"
+    },
+    {
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
+    }
+  ]
+}

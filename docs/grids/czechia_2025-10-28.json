@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_runs",
+      "label": "15+ Runs Season",
+      "value": 15
+    },
+    {
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg",
+      "label": "SK Joudrs Praha",
+      "value": "1348"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/e0cdbe49-5118-1882-4882-f10fd522553d.png",
+      "label": "SaBaT Praha",
+      "value": "2074"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ]
+}

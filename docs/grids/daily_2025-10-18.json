@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ad49a1e0-b481-4a1c-5780-9a7e8693fae9.png",
+      "label": "Traiskirchen Grasshoppers",
+      "value": "1226"
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 Women's European Softball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "C (min 1 PA)",
+      "value": "C"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8594b98-58ba-b8a6-5518-10de4ae89d9d.png",
+      "label": "Wr. Neustadt Diving Ducks",
+      "value": "1227"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
+    },
+    {
+      "type": "seasonal_rbi",
+      "label": "15+ RBI Season",
+      "value": 15
+    }
+  ]
+}

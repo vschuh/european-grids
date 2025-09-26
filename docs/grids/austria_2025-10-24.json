@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
+      "label": "Vienna Wanderers",
+      "value": "1222"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/acfef0c2-5af4-e797-cb4b-550d6173bb34.png",
+      "label": "Hard Bulls",
+      "value": "1228"
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball Bundesliga (AT)",
+      "value": "BB-BUNDESLIGA",
+      "federation_id": 8
+    }
+  ]
+}

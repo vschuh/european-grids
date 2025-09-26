@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_runs",
+      "label": "20+ Runs Season",
+      "value": 20
+    },
+    {
+      "type": "seasonal_runs",
+      "label": "15+ Runs Season",
+      "value": 15
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/12f8bd4d-1eda-665a-5e81-446fa51508e2.jpg",
+      "label": "A.S.D. CODOGNO BAS. `67",
+      "value": "359"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d444b5d6-e7b7-882c-c054-d868ea9d8977.jpg",
+      "label": "BRESCIA BASEBALL  SOFTBALL  ASS. SPORT. DIL.",
+      "value": "598"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ]
+}

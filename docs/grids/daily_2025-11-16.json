@@ -1,0 +1,39 @@
+{
+  "cols": [
+    {
+      "type": "nationality",
+      "label": "Nationality: ITA",
+      "value": "ITA"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/30444ddc-0622-85ef-a529-0a3ed3c7a7f9.png",
+      "label": "BASEBALL CLUB SETTIMO A.S.D.",
+      "value": "342"
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 European Baseball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-M-BB",
+      "federation_id": 278
+    }
+  ]
+}

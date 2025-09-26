@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/fa0ea240-a831-b605-ddb9-629eb0bd8e56.jpg",
+      "label": "OLD PARMA BASEBALL SOFTBALL CLUB A.S.D.",
+      "value": "407"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/679d2360-7aba-32ca-cb27-a1818b537f03.jpg",
+      "label": "POL. CASERTA BAS. E SOFT. ACADEMY A.S.D.",
+      "value": "394"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A1 Softball (IT)",
+      "value": "ITA-SERIE-A1-F-SB",
+      "federation_id": 2
+    }
+  ]
+}

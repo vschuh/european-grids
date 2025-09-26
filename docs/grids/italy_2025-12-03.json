@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "LF (min 1 PA)",
+      "value": "LF"
+    },
+    {
+      "type": "seasonal_ops",
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "value": 1
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A1 Softball (IT)",
+      "value": "ITA-SERIE-A1-F-SB",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a58c308c-b5b8-113c-a189-141d486177fd.jpg",
+      "label": "BOLLATE SOFTBALL 1969 A.S.D.",
+      "value": "387"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e9e5a7d2-0d88-430a-cbd6-bcebfd3a9c51.jpg",
+      "label": "COLLECCHIO B.C. A.S.D.",
+      "value": "334"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ]
+}

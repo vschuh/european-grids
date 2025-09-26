@@ -1,0 +1,39 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8d053c81-1566-2518-b6ab-ab8274584916.jpg",
+      "label": "ROEF!",
+      "value": "1271"
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball Men D1 (BE)",
+      "value": "BD1",
+      "federation_id": 143
+    },
+    {
+      "type": "seasonal_runs",
+      "label": "20+ Runs Season",
+      "value": 20
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/7784025f-15e3-9d72-ec0a-5cea1fb36fac.png",
+      "label": "Antwerp Eagles",
+      "value": "1474"
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: BEL",
+      "value": "BEL"
+    },
+    {
+      "type": "seasonal_doubles",
+      "label": "10+ Doubles Season",
+      "value": 10
+    }
+  ]
+}

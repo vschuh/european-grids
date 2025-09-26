@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/85cca109-97d3-b493-31cd-358a82fc7cb0.jpg",
+      "label": "A.S.D. BASEBALL TEAM VERONA",
+      "value": "344"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ba64cf79-fdcc-54a8-18e1-6bf30bb0f352.jpg",
+      "label": "A.S.D. JUNIOR ALPINA B. E S.",
+      "value": "568"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ]
+}

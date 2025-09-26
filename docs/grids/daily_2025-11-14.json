@@ -1,0 +1,39 @@
+{
+  "cols": [
+    {
+      "type": "nationality",
+      "label": "Nationality: NED",
+      "value": "NED"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c0bd7be4-e313-1ce3-fd74-137717685f9f.png",
+      "label": "HCAW",
+      "value": "1264"
+    },
+    {
+      "type": "position",
+      "label": "C (min 1 PA)",
+      "value": "C"
+    },
+    {
+      "type": "tournament",
+      "label": "Softball Ladies D1 (BE)",
+      "value": "SLD1",
+      "federation_id": 143
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_bb",
+      "label": "10+ BB Season",
+      "value": 10
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/20c6919f-5149-b21e-dc0e-34879b702f4f.png",
+      "label": "Braine Black Rickers",
+      "value": "1553"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d430c331-250b-b6d3-fc73-5e9348647ec8.png",
+      "label": "Mont-Saint-Guibert Phoenix",
+      "value": "1479"
+    },
+    {
+      "type": "tournament",
+      "label": "Softball Ladies D1 (BE)",
+      "value": "SLD1",
+      "federation_id": 143
+    }
+  ]
+}

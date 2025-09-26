@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
+    },
+    {
+      "type": "seasonal_runs",
+      "label": "20+ Runs Season",
+      "value": 20
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France D1 BB (FR)",
+      "value": "FRA-D1BB",
+      "federation_id": 14
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/54f7aee7-2dea-f878-4244-591fd30486d0.jpg",
+      "label": "Pirates de Béziers",
+      "value": "2309"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c72832ba-21d5-2872-9a0c-2051b1cac815.png",
+      "label": "Cougars de Montigny-le-Bretonneux",
+      "value": "1716"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
+    }
+  ]
+}

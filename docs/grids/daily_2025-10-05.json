@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
+    },
+    {
+      "type": "seasonal_ops",
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "value": 1
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 European Baseball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-M-BB",
+      "federation_id": 278
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/300b244a-687b-e9fe-dead-f938a53ecbed.jpg",
+      "label": "A.S.D. GRIZZLIES TORINO 48 B.S.C.",
+      "value": "337"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ca46571b-ff40-12b6-b72f-6adf48977f33.jpg",
+      "label": "CROCETTA BASEBALL CLUB A.S.D.",
+      "value": "374"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
+    }
+  ]
+}

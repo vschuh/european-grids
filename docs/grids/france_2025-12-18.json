@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "RF (min 1 PA)",
+      "value": "RF"
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France Division 1 Féminine SB (FR)",
+      "value": "FRA-D1FSB",
+      "federation_id": 14
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/77e94058-ac4d-db29-8258-7b792b239dbc.jpg",
+      "label": "Pessac Panthères",
+      "value": "1512"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c6f45770-2b34-bfcf-33e8-1909b6ef7bae.jpg",
+      "label": "Les Grizzlys de Grenoble",
+      "value": "1513"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
+    }
+  ]
+}

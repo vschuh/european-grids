@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/0df1b8ac-31d1-a8bd-dae5-db1b7c541b03.jpg",
+      "label": "Painbusters Most",
+      "value": "1878"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/271efdd4-78f7-782b-19e9-ca7fd00cfee2.png",
+      "label": "Hroši Brno",
+      "value": "2063"
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
+    }
+  ]
+}

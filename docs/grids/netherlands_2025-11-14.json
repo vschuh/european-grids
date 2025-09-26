@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">0.400 OBP Season (min. 10 pa)",
+      "value": 0.4
+    },
+    {
+      "type": "tournament",
+      "label": "Hoofdklasse Softbal (NL)",
+      "value": "HOOFDKLASSE-SOFTBAL",
+      "federation_id": 1
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e8944012-5266-bf86-740a-2b238e5d1d9a.jpg",
+      "label": "Onze Gezellen",
+      "value": "1273"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/6a057191-c5a2-e328-e9dc-1599fb6d475c.jpg",
+      "label": "Olympia Haarlem",
+      "value": "1270"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/5a29afcd-b476-f5ea-549e-0a6ca0bf8551.png",
+      "label": "Žraloci Ledenice",
+      "value": "1381"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/a7dffba8-f8b9-2a89-1883-b07093f1e5b4.png",
+      "label": "Kotlářka Praha",
+      "value": "2071"
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga BB (CZ)",
+      "value": "CZE-EXL",
+      "federation_id": 6
+    }
+  ]
+}

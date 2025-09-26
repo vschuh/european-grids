@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_avg",
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
+    },
+    {
+      "type": "seasonal_hits",
+      "label": "15+ Hit Season",
+      "value": 15
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France Division 1 Féminine SB (FR)",
+      "value": "FRA-D1FSB",
+      "federation_id": 14
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c6f45770-2b34-bfcf-33e8-1909b6ef7bae.jpg",
+      "label": "Les Grizzlys de Grenoble",
+      "value": "1513"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/ff7815ce-79aa-def3-c3c1-e7f2065bd8ec.jpg",
+      "label": "Les Rabbits de Clapiers-Jacou",
+      "value": "1514"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ad49a1e0-b481-4a1c-5780-9a7e8693fae9.png",
+      "label": "Traiskirchen Grasshoppers",
+      "value": "1226"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8594b98-58ba-b8a6-5518-10de4ae89d9d.png",
+      "label": "Wr. Neustadt Diving Ducks",
+      "value": "1227"
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball Bundesliga (AT)",
+      "value": "BB-BUNDESLIGA",
+      "federation_id": 8
+    }
+  ],
+  "rows": [
+    {
+      "type": "position",
+      "label": "LF (min 1 PA)",
+      "value": "LF"
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: USA",
+      "value": "USA"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    }
+  ]
+}

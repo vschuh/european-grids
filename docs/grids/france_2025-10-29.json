@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_pitching_ip",
+      "label": "35 IP+ Season",
+      "value": 105
+    },
+    {
+      "type": "seasonal_rbi",
+      "label": "20+ RBI Season",
+      "value": 20
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France D1 BB (FR)",
+      "value": "FRA-D1BB",
+      "federation_id": 14
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/51a28c3c-a894-cc4d-30ca-b8c705e5bd5d.png",
+      "label": "3M Barracudas Baseball Université Club",
+      "value": "1385"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/0050079f-5f9e-d803-8839-20992d9cfc18.jpg",
+      "label": "Les Boucaniers de La Rochelle",
+      "value": "1714"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
+    }
+  ]
+}

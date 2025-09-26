@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "RF (min 1 PA)",
+      "value": "RF"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8cea480b-e009-b08e-8d12-c3f85ab33091.jpg",
+      "label": "Hoofddorp Pioniers Softball",
+      "value": "1306"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/bdc06e75-2859-a6ba-74da-9a6e16207d72.png",
+      "label": "Twins Oosterhout",
+      "value": "1269"
+    },
+    {
+      "type": "tournament",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
+      "federation_id": 1
+    }
+  ]
+}

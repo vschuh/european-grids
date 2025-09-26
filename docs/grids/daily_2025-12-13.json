@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
+    },
+    {
+      "type": "seasonal_pitching_era",
+      "label": "<3.00 ERA Season (min. 10 ip)",
+      "value": 3
+    },
+    {
+      "type": "seasonal_hits",
+      "label": "15+ Hit Season",
+      "value": 15
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/acfef0c2-5af4-e797-cb4b-550d6173bb34.png",
+      "label": "Hard Bulls",
+      "value": "1228"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/3a067f16-f428-d6b9-450d-7ff6132d4207.png",
+      "label": "Feldkirch Cardinals",
+      "value": "1229"
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 European Baseball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-M-BB",
+      "federation_id": 278
+    }
+  ]
+}

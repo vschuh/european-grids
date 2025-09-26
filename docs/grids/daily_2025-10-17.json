@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    },
+    {
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/59758832-8743-44aa-9abc-c16b9bc847fc.jpg",
+      "label": "SARONNO SOFTBALL  E BASEBALL A.S.D.",
+      "value": "390"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/eae8ffb8-03e7-dda6-7424-3f299e45baf3.png",
+      "label": "Draci Brno",
+      "value": "1434"
+    },
+    {
+      "type": "tournament",
+      "label": "European Baseball Champions Cup (EU)",
+      "value": "EU-CHAMP-CUP-M-BB",
+      "federation_id": 278
+    }
+  ]
+}

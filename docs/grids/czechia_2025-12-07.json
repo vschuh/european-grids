@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d41ed6a3-9cb2-6629-99f3-c02c2861b626.png",
+      "label": "Eagles Praha",
+      "value": "2060"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/dd134970-0bd6-d5fd-0abc-a138fc7d6868.jpg",
+      "label": "Arrows Ostrava",
+      "value": "1605"
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga BB (CZ)",
+      "value": "CZE-EXL",
+      "federation_id": 6
+    }
+  ]
+}

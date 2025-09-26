@@ -1,0 +1,39 @@
+{
+  "cols": [
+    {
+      "type": "nationality",
+      "label": "Nationality: CZE",
+      "value": "CZE"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg",
+      "label": "SK Joudrs Praha",
+      "value": "1348"
+    },
+    {
+      "type": "position",
+      "label": "C (min 1 PA)",
+      "value": "C"
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
+    }
+  ]
+}

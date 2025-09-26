@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_hits",
+      "label": "15+ Hit Season",
+      "value": 15
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg",
+      "label": "SK Joudrs Praha",
+      "value": "1348"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/e0cdbe49-5118-1882-4882-f10fd522553d.png",
+      "label": "SaBaT Praha",
+      "value": "2074"
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga BB (CZ)",
+      "value": "CZE-EXL",
+      "federation_id": 6
+    }
+  ]
+}

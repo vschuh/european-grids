@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
+    },
+    {
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/12f8bd4d-1eda-665a-5e81-446fa51508e2.jpg",
+      "label": "A.S.D. CODOGNO BAS. `67",
+      "value": "359"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/2ce5351b-04a5-b1a2-0bcd-6f9ab3ee1977.jpg",
+      "label": "CERVIGNANO BASEBALL E SOFTBALL A.S.D.",
+      "value": "343"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ]
+}

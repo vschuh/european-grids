@@ -1,0 +1,39 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c9a330c1-47a1-9f9a-0b51-c9d3b27c3822.png",
+      "label": "Brussels Kangaroos",
+      "value": "1477"
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 Women's European Softball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/1aba8bb9-6d31-0d64-b3ec-fbb43cc12c68.png",
+      "label": "Merchtem Cats",
+      "value": "1476"
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: FRA",
+      "value": "FRA"
+    },
+    {
+      "type": "seasonal_runs",
+      "label": "15+ Runs Season",
+      "value": 15
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/1aba8bb9-6d31-0d64-b3ec-fbb43cc12c68.png",
+      "label": "Merchtem Cats",
+      "value": "1476"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d430c331-250b-b6d3-fc73-5e9348647ec8.png",
+      "label": "Mont-Saint-Guibert Phoenix",
+      "value": "1479"
+    },
+    {
+      "type": "tournament",
+      "label": "Softball Ladies D1 (BE)",
+      "value": "SLD1",
+      "federation_id": 143
+    }
+  ]
+}

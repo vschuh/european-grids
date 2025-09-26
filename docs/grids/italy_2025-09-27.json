@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "LF (min 1 PA)",
+      "value": "LF"
+    },
+    {
+      "type": "seasonal_doubles",
+      "label": "10+ Doubles Season",
+      "value": 10
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/85cca109-97d3-b493-31cd-358a82fc7cb0.jpg",
+      "label": "A.S.D. BASEBALL TEAM VERONA",
+      "value": "344"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/df0cbcf4-3d16-e1c8-110d-893c27d06fb3.jpg",
+      "label": "A.S.D. AVIGLIANA REBELS",
+      "value": "399"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_ops",
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "value": 1
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">0.400 OBP Season (min. 10 pa)",
+      "value": 0.4
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball Men D1 (BE)",
+      "value": "BD1",
+      "federation_id": 143
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a39fd931-7c83-ffd7-63b9-d21f6f0851d9.jpg",
+      "label": "Brasschaat Braves",
+      "value": "1414"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/20c6919f-5149-b21e-dc0e-34879b702f4f.png",
+      "label": "Braine Black Rickers",
+      "value": "1553"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143"
+    }
+  ]
+}

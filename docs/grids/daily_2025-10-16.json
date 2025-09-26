@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39"
+    },
+    {
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/867c2c87-a075-4811-3a29-71da8dafa1a7.svg",
+      "label": "1949 PARMA BASEBALL CLUB ASD",
+      "value": "333"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/12a3f46c-cb0a-0014-98f9-bff5d87890b5.jpg",
+      "label": "Club de Béisbol y Sóftbol Rivas",
+      "value": "1354"
+    },
+    {
+      "type": "tournament",
+      "label": "European Baseball Champions Cup (EU)",
+      "value": "EU-CHAMP-CUP-M-BB",
+      "federation_id": 278
+    }
+  ]
+}

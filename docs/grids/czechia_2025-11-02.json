@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_pitching_ip",
+      "label": "35 IP+ Season",
+      "value": 105
+    },
+    {
+      "type": "seasonal_sb",
+      "label": "10+ SB Season",
+      "value": 10
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga BB (CZ)",
+      "value": "CZE-EXL",
+      "federation_id": 6
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2b4c017d-41ab-0f88-0c43-a63a6080e50e.png",
+      "label": "Technika Brno",
+      "value": "2065"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/a7dffba8-f8b9-2a89-1883-b07093f1e5b4.png",
+      "label": "Kotlářka Praha",
+      "value": "2071"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ]
+}

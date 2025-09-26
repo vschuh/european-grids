@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_avg",
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/07067501-9be9-9d54-0187-4b5ce1bc028d.jpg",
+      "label": "Les Pharaons d`Evry-Courcouronnes",
+      "value": "1367"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/0050079f-5f9e-d803-8839-20992d9cfc18.jpg",
+      "label": "Les Boucaniers de La Rochelle",
+      "value": "1714"
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France D1 BB (FR)",
+      "value": "FRA-D1BB",
+      "federation_id": 14
+    }
+  ]
+}

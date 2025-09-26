@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "LF (min 1 PA)",
+      "value": "LF"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
+      "label": "Tempo Praha",
+      "value": "2066"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/fd9b041a-199b-c526-ab4b-dda6af4f1a8e.png",
+      "label": "Skokani Olomouc",
+      "value": "2075"
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
+    }
+  ]
+}

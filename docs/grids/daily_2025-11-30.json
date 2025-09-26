@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/dd134970-0bd6-d5fd-0abc-a138fc7d6868.jpg",
+      "label": "Arrows Ostrava",
+      "value": "1605"
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/fd9b041a-199b-c526-ab4b-dda6af4f1a8e.png",
+      "label": "Skokani Olomouc",
+      "value": "2075"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/SVK.svg",
+      "label": "Slovakia NT",
+      "value": "37"
+    },
+    {
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
+    }
+  ]
+}

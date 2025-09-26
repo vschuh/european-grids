@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_rbi",
+      "label": "15+ RBI Season",
+      "value": 15
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/24be214e-4c82-4f83-8fa3-56760624a195.jpg",
+      "label": "Quick Amersfoort Softball",
+      "value": "1308"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/372d62f7-f498-84c1-f10f-62831565fe7d.png",
+      "label": "Neptunus",
+      "value": "287"
+    },
+    {
+      "type": "tournament",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
+      "federation_id": 1
+    }
+  ]
+}

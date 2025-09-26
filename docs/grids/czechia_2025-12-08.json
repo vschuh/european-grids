@@ -1,0 +1,39 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/b8e2f6c7-d381-cb53-2a82-a2f9e92daba9.jpg",
+      "label": "Beavers Chomutov",
+      "value": "1380"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/e0cdbe49-5118-1882-4882-f10fd522553d.png",
+      "label": "SaBaT Praha",
+      "value": "2074"
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
+    }
+  ],
+  "rows": [
+    {
+      "type": "seasonal_pitching_k",
+      "label": "35k+ Season",
+      "value": 35
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: CZE",
+      "value": "CZE"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    }
+  ]
+}

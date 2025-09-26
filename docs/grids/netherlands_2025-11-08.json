@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
+    },
+    {
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
+    },
+    {
+      "type": "tournament",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
+      "federation_id": 1
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/b83640ca-dd8f-2651-7ed7-c1c324b9ef58.png",
+      "label": "RCH-Pinguïns",
+      "value": "1521"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/bdc06e75-2859-a6ba-74da-9a6e16207d72.png",
+      "label": "Twins Oosterhout",
+      "value": "1269"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/eae8ffb8-03e7-dda6-7424-3f299e45baf3.png",
+      "label": "Draci Brno",
+      "value": "1434"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/155cf629-9bb0-5fc6-2830-5ddd769d0d47.png",
+      "label": "Hvězdy Extraligy",
+      "value": "2210"
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
+    }
+  ]
+}

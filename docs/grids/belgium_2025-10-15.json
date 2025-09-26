@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_bb",
+      "label": "10+ BB Season",
+      "value": 10
+    },
+    {
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
+    },
+    {
+      "type": "tournament",
+      "label": "Softball Ladies D1 (BE)",
+      "value": "SLD1",
+      "federation_id": 143
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/20c6919f-5149-b21e-dc0e-34879b702f4f.png",
+      "label": "Braine Black Rickers",
+      "value": "1553"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/7784025f-15e3-9d72-ec0a-5cea1fb36fac.png",
+      "label": "Antwerp Eagles",
+      "value": "1474"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143"
+    }
+  ]
+}

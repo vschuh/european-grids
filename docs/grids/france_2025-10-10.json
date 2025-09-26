@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_avg",
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
+    },
+    {
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France D1 BB (FR)",
+      "value": "FRA-D1BB",
+      "federation_id": 14
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/db8cb428-f188-8cd5-1354-4006e912897a.jpg",
+      "label": "Metz Cometz",
+      "value": "1712"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/83428e38-f463-52e1-0571-48f71aa9fc31.jpg",
+      "label": "Stade Toulousain Baseball Softball",
+      "value": "1713"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
+    }
+  ]
+}

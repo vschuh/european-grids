@@ -1,0 +1,39 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d41ed6a3-9cb2-6629-99f3-c02c2861b626.png",
+      "label": "Eagles Praha",
+      "value": "2060"
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
+    },
+    {
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/e0cdbe49-5118-1882-4882-f10fd522553d.png",
+      "label": "SaBaT Praha",
+      "value": "2074"
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: SVK",
+      "value": "SVK"
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">0.400 OBP Season (min. 10 pa)",
+      "value": 0.4
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8cea480b-e009-b08e-8d12-c3f85ab33091.jpg",
+      "label": "Hoofddorp Pioniers Softball",
+      "value": "1306"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/fff73bb9-7f68-64a3-3973-8816620d097d.png",
+      "label": "UVV",
+      "value": "1825"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
+    }
+  ],
+  "rows": [
+    {
+      "type": "seasonal_avg",
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: NED",
+      "value": "NED"
+    }
+  ]
+}

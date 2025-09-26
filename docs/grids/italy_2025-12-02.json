@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_rbi",
+      "label": "20+ RBI Season",
+      "value": 20
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e1ef1319-7b78-4944-384c-2dec6a4dca49.jpg",
+      "label": "MILANO 1946 BASEBALL E SOFTBALL A. S. D.",
+      "value": "360"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8eb5acf-6b79-4503-b7ee-6fde7f0aee89.jpg",
+      "label": "A.S.D. B.S.C. GODO",
+      "value": "332"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_pitching_k",
+      "label": "50k+ Season",
+      "value": 50
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/8d59a636-d55a-b5f8-0f4c-c1c3978a1a8d.jpg",
+      "label": "LION`S  BASEBALL NETTUNO A.S.D.",
+      "value": "635"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e038a2d1-84e5-3d14-9e93-98eadfc2fb3f.jpg",
+      "label": "TORRE PEDRERA FALCONS BC ASS. SPORT. DILETT.",
+      "value": "381"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_sb",
+      "label": "10+ SB Season",
+      "value": 10
+    },
+    {
+      "type": "seasonal_pitching_k",
+      "label": "50k+ Season",
+      "value": 50
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga BB (CZ)",
+      "value": "CZE-EXL",
+      "federation_id": 6
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/155cf629-9bb0-5fc6-2830-5ddd769d0d47.png",
+      "label": "Hvězdy Extraligy",
+      "value": "2210"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d41ed6a3-9cb2-6629-99f3-c02c2861b626.png",
+      "label": "Eagles Praha",
+      "value": "2060"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ]
+}

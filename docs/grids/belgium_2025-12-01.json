@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f7f05882-7810-d6a2-6bd7-06648e0a5fa8.png",
+      "label": "Beveren Lions",
+      "value": "1480"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/fb648008-c9d5-2b15-fca8-960733ae99e3.png",
+      "label": "Deurne Spartans",
+      "value": "1377"
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball Men D1 (BE)",
+      "value": "BD1",
+      "federation_id": 143
+    }
+  ]
+}

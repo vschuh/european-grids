@@ -1,0 +1,39 @@
+{
+  "cols": [
+    {
+      "type": "nationality",
+      "label": "Nationality: NED",
+      "value": "NED"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/bd187a02-55c9-dbf3-3a25-668902bfcd8d.png",
+      "label": "Borgerhout Squirrels",
+      "value": "1473"
+    },
+    {
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
+    },
+    {
+      "type": "tournament",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
+      "federation_id": 1
+    }
+  ]
+}

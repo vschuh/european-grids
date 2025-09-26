@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/0050079f-5f9e-d803-8839-20992d9cfc18.jpg",
+      "label": "Les Boucaniers de La Rochelle",
+      "value": "1714"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/83428e38-f463-52e1-0571-48f71aa9fc31.jpg",
+      "label": "Stade Toulousain Baseball Softball",
+      "value": "1713"
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France D1 BB (FR)",
+      "value": "FRA-D1BB",
+      "federation_id": 14
+    }
+  ]
+}

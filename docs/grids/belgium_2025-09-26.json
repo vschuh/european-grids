@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c9a330c1-47a1-9f9a-0b51-c9d3b27c3822.png",
+      "label": "Brussels Kangaroos",
+      "value": "1477"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/450c82c4-90bc-6b3d-d1c7-88a8f4d96464.png",
+      "label": "Hoboken Pioneers",
+      "value": "1353"
+    },
+    {
+      "type": "tournament",
+      "label": "Softball Ladies D1 (BE)",
+      "value": "SLD1",
+      "federation_id": 143
+    }
+  ]
+}

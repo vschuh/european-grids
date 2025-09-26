@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
+    },
+    {
+      "type": "seasonal_runs",
+      "label": "20+ Runs Season",
+      "value": 20
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/85cca109-97d3-b493-31cd-358a82fc7cb0.jpg",
+      "label": "A.S.D. BASEBALL TEAM VERONA",
+      "value": "344"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/5d9a261e-f8a2-4672-e66f-8fb7a851095d.jpg",
+      "label": "BOLOGNA ATHLETICS A.S.D.",
+      "value": "348"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_pitching_k",
+      "label": "50k+ Season",
+      "value": 50
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/1ad273ca-49c9-52b7-3330-5aae326481f9.png",
+      "label": "Třebíč Nuclears",
+      "value": "2067"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/0df1b8ac-31d1-a8bd-dae5-db1b7c541b03.jpg",
+      "label": "Painbusters Most",
+      "value": "1878"
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_hits",
+      "label": "15+ Hit Season",
+      "value": 15
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">0.400 OBP Season (min. 10 pa)",
+      "value": 0.4
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/df0cbcf4-3d16-e1c8-110d-893c27d06fb3.jpg",
+      "label": "A.S.D. AVIGLIANA REBELS",
+      "value": "399"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/b5fd66eb-b823-6714-12d7-69aa802dcc59.png",
+      "label": "A.S.D. LONGBRIDGE 2000 BASEBALL CLUB",
+      "value": "351"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ]
+}

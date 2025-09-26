@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
+    },
+    {
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A1 Softball (IT)",
+      "value": "ITA-SERIE-A1-F-SB",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ef8ef30f-13d8-e1c8-7d06-5b8cb737fefa.jpg",
+      "label": "FIORENTINA BASEBALL  S.S.D. ARL",
+      "value": "349"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/59758832-8743-44aa-9abc-c16b9bc847fc.jpg",
+      "label": "SARONNO SOFTBALL  E BASEBALL A.S.D.",
+      "value": "390"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ]
+}

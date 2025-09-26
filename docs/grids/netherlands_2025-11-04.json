@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_doubles",
+      "label": "10+ Doubles Season",
+      "value": 10
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/6a057191-c5a2-e328-e9dc-1599fb6d475c.jpg",
+      "label": "Olympia Haarlem",
+      "value": "1270"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/934e9ec8-bec3-79bd-a8a8-b040f4161d55.png",
+      "label": "Kinheim",
+      "value": "1263"
+    },
+    {
+      "type": "tournament",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
+      "federation_id": 1
+    }
+  ]
+}

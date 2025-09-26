@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_ops",
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "value": 1
+    },
+    {
+      "type": "seasonal_rbi",
+      "label": "15+ RBI Season",
+      "value": 15
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 European Baseball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-M-BB",
+      "federation_id": 278
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/51a28c3c-a894-cc4d-30ca-b8c705e5bd5d.png",
+      "label": "3M Barracudas Baseball Université Club",
+      "value": "1385"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/bd187a02-55c9-dbf3-3a25-668902bfcd8d.png",
+      "label": "Borgerhout Squirrels",
+      "value": "1473"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/GER.svg",
+      "label": "Germany NT",
+      "value": "18"
+    }
+  ]
+}

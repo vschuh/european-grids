@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
+    },
+    {
+      "type": "seasonal_pitching_k",
+      "label": "50k+ Season",
+      "value": 50
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/7e3e8f32-6d68-f75a-dbfe-7cf17095c499.jpg",
+      "label": "OLTRETORRENTE BASEBALL CLUB A.S.D.",
+      "value": "353"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f3233b20-510f-5d48-d8d4-964b62bb3ae3.png",
+      "label": "BASE BALL CLUB GROSSETO ASD",
+      "value": "357"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ]
+}

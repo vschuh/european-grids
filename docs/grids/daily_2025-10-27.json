@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_avg",
+      "label": ">0.400 OBP Season (min. 10 pa)",
+      "value": 0.4
+    },
+    {
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
+    },
+    {
+      "type": "tournament",
+      "label": "European Baseball Champions Cup (EU)",
+      "value": "EU-CHAMP-CUP-M-BB",
+      "federation_id": 278
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/30da3795-69a2-d2ec-66bf-7059cd80b093.jpg",
+      "label": "Astros Valencia",
+      "value": "1433"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/fff73bb9-7f68-64a3-3973-8816620d097d.png",
+      "label": "UVV",
+      "value": "1825"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ]
+}

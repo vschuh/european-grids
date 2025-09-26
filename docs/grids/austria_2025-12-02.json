@@ -1,0 +1,39 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d84201d1-024c-068e-a445-3ebb5216a8c4.png",
+      "label": "Schwechat Blue Bats",
+      "value": "1261"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a8c54b1a-0050-5d18-a2f6-2059dde33487.png",
+      "label": "Dornbirn Indians",
+      "value": "1225"
+    },
+    {
+      "type": "tournament",
+      "label": "Softball Bundesliga (AT)",
+      "value": "SB-BUNDESLIGA",
+      "federation_id": 8
+    }
+  ],
+  "rows": [
+    {
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: AUT",
+      "value": "AUT"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    }
+  ]
+}

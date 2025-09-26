@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_hits",
+      "label": "15+ Hit Season",
+      "value": 15
+    },
+    {
+      "type": "seasonal_runs",
+      "label": "20+ Runs Season",
+      "value": 20
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball Men D1 (BE)",
+      "value": "BD1",
+      "federation_id": 143
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/7784025f-15e3-9d72-ec0a-5cea1fb36fac.png",
+      "label": "Antwerp Eagles",
+      "value": "1474"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/bd187a02-55c9-dbf3-3a25-668902bfcd8d.png",
+      "label": "Borgerhout Squirrels",
+      "value": "1473"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143"
+    }
+  ]
+}

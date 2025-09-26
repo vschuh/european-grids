@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
+    },
+    {
+      "type": "seasonal_runs",
+      "label": "15+ Runs Season",
+      "value": 15
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball Bundesliga (AT)",
+      "value": "BB-BUNDESLIGA",
+      "federation_id": 8
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d84201d1-024c-068e-a445-3ebb5216a8c4.png",
+      "label": "Schwechat Blue Bats",
+      "value": "1261"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png",
+      "label": "Attnang-Puchheim Athletics",
+      "value": "1224"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
+    }
+  ]
+}

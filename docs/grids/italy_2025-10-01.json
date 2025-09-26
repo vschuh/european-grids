@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_hits",
+      "label": "15+ Hit Season",
+      "value": 15
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/df0cbcf4-3d16-e1c8-110d-893c27d06fb3.jpg",
+      "label": "A.S.D. AVIGLIANA REBELS",
+      "value": "399"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/6ab27046-f495-c765-4070-a15fd6ef9dd5.jpg",
+      "label": "WHITE SOX BUTTRIO BASEBALL A.S.D.",
+      "value": "375"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A1 Softball (IT)",
+      "value": "ITA-SERIE-A1-F-SB",
+      "federation_id": 2
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/8d59a636-d55a-b5f8-0f4c-c1c3978a1a8d.jpg",
+      "label": "LION`S  BASEBALL NETTUNO A.S.D.",
+      "value": "635"
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 European Baseball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_ops",
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "value": 1
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/fc527c4a-a05c-5fe4-bb98-7a1f8b830033.jpg",
+      "label": "A.S.D. ACADEMY OF NETTUNO B.C.",
+      "value": "386"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    },
+    {
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
+    }
+  ]
+}

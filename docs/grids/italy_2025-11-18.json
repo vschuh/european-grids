@@ -1,0 +1,39 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8fb617c6-4e1c-c448-01ff-5719cc33dd8a.jpg",
+      "label": "LANCERS BASEBALL CLUB A.S.D.",
+      "value": "356"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f3233b20-510f-5d48-d8d4-964b62bb3ae3.png",
+      "label": "BASE BALL CLUB GROSSETO ASD",
+      "value": "357"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "seasonal_avg",
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: ITA",
+      "value": "ITA"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    }
+  ]
+}

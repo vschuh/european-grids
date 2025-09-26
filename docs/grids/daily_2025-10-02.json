@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/867c2c87-a075-4811-3a29-71da8dafa1a7.svg",
+      "label": "1949 PARMA BASEBALL CLUB ASD",
+      "value": "333"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    },
+    {
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e9e5a7d2-0d88-430a-cbd6-bcebfd3a9c51.jpg",
+      "label": "COLLECCHIO B.C. A.S.D.",
+      "value": "334"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    },
+    {
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
+    }
+  ]
+}

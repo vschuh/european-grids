@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/10b0171f-e179-ac20-62b1-ccd30810ac42.png",
+      "label": "Amsterdam Pirates Softball",
+      "value": "1307"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/934e9ec8-bec3-79bd-a8a8-b040f4161d55.png",
+      "label": "Kinheim",
+      "value": "1263"
+    },
+    {
+      "type": "tournament",
+      "label": "Hoofdklasse Softbal (NL)",
+      "value": "HOOFDKLASSE-SOFTBAL",
+      "federation_id": 1
+    }
+  ]
+}

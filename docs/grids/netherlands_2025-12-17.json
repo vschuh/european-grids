@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/fa14f1a1-1762-f7f2-6a3d-84fc21f97071.png",
+      "label": "Hoofddorp Pioniers Baseball",
+      "value": "1265"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/934e9ec8-bec3-79bd-a8a8-b040f4161d55.png",
+      "label": "Kinheim",
+      "value": "1263"
+    },
+    {
+      "type": "tournament",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
+      "federation_id": 1
+    }
+  ]
+}

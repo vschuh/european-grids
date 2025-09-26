@@ -1,0 +1,39 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
+      "label": "Tempo Praha",
+      "value": "2066"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/271efdd4-78f7-782b-19e9-ca7fd00cfee2.png",
+      "label": "Hroši Brno",
+      "value": "2063"
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga BB (CZ)",
+      "value": "CZE-EXL",
+      "federation_id": 6
+    }
+  ],
+  "rows": [
+    {
+      "type": "seasonal_doubles",
+      "label": "10+ Doubles Season",
+      "value": 10
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: USA",
+      "value": "USA"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    }
+  ]
+}

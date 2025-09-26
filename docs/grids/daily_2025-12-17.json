@@ -1,0 +1,40 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_rbi",
+      "label": "15+ RBI Season",
+      "value": 15
+    },
+    {
+      "type": "seasonal_runs",
+      "label": "20+ Runs Season",
+      "value": 20
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 European Baseball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-M-BB",
+      "federation_id": 278
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/a7dffba8-f8b9-2a89-1883-b07093f1e5b4.png",
+      "label": "Kotlářka Praha",
+      "value": "2071"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/b5fd66eb-b823-6714-12d7-69aa802dcc59.png",
+      "label": "A.S.D. LONGBRIDGE 2000 BASEBALL CLUB",
+      "value": "351"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/IRL.svg",
+      "label": "Ireland NT",
+      "value": "21"
+    }
+  ]
+}

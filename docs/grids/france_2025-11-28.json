@@ -1,0 +1,39 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/e20fa02b-5959-2c18-2def-c682eb6a540f.jpg",
+      "label": "Les Lions de Savigny-sur-Orge",
+      "value": "1715"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/77e94058-ac4d-db29-8258-7b792b239dbc.jpg",
+      "label": "Pessac Panthères",
+      "value": "1512"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
+    }
+  ],
+  "rows": [
+    {
+      "type": "position",
+      "label": "C (min 1 PA)",
+      "value": "C"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: FRA",
+      "value": "FRA"
+    }
+  ]
+}

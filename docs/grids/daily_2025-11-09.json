@@ -1,0 +1,39 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/7784025f-15e3-9d72-ec0a-5cea1fb36fac.png",
+      "label": "Antwerp Eagles",
+      "value": "1474"
+    },
+    {
+      "type": "tournament",
+      "label": "Women's Softball European Premiere Cup (EU)",
+      "value": "EU-EURO-PREM-CUP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f7f05882-7810-d6a2-6bd7-06648e0a5fa8.png",
+      "label": "Beveren Lions",
+      "value": "1480"
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: BEL",
+      "value": "BEL"
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
+    }
+  ]
+}
