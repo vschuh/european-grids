@@ -2,7 +2,7 @@ import 'dotenv/config';
 import pg from 'pg';
 const { Pool } = pg;
 
-
+// Local DB config (reads from .env)
 const localPool = new Pool({
     user: process.env.DB_USER,
     host: process.env.DB_HOST,
@@ -11,7 +11,7 @@ const localPool = new Pool({
     port: process.env.DB_PORT,
 });
 
-
+// Hosted DB config (reads from different .env variables)
 const hostedPool = new Pool({
     user: process.env.AWS_DB_USER,
     host: process.env.AWS_DB_HOST,
@@ -22,8 +22,10 @@ const hostedPool = new Pool({
 });
 
 async function upload() {
-    console.log('Fetching recent grids from local DB...');
-    const result = await localPool.query("SELECT * FROM grids WHERE type = 'daily' AND grid_date >= CURRENT_DATE");
+    console.log('Fetching all recent grids (daily and country) from local DB...');
+    
+    // MODIFIED: Removed "WHERE type = 'daily'" to get ALL grid types
+    const result = await localPool.query("SELECT * FROM grids WHERE grid_date >= CURRENT_DATE");
     const grids = result.rows;
 
     if (grids.length === 0) {
@@ -40,8 +42,9 @@ async function upload() {
                 VALUES ($1, $2, $3)
                 ON CONFLICT (type, grid_date) DO NOTHING;
             `;
+            // Use grid.type to upload the correct type ('daily', 'austria', etc.)
             await hostedPool.query(query, [grid.type, grid.grid_date, grid.grid_data]);
-            console.log(`  -> Uploaded grid for ${grid.grid_date.toISOString().split('T')[0]}`);
+            console.log(`  -> Uploaded ${grid.type} grid for ${grid.grid_date.toISOString().split('T')[0]}`);
         } catch (error) {
             console.error(`  -> FAILED to upload grid for ${grid.grid_date}:`, error.message);
         }
