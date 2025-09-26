@@ -190,36 +190,47 @@ document.addEventListener('DOMContentLoaded', () => {
     async function handleGuess(cellElement, player) {
         if (!player || !player.id || isGameOver) return;
     
+        
+        if (!gridData || !gridData.rows || !gridData.cols) {
+            console.error("CRITICAL: Grid data is incomplete or missing.", gridData);
+            alert("A critical error occurred: Grid data is missing. Cannot validate guess.");
+            return;
+        }
+        
+    
         const playerName = player.name.trim();
         const playerId = player.id;
         closeSearchModal();
     
-        
         if (gameState.guessedPlayerIds.includes(playerId)) {
             alert(`${playerName} is already on the grid.`);
             return;
         }
     
-        
         gameState.guesses--;
     
         const { row, col } = cellElement.dataset;
         const rowCategory = gridData.rows[row];
         const colCategory = gridData.cols[col];
+        
+        if (!rowCategory || !colCategory) {
+            console.error("CRITICAL: A specific row or column category is missing.", { rowCategory, colCategory });
+            alert("A critical error occurred: Category data is missing. Cannot validate guess.");
+            gameState.guesses++; 
+            return;
+        }
     
         try {
             const rowResponse = await fetch(`${API_BASE_URL}/api/validate?playerName=${encodeURIComponent(playerName)}&playerId=${player.id}&categoryType=${rowCategory.type}&categoryValue=${encodeURIComponent(rowCategory.value)}`);
             const rowResult = await rowResponse.json();
             const colResponse = await fetch(`${API_BASE_URL}/api/validate?playerName=${encodeURIComponent(playerName)}&playerId=${player.id}&categoryType=${colCategory.type}&categoryValue=${encodeURIComponent(colCategory.value)}`);
             const colResult = await colResponse.json();
+            
             if (rowResult.isValid && colResult.isValid) {
-                
                 const cellId = `${row}-${col}`;
-                gameState.correctCells[cellId] = { name: playerName }; 
-                //gameState.correctCells[cellId] = { name: playerName, image: rowResult.player.image };
+                gameState.correctCells[cellId] = { name: playerName };
                 gameState.guessedPlayerIds.push(playerId);
             } else {
-                
                 cellElement.classList.add('incorrect-shake');
                 setTimeout(() => cellElement.classList.remove('incorrect-shake'), 300);
             }
