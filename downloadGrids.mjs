@@ -4,7 +4,7 @@ import path from 'path';
 import pg from 'pg';
 const { Pool } = pg;
 
-// Connects to your HOSTED AWS database
+// Connects to your HOSTED AWS database using the CORRECT DB_ variables
 const pool = new Pool({
     user: process.env.DB_USER,
     host: process.env.DB_HOST,
