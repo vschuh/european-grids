@@ -25,13 +25,16 @@ document.addEventListener('DOMContentLoaded', () => {
     function loadGameState(newSessionId, identifier) {
         const savedStateJSON = localStorage.getItem(`gridGameState_${identifier}`);
         const savedState = savedStateJSON ? JSON.parse(savedStateJSON) : null;
+        const today = new Date().toISOString().split('T')[0];
     
-        if (!savedState || savedState.serverSessionId !== newSessionId) {
+        
+        if (!savedState || savedState.serverSessionId !== newSessionId || savedState.date !== today) {
             gameState = {
                 guesses: 9,
                 guessedPlayerIds: [],
                 correctCells: {},
-                serverSessionId: newSessionId
+                serverSessionId: newSessionId,
+                date: today 
             };
         } else {
             gameState = savedState;
@@ -44,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function saveGameState() {
         const identifier = window.location.hash.substring(1) || 'daily';
+        gameState.date = new Date().toISOString().split('T')[0];
         localStorage.setItem(`gridGameState_${identifier}`, JSON.stringify(gameState));
     }
     
