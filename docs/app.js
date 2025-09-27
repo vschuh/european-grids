@@ -16,7 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let gameState = {};
     let isGameOver = false;
     let activeCell = null;
-
+    (function() {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.pathname) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
     
     function getCountryCode() {
         return window.location.hash.substring(1) || 'daily';

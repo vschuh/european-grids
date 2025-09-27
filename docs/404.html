@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euro Zones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4V34B31Z"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3P4V34B31Z');
+    </script>
+    <script>
+        sessionStorage.redirect = location.pathname;
+      </script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Euro Zones</h1>
+        </header>
+    
+        <nav id="country-nav">
+            <a href="/daily" class="nav-link active" style="color: #20c997;">Daily</a>
+            <a href="/austria" class="nav-link">AUT</a>
+            <a href="/netherlands" class="nav-link">NED</a>
+            <a href="/belgium" class="nav-link">BEL</a>
+            <a href="/italy" class="nav-link">ITA</a>
+            <a href="/czechia" class="nav-link">CZE</a>
+            <a href="/france" class="nav-link">FRA</a>
+            <a href="/creator" class="nav-link create-link">Create Your Own</a>
+        </nav>
+        
+        <main>
+            <div id="grid-container"></div>
+        </main>
+        
+        <div id="controls">
+            <button id="give-up-btn">Give Up</button>
+            <div id="lives-container">
+                <span>Guesses:</span>
+                <span id="lives-count">9</span>
+            </div>
+        </div>
+    </div>
+    
+    <div id="search-modal" class="modal modal-hidden">
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search for a player...">
+            <button id="close-modal-btn">X</button>
+            <ul id="search-results"></ul>
+        </div>
+    </div>
+
+    <div id="give-up-modal" class="modal modal-hidden">
+        <div id="give-up-container">
+            <h3>Are you sure?</h3>
+            <p>This will end the current game and reveal the eligible players for each cell.</p>
+            <div class="modal-buttons">
+                <button id="confirm-give-up-btn" class="btn-danger">Yes, Give Up</button>
+                <button id="cancel-give-up-btn" class="btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+    <footer id="page-footer">
+        <p>&copy; 2025 Valentin Schuh</p>
+        <p>This site is a fan project and is not affiliated with any official sports league.</p>
+        <p><a href="contact">Contact</a></p>
+    </footer>
+    </body>
+</html>
