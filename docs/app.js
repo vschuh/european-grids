@@ -265,8 +265,9 @@ document.addEventListener('DOMContentLoaded', () => {
         lastProcessedIdentifier = identifier;
     
         document.querySelectorAll('.nav-link').forEach(link => {
-            const linkIdentifier = link.getAttribute('href').substring(1);
-            link.classList.toggle('active', linkIdentifier === (isCustomGrid ? null : (hash || 'daily')));
+            
+            const linkPath = link.getAttribute('href'); 
+            link.classList.toggle('active', linkPath === `/${identifier}`);
         });
     
     
@@ -346,15 +347,31 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-
-    function router() {
-        const path = window.location.pathname; 
-        const identifier = path.substring(1); 
-        setupGrid(identifier); 
-    }
     
-    window.addEventListener('hashchange', setupGrid);
-    setupGrid();
+    
+    // Handles routing and updates the grid based on the URL path
+    function router() {
+        const path = window.location.pathname;
+        const identifier = path === '/' ? 'daily' : path.substring(1);
+        setupGrid(identifier);
+    }
+
+    // Listen for clicks on nav links to handle navigation without a page reload
+    document.getElementById('country-nav').addEventListener('click', (e) => {
+        // Only act on the nav links, not the "Create" link
+        if (e.target.matches('.nav-link') && !e.target.matches('.create-link')) {
+            e.preventDefault(); // Prevent the browser from loading a new page
+            const href = e.target.getAttribute('href');
+            history.pushState({}, '', href); // Update the URL in the address bar
+            router(); // Load the new grid
+        }
+    });
+
+    // Handle the browser's back and forward buttons
+    window.addEventListener('popstate', router);
+
+    // Initial load for the first visit
+    router();
 
     gridContainer.addEventListener('click', (event) => {
         const cell = event.target.closest('.grid-cell');
