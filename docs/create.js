@@ -176,7 +176,7 @@ document.getElementById('create-btn').addEventListener('click', async () => {
         const data = await response.json();
 
         if (data.id) {
-            const link = `https://www.euro-zones.com/#${data.id}`;
+            const link = `https://www.euro-zones.com/${data.id}`;
             document.getElementById('share-link').value = link;
             document.getElementById('result-container').classList.remove('modal-hidden');
         }
