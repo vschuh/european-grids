@@ -1,8 +1,5 @@
 require('dotenv').config();
 // --- START OF DEBUGGING CODE ---
-const fs = require('fs');
-const path = require('path');
-
 console.log('--- STARTING SERVER & DEBUGGING FILE PATHS ---');
 console.log(`Current Working Directory (cwd): ${process.cwd()}`);
 console.log(`Script Directory (__dirname): ${__dirname}`);
