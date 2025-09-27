@@ -1,4 +1,30 @@
 require('dotenv').config();
+// --- START OF DEBUGGING CODE ---
+const fs = require('fs');
+const path = require('path');
+
+console.log('--- STARTING SERVER & DEBUGGING FILE PATHS ---');
+console.log(`Current Working Directory (cwd): ${process.cwd()}`);
+console.log(`Script Directory (__dirname): ${__dirname}`);
+
+const directoriesToScan = [
+    __dirname,                      // The directory the script is in
+    path.join(__dirname, '..'),     // The parent directory
+    process.cwd(),                  // The directory where the node command was run
+    path.join(process.cwd(), 'docs') // Just in case there's a nested docs folder
+];
+
+directoriesToScan.forEach(dirPath => {
+    try {
+        const files = fs.readdirSync(dirPath);
+        console.log(`\n✅ Files in [${dirPath}]:`);
+        files.forEach(file => console.log(`  - ${file}`));
+    } catch (e) {
+        console.log(`\n❌ Could not read directory [${dirPath}]: ${e.message}`);
+    }
+});
+console.log('--- END OF DEBUGGING ---');
+// --- END OF DEBUGGING CODE ---
 const express = require('express');
 const fs = require('fs');
 const { Pool } = require('pg');
