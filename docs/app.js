@@ -274,10 +274,10 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             let fetchUrl;
             if (isCustomGrid) {
-                fetchUrl = `${API_BASE_URL}/api/grid/${hash}`;
+                fetchUrl = `${API_BASE_URL}/api/grid/${identifier}`; // <-- CORRECTED
             } else {
                 const today = new Date().toISOString().split('T')[0];
-                const gridType = hash || 'daily';
+                const gridType = identifier || 'daily';
                 fetchUrl = `grids/${gridType}_${today}.json`;
             }
             
@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.warn(error.message);
             console.log('Attempting to fetch grid from the server API as a fallback...');
             try {
-                const apiIdentifier = isCustomGrid ? hash : (hash || 'daily');
+                const apiIdentifier = isCustomGrid ? identifier : (identifier || 'daily'); // <-- CORRECTED
                 const apiResponse = await fetch(`${API_BASE_URL}/api/grid/${apiIdentifier}`);
                 if (!apiResponse.ok) {
                     gridContainer.innerHTML = `<h2>Grid for today not available. Please check back later.</h2>`;
@@ -309,6 +309,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
         }
+    
     
         
         if (gridData) {
