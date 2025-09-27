@@ -1,5 +1,13 @@
 require('dotenv').config();
-// --- START OF DEBUGGING CODE ---
+const express = require('express');
+const fs = require('fs');
+const { Pool } = require('pg');
+const cors = require('cors');
+const path = require('path');
+const merges = require('./merges.json');
+
+// --- START: Replace the top of your file with this block ---
+// --- Debugging Code ---
 console.log('--- STARTING SERVER & DEBUGGING FILE PATHS ---');
 console.log(`Current Working Directory (cwd): ${process.cwd()}`);
 console.log(`Script Directory (__dirname): ${__dirname}`);
@@ -7,8 +15,7 @@ console.log(`Script Directory (__dirname): ${__dirname}`);
 const directoriesToScan = [
     __dirname,                      // The directory the script is in
     path.join(__dirname, '..'),     // The parent directory
-    process.cwd(),                  // The directory where the node command was run
-    path.join(process.cwd(), 'docs') // Just in case there's a nested docs folder
+    process.cwd()                   // The directory where the node command was run
 ];
 
 directoriesToScan.forEach(dirPath => {
@@ -21,17 +28,11 @@ directoriesToScan.forEach(dirPath => {
     }
 });
 console.log('--- END OF DEBUGGING ---');
-// --- END OF DEBUGGING CODE ---
-const express = require('express');
-const fs = require('fs');
-const { Pool } = require('pg');
-const cors = require('cors');
-const path = require('path');
-const merges = require('./merges.json');
-
+// --- END: The rest of your server.js file should follow ---
 const app = express();
 const port = 3000;
 const serverSessionId = Date.now().toString();
+
 
 // --- DATABASE POOL SETUP ---
 const pool = new Pool({
