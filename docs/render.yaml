@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: european-grids-api
+    env: node
+    rootDir: docs
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    rewrites:
+      - source: /.*
+        destination: /index.html
