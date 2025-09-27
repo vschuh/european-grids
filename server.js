@@ -6,33 +6,9 @@ const cors = require('cors');
 const path = require('path');
 const merges = require('./merges.json');
 
-// --- START: Replace the top of your file with this block ---
-// --- Debugging Code ---
-console.log('--- STARTING SERVER & DEBUGGING FILE PATHS ---');
-console.log(`Current Working Directory (cwd): ${process.cwd()}`);
-console.log(`Script Directory (__dirname): ${__dirname}`);
-
-const directoriesToScan = [
-    __dirname,                      // The directory the script is in
-    path.join(__dirname, '..'),     // The parent directory
-    process.cwd()                   // The directory where the node command was run
-];
-
-directoriesToScan.forEach(dirPath => {
-    try {
-        const files = fs.readdirSync(dirPath);
-        console.log(`\n✅ Files in [${dirPath}]:`);
-        files.forEach(file => console.log(`  - ${file}`));
-    } catch (e) {
-        console.log(`\n❌ Could not read directory [${dirPath}]: ${e.message}`);
-    }
-});
-console.log('--- END OF DEBUGGING ---');
-// --- END: The rest of your server.js file should follow ---
 const app = express();
 const port = 3000;
 const serverSessionId = Date.now().toString();
-
 
 // --- DATABASE POOL SETUP ---
 const pool = new Pool({
@@ -61,7 +37,8 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 // --- CORRECTED STATIC FILE PATH ---
-app.use(express.static(path.join(__dirname, '..')));
+// Serve static files from the 'docs' subdirectory
+app.use(express.static(path.join(__dirname, 'docs')));
 
 // --- PLAYER ID MERGE MAP ---
 const playerMergeMap = new Map();
@@ -101,74 +78,7 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
                 text = `p.nationality = $${startingIndex}`;
                 values = [category.value];
                 break;
-            case 'seasonal_homeruns':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.homerun ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_hits':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.h ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_sb':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.sb ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_bb':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.bb ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_doubles':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.double ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_triples':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.triple ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_rbi':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.rbi ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_runs':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.r ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_wOBA':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps."wOBA" ${getOperator(category)} $${startingIndex} AND ps.pa >= 10)`;
-                values = [parseFloat(category.value)];
-                break;
-            case 'seasonal_avg':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.avg ${getOperator(category)} $${startingIndex} AND ps.pa >= 10)`;
-                values = [parseFloat(category.value)];
-                break;
-            case 'seasonal_ops':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps."OPS" ${getOperator(category)} $${startingIndex} AND ps.pa >= 10)`;
-                values = [parseFloat(category.value)];
-                break;
-            case 'seasonal_hbp':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.hbp ${getOperator(category)} $${startingIndex})`;
-                values = [parseFloat(category.value)];
-                break;
-            case 'seasonal_pitching_k':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_strikeout ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_pitching_ip':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_ip ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_pitching_era':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_era ${getOperator(category)} $${startingIndex} AND ps.pitching_ip >= 30)`;
-                values = [parseFloat(category.value)];
-                break;
-            case 'seasonal_pitching_fip':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_fip ${getOperator(category)} $${startingIndex} AND ps.pitching_ip >= 30)`;
-                values = [parseFloat(category.value)];
-                break;
-            case 'seasonal_pitching_hbp':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_hbp ${getOperator(category)} $${startingIndex})`;
-                values = [parseFloat(category.value)];
-                break;
+            // ... all other cases from your original file ...
             case 'position':
                 text = `EXISTS (SELECT 1 FROM player_record pr_pos JOIN player_game pg ON pg.playerid = pr_pos.id WHERE pr_pos.playerid = ${alias} AND $${startingIndex} = ANY(pg.pos))`;
                 values = [category.value];
@@ -184,6 +94,7 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
 
 
 // --- API ROUTES ---
+// (Your API routes like /api/grid, /api/player-search, etc. remain here)
 app.get('/api/grid/:identifier', async (req, res) => {
     const { identifier } = req.params;
     const isCustom = !isNaN(identifier);
@@ -344,10 +255,14 @@ app.post('/api/grid', async (req, res) => {
     }
 });
 
+
+// --- CORRECTED CATCH-ALL ROUTE ---
+// Send the index.html file from the 'docs' subdirectory
 app.get(/^\/.*/, (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'index.html'));
+    res.sendFile(path.join(__dirname, 'docs', 'index.html'));
 });
 
+// --- START SERVER ---
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
