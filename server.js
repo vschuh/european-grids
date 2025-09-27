@@ -36,7 +36,10 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname)));
+// --- CORRECTED STATIC FILE PATH ---
+app.use(express.static(path.join(__dirname, '..')));
+
+// --- PLAYER ID MERGE MAP ---
 const playerMergeMap = new Map();
 for (const mainId in merges.players) {
     for (const anyId of merges.players[mainId]) {
@@ -317,12 +320,9 @@ app.post('/api/grid', async (req, res) => {
     }
 });
 
-
 app.get(/^\/.*/, (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, '..', 'index.html'));
 });
-
-
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
