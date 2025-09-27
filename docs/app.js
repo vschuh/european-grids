@@ -257,7 +257,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     let lastProcessedIdentifier = null;
-    // In app.js
 
 
     async function setupGrid(identifier) {
@@ -280,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             let fetchUrl;
             if (isCustomGrid) {
-                fetchUrl = `${API_BASE_URL}/api/grid/${identifier}`; // <-- CORRECTED
+                fetchUrl = `${API_BASE_URL}/api/grid/${identifier}`; 
             } else {
                 const today = new Date().toISOString().split('T')[0];
                 const gridType = identifier || 'daily';
@@ -302,7 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.warn(error.message);
             console.log('Attempting to fetch grid from the server API as a fallback...');
             try {
-                const apiIdentifier = isCustomGrid ? identifier : (identifier || 'daily'); // <-- CORRECTED
+                const apiIdentifier = isCustomGrid ? identifier : (identifier || 'daily');
                 const apiResponse = await fetch(`${API_BASE_URL}/api/grid/${apiIdentifier}`);
                 if (!apiResponse.ok) {
                     gridContainer.innerHTML = `<h2>Grid for today not available. Please check back later.</h2>`;
@@ -355,29 +354,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     
-    
-    // Handles routing and updates the grid based on the URL path
+
     function router() {
         const path = window.location.pathname;
         const identifier = path === '/' ? 'daily' : path.substring(1);
         setupGrid(identifier);
     }
 
-    // Listen for clicks on nav links to handle navigation without a page reload
     document.getElementById('country-nav').addEventListener('click', (e) => {
-        // Only act on the nav links, not the "Create" link
+        
         if (e.target.matches('.nav-link') && !e.target.matches('.create-link')) {
-            e.preventDefault(); // Prevent the browser from loading a new page
+            e.preventDefault(); 
             const href = e.target.getAttribute('href');
-            history.pushState({}, '', href); // Update the URL in the address bar
-            router(); // Load the new grid
+            history.pushState({}, '', href); 
+            router(); 
         }
     });
 
-    // Handle the browser's back and forward buttons
+    
     window.addEventListener('popstate', router);
 
-    // Initial load for the first visit
+    
     router();
 
     gridContainer.addEventListener('click', (event) => {

@@ -254,15 +254,15 @@ async function generateAndSaveGrid(gridName, pools, templates, pool, teamDataMap
                         ON CONFLICT (type, grid_date) DO NOTHING;
                     `;
                     await pool.query(query, [gridName, gridDate, gridData]);
-                    console.log(`✅ Grid for ${gridName} on ${gridDate} saved to the database.`);
+                    console.log(` Grid for ${gridName} on ${gridDate} saved to the database.`);
                     return; 
                 } catch (dbError) {
-                    console.error(`❌ Failed to save grid to database:`, dbError);
+                    console.error(` Failed to save grid to database:`, dbError);
                 }
             }
         }
     }
-    console.log(`\n❌ Failed to find a valid grid for ${gridName} on ${gridDate} after all attempts.`);
+    console.log(`\n Failed to find a valid grid for ${gridName} on ${gridDate} after all attempts.`);
 }
 
 
@@ -311,7 +311,7 @@ async function main() {
         Y: yearCategories
     };
 
-    // MODIFIED: Spain has been removed from this list
+    
     const COUNTRIES = [
         { name: 'austria', federation_ids: [8], clubs: austrianClubCategories },
         { name: 'netherlands', federation_ids: [1], clubs: dutchClubCategories },

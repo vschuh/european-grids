@@ -37,7 +37,6 @@ const statConditionSelect = document.getElementById('stat-condition-select');
 const statValueInput = document.getElementById('stat-value-input');
 const backFromStatBtn = document.getElementById('back-from-stat-creator-btn');
 
-// --- Main Category Modal Logic ---
 mainCategoriesList.innerHTML = ''; 
 for (const groupName in categoryGroups) {
     const li = document.createElement('li');
