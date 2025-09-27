@@ -4,6 +4,7 @@ const express = require('express');
 const fs = require('fs');
 const { Pool } = require('pg');
 const merges = require('./merges.json');
+const path = require('path');
 
 const pool = new Pool({
     user: process.env.DB_USER,
@@ -366,6 +367,9 @@ app.get('/api/grid/:identifier', async (req, res) => {
     }
 });
 
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+  });
 
 
 app.listen(port, () => {

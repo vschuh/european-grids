@@ -251,11 +251,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     let lastProcessedIdentifier = null;
+    // In app.js
 
-    async function setupGrid() {
-        const hash = window.location.hash.substring(1);
-        const isCustomGrid = !isNaN(hash) && hash !== '';
-        const identifier = isCustomGrid ? `custom_${hash}` : (hash || 'daily');
+
+    async function setupGrid(identifier) {
+        identifier = identifier || 'daily';
+        const isCustomGrid = !isNaN(identifier) && identifier !== '';
+        const gridIdentifier = isCustomGrid ? `custom_${identifier}` : identifier;
     
         if (identifier === lastProcessedIdentifier) {
             return;
@@ -345,6 +347,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    function router() {
+        const path = window.location.pathname; 
+        const identifier = path.substring(1); 
+        setupGrid(identifier); 
+    }
     
     window.addEventListener('hashchange', setupGrid);
     setupGrid();
@@ -382,5 +389,3 @@ document.addEventListener('DOMContentLoaded', () => {
         gameOver(true);
     });
 });
-
-//Test
