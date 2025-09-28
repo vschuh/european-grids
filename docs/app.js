@@ -231,9 +231,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     
         try {
-            const rowResponse = await fetch(`${API_BASE_URL}/api/validate?playerName=${encodeURIComponent(playerName)}&playerId=${player.id}&categoryType=${rowCategory.type}&categoryValue=${encodeURIComponent(rowCategory.value)}`);
+            const rowResponse = await fetch(`${API_BASE_URL}/api/validate?playerName=${encodeURIComponent(playerName)}&playerId=${player.id}&categoryValue=${encodeURIComponent(JSON.stringify(rowCategory))}`);
             const rowResult = await rowResponse.json();
-            const colResponse = await fetch(`${API_BASE_URL}/api/validate?playerName=${encodeURIComponent(playerName)}&playerId=${player.id}&categoryType=${colCategory.type}&categoryValue=${encodeURIComponent(colCategory.value)}`);
+            const colResponse = await fetch(`${API_BASE_URL}/api/validate?playerName=${encodeURIComponent(playerName)}&playerId=${player.id}&categoryValue=${encodeURIComponent(JSON.stringify(colCategory))}`);
             const colResult = await colResponse.json();
             
             if (rowResult.isValid && colResult.isValid) {
