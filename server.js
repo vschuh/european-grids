@@ -218,8 +218,8 @@ app.get('/api/player-search', async (req, res) => {
 });
 
 app.get('/api/validate', async (req, res) => {
-    const { playerName, playerId, categoryType, categoryValue } = req.query;
-    if (!playerName || !playerId || !categoryType || !categoryValue) {
+    const { playerName, playerId, categoryValue } = req.query;
+    if (!playerName || !playerId || !categoryValue) {
         return res.status(400).json({ error: 'Required parameters are missing.' });
     }
 
