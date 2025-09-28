@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cancelGiveUpBtn = document.getElementById('cancel-give-up-btn');
 
     let gridData = {};
+    let currentIdentifier = 'daily';
     let gameState = {};
     let isGameOver = false;
     let activeCell = null;
@@ -52,9 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function saveGameState() {
-        const identifier = window.location.hash.substring(1) || 'daily';
         gameState.date = new Date().toISOString().split('T')[0];
-        localStorage.setItem(`gridGameState_${identifier}`, JSON.stringify(gameState));
+        localStorage.setItem(`gridGameState_${currentIdentifier}`, JSON.stringify(gameState));
     }
     
 
@@ -262,6 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function setupGrid(identifier) {
         identifier = identifier || 'daily';
         const isCustomGrid = !isNaN(identifier) && identifier !== '';
+        currentIdentifier = identifier;
         const gridIdentifier = isCustomGrid ? `custom_${identifier}` : identifier;
     
         if (identifier === lastProcessedIdentifier) {
