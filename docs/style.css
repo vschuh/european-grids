@@ -491,6 +491,14 @@
   pointer-events: none;
 }
 
+.modal-hint {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  opacity: 0.8;
+  margin-top: 8px;
+  text-align: center;
+}
+
 #result-container {
   margin-top: 2rem;
   padding: 1.5rem;

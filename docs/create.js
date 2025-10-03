@@ -25,7 +25,7 @@ const categoryGroups = {
 let selectedCategories = {};
 let activeTargetCell = null;
 
-// --- DOM Elements ---
+const statCreatorHint = document.getElementById('stat-creator-hint');
 const mainCategoryModal = document.getElementById('main-category-modal');
 const subCategoryModal = document.getElementById('sub-category-modal');
 const statCreatorModal = document.getElementById('stat-creator-modal');
@@ -110,7 +110,6 @@ function openStatCreator() {
     statCreatorModal.classList.remove('modal-hidden');
 }
 
-// --- THE CORRECTED VERSION ---
 
 document.getElementById('add-stat-btn').addEventListener('click', () => {
     const statName = statTypeSelect.value;
@@ -122,8 +121,9 @@ document.getElementById('add-stat-btn').addEventListener('click', () => {
     const conditionLabel = condition === 'min' ? '>=' : '<=';
 
     if (baseStat.type === 'perfect_game' || baseStat.type === 'no_hitter') {
-        newLabel = `${statName} (CG & ${conditionLabel} ${value} IP)`;
+        newLabel = `${statName} (${conditionLabel} ${value} IP)`;
     } else {
+        
         newLabel = `${conditionLabel} ${value} ${baseStat.unit} Season`;
     }
 
@@ -167,6 +167,17 @@ subCategoryModal.addEventListener('click', (e) => {
 
 statCreatorModal.addEventListener('click', (e) => {
     if (e.target.id === 'stat-creator-modal') statCreatorModal.classList.add('modal-hidden');
+});
+
+statTypeSelect.addEventListener('change', () => {
+    const selectedStatName = statTypeSelect.value;
+    const baseStat = baseStats[selectedStatName];
+
+    if (baseStat.type === 'perfect_game' || baseStat.type === 'no_hitter') {
+        statCreatorHint.textContent = "Value should be the minimum Innings Pitched (e.g., 5).";
+    } else {
+        statCreatorHint.textContent = "Value is the minimum amount for the season unless the stat says otherwise.";
+    }
 });
 
 document.getElementById('create-btn').addEventListener('click', async () => {
