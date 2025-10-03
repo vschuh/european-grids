@@ -93,7 +93,9 @@ const baseStats = {
     'Hit by pitches': { type: 'seasonal_hbp', unit: 'HBP' },
     'Pitching Ks': { type: 'seasonal_pitching_k', unit: 'Ks' },
     'Innings Pitched': { type: 'seasonal_pitching_ip', unit: 'IP' },
-    'Hit Batters': { type: 'seasonal_pitching_hbp', unit: 'HBP' }
+    'Hit Batters': { type: 'seasonal_pitching_hbp', unit: 'HBP' },
+    'Perfect Game': { type: 'perfect_game', unit: 'IP' },
+    'No Hitter': { type: 'no_hitter', unit: 'IP' },
 };
 
 for (const statName in baseStats) {
@@ -115,7 +117,12 @@ document.getElementById('add-stat-btn').addEventListener('click', () => {
     const baseStat = baseStats[statName];
 
     const conditionLabel = condition === 'min' ? '>=' : '<=';
-    const newLabel = `${conditionLabel} ${value} ${baseStat.unit} Season`;
+    if (type === 'perfect_game' || type === 'no_hitter'){
+        const newLabel = `${baseStat.name} with ${conditionLabel} ${value} ${baseStat.unit}`;
+    }
+    else {
+        const newLabel = `${conditionLabel} ${value} ${baseStat.unit} Season`;
+    }
 
     const newStatCategory = { 
         label: newLabel, 
