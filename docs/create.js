@@ -174,9 +174,9 @@ statTypeSelect.addEventListener('change', () => {
     const baseStat = baseStats[selectedStatName];
 
     if (baseStat.type === 'perfect_game' || baseStat.type === 'no_hitter') {
-        statCreatorHint.textContent = "Value should be the minimum Innings Pitched (e.g., 5).";
+        statCreatorHint.textContent = `Value should be the min/max IP in a ${statName}.`;
     } else {
-        statCreatorHint.textContent = "Value is the minimum amount for the season unless the stat says otherwise.";
+        statCreatorHint.textContent = "";
     }
 });
 
