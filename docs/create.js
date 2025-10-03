@@ -1,7 +1,7 @@
 import { 
     nationalTeamCategories, italianClubCategories, dutchClubCategories, austrianClubCategories, 
     belgianClubCategories, spanishClubCategories, czechClubCategories, frenchClubCategories, 
-    statCategories, tournamentCategories, yearCategories, nationalityCategories
+    statCategories, tournamentCategories, yearCategories, nationalityCategories,miscCategories
 } from './categories.mjs';
 
 const API_BASE_URL = 'https://european-grids-api.onrender.com';
@@ -18,7 +18,8 @@ const categoryGroups = {
     "Tournaments": tournamentCategories,
     "Player Stats": statCategories,
     "Nationalities": nationalityCategories,
-    "Years": yearCategories
+    "Years": yearCategories,
+    "Misc": miscCategories
 };
 
 let selectedCategories = {};
@@ -188,5 +189,10 @@ document.getElementById('create-btn').addEventListener('click', async () => {
 document.getElementById('copy-btn').addEventListener('click', () => {
     const linkInput = document.getElementById('share-link');
     linkInput.select();
-    document.execCommand('copy');
+    navigator.clipboard.writeText(linkInput.value).then(() => {
+        
+        alert('Link copied to clipboard!');
+    }).catch(err => {
+        console.error('Failed to copy text: ', err);
+    });;
 });

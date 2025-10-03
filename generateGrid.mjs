@@ -16,7 +16,8 @@ import {
     statCategories,
     tournamentCategories,
     yearCategories,
-    nationalityCategories
+    nationalityCategories,
+    miscCategories
 } from './docs/categories.mjs';
 
 
@@ -116,6 +117,14 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
                 break;
             case 'position':
                 text = `EXISTS (SELECT 1 FROM player_record pr_pos JOIN player_game pg ON pg.playerid = pr_pos.id WHERE pr_pos.playerid = ${alias} AND $${startingIndex} = ANY(pg.pos))`;
+                values = [category.value];
+                break;
+            case 'perfect_game':
+                text = `EXISTS (SELECT 1 FROM player_record pr_pos JOIN player_game pg ON pg.playerid = pr_pos.id WHERE pg.pitch_h = 0 and pg.pitch_bb = 0 and pg.pitch_hbp = 0 and pg.pitch_ip >= $${startingIndex})`;
+                values = [category.value];
+                break;
+            case 'no_hitter':
+                text = `EXISTS (SELECT 1 FROM player_record pr_pos JOIN player_game pg ON pg.playerid = pr_pos.id WHERE pg.pitch_h = 0 and pg.pitch_ip >= $${startingIndex})`;
                 values = [category.value];
                 break;
             default:
@@ -306,7 +315,7 @@ async function main() {
         T: enrich([...italianClubCategories, ...dutchClubCategories, ...austrianClubCategories, ...belgianClubCategories, ...spanishClubCategories, ...czechClubCategories, ...frenchClubCategories]),
         N: enrich(nationalTeamCategories),
         R: enrich(tournamentCategories),
-        S: statCategories,
+        S: statCategories, miscCategories,
         A: nationalityCategories,
         Y: yearCategories
     };
@@ -343,7 +352,7 @@ async function main() {
                     T: enrich(country.clubs || []),
                     N: enrich(nationalTeamCategories.filter(c => country.federation_ids.includes(c.federation_id))),
                     R: enrich(tournamentCategories.filter(c => country.federation_ids.includes(c.federation_id))),
-                    S: statCategories, A: nationalityCategories, Y: yearCategories
+                    S: statCategories,miscCategories, A: nationalityCategories, Y: yearCategories
                 };
                 await generateAndSaveGrid(country.name, countryPools, countryTemplates, pool, teamDataMap, dateString);
             }
