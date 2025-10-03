@@ -1,5 +1,3 @@
-// server.js - FINAL, COMPLETE, AND CORRECTED
-
 require('dotenv').config();
 const express = require('express');
 const fs = require('fs');
@@ -48,7 +46,6 @@ for (const mainId in merges.players) {
     }
 }
 
-// THIS IS THE CORRECTED AND COMPLETE HELPER FUNCTION
 const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
     const alias = `${playerAlias}.id`;
     let text = '';
@@ -217,7 +214,7 @@ app.get('/api/player-search', async (req, res) => {
                 uniquePlayers.set(mainId, {
                     id: mainId, 
                     name: `${p.firstname} ${p.lastname}`,
-                    year: p.dob ? new Date(p.dob).getFullYear() : 'N/A'
+                    year: p.dob || 'N/A'
                 });
             }
         });

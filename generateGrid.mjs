@@ -121,11 +121,11 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
                 break;
             case 'perfect_game':
                 text = `EXISTS (SELECT 1 FROM player_record pr_pos JOIN player_game pg ON pg.playerid = pr_pos.id WHERE pg.pitch_h = 0 and pg.pitch_bb = 0 and pg.pitch_hbp = 0 and pg.pitch_ip >= $${startingIndex})`;
-                values = [category.value];
+                values = [parseInt(category.value)];
                 break;
             case 'no_hitter':
                 text = `EXISTS (SELECT 1 FROM player_record pr_pos JOIN player_game pg ON pg.playerid = pr_pos.id WHERE pg.pitch_h = 0 and pg.pitch_ip >= $${startingIndex})`;
-                values = [category.value];
+                values = [parseInt(category.value)];
                 break;
             default:
                 text = null;
