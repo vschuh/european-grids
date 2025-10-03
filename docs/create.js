@@ -37,6 +37,9 @@ const statTypeSelect = document.getElementById('stat-type-select');
 const statConditionSelect = document.getElementById('stat-condition-select');
 const statValueInput = document.getElementById('stat-value-input');
 const backFromStatBtn = document.getElementById('back-from-stat-creator-btn');
+const copyNotification = document.getElementById('copy-notification');
+let notificationTimeout;
+
 
 mainCategoriesList.innerHTML = ''; 
 for (const groupName in categoryGroups) {
@@ -189,10 +192,17 @@ document.getElementById('create-btn').addEventListener('click', async () => {
 document.getElementById('copy-btn').addEventListener('click', () => {
     const linkInput = document.getElementById('share-link');
     linkInput.select();
+
     navigator.clipboard.writeText(linkInput.value).then(() => {
         
-        alert('Link copied to clipboard!');
+        clearTimeout(notificationTimeout);
+        
+        copyNotification.classList.remove('hidden');
+        
+        notificationTimeout = setTimeout(() => {
+            copyNotification.classList.add('hidden');
+        }, 2000);
     }).catch(err => {
         console.error('Failed to copy text: ', err);
-    });;
+    });
 });

@@ -254,6 +254,13 @@ app.get('/api/validate', async (req, res) => {
 
     const query = `SELECT EXISTS (SELECT 1 FROM player p WHERE p.id IN (${playerPlaceholders}) AND ${cond.text});`;
     const queryParams = [...allPlayerIds, ...cond.values];
+    
+    if (category.type === 'perfect_game') {
+        console.log("\n--- DEBUG: PERFECT GAME QUERY ---");
+        console.log(interpolateQuery(query, queryParams));
+        console.log("---------------------------------");
+    }
+
 
     try {
         const validationResult = await pool.query(query, queryParams);
