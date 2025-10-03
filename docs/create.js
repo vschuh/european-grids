@@ -117,8 +117,8 @@ document.getElementById('add-stat-btn').addEventListener('click', () => {
     const baseStat = baseStats[statName];
 
     const conditionLabel = condition === 'min' ? '>=' : '<=';
-    if (type === 'perfect_game' || type === 'no_hitter'){
-        const newLabel = `${baseStat.name} with ${conditionLabel} ${value} ${baseStat.unit}`;
+    if (baseStats.type === 'perfect_game' || type === 'no_hitter'){
+        const newLabel = `${baseStat.name} with CG and ${conditionLabel} ${value} ${baseStat.unit}`;
     }
     else {
         const newLabel = `${conditionLabel} ${value} ${baseStat.unit} Season`;
