@@ -1,3 +1,5 @@
+// server.js - FINAL, COMPLETE, AND CORRECTED
+
 require('dotenv').config();
 const express = require('express');
 const fs = require('fs');
@@ -46,6 +48,7 @@ for (const mainId in merges.players) {
     }
 }
 
+// THIS IS THE CORRECTED AND COMPLETE HELPER FUNCTION
 const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
     const alias = `${playerAlias}.id`;
     let text = '';
@@ -149,11 +152,11 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
                 break;
             case 'perfect_game':
                 text = `EXISTS (SELECT 1 FROM player_record pr_pos JOIN player_game pg ON pg.playerid = pr_pos.id WHERE pg.pitch_h = 0 and pg.pitch_bb = 0 and pg.pitch_hbp = 0 and pg.pitch_ip >= $${startingIndex})`;
-                values = [category.value];
+                values = [parseInt(category.value)];
                 break;
             case 'no_hitter':
                 text = `EXISTS (SELECT 1 FROM player_record pr_pos JOIN player_game pg ON pg.playerid = pr_pos.id WHERE pg.pitch_h = 0 and pg.pitch_ip >= $${startingIndex})`;
-                values = [category.value];
+                values = [parseInt(category.value)];
                 break;
             default:
                 text = null;
@@ -174,7 +177,8 @@ app.get('/api/grid/:identifier', async (req, res) => {
         if (isCustom) {
             result = await pool.query('SELECT grid_data, name FROM grids WHERE id = $1 AND type = $2', [identifier, 'custom']);
         } else {
-            result = await pool.query('SELECT grid_data FROM grids WHERE type = $1 ORDER BY grid_date DESC LIMIT 1', [identifier]);
+            const today = new Date().toISOString().split('T')[0];
+            result = await pool.query('SELECT grid_data FROM grids WHERE type = $1 AND grid_date = $2', [identifier, today]);
         }
 
         if (result.rows.length > 0) {
@@ -213,7 +217,7 @@ app.get('/api/player-search', async (req, res) => {
                 uniquePlayers.set(mainId, {
                     id: mainId, 
                     name: `${p.firstname} ${p.lastname}`,
-                    year: p.dob
+                    year: p.dob ? new Date(p.dob).getFullYear() : 'N/A'
                 });
             }
         });
@@ -235,7 +239,7 @@ app.get('/api/validate', async (req, res) => {
         SELECT COALESCE(
             (SELECT imglink FROM player_record pr2
              JOIN tournamentevent te2 ON te2.id = pr2.tournamentid
-             WHERE pr2.playerid = $1 AND pr2.imglink != 'https://static.wbsc.org/assets/images/default-player.jpg'
+             WHERE pr2.playerid = ANY($1::int[]) AND pr2.imglink != 'https://static.wbsc.org/assets/images/default-player.jpg'
              ORDER BY te2.year DESC, pr2.id ASC LIMIT 1),
             'https://static.wbsc.org/assets/images/default-player.jpg'
         ) AS imglink;
@@ -254,18 +258,11 @@ app.get('/api/validate', async (req, res) => {
 
     const query = `SELECT EXISTS (SELECT 1 FROM player p WHERE p.id IN (${playerPlaceholders}) AND ${cond.text});`;
     const queryParams = [...allPlayerIds, ...cond.values];
-    
-    if (category.type === 'perfect_game') {
-        console.log("\n--- DEBUG: PERFECT GAME QUERY ---");
-        console.log(interpolateQuery(query, queryParams));
-        console.log("---------------------------------");
-    }
-
 
     try {
         const validationResult = await pool.query(query, queryParams);
         if (validationResult.rows[0].exists) {
-            const imageResult = await pool.query(imageQuery, [playerId]);
+            const imageResult = await pool.query(imageQuery, [allPlayerIds]);
             res.json({
                 isValid: true,
                 player: { name: playerName, image: imageResult.rows[0].imglink }
@@ -289,10 +286,12 @@ app.post('/api/get-cell-answers', async (req, res) => {
     let conditions = [];
     
     const cond1 = buildCondition(cat1, 'p', 1);
+    if (!cond1.text) return res.status(400).json({error: `Invalid category: ${cat1.label}`});
     conditions.push(cond1.text);
     allValues.push(...cond1.values);
 
     const cond2 = buildCondition(cat2, 'p', allValues.length + 1);
+    if (!cond2.text) return res.status(400).json({error: `Invalid category: ${cat2.label}`});
     conditions.push(cond2.text);
     allValues.push(...cond2.values);
 
@@ -331,8 +330,6 @@ app.post('/api/grid', async (req, res) => {
         res.status(500).json({ error: 'Failed to save custom grid.' });
     }
 });
-
-
 
 app.get(/^\/.*/, (req, res) => {
     res.sendFile(path.join(__dirname, 'docs', 'index.html'));
