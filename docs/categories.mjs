@@ -280,6 +280,7 @@ export const statCategories = [
 export const miscCategories = [
     {label: 'Perfect Game (CG & min 5 IP)', type: 'perfect_game', value: 5, condition: 'min' },
     {label: 'No Hitter (CG & min 5 IP)', type: 'no_hitter', value: 5, condition: 'min'},
+    {label: 'Hit for Cycle', type: 'Cycle', value: 1, condition: 'min'},
 ]
 export const yearCategories = [2021, 2022, 2023, 2024, 2025].map(year => ({ label: `Played in ${year} season`, type: 'year', value: year }));
 
