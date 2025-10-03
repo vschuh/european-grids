@@ -110,18 +110,21 @@ function openStatCreator() {
     statCreatorModal.classList.remove('modal-hidden');
 }
 
+// --- THE CORRECTED VERSION ---
+
 document.getElementById('add-stat-btn').addEventListener('click', () => {
     const statName = statTypeSelect.value;
     const condition = statConditionSelect.value;
     const value = parseFloat(statValueInput.value);
     const baseStat = baseStats[statName];
-
+    
+    let newLabel = '';
     const conditionLabel = condition === 'min' ? '>=' : '<=';
-    if (baseStats.type === 'perfect_game' || type === 'no_hitter'){
-        const newLabel = `${baseStat.name} with CG and ${conditionLabel} ${value} ${baseStat.unit}`;
-    }
-    else {
-        const newLabel = `${conditionLabel} ${value} ${baseStat.unit} Season`;
+
+    if (baseStat.type === 'perfect_game' || baseStat.type === 'no_hitter') {
+        newLabel = `${statName} (CG & ${conditionLabel} ${value} IP)`;
+    } else {
+        newLabel = `${conditionLabel} ${value} ${baseStat.unit} Season`;
     }
 
     const newStatCategory = { 
