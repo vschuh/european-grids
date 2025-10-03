@@ -180,11 +180,23 @@ statTypeSelect.addEventListener('change', () => {
     }
 });
 
+// In create.js
+
 document.getElementById('create-btn').addEventListener('click', async () => {
+    // --- DEBUGGING ---
+    console.log("Create button clicked.");
+    console.log("Current selected categories object:", selectedCategories);
+    console.log("Number of categories selected:", Object.keys(selectedCategories).length);
+    // --- END DEBUGGING ---
+
     if (Object.keys(selectedCategories).length < 6) {
-        alert("Please select all 6 categories.");
+        console.log("Exiting because not all 6 categories have been selected.");
+        alert("Please select all 6 categories before creating the grid.");
         return;
     }
+
+    console.log("All 6 categories found. Proceeding to create grid...");
+
     const grid = {
         name: document.getElementById('grid-name-input').value || 'Custom Grid',
         rows: [selectedCategories['row-1'], selectedCategories['row-2'], selectedCategories['row-3']],
@@ -203,6 +215,10 @@ document.getElementById('create-btn').addEventListener('click', async () => {
             const link = `https://www.euro-zones.com/${data.id}`;
             document.getElementById('share-link').value = link;
             document.getElementById('result-container').classList.remove('modal-hidden');
+        } else {
+            // This will catch errors from the server that aren't a full crash
+            console.error("Server responded without a grid ID:", data);
+            alert("An error occurred on the server. Please check the server logs.");
         }
     } catch (error) {
         console.error("Failed to create grid:", error);
