@@ -174,7 +174,7 @@ statTypeSelect.addEventListener('change', () => {
     const baseStat = baseStats[selectedStatName];
 
     if (baseStat.type === 'perfect_game' || baseStat.type === 'no_hitter') {
-        statCreatorHint.textContent = `Value should be the min/max IP in a ${statName}.`;
+        statCreatorHint.textContent = `Value should be the min/max IP in a ${selectedStatName}.`;
     } else {
         statCreatorHint.textContent = "";
     }
