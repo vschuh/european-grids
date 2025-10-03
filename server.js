@@ -156,8 +156,8 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
                 values = [parseInt(category.value)];
                 break;
             case 'cycle':
-                text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and (pg.h-pg.double-pg.triple-pg.hr) >= 1 and pg.double >= 1 and pg.triple >= 1 and pg.hr >= 1)`;
-                values = [parseInt(category.value)];
+                text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and (pg.h-pg.double-pg.triple-pg.hr) >= $${startingIndex} and pg.double >= 1 and pg.triple >= 1 and pg.hr >= 1)`;
+                values = [category.value];
                 break;
             default:
                 text = null;
