@@ -46,7 +46,6 @@ for (const mainId in merges.players) {
     }
 }
 
-// NEW: Helper function to replace parameterized values for logging
 function interpolateQuery(query, params) {
     let i = 0;
     return query.replace(/\$\d+/g, (match) => {
@@ -97,6 +96,18 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
             text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and (pg.h-pg.double-pg.triple-pg.hr) >= 1 and pg.double >= 1 and pg.triple >= 1 and pg.hr >= 1)`;
             values = [1];
             return { text, values };
+        
+        // --- FIX IS HERE ---
+        // Handle special misc categories that don't follow the scope_stat format
+        case 'perfect_game':
+            text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and pg.pitch_cg = 1 and pg.pitch_h = 0 and pg.pitch_bb = 0 and pg.pitch_hbp = 0 and pg.pitch_ip ${getOperator(category)} $${startingIndex})`;
+            values = [category.value];
+            return { text, values };
+        case 'no_hitter':
+            text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and pg.pitch_cg = 1 and pg.pitch_h = 0 and pg.pitch_ip ${getOperator(category)} $${startingIndex})`;
+            values = [category.value];
+            return { text, values };
+        // --- END FIX ---
     }
 
     // Handle new scoped stat categories
@@ -271,7 +282,6 @@ app.get('/api/validate', async (req, res) => {
     const queryParams = [...allPlayerIds, ...cond.values];
 
     try {
-        // ADD THIS to log the query before executing it
         console.log("\n--- DEBUG: VALIDATE QUERY ---");
         console.log(interpolateQuery(query, queryParams));
         console.log("---------------------------\n");
@@ -314,7 +324,6 @@ app.post('/api/get-cell-answers', async (req, res) => {
     const query = `SELECT DISTINCT p.firstname, p.lastname FROM player p WHERE ${conditions.join(' AND ')} ORDER BY p.lastname, p.firstname;`;
     
     try {
-        // ADD THIS to log the query before executing it
         console.log("\n--- DEBUG: GET CELL ANSWERS QUERY ---");
         console.log(interpolateQuery(query, allValues));
         console.log("-------------------------------------\n");
