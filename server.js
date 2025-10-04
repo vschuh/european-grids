@@ -230,7 +230,6 @@ app.get('/api/player-search', async (req, res) => {
     }
 });
 
-// ADD THIS HELPER FUNCTION SOMEWHERE IN server.js (e.g., near the top)
 function interpolateQuery(query, params) {
     let i = 0;
     return query.replace(/\$\d+/g, (match) => {
@@ -274,12 +273,6 @@ app.get('/api/validate', async (req, res) => {
 
     const query = `SELECT EXISTS (SELECT 1 FROM player p WHERE p.id IN (${playerPlaceholders}) AND ${cond.text});`;
     const queryParams = [...allPlayerIds, ...cond.values];
-
-    // --- DEBUGGING LOGIC ---
-    console.log("\n--- DEBUG: VALIDATE ENDPOINT ---");
-    console.log("Full SQL Query:", interpolateQuery(query, queryParams));
-    console.log("--------------------------------\n");
-    // --- END DEBUGGING ---
 
     try {
         const validationResult = await pool.query(query, queryParams);
