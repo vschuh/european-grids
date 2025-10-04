@@ -10,18 +10,14 @@ const app = express();
 const port = 3000;
 const serverSessionId = Date.now().toString();
 
-
 const pool = new Pool({
     user: process.env.DB_USER,
     host: process.env.DB_HOST,
     database: process.env.DB_DATABASE,
     password: process.env.DB_PASSWORD,
     port: process.env.DB_PORT,
-    ssl: {
-        rejectUnauthorized: false
-    }
+    ssl: { rejectUnauthorized: false }
 });
-
 
 const allowedOrigins = ['https://vschuh.github.io', 'http://127.0.0.1:5500', 'http://www.euro-zones.com', "https://www.euro-zones.com"];
 const corsOptions = {
@@ -35,9 +31,7 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 app.use(express.json());
-
 app.use(express.static(path.join(__dirname, 'docs')));
-
 
 const playerMergeMap = new Map();
 for (const mainId in merges.players) {
@@ -50,124 +44,91 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
     const alias = `${playerAlias}.id`;
     let text = '';
     let values = [];
+    const getOperator = (cat) => cat.condition === 'max' ? '<=' : '>=';
 
-    const getOperator = (cat) => {
-        return cat.condition === 'max' ? '<=' : '>=';
-    };
+    // Handle non-stat, non-scoped categories first
+    switch (category.type) {
+        case 'team':
+            const mainTeamId = category.value;
+            const allTeamIds = [mainTeamId, ...(merges.teams[mainTeamId.toString()] || [])];
+            const placeholders = allTeamIds.map((_, i) => `$${startingIndex + i}`).join(',');
+            text = `EXISTS (SELECT 1 FROM player_record pr JOIN teamrecord tr ON pr.teamid=tr.id WHERE pr.playerid=${alias} AND tr.teamid::text IN (${placeholders}))`;
+            values = allTeamIds;
+            return { text, values };
+        case 'tournament':
+            text = `EXISTS (SELECT 1 FROM player_record pr JOIN tournamentevent te ON pr.tournamentid=te.id WHERE pr.playerid=${alias} AND te.category ILIKE $${startingIndex})`;
+            values = [category.value];
+            return { text, values };
+        case 'year':
+            text = `EXISTS (SELECT 1 FROM player_record pr JOIN tournamentevent te ON pr.tournamentid=te.id WHERE pr.playerid=${alias} AND te.year = $${startingIndex})`;
+            values = [parseInt(category.value)];
+            return { text, values };
+        case 'nationality':
+            text = `p.nationality = $${startingIndex}`;
+            values = [category.value];
+            return { text, values };
+        case 'position':
+            text = `EXISTS (SELECT 1 FROM player_record pr_pos JOIN player_game pg ON pg.playerid = pr_pos.id WHERE pr_pos.playerid = ${alias} AND $${startingIndex} = ANY(pg.pos))`;
+            values = [category.value];
+            return { text, values };
+        case 'cycle':
+            text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and (pg.h-pg.double-pg.triple-pg.hr) >= 1 and pg.double >= 1 and pg.triple >= 1 and pg.hr >= 1)`;
+            values = [1];
+            return { text, values };
+    }
 
-    if (category.type === 'team') {
-        const mainTeamId = category.value;
-        const allTeamIds = [mainTeamId, ...(merges.teams[mainTeamId.toString()] || [])];
-        const placeholders = allTeamIds.map((_, i) => `$${startingIndex + i}`).join(',');
-        text = `EXISTS (SELECT 1 FROM player_record pr JOIN teamrecord tr ON pr.teamid=tr.id WHERE pr.playerid=${alias} AND tr.teamid::text IN (${placeholders}))`;
-        values = allTeamIds;
-    } else {
-         switch (category.type) {
-            case 'tournament':
-                text = `EXISTS (SELECT 1 FROM player_record pr JOIN tournamentevent te ON pr.tournamentid=te.id WHERE pr.playerid=${alias} AND te.category ILIKE $${startingIndex})`;
+    // Handle new scoped stat categories
+    const [scope, ...statParts] = category.type.split('_');
+    const statName = statParts.join('_');
+
+    const hittingCols = { hits: 'h', homeruns: 'homerun', sb: 'sb', bb: 'bb', doubles: 'double', triples: 'triple', rbi: 'rbi', runs: 'r', hbp: 'hbp' };
+    const pitchingCols = { pitching_k: 'pitching_strikeout', pitching_ip: 'pitching_ip', pitching_hbp: 'pitching_hbp' };
+    const advancedHitting = { wOBA: '"wOBA"', avg: 'avg', ops: '"OPS"' };
+    const advancedPitching = { pitching_era: 'pitching_era', pitching_fip: 'pitching_fip' };
+    const gameCols = { h: 'h', hr: 'hr', rbi: 'rbi', k: 'pitch_k' };
+
+    switch (scope) {
+        case 'seasonal':
+            const allSeasonalCols = { ...hittingCols, ...pitchingCols, ...advancedHitting, ...advancedPitching };
+            const seasonalCol = allSeasonalCols[statName];
+            if (seasonalCol) {
+                let qualifier = '';
+                if (advancedHitting[statName]) qualifier = ' AND ps.pa >= 10';
+                if (advancedPitching[statName]) qualifier = ' AND ps.pitching_ip >= 30';
+                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.${seasonalCol} ${getOperator(category)} $${startingIndex}${qualifier})`;
                 values = [category.value];
-                break;
-            case 'year':
-                text = `EXISTS (SELECT 1 FROM player_record pr JOIN tournamentevent te ON pr.tournamentid=te.id WHERE pr.playerid=${alias} AND te.year = $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'nationality':
-                text = `p.nationality = $${startingIndex}`;
+            }
+            break;
+        case 'year':
+            const yearCol = { ...hittingCols, ...pitchingCols }[statName];
+            if (yearCol) {
+                text = `EXISTS (SELECT 1 FROM player_record pr JOIN player_statistics ps ON pr.id = ps.player_record_id JOIN tournamentevent te ON pr.tournamentid = te.id WHERE pr.playerid = ${alias} GROUP BY te.year HAVING SUM(ps.${yearCol}) ${getOperator(category)} $${startingIndex})`;
                 values = [category.value];
-                break;
-            case 'seasonal_homeruns':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.homerun ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_hits':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.h ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_sb':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.sb ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_bb':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.bb ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_doubles':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.double ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_triples':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.triple ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_rbi':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.rbi ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_runs':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.r ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_wOBA':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps."wOBA" ${getOperator(category)} $${startingIndex} AND ps.pa >= 10)`;
-                values = [parseFloat(category.value)];
-                break;
-            case 'seasonal_avg':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.avg ${getOperator(category)} $${startingIndex} AND ps.pa >= 10)`;
-                values = [parseFloat(category.value)];
-                break;
-            case 'seasonal_ops':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps."OPS" ${getOperator(category)} $${startingIndex} AND ps.pa >= 10)`;
-                values = [parseFloat(category.value)];
-                break;
-            case 'seasonal_hbp':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.hbp ${getOperator(category)} $${startingIndex})`;
-                values = [parseFloat(category.value)];
-                break;
-            case 'seasonal_pitching_k':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_strikeout ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_pitching_ip':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_ip ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_pitching_era':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_era ${getOperator(category)} $${startingIndex} AND ps.pitching_ip >= 30)`;
-                values = [parseFloat(category.value)];
-                break;
-            case 'seasonal_pitching_fip':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_fip ${getOperator(category)} $${startingIndex} AND ps.pitching_ip >= 30)`;
-                values = [parseFloat(category.value)];
-                break;
-            case 'seasonal_pitching_hbp':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_hbp ${getOperator(category)} $${startingIndex})`;
-                values = [parseFloat(category.value)];
-                break;
-            case 'position':
-                text = `EXISTS (SELECT 1 FROM player_record pr_pos JOIN player_game pg ON pg.playerid = pr_pos.id WHERE pr_pos.playerid = ${alias} AND $${startingIndex} = ANY(pg.pos))`;
+            }
+            break;
+        case 'career':
+            const careerCol = { ...hittingCols, ...pitchingCols }[statName];
+            if (careerCol) {
+                text = `(SELECT SUM(ps.${careerCol}) FROM player_statistics ps JOIN player_record pr ON ps.player_record_id = pr.id WHERE pr.playerid = ${alias}) ${getOperator(category)} $${startingIndex}`;
                 values = [category.value];
-                break;
-            case 'perfect_game':
+            }
+            break;
+        case 'game':
+            const gameCol = gameCols[statName];
+            if (gameCol) {
+                text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} AND pg.${gameCol} ${getOperator(category)} $${startingIndex})`;
+                values = [category.value];
+            } else if (statName === 'perfect_game') {
                 text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and pg.pitch_cg = 1 and pg.pitch_h = 0 and pg.pitch_bb = 0 and pg.pitch_hbp = 0 and pg.pitch_ip ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'no_hitter':
-                text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and pg.pitch_cg = 1 and pg.pitch_h = 0 and pg.pitch_ip ${getOperator(category)} $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'cycle':
-                text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and (pg.h-pg.double-pg.triple-pg.hr) >= $${startingIndex} and pg.double >= 1 and pg.triple >= 1 and pg.hr >= 1)`;
                 values = [category.value];
-                break;
-            default:
-                text = null;
-                values = [];
-                break;
-        }
+            } else if (statName === 'no_hitter') {
+                text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and pg.pitch_cg = 1 and pg.pitch_h = 0 and pg.pitch_ip ${getOperator(category)} $${startingIndex})`;
+                values = [category.value];
+            }
+            break;
     }
     return { text, values };
 };
-
 
 app.get('/api/grid/:identifier', async (req, res) => {
     const { identifier } = req.params;
@@ -230,20 +191,6 @@ app.get('/api/player-search', async (req, res) => {
     }
 });
 
-function interpolateQuery(query, params) {
-    let i = 0;
-    return query.replace(/\$\d+/g, (match) => {
-        if (i < params.length) {
-            const value = params[i++];
-            if (typeof value === 'string') { return "'" + value.replace(/'/g, "''") + "'"; }
-            if (value === null) { return 'NULL'; }
-            return value;
-        }
-        return match;
-    });
-}
-
-// REPLACE YOUR EXISTING VALIDATE ENDPOINT WITH THIS
 app.get('/api/validate', async (req, res) => {
     const { playerName, playerId, categoryValue } = req.query;
     if (!playerName || !playerId || !categoryValue) {
