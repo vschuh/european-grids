@@ -20,7 +20,6 @@ const pool = new Pool({
     ssl: {
         rejectUnauthorized: false
     },
-    // Add connection timeout to prevent long waits on sleeping DBs
     connectionTimeoutMillis: 10000, 
 });
 
@@ -39,7 +38,6 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use(express.static(path.join(__dirname, 'docs')));
-
 
 app.get('/health', async (req, res) => {
     try {
@@ -107,7 +105,7 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
             return { text, values };
         case 'cycle':
             text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and (pg.h-pg.double-pg.triple-pg.hr) >= 1 and pg.double >= 1 and pg.triple >= 1 and pg.hr >= 1)`;
-            values = [1];
+            values = []; 
             return { text, values };
         case 'perfect_game':
             text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and pg.pitch_cg = 1 and pg.pitch_h = 0 and pg.pitch_bb = 0 and pg.pitch_hbp = 0 and pg.pitch_ip ${getOperator(category)} $${startingIndex})`;
@@ -192,6 +190,7 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
     }
     return { text, values };
 };
+
 
 
 app.get('/api/grid/:identifier', async (req, res) => {
@@ -376,7 +375,7 @@ async function startServer() {
         client.release();
         
         app.listen(port, () => {
-          console.log(`🚀 Server is running on http://localhost:${port}`);
+          console.log(`🚀 Server is listening on port ${port}`);
         });
     } catch (err) {
         console.error('❌ Failed to connect to the database. Server will not start.');
