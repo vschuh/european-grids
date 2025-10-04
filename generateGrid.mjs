@@ -20,8 +20,6 @@ import {
     miscCategories
 } from './docs/categories.mjs';
 
-
-
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -30,118 +28,96 @@ function shuffle(array) {
 }
 
 const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
-    
     const alias = `${playerAlias}.id`;
     let text = '';
     let values = [];
+    const getOperator = (cat) => cat.condition === 'max' ? '<=' : '>=';
 
-    if (category.type === 'team') {
-        const mainTeamId = category.value;
-        const allTeamIds = [mainTeamId, ...(merges.teams[mainTeamId.toString()] || [])];
-        const placeholders = allTeamIds.map((_, i) => `$${startingIndex + i}`).join(',');
-        text = `EXISTS (SELECT 1 FROM player_record pr JOIN teamrecord tr ON pr.teamid=tr.id WHERE pr.playerid=${alias} AND tr.teamid::text IN (${placeholders}))`;
-        values = allTeamIds;
-    } else {
-         switch (category.type) {
-            case 'tournament':
-                text = `EXISTS (SELECT 1 FROM player_record pr JOIN tournamentevent te ON pr.tournamentid=te.id WHERE pr.playerid=${alias} AND te.category ILIKE $${startingIndex})`;
+    // Handle non-stat, non-scoped categories first
+    switch (category.type) {
+        case 'team':
+            const mainTeamId = category.value;
+            const allTeamIds = [mainTeamId, ...(merges.teams[mainTeamId.toString()] || [])];
+            const placeholders = allTeamIds.map((_, i) => `$${startingIndex + i}`).join(',');
+            text = `EXISTS (SELECT 1 FROM player_record pr JOIN teamrecord tr ON pr.teamid=tr.id WHERE pr.playerid=${alias} AND tr.teamid::text IN (${placeholders}))`;
+            values = allTeamIds;
+            return { text, values };
+        case 'tournament':
+            text = `EXISTS (SELECT 1 FROM player_record pr JOIN tournamentevent te ON pr.tournamentid=te.id WHERE pr.playerid=${alias} AND te.category ILIKE $${startingIndex})`;
+            values = [category.value];
+            return { text, values };
+        case 'year':
+            text = `EXISTS (SELECT 1 FROM player_record pr JOIN tournamentevent te ON pr.tournamentid=te.id WHERE pr.playerid=${alias} AND te.year = $${startingIndex})`;
+            values = [parseInt(category.value)];
+            return { text, values };
+        case 'nationality':
+            text = `p.nationality = $${startingIndex}`;
+            values = [category.value];
+            return { text, values };
+        case 'position':
+            text = `EXISTS (SELECT 1 FROM player_record pr_pos JOIN player_game pg ON pg.playerid = pr_pos.id WHERE pr_pos.playerid = ${alias} AND $${startingIndex} = ANY(pg.pos))`;
+            values = [category.value];
+            return { text, values };
+        case 'cycle':
+            text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and (pg.h-pg.double-pg.triple-pg.hr) >= 1 and pg.double >= 1 and pg.triple >= 1 and pg.hr >= 1)`;
+            values = [1];
+            return { text, values };
+    }
+
+    // Handle new scoped stat categories
+    const [scope, ...statParts] = category.type.split('_');
+    const statName = statParts.join('_');
+
+    const hittingCols = { hits: 'h', homeruns: 'homerun', sb: 'sb', bb: 'bb', doubles: 'double', triples: 'triple', rbi: 'rbi', runs: 'r', hbp: 'hbp' };
+    const pitchingCols = { pitching_k: 'pitching_strikeout', pitching_ip: 'pitching_ip', pitching_hbp: 'pitching_hbp' };
+    const advancedHitting = { wOBA: '"wOBA"', avg: 'avg', ops: '"OPS"' };
+    const advancedPitching = { pitching_era: 'pitching_era', pitching_fip: 'pitching_fip' };
+    const gameCols = { h: 'h', hr: 'hr', rbi: 'rbi', k: 'pitch_k' };
+
+    switch (scope) {
+        case 'seasonal':
+            const allSeasonalCols = { ...hittingCols, ...pitchingCols, ...advancedHitting, ...advancedPitching };
+            const seasonalCol = allSeasonalCols[statName];
+            if (seasonalCol) {
+                let qualifier = '';
+                if (advancedHitting[statName]) qualifier = ' AND ps.pa >= 10';
+                if (advancedPitching[statName]) qualifier = ' AND ps.pitching_ip >= 30';
+                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.${seasonalCol} ${getOperator(category)} $${startingIndex}${qualifier})`;
                 values = [category.value];
-                break;
-            case 'year':
-                text = `EXISTS (SELECT 1 FROM player_record pr JOIN tournamentevent te ON pr.tournamentid=te.id WHERE pr.playerid=${alias} AND te.year = $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'nationality':
-                text = `p.nationality = $${startingIndex}`;
+            }
+            break;
+        case 'year':
+            const yearCol = { ...hittingCols, ...pitchingCols }[statName];
+            if (yearCol) {
+                text = `EXISTS (SELECT 1 FROM player_record pr JOIN player_statistics ps ON pr.id = ps.player_record_id JOIN tournamentevent te ON pr.tournamentid = te.id WHERE pr.playerid = ${alias} GROUP BY te.year HAVING SUM(ps.${yearCol}) ${getOperator(category)} $${startingIndex})`;
                 values = [category.value];
-                break;
-            case 'seasonal_homeruns':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.homerun >= $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_hits':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.h >= $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_sb':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.sb >= $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_bb':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.bb >= $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_doubles':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.double >= $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_triples':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.triple >= $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_rbi':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.rbi >= $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_runs':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.r >= $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_wOBA':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps."wOBA" >= $${startingIndex} AND ps.pa >= 10)`;
-                values = [parseFloat(category.value)];
-                break;
-            case 'seasonal_avg':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.avg >= $${startingIndex} AND ps.pa >= 10)`;
-                values = [parseFloat(category.value)];
-                break;
-            case 'seasonal_ops':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps."OPS" >= $${startingIndex} AND ps.pa >= 10)`;
-                values = [parseFloat(category.value)];
-                break;
-            case 'seasonal_pitching_k':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_strikeout >= $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_pitching_ip':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_ip >= $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'seasonal_pitching_era':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_era <= $${startingIndex} AND ps.pitching_ip >= 30)`;
-                values = [parseFloat(category.value)];
-                break;
-            case 'seasonal_pitching_fip':
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.pitching_fip <= $${startingIndex} AND ps.pitching_ip >= 30)`;
-                values = [parseFloat(category.value)];
-                break;
-            case 'position':
-                text = `EXISTS (SELECT 1 FROM player_record pr_pos JOIN player_game pg ON pg.playerid = pr_pos.id WHERE pr_pos.playerid = ${alias} AND $${startingIndex} = ANY(pg.pos))`;
+            }
+            break;
+        case 'career':
+            const careerCol = { ...hittingCols, ...pitchingCols }[statName];
+            if (careerCol) {
+                text = `(SELECT SUM(ps.${careerCol}) FROM player_statistics ps JOIN player_record pr ON ps.player_record_id = pr.id WHERE pr.playerid = ${alias}) ${getOperator(category)} $${startingIndex}`;
                 values = [category.value];
-                break;
-            case 'perfect_game':
-                text = `EXISTS (SELECT 1 FROM player_record pr_pos JOIN player_game pg ON pg.playerid = pr_pos.id WHERE pg.pitch_h = 0 and pg.pitch_bb = 0 and pg.pitch_hbp = 0 and pg.pitch_ip >= $${startingIndex})`;
-                values = [parseInt(category.value)];
-                break;
-            case 'no_hitter':
-                text = `EXISTS (SELECT 1 FROM player_record pr_pos JOIN player_game pg ON pg.playerid = pr_pos.id WHERE pg.pitch_h = 0 and pg.pitch_ip >= $${startingIndex})`;
-                values = [parseInt(category.value)];
-            case 'cycle':
-                text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and (pg.h-pg.double-pg.triple-pg.hr) >= $${startingIndex} and pg.double >= 1 and pg.triple >= 1 and pg.hr >= 1)`;
+            }
+            break;
+        case 'game':
+            const gameCol = gameCols[statName];
+            if (gameCol) {
+                text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} AND pg.${gameCol} ${getOperator(category)} $${startingIndex})`;
                 values = [category.value];
-                break;
-                break;
-            default:
-                text = null;
-                values = [];
-                break;
-        }
+            } else if (statName === 'perfect_game') {
+                text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and pg.pitch_cg = 1 and pg.pitch_h = 0 and pg.pitch_bb = 0 and pg.pitch_hbp = 0 and pg.pitch_ip ${getOperator(category)} $${startingIndex})`;
+                values = [category.value];
+            } else if (statName === 'no_hitter') {
+                text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and pg.pitch_cg = 1 and pg.pitch_h = 0 and pg.pitch_ip ${getOperator(category)} $${startingIndex})`;
+                values = [category.value];
+            }
+            break;
     }
     return { text, values };
 };
 
 async function checkIntersection(cat1, cat2, pool) {
-    
     let allValues = [];
     let conditions = [];
     
@@ -169,10 +145,7 @@ async function checkIntersection(cat1, cat2, pool) {
     }
 }
 
-
-
 async function generateAndSaveGrid(gridName, pools, templates, pool, teamDataMap, gridDate) {
-    
     console.log(`--- Trying to generate grid for: ${gridName} on ${gridDate} ---`);
     shuffle(templates);
 
@@ -278,8 +251,6 @@ async function generateAndSaveGrid(gridName, pools, templates, pool, teamDataMap
     console.log(`\n Failed to find a valid grid for ${gridName} on ${gridDate} after all attempts.`);
 }
 
-
-
 async function main() {
     console.log('--- Starting Grid Generation Script ---');
 
@@ -297,7 +268,6 @@ async function main() {
     console.log("Successfully fetched all team data.");
 
     const enrich = (catArray) => catArray.map(cat => ({ ...cat, value: cat.value.toString() }));
-    
     
     const dailyTemplates = [
         { rows: ['T', 'T', 'R'], cols: ['N', 'S', 'S'] },
@@ -319,12 +289,11 @@ async function main() {
         T: enrich([...italianClubCategories, ...dutchClubCategories, ...austrianClubCategories, ...belgianClubCategories, ...spanishClubCategories, ...czechClubCategories, ...frenchClubCategories]),
         N: enrich(nationalTeamCategories),
         R: enrich(tournamentCategories),
-        S: statCategories, miscCategories,
+        S: [...statCategories, ...miscCategories],
         A: nationalityCategories,
         Y: yearCategories
     };
 
-    
     const COUNTRIES = [
         { name: 'austria', federation_ids: [8], clubs: austrianClubCategories },
         { name: 'netherlands', federation_ids: [1], clubs: dutchClubCategories },
@@ -356,7 +325,9 @@ async function main() {
                     T: enrich(country.clubs || []),
                     N: enrich(nationalTeamCategories.filter(c => country.federation_ids.includes(c.federation_id))),
                     R: enrich(tournamentCategories.filter(c => country.federation_ids.includes(c.federation_id))),
-                    S: statCategories,miscCategories, A: nationalityCategories, Y: yearCategories
+                    S: [...statCategories, ...miscCategories],
+                    A: nationalityCategories, 
+                    Y: yearCategories
                 };
                 await generateAndSaveGrid(country.name, countryPools, countryTemplates, pool, teamDataMap, dateString);
             }

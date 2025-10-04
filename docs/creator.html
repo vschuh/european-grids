@@ -17,6 +17,17 @@
         </header>
 
         <main id="creator-container">
+            <div id="how-to-create" class="info-section">
+                <h2>How to Create Your Grid</h2>
+                <ol>
+                    <li>Click on any of the six header cells (3 for rows, 3 for columns) to open the category selector.</li>
+                    <li>Choose a category type, then select the specific team, stat, or tournament you want.</li>
+                    <li>You can create your own custom stats by selecting "Create Custom Stat...".</li>
+                    <li>Once all six categories are filled, you can optionally give your grid a name.</li>
+                    <li>Click "Create & Get Share Link" to generate a unique URL for your grid.</li>
+                </ol>
+            </div>
+
             <div class="creator-step">
                 <label for="grid-name-input">Grid Name (Optional)</label>
                 <input type="text" id="grid-name-input" placeholder="e.g., Austria Finals Challenge">
@@ -75,15 +86,25 @@
         <div id="stat-creator-container">
             <button id="back-from-stat-creator-btn" class="modal-back-btn">← Back</button>
             <h3>Create a Custom Stat</h3>
+            <label for="stat-scope-select">Scope</label>
+            <select id="stat-scope-select">
+                <option value="seasonal">Season (Single Tournament)</option>
+                <option value="year">Year (All Tournaments)</option>
+                <option value="career">Career</option>
+                <option value="game">Single Game</option>
+            </select>
+            <label for="stat-type-select">Stat</label>
             <select id="stat-type-select"></select>
+            <label for="stat-condition-select">Condition</label>
             <select id="stat-condition-select">
                 <option value="min">At Least (>=)</option>
                 <option value="max">At Most (<=)</option>
             </select>
+            <label for="stat-value-input">Value</label>
             <input type="number" id="stat-value-input" value="10">
             <p id="stat-creator-hint" class="modal-hint"></p>
             <div class="modal-buttons">
-                <button id="add-stat-btn" class="btn-primary">Add Stat to List</button>
+                <button id="add-stat-btn" class="btn-primary">Add Stat</button>
                 <button id="cancel-stat-btn" class="btn-secondary">Cancel</button>
             </div>
         </div>
