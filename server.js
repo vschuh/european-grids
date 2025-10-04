@@ -10,14 +10,18 @@ const app = express();
 const port = 3000;
 const serverSessionId = Date.now().toString();
 
+
 const pool = new Pool({
     user: process.env.DB_USER,
     host: process.env.DB_HOST,
     database: process.env.DB_DATABASE,
     password: process.env.DB_PASSWORD,
     port: process.env.DB_PORT,
-    ssl: { rejectUnauthorized: false }
+    ssl: {
+        rejectUnauthorized: false
+    }
 });
+
 
 const allowedOrigins = ['https://vschuh.github.io', 'http://127.0.0.1:5500', 'http://www.euro-zones.com', "https://www.euro-zones.com"];
 const corsOptions = {
@@ -31,13 +35,31 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 app.use(express.json());
+
 app.use(express.static(path.join(__dirname, 'docs')));
+
 
 const playerMergeMap = new Map();
 for (const mainId in merges.players) {
     for (const anyId of merges.players[mainId]) {
         playerMergeMap.set(anyId.toString(), mainId.toString());
     }
+}
+
+// NEW: Helper function to replace parameterized values for logging
+function interpolateQuery(query, params) {
+    let i = 0;
+    return query.replace(/\$\d+/g, (match) => {
+        if (i < params.length) {
+            const value = params[i++];
+            if (typeof value === 'string') {
+                return "'" + value.replace(/'/g, "''") + "'";
+            }
+            if (value === null) { return 'NULL'; }
+            return value;
+        }
+        return match;
+    });
 }
 
 const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
@@ -81,42 +103,68 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
     const [scope, ...statParts] = category.type.split('_');
     const statName = statParts.join('_');
 
-    const hittingCols = { hits: 'h', homeruns: 'homerun', sb: 'sb', bb: 'bb', doubles: 'double', triples: 'triple', rbi: 'rbi', runs: 'r', hbp: 'hbp' };
-    const pitchingCols = { pitching_k: 'pitching_strikeout', pitching_ip: 'pitching_ip', pitching_hbp: 'pitching_hbp' };
-    const advancedHitting = { wOBA: '"wOBA"', avg: 'avg', ops: '"OPS"' };
-    const advancedPitching = { pitching_era: 'pitching_era', pitching_fip: 'pitching_fip' };
+    const summableHitting = { hits: 'h', homeruns: 'homerun', sb: 'sb', bb: 'bb', doubles: 'double', triples: 'triple', rbi: 'rbi', runs: 'r', hbp: 'hbp' };
+    const summablePitching = { pitching_k: 'pitching_strikeout', pitching_ip: 'pitching_ip', pitching_hbp: 'pitching_hbp' };
     const gameCols = { h: 'h', hr: 'hr', rbi: 'rbi', k: 'pitch_k' };
 
     switch (scope) {
         case 'seasonal':
-            const allSeasonalCols = { ...hittingCols, ...pitchingCols, ...advancedHitting, ...advancedPitching };
-            const seasonalCol = allSeasonalCols[statName];
-            if (seasonalCol) {
-                let qualifier = '';
-                if (advancedHitting[statName]) qualifier = ' AND ps.pa >= 10';
-                if (advancedPitching[statName]) qualifier = ' AND ps.pitching_ip >= 30';
-                text = `EXISTS (SELECT 1 FROM player_record pr_stat JOIN player_statistics ps ON pr_stat.id = ps.player_record_id WHERE pr_stat.playerid = ${alias} AND ps.${seasonalCol} ${getOperator(category)} $${startingIndex}${qualifier})`;
+            if (summableHitting[statName] || summablePitching[statName]) {
+                const col = { ...summableHitting, ...summablePitching }[statName];
+                text = `EXISTS (SELECT 1 FROM player_record pr JOIN player_statistics ps ON pr.id = ps.player_record_id WHERE pr.playerid = ${alias} AND ps.${col} ${getOperator(category)} $${startingIndex})`;
                 values = [category.value];
+            } else { // Handle seasonal rate stats
+                const rateStatQueries = {
+                    'avg': `ps.avg ${getOperator(category)} $${startingIndex} AND ps.pa >= 10`,
+                    'ops': `ps."OPS" ${getOperator(category)} $${startingIndex} AND ps.pa >= 10`,
+                    'wOBA': `ps."wOBA" ${getOperator(category)} $${startingIndex} AND ps.pa >= 10`,
+                    'pitching_era': `ps.pitching_era ${getOperator(category)} $${startingIndex} AND ps.pitching_ip >= 90`, // 30 IP * 3 outs
+                    'pitching_fip': `ps.pitching_fip ${getOperator(category)} $${startingIndex} AND ps.pitching_ip >= 90`
+                };
+                if (rateStatQueries[statName]) {
+                    text = `EXISTS (SELECT 1 FROM player_record pr JOIN player_statistics ps ON pr.id = ps.player_record_id WHERE pr.playerid = ${alias} AND ${rateStatQueries[statName]})`;
+                    values = [category.value];
+                }
             }
             break;
+
         case 'year':
-            const yearCol = { ...hittingCols, ...pitchingCols }[statName];
-            if (yearCol) {
-                text = `EXISTS (SELECT 1 FROM player_record pr JOIN player_statistics ps ON pr.id = ps.player_record_id JOIN tournamentevent te ON pr.tournamentid = te.id WHERE pr.playerid = ${alias} GROUP BY te.year HAVING SUM(ps.${yearCol}) ${getOperator(category)} $${startingIndex})`;
+            if (summableHitting[statName] || summablePitching[statName]) {
+                const col = { ...summableHitting, ...summablePitching }[statName];
+                text = `EXISTS (SELECT 1 FROM player_record pr JOIN player_statistics ps ON pr.id = ps.player_record_id JOIN tournamentevent te ON pr.tournamentid = te.id WHERE pr.playerid = ${alias} GROUP BY te.year HAVING SUM(ps.${col}) ${getOperator(category)} $${startingIndex})`;
                 values = [category.value];
+            } else { // Handle calculated yearly rate stats
+                const yearlyRateStatQueries = {
+                    'avg': `SUM(ps.pa) >= 30 AND (SUM(ps.h)::decimal / NULLIF(SUM(ps.ab), 0)) ${getOperator(category)} $${startingIndex}`,
+                    'pitching_era': `SUM(ps.pitching_ip) >= 90 AND ((SUM(ps.pitching_er) * 27) / NULLIF(SUM(ps.pitching_ip), 0)) ${getOperator(category)} $${startingIndex}`
+                };
+                if(yearlyRateStatQueries[statName]) {
+                    text = `EXISTS (SELECT 1 FROM player_record pr JOIN player_statistics ps ON pr.id = ps.player_record_id JOIN tournamentevent te ON pr.tournamentid = te.id WHERE pr.playerid = ${alias} GROUP BY te.year HAVING ${yearlyRateStatQueries[statName]})`;
+                    values = [category.value];
+                }
             }
             break;
+
         case 'career':
-            const careerCol = { ...hittingCols, ...pitchingCols }[statName];
-            if (careerCol) {
-                text = `(SELECT SUM(ps.${careerCol}) FROM player_statistics ps JOIN player_record pr ON ps.player_record_id = pr.id WHERE pr.playerid = ${alias}) ${getOperator(category)} $${startingIndex}`;
+            if (summableHitting[statName] || summablePitching[statName]) {
+                const col = { ...summableHitting, ...summablePitching }[statName];
+                text = `(SELECT SUM(ps.${col}) FROM player_statistics ps JOIN player_record pr ON ps.player_record_id = pr.id WHERE pr.playerid = ${alias}) ${getOperator(category)} $${startingIndex}`;
                 values = [category.value];
+            } else { // Handle calculated career rate stats
+                 const careerRateStatQueries = {
+                    'avg': `(SELECT SUM(ps.pa) >= 100 AND (SUM(ps.h)::decimal / NULLIF(SUM(ps.ab), 0)) ${getOperator(category)} $${startingIndex} FROM player_record pr JOIN player_statistics ps ON pr.id = ps.player_record_id WHERE pr.playerid = ${alias})`,
+                    'pitching_era': `(SELECT SUM(ps.pitching_ip) >= 300 AND ((SUM(ps.pitching_er) * 27) / NULLIF(SUM(ps.pitching_ip), 0)) ${getOperator(category)} $${startingIndex} FROM player_record pr JOIN player_statistics ps ON pr.id = ps.player_record_id WHERE pr.playerid = ${alias})`
+                };
+                if(careerRateStatQueries[statName]) {
+                    text = careerRateStatQueries[statName];
+                    values = [category.value];
+                }
             }
             break;
+
         case 'game':
-            const gameCol = gameCols[statName];
-            if (gameCol) {
-                text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} AND pg.${gameCol} ${getOperator(category)} $${startingIndex})`;
+            if (gameCols[statName]) {
+                text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} AND pg.${gameCols[statName]} ${getOperator(category)} $${startingIndex})`;
                 values = [category.value];
             } else if (statName === 'perfect_game') {
                 text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and pg.pitch_cg = 1 and pg.pitch_h = 0 and pg.pitch_bb = 0 and pg.pitch_hbp = 0 and pg.pitch_ip ${getOperator(category)} $${startingIndex})`;
@@ -129,6 +177,7 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
     }
     return { text, values };
 };
+
 
 app.get('/api/grid/:identifier', async (req, res) => {
     const { identifier } = req.params;
@@ -222,6 +271,11 @@ app.get('/api/validate', async (req, res) => {
     const queryParams = [...allPlayerIds, ...cond.values];
 
     try {
+        // ADD THIS to log the query before executing it
+        console.log("\n--- DEBUG: VALIDATE QUERY ---");
+        console.log(interpolateQuery(query, queryParams));
+        console.log("---------------------------\n");
+
         const validationResult = await pool.query(query, queryParams);
         if (validationResult.rows[0].exists) {
             const imageResult = await pool.query(imageQuery, [allPlayerIds]);
@@ -260,6 +314,11 @@ app.post('/api/get-cell-answers', async (req, res) => {
     const query = `SELECT DISTINCT p.firstname, p.lastname FROM player p WHERE ${conditions.join(' AND ')} ORDER BY p.lastname, p.firstname;`;
     
     try {
+        // ADD THIS to log the query before executing it
+        console.log("\n--- DEBUG: GET CELL ANSWERS QUERY ---");
+        console.log(interpolateQuery(query, allValues));
+        console.log("-------------------------------------\n");
+        
         const result = await pool.query(query, allValues);
         const players = result.rows.map(p => `${p.firstname} ${p.lastname}`);
         res.json({ players, count: players.length });
