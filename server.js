@@ -7,7 +7,7 @@ const path = require('path');
 const merges = require('./merges.json');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000; // Use port from environment variables
 const serverSessionId = Date.now().toString();
 
 
@@ -19,7 +19,9 @@ const pool = new Pool({
     port: process.env.DB_PORT,
     ssl: {
         rejectUnauthorized: false
-    }
+    },
+    // Add connection timeout to prevent long waits on sleeping DBs
+    connectionTimeoutMillis: 10000, 
 });
 
 
@@ -37,6 +39,18 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use(express.static(path.join(__dirname, 'docs')));
+
+
+app.get('/health', async (req, res) => {
+    try {
+        const client = await pool.connect();
+        client.release();
+        res.status(200).send({ status: 'ok', database: 'connected' });
+    } catch (dbError) {
+        console.error('Health check failed:', dbError);
+        res.status(503).send({ status: 'error', database: 'disconnected' });
+    }
+});
 
 
 const playerMergeMap = new Map();
@@ -67,7 +81,6 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
     let values = [];
     const getOperator = (cat) => cat.condition === 'max' ? '<=' : '>=';
 
-    // Handle non-stat, non-scoped categories first
     switch (category.type) {
         case 'team':
             const mainTeamId = category.value;
@@ -96,9 +109,6 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
             text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and (pg.h-pg.double-pg.triple-pg.hr) >= 1 and pg.double >= 1 and pg.triple >= 1 and pg.hr >= 1)`;
             values = [1];
             return { text, values };
-        
-        // --- FIX IS HERE ---
-        // Handle special misc categories that don't follow the scope_stat format
         case 'perfect_game':
             text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and pg.pitch_cg = 1 and pg.pitch_h = 0 and pg.pitch_bb = 0 and pg.pitch_hbp = 0 and pg.pitch_ip ${getOperator(category)} $${startingIndex})`;
             values = [category.value];
@@ -107,13 +117,10 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
             text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} and pg.pitch_cg = 1 and pg.pitch_h = 0 and pg.pitch_ip ${getOperator(category)} $${startingIndex})`;
             values = [category.value];
             return { text, values };
-        // --- END FIX ---
     }
 
-    // Handle new scoped stat categories
     const [scope, ...statParts] = category.type.split('_');
     const statName = statParts.join('_');
-
     const summableHitting = { hits: 'h', homeruns: 'homerun', sb: 'sb', bb: 'bb', doubles: 'double', triples: 'triple', rbi: 'rbi', runs: 'r', hbp: 'hbp' };
     const summablePitching = { pitching_k: 'pitching_strikeout', pitching_ip: 'pitching_ip', pitching_hbp: 'pitching_hbp' };
     const gameCols = { h: 'h', hr: 'hr', rbi: 'rbi', k: 'pitch_k' };
@@ -124,12 +131,12 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
                 const col = { ...summableHitting, ...summablePitching }[statName];
                 text = `EXISTS (SELECT 1 FROM player_record pr JOIN player_statistics ps ON pr.id = ps.player_record_id WHERE pr.playerid = ${alias} AND ps.${col} ${getOperator(category)} $${startingIndex})`;
                 values = [category.value];
-            } else { // Handle seasonal rate stats
+            } else {
                 const rateStatQueries = {
                     'avg': `ps.avg ${getOperator(category)} $${startingIndex} AND ps.pa >= 10`,
                     'ops': `ps."OPS" ${getOperator(category)} $${startingIndex} AND ps.pa >= 10`,
                     'wOBA': `ps."wOBA" ${getOperator(category)} $${startingIndex} AND ps.pa >= 10`,
-                    'pitching_era': `ps.pitching_era ${getOperator(category)} $${startingIndex} AND ps.pitching_ip >= 90`, // 30 IP * 3 outs
+                    'pitching_era': `ps.pitching_era ${getOperator(category)} $${startingIndex} AND ps.pitching_ip >= 90`,
                     'pitching_fip': `ps.pitching_fip ${getOperator(category)} $${startingIndex} AND ps.pitching_ip >= 90`
                 };
                 if (rateStatQueries[statName]) {
@@ -138,13 +145,12 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
                 }
             }
             break;
-
         case 'year':
             if (summableHitting[statName] || summablePitching[statName]) {
                 const col = { ...summableHitting, ...summablePitching }[statName];
                 text = `EXISTS (SELECT 1 FROM player_record pr JOIN player_statistics ps ON pr.id = ps.player_record_id JOIN tournamentevent te ON pr.tournamentid = te.id WHERE pr.playerid = ${alias} GROUP BY te.year HAVING SUM(ps.${col}) ${getOperator(category)} $${startingIndex})`;
                 values = [category.value];
-            } else { // Handle calculated yearly rate stats
+            } else {
                 const yearlyRateStatQueries = {
                     'avg': `SUM(ps.pa) >= 30 AND (SUM(ps.h)::decimal / NULLIF(SUM(ps.ab), 0)) ${getOperator(category)} $${startingIndex}`,
                     'pitching_era': `SUM(ps.pitching_ip) >= 90 AND ((SUM(ps.pitching_er) * 27) / NULLIF(SUM(ps.pitching_ip), 0)) ${getOperator(category)} $${startingIndex}`
@@ -155,13 +161,12 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
                 }
             }
             break;
-
         case 'career':
             if (summableHitting[statName] || summablePitching[statName]) {
                 const col = { ...summableHitting, ...summablePitching }[statName];
                 text = `(SELECT SUM(ps.${col}) FROM player_statistics ps JOIN player_record pr ON ps.player_record_id = pr.id WHERE pr.playerid = ${alias}) ${getOperator(category)} $${startingIndex}`;
                 values = [category.value];
-            } else { // Handle calculated career rate stats
+            } else {
                  const careerRateStatQueries = {
                     'avg': `(SELECT SUM(ps.pa) >= 100 AND (SUM(ps.h)::decimal / NULLIF(SUM(ps.ab), 0)) ${getOperator(category)} $${startingIndex} FROM player_record pr JOIN player_statistics ps ON pr.id = ps.player_record_id WHERE pr.playerid = ${alias})`,
                     'pitching_era': `(SELECT SUM(ps.pitching_ip) >= 300 AND ((SUM(ps.pitching_er) * 27) / NULLIF(SUM(ps.pitching_ip), 0)) ${getOperator(category)} $${startingIndex} FROM player_record pr JOIN player_statistics ps ON pr.id = ps.player_record_id WHERE pr.playerid = ${alias})`
@@ -172,7 +177,6 @@ const buildCondition = (category, playerAlias = 'p', startingIndex = 1) => {
                 }
             }
             break;
-
         case 'game':
             if (gameCols[statName]) {
                 text = `EXISTS (SELECT 1 FROM player_game pg JOIN player_record pr ON pg.playerid = pr.id WHERE pr.playerid = ${alias} AND pg.${gameCols[statName]} ${getOperator(category)} $${startingIndex})`;
@@ -365,6 +369,20 @@ app.get(/^\/.*/, (req, res) => {
     res.sendFile(path.join(__dirname, 'docs', 'index.html'));
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
+async function startServer() {
+    try {
+        const client = await pool.connect();
+        console.log('✅ Database connection successful.');
+        client.release();
+        
+        app.listen(port, () => {
+          console.log(`🚀 Server is running on http://localhost:${port}`);
+        });
+    } catch (err) {
+        console.error('❌ Failed to connect to the database. Server will not start.');
+        console.error(err.stack);
+        process.exit(1);
+    }
+}
+
+startServer();
