@@ -39,8 +39,7 @@ async function upload() {
         try {
             const query = `
                 INSERT INTO grids (type, grid_date, grid_data) 
-                VALUES ($1, $2, $3)
-                ON CONFLICT (type, grid_date) DO NOTHING;
+                VALUES ($1, $2, $3);
             `;
             // Use grid.type to upload the correct type ('daily', 'austria', etc.)
             await hostedPool.query(query, [grid.type, grid.grid_date, grid.grid_data]);

@@ -1,10 +1,5 @@
 import 'dotenv/config';
-import fs from 'fs';
 import pg from 'pg';
-import merges from './merges.json' with { type: 'json' };
-import { buildCondition } from './queryBuilder.mjs';
-const { Pool } = pg;
-
 import {
     nationalTeamCategories,
     italianClubCategories,
@@ -20,6 +15,9 @@ import {
     nationalityCategories,
     miscCategories
 } from './docs/categories.mjs';
+import { buildCondition } from './queryBuilder.mjs';
+
+const { Pool } = pg;
 
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -48,60 +46,53 @@ async function checkIntersection(cat1, cat2, pool) {
         const result = await pool.query(query, allValues);
         return { count: parseInt(result.rows[0].count) };
     } catch (error) {
-        console.error("\n--- SQL ERROR IN checkIntersection ---");
-        console.error("Failed Query:", query);
-        console.error("Failed Values:", allValues);
-        console.error("Error Message:", error.message);
+        console.error("\n--- SQL ERROR IN checkIntersection ---", { query, allValues, error: error.message });
         return { count: 0 };
     }
 }
 
-async function generateAndSaveGrid(gridName, pools, templates, pool, teamDataMap, gridDate) {
-    console.log(`--- Trying to generate grid for: ${gridName} on ${gridDate} ---`);
+/**
+ * Finds a valid grid combination from the given lists of specific items.
+ * This function is fast and does NOT permanently change the lists it's given.
+ * @returns {Promise<{success: boolean, rows?: object[], cols?: object[]}>}
+ */
+async function findValidGrid(pools, templates, pool) {
     shuffle(templates);
 
-    const processCategory = (cat) => {
-        if (cat.type === 'team') {
-            const teamInfo = teamDataMap.get(cat.value.toString());
-            return {
-                label: cat.label,
-                type: cat.type,
-                value: cat.value,
-                image: teamInfo ? teamInfo.flag : null
-            };
-        }
-        return cat;
-    };
-
     for (const template of templates) {
-        let availablePools = {
+        // Create a temporary, shallow copy of the lists for this template attempt.
+        const availablePools = {
             T: [...pools.T], N: [...pools.N], R: [...pools.R],
             S: [...pools.S], A: [...pools.A], Y: [...pools.Y]
         };
         Object.values(availablePools).forEach(shuffle);
 
-        for (let attempt = 0; attempt < 250; attempt++) {
+        
+        for (let attempt = 0; attempt < 500; attempt++) {
+            const attemptPools = {
+                T: [...availablePools.T], N: [...availablePools.N], R: [...availablePools.R],
+                S: [...availablePools.S], A: [...availablePools.A], Y: [...availablePools.Y]
+            };
+
             const anchorType = template.rows[0];
-            if (availablePools[anchorType].length === 0) break;
-            const anchorCat = availablePools[anchorType].pop();
+            if (attemptPools[anchorType].length === 0) break;
+            const anchorCat = attemptPools[anchorType].pop();
 
             const colTypes = template.cols;
             let compatibleCols = [];
             
             for (const colType of colTypes) {
                 let foundCompatibleCol = false;
-                
-                let tempColPool = [...availablePools[colType]];
-                shuffle(tempColPool);
+                shuffle(attemptPools[colType]);
 
-                for (const colCat of tempColPool) {
+                for (let i = 0; i < attemptPools[colType].length; i++) {
+                    const colCat = attemptPools[colType][i];
                     if (colCat.value === anchorCat.value) continue;
 
                     const { count } = await checkIntersection(anchorCat, colCat, pool);
                     if (count >= 3) {
                         compatibleCols.push(colCat);
-                        
-                        availablePools[colType] = availablePools[colType].filter(c => c.value !== colCat.value);
+                        attemptPools[colType].splice(i, 1); // Remove the used item for this attempt.
                         foundCompatibleCol = true;
                         break;
                     }
@@ -114,9 +105,11 @@ async function generateAndSaveGrid(gridName, pools, templates, pool, teamDataMap
             const remainingRowTypes = template.rows.slice(1);
             let remainingRows = [];
             let usedValues = new Set([anchorCat.value, ...compatibleCols.map(c => c.value)]);
+
             for (const rowType of remainingRowTypes) {
-                const candidate = availablePools[rowType].find(r => !usedValues.has(r.value));
-                if (candidate) {
+                const candidateIndex = attemptPools[rowType].findIndex(r => !usedValues.has(r.value));
+                if (candidateIndex > -1) {
+                    const candidate = attemptPools[rowType].splice(candidateIndex, 1)[0];
                     remainingRows.push(candidate);
                     usedValues.add(candidate.value);
                 }
@@ -139,38 +132,21 @@ async function generateAndSaveGrid(gridName, pools, templates, pool, teamDataMap
             }
 
             if (isGridValid) {
-                const finalRowsProcessed = finalGridRows.map(processCategory);
-                const finalColsProcessed = finalGridCols.map(processCategory);
-                const goldenGrid = { rows: finalRowsProcessed, cols: finalColsProcessed };
-
-                try {
-                    const gridData = JSON.stringify(goldenGrid);
-                    const query = `
-                        INSERT INTO grids (type, grid_date, grid_data) 
-                        VALUES ($1, $2, $3)
-                        ON CONFLICT (type, grid_date) DO NOTHING;
-                    `;
-                    await pool.query(query, [gridName, gridDate, gridData]);
-                    console.log(` Grid for ${gridName} on ${gridDate} saved to the database.`);
-                    return; 
-                } catch (dbError) {
-                    console.error(` Failed to save grid to database:`, dbError);
-                }
+                // SUCCESS: Return the list of specific items used.
+                return { success: true, rows: finalGridRows, cols: finalGridCols };
             }
         }
     }
-    console.log(`\n Failed to find a valid grid for ${gridName} on ${gridDate} after all attempts.`);
+    // FAILURE: No valid grid was found.
+    return { success: false };
 }
 
 async function main() {
     console.log('--- Starting Grid Generation Script ---');
 
     const pool = new Pool({
-        user: process.env.DB_USER,
-        host: process.env.DB_HOST,
-        database: process.env.DB_DATABASE,
-        password: process.env.DB_PASSWORD,
-        port: process.env.DB_PORT,
+        user: process.env.DB_USER, host: process.env.DB_HOST, database: process.env.DB_DATABASE,
+        password: process.env.DB_PASSWORD, port: process.env.DB_PORT,
     });
     
     console.log("Fetching all team data...");
@@ -180,67 +156,81 @@ async function main() {
 
     const enrich = (catArray) => catArray.map(cat => ({ ...cat, value: cat.value.toString() }));
     
-    const dailyTemplates = [
-        { rows: ['T', 'T', 'R'], cols: ['N', 'S', 'S'] },
-        { rows: ['T', 'N', 'S'], cols: ['T', 'R', 'S'] },
-        { rows: ['T', 'A', 'S'], cols: ['T', 'R', 'S'] },
-        { rows: ['R', 'S', 'T'], cols: ['T', 'A', 'N'] },
-        { rows: ['T', 'S', 'R'], cols: ['A', 'Y', 'N'] },
-        { rows: ['T', 'T', 'N'], cols: ['S', 'S', 'R'] }
-    ];
-    
-    const countryTemplates = [
-        { rows: ['T', 'T', 'R'], cols: ['S', 'Y', 'N'] },
-        { rows: ['S', 'A', 'Y'], cols: ['T', 'T', 'R'] },
-        { rows: ['T', 'T', 'N'], cols: ['S', 'S', 'R'] },
-        { rows: ['S', 'Y', 'A'], cols: ['T', 'T', 'N'] }
-    ];
+    const dailyTemplates = [ { rows: ['T', 'T', 'R'], cols: ['N', 'S', 'S'] }, { rows: ['T', 'N', 'S'], cols: ['T', 'R', 'S'] }, { rows: ['T', 'A', 'S'], cols: ['T', 'R', 'S'] }, { rows: ['R', 'S', 'T'], cols: ['T', 'A', 'N'] }, { rows: ['T', 'S', 'R'], cols: ['A', 'Y', 'N'] }, { rows: ['T', 'T', 'N'], cols: ['S', 'S', 'R'] }];
+    const countryTemplates = [ { rows: ['T', 'T', 'R'], cols: ['S', 'Y', 'N'] }, { rows: ['S', 'A', 'Y'], cols: ['T', 'T', 'R'] }, { rows: ['T', 'T', 'N'], cols: ['S', 'S', 'R'] }, { rows: ['S', 'Y', 'A'], cols: ['T', 'T', 'N'] }];
+    const COUNTRIES = [ { name: 'austria', federation_ids: [8], clubs: austrianClubCategories }, { name: 'netherlands', federation_ids: [1], clubs: dutchClubCategories }, { name: 'italy', federation_ids: [2], clubs: italianClubCategories }, { name: 'czechia', federation_ids: [6, 148], clubs: czechClubCategories }, { name: 'belgium', federation_ids: [143], clubs: belgianClubCategories }, { name: 'france', federation_ids: [14], clubs: frenchClubCategories }, { name: 'spain', federation_ids: [39], clubs: spanishClubCategories }];
 
-    const dailyPools = {
+    const masterDailyPools = {
         T: enrich([...italianClubCategories, ...dutchClubCategories, ...austrianClubCategories, ...belgianClubCategories, ...spanishClubCategories, ...czechClubCategories, ...frenchClubCategories]),
-        N: enrich(nationalTeamCategories),
-        R: enrich(tournamentCategories),
-        S: [...statCategories, ...miscCategories],
-        A: nationalityCategories,
-        Y: yearCategories
+        N: enrich(nationalTeamCategories), R: enrich(tournamentCategories), S: [...statCategories, ...miscCategories], A: nationalityCategories, Y: yearCategories
     };
+    const masterCountryPoolsMap = new Map();
+    for (const country of COUNTRIES) {
+        masterCountryPoolsMap.set(country.name, {
+            T: enrich(country.clubs || []),
+            N: enrich(nationalTeamCategories.filter(c => country.federation_ids.includes(c.federation_id))),
+            R: enrich(tournamentCategories.filter(c => country.federation_ids.includes(c.federation_id))),
+            S: [...statCategories, ...miscCategories], A: nationalityCategories, Y: yearCategories
+        });
+    }
+    let workingDailyPools = JSON.parse(JSON.stringify(masterDailyPools));
+    let workingCountryPoolsMap = JSON.parse(JSON.stringify(Object.fromEntries(masterCountryPoolsMap)));
+    
+    const processCategory = (cat) => cat.type === 'team' ? { ...cat, image: teamDataMap.get(cat.value)?.flag || null } : cat;
 
-    const COUNTRIES = [
-        { name: 'austria', federation_ids: [8], clubs: austrianClubCategories },
-        { name: 'netherlands', federation_ids: [1], clubs: dutchClubCategories },
-        { name: 'italy', federation_ids: [2], clubs: italianClubCategories },
-        { name: 'czechia', federation_ids: [6, 148], clubs: czechClubCategories },
-        { name: 'belgium', federation_ids: [143], clubs: belgianClubCategories },
-        { name: 'france', federation_ids: [14], clubs: frenchClubCategories }
-    ];
     for (let i = 0; i < 100; i++) {
         const gridDate = new Date();
         gridDate.setUTCDate(gridDate.getUTCDate() + i);
         const dateString = gridDate.toISOString().split('T')[0];
         
-        console.log(`\n--- [BATCH] Checking grids for date: ${dateString} ---`);
+        console.log(`\n--- [BATCH] Generating grids for date: ${dateString} ---`);
 
+        // --- Daily Grid ---
         const dailyCheck = await pool.query('SELECT 1 FROM grids WHERE type = $1 AND grid_date = $2', ['daily', dateString]);
         if (dailyCheck.rows.length > 0) {
             console.log(`Skipping 'daily' for ${dateString}, grid already exists.`);
         } else {
-            await generateAndSaveGrid('daily', dailyPools, dailyTemplates, pool, teamDataMap, dateString);
+            console.log(`--- Trying to generate grid for: daily on ${dateString} ---`);
+            const result = await findValidGrid(workingDailyPools, dailyTemplates, pool);
+
+            if (result.success) {
+                const usedValues = new Set([...result.rows.map(c => c.value), ...result.cols.map(c => c.value)]);
+                for (const key in workingDailyPools) {
+                    workingDailyPools[key] = workingDailyPools[key].filter(c => !usedValues.has(c.value));
+                }
+                const goldenGrid = { rows: result.rows.map(processCategory), cols: result.cols.map(processCategory) };
+                await pool.query('INSERT INTO grids (type, grid_date, grid_data) VALUES ($1, $2, $3)', ['daily', dateString, JSON.stringify(goldenGrid)]);
+                console.log(` Grid for daily on ${dateString} saved to the database.`);
+            } else {
+                console.log(`\n Failed to find a valid grid for daily on ${dateString} after all attempts.`);
+                console.log(`-> Resetting list of specific items for 'daily' for the next attempt.`);
+                workingDailyPools = JSON.parse(JSON.stringify(masterDailyPools));
+            }
         }
 
+        
         for (const country of COUNTRIES) {
             const countryCheck = await pool.query('SELECT 1 FROM grids WHERE type = $1 AND grid_date = $2', [country.name, dateString]);
             if (countryCheck.rows.length > 0) {
                 console.log(`Skipping '${country.name}' for ${dateString}, grid already exists.`);
             } else {
-                const countryPools = {
-                    T: enrich(country.clubs || []),
-                    N: enrich(nationalTeamCategories.filter(c => country.federation_ids.includes(c.federation_id))),
-                    R: enrich(tournamentCategories.filter(c => country.federation_ids.includes(c.federation_id))),
-                    S: [...statCategories, ...miscCategories],
-                    A: nationalityCategories, 
-                    Y: yearCategories
-                };
-                await generateAndSaveGrid(country.name, countryPools, countryTemplates, pool, teamDataMap, dateString);
+                console.log(`--- Trying to generate grid for: ${country.name} on ${dateString} ---`);
+                const workingPools = workingCountryPoolsMap[country.name];
+                const result = await findValidGrid(workingPools, countryTemplates, pool);
+
+                if (result.success) {
+                    const usedValues = new Set([...result.rows.map(c => c.value), ...result.cols.map(c => c.value)]);
+                    for (const key in workingPools) {
+                        workingPools[key] = workingPools[key].filter(c => !usedValues.has(c.value));
+                    }
+                    const goldenGrid = { rows: result.rows.map(processCategory), cols: result.cols.map(processCategory) };
+                    await pool.query('INSERT INTO grids (type, grid_date, grid_data) VALUES ($1, $2, $3)', [country.name, dateString, JSON.stringify(goldenGrid)]);
+                    console.log(` Grid for ${country.name} on ${dateString} saved to the database.`);
+                } else {
+                    console.log(`\n Failed to find a valid grid for ${country.name} on ${dateString} after all attempts.`);
+                    console.log(`-> Resetting list of specific items for '${country.name}' for the next attempt.`);
+                    workingCountryPoolsMap[country.name] = JSON.parse(JSON.stringify(masterCountryPoolsMap.get(country.name)));
+                }
             }
         }
     }
