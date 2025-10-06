@@ -1,0 +1,41 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_pitching_k",
+      "label": ">=50k Season",
+      "value": 50,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/3084d3b0-293e-1776-d083-36810be4a442.png",
+      "label": "Club Atlético Deportivo Irabia/Izaga",
+      "value": "1960"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f14607c0-9bb5-122e-4481-f1475f202b0f.png",
+      "label": "CBS Toros",
+      "value": "1654"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Béisbol Oro (ESP)",
+      "value": "ESP-LNDH-BB",
+      "federation_id": 39
+    }
+  ]
+}
