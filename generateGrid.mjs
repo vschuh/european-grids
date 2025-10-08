@@ -188,54 +188,55 @@ async function main() {
         });
     }
 
-    const masterInternationalPools = {
-        U: [...enrich(euClubCategories), ...enrich(nationalTeamCategories)], 
-        R: enrich(tournamentCategories),
-        S: [...statCategories, ...miscCategories],
-        Y: yearCategories
+
+
+
+for (let i = 0; i < 100; i++) {
+    const gridDate = new Date();
+    gridDate.setUTCDate(gridDate.getUTCDate() + i);
+    const dateString = gridDate.toISOString().split('T')[0];
+
+    console.log(`\n--- [BATCH] Generating grids for date: ${dateString} ---`);
+
+    const processAndSaveGrid = async (type, masterPool, templates) => {
+        const check = await pool.query('SELECT 1 FROM grids WHERE type = $1 AND grid_date = $2', [type, dateString]);
+        if (check.rows.length > 0) {
+            console.log(`Skipping '${type}' for ${dateString}, grid already exists.`);
+            return;
+        }
+
+        console.log(`--- Trying to generate grid for: ${type} on ${dateString} ---`);
+        const result = await findValidGrid(masterPool, templates, pool);
+
+        if (result.success) {
+            const goldenGrid = {
+                rows: result.rows.map(processCategory),
+                cols: result.cols.map(processCategory),
+                answers: result.answers 
+            };
+            await pool.query('INSERT INTO grids (type, grid_date, grid_data) VALUES ($1, $2, $3)', [type, dateString, JSON.stringify(goldenGrid)]);
+            console.log(` Grid for ${type} on ${dateString} saved to the database.`);
+        } else {
+            console.log(`\n Failed to find a valid grid for ${type} on ${dateString} after all attempts.`);
+        }
     };
 
+    await processAndSaveGrid('daily', masterDailyPools, dailyTemplates);
 
-    for (let i = 0; i < 100; i++) {
-        const gridDate = new Date();
-        gridDate.setUTCDate(gridDate.getUTCDate() + i);
-        const dateString = gridDate.toISOString().split('T')[0];
-        
-        console.log(`\n--- [BATCH] Generating grids for date: ${dateString} ---`);
-
-        const processAndSaveGrid = async (type, masterPool, templates) => {
-            const check = await pool.query('SELECT 1 FROM grids WHERE type = $1 AND grid_date = $2', [type, dateString]);
-            if (check.rows.length > 0) {
-                console.log(`Skipping '${type}' for ${dateString}, grid already exists.`);
-                return;
-            }
-            
-            console.log(`--- Trying to generate grid for: ${type} on ${dateString} ---`);
-            const result = await findValidGrid(masterPool, templates, pool);
-
-            if (result.success) {
-                const goldenGrid = {
-                    rows: result.rows.map(processCategory),
-                    cols: result.cols.map(processCategory),
-                    answers: result.answers 
-                };
-                await pool.query('INSERT INTO grids (type, grid_date, grid_data) VALUES ($1, $2, $3)', [type, dateString, JSON.stringify(goldenGrid)]);
-                console.log(` Grid for ${type} on ${dateString} saved to the database.`);
-            } else {
-                console.log(`\n Failed to find a valid grid for ${type} on ${dateString} after all attempts.`);
-            }
-        };
-
-        await processAndSaveGrid('daily', masterDailyPools, dailyTemplates);
-
-        for (const country of COUNTRIES) {
-            if (INTERNATIONAL_GRIDS.includes(country.name)) {
-                await processAndSaveGrid(country.name, masterInternationalPools, internationalTemplates);
-            } else {
-                await processAndSaveGrid(country.name, masterCountryPoolsMap.get(country.name), countryTemplates);
-            }
+    for (const country of COUNTRIES) {
+        if (INTERNATIONAL_GRIDS.includes(country.name)) {
+            const internationalPool = {
+                U: [...enrich(country.clubs || []), ...enrich(nationalTeamCategories)],
+                R: enrich(tournamentCategories.filter(c => country.federation_ids.includes(c.federation_id))),
+                S: [...statCategories, ...miscCategories],
+                Y: yearCategories
+            };
+            await processAndSaveGrid(country.name, internationalPool, internationalTemplates);
+        } else {
+            await processAndSaveGrid(country.name, masterCountryPoolsMap.get(country.name), countryTemplates);
         }
     }
+}
 
     await pool.end();
     console.log("\n--- All grid generation complete. ---");
