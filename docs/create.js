@@ -1,7 +1,7 @@
 import { 
     nationalTeamCategories, italianClubCategories, dutchClubCategories, austrianClubCategories, 
     belgianClubCategories, spanishClubCategories, czechClubCategories, frenchClubCategories, 
-    statCategories, tournamentCategories, yearCategories, nationalityCategories,miscCategories
+    statCategories, tournamentCategories, yearCategories, nationalityCategories,miscCategories,euClubCategories,globalClubCategories
 } from './categories.mjs';
 
 const API_BASE_URL = 'https://european-grids-api.onrender.com';
@@ -15,6 +15,8 @@ const categoryGroups = {
     "Spanish Clubs": spanishClubCategories,
     "Czech Clubs": czechClubCategories,
     "French Clubs": frenchClubCategories,
+    "INT EU Clubs": euClubCategories,
+    "INT Global Clubs": globalClubCategories,
     "Tournaments": tournamentCategories,
     "Player Stats": statCategories,
     "Nationalities": nationalityCategories,

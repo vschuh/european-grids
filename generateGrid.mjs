@@ -14,7 +14,8 @@ import {
     yearCategories,
     nationalityCategories,
     miscCategories,
-    euClubCategories
+    euClubCategories,
+    globalClubCategories
 } from './docs/categories.mjs';
 import { buildCondition } from './queryBuilder.mjs';
 
@@ -153,7 +154,7 @@ async function main() {
 
     const COUNTRIES = [
         { name: 'wbsc_eu', clubs: euClubCategories, federation_ids: [278] },
-        // { name: 'wbsc_global', clubs: [], federation_ids: [0] }, // MODIFICATION: Added placeholder for global
+        { name: 'wbsc_global', clubs: globalClubCategories, federation_ids: [0] },
         { name: 'austria', clubs: austrianClubCategories, federation_ids: [8] },
         { name: 'netherlands', clubs: dutchClubCategories, federation_ids: [1] },
         { name: 'italy', clubs: italianClubCategories, federation_ids: [2] },
