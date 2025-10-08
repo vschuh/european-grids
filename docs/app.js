@@ -2,12 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const API_BASE_URL = 'https://european-grids-api.onrender.com';
     const gridContainer = document.getElementById('grid-container');
     const livesCountSpan = document.getElementById('lives-count');
-    const giveUpBtn = document.getElementById('give-up-btn');
+    const attemptCountSpan = document.getElementById('attempt-count');
+    const controlsContainer = document.getElementById('controls');
     const searchModal = document.getElementById('search-modal');
     const searchInput = document.getElementById('search-input');
     const searchResults = document.getElementById('search-results');
     const closeModalBtn = document.getElementById('close-modal-btn');
-    const countryNav = document.getElementById('country-nav');
     const giveUpModal = document.getElementById('give-up-modal');
     const confirmGiveUpBtn = document.getElementById('confirm-give-up-btn');
     const cancelGiveUpBtn = document.getElementById('cancel-give-up-btn');
@@ -17,27 +17,19 @@ document.addEventListener('DOMContentLoaded', () => {
     let gameState = {};
     let isGameOver = false;
     let activeCell = null;
-    (function() {
-        const redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (redirect && redirect != location.pathname) {
-          history.replaceState(null, null, redirect);
-        }
-      })();
-    
-    function getCountryCode() {
-        return window.location.hash.substring(1) || 'daily';
-    }
+
+    // --- State Management ---
 
     function loadGameState(newSessionId, identifier) {
         const savedStateJSON = localStorage.getItem(`gridGameState_${identifier}`);
         const savedState = savedStateJSON ? JSON.parse(savedStateJSON) : null;
         const today = new Date().toISOString().split('T')[0];
     
-        
         if (!savedState || savedState.serverSessionId !== newSessionId || savedState.date !== today) {
+            // Start a fresh state
             gameState = {
                 guesses: 9,
+                attempt: 1,
                 guessedPlayerIds: [],
                 correctCells: {},
                 serverSessionId: newSessionId,
@@ -45,9 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
             };
         } else {
             gameState = savedState;
-            if (!gameState.guessedPlayerIds) {
-                gameState.guessedPlayerIds = [];
-            }
+            // Ensure new properties exist for older saved states
+            if (!gameState.guessedPlayerIds) gameState.guessedPlayerIds = [];
+            if (!gameState.attempt) gameState.attempt = 1;
         }
         isGameOver = gameState.guesses <= 0;
     }
@@ -56,51 +48,73 @@ document.addEventListener('DOMContentLoaded', () => {
         gameState.date = new Date().toISOString().split('T')[0];
         localStorage.setItem(`gridGameState_${currentIdentifier}`, JSON.stringify(gameState));
     }
-    
 
-    function updateGuessesDisplay() {
+    function updateUIDisplay() {
         livesCountSpan.textContent = gameState.guesses;
+        attemptCountSpan.textContent = gameState.attempt;
+
+        const mainButton = controlsContainer.querySelector('button');
+        if (isGameOver) {
+            mainButton.textContent = 'Retry';
+            mainButton.id = 'retry-btn';
+            mainButton.classList.remove('btn-danger'); // Optional: change style for retry
+        } else {
+            mainButton.textContent = 'Give Up';
+            mainButton.id = 'give-up-btn';
+            mainButton.classList.add('btn-danger');
+        }
     }
+    
+    // --- Grid Rendering & Game Over Logic ---
 
     async function renderGridFromState() {
-        updateGuessesDisplay();
+        updateUIDisplay();
         document.querySelectorAll('.grid-cell').forEach(cell => {
             const cellId = `${cell.dataset.row}-${cell.dataset.col}`;
             if (gameState.correctCells[cellId]) {
                 const data = gameState.correctCells[cellId];
                 cell.innerHTML = `<div class="player-name-cell">${data.name}</div>`;
-                //cell.innerHTML = `<img src="${data.image}" alt="${data.name}" class="player-image">`;
                 cell.classList.add('correct');
+            } else {
+                // Clear cells that aren't correct for this attempt
+                cell.innerHTML = '';
+                cell.classList.remove('correct', 'game-over-cell');
             }
         });
     
         if (isGameOver) {
-            
             for (const cell of document.querySelectorAll('.grid-cell:not(.correct)')) {
                 const { row, col } = cell.dataset;
-                const rowCat = gridData.rows[row];
-                const colCat = gridData.cols[col];
+                const cellId = `${row}-${col}`;
                 cell.classList.add('game-over-cell');
-                try {
-                    const response = await fetch(`${API_BASE_URL}/api/get-cell-answers`, {
+
+                // Use pre-calculated answer counts if they exist
+                if (gridData.answers && gridData.answers[cellId] !== undefined) {
+                    const count = gridData.answers[cellId];
+                    cell.innerHTML = `
+                        <div class="answer-reveal-container">
+                            <span class="player-count">${count}</span>
+                            ${count > 0 ? '<div class="see-players-btn">See Players</div>' : ''}
+                        </div>`;
+                } else {
+                    // Fallback for older grids without pre-calculated answers
+                    const rowCat = gridData.rows[row];
+                    const colCat = gridData.cols[col];
+                    // Setting a placeholder, and fetching in the background
+                    cell.innerHTML = `<div class="answer-reveal-container"><span class="player-count">...</span></div>`;
+                    fetch(`${API_BASE_URL}/api/get-cell-answers`, {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ cat1: rowCat, cat2: colCat })
-                    });
-                    const { count } = await response.json();
-    
-                    if (count > 0) {
+                    }).then(res => res.json()).then(data => {
                         cell.innerHTML = `
                             <div class="answer-reveal-container">
-                                <span class="player-count">${count}</span>
-                                <div class="see-players-btn">See Players</div>
-                            </div>
-                        `;
-                    } else {
-                        cell.innerHTML = `<span class="answer-reveal">0</span>`;
-                    }
-                } catch (error) {
-                    cell.innerHTML = `<span class="answer-reveal">!</span>`;
+                                <span class="player-count">${data.count}</span>
+                                ${data.count > 0 ? '<div class="see-players-btn">See Players</div>' : ''}
+                            </div>`;
+                    }).catch(() => {
+                        cell.innerHTML = `<span class="answer-reveal">!</span>`;
+                    });
                 }
             }
         }
@@ -141,13 +155,19 @@ document.addEventListener('DOMContentLoaded', () => {
     function gameOver(isGiveUp = false) {
         if (isGameOver) return;
         isGameOver = true;
-        
-        if (isGiveUp) {
-            gameState.guesses = 0;
-        }
-        
+        if (isGiveUp) gameState.guesses = 0;
         saveGameState();
         renderGridFromState(); 
+    }
+
+    function handleRetry() {
+        gameState.attempt++;
+        gameState.guesses = 9;
+        gameState.guessedPlayerIds = [];
+        gameState.correctCells = {};
+        isGameOver = false;
+        saveGameState();
+        renderGridFromState(); // Re-render the same grid for the new attempt
     }
     
     function openSearchModal(cell) {
@@ -175,71 +195,45 @@ document.addEventListener('DOMContentLoaded', () => {
             const response = await fetch(`${API_BASE_URL}/api/player-search?query=${encodeURIComponent(query)}`);
             const players = await response.json();
             searchResults.innerHTML = '';
-            if (players.length > 0) {
-                players.forEach(player => {
-                    const listItem = document.createElement('li');
-                    listItem.textContent = `${player.name} (${player.year})`;
-                    
-                    if (gameState.guessedPlayerIds.includes(player.id)) {
-                        listItem.classList.add('used');
-                    }
-                    listItem.addEventListener('click', () => {
-                        handleGuess(activeCell, player);
-                    });
-                    searchResults.appendChild(listItem);
-                });
-            } else {
-                searchResults.innerHTML = '<li>No players found</li>';
-            }
+            players.forEach(player => {
+                const li = document.createElement('li');
+                li.textContent = `${player.name} (${player.year})`;
+                if (gameState.guessedPlayerIds.includes(player.id)) {
+                    li.classList.add('used');
+                }
+                li.addEventListener('click', () => handleGuess(activeCell, player));
+                searchResults.appendChild(li);
+            });
         } catch (error) {
             console.error("Search failed:", error);
             searchResults.innerHTML = '<li>Error searching</li>';
         }
     }
-
+    
     async function handleGuess(cellElement, player) {
         if (!player || !player.id || isGameOver) return;
-    
-        
-        if (!gridData || !gridData.rows || !gridData.cols) {
-            console.error("CRITICAL: Grid data is incomplete or missing.", gridData);
-            alert("A critical error occurred: Grid data is missing. Cannot validate guess.");
+        if (gameState.guessedPlayerIds.includes(player.id)) {
+            alert(`${player.name.trim()} is already on the grid.`);
             return;
         }
-        
     
-        const playerName = player.name.trim();
-        const playerId = player.id;
         closeSearchModal();
-    
-        if (gameState.guessedPlayerIds.includes(playerId)) {
-            alert(`${playerName} is already on the grid.`);
-            return;
-        }
-    
         gameState.guesses--;
     
         const { row, col } = cellElement.dataset;
         const rowCategory = gridData.rows[row];
         const colCategory = gridData.cols[col];
         
-        if (!rowCategory || !colCategory) {
-            console.error("CRITICAL: A specific row or column category is missing.", { rowCategory, colCategory });
-            alert("A critical error occurred: Category data is missing. Cannot validate guess.");
-            gameState.guesses++; 
-            return;
-        }
-    
         try {
-            const rowResponse = await fetch(`${API_BASE_URL}/api/validate?playerName=${encodeURIComponent(playerName)}&playerId=${player.id}&categoryValue=${encodeURIComponent(JSON.stringify(rowCategory))}`);
+            const rowResponse = await fetch(`${API_BASE_URL}/api/validate?playerName=${encodeURIComponent(player.name.trim())}&playerId=${player.id}&categoryValue=${encodeURIComponent(JSON.stringify(rowCategory))}`);
             const rowResult = await rowResponse.json();
-            const colResponse = await fetch(`${API_BASE_URL}/api/validate?playerName=${encodeURIComponent(playerName)}&playerId=${player.id}&categoryValue=${encodeURIComponent(JSON.stringify(colCategory))}`);
+            const colResponse = await fetch(`${API_BASE_URL}/api/validate?playerName=${encodeURIComponent(player.name.trim())}&playerId=${player.id}&categoryValue=${encodeURIComponent(JSON.stringify(colCategory))}`);
             const colResult = await colResponse.json();
             
             if (rowResult.isValid && colResult.isValid) {
                 const cellId = `${row}-${col}`;
-                gameState.correctCells[cellId] = { name: playerName };
-                gameState.guessedPlayerIds.push(playerId);
+                gameState.correctCells[cellId] = { name: player.name.trim() };
+                gameState.guessedPlayerIds.push(player.id);
             } else {
                 cellElement.classList.add('incorrect-shake');
                 setTimeout(() => cellElement.classList.remove('incorrect-shake'), 300);
@@ -253,80 +247,28 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } catch (error) {
             console.error("Validation failed:", error);
+            gameState.guesses++; // Restore guess on error
         }
     }
-
-    let lastProcessedIdentifier = null;
-
-
-    async function setupGrid(identifier) {
-        identifier = identifier || 'daily';
-        const isCustomGrid = !isNaN(identifier) && identifier !== '';
-        currentIdentifier = identifier;
-        const gridIdentifier = isCustomGrid ? `custom_${identifier}` : identifier;
     
-        if (identifier === lastProcessedIdentifier) {
+    async function setupGrid(identifier) {
+        currentIdentifier = identifier || 'daily';
+        
+        try {
+            const response = await fetch(`${API_BASE_URL}/api/grid/${currentIdentifier}`);
+            if (!response.ok) throw new Error(`API failed with status ${response.status}`);
+            gridData = await response.json();
+        } catch (apiError) {
+            console.error('CRITICAL: API fetch failed:', apiError);
+            gridContainer.innerHTML = `<h2>Grid not available. Please check back later.</h2>`;
             return;
         }
-        lastProcessedIdentifier = identifier;
-    
-        document.querySelectorAll('.nav-link').forEach(link => {
-            
-            const linkPath = link.getAttribute('href'); 
-            link.classList.toggle('active', linkPath === `/${identifier}`);
-        });
-    
-    
-        try {
-            let fetchUrl;
-            if (isCustomGrid) {
-                fetchUrl = `${API_BASE_URL}/api/grid/${identifier}`; 
-            } else {
-                const today = new Date().toISOString().split('T')[0];
-                const gridType = identifier || 'daily';
-                fetchUrl = `grids/${gridType}_${today}.json`;
-            }
-            
-            const response = await fetch(fetchUrl);
-            if (!response.ok) {
-                if (response.status === 404 && !isCustomGrid) {
-                    throw new Error('Static grid file not found, trying API fallback.');
-                }
-                gridContainer.innerHTML = `<h2>Grid not found. It may have expired or the link is incorrect.</h2>`;
-                return;
-            }
-            
-            gridData = await response.json();
-    
-        } catch (error) {
-            console.warn(error.message);
-            console.log('Attempting to fetch grid from the server API as a fallback...');
-            try {
-                const apiIdentifier = isCustomGrid ? identifier : (identifier || 'daily');
-                const apiResponse = await fetch(`${API_BASE_URL}/api/grid/${apiIdentifier}`);
-                if (!apiResponse.ok) {
-                    gridContainer.innerHTML = `<h2>Grid for today not available. Please check back later.</h2>`;
-                    return;
-                }
-                gridData = await apiResponse.json();
-            } catch (apiError) {
-                console.error('CRITICAL: Fallback API fetch also failed:', apiError);
-                gridContainer.innerHTML = `<h2>CRITICAL ERROR: Could not load grid.</h2>`;
-                return;
-            }
-        }
-    
-    
-        
+
         if (gridData) {
-            loadGameState(gridData.serverSessionId, identifier); 
+            loadGameState(gridData.serverSessionId, currentIdentifier); 
             
             const gridTitle = document.querySelector('header h1');
-            if (gridData.name) {
-                gridTitle.textContent = gridData.name;
-            } else {
-                gridTitle.textContent = 'Euro Zones';
-            }
+            gridTitle.textContent = gridData.name || 'Euro Zones';
     
             gridContainer.innerHTML = '';
             for (let i = 0; i < 4; i++) {
@@ -335,13 +277,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (i === 0 && j === 0) {
                         cell.classList.add('header-cell', 'corner');
                     } else if (i === 0) {
-                        const colCat = gridData.cols[j - 1];
                         cell.classList.add('header-cell');
-                        cell.innerHTML = colCat.label;
+                        cell.innerHTML = gridData.cols[j - 1].label;
                     } else if (j === 0) {
-                        const rowCat = gridData.rows[i - 1];
                         cell.classList.add('header-cell');
-                        cell.innerHTML = rowCat.label;
+                        cell.innerHTML = gridData.rows[i - 1].label;
                     } else {
                         cell.classList.add('grid-cell');
                         cell.dataset.row = i - 1;
@@ -354,60 +294,56 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    
-
     function router() {
         const path = window.location.pathname;
         const identifier = path === '/' ? 'daily' : path.substring(1);
+        
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === (path === '/' ? '/daily' : path));
+        });
+        
         setupGrid(identifier);
     }
 
+    // --- Event Listeners ---
+
     document.getElementById('country-nav').addEventListener('click', (e) => {
-        
         if (e.target.matches('.nav-link') && !e.target.matches('.create-link')) {
             e.preventDefault(); 
-            const href = e.target.getAttribute('href');
-            history.pushState({}, '', href); 
+            history.pushState({}, '', e.target.getAttribute('href')); 
             router(); 
         }
     });
-
     
     window.addEventListener('popstate', router);
-
-    
     router();
 
     gridContainer.addEventListener('click', (event) => {
         const cell = event.target.closest('.grid-cell');
+        if (!cell) return;
+
         if (isGameOver) {
-            if(cell) showAllAnswersForCell(cell);
-        } else {
-            if (cell && !cell.classList.contains('correct')) {
-                openSearchModal(cell);
-            }
+            showAllAnswersForCell(cell);
+        } else if (!cell.classList.contains('correct')) {
+            openSearchModal(cell);
         }
     });
     
-    searchInput.addEventListener('input', handleSearch);
-    closeModalBtn.addEventListener('click', closeSearchModal);
-    
-    searchModal.addEventListener('click', (event) => {
-        if (event.target === searchModal) {
-            closeSearchModal();
+    controlsContainer.addEventListener('click', (e) => {
+        if (e.target.id === 'give-up-btn') {
+            giveUpModal.classList.remove('modal-hidden');
+        } else if (e.target.id === 'retry-btn') {
+            handleRetry();
         }
     });
 
-    giveUpBtn.addEventListener('click', () => {
-        giveUpModal.classList.remove('modal-hidden');
-    });
-    
-    cancelGiveUpBtn.addEventListener('click', () => {
-        giveUpModal.classList.add('modal-hidden');
-    });
-    
     confirmGiveUpBtn.addEventListener('click', () => {
         giveUpModal.classList.add('modal-hidden');
         gameOver(true);
     });
+
+    cancelGiveUpBtn.addEventListener('click', () => giveUpModal.classList.add('modal-hidden'));
+    searchInput.addEventListener('input', handleSearch);
+    closeModalBtn.addEventListener('click', closeSearchModal);
+    searchModal.addEventListener('click', (e) => { if (e.target === searchModal) closeSearchModal(); });
 });

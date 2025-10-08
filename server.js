@@ -7,7 +7,6 @@ import { fileURLToPath } from 'url';
 import { buildCondition } from './queryBuilder.mjs';
 import merges from './merges.json' with { type: 'json' };
 
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -22,9 +21,7 @@ const pool = new Pool({
     database: process.env.DB_DATABASE,
     password: process.env.DB_PASSWORD,
     port: process.env.DB_PORT,
-    ssl: {
-        rejectUnauthorized: false
-    },
+    ssl: { rejectUnauthorized: false },
     connectionTimeoutMillis: 10000,
 });
 
@@ -107,7 +104,9 @@ app.get('/api/grid/:identifier', async (req, res) => {
 
 app.get('/api/player-search', async (req, res) => {
     const { query } = req.query;
-    if (!query || query.length < 3) return res.json([]);
+    const trimmedQuery = query ? query.trim() : '';
+    if (!trimmedQuery || trimmedQuery.length < 3) return res.json([]);
+
     try {
         const sqlQuery = `
             SELECT p.id, p.firstname, p.lastname, p.dob
@@ -116,7 +115,7 @@ app.get('/api/player-search', async (req, res) => {
             ORDER BY p.lastname, p.firstname
             LIMIT 20;
         `;
-        const result = await pool.query(sqlQuery, [`%${query}%`]);
+        const result = await pool.query(sqlQuery, [`%${trimmedQuery}%`]);
 
         const uniquePlayers = new Map();
         result.rows.forEach(p => {

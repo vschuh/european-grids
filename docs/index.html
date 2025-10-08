@@ -23,14 +23,15 @@
         </header>
     
         <nav id="country-nav">
-            <a href="/daily" class="nav-link active" style="color: #20c997;">Daily</a>
+            <a href="/daily" class="nav-link">Daily</a>
+            <a href="/wbsc_eu" class="nav-link">WBSC EU</a>
             <a href="/austria" class="nav-link">AUT</a>
             <a href="/netherlands" class="nav-link">NED</a>
             <a href="/belgium" class="nav-link">BEL</a>
             <a href="/italy" class="nav-link">ITA</a>
             <a href="/czechia" class="nav-link">CZE</a>
             <a href="/france" class="nav-link">FRA</a>
-            <!-- <a href="/spain" class="nav-link">FRA</a> -->
+            <a href="/spain" class="nav-link">ESP</a>
             <a href="/creator" class="nav-link create-link">Create Your Own</a>
         </nav>
         
@@ -40,6 +41,10 @@
         
         <div id="controls">
             <button id="give-up-btn">Give Up</button>
+            <div id="attempt-container">
+                <span>Attempt:</span>
+                <span id="attempt-count">1</span>
+            </div>
             <div id="lives-container">
                 <span>Guesses:</span>
                 <span id="lives-count">9</span>
@@ -60,7 +65,7 @@
     
     <div id="search-modal" class="modal modal-hidden">
         <div id="search-container">
-            <input type="text" id="search-input" placeholder="Search for a player...">
+            <input type="text" id="search-input" placeholder="Search for a player..." autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false">
             <button id="close-modal-btn">X</button>
             <ul id="search-results"></ul>
         </div>
@@ -84,5 +89,5 @@
         <p>This site is a fan project and is not affiliated with any official sports league.</p>
         <p><a href="contact">Contact</a></p>
     </footer>
-    </body>
+</body>
 </html>
