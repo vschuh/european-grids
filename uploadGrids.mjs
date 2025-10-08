@@ -37,9 +37,13 @@ async function upload() {
 
     for (const grid of grids) {
         try {
+            // REPLACE your old query variable with this one
+
             const query = `
                 INSERT INTO grids (type, grid_date, grid_data) 
-                VALUES ($1, $2, $3);
+                VALUES ($1, $2, $3)
+                ON CONFLICT (type, grid_date) 
+                DO UPDATE SET grid_data = EXCLUDED.grid_data;
             `;
             // Use grid.type to upload the correct type ('daily', 'austria', etc.)
             await hostedPool.query(query, [grid.type, grid.grid_date, grid.grid_data]);
