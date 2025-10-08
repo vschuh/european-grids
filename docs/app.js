@@ -50,8 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateUIDisplay() {
-        livesCountSpan.textContent = gameState.guesses;
-        attemptCountSpan.textContent = gameState.attempt;
+        if (livesCountSpan) {
+            livesCountSpan.textContent = gameState.guesses;
+        }
+        if (attemptCountSpan) {
+            attemptCountSpan.textContent = gameState.attempt;
+        }
 
         const mainButton = controlsContainer.querySelector('button');
         if (isGameOver) {
