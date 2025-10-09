@@ -115,11 +115,8 @@ app.get('/api/player-search', async (req, res) => {
             WHERE unaccent(p.firstname || ' ' || p.lastname) ILIKE unaccent($1)
             ORDER BY
                 CASE
-                    -- Priority 1: First name starts with the query
-                    WHEN unaccent(p.firstname) ILIKE unaccent($2) THEN 1
-                    -- Priority 2: Last name starts with the query
-                    WHEN unaccent(p.lastname) ILIKE unaccent($2) THEN 2
-                    -- All other matches
+                    WHEN unaccent(p.lastname) ILIKE unaccent($2) THEN 1
+                    WHEN unaccent(p.firstname) ILIKE unaccent($2) THEN 2
                     ELSE 3
                 END,
                 p.lastname,
