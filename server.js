@@ -104,7 +104,7 @@ app.get('/api/grid/:identifier', async (req, res) => {
 
 app.get('/api/player-search', async (req, res) => {
     const { query } = req.query;
-    const trimmedQuery = query ? query.trim() : '';
+    const trimmedQuery = query ? query.trim().toLowerCase() : '';
     if (!trimmedQuery || trimmedQuery.length < 3) return res.json([]);
 
     try {
@@ -112,10 +112,24 @@ app.get('/api/player-search', async (req, res) => {
             SELECT p.id, p.firstname, p.lastname, p.dob
             FROM player p
             WHERE unaccent(p.firstname || ' ' || p.lastname) ILIKE unaccent($1)
-            ORDER BY p.lastname, p.firstname
+            ORDER BY
+                CASE
+                    -- Priority 1: First name starts with the query
+                    WHEN unaccent(p.firstname) ILIKE unaccent($2) THEN 1
+                    -- Priority 2: Last name starts with the query
+                    WHEN unaccent(p.lastname) ILIKE unaccent($2) THEN 2
+                    -- All other matches
+                    ELSE 3
+                END,
+                p.lastname,
+                p.firstname
             LIMIT 20;
         `;
-        const result = await pool.query(sqlQuery, [`%${trimmedQuery}%`]);
+        
+        const result = await pool.query(sqlQuery, [
+            `%${trimmedQuery}%`
+            `${trimmedQuery}%`
+        ]);
 
         const uniquePlayers = new Map();
         result.rows.forEach(p => {
