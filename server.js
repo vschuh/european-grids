@@ -103,8 +103,9 @@ app.get('/api/grid/:identifier', async (req, res) => {
 });
 
 app.get('/api/player-search', async (req, res) => {
-    const { query } = req.query;
-    const trimmedQuery = query ? query.trim().toLowerCase() : '';
+    const rawQuery = Array.isArray(req.query.query) ? req.query.query[0] : req.query.query;
+    const trimmedQuery = rawQuery ? String(rawQuery).trim() : '';
+
     if (!trimmedQuery || trimmedQuery.length < 3) return res.json([]);
 
     try {
@@ -127,8 +128,8 @@ app.get('/api/player-search', async (req, res) => {
         `;
         
         const result = await pool.query(sqlQuery, [
-            `%${trimmedQuery}%`
-            `${trimmedQuery}%`
+            `%${trimmedQuery}%`,
+            `${trimmedQuery}%` 
         ]);
 
         const uniquePlayers = new Map();
@@ -149,6 +150,8 @@ app.get('/api/player-search', async (req, res) => {
         res.status(500).json({ error: 'Internal server error' });
     }
 });
+
+
 
 app.get('/api/validate', async (req, res) => {
     const { playerName, playerId, categoryValue } = req.query;
