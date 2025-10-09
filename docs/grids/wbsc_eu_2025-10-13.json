@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1",
+      "federation_id": 1
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/DEN.svg",
+      "label": "Denmark NT",
+      "value": "149",
+      "federation_id": 149
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/b13302f6-e33c-2b0f-eb9d-8dc0bc70fc2f.jpg",
+      "label": "Wesseling Vermins Base- & Softballclub e.V.",
+      "value": "1368"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-18 Women's European Softball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    }
+  ],
+  "answers": {
+    "0-0": 47,
+    "0-1": 15,
+    "0-2": 11,
+    "1-0": 203,
+    "1-1": 62,
+    "1-2": 17,
+    "2-0": 292,
+    "2-1": 75,
+    "2-2": 24
+  }
+}

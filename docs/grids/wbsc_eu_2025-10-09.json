@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/SUI.svg",
+      "label": "Switzerland NT",
+      "value": "35",
+      "federation_id": 35
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/07067501-9be9-9d54-0187-4b5ce1bc028d.jpg",
+      "label": "Les Pharaons d`Evry-Courcouronnes",
+      "value": "1367"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/f3774933-2d59-cb94-2a83-9528faf5139f.jpg",
+      "label": "Gepardy Żory Softball",
+      "value": "1362"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup Winners Cup “B” (EU)",
+      "value": "EU-WINNERS-CUP-B-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "C (min 1 PA)",
+      "value": "C"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    }
+  ],
+  "answers": {
+    "0-0": 11,
+    "0-1": 17,
+    "0-2": 13,
+    "1-0": 31,
+    "1-1": 24,
+    "1-2": 4,
+    "2-0": 73,
+    "2-1": 70,
+    "2-2": 14
+  }
+}

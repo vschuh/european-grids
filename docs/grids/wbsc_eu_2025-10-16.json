@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/5a29afcd-b476-f5ea-549e-0a6ca0bf8551.png",
+      "label": "Žraloci Ledenice",
+      "value": "1381"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2648277a-0a77-53ab-7dde-0020537acc83.jpeg",
+      "label": "CS Fénix Valencia",
+      "value": "1624"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/b6f8ff52-7cb8-a4bd-0a1c-b30028e39123.jpg",
+      "label": "Barracudas Zürich",
+      "value": "1349"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women's Softball European Championship (EU)",
+      "value": "EU-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_rbi",
+      "label": ">=20 RBI Season",
+      "value": 20,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    }
+  ],
+  "answers": {
+    "0-0": 7,
+    "0-1": 7,
+    "0-2": 15,
+    "1-0": 9,
+    "1-1": 6,
+    "1-2": 3,
+    "2-0": 79,
+    "2-1": 38,
+    "2-2": 32
+  }
+}

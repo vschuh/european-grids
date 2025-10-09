@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/870076ab-9157-c992-8e9b-9a8443bf2bd7.jpg",
+      "label": "U.S. GIOVANILE COLLECCHIO SOFT. A.S.D.",
+      "value": "396"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/7b277a56-f1a2-d771-d7f9-1867b9b6c01d.jpg",
+      "label": "Bonn Capitals",
+      "value": "1430"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8",
+      "federation_id": 8
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup Winners Cup “A” (EU)",
+      "value": "EU-WINNERS-CUP-A-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_triples",
+      "label": ">=5 Triples Season",
+      "value": 5,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    }
+  ],
+  "answers": {
+    "0-0": 3,
+    "0-1": 35,
+    "0-2": 23,
+    "1-0": 4,
+    "1-1": 3,
+    "1-2": 7,
+    "2-0": 28,
+    "2-1": 43,
+    "2-2": 150
+  }
+}

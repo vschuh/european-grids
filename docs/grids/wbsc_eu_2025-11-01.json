@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "tournament",
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 European Baseball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "RF (min 1 PA)",
+      "value": "RF"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ISR.svg",
+      "label": "Israel NT",
+      "value": "33",
+      "federation_id": 33
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1071d9a2-1565-7750-d6bd-c5b9217a804f.jpg",
+      "label": "Sénart Templiers",
+      "value": "1435"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8594b98-58ba-b8a6-5518-10de4ae89d9d.png",
+      "label": "Wr. Neustadt Diving Ducks",
+      "value": "1227"
+    }
+  ],
+  "answers": {
+    "0-0": 43,
+    "0-1": 42,
+    "0-2": 113,
+    "1-0": 8,
+    "1-1": 9,
+    "1-2": 54,
+    "2-0": 12,
+    "2-1": 14,
+    "2-2": 96
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a56ecb27-813b-b97e-c668-3d06269b6494.jpg",
+      "label": "Tex Town Tigers",
+      "value": "1274"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/229a41eb-e61a-7ab8-e29f-3100fc34a2ce.jpg",
+      "label": "Les Comanches de Saint-Raphaël",
+      "value": "1352"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/GBR.svg",
+      "label": "Great Britain NT",
+      "value": "20",
+      "federation_id": 20
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup (EU)",
+      "value": "EU-EURO-CUP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_ops",
+      "label": ">=1.000 OPS Season (min. 10 pa)",
+      "value": 1,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    }
+  ],
+  "answers": {
+    "0-0": 23,
+    "0-1": 16,
+    "0-2": 8,
+    "1-0": 31,
+    "1-1": 16,
+    "1-2": 157,
+    "2-0": 40,
+    "2-1": 28,
+    "2-2": 200
+  }
+}

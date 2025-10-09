@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "tournament",
+      "label": "U-18 Women's European Softball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_ops",
+      "label": ">=1.000 OPS Season (min. 10 pa)",
+      "value": 1,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/0c1bc2f1-5978-b75c-0b64-ef2868fbe527.jpg",
+      "label": "Panthers Wroclaw",
+      "value": "1373"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f7f05882-7810-d6a2-6bd7-06648e0a5fa8.png",
+      "label": "Beveren Lions",
+      "value": "1480"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/POL.svg",
+      "label": "Poland NT",
+      "value": "159",
+      "federation_id": 159
+    }
+  ],
+  "answers": {
+    "0-0": 5,
+    "0-1": 13,
+    "0-2": 25,
+    "1-0": 3,
+    "1-1": 53,
+    "1-2": 66,
+    "2-0": 39,
+    "2-1": 53,
+    "2-2": 115
+  }
+}

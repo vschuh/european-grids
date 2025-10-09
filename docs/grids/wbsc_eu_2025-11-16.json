@@ -1,0 +1,55 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14",
+      "federation_id": 14
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CRO.svg",
+      "label": "Croatia NT",
+      "value": "15",
+      "federation_id": 15
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/5ea48357-37d8-e9aa-a7e0-abf4e68783d7.jpg",
+      "label": "Wittenbach Panthers Softball",
+      "value": "1606"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup Winners Cup “B” (EU)",
+      "value": "EU-WINNERS-CUP-B-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "tournament",
+      "label": "Women's Softball European Premiere Cup (EU)",
+      "value": "EU-EURO-PREM-CUP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_hits",
+      "label": ">=15 Hit Season",
+      "value": 15,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 8,
+    "0-1": 6,
+    "0-2": 16,
+    "1-0": 20,
+    "1-1": 9,
+    "1-2": 22,
+    "2-0": 72,
+    "2-1": 32,
+    "2-2": 4
+  }
+}

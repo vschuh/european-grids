@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/3e568e8b-f966-266b-d36d-4d96ff086f3d.jpg",
+      "label": "Odense Giants Softball Klub",
+      "value": "1597"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/GBR.svg",
+      "label": "Great Britain NT",
+      "value": "20",
+      "federation_id": 20
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/a99ced85-dc85-40d3-aeb9-6ec095357ef7.jpg",
+      "label": "Warsaw Diamonds",
+      "value": "1874"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup (EU)",
+      "value": "EU-EURO-CUP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    }
+  ],
+  "answers": {
+    "0-0": 14,
+    "0-1": 8,
+    "0-2": 16,
+    "1-0": 3,
+    "1-1": 152,
+    "1-2": 4,
+    "2-0": 6,
+    "2-1": 193,
+    "2-2": 16
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
+      "label": "SOFTBALL CLUB FORLI A.S.D.",
+      "value": "395"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2",
+      "federation_id": 2
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
+      "label": "Vienna Wanderers",
+      "value": "1222"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women's Softball European Premiere Cup (EU)",
+      "value": "EU-EURO-PREM-CUP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_pitching_k",
+      "label": ">=35k Season",
+      "value": 35,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    }
+  ],
+  "answers": {
+    "0-0": 32,
+    "0-1": 36,
+    "0-2": 13,
+    "1-0": 20,
+    "1-1": 111,
+    "1-2": 13,
+    "2-0": 36,
+    "2-1": 263,
+    "2-2": 56
+  }
+}

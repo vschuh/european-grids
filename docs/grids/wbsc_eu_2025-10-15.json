@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/6a057191-c5a2-e328-e9dc-1599fb6d475c.jpg",
+      "label": "Olympia Haarlem",
+      "value": "1270"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/dfb15b29-c3d5-e17b-16ce-fea5adbc7c83.png",
+      "label": "Stabroek Chicaboo`s",
+      "value": "1361"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/7784025f-15e3-9d72-ec0a-5cea1fb36fac.png",
+      "label": "Antwerp Eagles",
+      "value": "1474"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Hoofdklasse Softbal (NL)",
+      "value": "HOOFDKLASSE-SOFTBAL",
+      "federation_id": 1
+    },
+    {
+      "type": "seasonal_hbp",
+      "label": ">=5 HBP Season",
+      "value": 5,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    }
+  ],
+  "answers": {
+    "0-0": 49,
+    "0-1": 12,
+    "0-2": 4,
+    "1-0": 4,
+    "1-1": 4,
+    "1-2": 8,
+    "2-0": 44,
+    "2-1": 61,
+    "2-2": 32
+  }
+}

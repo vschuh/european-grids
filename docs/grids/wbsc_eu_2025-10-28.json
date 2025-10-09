@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ISR.svg",
+      "label": "Israel NT",
+      "value": "33",
+      "federation_id": 33
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/57730099-9289-8c6b-e9f4-4aeb1af7014d.jpg",
+      "label": "Magos Tenerife",
+      "value": "1383"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/72e7ef7c-df5b-42b9-ffb0-cb3102eacbb8.jpg",
+      "label": "Spectrum Praha",
+      "value": "1879"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-23 Baseball European Championship (EU)",
+      "value": "EU-U-23-EURO-CHAMP-M-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">=0.400 OBP Season (min. 10 pa)",
+      "value": 0.4,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    }
+  ],
+  "answers": {
+    "0-0": 15,
+    "0-1": 4,
+    "0-2": 3,
+    "1-0": 57,
+    "1-1": 26,
+    "1-2": 12,
+    "2-0": 68,
+    "2-1": 22,
+    "2-2": 42
+  }
+}

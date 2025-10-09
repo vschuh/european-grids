@@ -1,0 +1,54 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
+      "federation_id": 6
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/806638c7-4c47-3f4f-575e-d80ad64081b8.png",
+      "label": "Amsterdam Pirates Baseball",
+      "value": "1266"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/867c2c87-a075-4811-3a29-71da8dafa1a7.svg",
+      "label": "1949 PARMA BASEBALL CLUB ASD",
+      "value": "333"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "European Baseball Champions Cup (EU)",
+      "value": "EU-CHAMP-CUP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 European Baseball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_bb",
+      "label": ">=10 BB Season",
+      "value": 10,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 70,
+    "0-1": 48,
+    "0-2": 37,
+    "1-0": 50,
+    "1-1": 12,
+    "1-2": 5,
+    "2-0": 181,
+    "2-1": 38,
+    "2-2": 52
+  }
+}

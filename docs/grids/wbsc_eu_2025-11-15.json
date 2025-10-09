@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/12a3f46c-cb0a-0014-98f9-bff5d87890b5.jpg",
+      "label": "Club de Béisbol y Sóftbol Rivas",
+      "value": "1354"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/GER.svg",
+      "label": "Germany NT",
+      "value": "18",
+      "federation_id": 18
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f07f3dfb-77ee-f3e0-0242-7325665efdec.jpg",
+      "label": "Dridma Rivas Sófbol Club",
+      "value": "1625"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup Winners Cup “A” (EU)",
+      "value": "EU-WINNERS-CUP-A-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    }
+  ],
+  "answers": {
+    "0-0": 13,
+    "0-1": 26,
+    "0-2": 3,
+    "1-0": 27,
+    "1-1": 65,
+    "1-2": 23,
+    "2-0": 40,
+    "2-1": 150,
+    "2-2": 18
+  }
+}

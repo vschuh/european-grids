@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
+      "label": "SOFTBALL CLUB FORLI A.S.D.",
+      "value": "395"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/372d62f7-f498-84c1-f10f-62831565fe7d.png",
+      "label": "Neptunus",
+      "value": "287"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c6f45770-2b34-bfcf-33e8-1909b6ef7bae.jpg",
+      "label": "Les Grizzlys de Grenoble",
+      "value": "1513"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-18 Women's European Softball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "tournament",
+      "label": "Women's Softball European Championship (EU)",
+      "value": "EU-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_sb",
+      "label": ">=10 SB Season",
+      "value": 10,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 5,
+    "0-1": 8,
+    "0-2": 7,
+    "1-0": 12,
+    "1-1": 6,
+    "1-2": 3,
+    "2-0": 11,
+    "2-1": 19,
+    "2-2": 5
+  }
+}

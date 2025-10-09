@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2",
+      "federation_id": 2
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/COL.svg",
+      "label": "Colombia NT",
+      "value": "88",
+      "federation_id": 88
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ef9c3699-433d-84cf-e297-da9743f94500.jpg",
+      "label": "FORTITUDO BASEBALL CLUB 1953 S.S.D. scarl",
+      "value": "336"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Olympic Baseball Qualifiers",
+      "value": "OLYMPIC-BASEBALL-Q",
+      "federation_id": 0
+    },
+    {
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    }
+  ],
+  "answers": {
+    "0-0": 24,
+    "0-1": 23,
+    "0-2": 20,
+    "1-0": 247,
+    "1-1": 46,
+    "1-2": 66,
+    "2-0": 263,
+    "2-1": 61,
+    "2-2": 86
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
+      "label": "Tempo Praha",
+      "value": "2066"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/9444406f-3c22-71e5-78dd-4770dedd5eaf.png",
+      "label": "Club Béisbol Viladecans",
+      "value": "1355"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/GER.svg",
+      "label": "Germany NT",
+      "value": "18",
+      "federation_id": 18
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women's Softball European Championship (EU)",
+      "value": "EU-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 European Baseball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "C (min 1 PA)",
+      "value": "C"
+    }
+  ],
+  "answers": {
+    "0-0": 8,
+    "0-1": 12,
+    "0-2": 36,
+    "1-0": 6,
+    "1-1": 4,
+    "1-2": 44,
+    "2-0": 67,
+    "2-1": 41,
+    "2-2": 70
+  }
+}

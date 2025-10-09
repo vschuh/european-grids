@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_avg",
+      "label": ">=0.350 OBP Season (min. 10 pa)",
+      "value": 0.35,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
+      "federation_id": 39
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/30da3795-69a2-d2ec-66bf-7059cd80b093.jpg",
+      "label": "Astros Valencia",
+      "value": "1433"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f14607c0-9bb5-122e-4481-f1475f202b0f.png",
+      "label": "CBS Toros",
+      "value": "1654"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Sófbol Oro (ESP)",
+      "value": "ESP-LNDH-SB",
+      "federation_id": 39
+    }
+  ],
+  "answers": {
+    "0-0": 35,
+    "0-1": 66,
+    "0-2": 16,
+    "1-0": 21,
+    "1-1": 29,
+    "1-2": 3,
+    "2-0": 176,
+    "2-1": 274,
+    "2-2": 77
+  }
+}

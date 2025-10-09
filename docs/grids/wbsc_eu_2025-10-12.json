@@ -1,0 +1,55 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1943295d-9bf7-e5b8-291c-021b311137ba.png",
+      "label": "Vienna Metrostars",
+      "value": "1223"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CRO.svg",
+      "label": "Croatia NT",
+      "value": "15",
+      "federation_id": 15
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14",
+      "federation_id": 14
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women's Softball European Championship (EU)",
+      "value": "EU-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup (EU)",
+      "value": "EU-EURO-CUP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_hbp",
+      "label": ">=5 HBP Season",
+      "value": 5,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 9,
+    "0-1": 33,
+    "0-2": 38,
+    "1-0": 3,
+    "1-1": 20,
+    "1-2": 13,
+    "2-0": 12,
+    "2-1": 16,
+    "2-2": 13
+  }
+}

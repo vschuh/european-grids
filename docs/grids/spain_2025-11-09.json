@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "RF (min 1 PA)",
+      "value": "RF"
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">=0.350 OBP Season (min. 10 pa)",
+      "value": 0.35,
+      "condition": "min"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Sófbol Oro (ESP)",
+      "value": "ESP-LNDH-SB",
+      "federation_id": 39
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/3084d3b0-293e-1776-d083-36810be4a442.png",
+      "label": "Club Atlético Deportivo Irabia/Izaga",
+      "value": "1960"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/9444406f-3c22-71e5-78dd-4770dedd5eaf.png",
+      "label": "Club Béisbol Viladecans",
+      "value": "1355"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
+      "federation_id": 39
+    }
+  ],
+  "answers": {
+    "0-0": 84,
+    "0-1": 42,
+    "0-2": 32,
+    "1-0": 99,
+    "1-1": 80,
+    "1-2": 55,
+    "2-0": 150,
+    "2-1": 180,
+    "2-2": 77
+  }
+}

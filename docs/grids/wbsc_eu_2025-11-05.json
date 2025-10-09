@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
+      "label": "SOFTBALL CLUB FORLI A.S.D.",
+      "value": "395"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8d053c81-1566-2518-b6ab-ab8274584916.jpg",
+      "label": "ROEF!",
+      "value": "1271"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
+      "label": "Vienna Wanderers",
+      "value": "1222"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup Winners Cup “A” (EU)",
+      "value": "EU-WINNERS-CUP-A-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_pitching_fip",
+      "label": "<=3.00 FIP Season (min. 10 ip)",
+      "value": 3,
+      "condition": "max"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    }
+  ],
+  "answers": {
+    "0-0": 8,
+    "0-1": 28,
+    "0-2": 4,
+    "1-0": 20,
+    "1-1": 10,
+    "1-2": 15,
+    "2-0": 46,
+    "2-1": 37,
+    "2-2": 91
+  }
+}

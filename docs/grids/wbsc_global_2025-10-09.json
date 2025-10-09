@@ -1,0 +1,55 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/VEN.svg",
+      "label": "Venezuela NT",
+      "value": "103",
+      "federation_id": 103
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1",
+      "federation_id": 1
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/MEX.svg",
+      "label": "Mexico NT",
+      "value": "3",
+      "federation_id": 3
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women`s Baseball World Cup",
+      "value": "WBWC",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_bb",
+      "label": ">=10 BB Season",
+      "value": 10,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    }
+  ],
+  "answers": {
+    "0-0": 59,
+    "0-1": 42,
+    "0-2": 23,
+    "1-0": 22,
+    "1-1": 131,
+    "1-2": 4,
+    "2-0": 101,
+    "2-1": 255,
+    "2-2": 97
+  }
+}

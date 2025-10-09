@@ -1,0 +1,54 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
+      "federation_id": 6
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a8c54b1a-0050-5d18-a2f6-2059dde33487.png",
+      "label": "Dornbirn Indians",
+      "value": "1225"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/7b277a56-f1a2-d771-d7f9-1867b9b6c01d.jpg",
+      "label": "Bonn Capitals",
+      "value": "1430"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 Women's European Softball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_pitching_ip",
+      "label": ">=50 IP Season",
+      "value": 105,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 45,
+    "0-1": 6,
+    "0-2": 16,
+    "1-0": 45,
+    "1-1": 5,
+    "1-2": 5,
+    "2-0": 93,
+    "2-1": 13,
+    "2-2": 9
+  }
+}

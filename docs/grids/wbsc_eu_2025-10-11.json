@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/69f57ec8-1065-bc15-8565-29dc0289f100.jpg",
+      "label": "Akademiks Sofia",
+      "value": "1395"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8d053c81-1566-2518-b6ab-ab8274584916.jpg",
+      "label": "ROEF!",
+      "value": "1271"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/SUI.svg",
+      "label": "Switzerland NT",
+      "value": "35",
+      "federation_id": 35
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup (EU)",
+      "value": "EU-EURO-CUP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    }
+  ],
+  "answers": {
+    "0-0": 15,
+    "0-1": 9,
+    "0-2": 9,
+    "1-0": 12,
+    "1-1": 34,
+    "1-2": 35,
+    "2-0": 28,
+    "2-1": 37,
+    "2-2": 76
+  }
+}

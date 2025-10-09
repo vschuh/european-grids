@@ -1,0 +1,56 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2",
+      "federation_id": 2
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/GER.svg",
+      "label": "Germany NT",
+      "value": "18",
+      "federation_id": 18
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14",
+      "federation_id": 14
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "European Baseball Champions Cup (EU)",
+      "value": "EU-CHAMP-CUP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "tournament",
+      "label": "Women's Softball European Championship (EU)",
+      "value": "EU-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_pitching_k",
+      "label": ">=35k Season",
+      "value": 35,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 43,
+    "0-1": 55,
+    "0-2": 16,
+    "1-0": 32,
+    "1-1": 36,
+    "1-2": 38,
+    "2-0": 111,
+    "2-1": 9,
+    "2-2": 23
+  }
+}
