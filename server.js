@@ -123,7 +123,6 @@ app.get('/api/player-search', async (req, res) => {
                 p.firstname
             LIMIT 20;
         `;
-        print(sqlQuery)
         
         const result = await pool.query(sqlQuery, [
             `%${trimmedQuery}%`,
