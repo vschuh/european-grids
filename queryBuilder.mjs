@@ -59,7 +59,7 @@ export const buildCondition = (category, playerAlias = 'p', startingIndex = 1) =
             } else {
                 const rateStatQueries = {
                     'avg': `ps.avg ${getOperator(category)} $${startingIndex} AND ps.pa >= 10`,
-                    'obp': `ps.OBP ${getOperator(category)} $${startingIndex} AND ps.pa >= 10`,
+                    'obp': `ps.obp ${getOperator(category)} $${startingIndex} AND ps.pa >= 10`,
                     'ops': `ps."OPS" ${getOperator(category)} $${startingIndex} AND ps.pa >= 10`,
                     'wOBA': `ps."wOBA" ${getOperator(category)} $${startingIndex} AND ps.pa >= 10`,
                     'pitching_era': `ps.pitching_era ${getOperator(category)} $${startingIndex} AND ps.pitching_ip >= 90`,
