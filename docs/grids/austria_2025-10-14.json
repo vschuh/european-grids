@@ -1,7 +1,7 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
+      "type": "seasonal_obp",
       "label": ">0.400 OBP Season (min. 10 pa)",
       "value": 0.4
     },
