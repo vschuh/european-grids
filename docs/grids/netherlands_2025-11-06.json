@@ -2,50 +2,40 @@
   "cols": [
     {
       "type": "position",
-      "label": "1B (min 1 PA)",
-      "value": "1B"
+      "label": "3B (min 1 PA)",
+      "value": "3B"
     },
     {
       "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
       "label": "Netherlands NT",
-      "value": "1"
+      "value": "1",
+      "federation_id": 1
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/10b0171f-e179-ac20-62b1-ccd30810ac42.png",
-      "label": "Amsterdam Pirates Softball",
-      "value": "1307"
+      "image": "https://static.wbsc.org/upload/573978ca-25c1-9166-27d3-49a2572bcbe8.png",
+      "label": "Euro Stars",
+      "value": "2318"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/934e9ec8-bec3-79bd-a8a8-b040f4161d55.png",
-      "label": "Kinheim",
-      "value": "1263"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/6a057191-c5a2-e328-e9dc-1599fb6d475c.jpg",
+      "label": "Olympia Haarlem",
+      "value": "1270"
     },
     {
       "type": "tournament",
-      "label": "Hoofdklasse Softbal (NL)",
-      "value": "HOOFDKLASSE-SOFTBAL",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
       "federation_id": 1
     }
-  ],
-  "answers": {
-    "0-0": 26,
-    "0-1": 28,
-    "0-2": 20,
-    "1-0": 25,
-    "1-1": 50,
-    "1-2": 33,
-    "2-0": 178,
-    "2-1": 213,
-    "2-2": 111
-  }
+  ]
 }

@@ -1,14 +1,35 @@
 {
   "cols": [
     {
-      "type": "seasonal_hits",
-      "label": "15+ Hit Season",
-      "value": 15
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
     },
     {
-      "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/5effd52b-7309-0dc5-b483-f973e3ede16e.jpg",
+      "label": "NEW BLACK PANTHERS A.S.D.",
+      "value": "345"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e1ef1319-7b78-4944-384c-2dec6a4dca49.jpg",
+      "label": "MILANO 1946 BASEBALL E SOFTBALL A. S. D.",
+      "value": "360"
     },
     {
       "type": "tournament",
@@ -16,36 +37,5 @@
       "value": "ITA-SERIE-A1-M-BB",
       "federation_id": 2
     }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/f3233b20-510f-5d48-d8d4-964b62bb3ae3.png",
-      "label": "BASE BALL CLUB GROSSETO ASD",
-      "value": "357"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/4452f9c9-4ae5-8a8f-94e6-6fc14dcf21a2.jpg",
-      "label": "A.S.D.  CATALANA BASEBALL SOFTBALL",
-      "value": "384"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2"
-    }
-  ],
-  "answers": {
-    "0-0": 42,
-    "0-1": 16,
-    "0-2": 66,
-    "1-0": 22,
-    "1-1": 14,
-    "1-2": 30,
-    "2-0": 246,
-    "2-1": 218,
-    "2-2": 223
-  }
+  ]
 }

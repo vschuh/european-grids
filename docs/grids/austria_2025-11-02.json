@@ -1,23 +1,31 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "type": "seasonal_ops",
+      "label": ">=1.000 OPS Season (min. 10 pa)",
+      "value": 1,
+      "condition": "min"
     },
     {
-      "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
+      "type": "seasonal_hbp",
+      "label": ">=5 HBP Season",
+      "value": 5,
+      "condition": "min"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8"
+      "type": "tournament",
+      "label": "Baseball Bundesliga (AT)",
+      "value": "BB-BUNDESLIGA",
+      "federation_id": 8
     }
   ],
   "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1943295d-9bf7-e5b8-291c-021b311137ba.png",
+      "label": "Vienna Metrostars",
+      "value": "1223"
+    },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/cms/teams/logo/3a067f16-f428-d6b9-450d-7ff6132d4207.png",
@@ -26,26 +34,9 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/4137a8ec-106d-1408-1204-7266ed5c196a.png",
-      "label": "Linz Witches und Bandits",
-      "value": "1276"
-    },
-    {
-      "type": "tournament",
-      "label": "Softball Bundesliga (AT)",
-      "value": "SB-BUNDESLIGA",
-      "federation_id": 8
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
     }
-  ],
-  "answers": {
-    "0-0": 61,
-    "0-1": 70,
-    "0-2": 19,
-    "1-0": 15,
-    "1-1": 27,
-    "1-2": 12,
-    "2-0": 62,
-    "2-1": 106,
-    "2-2": 63
-  }
+  ]
 }

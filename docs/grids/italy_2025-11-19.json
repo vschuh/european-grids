@@ -1,51 +1,42 @@
 {
   "cols": [
     {
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
+    },
+    {
       "type": "seasonal_runs",
-      "label": "20+ Runs Season",
-      "value": 20
+      "label": ">=15 Runs Season",
+      "value": 15,
+      "condition": "min"
     },
     {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2"
+      "type": "tournament",
+      "label": "Serie A1 Softball (IT)",
+      "value": "ITA-SERIE-A1-F-SB",
+      "federation_id": 2
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/f5260415-3c46-7bca-9104-c3f5df539370.jpg",
-      "label": "A.S.D. PADOVA BAS. SOFT. CLUB",
-      "value": "574"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1603ff99-c3b0-d27b-807f-84d84d54db0d.jpg",
+      "label": "A.B. CARONNO SOFTBALL ASD",
+      "value": "391"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
-      "label": "SOFTBALL CLUB FORLI` A.S.D.",
-      "value": "395"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/c41b0457-80bc-8157-a9d5-3b4a16ba654d.jpg",
+      "label": "A.S.D. SESTESE SOFTBALL",
+      "value": "393"
     },
     {
-      "type": "tournament",
-      "label": "Serie A Baseball (IT)",
-      "value": "ITA-SERIE-A1-M-BB",
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2",
       "federation_id": 2
     }
-  ],
-  "answers": {
-    "0-0": 25,
-    "0-1": 58,
-    "0-2": 11,
-    "1-0": 28,
-    "1-1": 36,
-    "1-2": 21,
-    "2-0": 551,
-    "2-1": 1065,
-    "2-2": 223
-  }
+  ]
 }

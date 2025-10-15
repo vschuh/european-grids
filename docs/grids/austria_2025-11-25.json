@@ -1,34 +1,36 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
+      "type": "seasonal_pitching_k",
+      "label": ">=35k Season",
+      "value": 35,
+      "condition": "min"
     },
     {
       "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
+      "label": "Played in 2023 season",
+      "value": 2023
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
       "label": "Austria NT",
-      "value": "8"
+      "value": "8",
+      "federation_id": 8
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a8c54b1a-0050-5d18-a2f6-2059dde33487.png",
-      "label": "Dornbirn Indians",
-      "value": "1225"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8594b98-58ba-b8a6-5518-10de4ae89d9d.png",
+      "label": "Wr. Neustadt Diving Ducks",
+      "value": "1227"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
-      "label": "Vienna Wanderers",
-      "value": "1222"
+      "image": "https://static.wbsc.org/upload/acfef0c2-5af4-e797-cb4b-550d6173bb34.png",
+      "label": "Hard Bulls",
+      "value": "1228"
     },
     {
       "type": "tournament",
@@ -36,16 +38,5 @@
       "value": "BB-BUNDESLIGA",
       "federation_id": 8
     }
-  ],
-  "answers": {
-    "0-0": 72,
-    "0-1": 89,
-    "0-2": 38,
-    "1-0": 56,
-    "1-1": 91,
-    "1-2": 62,
-    "2-0": 186,
-    "2-1": 224,
-    "2-2": 103
-  }
+  ]
 }

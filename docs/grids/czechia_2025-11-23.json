@@ -1,14 +1,36 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "CF (min 1 PA)",
-      "value": "CF"
+      "type": "seasonal_pitching_k",
+      "label": ">=35k Season",
+      "value": 35,
+      "condition": "min"
     },
     {
-      "type": "seasonal_runs",
-      "label": "15+ Runs Season",
-      "value": 15
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
+      "federation_id": 6
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/0df1b8ac-31d1-a8bd-dae5-db1b7c541b03.jpg",
+      "label": "Painbusters Most",
+      "value": "1878"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/155cf629-9bb0-5fc6-2830-5ddd769d0d47.png",
+      "label": "Hvězdy Extraligy",
+      "value": "2210"
     },
     {
       "type": "tournament",
@@ -16,36 +38,5 @@
       "value": "CZE-EXL",
       "federation_id": 6
     }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/2b4c017d-41ab-0f88-0c43-a63a6080e50e.png",
-      "label": "Technika Brno",
-      "value": "2065"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/a7dffba8-f8b9-2a89-1883-b07093f1e5b4.png",
-      "label": "Kotlářka Praha",
-      "value": "2071"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
-      "label": "Czechia NT",
-      "value": "6"
-    }
-  ],
-  "answers": {
-    "0-0": 46,
-    "0-1": 23,
-    "0-2": 45,
-    "1-0": 45,
-    "1-1": 22,
-    "1-2": 50,
-    "2-0": 302,
-    "2-1": 219,
-    "2-2": 159
-  }
+  ]
 }

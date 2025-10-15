@@ -1,34 +1,36 @@
 {
   "cols": [
     {
-      "type": "seasonal_runs",
-      "label": "20+ Runs Season",
-      "value": 20
+      "type": "seasonal_hits",
+      "label": ">=15 Hit Season",
+      "value": 15,
+      "condition": "min"
     },
     {
       "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
       "label": "Netherlands NT",
-      "value": "1"
+      "value": "1",
+      "federation_id": 1
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/e8944012-5266-bf86-740a-2b238e5d1d9a.jpg",
-      "label": "Onze Gezellen",
-      "value": "1273"
+      "image": "https://static.wbsc.org/upload/bdc06e75-2859-a6ba-74da-9a6e16207d72.png",
+      "label": "Twins Oosterhout",
+      "value": "1269"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/fa14f1a1-1762-f7f2-6a3d-84fc21f97071.png",
-      "label": "Hoofddorp Pioniers Baseball",
-      "value": "1265"
+      "image": "https://static.wbsc.org/upload/573978ca-25c1-9166-27d3-49a2572bcbe8.png",
+      "label": "Euro Stars",
+      "value": "2318"
     },
     {
       "type": "tournament",
@@ -36,16 +38,5 @@
       "value": "HOOFDKLASSE-SOFTBAL",
       "federation_id": 1
     }
-  ],
-  "answers": {
-    "0-0": 8,
-    "0-1": 37,
-    "0-2": 14,
-    "1-0": 15,
-    "1-1": 51,
-    "1-2": 26,
-    "2-0": 77,
-    "2-1": 191,
-    "2-2": 111
-  }
+  ]
 }

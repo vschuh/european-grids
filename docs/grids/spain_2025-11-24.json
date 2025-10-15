@@ -1,0 +1,42 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_wOBA",
+      "label": ">=0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25,
+      "condition": "min"
+    },
+    {
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Béisbol Oro (ESP)",
+      "value": "ESP-LNDH-BB",
+      "federation_id": 39
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/01289c10-7afa-a307-4c35-8395b5f03899.jpg",
+      "label": "Miralbueno Zaragoza",
+      "value": "1629"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f14607c0-9bb5-122e-4481-f1475f202b0f.png",
+      "label": "CBS Toros",
+      "value": "1654"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
+      "federation_id": 39
+    }
+  ]
+}

@@ -1,14 +1,16 @@
 {
   "cols": [
     {
-      "type": "seasonal_runs",
-      "label": "20+ Runs Season",
-      "value": 20
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/07067501-9be9-9d54-0187-4b5ce1bc028d.jpg",
+      "label": "Les Pharaons d`Evry-Courcouronnes",
+      "value": "1367"
     },
     {
-      "type": "seasonal_pitching_era",
-      "label": "<3.00 ERA Season (min. 10 ip)",
-      "value": 3
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a18c7fc9-a3ce-81e9-0c12-f2a5ec8eab1e.jpg",
+      "label": "Rouen Huskies",
+      "value": "1428"
     },
     {
       "type": "tournament",
@@ -19,33 +21,20 @@
   ],
   "rows": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a18c7fc9-a3ce-81e9-0c12-f2a5ec8eab1e.jpg",
-      "label": "Rouen Huskies",
-      "value": "1428"
+      "type": "seasonal_avg",
+      "label": ">=0.300 avg Season (min. 10 pa)",
+      "value": 0.3,
+      "condition": "min"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/db8cb428-f188-8cd5-1354-4006e912897a.jpg",
-      "label": "Metz Cometz",
-      "value": "1712"
+      "type": "nationality",
+      "label": "Nationality: USA",
+      "value": "USA"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
-      "label": "France NT",
-      "value": "14"
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
     }
-  ],
-  "answers": {
-    "0-0": 10,
-    "0-1": 2,
-    "0-2": 37,
-    "1-0": 4,
-    "1-1": 6,
-    "1-2": 35,
-    "2-0": 25,
-    "2-1": 20,
-    "2-2": 85
-  }
+  ]
 }

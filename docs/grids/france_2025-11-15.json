@@ -2,13 +2,34 @@
   "cols": [
     {
       "type": "position",
-      "label": "RF (min 1 PA)",
-      "value": "RF"
+      "label": "LF (min 1 PA)",
+      "value": "LF"
     },
     {
-      "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14",
+      "federation_id": 14
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/229a41eb-e61a-7ab8-e29f-3100fc34a2ce.jpg",
+      "label": "Les Comanches de Saint-Raphaël",
+      "value": "1352"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c6f45770-2b34-bfcf-33e8-1909b6ef7bae.jpg",
+      "label": "Les Grizzlys de Grenoble",
+      "value": "1513"
     },
     {
       "type": "tournament",
@@ -16,36 +37,5 @@
       "value": "FRA-D1BB",
       "federation_id": 14
     }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/51a28c3c-a894-cc4d-30ca-b8c705e5bd5d.png",
-      "label": "3M Barracudas Baseball Université Club",
-      "value": "1385"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/c72832ba-21d5-2872-9a0c-2051b1cac815.png",
-      "label": "Cougars de Montigny-le-Bretonneux",
-      "value": "1716"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
-      "label": "France NT",
-      "value": "14"
-    }
-  ],
-  "answers": {
-    "0-0": 64,
-    "0-1": 53,
-    "0-2": 44,
-    "1-0": 53,
-    "1-1": 44,
-    "1-2": 26,
-    "2-0": 152,
-    "2-1": 141,
-    "2-2": 85
-  }
+  ]
 }

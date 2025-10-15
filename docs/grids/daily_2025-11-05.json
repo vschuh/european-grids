@@ -2,50 +2,41 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2"
+      "image": "https://static.wbsc.org/upload/450c82c4-90bc-6b3d-d1c7-88a8f4d96464.png",
+      "label": "Hoboken Pioneers",
+      "value": "1353"
     },
     {
-      "type": "seasonal_bb",
-      "label": "10+ BB Season",
-      "value": 10
+      "type": "nationality",
+      "label": "Nationality: BEL",
+      "value": "BEL"
     },
     {
-      "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1",
+      "federation_id": 1
     }
   ],
   "rows": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/f5260415-3c46-7bca-9104-c3f5df539370.jpg",
-      "label": "A.S.D. PADOVA BAS. SOFT. CLUB",
-      "value": "574"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/867c2c87-a075-4811-3a29-71da8dafa1a7.svg",
-      "label": "1949 PARMA BASEBALL CLUB ASD",
-      "value": "333"
-    },
-    {
       "type": "tournament",
-      "label": "Serie A1 Softball (IT)",
-      "value": "ITA-SERIE-A1-F-SB",
-      "federation_id": 2
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
+      "federation_id": 1
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">=0.350 OBP Season (min. 10 pa)",
+      "value": 0.35,
+      "condition": "min"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/dfb15b29-c3d5-e17b-16ce-fea5adbc7c83.png",
+      "label": "Stabroek Chicaboo`s",
+      "value": "1361"
     }
-  ],
-  "answers": {
-    "0-0": 11,
-    "0-1": 43,
-    "0-2": 24,
-    "1-0": 37,
-    "1-1": 52,
-    "1-2": 25,
-    "2-0": 125,
-    "2-1": 290,
-    "2-2": 340
-  }
+  ]
 }

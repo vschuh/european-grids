@@ -1,50 +1,42 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/573978ca-25c1-9166-27d3-49a2572bcbe8.png",
-      "label": "Euro Stars",
-      "value": "2318"
+      "type": "seasonal_runs",
+      "label": ">=15 Runs Season",
+      "value": 15,
+      "condition": "min"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/8cea480b-e009-b08e-8d12-c3f85ab33091.jpg",
-      "label": "Hoofddorp Pioniers Softball",
-      "value": "1306"
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
       "label": "Netherlands NT",
-      "value": "1"
+      "value": "1",
+      "federation_id": 1
     }
   ],
   "rows": [
     {
-      "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/6a057191-c5a2-e328-e9dc-1599fb6d475c.jpg",
+      "label": "Olympia Haarlem",
+      "value": "1270"
     },
     {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8b309cc3-df97-4cc5-e994-7961b147ef60.jpg",
+      "label": "Storks",
+      "value": "1268"
     },
     {
-      "type": "nationality",
-      "label": "Nationality: NED",
-      "value": "NED"
+      "type": "tournament",
+      "label": "Hoofdklasse Softbal (NL)",
+      "value": "HOOFDKLASSE-SOFTBAL",
+      "federation_id": 1
     }
-  ],
-  "answers": {
-    "0-0": 7,
-    "0-1": 6,
-    "0-2": 152,
-    "1-0": 4,
-    "1-1": 4,
-    "1-2": 294,
-    "2-0": 22,
-    "2-1": 21,
-    "2-2": 690
-  }
+  ]
 }

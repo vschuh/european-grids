@@ -1,0 +1,41 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
+      "federation_id": 39
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2648277a-0a77-53ab-7dde-0020537acc83.jpeg",
+      "label": "CS Fénix Valencia",
+      "value": "1624"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/9aa1aee4-5a37-b2fa-7992-1aa7244e07a0.png",
+      "label": "CBS Sant Boi",
+      "value": "1630"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Béisbol Oro (ESP)",
+      "value": "ESP-LNDH-BB",
+      "federation_id": 39
+    }
+  ]
+}

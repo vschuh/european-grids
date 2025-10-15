@@ -1,51 +1,43 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
+      "type": "seasonal_wOBA",
+      "label": ">=0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25,
+      "condition": "min"
     },
     {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
+      "type": "seasonal_pitching_hbp",
+      "label": "<=2 HBP Season",
+      "value": 2,
+      "condition": "max"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
-      "label": "Czechia NT",
-      "value": "6"
+      "type": "tournament",
+      "label": "Extraliga BB (CZ)",
+      "value": "CZE-EXL",
+      "federation_id": 6
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/21908af0-2814-b783-333b-41871a18b7e3.jpg",
-      "label": "Chemie - Kotlářka",
-      "value": "2367"
+      "image": "https://static.wbsc.org/upload/271efdd4-78f7-782b-19e9-ca7fd00cfee2.png",
+      "label": "Hroši Brno",
+      "value": "2063"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/2b4c017d-41ab-0f88-0c43-a63a6080e50e.png",
-      "label": "Technika Brno",
-      "value": "2065"
+      "image": "https://static.wbsc.org/upload/1ad273ca-49c9-52b7-3330-5aae326481f9.png",
+      "label": "Třebíč Nuclears",
+      "value": "2067"
     },
     {
-      "type": "tournament",
-      "label": "Extraliga SB (CZ)",
-      "value": "W-EXT-L",
-      "federation_id": 148
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
+      "federation_id": 6
     }
-  ],
-  "answers": {
-    "0-0": 14,
-    "0-1": 3,
-    "0-2": 5,
-    "1-0": 44,
-    "1-1": 4,
-    "1-2": 17,
-    "2-0": 118,
-    "2-1": 68,
-    "2-2": 102
-  }
+  ]
 }

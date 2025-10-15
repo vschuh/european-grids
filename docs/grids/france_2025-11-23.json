@@ -1,51 +1,39 @@
 {
   "cols": [
     {
-      "type": "seasonal_rbi",
-      "label": "15+ RBI Season",
-      "value": 15
-    },
-    {
-      "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
-      "label": "France NT",
-      "value": "14"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/54f7aee7-2dea-f878-4244-591fd30486d0.jpg",
-      "label": "Pirates de Béziers",
-      "value": "2309"
-    },
-    {
       "type": "team",
       "image": "https://static.wbsc.org/assets/cms/teams/logo/a18c7fc9-a3ce-81e9-0c12-f2a5ec8eab1e.jpg",
       "label": "Rouen Huskies",
       "value": "1428"
     },
     {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c72832ba-21d5-2872-9a0c-2051b1cac815.png",
+      "label": "Cougars de Montigny-le-Bretonneux",
+      "value": "1716"
+    },
+    {
       "type": "tournament",
-      "label": "Championnat de France D1 BB (FR)",
-      "value": "FRA-D1BB",
+      "label": "Championnat de France Division 1 Féminine SB (FR)",
+      "value": "FRA-D1FSB",
       "federation_id": 14
     }
   ],
-  "answers": {
-    "0-0": 3,
-    "0-1": 22,
-    "0-2": 10,
-    "1-0": 14,
-    "1-1": 42,
-    "1-2": 18,
-    "2-0": 52,
-    "2-1": 158,
-    "2-2": 85
-  }
+  "rows": [
+    {
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: FRA",
+      "value": "FRA"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    }
+  ]
 }

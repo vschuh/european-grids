@@ -1,51 +1,41 @@
 {
   "cols": [
     {
-      "type": "seasonal_wOBA",
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
     },
     {
-      "type": "seasonal_sb",
-      "label": "10+ SB Season",
-      "value": 10
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
-      "type": "tournament",
-      "label": "Extraliga BB (CZ)",
-      "value": "CZE-EXL",
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
       "federation_id": 6
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/271efdd4-78f7-782b-19e9-ca7fd00cfee2.png",
-      "label": "Hroši Brno",
-      "value": "2063"
+      "image": "https://static.wbsc.org/upload/eae8ffb8-03e7-dda6-7424-3f299e45baf3.png",
+      "label": "Draci Brno",
+      "value": "1434"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/d41ed6a3-9cb2-6629-99f3-c02c2861b626.png",
-      "label": "Eagles Praha",
-      "value": "2060"
+      "image": "https://static.wbsc.org/upload/dd134970-0bd6-d5fd-0abc-a138fc7d6868.jpg",
+      "label": "Arrows Ostrava",
+      "value": "1605"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
-      "label": "Czechia NT",
-      "value": "6"
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
     }
-  ],
-  "answers": {
-    "0-0": 88,
-    "0-1": 19,
-    "0-2": 47,
-    "1-0": 120,
-    "1-1": 19,
-    "1-2": 48,
-    "2-0": 454,
-    "2-1": 55,
-    "2-2": 159
-  }
+  ]
 }

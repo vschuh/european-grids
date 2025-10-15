@@ -1,51 +1,42 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "CF (min 1 PA)",
-      "value": "CF"
+      "type": "seasonal_pitching_era",
+      "label": "<=3.00 ERA Season (min. 10 ip)",
+      "value": 3,
+      "condition": "max"
     },
     {
       "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "label": "Played in 2025 season",
+      "value": 2025
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
       "label": "Netherlands NT",
-      "value": "1"
+      "value": "1",
+      "federation_id": 1
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/573978ca-25c1-9166-27d3-49a2572bcbe8.png",
-      "label": "Euro Stars",
-      "value": "2318"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/38ed2f87-d5c1-caae-58f8-ddd93f46cd58.jpg",
+      "label": "Sparks Haarlem",
+      "value": "1272"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/e8944012-5266-bf86-740a-2b238e5d1d9a.jpg",
-      "label": "Onze Gezellen",
-      "value": "1273"
+      "image": "https://static.wbsc.org/upload/bdc06e75-2859-a6ba-74da-9a6e16207d72.png",
+      "label": "Twins Oosterhout",
+      "value": "1269"
     },
     {
       "type": "tournament",
-      "label": "Hoofdklasse Softbal (NL)",
-      "value": "HOOFDKLASSE-SOFTBAL",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
       "federation_id": 1
     }
-  ],
-  "answers": {
-    "0-0": 3,
-    "0-1": 4,
-    "0-2": 3,
-    "1-0": 21,
-    "1-1": 37,
-    "1-2": 14,
-    "2-0": 118,
-    "2-1": 191,
-    "2-2": 111
-  }
+  ]
 }

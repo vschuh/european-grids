@@ -1,51 +1,41 @@
 {
   "cols": [
     {
+      "type": "nationality",
+      "label": "Nationality: ESP",
+      "value": "ESP"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
+      "federation_id": 39
+    }
+  ],
+  "rows": [
+    {
       "type": "team",
       "image": "https://static.wbsc.org/assets/cms/teams/logo/12a3f46c-cb0a-0014-98f9-bff5d87890b5.jpg",
       "label": "Club de Béisbol y Sóftbol Rivas",
       "value": "1354"
     },
     {
+      "type": "perfect_game",
+      "label": "Perfect Game (CG & min 5 IP)",
+      "value": 5,
+      "condition": "min"
+    },
+    {
       "type": "tournament",
-      "label": "Women's Softball European Championship (EU)",
-      "value": "EU-CHAMP-W-SB",
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
       "federation_id": 278
-    },
-    {
-      "type": "position",
-      "label": "1B (min 1 PA)",
-      "value": "1B"
     }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/9aa1aee4-5a37-b2fa-7992-1aa7244e07a0.png",
-      "label": "CBS Sant Boi",
-      "value": "1630"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
-      "label": "Spain NT",
-      "value": "39"
-    },
-    {
-      "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
-    }
-  ],
-  "answers": {
-    "0-0": 4,
-    "0-1": 11,
-    "0-2": 42,
-    "1-0": 18,
-    "1-1": 33,
-    "1-2": 115,
-    "2-0": 40,
-    "2-1": 331,
-    "2-2": 7969
-  }
+  ]
 }

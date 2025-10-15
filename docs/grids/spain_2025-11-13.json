@@ -2,19 +2,19 @@
   "cols": [
     {
       "type": "position",
-      "label": "1B (min 1 PA)",
-      "value": "1B"
+      "label": "LF (min 1 PA)",
+      "value": "LF"
     },
     {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "type": "seasonal_bb",
+      "label": ">=10 BB Season",
+      "value": 10,
+      "condition": "min"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
-      "label": "Spain NT",
-      "value": "39",
+      "type": "tournament",
+      "label": "Liga Nacional de Sófbol Oro (ESP)",
+      "value": "ESP-LNDH-SB",
       "federation_id": 39
     }
   ],
@@ -27,26 +27,16 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/f07f3dfb-77ee-f3e0-0242-7325665efdec.jpg",
-      "label": "Dridma Rivas Sófbol Club",
-      "value": "1625"
+      "image": "https://static.wbsc.org/upload/3084d3b0-293e-1776-d083-36810be4a442.png",
+      "label": "Club Atlético Deportivo Irabia/Izaga",
+      "value": "1960"
     },
     {
-      "type": "tournament",
-      "label": "Liga Nacional de Sófbol Oro (ESP)",
-      "value": "ESP-LNDH-SB",
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
       "federation_id": 39
     }
-  ],
-  "answers": {
-    "0-0": 43,
-    "0-1": 27,
-    "0-2": 10,
-    "1-0": 44,
-    "1-1": 18,
-    "1-2": 12,
-    "2-0": 153,
-    "2-1": 155,
-    "2-2": 77
-  }
+  ]
 }

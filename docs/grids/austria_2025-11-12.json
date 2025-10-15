@@ -1,51 +1,41 @@
 {
   "cols": [
     {
-      "type": "seasonal_bb",
-      "label": "10+ BB Season",
-      "value": 10
+      "type": "position",
+      "label": "C (min 1 PA)",
+      "value": "C"
     },
     {
       "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
       "label": "Austria NT",
-      "value": "8"
+      "value": "8",
+      "federation_id": 8
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/4137a8ec-106d-1408-1204-7266ed5c196a.png",
-      "label": "Linz Witches und Bandits",
-      "value": "1276"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/3a067f16-f428-d6b9-450d-7ff6132d4207.png",
+      "label": "Feldkirch Cardinals",
+      "value": "1229"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8594b98-58ba-b8a6-5518-10de4ae89d9d.png",
-      "label": "Wr. Neustadt Diving Ducks",
-      "value": "1227"
+      "image": "https://static.wbsc.org/upload/d84201d1-024c-068e-a445-3ebb5216a8c4.png",
+      "label": "Schwechat Blue Bats",
+      "value": "1261"
     },
     {
       "type": "tournament",
-      "label": "Softball Bundesliga (AT)",
-      "value": "SB-BUNDESLIGA",
+      "label": "Baseball Bundesliga (AT)",
+      "value": "BB-BUNDESLIGA",
       "federation_id": 8
     }
-  ],
-  "answers": {
-    "0-0": 5,
-    "0-1": 27,
-    "0-2": 12,
-    "1-0": 39,
-    "1-1": 98,
-    "1-2": 45,
-    "2-0": 37,
-    "2-1": 106,
-    "2-2": 63
-  }
+  ]
 }

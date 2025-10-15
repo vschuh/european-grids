@@ -1,50 +1,42 @@
 {
   "cols": [
     {
-      "type": "nationality",
-      "label": "Nationality: NED",
-      "value": "NED"
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/dd134970-0bd6-d5fd-0abc-a138fc7d6868.jpg",
+      "label": "Arrows Ostrava",
+      "value": "1605"
     },
     {
-      "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "type": "nationality",
+      "label": "Nationality: CZE",
+      "value": "CZE"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
-      "label": "Netherlands NT",
-      "value": "1"
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
+      "federation_id": 6
     }
   ],
   "rows": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/24be214e-4c82-4f83-8fa3-56760624a195.jpg",
-      "label": "Quick Amersfoort Softball",
-      "value": "1308"
-    },
-    {
-      "type": "seasonal_pitching_k",
-      "label": "35k+ Season",
-      "value": 35
-    },
-    {
       "type": "tournament",
-      "label": "U-22 Women’s Softball European Championship (EU)",
-      "value": "EU-U-22-EURO-CHAMP-W-SB",
-      "federation_id": 278
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
+    },
+    {
+      "type": "seasonal_pitching_hbp",
+      "label": "<=2 HBP Season",
+      "value": 2,
+      "condition": "max"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2b4c017d-41ab-0f88-0c43-a63a6080e50e.png",
+      "label": "Technika Brno",
+      "value": "2065"
     }
-  ],
-  "answers": {
-    "0-0": 27,
-    "0-1": 11,
-    "0-2": 14,
-    "1-0": 126,
-    "1-1": 1216,
-    "1-2": 65,
-    "2-0": 28,
-    "2-1": 262,
-    "2-2": 28
-  }
+  ]
 }

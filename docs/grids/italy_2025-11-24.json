@@ -1,51 +1,41 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_k",
-      "label": "50k+ Season",
-      "value": 50
+      "type": "position",
+      "label": "LF (min 1 PA)",
+      "value": "LF"
     },
     {
       "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
       "label": "Italy NT",
-      "value": "2"
+      "value": "2",
+      "federation_id": 2
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/703fcf50-a4a9-5fc2-8e8e-cfb114713e30.jpg",
-      "label": "A.S.D. BASEBALL CLUB SALA BAGANZA",
-      "value": "350"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/2ce5351b-04a5-b1a2-0bcd-6f9ab3ee1977.jpg",
+      "label": "CERVIGNANO BASEBALL E SOFTBALL A.S.D.",
+      "value": "343"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/f3233b20-510f-5d48-d8d4-964b62bb3ae3.png",
-      "label": "BASE BALL CLUB GROSSETO ASD",
-      "value": "357"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/679d2360-7aba-32ca-cb27-a1818b537f03.jpg",
+      "label": "POL. CASERTA BAS. E SOFT. ACADEMY A.S.D.",
+      "value": "394"
     },
     {
       "type": "tournament",
-      "label": "Serie A1 Softball (IT)",
-      "value": "ITA-SERIE-A1-F-SB",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
       "federation_id": 2
     }
-  ],
-  "answers": {
-    "0-0": 7,
-    "0-1": 48,
-    "0-2": 6,
-    "1-0": 15,
-    "1-1": 53,
-    "1-2": 17,
-    "2-0": 161,
-    "2-1": 414,
-    "2-2": 125
-  }
+  ]
 }

@@ -1,51 +1,42 @@
 {
   "cols": [
     {
-      "type": "seasonal_runs",
-      "label": "15+ Runs Season",
-      "value": 15
+      "type": "seasonal_pitching_fip",
+      "label": "<=2.50 FIP Season (min. 10 ip)",
+      "value": 3,
+      "condition": "max"
     },
     {
-      "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
-      "type": "tournament",
-      "label": "Baseball Bundesliga (AT)",
-      "value": "BB-BUNDESLIGA",
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8",
       "federation_id": 8
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8594b98-58ba-b8a6-5518-10de4ae89d9d.png",
-      "label": "Wr. Neustadt Diving Ducks",
-      "value": "1227"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ad49a1e0-b481-4a1c-5780-9a7e8693fae9.png",
+      "label": "Traiskirchen Grasshoppers",
+      "value": "1226"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/3a067f16-f428-d6b9-450d-7ff6132d4207.png",
-      "label": "Feldkirch Cardinals",
-      "value": "1229"
+      "image": "https://static.wbsc.org/upload/acfef0c2-5af4-e797-cb4b-550d6173bb34.png",
+      "label": "Hard Bulls",
+      "value": "1228"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8"
+      "type": "tournament",
+      "label": "Softball Bundesliga (AT)",
+      "value": "SB-BUNDESLIGA",
+      "federation_id": 8
     }
-  ],
-  "answers": {
-    "0-0": 41,
-    "0-1": 67,
-    "0-2": 41,
-    "1-0": 15,
-    "1-1": 61,
-    "1-2": 34,
-    "2-0": 84,
-    "2-1": 181,
-    "2-2": 103
-  }
+  ]
 }

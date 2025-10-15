@@ -1,51 +1,40 @@
 {
   "cols": [
     {
-      "type": "seasonal_rbi",
-      "label": "15+ RBI Season",
-      "value": 15
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/59758832-8743-44aa-9abc-c16b9bc847fc.jpg",
+      "label": "SARONNO SOFTBALL  E BASEBALL A.S.D.",
+      "value": "390"
     },
     {
-      "type": "seasonal_pitching_ip",
-      "label": "35 IP+ Season",
-      "value": 105
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1603ff99-c3b0-d27b-807f-84d84d54db0d.jpg",
+      "label": "A.B. CARONNO SOFTBALL ASD",
+      "value": "391"
     },
     {
       "type": "tournament",
-      "label": "Serie A Baseball (IT)",
-      "value": "ITA-SERIE-A1-M-BB",
+      "label": "Serie A1 Softball (IT)",
+      "value": "ITA-SERIE-A1-F-SB",
       "federation_id": 2
     }
   ],
   "rows": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/d3da29df-dd87-12e9-a63d-0c5cd519d09e.jpg",
-      "label": "A.S.D. SENAGO MILANO UNITED B.C.",
-      "value": "340"
+      "type": "seasonal_pitching_k",
+      "label": ">=35k Season",
+      "value": 35,
+      "condition": "min"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/f5260415-3c46-7bca-9104-c3f5df539370.jpg",
-      "label": "A.S.D. PADOVA BAS. SOFT. CLUB",
-      "value": "574"
+      "type": "nationality",
+      "label": "Nationality: USA",
+      "value": "USA"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2"
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
     }
-  ],
-  "answers": {
-    "0-0": 11,
-    "0-1": 11,
-    "0-2": 49,
-    "1-0": 28,
-    "1-1": 30,
-    "1-2": 92,
-    "2-0": 167,
-    "2-1": 111,
-    "2-2": 223
-  }
+  ]
 }

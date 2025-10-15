@@ -1,35 +1,15 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
-    },
-    {
-      "type": "seasonal_bb",
-      "label": ">=10 BB Season",
-      "value": 10,
+      "type": "seasonal_hits",
+      "label": ">=15 Hit Season",
+      "value": 15,
       "condition": "min"
     },
     {
-      "type": "tournament",
-      "label": "Liga Nacional de Béisbol Oro (ESP)",
-      "value": "ESP-LNDH-BB",
-      "federation_id": 39
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/01289c10-7afa-a307-4c35-8395b5f03899.jpg",
-      "label": "Miralbueno Zaragoza",
-      "value": "1629"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/179791bc-b8d7-eb39-15be-3014d6acd0bf.jpg",
-      "label": "San Inazio Bilbao Bizkaia",
-      "value": "1622"
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
@@ -39,15 +19,24 @@
       "federation_id": 39
     }
   ],
-  "answers": {
-    "0-0": 27,
-    "0-1": 12,
-    "0-2": 35,
-    "1-0": 12,
-    "1-1": 17,
-    "1-2": 35,
-    "2-0": 109,
-    "2-1": 84,
-    "2-2": 76
-  }
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/30da3795-69a2-d2ec-66bf-7059cd80b093.jpg",
+      "label": "Astros Valencia",
+      "value": "1433"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/3084d3b0-293e-1776-d083-36810be4a442.png",
+      "label": "Club Atlético Deportivo Irabia/Izaga",
+      "value": "1960"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Sófbol Oro (ESP)",
+      "value": "ESP-LNDH-SB",
+      "federation_id": 39
+    }
+  ]
 }

@@ -1,51 +1,41 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_fip",
-      "label": "<2.50 FIP Season (min. 10 ip)",
-      "value": 3
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
     },
     {
       "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
       "type": "tournament",
-      "label": "Championnat de France D1 BB (FR)",
-      "value": "FRA-D1BB",
+      "label": "Championnat de France Division 1 Féminine SB (FR)",
+      "value": "FRA-D1FSB",
       "federation_id": 14
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/83428e38-f463-52e1-0571-48f71aa9fc31.jpg",
-      "label": "Stade Toulousain Baseball Softball",
-      "value": "1713"
+      "image": "https://static.wbsc.org/upload/07067501-9be9-9d54-0187-4b5ce1bc028d.jpg",
+      "label": "Les Pharaons d`Evry-Courcouronnes",
+      "value": "1367"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/c72832ba-21d5-2872-9a0c-2051b1cac815.png",
-      "label": "Cougars de Montigny-le-Bretonneux",
-      "value": "1716"
+      "image": "https://static.wbsc.org/upload/c6f45770-2b34-bfcf-33e8-1909b6ef7bae.jpg",
+      "label": "Les Grizzlys de Grenoble",
+      "value": "1513"
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
       "label": "France NT",
-      "value": "14"
+      "value": "14",
+      "federation_id": 14
     }
-  ],
-  "answers": {
-    "0-0": 2,
-    "0-1": 22,
-    "0-2": 34,
-    "1-0": 1,
-    "1-1": 46,
-    "1-2": 26,
-    "2-0": 4,
-    "2-1": 141,
-    "2-2": 85
-  }
+  ]
 }

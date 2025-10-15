@@ -1,34 +1,35 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">0.400 OBP Season (min. 10 pa)",
-      "value": 0.4
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
     },
     {
       "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
       "label": "Czechia NT",
-      "value": "6"
+      "value": "6",
+      "federation_id": 6
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/1ad273ca-49c9-52b7-3330-5aae326481f9.png",
-      "label": "Třebíč Nuclears",
-      "value": "2067"
+      "image": "https://static.wbsc.org/upload/fd9b041a-199b-c526-ab4b-dda6af4f1a8e.png",
+      "label": "Skokani Olomouc",
+      "value": "2075"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/155cf629-9bb0-5fc6-2830-5ddd769d0d47.png",
-      "label": "Hvězdy Extraligy",
-      "value": "2210"
+      "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg",
+      "label": "SK Joudrs Praha",
+      "value": "1348"
     },
     {
       "type": "tournament",
@@ -36,16 +37,5 @@
       "value": "W-EXT-L",
       "federation_id": 148
     }
-  ],
-  "answers": {
-    "0-0": 41,
-    "0-1": 87,
-    "0-2": 35,
-    "1-0": 12,
-    "1-1": 30,
-    "1-2": 10,
-    "2-0": 123,
-    "2-1": 191,
-    "2-2": 102
-  }
+  ]
 }

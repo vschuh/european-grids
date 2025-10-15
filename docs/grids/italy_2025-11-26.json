@@ -1,14 +1,36 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_k",
-      "label": "50k+ Season",
-      "value": 50
+      "type": "seasonal_pitching_fip",
+      "label": "<=2.50 FIP Season (min. 10 ip)",
+      "value": 3,
+      "condition": "max"
     },
     {
-      "type": "position",
-      "label": "CF (min 1 PA)",
-      "value": "CF"
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/0e55260d-39d4-47bb-6aa1-686676ed3765.jpg",
+      "label": "CAGLIARI BASEBALL CLUB A.S.D.",
+      "value": "338"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d444b5d6-e7b7-882c-c054-d868ea9d8977.jpg",
+      "label": "BRESCIA BASEBALL  SOFTBALL  ASS. SPORT. DIL.",
+      "value": "598"
     },
     {
       "type": "tournament",
@@ -16,36 +38,5 @@
       "value": "ITA-SERIE-A1-M-BB",
       "federation_id": 2
     }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a253f065-f476-fd22-2ea4-7cf450180fe4.jpg",
-      "label": "MACERATA ANGELS A.S.D.",
-      "value": "330"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/1d426774-e611-8acf-6a0c-5eace0905fcc.jpg",
-      "label": "NEW RIMINI BASEBALL SOFTBALL S.S.D. ARL",
-      "value": "1286"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2"
-    }
-  ],
-  "answers": {
-    "0-0": 18,
-    "0-1": 29,
-    "0-2": 91,
-    "1-0": 15,
-    "1-1": 20,
-    "1-2": 53,
-    "2-0": 88,
-    "2-1": 229,
-    "2-2": 223
-  }
+  ]
 }

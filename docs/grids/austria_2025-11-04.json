@@ -1,29 +1,24 @@
 {
   "cols": [
     {
-      "type": "seasonal_runs",
-      "label": "15+ Runs Season",
-      "value": 15
+      "type": "position",
+      "label": "LF (min 1 PA)",
+      "value": "LF"
     },
     {
       "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
       "label": "Austria NT",
-      "value": "8"
+      "value": "8",
+      "federation_id": 8
     }
   ],
   "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
-      "label": "Vienna Wanderers",
-      "value": "1222"
-    },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/cms/teams/logo/1943295d-9bf7-e5b8-291c-021b311137ba.png",
@@ -31,21 +26,16 @@
       "value": "1223"
     },
     {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/4137a8ec-106d-1408-1204-7266ed5c196a.png",
+      "label": "Linz Witches und Bandits",
+      "value": "1276"
+    },
+    {
       "type": "tournament",
-      "label": "Softball Bundesliga (AT)",
-      "value": "SB-BUNDESLIGA",
+      "label": "Baseball Bundesliga (AT)",
+      "value": "BB-BUNDESLIGA",
       "federation_id": 8
     }
-  ],
-  "answers": {
-    "0-0": 29,
-    "0-1": 112,
-    "0-2": 62,
-    "1-0": 34,
-    "1-1": 86,
-    "1-2": 45,
-    "2-0": 46,
-    "2-1": 106,
-    "2-2": 63
-  }
+  ]
 }

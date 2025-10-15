@@ -1,20 +1,22 @@
 {
   "cols": [
     {
-      "type": "seasonal_bb",
-      "label": "10+ BB Season",
-      "value": 10
+      "type": "seasonal_pitching_ip",
+      "label": ">=50 IP Season",
+      "value": 105,
+      "condition": "min"
     },
     {
-      "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
+      "type": "seasonal_runs",
+      "label": ">=20 Runs Season",
+      "value": 20,
+      "condition": "min"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
-      "label": "Belgium NT",
-      "value": "143"
+      "type": "tournament",
+      "label": "Baseball Men D1 (BE)",
+      "value": "BD1",
+      "federation_id": 143
     }
   ],
   "rows": [
@@ -26,26 +28,16 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/7784025f-15e3-9d72-ec0a-5cea1fb36fac.png",
-      "label": "Antwerp Eagles",
-      "value": "1474"
+      "image": "https://static.wbsc.org/upload/20c6919f-5149-b21e-dc0e-34879b702f4f.png",
+      "label": "Braine Black Rickers",
+      "value": "1553"
     },
     {
-      "type": "tournament",
-      "label": "Softball Ladies D1 (BE)",
-      "value": "SLD1",
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143",
       "federation_id": 143
     }
-  ],
-  "answers": {
-    "0-0": 41,
-    "0-1": 95,
-    "0-2": 21,
-    "1-0": 22,
-    "1-1": 79,
-    "1-2": 12,
-    "2-0": 106,
-    "2-1": 160,
-    "2-2": 59
-  }
+  ]
 }

@@ -1,19 +1,21 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">0.350 OBP Season (min. 10 pa)",
-      "value": 0.35
+      "type": "seasonal_pitching_hbp",
+      "label": "<=2 HBP Season",
+      "value": 2,
+      "condition": "max"
     },
     {
-      "type": "position",
-      "label": "P (min 1 PA)",
-      "value": "P"
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
-      "type": "tournament",
-      "label": "Extraliga BB (CZ)",
-      "value": "CZE-EXL",
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
       "federation_id": 6
     }
   ],
@@ -26,26 +28,15 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/2b4c017d-41ab-0f88-0c43-a63a6080e50e.png",
-      "label": "Technika Brno",
-      "value": "2065"
+      "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg",
+      "label": "SK Joudrs Praha",
+      "value": "1348"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
-      "label": "Czechia NT",
-      "value": "6"
+      "type": "tournament",
+      "label": "Extraliga BB (CZ)",
+      "value": "CZE-EXL",
+      "federation_id": 6
     }
-  ],
-  "answers": {
-    "0-0": 31,
-    "0-1": 45,
-    "0-2": 28,
-    "1-0": 48,
-    "1-1": 71,
-    "1-2": 45,
-    "2-0": 408,
-    "2-1": 387,
-    "2-2": 159
-  }
+  ]
 }

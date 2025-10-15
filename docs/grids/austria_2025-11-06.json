@@ -1,23 +1,31 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
+      "type": "seasonal_avg",
+      "label": ">=0.350 OBP Season (min. 10 pa)",
+      "value": 0.35,
+      "condition": "min"
     },
     {
-      "type": "seasonal_pitching_ip",
-      "label": "50 IP+ Season",
-      "value": 105
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
-      "type": "tournament",
-      "label": "Baseball Bundesliga (AT)",
-      "value": "BB-BUNDESLIGA",
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8",
       "federation_id": 8
     }
   ],
   "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/3a067f16-f428-d6b9-450d-7ff6132d4207.png",
+      "label": "Feldkirch Cardinals",
+      "value": "1229"
+    },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/cms/teams/logo/ad49a1e0-b481-4a1c-5780-9a7e8693fae9.png",
@@ -25,27 +33,10 @@
       "value": "1226"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
-      "label": "Vienna Wanderers",
-      "value": "1222"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8"
+      "type": "tournament",
+      "label": "Baseball Bundesliga (AT)",
+      "value": "BB-BUNDESLIGA",
+      "federation_id": 8
     }
-  ],
-  "answers": {
-    "0-0": 23,
-    "0-1": 9,
-    "0-2": 42,
-    "1-0": 36,
-    "1-1": 16,
-    "1-2": 52,
-    "2-0": 118,
-    "2-1": 39,
-    "2-2": 103
-  }
+  ]
 }

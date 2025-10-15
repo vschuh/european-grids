@@ -1,16 +1,15 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/ef8ef30f-13d8-e1c8-7d06-5b8cb737fefa.jpg",
-      "label": "FIORENTINA BASEBALL  S.S.D. ARL",
-      "value": "349"
+      "type": "seasonal_wOBA",
+      "label": ">=0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25,
+      "condition": "min"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/c4bed522-05cc-8294-b525-96f7278aa24b.jpg",
-      "label": "POLISPORTIVA PADULE BASEBALL -  A.S.D.",
-      "value": "366"
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
     },
     {
       "type": "tournament",
@@ -21,30 +20,23 @@
   ],
   "rows": [
     {
-      "type": "seasonal_doubles",
-      "label": "10+ Doubles Season",
-      "value": 10
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/d8b6d64d-34f3-3a73-90db-8df0d8f36e55.png",
+      "label": "A.S.D. NETTUNO 2 BASEBALL CLUB",
+      "value": "329"
     },
     {
-      "type": "nationality",
-      "label": "Nationality: ITA",
-      "value": "ITA"
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d444b5d6-e7b7-882c-c054-d868ea9d8977.jpg",
+      "label": "BRESCIA BASEBALL  SOFTBALL  ASS. SPORT. DIL.",
+      "value": "598"
     },
     {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2",
+      "federation_id": 2
     }
-  ],
-  "answers": {
-    "0-0": 5,
-    "0-1": 9,
-    "0-2": 191,
-    "1-0": 81,
-    "1-1": 61,
-    "1-2": 1589,
-    "2-0": 57,
-    "2-1": 43,
-    "2-2": 1065
-  }
+  ]
 }

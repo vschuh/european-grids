@@ -1,19 +1,21 @@
 {
   "cols": [
     {
-      "type": "seasonal_ops",
-      "label": ">1.000 OPS Season (min. 10 pa)",
-      "value": 1
-    },
-    {
       "type": "seasonal_rbi",
-      "label": "20+ RBI Season",
-      "value": 20
+      "label": ">=15 RBI Season",
+      "value": 15,
+      "condition": "min"
     },
     {
-      "type": "tournament",
-      "label": "Extraliga BB (CZ)",
-      "value": "CZE-EXL",
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
       "federation_id": 6
     }
   ],
@@ -26,26 +28,15 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/dd134970-0bd6-d5fd-0abc-a138fc7d6868.jpg",
-      "label": "Arrows Ostrava",
-      "value": "1605"
+      "image": "https://static.wbsc.org/upload/2b4c017d-41ab-0f88-0c43-a63a6080e50e.png",
+      "label": "Technika Brno",
+      "value": "2065"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
-      "label": "Czechia NT",
-      "value": "6"
+      "type": "tournament",
+      "label": "Extraliga BB (CZ)",
+      "value": "CZE-EXL",
+      "federation_id": 6
     }
-  ],
-  "answers": {
-    "0-0": 68,
-    "0-1": 15,
-    "0-2": 47,
-    "1-0": 64,
-    "1-1": 15,
-    "1-2": 43,
-    "2-0": 386,
-    "2-1": 89,
-    "2-2": 159
-  }
+  ]
 }

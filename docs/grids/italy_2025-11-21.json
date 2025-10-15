@@ -1,34 +1,15 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_k",
-      "label": "50k+ Season",
-      "value": 50
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
     },
     {
-      "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/8d59a636-d55a-b5f8-0f4c-c1c3978a1a8d.jpg",
-      "label": "LION`S  BASEBALL NETTUNO A.S.D.",
-      "value": "635"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/e038a2d1-84e5-3d14-9e93-98eadfc2fb3f.jpg",
-      "label": "TORRE PEDRERA FALCONS BC ASS. SPORT. DILETT.",
-      "value": "381"
+      "type": "seasonal_avg",
+      "label": ">=0.300 avg Season (min. 10 pa)",
+      "value": 0.3,
+      "condition": "min"
     },
     {
       "type": "tournament",
@@ -37,15 +18,25 @@
       "federation_id": 2
     }
   ],
-  "answers": {
-    "0-0": 5,
-    "0-1": 19,
-    "0-2": 7,
-    "1-0": 10,
-    "1-1": 53,
-    "1-2": 8,
-    "2-0": 364,
-    "2-1": 935,
-    "2-2": 223
-  }
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ef9c3699-433d-84cf-e297-da9743f94500.jpg",
+      "label": "FORTITUDO BASEBALL CLUB 1953 S.S.D. scarl",
+      "value": "336"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e038a2d1-84e5-3d14-9e93-98eadfc2fb3f.jpg",
+      "label": "TORRE PEDRERA FALCONS BC ASS. SPORT. DILETT.",
+      "value": "381"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2",
+      "federation_id": 2
+    }
+  ]
 }

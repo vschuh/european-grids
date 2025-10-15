@@ -2,50 +2,42 @@
   "cols": [
     {
       "type": "seasonal_avg",
-      "label": ">0.300 avg Season (min. 10 pa)",
-      "value": 0.3
+      "label": ">=0.350 OBP Season (min. 10 pa)",
+      "value": 0.35,
+      "condition": "min"
     },
     {
-      "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
+      "type": "seasonal_rbi",
+      "label": ">=15 RBI Season",
+      "value": 15,
+      "condition": "min"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
-      "label": "Belgium NT",
-      "value": "143"
+      "type": "tournament",
+      "label": "Baseball Men D1 (BE)",
+      "value": "BD1",
+      "federation_id": 143
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/7784025f-15e3-9d72-ec0a-5cea1fb36fac.png",
-      "label": "Antwerp Eagles",
-      "value": "1474"
+      "image": "https://static.wbsc.org/upload/7f689077-0110-b1f1-2ef9-4b2c962e00c8.png",
+      "label": "Namur Angels",
+      "value": "1478"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/d430c331-250b-b6d3-fc73-5e9348647ec8.png",
-      "label": "Mont-Saint-Guibert Phoenix",
-      "value": "1479"
+      "image": "https://static.wbsc.org/upload/bd187a02-55c9-dbf3-3a25-668902bfcd8d.png",
+      "label": "Borgerhout Squirrels",
+      "value": "1473"
     },
     {
-      "type": "tournament",
-      "label": "Softball Ladies D1 (BE)",
-      "value": "SLD1",
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143",
       "federation_id": 143
     }
-  ],
-  "answers": {
-    "0-0": 75,
-    "0-1": 81,
-    "0-2": 12,
-    "1-0": 114,
-    "1-1": 131,
-    "1-2": 39,
-    "2-0": 171,
-    "2-1": 173,
-    "2-2": 59
-  }
+  ]
 }

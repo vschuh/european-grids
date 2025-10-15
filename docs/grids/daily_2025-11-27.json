@@ -1,50 +1,41 @@
 {
   "cols": [
     {
-      "type": "nationality",
-      "label": "Nationality: ITA",
-      "value": "ITA"
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d84201d1-024c-068e-a445-3ebb5216a8c4.png",
+      "label": "Schwechat Blue Bats",
+      "value": "1261"
     },
     {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "type": "nationality",
+      "label": "Nationality: JPN",
+      "value": "JPN"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2"
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8",
+      "federation_id": 8
     }
   ],
   "rows": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/4dd71fbd-6865-78fc-431a-fe648a41d21b.jpg",
-      "label": "LEGNANO BASEBALL  SOFTBALL A.S.D.",
-      "value": "398"
-    },
-    {
-      "type": "seasonal_pitching_k",
-      "label": "50k+ Season",
-      "value": 50
-    },
-    {
       "type": "tournament",
-      "label": "U-22 Women’s Softball European Championship (EU)",
-      "value": "EU-U-22-EURO-CHAMP-W-SB",
-      "federation_id": 278
+      "label": "Baseball Bundesliga (AT)",
+      "value": "BB-BUNDESLIGA",
+      "federation_id": 8
+    },
+    {
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
+      "label": "Vienna Wanderers",
+      "value": "1222"
     }
-  ],
-  "answers": {
-    "0-0": 68,
-    "0-1": 49,
-    "0-2": 5,
-    "1-0": 278,
-    "1-1": 669,
-    "1-2": 88,
-    "2-0": 29,
-    "2-1": 322,
-    "2-2": 29
-  }
+  ]
 }

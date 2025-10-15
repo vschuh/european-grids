@@ -2,13 +2,14 @@
   "cols": [
     {
       "type": "seasonal_rbi",
-      "label": "20+ RBI Season",
-      "value": 20
+      "label": ">=20 RBI Season",
+      "value": 20,
+      "condition": "min"
     },
     {
       "type": "position",
-      "label": "1B (min 1 PA)",
-      "value": "1B"
+      "label": "2B (min 1 PA)",
+      "value": "2B"
     },
     {
       "type": "tournament",
@@ -20,32 +21,22 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/867c2c87-a075-4811-3a29-71da8dafa1a7.svg",
-      "label": "1949 PARMA BASEBALL CLUB ASD",
-      "value": "333"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e1ef1319-7b78-4944-384c-2dec6a4dca49.jpg",
+      "label": "MILANO 1946 BASEBALL E SOFTBALL A. S. D.",
+      "value": "360"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/5effd52b-7309-0dc5-b483-f973e3ede16e.jpg",
-      "label": "NEW BLACK PANTHERS A.S.D.",
-      "value": "345"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/300b244a-687b-e9fe-dead-f938a53ecbed.jpg",
+      "label": "A.S.D. GRIZZLIES TORINO 48 B.S.C.",
+      "value": "337"
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
       "label": "Italy NT",
-      "value": "2"
+      "value": "2",
+      "federation_id": 2
     }
-  ],
-  "answers": {
-    "0-0": 30,
-    "0-1": 39,
-    "0-2": 107,
-    "1-0": 12,
-    "1-1": 19,
-    "1-2": 65,
-    "2-0": 111,
-    "2-1": 247,
-    "2-2": 223
-  }
+  ]
 }

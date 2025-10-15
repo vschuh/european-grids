@@ -1,51 +1,42 @@
 {
   "cols": [
     {
-      "type": "seasonal_rbi",
-      "label": "20+ RBI Season",
-      "value": 20
+      "type": "seasonal_pitching_ip",
+      "label": ">=35 IP Season",
+      "value": 105,
+      "condition": "min"
     },
     {
       "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
       "label": "Netherlands NT",
-      "value": "1"
+      "value": "1",
+      "federation_id": 1
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a56ecb27-813b-b97e-c668-3d06269b6494.jpg",
-      "label": "Tex Town Tigers",
-      "value": "1274"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/24be214e-4c82-4f83-8fa3-56760624a195.jpg",
+      "label": "Quick Amersfoort Softball",
+      "value": "1308"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/8b309cc3-df97-4cc5-e994-7961b147ef60.jpg",
-      "label": "Storks",
-      "value": "1268"
+      "image": "https://static.wbsc.org/upload/2771d01c-919e-c952-c89c-0b6d09fae4a0.png",
+      "label": "Red Lions",
+      "value": "2596"
     },
     {
       "type": "tournament",
-      "label": "Hoofdklasse Softbal (NL)",
-      "value": "HOOFDKLASSE-SOFTBAL",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
       "federation_id": 1
     }
-  ],
-  "answers": {
-    "0-0": 13,
-    "0-1": 42,
-    "0-2": 25,
-    "1-0": 4,
-    "1-1": 10,
-    "1-2": 6,
-    "2-0": 63,
-    "2-1": 189,
-    "2-2": 111
-  }
+  ]
 }

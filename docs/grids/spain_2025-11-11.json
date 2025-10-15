@@ -1,35 +1,15 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">=0.400 OBP Season (min. 10 pa)",
-      "value": 0.4,
+      "type": "seasonal_runs",
+      "label": ">=15 Runs Season",
+      "value": 15,
       "condition": "min"
     },
     {
-      "type": "position",
-      "label": "LF (min 1 PA)",
-      "value": "LF"
-    },
-    {
-      "type": "tournament",
-      "label": "Liga Nacional de Sófbol Oro (ESP)",
-      "value": "ESP-LNDH-SB",
-      "federation_id": 39
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/9444406f-3c22-71e5-78dd-4770dedd5eaf.png",
-      "label": "Club Béisbol Viladecans",
-      "value": "1355"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/2385052c-b349-ee0a-0368-a3c409cef452.png",
-      "label": "CBS Antorcha Valencia",
-      "value": "1653"
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
@@ -39,15 +19,24 @@
       "federation_id": 39
     }
   ],
-  "answers": {
-    "0-0": 65,
-    "0-1": 92,
-    "0-2": 55,
-    "1-0": 26,
-    "1-1": 77,
-    "1-2": 30,
-    "2-0": 156,
-    "2-1": 144,
-    "2-2": 77
-  }
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/9aa1aee4-5a37-b2fa-7992-1aa7244e07a0.png",
+      "label": "CBS Sant Boi",
+      "value": "1630"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/ac5c9f7f-d4d3-57b0-22f3-8490ad944e4c.png",
+      "label": "Club Béisbol Barcelona",
+      "value": "1648"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Sófbol Oro (ESP)",
+      "value": "ESP-LNDH-SB",
+      "federation_id": 39
+    }
+  ]
 }

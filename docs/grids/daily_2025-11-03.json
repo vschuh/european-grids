@@ -7,44 +7,35 @@
     },
     {
       "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
-      "label": "Czechia NT",
-      "value": "6"
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2",
+      "federation_id": 2
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg",
-      "label": "SK Joudrs Praha",
-      "value": "1348"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8eb5acf-6b79-4503-b7ee-6fde7f0aee89.jpg",
+      "label": "A.S.D. B.S.C. GODO",
+      "value": "332"
     },
     {
-      "type": "seasonal_triples",
-      "label": "5+ Triples Season",
-      "value": 5
+      "type": "seasonal_wOBA",
+      "label": ">=0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25,
+      "condition": "min"
     },
     {
       "type": "tournament",
-      "label": "Extraliga BB (CZ)",
-      "value": "CZE-EXL",
-      "federation_id": 6
+      "label": "Serie A1 Softball (IT)",
+      "value": "ITA-SERIE-A1-F-SB",
+      "federation_id": 2
     }
-  ],
-  "answers": {
-    "0-0": 3,
-    "0-1": 124,
-    "0-2": 63,
-    "1-0": 20,
-    "1-1": 215,
-    "1-2": 20,
-    "2-0": 30,
-    "2-1": 316,
-    "2-2": 159
-  }
+  ]
 }

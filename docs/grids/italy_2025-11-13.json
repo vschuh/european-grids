@@ -1,14 +1,16 @@
 {
   "cols": [
     {
-      "type": "seasonal_wOBA",
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ef9c3699-433d-84cf-e297-da9743f94500.jpg",
+      "label": "FORTITUDO BASEBALL CLUB 1953 S.S.D. scarl",
+      "value": "336"
     },
     {
-      "type": "position",
-      "label": "1B (min 1 PA)",
-      "value": "1B"
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/09fa8d5d-3beb-0f14-7d8e-8d48078672a2.jpg",
+      "label": "A.S.D. SAN MARINO BASEBALL CLUB",
+      "value": "331"
     },
     {
       "type": "tournament",
@@ -19,33 +21,20 @@
   ],
   "rows": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/c94f3613-2aac-5ee9-848e-7e0259fc86f8.jpg",
-      "label": "MONTEFIASCONE BASEBALL SOFTBALL 67 A.S.D.",
-      "value": "354"
+      "type": "seasonal_homeruns",
+      "label": ">=10 HR Season",
+      "value": 10,
+      "condition": "min"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/ef8ef30f-13d8-e1c8-7d06-5b8cb737fefa.jpg",
-      "label": "FIORENTINA BASEBALL  S.S.D. ARL",
-      "value": "349"
+      "type": "nationality",
+      "label": "Nationality: ESP",
+      "value": "ESP"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2"
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
     }
-  ],
-  "answers": {
-    "0-0": 9,
-    "0-1": 13,
-    "0-2": 27,
-    "1-0": 36,
-    "1-1": 37,
-    "1-2": 51,
-    "2-0": 316,
-    "2-1": 247,
-    "2-2": 223
-  }
+  ]
 }

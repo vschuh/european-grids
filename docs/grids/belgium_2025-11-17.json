@@ -1,51 +1,42 @@
 {
   "cols": [
     {
-      "type": "seasonal_runs",
-      "label": "15+ Runs Season",
-      "value": 15
+      "type": "seasonal_avg",
+      "label": ">=0.350 OBP Season (min. 10 pa)",
+      "value": 0.35,
+      "condition": "min"
     },
     {
-      "type": "seasonal_wOBA",
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
-      "type": "tournament",
-      "label": "Baseball Men D1 (BE)",
-      "value": "BD1",
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143",
       "federation_id": 143
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/bd187a02-55c9-dbf3-3a25-668902bfcd8d.png",
-      "label": "Borgerhout Squirrels",
-      "value": "1473"
+      "image": "https://static.wbsc.org/upload/20c6919f-5149-b21e-dc0e-34879b702f4f.png",
+      "label": "Braine Black Rickers",
+      "value": "1553"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a39fd931-7c83-ffd7-63b9-d21f6f0851d9.jpg",
-      "label": "Brasschaat Braves",
-      "value": "1414"
+      "image": "https://static.wbsc.org/upload/d430c331-250b-b6d3-fc73-5e9348647ec8.png",
+      "label": "Mont-Saint-Guibert Phoenix",
+      "value": "1479"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
-      "label": "Belgium NT",
-      "value": "143"
+      "type": "tournament",
+      "label": "Softball Ladies D1 (BE)",
+      "value": "SLD1",
+      "federation_id": 143
     }
-  ],
-  "answers": {
-    "0-0": 59,
-    "0-1": 124,
-    "0-2": 58,
-    "1-0": 38,
-    "1-1": 119,
-    "1-2": 50,
-    "2-0": 178,
-    "2-1": 278,
-    "2-2": 100
-  }
+  ]
 }

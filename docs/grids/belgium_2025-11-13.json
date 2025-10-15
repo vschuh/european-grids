@@ -1,14 +1,36 @@
 {
   "cols": [
     {
-      "type": "seasonal_sb",
-      "label": "10+ SB Season",
-      "value": 10
+      "type": "seasonal_pitching_era",
+      "label": "<=3.00 ERA Season (min. 10 ip)",
+      "value": 3,
+      "condition": "max"
     },
     {
-      "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143",
+      "federation_id": 143
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f7f05882-7810-d6a2-6bd7-06648e0a5fa8.png",
+      "label": "Beveren Lions",
+      "value": "1480"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/dfb15b29-c3d5-e17b-16ce-fea5adbc7c83.png",
+      "label": "Stabroek Chicaboo`s",
+      "value": "1361"
     },
     {
       "type": "tournament",
@@ -16,36 +38,5 @@
       "value": "BD1",
       "federation_id": 143
     }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/1aba8bb9-6d31-0d64-b3ec-fbb43cc12c68.png",
-      "label": "Merchtem Cats",
-      "value": "1476"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/fb648008-c9d5-2b15-fca8-960733ae99e3.png",
-      "label": "Deurne Spartans",
-      "value": "1377"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
-      "label": "Belgium NT",
-      "value": "143"
-    }
-  ],
-  "answers": {
-    "0-0": 44,
-    "0-1": 126,
-    "0-2": 41,
-    "1-0": 20,
-    "1-1": 65,
-    "1-2": 57,
-    "2-0": 124,
-    "2-1": 220,
-    "2-2": 100
-  }
+  ]
 }

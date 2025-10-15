@@ -1,0 +1,39 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/e715ea59-748b-5200-77b6-63e4e2c8c96e.jpg",
+      "label": "Tenerife Marlins Puerto Cruz",
+      "value": "1421"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2385052c-b349-ee0a-0368-a3c409cef452.png",
+      "label": "CBS Antorcha Valencia",
+      "value": "1653"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Béisbol Oro (ESP)",
+      "value": "ESP-LNDH-BB",
+      "federation_id": 39
+    }
+  ],
+  "rows": [
+    {
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: ITA",
+      "value": "ITA"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    }
+  ]
+}

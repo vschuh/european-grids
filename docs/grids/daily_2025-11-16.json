@@ -1,50 +1,42 @@
 {
   "cols": [
     {
-      "type": "nationality",
-      "label": "Nationality: ITA",
-      "value": "ITA"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
-    },
-    {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
       "label": "Italy NT",
-      "value": "2"
+      "value": "2",
+      "federation_id": 2
+    },
+    {
+      "type": "position",
+      "label": "RF (min 1 PA)",
+      "value": "RF"
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">=0.300 avg Season (min. 10 pa)",
+      "value": 0.3,
+      "condition": "min"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/30444ddc-0622-85ef-a529-0a3ed3c7a7f9.png",
-      "label": "BASEBALL CLUB SETTIMO A.S.D.",
-      "value": "342"
+      "image": "https://static.wbsc.org/upload/8d59a636-d55a-b5f8-0f4c-c1c3978a1a8d.jpg",
+      "label": "LION`S  BASEBALL NETTUNO A.S.D.",
+      "value": "635"
     },
     {
-      "type": "seasonal_avg",
-      "label": ">0.350 OBP Season (min. 10 pa)",
-      "value": 0.35
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/5effd52b-7309-0dc5-b483-f973e3ede16e.jpg",
+      "label": "NEW BLACK PANTHERS A.S.D.",
+      "value": "345"
     },
     {
       "type": "tournament",
-      "label": "U-18 European Baseball Championship (EU)",
-      "value": "EU-U-18-EURO-CHAMP-M-BB",
+      "label": "U-18 Women's European Softball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-W-SB",
       "federation_id": 278
     }
-  ],
-  "answers": {
-    "0-0": 36,
-    "0-1": 24,
-    "0-2": 4,
-    "1-0": 1081,
-    "1-1": 3411,
-    "1-2": 292,
-    "2-0": 51,
-    "2-1": 289,
-    "2-2": 51
-  }
+  ]
 }

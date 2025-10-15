@@ -1,9 +1,9 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_ip",
-      "label": "35 IP+ Season",
-      "value": 105
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
     },
     {
       "type": "year",
@@ -14,21 +14,22 @@
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
       "label": "Belgium NT",
-      "value": "143"
+      "value": "143",
+      "federation_id": 143
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/f7f05882-7810-d6a2-6bd7-06648e0a5fa8.png",
-      "label": "Beveren Lions",
-      "value": "1480"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a39fd931-7c83-ffd7-63b9-d21f6f0851d9.jpg",
+      "label": "Brasschaat Braves",
+      "value": "1414"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/20c6919f-5149-b21e-dc0e-34879b702f4f.png",
-      "label": "Braine Black Rickers",
-      "value": "1553"
+      "image": "https://static.wbsc.org/upload/bd187a02-55c9-dbf3-3a25-668902bfcd8d.png",
+      "label": "Borgerhout Squirrels",
+      "value": "1473"
     },
     {
       "type": "tournament",
@@ -36,16 +37,5 @@
       "value": "BD1",
       "federation_id": 143
     }
-  ],
-  "answers": {
-    "0-0": 13,
-    "0-1": 65,
-    "0-2": 23,
-    "1-0": 9,
-    "1-1": 135,
-    "1-2": 3,
-    "2-0": 73,
-    "2-1": 261,
-    "2-2": 100
-  }
+  ]
 }

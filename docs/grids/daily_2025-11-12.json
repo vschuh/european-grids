@@ -1,50 +1,43 @@
 {
   "cols": [
     {
-      "type": "nationality",
-      "label": "Nationality: AUT",
-      "value": "AUT"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
-    },
-    {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8"
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2",
+      "federation_id": 2
+    },
+    {
+      "type": "seasonal_ops",
+      "label": ">=1.000 OPS Season (min. 10 pa)",
+      "value": 1,
+      "condition": "min"
+    },
+    {
+      "type": "seasonal_triples",
+      "label": ">=5 Triples Season",
+      "value": 5,
+      "condition": "min"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/d84201d1-024c-068e-a445-3ebb5216a8c4.png",
-      "label": "Schwechat Blue Bats",
-      "value": "1261"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1603ff99-c3b0-d27b-807f-84d84d54db0d.jpg",
+      "label": "A.B. CARONNO SOFTBALL ASD",
+      "value": "391"
     },
     {
-      "type": "seasonal_runs",
-      "label": "15+ Runs Season",
-      "value": 15
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
+      "label": "SOFTBALL CLUB FORLI` A.S.D.",
+      "value": "395"
     },
     {
       "type": "tournament",
-      "label": "Baseball Bundesliga (AT)",
-      "value": "BB-BUNDESLIGA",
-      "federation_id": 8
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
+      "federation_id": 278
     }
-  ],
-  "answers": {
-    "0-0": 76,
-    "0-1": 42,
-    "0-2": 25,
-    "1-0": 159,
-    "1-1": 3910,
-    "1-2": 84,
-    "2-0": 222,
-    "2-1": 195,
-    "2-2": 103
-  }
+  ]
 }

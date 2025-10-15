@@ -1,28 +1,30 @@
 {
   "cols": [
     {
-      "type": "seasonal_hits",
-      "label": "15+ Hit Season",
-      "value": 15
+      "type": "seasonal_pitching_fip",
+      "label": "<=2.50 FIP Season (min. 10 ip)",
+      "value": 3,
+      "condition": "max"
     },
     {
       "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
       "label": "Belgium NT",
-      "value": "143"
+      "value": "143",
+      "federation_id": 143
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/450c82c4-90bc-6b3d-d1c7-88a8f4d96464.png",
-      "label": "Hoboken Pioneers",
-      "value": "1353"
+      "image": "https://static.wbsc.org/upload/fb648008-c9d5-2b15-fca8-960733ae99e3.png",
+      "label": "Deurne Spartans",
+      "value": "1377"
     },
     {
       "type": "team",
@@ -32,20 +34,9 @@
     },
     {
       "type": "tournament",
-      "label": "Baseball Men D1 (BE)",
-      "value": "BD1",
+      "label": "Softball Ladies D1 (BE)",
+      "value": "SLD1",
       "federation_id": 143
     }
-  ],
-  "answers": {
-    "0-0": 66,
-    "0-1": 126,
-    "0-2": 49,
-    "1-0": 39,
-    "1-1": 82,
-    "1-2": 12,
-    "2-0": 179,
-    "2-1": 306,
-    "2-2": 100
-  }
+  ]
 }

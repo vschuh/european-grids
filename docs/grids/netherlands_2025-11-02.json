@@ -6,29 +6,29 @@
       "value": "2B"
     },
     {
-      "type": "seasonal_wOBA",
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
     },
     {
       "type": "tournament",
-      "label": "Hoofdklasse Softbal (NL)",
-      "value": "HOOFDKLASSE-SOFTBAL",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
       "federation_id": 1
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/24be214e-4c82-4f83-8fa3-56760624a195.jpg",
-      "label": "Quick Amersfoort Softball",
-      "value": "1308"
+      "image": "https://static.wbsc.org/upload/fa14f1a1-1762-f7f2-6a3d-84fc21f97071.png",
+      "label": "Hoofddorp Pioniers Baseball",
+      "value": "1265"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/38ed2f87-d5c1-caae-58f8-ddd93f46cd58.jpg",
-      "label": "Sparks Haarlem",
-      "value": "1272"
+      "image": "https://static.wbsc.org/upload/c0bd7be4-e313-1ce3-fd74-137717685f9f.png",
+      "label": "HCAW",
+      "value": "1264"
     },
     {
       "type": "team",
@@ -36,16 +36,5 @@
       "label": "Netherlands NT",
       "value": "1"
     }
-  ],
-  "answers": {
-    "0-0": 12,
-    "0-1": 13,
-    "0-2": 17,
-    "1-0": 22,
-    "1-1": 28,
-    "1-2": 67,
-    "2-0": 195,
-    "2-1": 262,
-    "2-2": 111
-  }
+  ]
 }

@@ -1,14 +1,16 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
+      "type": "seasonal_rbi",
+      "label": ">=15 RBI Season",
+      "value": 15,
+      "condition": "min"
     },
     {
-      "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
+      "type": "seasonal_pitching_k",
+      "label": ">=50k Season",
+      "value": 50,
+      "condition": "min"
     },
     {
       "type": "tournament",
@@ -20,32 +22,22 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/703fcf50-a4a9-5fc2-8e8e-cfb114713e30.jpg",
-      "label": "A.S.D. BASEBALL CLUB SALA BAGANZA",
-      "value": "350"
+      "image": "https://static.wbsc.org/upload/15e17f14-1564-cf9d-3db7-2a502ccd9535.png",
+      "label": "POVIGLIO BASEBALL A.S.D.",
+      "value": "364"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/e038a2d1-84e5-3d14-9e93-98eadfc2fb3f.jpg",
-      "label": "TORRE PEDRERA FALCONS BC ASS. SPORT. DILETT.",
-      "value": "381"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/df0cbcf4-3d16-e1c8-110d-893c27d06fb3.jpg",
+      "label": "A.S.D. AVIGLIANA REBELS",
+      "value": "399"
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
       "label": "Italy NT",
-      "value": "2"
+      "value": "2",
+      "federation_id": 2
     }
-  ],
-  "answers": {
-    "0-0": 17,
-    "0-1": 25,
-    "0-2": 58,
-    "1-0": 31,
-    "1-1": 37,
-    "1-2": 41,
-    "2-0": 218,
-    "2-1": 261,
-    "2-2": 223
-  }
+  ]
 }

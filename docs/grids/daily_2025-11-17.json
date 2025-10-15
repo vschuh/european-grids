@@ -2,49 +2,40 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
-      "label": "Vienna Wanderers",
-      "value": "1222"
+      "image": "https://static.wbsc.org/upload/ff7815ce-79aa-def3-c3c1-e7f2065bd8ec.jpg",
+      "label": "Les Rabbits de Clapiers-Jacou",
+      "value": "1514"
     },
     {
-      "type": "tournament",
-      "label": "Women’s Softball European Cup Winners Cup “A” (EU)",
-      "value": "EU-WINNERS-CUP-A-W-SB",
-      "federation_id": 278
+      "type": "nationality",
+      "label": "Nationality: FRA",
+      "value": "FRA"
     },
     {
-      "type": "seasonal_rbi",
-      "label": "20+ RBI Season",
-      "value": 20
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14",
+      "federation_id": 14
     }
   ],
   "rows": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8594b98-58ba-b8a6-5518-10de4ae89d9d.png",
-      "label": "Wr. Neustadt Diving Ducks",
-      "value": "1227"
-    },
-    {
-      "type": "nationality",
-      "label": "Nationality: AUT",
-      "value": "AUT"
+      "type": "tournament",
+      "label": "Championnat de France Division 1 Féminine SB (FR)",
+      "value": "FRA-D1FSB",
+      "federation_id": 14
     },
     {
       "type": "position",
       "label": "1B (min 1 PA)",
       "value": "1B"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/51a28c3c-a894-cc4d-30ca-b8c705e5bd5d.png",
+      "label": "3M Barracudas Baseball Université Club",
+      "value": "1385"
     }
-  ],
-  "answers": {
-    "0-0": 3,
-    "0-1": 26,
-    "0-2": 25,
-    "1-0": 117,
-    "1-1": 37,
-    "1-2": 65,
-    "2-0": 60,
-    "2-1": 263,
-    "2-2": 1266
-  }
+  ]
 }

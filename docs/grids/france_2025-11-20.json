@@ -1,34 +1,16 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/db8cb428-f188-8cd5-1354-4006e912897a.jpg",
+      "label": "Metz Cometz",
+      "value": "1712"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
-      "label": "France NT",
-      "value": "14"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/e20fa02b-5959-2c18-2def-c682eb6a540f.jpg",
-      "label": "Les Lions de Savigny-sur-Orge",
-      "value": "1715"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/0050079f-5f9e-d803-8839-20992d9cfc18.jpg",
-      "label": "Les Boucaniers de La Rochelle",
-      "value": "1714"
+      "image": "https://static.wbsc.org/upload/07067501-9be9-9d54-0187-4b5ce1bc028d.jpg",
+      "label": "Les Pharaons d`Evry-Courcouronnes",
+      "value": "1367"
     },
     {
       "type": "tournament",
@@ -37,15 +19,22 @@
       "federation_id": 14
     }
   ],
-  "answers": {
-    "0-0": 14,
-    "0-1": 9,
-    "0-2": 19,
-    "1-0": 18,
-    "1-1": 8,
-    "1-2": 13,
-    "2-0": 72,
-    "2-1": 68,
-    "2-2": 85
-  }
+  "rows": [
+    {
+      "type": "seasonal_ops",
+      "label": ">=1.000 OPS Season (min. 10 pa)",
+      "value": 1,
+      "condition": "min"
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: USA",
+      "value": "USA"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    }
+  ]
 }

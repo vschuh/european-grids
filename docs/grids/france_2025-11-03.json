@@ -2,22 +2,29 @@
   "cols": [
     {
       "type": "seasonal_avg",
-      "label": ">0.350 OBP Season (min. 10 pa)",
-      "value": 0.35
+      "label": ">=0.300 avg Season (min. 10 pa)",
+      "value": 0.3,
+      "condition": "min"
     },
     {
       "type": "position",
-      "label": "CF (min 1 PA)",
-      "value": "CF"
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
       "type": "tournament",
-      "label": "Championnat de France D1 BB (FR)",
-      "value": "FRA-D1BB",
+      "label": "Championnat de France Division 1 Féminine SB (FR)",
+      "value": "FRA-D1FSB",
       "federation_id": 14
     }
   ],
   "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c6f45770-2b34-bfcf-33e8-1909b6ef7bae.jpg",
+      "label": "Les Grizzlys de Grenoble",
+      "value": "1513"
+    },
     {
       "type": "team",
       "image": "https://static.wbsc.org/upload/c72832ba-21d5-2872-9a0c-2051b1cac815.png",
@@ -26,26 +33,10 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/db8cb428-f188-8cd5-1354-4006e912897a.jpg",
-      "label": "Metz Cometz",
-      "value": "1712"
-    },
-    {
-      "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
       "label": "France NT",
-      "value": "14"
+      "value": "14",
+      "federation_id": 14
     }
-  ],
-  "answers": {
-    "0-0": 37,
-    "0-1": 40,
-    "0-2": 26,
-    "1-0": 31,
-    "1-1": 18,
-    "1-2": 35,
-    "2-0": 177,
-    "2-1": 116,
-    "2-2": 85
-  }
+  ]
 }

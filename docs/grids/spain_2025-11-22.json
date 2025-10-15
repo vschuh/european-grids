@@ -1,0 +1,42 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_rbi",
+      "label": ">=15 RBI Season",
+      "value": 15,
+      "condition": "min"
+    },
+    {
+      "type": "position",
+      "label": "RF (min 1 PA)",
+      "value": "RF"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Sófbol Oro (ESP)",
+      "value": "ESP-LNDH-SB",
+      "federation_id": 39
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c0e15d0a-f6ea-e019-b9cb-79d9892ea780.jpg",
+      "label": "OBB Bizkorrak",
+      "value": "1627"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f07f3dfb-77ee-f3e0-0242-7325665efdec.jpg",
+      "label": "Dridma Rivas Sófbol Club",
+      "value": "1625"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
+      "federation_id": 39
+    }
+  ]
+}

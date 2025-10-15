@@ -2,49 +2,39 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/4dd71fbd-6865-78fc-431a-fe648a41d21b.jpg",
-      "label": "LEGNANO BASEBALL  SOFTBALL A.S.D.",
-      "value": "398"
+      "image": "https://static.wbsc.org/upload/f7f05882-7810-d6a2-6bd7-06648e0a5fa8.png",
+      "label": "Beveren Lions",
+      "value": "1480"
     },
     {
       "type": "tournament",
-      "label": "U-18 Women's European Softball Championship (EU)",
-      "value": "EU-U-18-EURO-CHAMP-W-SB",
+      "label": "Women’s Softball European Cup Winners Cup “A” (EU)",
+      "value": "EU-WINNERS-CUP-A-W-SB",
       "federation_id": 278
     },
     {
       "type": "position",
-      "label": "RF (min 1 PA)",
-      "value": "RF"
+      "label": "LF (min 1 PA)",
+      "value": "LF"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/2648277a-0a77-53ab-7dde-0020537acc83.jpeg",
-      "label": "CS Fénix Valencia",
-      "value": "1624"
+      "image": "https://static.wbsc.org/upload/7784025f-15e3-9d72-ec0a-5cea1fb36fac.png",
+      "label": "Antwerp Eagles",
+      "value": "1474"
     },
     {
       "type": "nationality",
-      "label": "Nationality: ESP",
-      "value": "ESP"
+      "label": "Nationality: BEL",
+      "value": "BEL"
     },
     {
       "type": "seasonal_pitching_era",
-      "label": "<3.00 ERA Season (min. 10 ip)",
-      "value": 3
+      "label": "<=3.00 ERA Season (min. 10 ip)",
+      "value": 3,
+      "condition": "max"
     }
-  ],
-  "answers": {
-    "0-0": 4,
-    "0-1": 6,
-    "0-2": 42,
-    "1-0": 4,
-    "1-1": 40,
-    "1-2": 942,
-    "2-0": 15,
-    "2-1": 59,
-    "2-2": 1062
-  }
+  ]
 }

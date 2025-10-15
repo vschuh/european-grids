@@ -1,34 +1,16 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_k",
-      "label": "35k+ Season",
-      "value": 35
+      "type": "seasonal_doubles",
+      "label": ">=10 Doubles Season",
+      "value": 10,
+      "condition": "min"
     },
     {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/c41b0457-80bc-8157-a9d5-3b4a16ba654d.jpg",
-      "label": "A.S.D. SESTESE SOFTBALL",
-      "value": "393"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/f3233b20-510f-5d48-d8d4-964b62bb3ae3.png",
-      "label": "BASE BALL CLUB GROSSETO ASD",
-      "value": "357"
+      "type": "seasonal_hits",
+      "label": ">=15 Hit Season",
+      "value": 15,
+      "condition": "min"
     },
     {
       "type": "tournament",
@@ -37,15 +19,25 @@
       "federation_id": 2
     }
   ],
-  "answers": {
-    "0-0": 10,
-    "0-1": 37,
-    "0-2": 4,
-    "1-0": 21,
-    "1-1": 53,
-    "1-2": 17,
-    "2-0": 475,
-    "2-1": 1098,
-    "2-2": 223
-  }
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/300b244a-687b-e9fe-dead-f938a53ecbed.jpg",
+      "label": "A.S.D. GRIZZLIES TORINO 48 B.S.C.",
+      "value": "337"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/15e17f14-1564-cf9d-3db7-2a502ccd9535.png",
+      "label": "POVIGLIO BASEBALL A.S.D.",
+      "value": "364"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2",
+      "federation_id": 2
+    }
+  ]
 }

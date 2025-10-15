@@ -1,14 +1,15 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_k",
-      "label": "35k+ Season",
-      "value": 35
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
-      "type": "seasonal_avg",
-      "label": ">0.350 OBP Season (min. 10 pa)",
-      "value": 0.35
+      "type": "seasonal_pitching_ip",
+      "label": ">=35 IP Season",
+      "value": 105,
+      "condition": "min"
     },
     {
       "type": "tournament",
@@ -20,32 +21,22 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/d3da29df-dd87-12e9-a63d-0c5cd519d09e.jpg",
-      "label": "A.S.D. SENAGO MILANO UNITED B.C.",
-      "value": "340"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/5effd52b-7309-0dc5-b483-f973e3ede16e.jpg",
+      "label": "NEW BLACK PANTHERS A.S.D.",
+      "value": "345"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/b5fd66eb-b823-6714-12d7-69aa802dcc59.png",
-      "label": "A.S.D. LONGBRIDGE 2000 BASEBALL CLUB",
-      "value": "351"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/2ce5351b-04a5-b1a2-0bcd-6f9ab3ee1977.jpg",
+      "label": "CERVIGNANO BASEBALL E SOFTBALL A.S.D.",
+      "value": "343"
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
       "label": "Italy NT",
-      "value": "2"
+      "value": "2",
+      "federation_id": 2
     }
-  ],
-  "answers": {
-    "0-0": 10,
-    "0-1": 7,
-    "0-2": 49,
-    "1-0": 17,
-    "1-1": 29,
-    "1-2": 39,
-    "2-0": 111,
-    "2-1": 292,
-    "2-2": 223
-  }
+  ]
 }

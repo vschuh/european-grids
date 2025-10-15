@@ -1,51 +1,41 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_ip",
-      "label": "35 IP+ Season",
-      "value": 105
-    },
-    {
       "type": "position",
-      "label": "CF (min 1 PA)",
-      "value": "CF"
+      "label": "2B (min 1 PA)",
+      "value": "2B"
     },
     {
-      "type": "tournament",
-      "label": "Baseball Bundesliga (AT)",
-      "value": "BB-BUNDESLIGA",
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8",
       "federation_id": 8
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/ad49a1e0-b481-4a1c-5780-9a7e8693fae9.png",
-      "label": "Traiskirchen Grasshoppers",
-      "value": "1226"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/4137a8ec-106d-1408-1204-7266ed5c196a.png",
+      "label": "Linz Witches und Bandits",
+      "value": "1276"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/3a067f16-f428-d6b9-450d-7ff6132d4207.png",
-      "label": "Feldkirch Cardinals",
-      "value": "1229"
+      "image": "https://static.wbsc.org/upload/d84201d1-024c-068e-a445-3ebb5216a8c4.png",
+      "label": "Schwechat Blue Bats",
+      "value": "1261"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8"
+      "type": "tournament",
+      "label": "Softball Bundesliga (AT)",
+      "value": "SB-BUNDESLIGA",
+      "federation_id": 8
     }
-  ],
-  "answers": {
-    "0-0": 9,
-    "0-1": 27,
-    "0-2": 42,
-    "1-0": 9,
-    "1-1": 72,
-    "1-2": 34,
-    "2-0": 39,
-    "2-1": 161,
-    "2-2": 103
-  }
+  ]
 }

@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">0.350 OBP Season (min. 10 pa)",
-      "value": 0.35
-    },
-    {
       "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
-      "type": "tournament",
-      "label": "Championnat de France D1 BB (FR)",
-      "value": "FRA-D1BB",
-      "federation_id": 14
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/1071d9a2-1565-7750-d6bd-c5b9217a804f.jpg",
-      "label": "Sénart Templiers",
-      "value": "1435"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/83428e38-f463-52e1-0571-48f71aa9fc31.jpg",
-      "label": "Stade Toulousain Baseball Softball",
-      "value": "1713"
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
     },
     {
       "type": "team",
@@ -37,15 +17,24 @@
       "value": "14"
     }
   ],
-  "answers": {
-    "0-0": 43,
-    "0-1": 39,
-    "0-2": 42,
-    "1-0": 21,
-    "1-1": 29,
-    "1-2": 34,
-    "2-0": 177,
-    "2-1": 141,
-    "2-2": 85
-  }
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/83428e38-f463-52e1-0571-48f71aa9fc31.jpg",
+      "label": "Stade Toulousain Baseball Softball",
+      "value": "1713"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c72832ba-21d5-2872-9a0c-2051b1cac815.png",
+      "label": "Cougars de Montigny-le-Bretonneux",
+      "value": "1716"
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France D1 BB (FR)",
+      "value": "FRA-D1BB",
+      "federation_id": 14
+    }
+  ]
 }

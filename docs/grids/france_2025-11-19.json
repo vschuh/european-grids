@@ -2,50 +2,41 @@
   "cols": [
     {
       "type": "seasonal_avg",
-      "label": ">0.300 avg Season (min. 10 pa)",
-      "value": 0.3
+      "label": ">=0.400 OBP Season (min. 10 pa)",
+      "value": 0.4,
+      "condition": "min"
     },
     {
-      "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
-      "type": "tournament",
-      "label": "Championnat de France D1 BB (FR)",
-      "value": "FRA-D1BB",
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14",
       "federation_id": 14
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/db8cb428-f188-8cd5-1354-4006e912897a.jpg",
-      "label": "Metz Cometz",
-      "value": "1712"
+      "image": "https://static.wbsc.org/upload/ff7815ce-79aa-def3-c3c1-e7f2065bd8ec.jpg",
+      "label": "Les Rabbits de Clapiers-Jacou",
+      "value": "1514"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a18c7fc9-a3ce-81e9-0c12-f2a5ec8eab1e.jpg",
-      "label": "Rouen Huskies",
-      "value": "1428"
+      "image": "https://static.wbsc.org/upload/77e94058-ac4d-db29-8258-7b792b239dbc.jpg",
+      "label": "Pessac Panthères",
+      "value": "1512"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
-      "label": "France NT",
-      "value": "14"
+      "type": "tournament",
+      "label": "Championnat de France Division 1 Féminine SB (FR)",
+      "value": "FRA-D1FSB",
+      "federation_id": 14
     }
-  ],
-  "answers": {
-    "0-0": 36,
-    "0-1": 13,
-    "0-2": 35,
-    "1-0": 49,
-    "1-1": 25,
-    "1-2": 37,
-    "2-0": 205,
-    "2-1": 116,
-    "2-2": 85
-  }
+  ]
 }

@@ -1,51 +1,42 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "type": "seasonal_avg",
+      "label": ">=0.300 avg Season (min. 10 pa)",
+      "value": 0.3,
+      "condition": "min"
     },
     {
       "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
       "label": "Czechia NT",
-      "value": "6"
+      "value": "6",
+      "federation_id": 6
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/fd9b041a-199b-c526-ab4b-dda6af4f1a8e.png",
-      "label": "Skokani Olomouc",
-      "value": "2075"
+      "image": "https://static.wbsc.org/upload/d7f20b47-403a-b08b-4684-ca741b059bb8.png",
+      "label": "Blesk Jablonec",
+      "value": "2068"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/2b4c017d-41ab-0f88-0c43-a63a6080e50e.png",
-      "label": "Technika Brno",
-      "value": "2065"
+      "image": "https://static.wbsc.org/upload/d41ed6a3-9cb2-6629-99f3-c02c2861b626.png",
+      "label": "Eagles Praha",
+      "value": "2060"
     },
     {
       "type": "tournament",
-      "label": "Extraliga BB (CZ)",
-      "value": "CZE-EXL",
-      "federation_id": 6
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
     }
-  ],
-  "answers": {
-    "0-0": 21,
-    "0-1": 7,
-    "0-2": 6,
-    "1-0": 40,
-    "1-1": 4,
-    "1-2": 17,
-    "2-0": 218,
-    "2-1": 95,
-    "2-2": 159
-  }
+  ]
 }

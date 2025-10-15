@@ -1,34 +1,16 @@
 {
   "cols": [
     {
-      "type": "seasonal_runs",
-      "label": "15+ Runs Season",
-      "value": 15
-    },
-    {
-      "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ad49a1e0-b481-4a1c-5780-9a7e8693fae9.png",
+      "label": "Traiskirchen Grasshoppers",
+      "value": "1226"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/3a067f16-f428-d6b9-450d-7ff6132d4207.png",
-      "label": "Feldkirch Cardinals",
-      "value": "1229"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/4137a8ec-106d-1408-1204-7266ed5c196a.png",
-      "label": "Linz Witches und Bandits",
-      "value": "1276"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8594b98-58ba-b8a6-5518-10de4ae89d9d.png",
+      "label": "Wr. Neustadt Diving Ducks",
+      "value": "1227"
     },
     {
       "type": "tournament",
@@ -37,15 +19,22 @@
       "federation_id": 8
     }
   ],
-  "answers": {
-    "0-0": 15,
-    "0-1": 40,
-    "0-2": 19,
-    "1-0": 7,
-    "1-1": 20,
-    "1-2": 12,
-    "2-0": 46,
-    "2-1": 100,
-    "2-2": 63
-  }
+  "rows": [
+    {
+      "type": "seasonal_bb",
+      "label": ">=10 BB Season",
+      "value": 10,
+      "condition": "min"
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: AUT",
+      "value": "AUT"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    }
+  ]
 }

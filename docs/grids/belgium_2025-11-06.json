@@ -1,51 +1,42 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "type": "seasonal_hbp",
+      "label": ">=5 HBP Season",
+      "value": 5,
+      "condition": "min"
     },
     {
-      "type": "position",
-      "label": "LF (min 1 PA)",
-      "value": "LF"
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
-      "type": "tournament",
-      "label": "Baseball Men D1 (BE)",
-      "value": "BD1",
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143",
       "federation_id": 143
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/20c6919f-5149-b21e-dc0e-34879b702f4f.png",
-      "label": "Braine Black Rickers",
-      "value": "1553"
+      "image": "https://static.wbsc.org/upload/7784025f-15e3-9d72-ec0a-5cea1fb36fac.png",
+      "label": "Antwerp Eagles",
+      "value": "1474"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/d430c331-250b-b6d3-fc73-5e9348647ec8.png",
-      "label": "Mont-Saint-Guibert Phoenix",
-      "value": "1479"
+      "image": "https://static.wbsc.org/upload/1aba8bb9-6d31-0d64-b3ec-fbb43cc12c68.png",
+      "label": "Merchtem Cats",
+      "value": "1476"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
-      "label": "Belgium NT",
-      "value": "143"
+      "type": "tournament",
+      "label": "Softball Ladies D1 (BE)",
+      "value": "SLD1",
+      "federation_id": 143
     }
-  ],
-  "answers": {
-    "0-0": 96,
-    "0-1": 128,
-    "0-2": 30,
-    "1-0": 105,
-    "1-1": 139,
-    "1-2": 57,
-    "2-0": 224,
-    "2-1": 249,
-    "2-2": 100
-  }
+  ]
 }

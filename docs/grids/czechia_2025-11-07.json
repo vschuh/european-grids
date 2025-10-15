@@ -1,14 +1,36 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">0.350 OBP Season (min. 10 pa)",
-      "value": 0.35
+      "type": "seasonal_rbi",
+      "label": ">=15 RBI Season",
+      "value": 15,
+      "condition": "min"
     },
     {
-      "type": "seasonal_pitching_fip",
-      "label": "<2.50 FIP Season (min. 10 ip)",
-      "value": 3
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
+      "federation_id": 6
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/271efdd4-78f7-782b-19e9-ca7fd00cfee2.png",
+      "label": "Hroši Brno",
+      "value": "2063"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/21908af0-2814-b783-333b-41871a18b7e3.jpg",
+      "label": "Chemie - Kotlářka",
+      "value": "2367"
     },
     {
       "type": "tournament",
@@ -16,36 +38,5 @@
       "value": "CZE-EXL",
       "federation_id": 6
     }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/a7dffba8-f8b9-2a89-1883-b07093f1e5b4.png",
-      "label": "Kotlářka Praha",
-      "value": "2071"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/dd134970-0bd6-d5fd-0abc-a138fc7d6868.jpg",
-      "label": "Arrows Ostrava",
-      "value": "1605"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
-      "label": "Czechia NT",
-      "value": "6"
-    }
-  ],
-  "answers": {
-    "0-0": 45,
-    "0-1": 1,
-    "0-2": 50,
-    "1-0": 76,
-    "1-1": 7,
-    "1-2": 43,
-    "2-0": 408,
-    "2-1": 21,
-    "2-2": 159
-  }
+  ]
 }

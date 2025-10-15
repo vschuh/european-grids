@@ -2,50 +2,40 @@
   "cols": [
     {
       "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
       "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
       "label": "Czechia NT",
-      "value": "6"
+      "value": "6",
+      "federation_id": 6
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/fd9b041a-199b-c526-ab4b-dda6af4f1a8e.png",
-      "label": "Skokani Olomouc",
-      "value": "2075"
+      "image": "https://static.wbsc.org/upload/155cf629-9bb0-5fc6-2830-5ddd769d0d47.png",
+      "label": "Hvězdy Extraligy",
+      "value": "2210"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/d7f20b47-403a-b08b-4684-ca741b059bb8.png",
-      "label": "Blesk Jablonec",
-      "value": "2068"
+      "image": "https://static.wbsc.org/upload/1ad273ca-49c9-52b7-3330-5aae326481f9.png",
+      "label": "Třebíč Nuclears",
+      "value": "2067"
     },
     {
       "type": "tournament",
-      "label": "Extraliga BB (CZ)",
-      "value": "CZE-EXL",
-      "federation_id": 6
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
     }
-  ],
-  "answers": {
-    "0-0": 11,
-    "0-1": 7,
-    "0-2": 6,
-    "1-0": 33,
-    "1-1": 3,
-    "1-2": 8,
-    "2-0": 220,
-    "2-1": 95,
-    "2-2": 159
-  }
+  ]
 }

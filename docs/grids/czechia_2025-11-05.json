@@ -2,50 +2,42 @@
   "cols": [
     {
       "type": "seasonal_avg",
-      "label": ">0.350 OBP Season (min. 10 pa)",
-      "value": 0.35
+      "label": ">=0.350 OBP Season (min. 10 pa)",
+      "value": 0.35,
+      "condition": "min"
     },
     {
-      "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
+      "type": "seasonal_avg",
+      "label": ">=0.300 avg Season (min. 10 pa)",
+      "value": 0.3,
+      "condition": "min"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
-      "label": "Czechia NT",
-      "value": "6"
+      "type": "tournament",
+      "label": "Extraliga BB (CZ)",
+      "value": "CZE-EXL",
+      "federation_id": 6
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/0df1b8ac-31d1-a8bd-dae5-db1b7c541b03.jpg",
-      "label": "Painbusters Most",
-      "value": "1878"
+      "image": "https://static.wbsc.org/upload/252a5e3d-988d-51c1-d081-264639adc927.png",
+      "label": "Olympia Blansko",
+      "value": "2072"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/271efdd4-78f7-782b-19e9-ca7fd00cfee2.png",
-      "label": "Hroši Brno",
-      "value": "2063"
+      "image": "https://static.wbsc.org/upload/06ebf3e7-4094-4d7d-7bad-cd88e4ec3330.png",
+      "label": "Sokol Hluboká",
+      "value": "2064"
     },
     {
-      "type": "tournament",
-      "label": "Extraliga SB (CZ)",
-      "value": "W-EXT-L",
-      "federation_id": 148
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
+      "federation_id": 6
     }
-  ],
-  "answers": {
-    "0-0": 31,
-    "0-1": 22,
-    "0-2": 17,
-    "1-0": 75,
-    "1-1": 91,
-    "1-2": 49,
-    "2-0": 139,
-    "2-1": 82,
-    "2-2": 102
-  }
+  ]
 }

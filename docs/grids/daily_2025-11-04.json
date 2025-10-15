@@ -2,49 +2,40 @@
   "cols": [
     {
       "type": "nationality",
-      "label": "Nationality: NED",
-      "value": "NED"
+      "label": "Nationality: ESP",
+      "value": "ESP"
     },
     {
       "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
+      "label": "Played in 2023 season",
+      "value": 2023
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
-      "label": "Netherlands NT",
-      "value": "1"
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
+      "federation_id": 39
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/7650db8c-fd99-d90e-fe5e-20bd94dff0d3.jpg",
-      "label": "Quick Amersfoort Baseball",
-      "value": "1267"
+      "image": "https://static.wbsc.org/upload/2648277a-0a77-53ab-7dde-0020537acc83.jpeg",
+      "label": "CS Fénix Valencia",
+      "value": "1624"
     },
     {
-      "type": "seasonal_sb",
-      "label": "10+ SB Season",
-      "value": 10
+      "type": "seasonal_bb",
+      "label": ">=10 BB Season",
+      "value": 10,
+      "condition": "min"
     },
     {
       "type": "tournament",
-      "label": "Women’s Softball European Cup Winners Cup “B” (EU)",
-      "value": "EU-WINNERS-CUP-B-W-SB",
-      "federation_id": 278
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
     }
-  ],
-  "answers": {
-    "0-0": 80,
-    "0-1": 50,
-    "0-2": 8,
-    "1-0": 113,
-    "1-1": 2962,
-    "1-2": 45,
-    "2-0": 5,
-    "2-1": 48,
-    "2-2": 3
-  }
+  ]
 }

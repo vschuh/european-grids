@@ -1,51 +1,42 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_ip",
-      "label": "35 IP+ Season",
-      "value": 105
+      "type": "seasonal_avg",
+      "label": ">=0.350 OBP Season (min. 10 pa)",
+      "value": 0.35,
+      "condition": "min"
     },
     {
-      "type": "seasonal_wOBA",
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
     },
     {
-      "type": "tournament",
-      "label": "Hoofdklasse Honkbal (NL)",
-      "value": "HOOFDKLASSE-HONKBAL",
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1",
       "federation_id": 1
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/7650db8c-fd99-d90e-fe5e-20bd94dff0d3.jpg",
-      "label": "Quick Amersfoort Baseball",
-      "value": "1267"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8b309cc3-df97-4cc5-e994-7961b147ef60.jpg",
+      "label": "Storks",
+      "value": "1268"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/b83640ca-dd8f-2651-7ed7-c1c324b9ef58.png",
-      "label": "RCH-Pinguïns",
-      "value": "1521"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8cea480b-e009-b08e-8d12-c3f85ab33091.jpg",
+      "label": "Hoofddorp Pioniers Softball",
+      "value": "1306"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
-      "label": "Netherlands NT",
-      "value": "1"
+      "type": "tournament",
+      "label": "Hoofdklasse Softbal (NL)",
+      "value": "HOOFDKLASSE-SOFTBAL",
+      "federation_id": 1
     }
-  ],
-  "answers": {
-    "0-0": 19,
-    "0-1": 12,
-    "0-2": 83,
-    "1-0": 17,
-    "1-1": 11,
-    "1-2": 72,
-    "2-0": 74,
-    "2-1": 262,
-    "2-2": 149
-  }
+  ]
 }

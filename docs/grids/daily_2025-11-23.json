@@ -2,50 +2,41 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2"
+      "image": "https://static.wbsc.org/upload/dfb15b29-c3d5-e17b-16ce-fea5adbc7c83.png",
+      "label": "Stabroek Chicaboo`s",
+      "value": "1361"
     },
     {
-      "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
+      "type": "nationality",
+      "label": "Nationality: NED",
+      "value": "NED"
     },
     {
-      "type": "seasonal_wOBA",
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1",
+      "federation_id": 1
     }
   ],
   "rows": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/679d2360-7aba-32ca-cb27-a1818b537f03.jpg",
-      "label": "POL. CASERTA BAS. E SOFT. ACADEMY A.S.D.",
-      "value": "394"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/ba64cf79-fdcc-54a8-18e1-6bf30bb0f352.jpg",
-      "label": "A.S.D. JUNIOR ALPINA B. E S.",
-      "value": "568"
-    },
-    {
       "type": "tournament",
-      "label": "Serie A Baseball (IT)",
-      "value": "ITA-SERIE-A1-M-BB",
-      "federation_id": 2
+      "label": "Hoofdklasse Softbal (NL)",
+      "value": "HOOFDKLASSE-SOFTBAL",
+      "federation_id": 1
+    },
+    {
+      "type": "seasonal_pitching_ip",
+      "label": ">=50 IP Season",
+      "value": 105,
+      "condition": "min"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a39fd931-7c83-ffd7-63b9-d21f6f0851d9.jpg",
+      "label": "Brasschaat Braves",
+      "value": "1414"
     }
-  ],
-  "answers": {
-    "0-0": 5,
-    "0-1": 29,
-    "0-2": 18,
-    "1-0": 6,
-    "1-1": 26,
-    "1-2": 22,
-    "2-0": 223,
-    "2-1": 686,
-    "2-2": 619
-  }
+  ]
 }
