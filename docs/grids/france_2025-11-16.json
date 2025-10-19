@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "RF (min 1 PA)",
-      "value": "RF"
+      "type": "seasonal_sb",
+      "label": "10+ SB Season",
+      "value": 10
     },
     {
-      "type": "seasonal_avg",
-      "label": ">0.300 avg Season (min. 10 pa)",
-      "value": 0.3
-    },
-    {
-      "type": "tournament",
-      "label": "Championnat de France D1 BB (FR)",
-      "value": "FRA-D1BB",
-      "federation_id": 14
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/54f7aee7-2dea-f878-4244-591fd30486d0.jpg",
-      "label": "Pirates de Béziers",
-      "value": "2309"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/0050079f-5f9e-d803-8839-20992d9cfc18.jpg",
-      "label": "Les Boucaniers de La Rochelle",
-      "value": "1714"
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "14"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1071d9a2-1565-7750-d6bd-c5b9217a804f.jpg",
+      "label": "Sénart Templiers",
+      "value": "1435"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/83428e38-f463-52e1-0571-48f71aa9fc31.jpg",
+      "label": "Stade Toulousain Baseball Softball",
+      "value": "1713"
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France D1 BB (FR)",
+      "value": "FRA-D1BB",
+      "federation_id": 14
+    }
+  ],
   "answers": {
-    "0-0": 21,
-    "0-1": 32,
-    "0-2": 21,
-    "1-0": 43,
-    "1-1": 22,
-    "1-2": 34,
-    "2-0": 152,
-    "2-1": 205,
+    "0-0": 4,
+    "0-1": 83,
+    "0-2": 24,
+    "1-0": 3,
+    "1-1": 59,
+    "1-2": 14,
+    "2-0": 24,
+    "2-1": 219,
     "2-2": 85
   }
 }

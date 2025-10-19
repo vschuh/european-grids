@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/bb628b9d-d435-fa2f-87ba-fc40bc6a65a6.jpg",
+      "label": "Zürich Challengers Baseball & Softball Club",
+      "value": "1359"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/372d62f7-f498-84c1-f10f-62831565fe7d.png",
+      "label": "Neptunus",
+      "value": "287"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg",
+      "label": "SK Joudrs Praha",
+      "value": "1348"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup Winners Cup “A” (EU)",
+      "value": "EU-WINNERS-CUP-A-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_hits",
+      "label": ">=15 Hit Season",
+      "value": 15,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    }
+  ],
+  "answers": {
+    "0-0": 16,
+    "0-1": 8,
+    "0-2": 3,
+    "1-0": 5,
+    "1-1": 60,
+    "1-2": 49,
+    "2-0": 11,
+    "2-1": 72,
+    "2-2": 124
+  }
+}

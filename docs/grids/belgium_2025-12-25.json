@@ -1,14 +1,34 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "RF (min 1 PA)",
-      "value": "RF"
+      "type": "seasonal_rbi",
+      "label": "15+ RBI Season",
+      "value": 15
     },
     {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "type": "seasonal_runs",
+      "label": "20+ Runs Season",
+      "value": 20
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball Men D1 (BE)",
+      "value": "BD1",
+      "federation_id": 143
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/20c6919f-5149-b21e-dc0e-34879b702f4f.png",
+      "label": "Braine Black Rickers",
+      "value": "1553"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/ef175e86-8a69-5cb4-6249-5c548df8b041.png",
+      "label": "Cantincrode Baseball en Softball Stars",
+      "value": "1394"
     },
     {
       "type": "team",
@@ -17,35 +37,15 @@
       "value": "143"
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/f7f05882-7810-d6a2-6bd7-06648e0a5fa8.png",
-      "label": "Beveren Lions",
-      "value": "1480"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/1aba8bb9-6d31-0d64-b3ec-fbb43cc12c68.png",
-      "label": "Merchtem Cats",
-      "value": "1476"
-    },
-    {
-      "type": "tournament",
-      "label": "Softball Ladies D1 (BE)",
-      "value": "SLD1",
-      "federation_id": 143
-    }
-  ],
   "answers": {
-    "0-0": 74,
-    "0-1": 36,
-    "0-2": 23,
-    "1-0": 157,
-    "1-1": 43,
-    "1-2": 24,
-    "2-0": 172,
-    "2-1": 118,
-    "2-2": 59
+    "0-0": 23,
+    "0-1": 31,
+    "0-2": 30,
+    "1-0": 18,
+    "1-1": 21,
+    "1-2": 30,
+    "2-0": 145,
+    "2-1": 129,
+    "2-2": 100
   }
 }

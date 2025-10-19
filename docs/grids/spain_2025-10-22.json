@@ -1,24 +1,31 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_ip",
-      "label": ">=50 IP Season",
-      "value": 105,
+      "type": "seasonal_wOBA",
+      "label": ">=0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25,
       "condition": "min"
     },
     {
-      "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
+      "type": "seasonal_pitching_fip",
+      "label": "<=2.50 FIP Season (min. 10 ip)",
+      "value": 3,
+      "condition": "max"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
-      "label": "Spain NT",
-      "value": "39"
+      "type": "tournament",
+      "label": "Liga Nacional de Sófbol Oro (ESP)",
+      "value": "ESP-LNDH-SB",
+      "federation_id": 39
     }
   ],
   "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2648277a-0a77-53ab-7dde-0020537acc83.jpeg",
+      "label": "CS Fénix Valencia",
+      "value": "1624"
+    },
     {
       "type": "team",
       "image": "https://static.wbsc.org/upload/9444406f-3c22-71e5-78dd-4770dedd5eaf.png",
@@ -27,15 +34,20 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/2385052c-b349-ee0a-0368-a3c409cef452.png",
-      "label": "CBS Antorcha Valencia",
-      "value": "1653"
-    },
-    {
-      "type": "tournament",
-      "label": "Liga Nacional de Béisbol Oro (ESP)",
-      "value": "ESP-LNDH-BB",
-      "federation_id": 39
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 32,
+    "0-1": 6,
+    "0-2": 30,
+    "1-0": 89,
+    "1-1": 20,
+    "1-2": 55,
+    "2-0": 195,
+    "2-1": 43,
+    "2-2": 77
+  }
 }

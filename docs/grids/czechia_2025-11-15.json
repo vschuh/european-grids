@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_k",
-      "label": "35k+ Season",
-      "value": 35
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
     },
     {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
-      "label": "Czechia NT",
-      "value": "6"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/b8e2f6c7-d381-cb53-2a82-a2f9e92daba9.jpg",
-      "label": "Beavers Chomutov",
-      "value": "1380"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
-      "label": "Tempo Praha",
-      "value": "2066"
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
     },
     {
       "type": "tournament",
@@ -37,15 +17,35 @@
       "federation_id": 6
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d7f20b47-403a-b08b-4684-ca741b059bb8.png",
+      "label": "Blesk Jablonec",
+      "value": "2068"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2b4c017d-41ab-0f88-0c43-a63a6080e50e.png",
+      "label": "Technika Brno",
+      "value": "2065"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ],
   "answers": {
-    "0-0": 10,
-    "0-1": 23,
-    "0-2": 26,
-    "1-0": 24,
-    "1-1": 32,
-    "1-2": 46,
-    "2-0": 98,
-    "2-1": 95,
+    "0-0": 31,
+    "0-1": 45,
+    "0-2": 28,
+    "1-0": 48,
+    "1-1": 71,
+    "1-2": 45,
+    "2-0": 408,
+    "2-1": 387,
     "2-2": 159
   }
 }

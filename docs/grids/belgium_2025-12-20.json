@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "RF (min 1 PA)",
-      "value": "RF"
+      "type": "seasonal_pitching_ip",
+      "label": "35 IP+ Season",
+      "value": 105
     },
     {
       "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/7f689077-0110-b1f1-2ef9-4b2c962e00c8.png",
-      "label": "Namur Angels",
-      "value": "1478"
-    },
-    {
-      "type": "team",
       "image": "https://static.wbsc.org/upload/f7f05882-7810-d6a2-6bd7-06648e0a5fa8.png",
       "label": "Beveren Lions",
       "value": "1480"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/7f689077-0110-b1f1-2ef9-4b2c962e00c8.png",
+      "label": "Namur Angels",
+      "value": "1478"
     },
     {
       "type": "tournament",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 59,
-    "0-1": 58,
-    "0-2": 7,
-    "1-0": 74,
-    "1-1": 65,
-    "1-2": 23,
-    "2-0": 293,
-    "2-1": 261,
+    "0-0": 13,
+    "0-1": 66,
+    "0-2": 23,
+    "1-0": 10,
+    "1-1": 67,
+    "1-2": 7,
+    "2-0": 73,
+    "2-1": 271,
     "2-2": 100
   }
 }

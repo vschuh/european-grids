@@ -1,0 +1,56 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/MEX.svg",
+      "label": "Mexico NT",
+      "value": "3",
+      "federation_id": 3
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/VEN.svg",
+      "label": "Venezuela NT",
+      "value": "103",
+      "federation_id": 103
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CUB.svg",
+      "label": "Cuba NT",
+      "value": "121",
+      "federation_id": 121
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women`s Baseball World Cup",
+      "value": "WBWC",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball Champions League Americas",
+      "value": "BASEBALL-CHAMP-LEAGUE",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_runs",
+      "label": ">=15 Runs Season",
+      "value": 15,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 23,
+    "0-1": 59,
+    "0-2": 55,
+    "1-0": 13,
+    "1-1": 4,
+    "1-2": 27,
+    "2-0": 3,
+    "2-1": 36,
+    "2-2": 8
+  }
+}

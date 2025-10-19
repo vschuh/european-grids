@@ -1,14 +1,34 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_fip",
-      "label": "<2.50 FIP Season (min. 10 ip)",
-      "value": 3
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
-      "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "type": "seasonal_bb",
+      "label": "10+ BB Season",
+      "value": 10
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga BB (CZ)",
+      "value": "CZE-EXL",
+      "federation_id": 6
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/a7dffba8-f8b9-2a89-1883-b07093f1e5b4.png",
+      "label": "Kotlářka Praha",
+      "value": "2071"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/eae8ffb8-03e7-dda6-7424-3f299e45baf3.png",
+      "label": "Draci Brno",
+      "value": "1434"
     },
     {
       "type": "team",
@@ -17,24 +37,15 @@
       "value": "6"
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/0df1b8ac-31d1-a8bd-dae5-db1b7c541b03.jpg",
-      "label": "Painbusters Most",
-      "value": "1878"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/2b4c017d-41ab-0f88-0c43-a63a6080e50e.png",
-      "label": "Technika Brno",
-      "value": "2065"
-    },
-    {
-      "type": "tournament",
-      "label": "Extraliga BB (CZ)",
-      "value": "CZE-EXL",
-      "federation_id": 6
-    }
-  ]
+  "answers": {
+    "0-0": 33,
+    "0-1": 23,
+    "0-2": 50,
+    "1-0": 59,
+    "1-1": 37,
+    "1-2": 58,
+    "2-0": 296,
+    "2-1": 181,
+    "2-2": 159
+  }
 }

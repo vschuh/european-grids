@@ -1,14 +1,34 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "1B (min 1 PA)",
-      "value": "1B"
+      "type": "seasonal_sb",
+      "label": "10+ SB Season",
+      "value": 10
     },
     {
-      "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France D1 BB (FR)",
+      "value": "FRA-D1BB",
+      "federation_id": 14
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/83428e38-f463-52e1-0571-48f71aa9fc31.jpg",
+      "label": "Stade Toulousain Baseball Softball",
+      "value": "1713"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/51a28c3c-a894-cc4d-30ca-b8c705e5bd5d.png",
+      "label": "3M Barracudas Baseball Université Club",
+      "value": "1385"
     },
     {
       "type": "team",
@@ -17,35 +37,15 @@
       "value": "14"
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/db8cb428-f188-8cd5-1354-4006e912897a.jpg",
-      "label": "Metz Cometz",
-      "value": "1712"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/07067501-9be9-9d54-0187-4b5ce1bc028d.jpg",
-      "label": "Les Pharaons d`Evry-Courcouronnes",
-      "value": "1367"
-    },
-    {
-      "type": "tournament",
-      "label": "Championnat de France Division 1 Féminine SB (FR)",
-      "value": "FRA-D1FSB",
-      "federation_id": 14
-    }
-  ],
   "answers": {
-    "0-0": 20,
-    "0-1": 38,
-    "0-2": 8,
-    "1-0": 27,
-    "1-1": 70,
-    "1-2": 21,
-    "2-0": 39,
-    "2-1": 104,
-    "2-2": 41
+    "0-0": 3,
+    "0-1": 21,
+    "0-2": 34,
+    "1-0": 6,
+    "1-1": 58,
+    "1-2": 44,
+    "2-0": 16,
+    "2-1": 177,
+    "2-2": 85
   }
 }

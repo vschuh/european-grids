@@ -1,41 +1,51 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "LF (min 1 PA)",
-      "value": "LF"
+      "type": "seasonal_ops",
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "value": 1
     },
     {
-      "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "type": "seasonal_rbi",
+      "label": "20+ RBI Season",
+      "value": 20
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
-      "label": "Czechia NT",
-      "value": "6",
+      "type": "tournament",
+      "label": "Extraliga BB (CZ)",
+      "value": "CZE-EXL",
       "federation_id": 6
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/5a29afcd-b476-f5ea-549e-0a6ca0bf8551.png",
-      "label": "Žraloci Ledenice",
-      "value": "1381"
+      "image": "https://static.wbsc.org/upload/271efdd4-78f7-782b-19e9-ca7fd00cfee2.png",
+      "label": "Hroši Brno",
+      "value": "2063"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/d41ed6a3-9cb2-6629-99f3-c02c2861b626.png",
-      "label": "Eagles Praha",
-      "value": "2060"
+      "image": "https://static.wbsc.org/upload/dd134970-0bd6-d5fd-0abc-a138fc7d6868.jpg",
+      "label": "Arrows Ostrava",
+      "value": "1605"
     },
     {
-      "type": "tournament",
-      "label": "Extraliga SB (CZ)",
-      "value": "W-EXT-L",
-      "federation_id": 148
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 68,
+    "0-1": 15,
+    "0-2": 47,
+    "1-0": 64,
+    "1-1": 15,
+    "1-2": 43,
+    "2-0": 386,
+    "2-1": 89,
+    "2-2": 159
+  }
 }

@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/09fa8d5d-3beb-0f14-7d8e-8d48078672a2.jpg",
+      "label": "A.S.D. SAN MARINO BASEBALL CLUB",
+      "value": "331"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/UKR.svg",
+      "label": "Ukraine NT",
+      "value": "41",
+      "federation_id": 41
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c0bd7be4-e313-1ce3-fd74-137717685f9f.png",
+      "label": "HCAW",
+      "value": "1264"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_runs",
+      "label": ">=15 Runs Season",
+      "value": 15,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    }
+  ],
+  "answers": {
+    "0-0": 28,
+    "0-1": 28,
+    "0-2": 5,
+    "1-0": 68,
+    "1-1": 7,
+    "1-2": 31,
+    "2-0": 68,
+    "2-1": 103,
+    "2-2": 54
+  }
+}

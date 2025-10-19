@@ -1,0 +1,51 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/372d62f7-f498-84c1-f10f-62831565fe7d.png",
+      "label": "Neptunus",
+      "value": "287"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/806638c7-4c47-3f4f-575e-d80ad64081b8.png",
+      "label": "Amsterdam Pirates Baseball",
+      "value": "1266"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/7b277a56-f1a2-d771-d7f9-1867b9b6c01d.jpg",
+      "label": "Bonn Capitals",
+      "value": "1430"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "European Baseball Champions Cup (EU)",
+      "value": "EU-CHAMP-CUP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    }
+  ],
+  "answers": {
+    "0-0": 38,
+    "0-1": 48,
+    "0-2": 45,
+    "1-0": 45,
+    "1-1": 28,
+    "1-2": 33,
+    "2-0": 83,
+    "2-1": 64,
+    "2-2": 44
+  }
+}

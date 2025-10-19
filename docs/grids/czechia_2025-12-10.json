@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_hits",
-      "label": "15+ Hit Season",
-      "value": 15
+      "type": "position",
+      "label": "RF (min 1 PA)",
+      "value": "RF"
     },
     {
       "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
+      "label": "Played in 2025 season",
+      "value": 2025
     },
     {
       "type": "team",
@@ -20,32 +20,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg",
-      "label": "SK Joudrs Praha",
-      "value": "1348"
+      "image": "https://static.wbsc.org/upload/b8e2f6c7-d381-cb53-2a82-a2f9e92daba9.jpg",
+      "label": "Beavers Chomutov",
+      "value": "1380"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/e0cdbe49-5118-1882-4882-f10fd522553d.png",
-      "label": "SaBaT Praha",
-      "value": "2074"
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
+      "label": "Tempo Praha",
+      "value": "2066"
     },
     {
       "type": "tournament",
-      "label": "Extraliga BB (CZ)",
-      "value": "CZE-EXL",
-      "federation_id": 6
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
     }
   ],
   "answers": {
-    "0-0": 49,
-    "0-1": 91,
-    "0-2": 63,
-    "1-0": 40,
-    "1-1": 61,
-    "1-2": 29,
-    "2-0": 212,
-    "2-1": 410,
-    "2-2": 159
+    "0-0": 64,
+    "0-1": 61,
+    "0-2": 26,
+    "1-0": 146,
+    "1-1": 152,
+    "1-2": 46,
+    "2-0": 158,
+    "2-1": 191,
+    "2-2": 102
   }
 }

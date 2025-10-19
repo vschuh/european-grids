@@ -2,21 +2,22 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
-      "label": "SOFTBALL CLUB FORLI A.S.D.",
-      "value": "395"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/870076ab-9157-c992-8e9b-9a8443bf2bd7.jpg",
+      "label": "U.S. GIOVANILE COLLECCHIO SOFT. A.S.D.",
+      "value": "396"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/8d053c81-1566-2518-b6ab-ab8274584916.jpg",
-      "label": "ROEF!",
-      "value": "1271"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/7b277a56-f1a2-d771-d7f9-1867b9b6c01d.jpg",
+      "label": "Bonn Capitals",
+      "value": "1430"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
-      "label": "Vienna Wanderers",
-      "value": "1222"
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8",
+      "federation_id": 8
     }
   ],
   "rows": [
@@ -27,26 +28,26 @@
       "federation_id": 278
     },
     {
-      "type": "seasonal_pitching_fip",
-      "label": "<=3.00 FIP Season (min. 10 ip)",
-      "value": 3,
-      "condition": "max"
+      "type": "seasonal_triples",
+      "label": ">=5 Triples Season",
+      "value": 5,
+      "condition": "min"
     },
     {
       "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
+      "label": "Played in 2021 season",
+      "value": 2021
     }
   ],
   "answers": {
-    "0-0": 8,
-    "0-1": 28,
-    "0-2": 4,
-    "1-0": 20,
-    "1-1": 10,
-    "1-2": 15,
-    "2-0": 46,
-    "2-1": 37,
-    "2-2": 91
+    "0-0": 3,
+    "0-1": 35,
+    "0-2": 23,
+    "1-0": 4,
+    "1-1": 3,
+    "1-2": 7,
+    "2-0": 28,
+    "2-1": 43,
+    "2-2": 150
   }
 }

@@ -1,9 +1,9 @@
 {
   "cols": [
     {
-      "type": "seasonal_hits",
-      "label": "15+ Hit Season",
-      "value": 15
+      "type": "seasonal_pitching_ip",
+      "label": "35 IP+ Season",
+      "value": 105
     },
     {
       "type": "year",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/30444ddc-0622-85ef-a529-0a3ed3c7a7f9.png",
-      "label": "BASEBALL CLUB SETTIMO A.S.D.",
-      "value": "342"
+      "image": "https://static.wbsc.org/upload/004760b7-d768-4c26-2453-428db40dbc44.svg",
+      "label": "BASEBALL SOFTBALL CLUB GROSSETO 1952 S.S.D. A R.L.",
+      "value": "383"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/fc527c4a-a05c-5fe4-bb98-7a1f8b830033.jpg",
-      "label": "A.S.D. ACADEMY OF NETTUNO B.C.",
-      "value": "386"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/5effd52b-7309-0dc5-b483-f973e3ede16e.jpg",
+      "label": "NEW BLACK PANTHERS A.S.D.",
+      "value": "345"
     },
     {
       "type": "tournament",
@@ -38,13 +38,13 @@
     }
   ],
   "answers": {
-    "0-0": 20,
-    "0-1": 27,
-    "0-2": 4,
-    "1-0": 30,
+    "0-0": 17,
+    "0-1": 89,
+    "0-2": 25,
+    "1-0": 17,
     "1-1": 40,
-    "1-2": 11,
-    "2-0": 952,
+    "1-2": 12,
+    "2-0": 502,
     "2-1": 1063,
     "2-2": 223
   }

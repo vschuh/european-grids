@@ -1,0 +1,55 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
+      "federation_id": 6
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/USA.svg",
+      "label": "USA NT",
+      "value": "126",
+      "federation_id": 126
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/VEN.svg",
+      "label": "Venezuela NT",
+      "value": "103",
+      "federation_id": 103
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-18 Men`s Softball World Cup",
+      "value": "U-18MSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 Baseball World Cup",
+      "value": "U-18",
+      "federation_id": 0
+    },
+    {
+      "type": "position",
+      "label": "LF (min 1 PA)",
+      "value": "LF"
+    }
+  ],
+  "answers": {
+    "0-0": 47,
+    "0-1": 41,
+    "0-2": 15,
+    "1-0": 67,
+    "1-1": 139,
+    "1-2": 56,
+    "2-0": 393,
+    "2-1": 117,
+    "2-2": 166
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/DOM.svg",
+      "label": "Dominican Republic NT",
+      "value": "128",
+      "federation_id": 128
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2",
+      "federation_id": 2
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/VEN.svg",
+      "label": "Venezuela NT",
+      "value": "103",
+      "federation_id": 103
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Premier12",
+      "value": "P-12",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "Olympic Softball Qualifiers",
+      "value": "OLYMPIC-SOFTBALL-Q",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_pitching_ip",
+      "label": ">=35 IP Season",
+      "value": 105,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 80,
+    "0-1": 28,
+    "0-2": 78,
+    "1-0": 12,
+    "1-1": 14,
+    "1-2": 14,
+    "2-0": 3,
+    "2-1": 111,
+    "2-2": 20
+  }
+}

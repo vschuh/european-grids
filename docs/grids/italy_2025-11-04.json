@@ -1,15 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_wOBA",
-      "label": ">=0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25,
-      "condition": "min"
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
       "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "label": "3B (min 1 PA)",
+      "value": "3B"
     },
     {
       "type": "tournament",
@@ -21,22 +20,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/d8b6d64d-34f3-3a73-90db-8df0d8f36e55.png",
-      "label": "A.S.D. NETTUNO 2 BASEBALL CLUB",
-      "value": "329"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/703fcf50-a4a9-5fc2-8e8e-cfb114713e30.jpg",
+      "label": "A.S.D. BASEBALL CLUB SALA BAGANZA",
+      "value": "350"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/d444b5d6-e7b7-882c-c054-d868ea9d8977.jpg",
-      "label": "BRESCIA BASEBALL  SOFTBALL  ASS. SPORT. DIL.",
-      "value": "598"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e038a2d1-84e5-3d14-9e93-98eadfc2fb3f.jpg",
+      "label": "TORRE PEDRERA FALCONS BC ASS. SPORT. DILETT.",
+      "value": "381"
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
       "label": "Italy NT",
-      "value": "2",
-      "federation_id": 2
+      "value": "2"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 17,
+    "0-1": 25,
+    "0-2": 58,
+    "1-0": 31,
+    "1-1": 37,
+    "1-2": 41,
+    "2-0": 218,
+    "2-1": 261,
+    "2-2": 223
+  }
 }

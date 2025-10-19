@@ -1,0 +1,54 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/f3774933-2d59-cb94-2a83-9528faf5139f.jpg",
+      "label": "Gepardy Żory Softball",
+      "value": "1362"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/SUI.svg",
+      "label": "Switzerland NT",
+      "value": "35",
+      "federation_id": 35
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CRO.svg",
+      "label": "Croatia NT",
+      "value": "15",
+      "federation_id": 15
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-18 Women's European Softball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup Winners Cup “B” (EU)",
+      "value": "EU-WINNERS-CUP-B-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
+    }
+  ],
+  "answers": {
+    "0-0": 8,
+    "0-1": 16,
+    "0-2": 35,
+    "1-0": 13,
+    "1-1": 11,
+    "1-2": 6,
+    "2-0": 10,
+    "2-1": 34,
+    "2-2": 108
+  }
+}

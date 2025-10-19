@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a56ecb27-813b-b97e-c668-3d06269b6494.jpg",
+      "label": "Tex Town Tigers",
+      "value": "1274"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/JPN.svg",
+      "label": "Japan NT",
+      "value": "182",
+      "federation_id": 182
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/59758832-8743-44aa-9abc-c16b9bc847fc.jpg",
+      "label": "SARONNO SOFTBALL E BASEBALL A.S.D.",
+      "value": "390"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "The World Games SB",
+      "value": "WORLD-GAMES-W-SB",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_hits",
+      "label": ">=15 Hit Season",
+      "value": 15,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    }
+  ],
+  "answers": {
+    "0-0": 3,
+    "0-1": 21,
+    "0-2": 9,
+    "1-0": 33,
+    "1-1": 3,
+    "1-2": 54,
+    "2-0": 38,
+    "2-1": 63,
+    "2-2": 57
+  }
+}

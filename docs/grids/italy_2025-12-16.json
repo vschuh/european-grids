@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "P (min 1 PA)",
-      "value": "P"
+      "type": "seasonal_pitching_k",
+      "label": "50k+ Season",
+      "value": 50
     },
     {
-      "type": "seasonal_pitching_fip",
-      "label": "<2.50 FIP Season (min. 10 ip)",
-      "value": 3
-    },
-    {
-      "type": "tournament",
-      "label": "Serie A1 Softball (IT)",
-      "value": "ITA-SERIE-A1-F-SB",
-      "federation_id": 2
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
-      "label": "SOFTBALL CLUB FORLI` A.S.D.",
-      "value": "395"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/ef8ef30f-13d8-e1c8-7d06-5b8cb737fefa.jpg",
-      "label": "FIORENTINA BASEBALL  S.S.D. ARL",
-      "value": "349"
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "2"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a58c308c-b5b8-113c-a189-141d486177fd.jpg",
+      "label": "BOLLATE SOFTBALL 1969 A.S.D.",
+      "value": "387"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/12f8bd4d-1eda-665a-5e81-446fa51508e2.jpg",
+      "label": "A.S.D. CODOGNO BAS. `67",
+      "value": "359"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ],
   "answers": {
-    "0-0": 45,
-    "0-1": 0,
-    "0-2": 104,
-    "1-0": 48,
-    "1-1": 2,
-    "1-2": 9,
-    "2-0": 349,
-    "2-1": 5,
-    "2-2": 125
+    "0-0": 15,
+    "0-1": 49,
+    "0-2": 42,
+    "1-0": 8,
+    "1-1": 35,
+    "1-2": 5,
+    "2-0": 364,
+    "2-1": 1065,
+    "2-2": 223
   }
 }

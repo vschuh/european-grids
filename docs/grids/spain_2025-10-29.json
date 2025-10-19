@@ -1,15 +1,35 @@
 {
   "cols": [
     {
-      "type": "seasonal_hits",
-      "label": ">=15 Hit Season",
-      "value": 15,
+      "type": "seasonal_pitching_k",
+      "label": ">=35k Season",
+      "value": 35,
       "condition": "min"
     },
     {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Béisbol Oro (ESP)",
+      "value": "ESP-LNDH-BB",
+      "federation_id": 39
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/179791bc-b8d7-eb39-15be-3014d6acd0bf.jpg",
+      "label": "San Inazio Bilbao Bizkaia",
+      "value": "1622"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2385052c-b349-ee0a-0368-a3c409cef452.png",
+      "label": "CBS Antorcha Valencia",
+      "value": "1653"
     },
     {
       "type": "team",
@@ -18,24 +38,15 @@
       "value": "39"
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/9444406f-3c22-71e5-78dd-4770dedd5eaf.png",
-      "label": "Club Béisbol Viladecans",
-      "value": "1355"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/d557958c-5454-415d-064f-d5630ddfd6e1.png",
-      "label": "Club Deportivo Arga",
-      "value": "1623"
-    },
-    {
-      "type": "tournament",
-      "label": "Liga Nacional de Béisbol Oro (ESP)",
-      "value": "ESP-LNDH-BB",
-      "federation_id": 39
-    }
-  ]
+  "answers": {
+    "0-0": 8,
+    "0-1": 12,
+    "0-2": 35,
+    "1-0": 9,
+    "1-1": 35,
+    "1-2": 42,
+    "2-0": 42,
+    "2-1": 109,
+    "2-2": 76
+  }
 }

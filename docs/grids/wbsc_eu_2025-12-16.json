@@ -1,0 +1,55 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1",
+      "federation_id": 1
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/7b277a56-f1a2-d771-d7f9-1867b9b6c01d.jpg",
+      "label": "Bonn Capitals",
+      "value": "1430"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "European Baseball Champions Cup (EU)",
+      "value": "EU-CHAMP-CUP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup (EU)",
+      "value": "EU-EURO-CUP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_pitching_ip",
+      "label": ">=35 IP Season",
+      "value": 105,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 53,
+    "0-1": 45,
+    "0-2": 43,
+    "1-0": 10,
+    "1-1": 3,
+    "1-2": 9,
+    "2-0": 74,
+    "2-1": 9,
+    "2-2": 111
+  }
+}

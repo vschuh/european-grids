@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "RF (min 1 PA)",
-      "value": "RF"
+      "type": "seasonal_pitching_k",
+      "label": "35k+ Season",
+      "value": 35
     },
     {
-      "type": "seasonal_sb",
-      "label": "10+ SB Season",
-      "value": 10
-    },
-    {
-      "type": "tournament",
-      "label": "Hoofdklasse Honkbal (NL)",
-      "value": "HOOFDKLASSE-HONKBAL",
-      "federation_id": 1
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/8b309cc3-df97-4cc5-e994-7961b147ef60.jpg",
-      "label": "Storks",
-      "value": "1268"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/bdc06e75-2859-a6ba-74da-9a6e16207d72.png",
-      "label": "Twins Oosterhout",
-      "value": "1269"
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "1"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/38ed2f87-d5c1-caae-58f8-ddd93f46cd58.jpg",
+      "label": "Sparks Haarlem",
+      "value": "1272"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8b309cc3-df97-4cc5-e994-7961b147ef60.jpg",
+      "label": "Storks",
+      "value": "1268"
+    },
+    {
+      "type": "tournament",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
+      "federation_id": 1
+    }
+  ],
   "answers": {
     "0-0": 17,
-    "0-1": 5,
-    "0-2": 50,
-    "1-0": 35,
-    "1-1": 10,
-    "1-2": 71,
-    "2-0": 250,
-    "2-1": 45,
+    "0-1": 43,
+    "0-2": 29,
+    "1-0": 4,
+    "1-1": 14,
+    "1-2": 6,
+    "2-0": 77,
+    "2-1": 294,
     "2-2": 149
   }
 }

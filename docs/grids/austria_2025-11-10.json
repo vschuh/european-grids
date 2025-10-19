@@ -2,34 +2,13 @@
   "cols": [
     {
       "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "label": "P (min 1 PA)",
+      "value": "P"
     },
     {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8",
-      "federation_id": 8
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/4137a8ec-106d-1408-1204-7266ed5c196a.png",
-      "label": "Linz Witches und Bandits",
-      "value": "1276"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png",
-      "label": "Attnang-Puchheim Athletics",
-      "value": "1224"
+      "type": "seasonal_pitching_ip",
+      "label": "50 IP+ Season",
+      "value": 105
     },
     {
       "type": "tournament",
@@ -37,5 +16,36 @@
       "value": "SB-BUNDESLIGA",
       "federation_id": 8
     }
-  ]
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1943295d-9bf7-e5b8-291c-021b311137ba.png",
+      "label": "Vienna Metrostars",
+      "value": "1223"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8594b98-58ba-b8a6-5518-10de4ae89d9d.png",
+      "label": "Wr. Neustadt Diving Ducks",
+      "value": "1227"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
+    }
+  ],
+  "answers": {
+    "0-0": 66,
+    "0-1": 17,
+    "0-2": 34,
+    "1-0": 82,
+    "1-1": 11,
+    "1-2": 43,
+    "2-0": 221,
+    "2-1": 39,
+    "2-2": 63
+  }
 }

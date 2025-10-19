@@ -1,35 +1,15 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
-    },
-    {
-      "type": "seasonal_wOBA",
-      "label": ">=0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25,
+      "type": "seasonal_rbi",
+      "label": ">=20 RBI Season",
+      "value": 20,
       "condition": "min"
     },
     {
-      "type": "tournament",
-      "label": "Liga Nacional de Sófbol Oro (ESP)",
-      "value": "ESP-LNDH-SB",
-      "federation_id": 39
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/9444406f-3c22-71e5-78dd-4770dedd5eaf.png",
-      "label": "Club Béisbol Viladecans",
-      "value": "1355"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/2385052c-b349-ee0a-0368-a3c409cef452.png",
-      "label": "CBS Antorcha Valencia",
-      "value": "1653"
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
@@ -37,5 +17,36 @@
       "label": "Spain NT",
       "value": "39"
     }
-  ]
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/ac5c9f7f-d4d3-57b0-22f3-8490ad944e4c.png",
+      "label": "Club Béisbol Barcelona",
+      "value": "1648"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/12a3f46c-cb0a-0014-98f9-bff5d87890b5.jpg",
+      "label": "Club de Béisbol y Sóftbol Rivas",
+      "value": "1354"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Béisbol Oro (ESP)",
+      "value": "ESP-LNDH-BB",
+      "federation_id": 39
+    }
+  ],
+  "answers": {
+    "0-0": 3,
+    "0-1": 6,
+    "0-2": 19,
+    "1-0": 17,
+    "1-1": 26,
+    "1-2": 18,
+    "2-0": 52,
+    "2-1": 42,
+    "2-2": 76
+  }
 }

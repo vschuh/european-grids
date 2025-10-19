@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_ip",
-      "label": "50 IP+ Season",
-      "value": 105
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
     },
     {
-      "type": "seasonal_wOBA",
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25
+      "type": "seasonal_pitching_k",
+      "label": "50k+ Season",
+      "value": 50
     },
     {
       "type": "tournament",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/6ab27046-f495-c765-4070-a15fd6ef9dd5.jpg",
-      "label": "WHITE SOX BUTTRIO BASEBALL A.S.D.",
-      "value": "375"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/7e3e8f32-6d68-f75a-dbfe-7cf17095c499.jpg",
+      "label": "OLTRETORRENTE BASEBALL CLUB A.S.D.",
+      "value": "353"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a253f065-f476-fd22-2ea4-7cf450180fe4.jpg",
-      "label": "MACERATA ANGELS A.S.D.",
-      "value": "330"
+      "image": "https://static.wbsc.org/upload/f3233b20-510f-5d48-d8d4-964b62bb3ae3.png",
+      "label": "BASE BALL CLUB GROSSETO ASD",
+      "value": "357"
     },
     {
       "type": "team",
@@ -36,5 +36,16 @@
       "label": "Italy NT",
       "value": "2"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 19,
+    "0-1": 9,
+    "0-2": 69,
+    "1-0": 27,
+    "1-1": 15,
+    "1-2": 66,
+    "2-0": 292,
+    "2-1": 88,
+    "2-2": 223
+  }
 }

@@ -2,41 +2,50 @@
   "cols": [
     {
       "type": "seasonal_avg",
-      "label": ">=0.300 avg Season (min. 10 pa)",
-      "value": 0.3,
-      "condition": "min"
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
     },
     {
       "type": "position",
-      "label": "1B (min 1 PA)",
-      "value": "1B"
+      "label": "2B (min 1 PA)",
+      "value": "2B"
     },
     {
       "type": "tournament",
-      "label": "Championnat de France Division 1 Féminine SB (FR)",
-      "value": "FRA-D1FSB",
+      "label": "Championnat de France D1 BB (FR)",
+      "value": "FRA-D1BB",
       "federation_id": 14
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/c6f45770-2b34-bfcf-33e8-1909b6ef7bae.jpg",
-      "label": "Les Grizzlys de Grenoble",
-      "value": "1513"
+      "image": "https://static.wbsc.org/upload/e20fa02b-5959-2c18-2def-c682eb6a540f.jpg",
+      "label": "Les Lions de Savigny-sur-Orge",
+      "value": "1715"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/c72832ba-21d5-2872-9a0c-2051b1cac815.png",
-      "label": "Cougars de Montigny-le-Bretonneux",
-      "value": "1716"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a18c7fc9-a3ce-81e9-0c12-f2a5ec8eab1e.jpg",
+      "label": "Rouen Huskies",
+      "value": "1428"
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
       "label": "France NT",
-      "value": "14",
-      "federation_id": 14
+      "value": "14"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 22,
+    "0-1": 23,
+    "0-2": 33,
+    "1-0": 37,
+    "1-1": 32,
+    "1-2": 37,
+    "2-0": 177,
+    "2-1": 141,
+    "2-2": 85
+  }
 }

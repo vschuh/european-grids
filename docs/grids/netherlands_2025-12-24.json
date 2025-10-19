@@ -2,33 +2,33 @@
   "cols": [
     {
       "type": "position",
-      "label": "CF (min 1 PA)",
-      "value": "CF"
+      "label": "RF (min 1 PA)",
+      "value": "RF"
     },
     {
-      "type": "seasonal_pitching_fip",
-      "label": "<2.50 FIP Season (min. 10 ip)",
-      "value": 3
+      "type": "seasonal_sb",
+      "label": "10+ SB Season",
+      "value": 10
     },
     {
       "type": "tournament",
-      "label": "Hoofdklasse Softbal (NL)",
-      "value": "HOOFDKLASSE-SOFTBAL",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
       "federation_id": 1
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/2771d01c-919e-c952-c89c-0b6d09fae4a0.png",
-      "label": "Red Lions",
-      "value": "2596"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8b309cc3-df97-4cc5-e994-7961b147ef60.jpg",
+      "label": "Storks",
+      "value": "1268"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/24be214e-4c82-4f83-8fa3-56760624a195.jpg",
-      "label": "Quick Amersfoort Softball",
-      "value": "1308"
+      "image": "https://static.wbsc.org/upload/bdc06e75-2859-a6ba-74da-9a6e16207d72.png",
+      "label": "Twins Oosterhout",
+      "value": "1269"
     },
     {
       "type": "team",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 3,
-    "0-1": 0,
-    "0-2": 17,
-    "1-0": 14,
-    "1-1": 0,
-    "1-2": 17,
-    "2-0": 175,
-    "2-1": 7,
-    "2-2": 111
+    "0-0": 17,
+    "0-1": 5,
+    "0-2": 50,
+    "1-0": 35,
+    "1-1": 10,
+    "1-2": 71,
+    "2-0": 250,
+    "2-1": 45,
+    "2-2": 149
   }
 }

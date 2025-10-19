@@ -1,41 +1,51 @@
 {
   "cols": [
     {
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
+    },
+    {
       "type": "position",
       "label": "1B (min 1 PA)",
       "value": "1B"
     },
     {
-      "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2",
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
       "federation_id": 2
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a58c308c-b5b8-113c-a189-141d486177fd.jpg",
-      "label": "BOLLATE SOFTBALL 1969 A.S.D.",
-      "value": "387"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/c94f3613-2aac-5ee9-848e-7e0259fc86f8.jpg",
+      "label": "MONTEFIASCONE BASEBALL SOFTBALL 67 A.S.D.",
+      "value": "354"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
-      "label": "SOFTBALL CLUB FORLI` A.S.D.",
-      "value": "395"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ef8ef30f-13d8-e1c8-7d06-5b8cb737fefa.jpg",
+      "label": "FIORENTINA BASEBALL  S.S.D. ARL",
+      "value": "349"
     },
     {
-      "type": "tournament",
-      "label": "Serie A1 Softball (IT)",
-      "value": "ITA-SERIE-A1-F-SB",
-      "federation_id": 2
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 9,
+    "0-1": 13,
+    "0-2": 27,
+    "1-0": 36,
+    "1-1": 37,
+    "1-2": 51,
+    "2-0": 316,
+    "2-1": 247,
+    "2-2": 223
+  }
 }

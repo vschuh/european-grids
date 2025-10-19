@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "CF (min 1 PA)",
-      "value": "CF"
-    },
-    {
       "type": "seasonal_avg",
-      "label": ">0.400 OBP Season (min. 10 pa)",
-      "value": 0.4
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
     },
     {
-      "type": "tournament",
-      "label": "Hoofdklasse Softbal (NL)",
-      "value": "HOOFDKLASSE-SOFTBAL",
-      "federation_id": 1
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/e8944012-5266-bf86-740a-2b238e5d1d9a.jpg",
-      "label": "Onze Gezellen",
-      "value": "1273"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/6a057191-c5a2-e328-e9dc-1599fb6d475c.jpg",
-      "label": "Olympia Haarlem",
-      "value": "1270"
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "1"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/806638c7-4c47-3f4f-575e-d80ad64081b8.png",
+      "label": "Amsterdam Pirates Baseball",
+      "value": "1266"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/fa14f1a1-1762-f7f2-6a3d-84fc21f97071.png",
+      "label": "Hoofddorp Pioniers Baseball",
+      "value": "1265"
+    },
+    {
+      "type": "tournament",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
+      "federation_id": 1
+    }
+  ],
   "answers": {
-    "0-0": 21,
-    "0-1": 11,
-    "0-2": 58,
-    "1-0": 26,
-    "1-1": 32,
-    "1-2": 49,
-    "2-0": 175,
-    "2-1": 184,
-    "2-2": 111
+    "0-0": 30,
+    "0-1": 62,
+    "0-2": 48,
+    "1-0": 22,
+    "1-1": 46,
+    "1-2": 26,
+    "2-0": 135,
+    "2-1": 294,
+    "2-2": 149
   }
 }

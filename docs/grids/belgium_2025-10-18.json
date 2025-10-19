@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "CF (min 1 PA)",
-      "value": "CF"
+      "type": "seasonal_avg",
+      "label": ">0.400 OBP Season (min. 10 pa)",
+      "value": 0.4
     },
     {
-      "type": "seasonal_hits",
-      "label": "15+ Hit Season",
-      "value": 15
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
     },
     {
       "type": "tournament",
@@ -20,9 +20,9 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/15ddbfc7-3582-aea3-55b6-9d40c3273eb0.png",
-      "label": "Zonhoven Tigers",
-      "value": "1545"
+      "image": "https://static.wbsc.org/upload/d430c331-250b-b6d3-fc73-5e9348647ec8.png",
+      "label": "Mont-Saint-Guibert Phoenix",
+      "value": "1479"
     },
     {
       "type": "team",
@@ -36,5 +36,16 @@
       "label": "Belgium NT",
       "value": "143"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 82,
+    "0-1": 106,
+    "0-2": 57,
+    "1-0": 41,
+    "1-1": 52,
+    "1-2": 30,
+    "2-0": 214,
+    "2-1": 220,
+    "2-2": 100
+  }
 }

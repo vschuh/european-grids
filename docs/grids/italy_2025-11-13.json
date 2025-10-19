@@ -1,6 +1,24 @@
 {
   "cols": [
     {
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ],
+  "rows": [
+    {
       "type": "team",
       "image": "https://static.wbsc.org/assets/cms/teams/logo/ef9c3699-433d-84cf-e297-da9743f94500.jpg",
       "label": "FORTITUDO BASEBALL CLUB 1953 S.S.D. scarl",
@@ -8,9 +26,9 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/09fa8d5d-3beb-0f14-7d8e-8d48078672a2.jpg",
-      "label": "A.S.D. SAN MARINO BASEBALL CLUB",
-      "value": "331"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/17fb42df-e156-f96b-aed7-4aa314731616.jpg",
+      "label": "BUSSOLENGO SOFTBALL 2.0 A.S.D.",
+      "value": "1282"
     },
     {
       "type": "tournament",
@@ -19,22 +37,15 @@
       "federation_id": 2
     }
   ],
-  "rows": [
-    {
-      "type": "seasonal_homeruns",
-      "label": ">=10 HR Season",
-      "value": 10,
-      "condition": "min"
-    },
-    {
-      "type": "nationality",
-      "label": "Nationality: ESP",
-      "value": "ESP"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
-    }
-  ]
+  "answers": {
+    "0-0": 110,
+    "0-1": 88,
+    "0-2": 48,
+    "1-0": 10,
+    "1-1": 26,
+    "1-2": 8,
+    "2-0": 1249,
+    "2-1": 1083,
+    "2-2": 223
+  }
 }

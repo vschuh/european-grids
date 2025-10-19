@@ -1,0 +1,56 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CAN.svg",
+      "label": "Canada NT",
+      "value": "205",
+      "federation_id": 205
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/USA.svg",
+      "label": "USA NT",
+      "value": "126",
+      "federation_id": 126
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/JPN.svg",
+      "label": "Japan NT",
+      "value": "182",
+      "federation_id": 182
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Softball Olympic Games",
+      "value": "OLYMPIC-SOFTBALL",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "WBSC Men`s Softball World Cup",
+      "value": "MSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_ops",
+      "label": ">=1.000 OPS Season (min. 10 pa)",
+      "value": 1,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 15,
+    "0-1": 16,
+    "0-2": 15,
+    "1-0": 38,
+    "1-1": 39,
+    "1-2": 41,
+    "2-0": 41,
+    "2-1": 166,
+    "2-2": 90
+  }
+}

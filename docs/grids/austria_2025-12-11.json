@@ -1,34 +1,14 @@
 {
   "cols": [
     {
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
+    },
+    {
       "type": "position",
       "label": "LF (min 1 PA)",
       "value": "LF"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/3a067f16-f428-d6b9-450d-7ff6132d4207.png",
-      "label": "Feldkirch Cardinals",
-      "value": "1229"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png",
-      "label": "Attnang-Puchheim Athletics",
-      "value": "1224"
     },
     {
       "type": "tournament",
@@ -37,15 +17,35 @@
       "federation_id": 8
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8594b98-58ba-b8a6-5518-10de4ae89d9d.png",
+      "label": "Wr. Neustadt Diving Ducks",
+      "value": "1227"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png",
+      "label": "Attnang-Puchheim Athletics",
+      "value": "1224"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
+    }
+  ],
   "answers": {
-    "0-0": 78,
-    "0-1": 40,
-    "0-2": 19,
-    "1-0": 79,
-    "1-1": 35,
+    "0-0": 4,
+    "0-1": 88,
+    "0-2": 41,
+    "1-0": 4,
+    "1-1": 79,
     "1-2": 26,
-    "2-0": 213,
-    "2-1": 234,
+    "2-0": 18,
+    "2-1": 209,
     "2-2": 103
   }
 }

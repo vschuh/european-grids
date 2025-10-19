@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_bb",
+      "label": ">=10 BB Season",
+      "value": 10,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
+      "federation_id": 39
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f62896a9-35c6-1383-7685-484ec01f3358.jpg",
+      "label": "CBS Capitalinos Gran Canaria",
+      "value": "1628"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/01289c10-7afa-a307-4c35-8395b5f03899.jpg",
+      "label": "Miralbueno Zaragoza",
+      "value": "1629"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Béisbol Oro (ESP)",
+      "value": "ESP-LNDH-BB",
+      "federation_id": 39
+    }
+  ],
+  "answers": {
+    "0-0": 6,
+    "0-1": 51,
+    "0-2": 4,
+    "1-0": 12,
+    "1-1": 60,
+    "1-2": 5,
+    "2-0": 124,
+    "2-1": 268,
+    "2-2": 76
+  }
+}

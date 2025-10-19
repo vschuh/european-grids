@@ -1,16 +1,14 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/d7f20b47-403a-b08b-4684-ca741b059bb8.png",
-      "label": "Blesk Jablonec",
-      "value": "2068"
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/252a5e3d-988d-51c1-d081-264639adc927.png",
-      "label": "Olympia Blansko",
-      "value": "2072"
+      "type": "position",
+      "label": "RF (min 1 PA)",
+      "value": "RF"
     },
     {
       "type": "tournament",
@@ -21,19 +19,33 @@
   ],
   "rows": [
     {
-      "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d41ed6a3-9cb2-6629-99f3-c02c2861b626.png",
+      "label": "Eagles Praha",
+      "value": "2060"
     },
     {
-      "type": "nationality",
-      "label": "Nationality: CZE",
-      "value": "CZE"
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/dd134970-0bd6-d5fd-0abc-a138fc7d6868.jpg",
+      "label": "Arrows Ostrava",
+      "value": "1605"
     },
     {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 65,
+    "0-1": 124,
+    "0-2": 30,
+    "1-0": 51,
+    "1-1": 90,
+    "1-2": 20,
+    "2-0": 296,
+    "2-1": 386,
+    "2-2": 102
+  }
 }

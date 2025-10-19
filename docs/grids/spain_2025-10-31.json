@@ -2,13 +2,14 @@
   "cols": [
     {
       "type": "position",
-      "label": "1B (min 1 PA)",
-      "value": "1B"
+      "label": "C (min 1 PA)",
+      "value": "C"
     },
     {
-      "type": "position",
-      "label": "LF (min 1 PA)",
-      "value": "LF"
+      "type": "seasonal_wOBA",
+      "label": ">=0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25,
+      "condition": "min"
     },
     {
       "type": "tournament",
@@ -26,9 +27,9 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/9aa1aee4-5a37-b2fa-7992-1aa7244e07a0.png",
-      "label": "CBS Sant Boi",
-      "value": "1630"
+      "image": "https://static.wbsc.org/upload/2385052c-b349-ee0a-0368-a3c409cef452.png",
+      "label": "CBS Antorcha Valencia",
+      "value": "1653"
     },
     {
       "type": "team",
@@ -36,5 +37,16 @@
       "label": "Spain NT",
       "value": "39"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 41,
+    "0-1": 89,
+    "0-2": 55,
+    "1-0": 32,
+    "1-1": 58,
+    "1-2": 30,
+    "2-0": 82,
+    "2-1": 195,
+    "2-2": 77
+  }
 }

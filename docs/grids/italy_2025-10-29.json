@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_wOBA",
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
     },
     {
-      "type": "seasonal_bb",
-      "label": "10+ BB Season",
-      "value": 10
-    },
-    {
-      "type": "tournament",
-      "label": "Serie A Baseball (IT)",
-      "value": "ITA-SERIE-A1-M-BB",
-      "federation_id": 2
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/703fcf50-a4a9-5fc2-8e8e-cfb114713e30.jpg",
-      "label": "A.S.D. BASEBALL CLUB SALA BAGANZA",
-      "value": "350"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/531c9e94-8b15-5d21-6f6e-b405d73f79e9.jpeg",
-      "label": "SICILY RED SOX  A.S.D.",
-      "value": "358"
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
     },
     {
       "type": "team",
@@ -36,5 +16,36 @@
       "label": "Italy NT",
       "value": "2"
     }
-  ]
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1603ff99-c3b0-d27b-807f-84d84d54db0d.jpg",
+      "label": "A.B. CARONNO SOFTBALL ASD",
+      "value": "391"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/258288f1-589e-cb4b-1b00-f42003a7182f.jpg",
+      "label": "NEW BOLLATE A.S.D.",
+      "value": "397"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A1 Softball (IT)",
+      "value": "ITA-SERIE-A1-F-SB",
+      "federation_id": 2
+    }
+  ],
+  "answers": {
+    "0-0": 43,
+    "0-1": 59,
+    "0-2": 15,
+    "1-0": 26,
+    "1-1": 50,
+    "1-2": 28,
+    "2-0": 448,
+    "2-1": 411,
+    "2-2": 125
+  }
 }

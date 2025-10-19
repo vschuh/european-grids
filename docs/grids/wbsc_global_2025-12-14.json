@@ -1,0 +1,56 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1",
+      "federation_id": 1
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/USA.svg",
+      "label": "USA NT",
+      "value": "126",
+      "federation_id": 126
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
+      "federation_id": 6
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Olympic Baseball Qualifiers",
+      "value": "OLYMPIC-BASEBALL-Q",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 Women`s Softball World Cup",
+      "value": "U-18WSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_runs",
+      "label": ">=20 Runs Season",
+      "value": 20,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 32,
+    "0-1": 24,
+    "0-2": 24,
+    "1-0": 60,
+    "1-1": 78,
+    "1-2": 65,
+    "2-0": 102,
+    "2-1": 3,
+    "2-2": 130
+  }
+}

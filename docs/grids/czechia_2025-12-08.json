@@ -1,16 +1,34 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/b8e2f6c7-d381-cb53-2a82-a2f9e92daba9.jpg",
-      "label": "Beavers Chomutov",
-      "value": "1380"
+      "type": "seasonal_pitching_k",
+      "label": "50k+ Season",
+      "value": 50
+    },
+    {
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/e0cdbe49-5118-1882-4882-f10fd522553d.png",
-      "label": "SaBaT Praha",
-      "value": "2074"
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2b4c017d-41ab-0f88-0c43-a63a6080e50e.png",
+      "label": "Technika Brno",
+      "value": "2065"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/5a29afcd-b476-f5ea-549e-0a6ca0bf8551.png",
+      "label": "Žraloci Ledenice",
+      "value": "1381"
     },
     {
       "type": "tournament",
@@ -19,32 +37,15 @@
       "federation_id": 148
     }
   ],
-  "rows": [
-    {
-      "type": "seasonal_pitching_k",
-      "label": "35k+ Season",
-      "value": 35
-    },
-    {
-      "type": "nationality",
-      "label": "Nationality: CZE",
-      "value": "CZE"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
-    }
-  ],
   "answers": {
-    "0-0": 10,
-    "0-1": 12,
-    "0-2": 37,
-    "1-0": 85,
-    "1-1": 150,
-    "1-2": 195,
-    "2-0": 22,
-    "2-1": 14,
-    "2-2": 84
+    "0-0": 4,
+    "0-1": 4,
+    "0-2": 17,
+    "1-0": 10,
+    "1-1": 26,
+    "1-2": 29,
+    "2-0": 32,
+    "2-1": 68,
+    "2-2": 102
   }
 }

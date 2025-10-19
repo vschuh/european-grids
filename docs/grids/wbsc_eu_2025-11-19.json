@@ -1,0 +1,55 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/SWE.svg",
+      "label": "Sweden NT",
+      "value": "34",
+      "federation_id": 34
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
+      "federation_id": 6
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/b08344f3-ade1-b435-2443-311ee398786e.png",
+      "label": "Apollo Bratislava",
+      "value": "1427"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-22 Women’s Softball European Championship (EU)",
+      "value": "EU-U-22-EURO-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_sb",
+      "label": ">=10 SB Season",
+      "value": 10,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 15,
+    "0-1": 28,
+    "0-2": 6,
+    "1-0": 36,
+    "1-1": 45,
+    "1-2": 13,
+    "2-0": 44,
+    "2-1": 55,
+    "2-2": 3
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/MEX.svg",
+      "label": "Mexico NT",
+      "value": "3",
+      "federation_id": 3
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CAN.svg",
+      "label": "Canada NT",
+      "value": "205",
+      "federation_id": 205
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/JPN.svg",
+      "label": "Japan NT",
+      "value": "182",
+      "federation_id": 182
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-23 Men`s Softball World Cup",
+      "value": "U-23MSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "The World Games SB",
+      "value": "WORLD-GAMES-W-SB",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_pitching_hbp",
+      "label": "<=2 HB Season",
+      "value": 2,
+      "condition": "max"
+    }
+  ],
+  "answers": {
+    "0-0": 16,
+    "0-1": 16,
+    "0-2": 16,
+    "1-0": 15,
+    "1-1": 22,
+    "1-2": 21,
+    "2-0": 384,
+    "2-1": 58,
+    "2-2": 65
+  }
+}

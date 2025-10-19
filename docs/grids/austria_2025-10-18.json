@@ -1,9 +1,9 @@
 {
   "cols": [
     {
-      "type": "seasonal_rbi",
-      "label": "15+ RBI Season",
-      "value": 15
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
       "type": "year",
@@ -20,21 +20,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
-      "label": "Vienna Wanderers",
-      "value": "1222"
+      "image": "https://static.wbsc.org/upload/d84201d1-024c-068e-a445-3ebb5216a8c4.png",
+      "label": "Schwechat Blue Bats",
+      "value": "1261"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png",
-      "label": "Attnang-Puchheim Athletics",
-      "value": "1224"
+      "image": "https://static.wbsc.org/upload/acfef0c2-5af4-e797-cb4b-550d6173bb34.png",
+      "label": "Hard Bulls",
+      "value": "1228"
     },
     {
       "type": "tournament",
-      "label": "Softball Bundesliga (AT)",
-      "value": "SB-BUNDESLIGA",
+      "label": "Baseball Bundesliga (AT)",
+      "value": "BB-BUNDESLIGA",
       "federation_id": 8
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 23,
+    "0-1": 47,
+    "0-2": 25,
+    "1-0": 46,
+    "1-1": 49,
+    "1-2": 17,
+    "2-0": 145,
+    "2-1": 234,
+    "2-2": 103
+  }
 }

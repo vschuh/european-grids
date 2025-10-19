@@ -2,49 +2,50 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/d41ed6a3-9cb2-6629-99f3-c02c2861b626.png",
-      "label": "Eagles Praha",
-      "value": "2060"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/fc527c4a-a05c-5fe4-bb98-7a1f8b830033.jpg",
+      "label": "A.S.D. ACADEMY OF NETTUNO B.C.",
+      "value": "386"
     },
     {
       "type": "tournament",
-      "label": "Extraliga SB (CZ)",
-      "value": "W-EXT-L",
-      "federation_id": 148
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
+      "federation_id": 278
     },
     {
-      "type": "seasonal_pitching_fip",
-      "label": "<2.50 FIP Season (min. 10 ip)",
-      "value": 3
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/e0cdbe49-5118-1882-4882-f10fd522553d.png",
-      "label": "SaBaT Praha",
-      "value": "2074"
+      "image": "https://static.wbsc.org/upload/004760b7-d768-4c26-2453-428db40dbc44.svg",
+      "label": "BASEBALL SOFTBALL CLUB GROSSETO 1952 S.S.D. A R.L.",
+      "value": "383"
     },
     {
-      "type": "nationality",
-      "label": "Nationality: SVK",
-      "value": "SVK"
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
     },
     {
-      "type": "seasonal_avg",
-      "label": ">0.400 OBP Season (min. 10 pa)",
-      "value": 0.4
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     }
   ],
   "answers": {
-    "0-0": 6,
-    "0-1": 22,
-    "0-2": 4,
-    "1-0": 4,
-    "1-1": 5,
-    "1-2": 13,
-    "2-0": 87,
-    "2-1": 123,
-    "2-2": 486
+    "0-0": 3,
+    "0-1": 10,
+    "0-2": 34,
+    "1-0": 11,
+    "1-1": 48,
+    "1-2": 292,
+    "2-0": 14,
+    "2-1": 216,
+    "2-2": 7476
   }
 }

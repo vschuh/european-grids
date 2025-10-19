@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_pitching_hbp",
+      "label": "<=2 HB Season",
+      "value": 2,
+      "condition": "max"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
+      "federation_id": 39
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f62896a9-35c6-1383-7685-484ec01f3358.jpg",
+      "label": "CBS Capitalinos Gran Canaria",
+      "value": "1628"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2648277a-0a77-53ab-7dde-0020537acc83.jpeg",
+      "label": "CS Fénix Valencia",
+      "value": "1624"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Béisbol Oro (ESP)",
+      "value": "ESP-LNDH-BB",
+      "federation_id": 39
+    }
+  ],
+  "answers": {
+    "0-0": 26,
+    "0-1": 9,
+    "0-2": 4,
+    "1-0": 19,
+    "1-1": 16,
+    "1-2": 18,
+    "2-0": 208,
+    "2-1": 192,
+    "2-2": 76
+  }
+}

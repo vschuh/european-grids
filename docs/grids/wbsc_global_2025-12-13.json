@@ -1,0 +1,54 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1",
+      "federation_id": 1
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
+      "federation_id": 6
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
+      "label": "Tempo Praha",
+      "value": "2066"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-18 Baseball World Cup",
+      "value": "U-18",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_doubles",
+      "label": ">=10 Doubles Season",
+      "value": 10,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    }
+  ],
+  "answers": {
+    "0-0": 95,
+    "0-1": 67,
+    "0-2": 3,
+    "1-0": 48,
+    "1-1": 27,
+    "1-2": 5,
+    "2-0": 415,
+    "2-1": 497,
+    "2-2": 152
+  }
+}

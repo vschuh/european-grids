@@ -1,19 +1,19 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_fip",
-      "label": "<2.50 FIP Season (min. 10 ip)",
-      "value": 3
+      "type": "position",
+      "label": "C (min 1 PA)",
+      "value": "C"
     },
     {
-      "type": "seasonal_avg",
-      "label": ">0.350 OBP Season (min. 10 pa)",
-      "value": 0.35
+      "type": "seasonal_runs",
+      "label": "20+ Runs Season",
+      "value": 20
     },
     {
       "type": "tournament",
-      "label": "Baseball Bundesliga (AT)",
-      "value": "BB-BUNDESLIGA",
+      "label": "Softball Bundesliga (AT)",
+      "value": "SB-BUNDESLIGA",
       "federation_id": 8
     }
   ],
@@ -26,9 +26,9 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/acfef0c2-5af4-e797-cb4b-550d6173bb34.png",
-      "label": "Hard Bulls",
-      "value": "1228"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/3a067f16-f428-d6b9-450d-7ff6132d4207.png",
+      "label": "Feldkirch Cardinals",
+      "value": "1229"
     },
     {
       "type": "team",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 4,
-    "0-1": 75,
-    "0-2": 41,
-    "1-0": 4,
-    "1-1": 53,
-    "1-2": 50,
-    "2-0": 18,
-    "2-1": 186,
-    "2-2": 103
+    "0-0": 52,
+    "0-1": 31,
+    "0-2": 43,
+    "1-0": 34,
+    "1-1": 9,
+    "1-2": 7,
+    "2-0": 118,
+    "2-1": 62,
+    "2-2": 63
   }
 }

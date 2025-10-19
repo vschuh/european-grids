@@ -1,15 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_ip",
-      "label": ">=50 IP Season",
-      "value": 105,
-      "condition": "min"
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
     },
     {
       "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
@@ -22,21 +21,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/30da3795-69a2-d2ec-66bf-7059cd80b093.jpg",
-      "label": "Astros Valencia",
-      "value": "1433"
-    },
-    {
-      "type": "team",
       "image": "https://static.wbsc.org/upload/2385052c-b349-ee0a-0368-a3c409cef452.png",
       "label": "CBS Antorcha Valencia",
       "value": "1653"
     },
     {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/ac5c9f7f-d4d3-57b0-22f3-8490ad944e4c.png",
+      "label": "Club Béisbol Barcelona",
+      "value": "1648"
+    },
+    {
       "type": "tournament",
-      "label": "Liga Nacional de Béisbol Oro (ESP)",
-      "value": "ESP-LNDH-BB",
+      "label": "Liga Nacional de Sófbol Oro (ESP)",
+      "value": "ESP-LNDH-SB",
       "federation_id": 39
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 46,
+    "0-1": 5,
+    "0-2": 16,
+    "1-0": 42,
+    "1-1": 6,
+    "1-2": 19,
+    "2-0": 123,
+    "2-1": 45,
+    "2-2": 77
+  }
 }

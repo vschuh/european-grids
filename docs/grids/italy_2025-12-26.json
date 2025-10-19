@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "1B (min 1 PA)",
-      "value": "1B"
+      "type": "seasonal_hits",
+      "label": "15+ Hit Season",
+      "value": 15
     },
     {
       "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
       "type": "team",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8f98a90-c051-6299-93f6-3406e7208031.jpg",
-      "label": "A.S.D. BASEBALL SOFTBALL CLUB ROVIGO",
-      "value": "371"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/f5260415-3c46-7bca-9104-c3f5df539370.jpg",
+      "label": "A.S.D. PADOVA BAS. SOFT. CLUB",
+      "value": "574"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/8d59a636-d55a-b5f8-0f4c-c1c3978a1a8d.jpg",
-      "label": "LION`S  BASEBALL NETTUNO A.S.D.",
-      "value": "635"
+      "image": "https://static.wbsc.org/upload/15e17f14-1564-cf9d-3db7-2a502ccd9535.png",
+      "label": "POVIGLIO BASEBALL A.S.D.",
+      "value": "364"
     },
     {
       "type": "tournament",
@@ -39,13 +39,13 @@
   ],
   "answers": {
     "0-0": 50,
-    "0-1": 66,
-    "0-2": 18,
-    "1-0": 29,
-    "1-1": 19,
+    "0-1": 58,
+    "0-2": 11,
+    "1-0": 22,
+    "1-1": 41,
     "1-2": 7,
-    "2-0": 767,
-    "2-1": 935,
+    "2-0": 952,
+    "2-1": 1098,
     "2-2": 223
   }
 }

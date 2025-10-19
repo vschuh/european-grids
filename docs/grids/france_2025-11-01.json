@@ -1,14 +1,34 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "P (min 1 PA)",
-      "value": "P"
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
     },
     {
-      "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France D1 BB (FR)",
+      "value": "FRA-D1BB",
+      "federation_id": 14
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1071d9a2-1565-7750-d6bd-c5b9217a804f.jpg",
+      "label": "Sénart Templiers",
+      "value": "1435"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/83428e38-f463-52e1-0571-48f71aa9fc31.jpg",
+      "label": "Stade Toulousain Baseball Softball",
+      "value": "1713"
     },
     {
       "type": "team",
@@ -17,24 +37,15 @@
       "value": "14"
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/0050079f-5f9e-d803-8839-20992d9cfc18.jpg",
-      "label": "Les Boucaniers de La Rochelle",
-      "value": "1714"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/db8cb428-f188-8cd5-1354-4006e912897a.jpg",
-      "label": "Metz Cometz",
-      "value": "1712"
-    },
-    {
-      "type": "tournament",
-      "label": "Championnat de France D1 BB (FR)",
-      "value": "FRA-D1BB",
-      "federation_id": 14
-    }
-  ]
+  "answers": {
+    "0-0": 43,
+    "0-1": 39,
+    "0-2": 42,
+    "1-0": 21,
+    "1-1": 29,
+    "1-2": 34,
+    "2-0": 177,
+    "2-1": 141,
+    "2-2": 85
+  }
 }

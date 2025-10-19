@@ -1,0 +1,55 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1",
+      "federation_id": 1
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
+      "federation_id": 6
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/372d62f7-f498-84c1-f10f-62831565fe7d.png",
+      "label": "Neptunus",
+      "value": "287"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women's Softball European Premiere Cup (EU)",
+      "value": "EU-EURO-PREM-CUP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "tournament",
+      "label": "European Baseball Champions Cup (EU)",
+      "value": "EU-CHAMP-CUP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_runs",
+      "label": ">=15 Runs Season",
+      "value": 15,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 43,
+    "0-1": 31,
+    "0-2": 18,
+    "1-0": 53,
+    "1-1": 70,
+    "1-2": 38,
+    "2-0": 142,
+    "2-1": 219,
+    "2-2": 48
+  }
+}

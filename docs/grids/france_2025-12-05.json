@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "1B (min 1 PA)",
-      "value": "1B"
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
     },
     {
       "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "label": "Played in 2023 season",
+      "value": 2023
     },
     {
       "type": "team",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/ff7815ce-79aa-def3-c3c1-e7f2065bd8ec.jpg",
-      "label": "Les Rabbits de Clapiers-Jacou",
-      "value": "1514"
+      "image": "https://static.wbsc.org/upload/c6f45770-2b34-bfcf-33e8-1909b6ef7bae.jpg",
+      "label": "Les Grizzlys de Grenoble",
+      "value": "1513"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/0050079f-5f9e-d803-8839-20992d9cfc18.jpg",
-      "label": "Les Boucaniers de La Rochelle",
-      "value": "1714"
+      "image": "https://static.wbsc.org/upload/51a28c3c-a894-cc4d-30ca-b8c705e5bd5d.png",
+      "label": "3M Barracudas Baseball Université Club",
+      "value": "1385"
     },
     {
       "type": "tournament",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 13,
-    "0-1": 33,
-    "0-2": 13,
-    "1-0": 20,
-    "1-1": 46,
-    "1-2": 13,
-    "2-0": 100,
-    "2-1": 219,
+    "0-0": 1,
+    "0-1": 20,
+    "0-2": 9,
+    "1-0": 1,
+    "1-1": 55,
+    "1-2": 40,
+    "2-0": 2,
+    "2-1": 158,
     "2-2": 85
   }
 }

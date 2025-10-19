@@ -1,0 +1,55 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/VEN.svg",
+      "label": "Venezuela NT",
+      "value": "103",
+      "federation_id": 103
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CUB.svg",
+      "label": "Cuba NT",
+      "value": "121",
+      "federation_id": 121
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/DOM.svg",
+      "label": "Dominican Republic NT",
+      "value": "128",
+      "federation_id": 128
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Premier12",
+      "value": "P-12",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "Women`s Baseball World Cup",
+      "value": "WBWC",
+      "federation_id": 0
+    },
+    {
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
+    }
+  ],
+  "answers": {
+    "0-0": 78,
+    "0-1": 69,
+    "0-2": 80,
+    "1-0": 59,
+    "1-1": 55,
+    "1-2": 20,
+    "2-0": 121,
+    "2-1": 51,
+    "2-2": 65
+  }
+}

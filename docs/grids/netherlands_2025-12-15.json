@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_era",
-      "label": "<3.00 ERA Season (min. 10 ip)",
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
       "value": 3
     },
     {
       "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
@@ -20,9 +20,9 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/e8944012-5266-bf86-740a-2b238e5d1d9a.jpg",
-      "label": "Onze Gezellen",
-      "value": "1273"
+      "image": "https://static.wbsc.org/upload/372d62f7-f498-84c1-f10f-62831565fe7d.png",
+      "label": "Neptunus",
+      "value": "287"
     },
     {
       "type": "team",
@@ -32,20 +32,20 @@
     },
     {
       "type": "tournament",
-      "label": "Hoofdklasse Softbal (NL)",
-      "value": "HOOFDKLASSE-SOFTBAL",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
       "federation_id": 1
     }
   ],
   "answers": {
-    "0-0": 12,
-    "0-1": 37,
-    "0-2": 14,
-    "1-0": 22,
-    "1-1": 42,
+    "0-0": 0,
+    "0-1": 70,
+    "0-2": 59,
+    "1-0": 0,
+    "1-1": 46,
     "1-2": 26,
-    "2-0": 63,
-    "2-1": 189,
-    "2-2": 111
+    "2-0": 5,
+    "2-1": 294,
+    "2-2": 149
   }
 }

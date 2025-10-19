@@ -1,23 +1,29 @@
 {
   "cols": [
     {
-      "type": "seasonal_rbi",
-      "label": "15+ RBI Season",
-      "value": 15
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
     },
     {
-      "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
-      "label": "Netherlands NT",
-      "value": "1"
+      "type": "tournament",
+      "label": "Hoofdklasse Softbal (NL)",
+      "value": "HOOFDKLASSE-SOFTBAL",
+      "federation_id": 1
     }
   ],
   "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2771d01c-919e-c952-c89c-0b6d09fae4a0.png",
+      "label": "Red Lions",
+      "value": "2596"
+    },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/cms/teams/logo/24be214e-4c82-4f83-8fa3-56760624a195.jpg",
@@ -26,26 +32,20 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/372d62f7-f498-84c1-f10f-62831565fe7d.png",
-      "label": "Neptunus",
-      "value": "287"
-    },
-    {
-      "type": "tournament",
-      "label": "Hoofdklasse Honkbal (NL)",
-      "value": "HOOFDKLASSE-HONKBAL",
-      "federation_id": 1
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
     }
   ],
   "answers": {
-    "0-0": 8,
-    "0-1": 18,
-    "0-2": 14,
-    "1-0": 46,
-    "1-1": 83,
-    "1-2": 59,
-    "2-0": 133,
-    "2-1": 318,
-    "2-2": 149
+    "0-0": 3,
+    "0-1": 0,
+    "0-2": 17,
+    "1-0": 14,
+    "1-1": 0,
+    "1-2": 17,
+    "2-0": 175,
+    "2-1": 7,
+    "2-2": 111
   }
 }

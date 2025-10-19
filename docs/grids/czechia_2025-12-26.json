@@ -1,9 +1,9 @@
 {
   "cols": [
     {
-      "type": "seasonal_bb",
-      "label": "10+ BB Season",
-      "value": 10
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
     },
     {
       "type": "year",
@@ -20,9 +20,9 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/271efdd4-78f7-782b-19e9-ca7fd00cfee2.png",
-      "label": "Hroši Brno",
-      "value": "2063"
+      "image": "https://static.wbsc.org/upload/2b4c017d-41ab-0f88-0c43-a63a6080e50e.png",
+      "label": "Technika Brno",
+      "value": "2065"
     },
     {
       "type": "team",
@@ -38,13 +38,13 @@
     }
   ],
   "answers": {
-    "0-0": 31,
-    "0-1": 17,
-    "0-2": 49,
-    "1-0": 16,
+    "0-0": 52,
+    "0-1": 4,
+    "0-2": 17,
+    "1-0": 49,
     "1-1": 26,
     "1-2": 29,
-    "2-0": 45,
+    "2-0": 151,
     "2-1": 68,
     "2-2": 102
   }

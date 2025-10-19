@@ -1,0 +1,54 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/MEX.svg",
+      "label": "Mexico NT",
+      "value": "3",
+      "federation_id": 3
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8d053c81-1566-2518-b6ab-ab8274584916.jpg",
+      "label": "ROEF!",
+      "value": "1271"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/COL.svg",
+      "label": "Colombia NT",
+      "value": "88",
+      "federation_id": 88
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-18 Women`s Softball World Cup",
+      "value": "U-18WSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_pitching_k",
+      "label": ">=35k Season",
+      "value": 35,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    }
+  ],
+  "answers": {
+    "0-0": 70,
+    "0-1": 17,
+    "0-2": 30,
+    "1-0": 7,
+    "1-1": 8,
+    "1-2": 6,
+    "2-0": 164,
+    "2-1": 44,
+    "2-2": 70
+  }
+}

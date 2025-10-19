@@ -1,0 +1,51 @@
+{
+  "cols": [
+    {
+      "type": "tournament",
+      "label": "U-22 Women’s Softball European Championship (EU)",
+      "value": "EU-U-22-EURO-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "RF (min 1 PA)",
+      "value": "RF"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2dc75eeb-6f2e-85ec-da52-6c117d754ddd.jpg",
+      "label": "Eagles Praha",
+      "value": "1356"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/83223b64-9ad3-657e-87fb-7698ccd027e7.jpg",
+      "label": "Skövde BSK",
+      "value": "309"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c6f45770-2b34-bfcf-33e8-1909b6ef7bae.jpg",
+      "label": "Les Grizzlys de Grenoble",
+      "value": "1513"
+    }
+  ],
+  "answers": {
+    "0-0": 6,
+    "0-1": 41,
+    "0-2": 18,
+    "1-0": 3,
+    "1-1": 63,
+    "1-2": 53,
+    "2-0": 4,
+    "2-1": 49,
+    "2-2": 6
+  }
+}

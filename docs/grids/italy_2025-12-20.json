@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">0.300 avg Season (min. 10 pa)",
-      "value": 0.3
+      "type": "position",
+      "label": "RF (min 1 PA)",
+      "value": "RF"
     },
     {
-      "type": "seasonal_pitching_ip",
-      "label": "35 IP+ Season",
-      "value": 105
-    },
-    {
-      "type": "tournament",
-      "label": "Serie A Baseball (IT)",
-      "value": "ITA-SERIE-A1-M-BB",
-      "federation_id": 2
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/d3da29df-dd87-12e9-a63d-0c5cd519d09e.jpg",
-      "label": "A.S.D. SENAGO MILANO UNITED B.C.",
-      "value": "340"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/15e17f14-1564-cf9d-3db7-2a502ccd9535.png",
-      "label": "POVIGLIO BASEBALL A.S.D.",
-      "value": "364"
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "2"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/df0cbcf4-3d16-e1c8-110d-893c27d06fb3.jpg",
+      "label": "A.S.D. AVIGLIANA REBELS",
+      "value": "399"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/300b244a-687b-e9fe-dead-f938a53ecbed.jpg",
+      "label": "A.S.D. GRIZZLIES TORINO 48 B.S.C.",
+      "value": "337"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ],
   "answers": {
-    "0-0": 14,
-    "0-1": 11,
-    "0-2": 49,
-    "1-0": 12,
-    "1-1": 10,
-    "1-2": 47,
-    "2-0": 343,
-    "2-1": 111,
+    "0-0": 54,
+    "0-1": 60,
+    "0-2": 6,
+    "1-0": 26,
+    "1-1": 46,
+    "1-2": 9,
+    "2-0": 944,
+    "2-1": 1083,
     "2-2": 223
   }
 }

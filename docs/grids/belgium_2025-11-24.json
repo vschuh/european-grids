@@ -2,34 +2,13 @@
   "cols": [
     {
       "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
-      "label": "Belgium NT",
-      "value": "143",
-      "federation_id": 143
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/7f689077-0110-b1f1-2ef9-4b2c962e00c8.png",
-      "label": "Namur Angels",
-      "value": "1478"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/7784025f-15e3-9d72-ec0a-5cea1fb36fac.png",
-      "label": "Antwerp Eagles",
-      "value": "1474"
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
     },
     {
       "type": "tournament",
@@ -37,5 +16,36 @@
       "value": "SLD1",
       "federation_id": 143
     }
-  ]
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/bd187a02-55c9-dbf3-3a25-668902bfcd8d.png",
+      "label": "Borgerhout Squirrels",
+      "value": "1473"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/b984f263-2924-2e02-6b23-7257a92a820c.png",
+      "label": "Gent Knights",
+      "value": "1475"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143"
+    }
+  ],
+  "answers": {
+    "0-0": 93,
+    "0-1": 105,
+    "0-2": 7,
+    "1-0": 68,
+    "1-1": 68,
+    "1-2": 21,
+    "2-0": 224,
+    "2-1": 235,
+    "2-2": 59
+  }
 }

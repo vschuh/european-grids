@@ -2,41 +2,49 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/450c82c4-90bc-6b3d-d1c7-88a8f4d96464.png",
-      "label": "Hoboken Pioneers",
-      "value": "1353"
+      "image": "https://static.wbsc.org/upload/7784025f-15e3-9d72-ec0a-5cea1fb36fac.png",
+      "label": "Antwerp Eagles",
+      "value": "1474"
     },
     {
-      "type": "nationality",
-      "label": "Nationality: USA",
-      "value": "USA"
+      "type": "tournament",
+      "label": "Women's Softball European Premiere Cup (EU)",
+      "value": "EU-EURO-PREM-CUP-W-SB",
+      "federation_id": 278
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
-      "label": "Netherlands NT",
-      "value": "1",
-      "federation_id": 1
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
     }
   ],
   "rows": [
     {
-      "type": "tournament",
-      "label": "Hoofdklasse Honkbal (NL)",
-      "value": "HOOFDKLASSE-HONKBAL",
-      "federation_id": 1
-    },
-    {
-      "type": "seasonal_runs",
-      "label": ">=15 Runs Season",
-      "value": 15,
-      "condition": "min"
-    },
-    {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/dfb15b29-c3d5-e17b-16ce-fea5adbc7c83.png",
-      "label": "Stabroek Chicaboo`s",
-      "value": "1361"
+      "image": "https://static.wbsc.org/upload/f7f05882-7810-d6a2-6bd7-06648e0a5fa8.png",
+      "label": "Beveren Lions",
+      "value": "1480"
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: BEL",
+      "value": "BEL"
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 4,
+    "0-1": 18,
+    "0-2": 67,
+    "1-0": 101,
+    "1-1": 37,
+    "1-2": 1676,
+    "2-0": 75,
+    "2-1": 342,
+    "2-2": 9890
+  }
 }

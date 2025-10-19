@@ -1,14 +1,34 @@
 {
   "cols": [
     {
-      "type": "seasonal_runs",
-      "label": "15+ Runs Season",
-      "value": 15
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
-      "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/4137a8ec-106d-1408-1204-7266ed5c196a.png",
+      "label": "Linz Witches und Bandits",
+      "value": "1276"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png",
+      "label": "Attnang-Puchheim Athletics",
+      "value": "1224"
     },
     {
       "type": "tournament",
@@ -17,24 +37,15 @@
       "federation_id": 8
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/3a067f16-f428-d6b9-450d-7ff6132d4207.png",
-      "label": "Feldkirch Cardinals",
-      "value": "1229"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/1943295d-9bf7-e5b8-291c-021b311137ba.png",
-      "label": "Vienna Metrostars",
-      "value": "1223"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8"
-    }
-  ]
+  "answers": {
+    "0-0": 16,
+    "0-1": 20,
+    "0-2": 12,
+    "1-0": 44,
+    "1-1": 41,
+    "1-2": 26,
+    "2-0": 165,
+    "2-1": 195,
+    "2-2": 103
+  }
 }

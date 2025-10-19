@@ -1,51 +1,51 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/fc527c4a-a05c-5fe4-bb98-7a1f8b830033.jpg",
-      "label": "A.S.D. ACADEMY OF NETTUNO B.C.",
-      "value": "386"
+      "type": "seasonal_rbi",
+      "label": "20+ RBI Season",
+      "value": 20
+    },
+    {
+      "type": "seasonal_pitching_k",
+      "label": "35k+ Season",
+      "value": 35
     },
     {
       "type": "tournament",
-      "label": "Baseball European Championship (EU)",
-      "value": "EU-CHAMP-M-BB",
+      "label": "U-18 European Baseball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-M-BB",
       "federation_id": 278
-    },
-    {
-      "type": "seasonal_avg",
-      "label": ">0.350 OBP Season (min. 10 pa)",
-      "value": 0.35
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/004760b7-d768-4c26-2453-428db40dbc44.svg",
-      "label": "BASEBALL SOFTBALL CLUB GROSSETO 1952 S.S.D. A R.L.",
-      "value": "383"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ad49a1e0-b481-4a1c-5780-9a7e8693fae9.png",
+      "label": "Traiskirchen Grasshoppers",
+      "value": "1226"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/300b244a-687b-e9fe-dead-f938a53ecbed.jpg",
+      "label": "A.S.D. GRIZZLIES TORINO 48 B.S.C.",
+      "value": "337"
     },
     {
-      "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39"
     }
   ],
   "answers": {
-    "0-0": 3,
-    "0-1": 10,
-    "0-2": 34,
-    "1-0": 11,
-    "1-1": 48,
-    "1-2": 292,
-    "2-0": 14,
-    "2-1": 216,
-    "2-2": 7476
+    "0-0": 15,
+    "0-1": 9,
+    "0-2": 9,
+    "1-0": 10,
+    "1-1": 10,
+    "1-2": 4,
+    "2-0": 48,
+    "2-1": 42,
+    "2-2": 49
   }
 }

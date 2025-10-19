@@ -2,50 +2,50 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
-      "label": "France NT",
-      "value": "14"
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
     },
     {
-      "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
+      "type": "seasonal_pitching_k",
+      "label": "35k+ Season",
+      "value": 35
     },
     {
-      "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "type": "seasonal_doubles",
+      "label": "10+ Doubles Season",
+      "value": 10
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/e20fa02b-5959-2c18-2def-c682eb6a540f.jpg",
-      "label": "Les Lions de Savigny-sur-Orge",
-      "value": "1715"
+      "image": "https://static.wbsc.org/upload/806638c7-4c47-3f4f-575e-d80ad64081b8.png",
+      "label": "Amsterdam Pirates Baseball",
+      "value": "1266"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/1071d9a2-1565-7750-d6bd-c5b9217a804f.jpg",
-      "label": "Sénart Templiers",
-      "value": "1435"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a58c308c-b5b8-113c-a189-141d486177fd.jpg",
+      "label": "BOLLATE SOFTBALL 1969 A.S.D.",
+      "value": "387"
     },
     {
       "type": "tournament",
-      "label": "Women’s Softball European Cup Winners Cup “A” (EU)",
-      "value": "EU-WINNERS-CUP-A-W-SB",
+      "label": "U-18 Women's European Softball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-W-SB",
       "federation_id": 278
     }
   ],
   "answers": {
-    "0-0": 19,
-    "0-1": 14,
-    "0-2": 23,
-    "1-0": 24,
-    "1-1": 32,
-    "1-2": 39,
-    "2-0": 16,
-    "2-1": 195,
-    "2-2": 214
+    "0-0": 48,
+    "0-1": 15,
+    "0-2": 12,
+    "1-0": 4,
+    "1-1": 18,
+    "1-2": 15,
+    "2-0": 47,
+    "2-1": 45,
+    "2-2": 7
   }
 }

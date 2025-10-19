@@ -1,51 +1,51 @@
 {
   "cols": [
     {
-      "type": "seasonal_rbi",
-      "label": "20+ RBI Season",
-      "value": 20
-    },
-    {
-      "type": "seasonal_pitching_k",
-      "label": "35k+ Season",
-      "value": 35
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
+      "label": "Vienna Wanderers",
+      "value": "1222"
     },
     {
       "type": "tournament",
-      "label": "U-18 European Baseball Championship (EU)",
-      "value": "EU-U-18-EURO-CHAMP-M-BB",
-      "federation_id": 278
+      "label": "Baseball Bundesliga (AT)",
+      "value": "BB-BUNDESLIGA",
+      "federation_id": 8
+    },
+    {
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/ad49a1e0-b481-4a1c-5780-9a7e8693fae9.png",
-      "label": "Traiskirchen Grasshoppers",
-      "value": "1226"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1943295d-9bf7-e5b8-291c-021b311137ba.png",
+      "label": "Vienna Metrostars",
+      "value": "1223"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/300b244a-687b-e9fe-dead-f938a53ecbed.jpg",
-      "label": "A.S.D. GRIZZLIES TORINO 48 B.S.C.",
-      "value": "337"
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
-      "label": "Spain NT",
-      "value": "39"
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     }
   ],
   "answers": {
-    "0-0": 15,
-    "0-1": 9,
-    "0-2": 9,
-    "1-0": 10,
-    "1-1": 10,
-    "1-2": 4,
-    "2-0": 48,
-    "2-1": 42,
-    "2-2": 49
+    "0-0": 16,
+    "0-1": 47,
+    "0-2": 73,
+    "1-0": 62,
+    "1-1": 103,
+    "1-2": 210,
+    "2-0": 44,
+    "2-1": 145,
+    "2-2": 9234
   }
 }

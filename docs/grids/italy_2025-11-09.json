@@ -1,34 +1,34 @@
 {
   "cols": [
     {
-      "type": "seasonal_rbi",
-      "label": "15+ RBI Season",
-      "value": 15
+      "type": "position",
+      "label": "C (min 1 PA)",
+      "value": "C"
     },
     {
-      "type": "seasonal_ops",
-      "label": ">1.000 OPS Season (min. 10 pa)",
-      "value": 1
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
     },
     {
       "type": "tournament",
-      "label": "Serie A1 Softball (IT)",
-      "value": "ITA-SERIE-A1-F-SB",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
       "federation_id": 2
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/d79c686b-d315-8ea2-9ce2-09dce8a65e3c.jpg",
-      "label": "PIANORO SOFTBALL A.S.D.",
-      "value": "392"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/85cca109-97d3-b493-31cd-358a82fc7cb0.jpg",
+      "label": "A.S.D. BASEBALL TEAM VERONA",
+      "value": "344"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/4dd71fbd-6865-78fc-431a-fe648a41d21b.jpg",
-      "label": "LEGNANO BASEBALL  SOFTBALL A.S.D.",
-      "value": "398"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/703fcf50-a4a9-5fc2-8e8e-cfb114713e30.jpg",
+      "label": "A.S.D. BASEBALL CLUB SALA BAGANZA",
+      "value": "350"
     },
     {
       "type": "team",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 22,
-    "0-1": 30,
-    "0-2": 86,
-    "1-0": 16,
-    "1-1": 27,
-    "1-2": 30,
-    "2-0": 167,
-    "2-1": 268,
-    "2-2": 125
+    "0-0": 7,
+    "0-1": 22,
+    "0-2": 50,
+    "1-0": 13,
+    "1-1": 23,
+    "1-2": 58,
+    "2-0": 158,
+    "2-1": 229,
+    "2-2": 223
   }
 }

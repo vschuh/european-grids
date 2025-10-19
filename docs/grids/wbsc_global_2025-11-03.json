@@ -1,0 +1,55 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2",
+      "federation_id": 2
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/USA.svg",
+      "label": "USA NT",
+      "value": "126",
+      "federation_id": 126
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
+      "label": "SOFTBALL CLUB FORLI` A.S.D.",
+      "value": "395"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Softball Olympic Games",
+      "value": "OLYMPIC-SOFTBALL",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 Women`s Softball World Cup",
+      "value": "U-18WSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">=0.300 avg Season (min. 10 pa)",
+      "value": 0.3,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 15,
+    "0-1": 16,
+    "0-2": 10,
+    "1-0": 46,
+    "1-1": 78,
+    "1-2": 7,
+    "2-0": 343,
+    "2-1": 207,
+    "2-2": 59
+  }
+}

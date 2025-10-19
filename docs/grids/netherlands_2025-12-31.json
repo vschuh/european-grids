@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_ip",
-      "label": "50 IP+ Season",
-      "value": 105
+      "type": "position",
+      "label": "C (min 1 PA)",
+      "value": "C"
     },
     {
-      "type": "position",
-      "label": "1B (min 1 PA)",
-      "value": "1B"
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
     },
     {
       "type": "tournament",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/806638c7-4c47-3f4f-575e-d80ad64081b8.png",
-      "label": "Amsterdam Pirates Baseball",
-      "value": "1266"
+      "image": "https://static.wbsc.org/upload/b83640ca-dd8f-2651-7ed7-c1c324b9ef58.png",
+      "label": "RCH-Pinguïns",
+      "value": "1521"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/fa14f1a1-1762-f7f2-6a3d-84fc21f97071.png",
-      "label": "Hoofddorp Pioniers Baseball",
-      "value": "1265"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/7650db8c-fd99-d90e-fe5e-20bd94dff0d3.jpg",
+      "label": "Quick Amersfoort Baseball",
+      "value": "1267"
     },
     {
       "type": "team",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 20,
-    "0-1": 30,
-    "0-2": 90,
-    "1-0": 22,
-    "1-1": 20,
+    "0-0": 14,
+    "0-1": 1,
+    "0-2": 72,
+    "1-0": 16,
+    "1-1": 3,
     "1-2": 83,
-    "2-0": 74,
-    "2-1": 203,
+    "2-0": 156,
+    "2-1": 7,
     "2-2": 149
   }
 }

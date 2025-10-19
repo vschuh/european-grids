@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">0.350 OBP Season (min. 10 pa)",
-      "value": 0.35
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
     },
     {
-      "type": "seasonal_avg",
-      "label": ">0.300 avg Season (min. 10 pa)",
-      "value": 0.3
+      "type": "seasonal_runs",
+      "label": "15+ Runs Season",
+      "value": 15
     },
     {
       "type": "tournament",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
-      "label": "Tempo Praha",
-      "value": "2066"
+      "image": "https://static.wbsc.org/upload/2b4c017d-41ab-0f88-0c43-a63a6080e50e.png",
+      "label": "Technika Brno",
+      "value": "2065"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/155cf629-9bb0-5fc6-2830-5ddd769d0d47.png",
-      "label": "Hvězdy Extraligy",
-      "value": "2210"
+      "image": "https://static.wbsc.org/upload/a7dffba8-f8b9-2a89-1883-b07093f1e5b4.png",
+      "label": "Kotlářka Praha",
+      "value": "2071"
     },
     {
       "type": "team",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 80,
-    "0-1": 100,
+    "0-0": 46,
+    "0-1": 23,
     "0-2": 45,
-    "1-0": 16,
-    "1-1": 23,
-    "1-2": 35,
-    "2-0": 408,
-    "2-1": 459,
+    "1-0": 45,
+    "1-1": 22,
+    "1-2": 50,
+    "2-0": 302,
+    "2-1": 219,
     "2-2": 159
   }
 }

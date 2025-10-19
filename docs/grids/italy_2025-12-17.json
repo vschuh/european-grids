@@ -1,9 +1,9 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_k",
-      "label": "50k+ Season",
-      "value": 50
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
       "type": "year",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a58c308c-b5b8-113c-a189-141d486177fd.jpg",
-      "label": "BOLLATE SOFTBALL 1969 A.S.D.",
-      "value": "387"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e9e5a7d2-0d88-430a-cbd6-bcebfd3a9c51.jpg",
+      "label": "COLLECCHIO B.C. A.S.D.",
+      "value": "334"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/12f8bd4d-1eda-665a-5e81-446fa51508e2.jpg",
-      "label": "A.S.D. CODOGNO BAS. `67",
-      "value": "359"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/f5260415-3c46-7bca-9104-c3f5df539370.jpg",
+      "label": "A.S.D. PADOVA BAS. SOFT. CLUB",
+      "value": "574"
     },
     {
       "type": "tournament",
@@ -38,13 +38,13 @@
     }
   ],
   "answers": {
-    "0-0": 15,
-    "0-1": 49,
-    "0-2": 42,
-    "1-0": 8,
-    "1-1": 35,
-    "1-2": 5,
-    "2-0": 364,
+    "0-0": 28,
+    "0-1": 46,
+    "0-2": 21,
+    "1-0": 24,
+    "1-1": 58,
+    "1-2": 11,
+    "2-0": 487,
     "2-1": 1065,
     "2-2": 223
   }

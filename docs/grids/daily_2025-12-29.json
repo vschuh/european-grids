@@ -1,51 +1,51 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">0.350 OBP Season (min. 10 pa)",
-      "value": 0.35
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    },
+    {
+      "type": "seasonal_pitching_k",
+      "label": "35k+ Season",
+      "value": 35
     },
     {
       "type": "position",
-      "label": "RF (min 1 PA)",
-      "value": "RF"
-    },
-    {
-      "type": "tournament",
-      "label": "Women's Softball European Premiere Cup (EU)",
-      "value": "EU-EURO-PREM-CUP-W-SB",
-      "federation_id": 278
+      "label": "CF (min 1 PA)",
+      "value": "CF"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png",
-      "label": "Attnang-Puchheim Athletics",
-      "value": "1224"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/85cca109-97d3-b493-31cd-358a82fc7cb0.jpg",
+      "label": "A.S.D. BASEBALL TEAM VERONA",
+      "value": "344"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/552eb909-5775-5ced-11cd-899ef3bdc14e.jpg",
-      "label": "THUNDERS & DRAGONS  SOFTBALL -  BASEBALL A.S.D. CASTELLANA",
-      "value": "346"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/7e3e8f32-6d68-f75a-dbfe-7cf17095c499.jpg",
+      "label": "OLTRETORRENTE BASEBALL CLUB A.S.D.",
+      "value": "353"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/RUS.svg",
-      "label": "Russia NT",
-      "value": "242"
+      "type": "tournament",
+      "label": "European Baseball Champions Cup (EU)",
+      "value": "EU-CHAMP-CUP-M-BB",
+      "federation_id": 278
     }
   ],
   "answers": {
-    "0-0": 42,
-    "0-1": 77,
-    "0-2": 4,
-    "1-0": 30,
-    "1-1": 61,
-    "1-2": 8,
-    "2-0": 6,
-    "2-1": 6,
-    "2-2": 3
+    "0-0": 8,
+    "0-1": 17,
+    "0-2": 22,
+    "1-0": 11,
+    "1-1": 12,
+    "1-2": 28,
+    "2-0": 43,
+    "2-1": 102,
+    "2-2": 138
   }
 }

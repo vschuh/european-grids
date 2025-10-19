@@ -1,0 +1,54 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a56ecb27-813b-b97e-c668-3d06269b6494.jpg",
+      "label": "Tex Town Tigers",
+      "value": "1274"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/PER.svg",
+      "label": "Peru NT",
+      "value": "223",
+      "federation_id": 223
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/PUR.svg",
+      "label": "Puerto Rico NT",
+      "value": "225",
+      "federation_id": 225
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Olympic Softball Qualifiers",
+      "value": "OLYMPIC-SOFTBALL-Q",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">=0.300 avg Season (min. 10 pa)",
+      "value": 0.3,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    }
+  ],
+  "answers": {
+    "0-0": 3,
+    "0-1": 14,
+    "0-2": 15,
+    "1-0": 41,
+    "1-1": 28,
+    "1-2": 127,
+    "2-0": 51,
+    "2-1": 73,
+    "2-2": 145
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/dfb15b29-c3d5-e17b-16ce-fea5adbc7c83.png",
+      "label": "Stabroek Chicaboo`s",
+      "value": "1361"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/USA.svg",
+      "label": "USA NT",
+      "value": "126",
+      "federation_id": 126
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/MEX.svg",
+      "label": "Mexico NT",
+      "value": "3",
+      "federation_id": 3
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "WBSC Men`s Softball World Cup",
+      "value": "MSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "position",
+      "label": "RF (min 1 PA)",
+      "value": "RF"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    }
+  ],
+  "answers": {
+    "0-0": 3,
+    "0-1": 39,
+    "0-2": 29,
+    "1-0": 114,
+    "1-1": 114,
+    "1-2": 116,
+    "2-0": 81,
+    "2-1": 68,
+    "2-2": 56
+  }
+}

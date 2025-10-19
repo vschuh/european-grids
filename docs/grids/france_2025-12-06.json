@@ -1,9 +1,9 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_fip",
-      "label": "<2.50 FIP Season (min. 10 ip)",
-      "value": 3
+      "type": "seasonal_sb",
+      "label": "10+ SB Season",
+      "value": 10
     },
     {
       "type": "year",
@@ -20,32 +20,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/c6f45770-2b34-bfcf-33e8-1909b6ef7bae.jpg",
-      "label": "Les Grizzlys de Grenoble",
-      "value": "1513"
+      "image": "https://static.wbsc.org/upload/07067501-9be9-9d54-0187-4b5ce1bc028d.jpg",
+      "label": "Les Pharaons d`Evry-Courcouronnes",
+      "value": "1367"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/51a28c3c-a894-cc4d-30ca-b8c705e5bd5d.png",
-      "label": "3M Barracudas Baseball Université Club",
-      "value": "1385"
+      "image": "https://static.wbsc.org/upload/e20fa02b-5959-2c18-2def-c682eb6a540f.jpg",
+      "label": "Les Lions de Savigny-sur-Orge",
+      "value": "1715"
     },
     {
       "type": "tournament",
-      "label": "Championnat de France D1 BB (FR)",
-      "value": "FRA-D1BB",
+      "label": "Championnat de France Division 1 Féminine SB (FR)",
+      "value": "FRA-D1FSB",
       "federation_id": 14
     }
   ],
   "answers": {
-    "0-0": 1,
-    "0-1": 20,
-    "0-2": 9,
-    "1-0": 1,
-    "1-1": 55,
-    "1-2": 40,
-    "2-0": 2,
-    "2-1": 158,
-    "2-2": 85
+    "0-0": 5,
+    "0-1": 29,
+    "0-2": 21,
+    "1-0": 7,
+    "1-1": 37,
+    "1-2": 19,
+    "2-0": 4,
+    "2-1": 32,
+    "2-2": 41
   }
 }

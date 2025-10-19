@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_k",
-      "label": "35k+ Season",
-      "value": 35
+      "type": "seasonal_ops",
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "value": 1
     },
     {
       "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "label": "LF (min 1 PA)",
+      "value": "LF"
     },
     {
       "type": "tournament",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/703fcf50-a4a9-5fc2-8e8e-cfb114713e30.jpg",
-      "label": "A.S.D. BASEBALL CLUB SALA BAGANZA",
-      "value": "350"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/6ab27046-f495-c765-4070-a15fd6ef9dd5.jpg",
+      "label": "WHITE SOX BUTTRIO BASEBALL A.S.D.",
+      "value": "375"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/c94f3613-2aac-5ee9-848e-7e0259fc86f8.jpg",
-      "label": "MONTEFIASCONE BASEBALL SOFTBALL 67 A.S.D.",
-      "value": "354"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/552eb909-5775-5ced-11cd-899ef3bdc14e.jpg",
+      "label": "THUNDERS & DRAGONS  SOFTBALL -  BASEBALL A.S.D. CASTELLANA",
+      "value": "346"
     },
     {
       "type": "team",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 10,
-    "0-1": 24,
-    "0-2": 58,
-    "1-0": 4,
-    "1-1": 10,
-    "1-2": 27,
-    "2-0": 111,
-    "2-1": 237,
+    "0-0": 5,
+    "0-1": 26,
+    "0-2": 29,
+    "1-0": 24,
+    "1-1": 52,
+    "1-2": 36,
+    "2-0": 268,
+    "2-1": 328,
     "2-2": 223
   }
 }

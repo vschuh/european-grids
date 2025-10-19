@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_runs",
-      "label": "20+ Runs Season",
-      "value": 20
+      "type": "seasonal_avg",
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
     },
     {
-      "type": "seasonal_runs",
-      "label": "15+ Runs Season",
-      "value": 15
+      "type": "seasonal_bb",
+      "label": "10+ BB Season",
+      "value": 10
     },
     {
       "type": "tournament",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/12f8bd4d-1eda-665a-5e81-446fa51508e2.jpg",
-      "label": "A.S.D. CODOGNO BAS. `67",
-      "value": "359"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/5d9a261e-f8a2-4672-e66f-8fb7a851095d.jpg",
+      "label": "BOLOGNA ATHLETICS A.S.D.",
+      "value": "348"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/d444b5d6-e7b7-882c-c054-d868ea9d8977.jpg",
-      "label": "BRESCIA BASEBALL  SOFTBALL  ASS. SPORT. DIL.",
-      "value": "598"
+      "image": "https://static.wbsc.org/upload/15e17f14-1564-cf9d-3db7-2a502ccd9535.png",
+      "label": "POVIGLIO BASEBALL A.S.D.",
+      "value": "364"
     },
     {
       "type": "team",
@@ -36,5 +36,16 @@
       "label": "Italy NT",
       "value": "2"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 17,
+    "0-1": 22,
+    "0-2": 39,
+    "1-0": 12,
+    "1-1": 21,
+    "1-2": 47,
+    "2-0": 343,
+    "2-1": 187,
+    "2-2": 223
+  }
 }

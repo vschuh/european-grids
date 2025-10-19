@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "tournament",
+      "label": "Women's Softball European Championship (EU)",
+      "value": "EU-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "RF (min 1 PA)",
+      "value": "RF"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/RUS.svg",
+      "label": "Russia NT",
+      "value": "242",
+      "federation_id": 242
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/24be214e-4c82-4f83-8fa3-56760624a195.jpg",
+      "label": "Quick Amersfoort Softball",
+      "value": "1308"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/450c82c4-90bc-6b3d-d1c7-88a8f4d96464.png",
+      "label": "Hoboken Pioneers",
+      "value": "1353"
+    }
+  ],
+  "answers": {
+    "0-0": 16,
+    "0-1": 13,
+    "0-2": 46,
+    "1-0": 4,
+    "1-1": 14,
+    "1-2": 30,
+    "2-0": 9,
+    "2-1": 113,
+    "2-2": 48
+  }
+}

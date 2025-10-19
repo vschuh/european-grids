@@ -1,0 +1,54 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/26b428e0-3173-0f98-e54c-92274ddfcdf0.jpg",
+      "label": "Thunderbirds",
+      "value": "1372"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ISR.svg",
+      "label": "Israel NT",
+      "value": "33",
+      "federation_id": 33
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/DEN.svg",
+      "label": "Denmark NT",
+      "value": "149",
+      "federation_id": 149
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-22 Women’s Softball European Championship (EU)",
+      "value": "EU-U-22-EURO-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup Winners Cup “B” (EU)",
+      "value": "EU-WINNERS-CUP-B-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
+    }
+  ],
+  "answers": {
+    "0-0": 4,
+    "0-1": 23,
+    "0-2": 13,
+    "1-0": 13,
+    "1-1": 4,
+    "1-2": 6,
+    "2-0": 8,
+    "2-1": 68,
+    "2-2": 65
+  }
+}

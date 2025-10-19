@@ -1,14 +1,34 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "RF (min 1 PA)",
-      "value": "RF"
+      "type": "seasonal_pitching_ip",
+      "label": "35 IP+ Season",
+      "value": 105
     },
     {
-      "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga BB (CZ)",
+      "value": "CZE-EXL",
+      "federation_id": 6
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/dd134970-0bd6-d5fd-0abc-a138fc7d6868.jpg",
+      "label": "Arrows Ostrava",
+      "value": "1605"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2b4c017d-41ab-0f88-0c43-a63a6080e50e.png",
+      "label": "Technika Brno",
+      "value": "2065"
     },
     {
       "type": "team",
@@ -17,35 +37,15 @@
       "value": "6"
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/1ad273ca-49c9-52b7-3330-5aae326481f9.png",
-      "label": "Třebíč Nuclears",
-      "value": "2067"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/e0cdbe49-5118-1882-4882-f10fd522553d.png",
-      "label": "SaBaT Praha",
-      "value": "2074"
-    },
-    {
-      "type": "tournament",
-      "label": "Extraliga SB (CZ)",
-      "value": "W-EXT-L",
-      "federation_id": 148
-    }
-  ],
   "answers": {
-    "0-0": 72,
-    "0-1": 93,
-    "0-2": 35,
-    "1-0": 99,
-    "1-1": 114,
-    "1-2": 29,
-    "2-0": 158,
-    "2-1": 211,
-    "2-2": 102
+    "0-0": 18,
+    "0-1": 76,
+    "0-2": 43,
+    "1-0": 7,
+    "1-1": 48,
+    "1-2": 45,
+    "2-0": 93,
+    "2-1": 408,
+    "2-2": 159
   }
 }

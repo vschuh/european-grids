@@ -1,51 +1,50 @@
 {
   "cols": [
     {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ad49a1e0-b481-4a1c-5780-9a7e8693fae9.png",
+      "label": "Traiskirchen Grasshoppers",
+      "value": "1226"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8594b98-58ba-b8a6-5518-10de4ae89d9d.png",
+      "label": "Wr. Neustadt Diving Ducks",
+      "value": "1227"
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball Bundesliga (AT)",
+      "value": "BB-BUNDESLIGA",
+      "federation_id": 8
+    }
+  ],
+  "rows": [
+    {
       "type": "position",
       "label": "LF (min 1 PA)",
       "value": "LF"
     },
     {
+      "type": "nationality",
+      "label": "Nationality: USA",
+      "value": "USA"
+    },
+    {
       "type": "year",
       "label": "Played in 2021 season",
       "value": 2021
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png",
-      "label": "Attnang-Puchheim Athletics",
-      "value": "1224"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
-      "label": "Vienna Wanderers",
-      "value": "1222"
-    },
-    {
-      "type": "tournament",
-      "label": "Softball Bundesliga (AT)",
-      "value": "SB-BUNDESLIGA",
-      "federation_id": 8
     }
   ],
   "answers": {
-    "0-0": 79,
-    "0-1": 35,
-    "0-2": 26,
-    "1-0": 84,
-    "1-1": 56,
-    "1-2": 62,
-    "2-0": 109,
-    "2-1": 84,
-    "2-2": 63
+    "0-0": 52,
+    "0-1": 88,
+    "0-2": 213,
+    "1-0": 6,
+    "1-1": 20,
+    "1-2": 43,
+    "2-0": 32,
+    "2-1": 51,
+    "2-2": 234
   }
 }

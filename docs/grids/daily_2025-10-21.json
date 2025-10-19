@@ -1,14 +1,33 @@
 {
   "cols": [
     {
-      "type": "seasonal_wOBA",
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25
+      "type": "nationality",
+      "label": "Nationality: ITA",
+      "value": "ITA"
     },
     {
-      "type": "seasonal_pitching_k",
-      "label": "35k+ Season",
-      "value": 35
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1d426774-e611-8acf-6a0c-5eace0905fcc.jpg",
+      "label": "NEW RIMINI BASEBALL SOFTBALL S.S.D. ARL",
+      "value": "1286"
+    },
+    {
+      "type": "seasonal_rbi",
+      "label": "15+ RBI Season",
+      "value": 15
     },
     {
       "type": "tournament",
@@ -17,24 +36,15 @@
       "federation_id": 278
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/e0cdbe49-5118-1882-4882-f10fd522553d.png",
-      "label": "SaBaT Praha",
-      "value": "2074"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/dfb15b29-c3d5-e17b-16ce-fea5adbc7c83.png",
-      "label": "Stabroek Chicaboo`s",
-      "value": "1361"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8"
-    }
-  ]
+  "answers": {
+    "0-0": 48,
+    "0-1": 43,
+    "0-2": 5,
+    "1-0": 754,
+    "1-1": 2782,
+    "1-2": 167,
+    "2-0": 32,
+    "2-1": 476,
+    "2-2": 32
+  }
 }

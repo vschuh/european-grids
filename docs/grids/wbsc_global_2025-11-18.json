@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c0bd7be4-e313-1ce3-fd74-137717685f9f.png",
+      "label": "HCAW",
+      "value": "1264"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NCA.svg",
+      "label": "Nicaragua NT",
+      "value": "97",
+      "federation_id": 97
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
+      "label": "Tempo Praha",
+      "value": "2066"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-18 Baseball World Cup",
+      "value": "U-18",
+      "federation_id": 0
+    },
+    {
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    }
+  ],
+  "answers": {
+    "0-0": 11,
+    "0-1": 39,
+    "0-2": 3,
+    "1-0": 25,
+    "1-1": 33,
+    "1-2": 98,
+    "2-0": 54,
+    "2-1": 84,
+    "2-2": 178
+  }
+}

@@ -1,51 +1,50 @@
 {
   "cols": [
     {
+      "type": "nationality",
+      "label": "Nationality: BEL",
+      "value": "BEL"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    },
+    {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
-      "label": "Vienna Wanderers",
-      "value": "1222"
-    },
-    {
-      "type": "tournament",
-      "label": "Baseball Bundesliga (AT)",
-      "value": "BB-BUNDESLIGA",
-      "federation_id": 8
-    },
-    {
-      "type": "seasonal_wOBA",
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/1943295d-9bf7-e5b8-291c-021b311137ba.png",
-      "label": "Vienna Metrostars",
-      "value": "1223"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a39fd931-7c83-ffd7-63b9-d21f6f0851d9.jpg",
+      "label": "Brasschaat Braves",
+      "value": "1414"
     },
     {
       "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
+      "label": "C (min 1 PA)",
+      "value": "C"
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 European Baseball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-M-BB",
+      "federation_id": 278
     }
   ],
   "answers": {
-    "0-0": 16,
-    "0-1": 47,
-    "0-2": 73,
-    "1-0": 62,
-    "1-1": 103,
-    "1-2": 210,
-    "2-0": 44,
-    "2-1": 145,
-    "2-2": 9234
+    "0-0": 181,
+    "0-1": 58,
+    "0-2": 3,
+    "1-0": 969,
+    "1-1": 4029,
+    "1-2": 156,
+    "2-0": 36,
+    "2-1": 379,
+    "2-2": 52
   }
 }

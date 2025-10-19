@@ -1,51 +1,50 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
-    },
-    {
-      "type": "position",
-      "label": "RF (min 1 PA)",
-      "value": "RF"
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1943295d-9bf7-e5b8-291c-021b311137ba.png",
+      "label": "Vienna Metrostars",
+      "value": "1223"
     },
     {
       "type": "tournament",
-      "label": "U-18 Women's European Softball Championship (EU)",
-      "value": "EU-U-18-EURO-CHAMP-W-SB",
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
       "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "LF (min 1 PA)",
+      "value": "LF"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/552eb909-5775-5ced-11cd-899ef3bdc14e.jpg",
-      "label": "THUNDERS & DRAGONS  SOFTBALL -  BASEBALL A.S.D. CASTELLANA",
-      "value": "346"
+      "image": "https://static.wbsc.org/upload/d84201d1-024c-068e-a445-3ebb5216a8c4.png",
+      "label": "Schwechat Blue Bats",
+      "value": "1261"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/fa0ea240-a831-b605-ddb9-629eb0bd8e56.jpg",
-      "label": "OLD PARMA BASEBALL SOFTBALL CLUB A.S.D.",
-      "value": "407"
+      "type": "nationality",
+      "label": "Nationality: AUT",
+      "value": "AUT"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/GER.svg",
-      "label": "Germany NT",
-      "value": "18"
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
     }
   ],
   "answers": {
-    "0-0": 35,
-    "0-1": 61,
-    "0-2": 4,
-    "1-0": 35,
-    "1-1": 78,
-    "1-2": 3,
-    "2-0": 65,
-    "2-1": 126,
-    "2-2": 44
+    "0-0": 10,
+    "0-1": 5,
+    "0-2": 56,
+    "1-0": 93,
+    "1-1": 43,
+    "1-2": 639,
+    "2-0": 50,
+    "2-1": 250,
+    "2-2": 10457
   }
 }

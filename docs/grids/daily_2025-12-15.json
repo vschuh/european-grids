@@ -1,50 +1,51 @@
 {
   "cols": [
     {
-      "type": "nationality",
-      "label": "Nationality: ITA",
-      "value": "ITA"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
-    },
-    {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2"
+      "image": "https://static.wbsc.org/upload/934e9ec8-bec3-79bd-a8a8-b040f4161d55.png",
+      "label": "Kinheim",
+      "value": "1263"
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 European Baseball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_ops",
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "value": 1
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/b5fd66eb-b823-6714-12d7-69aa802dcc59.png",
-      "label": "A.S.D. LONGBRIDGE 2000 BASEBALL CLUB",
-      "value": "351"
+      "image": "https://static.wbsc.org/upload/b83640ca-dd8f-2651-7ed7-c1c324b9ef58.png",
+      "label": "RCH-Pinguïns",
+      "value": "1521"
     },
     {
-      "type": "position",
-      "label": "RF (min 1 PA)",
-      "value": "RF"
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
     },
     {
-      "type": "tournament",
-      "label": "Baseball European Championship (EU)",
-      "value": "EU-CHAMP-M-BB",
-      "federation_id": 278
+      "type": "seasonal_avg",
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
     }
   ],
   "answers": {
-    "0-0": 86,
-    "0-1": 61,
-    "0-2": 22,
-    "1-0": 2831,
-    "1-1": 7973,
-    "1-2": 328,
-    "2-0": 47,
-    "2-1": 397,
-    "2-2": 48
+    "0-0": 5,
+    "0-1": 4,
+    "0-2": 3,
+    "1-0": 33,
+    "1-1": 52,
+    "1-2": 207,
+    "2-0": 22,
+    "2-1": 319,
+    "2-2": 14394
   }
 }

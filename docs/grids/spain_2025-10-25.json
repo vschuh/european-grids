@@ -1,15 +1,35 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_fip",
-      "label": "<=2.50 FIP Season (min. 10 ip)",
-      "value": 3,
-      "condition": "max"
+      "type": "seasonal_avg",
+      "label": ">=0.300 avg Season (min. 10 pa)",
+      "value": 0.3,
+      "condition": "min"
     },
     {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Béisbol Oro (ESP)",
+      "value": "ESP-LNDH-BB",
+      "federation_id": 39
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/30da3795-69a2-d2ec-66bf-7059cd80b093.jpg",
+      "label": "Astros Valencia",
+      "value": "1433"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/ac5c9f7f-d4d3-57b0-22f3-8490ad944e4c.png",
+      "label": "Club Béisbol Barcelona",
+      "value": "1648"
     },
     {
       "type": "team",
@@ -18,24 +38,15 @@
       "value": "39"
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/f07f3dfb-77ee-f3e0-0242-7325665efdec.jpg",
-      "label": "Dridma Rivas Sófbol Club",
-      "value": "1625"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/01289c10-7afa-a307-4c35-8395b5f03899.jpg",
-      "label": "Miralbueno Zaragoza",
-      "value": "1629"
-    },
-    {
-      "type": "tournament",
-      "label": "Liga Nacional de Sófbol Oro (ESP)",
-      "value": "ESP-LNDH-SB",
-      "federation_id": 39
-    }
-  ]
+  "answers": {
+    "0-0": 49,
+    "0-1": 65,
+    "0-2": 48,
+    "1-0": 43,
+    "1-1": 63,
+    "1-2": 45,
+    "2-0": 204,
+    "2-1": 175,
+    "2-2": 76
+  }
 }

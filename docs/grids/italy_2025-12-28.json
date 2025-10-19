@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
     },
     {
-      "type": "position",
-      "label": "1B (min 1 PA)",
-      "value": "1B"
-    },
-    {
-      "type": "tournament",
-      "label": "Serie A1 Softball (IT)",
-      "value": "ITA-SERIE-A1-F-SB",
-      "federation_id": 2
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/ef8ef30f-13d8-e1c8-7d06-5b8cb737fefa.jpg",
-      "label": "FIORENTINA BASEBALL  S.S.D. ARL",
-      "value": "349"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/59758832-8743-44aa-9abc-c16b9bc847fc.jpg",
-      "label": "SARONNO SOFTBALL  E BASEBALL A.S.D.",
-      "value": "390"
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "2"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/552eb909-5775-5ced-11cd-899ef3bdc14e.jpg",
+      "label": "THUNDERS & DRAGONS  SOFTBALL -  BASEBALL A.S.D. CASTELLANA",
+      "value": "346"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/204ee461-b8c4-8f9e-e8c4-6138b8fa9cc8.jpg",
+      "label": "A.S.D. NETTUNO B.C. 1945",
+      "value": "355"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ],
   "answers": {
-    "0-0": 30,
-    "0-1": 37,
-    "0-2": 9,
-    "1-0": 34,
-    "1-1": 44,
-    "1-2": 90,
-    "2-0": 218,
-    "2-1": 247,
-    "2-2": 125
+    "0-0": 33,
+    "0-1": 54,
+    "0-2": 11,
+    "1-0": 53,
+    "1-1": 56,
+    "1-2": 30,
+    "2-0": 619,
+    "2-1": 1065,
+    "2-2": 223
   }
 }

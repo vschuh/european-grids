@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "P (min 1 PA)",
-      "value": "P"
+      "type": "seasonal_rbi",
+      "label": "15+ RBI Season",
+      "value": 15
     },
     {
-      "type": "seasonal_wOBA",
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25
-    },
-    {
-      "type": "tournament",
-      "label": "Extraliga SB (CZ)",
-      "value": "W-EXT-L",
-      "federation_id": 148
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/0df1b8ac-31d1-a8bd-dae5-db1b7c541b03.jpg",
-      "label": "Painbusters Most",
-      "value": "1878"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/dd134970-0bd6-d5fd-0abc-a138fc7d6868.jpg",
-      "label": "Arrows Ostrava",
-      "value": "1605"
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "6"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg",
+      "label": "SK Joudrs Praha",
+      "value": "1348"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/0df1b8ac-31d1-a8bd-dae5-db1b7c541b03.jpg",
+      "label": "Painbusters Most",
+      "value": "1878"
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
+    }
+  ],
   "answers": {
-    "0-0": 21,
-    "0-1": 36,
-    "0-2": 14,
-    "1-0": 84,
-    "1-1": 91,
-    "1-2": 20,
-    "2-0": 387,
-    "2-1": 454,
+    "0-0": 35,
+    "0-1": 166,
+    "0-2": 63,
+    "1-0": 13,
+    "1-1": 46,
+    "1-2": 17,
+    "2-0": 57,
+    "2-1": 211,
     "2-2": 102
   }
 }

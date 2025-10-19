@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143",
+      "federation_id": 143
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/83223b64-9ad3-657e-87fb-7698ccd027e7.jpg",
+      "label": "Skövde BSK",
+      "value": "309"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/cc315dc7-d0a5-5f89-e2f6-2273c2f548e9.png",
+      "label": "Team Sweden W",
+      "value": "1811"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-18 Women's European Softball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "tournament",
+      "label": "U-22 Women’s Softball European Championship (EU)",
+      "value": "EU-U-22-EURO-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
+    }
+  ],
+  "answers": {
+    "0-0": 27,
+    "0-1": 4,
+    "0-2": 24,
+    "1-0": 26,
+    "1-1": 3,
+    "1-2": 7,
+    "2-0": 224,
+    "2-1": 37,
+    "2-2": 28
+  }
+}

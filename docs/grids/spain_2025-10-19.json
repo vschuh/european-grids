@@ -1,15 +1,15 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "LF (min 1 PA)",
-      "value": "LF"
+      "type": "seasonal_pitching_k",
+      "label": ">=35k Season",
+      "value": 35,
+      "condition": "min"
     },
     {
-      "type": "seasonal_avg",
-      "label": ">=0.300 avg Season (min. 10 pa)",
-      "value": 0.3,
-      "condition": "min"
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
     },
     {
       "type": "tournament",
@@ -21,15 +21,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/2385052c-b349-ee0a-0368-a3c409cef452.png",
-      "label": "CBS Antorcha Valencia",
-      "value": "1653"
+      "image": "https://static.wbsc.org/upload/f62896a9-35c6-1383-7685-484ec01f3358.jpg",
+      "label": "CBS Capitalinos Gran Canaria",
+      "value": "1628"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/2648277a-0a77-53ab-7dde-0020537acc83.jpeg",
-      "label": "CS Fénix Valencia",
-      "value": "1624"
+      "image": "https://static.wbsc.org/upload/01289c10-7afa-a307-4c35-8395b5f03899.jpg",
+      "label": "Miralbueno Zaragoza",
+      "value": "1629"
     },
     {
       "type": "team",
@@ -37,5 +37,16 @@
       "label": "Spain NT",
       "value": "39"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 3,
+    "0-1": 39,
+    "0-2": 32,
+    "1-0": 4,
+    "1-1": 37,
+    "1-2": 15,
+    "2-0": 42,
+    "2-1": 113,
+    "2-2": 77
+  }
 }

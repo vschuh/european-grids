@@ -1,10 +1,9 @@
 {
   "cols": [
     {
-      "type": "seasonal_rbi",
-      "label": ">=15 RBI Season",
-      "value": 15,
-      "condition": "min"
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
     },
     {
       "type": "year",
@@ -15,11 +14,16 @@
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
       "label": "Czechia NT",
-      "value": "6",
-      "federation_id": 6
+      "value": "6"
     }
   ],
   "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/0df1b8ac-31d1-a8bd-dae5-db1b7c541b03.jpg",
+      "label": "Painbusters Most",
+      "value": "1878"
+    },
     {
       "type": "team",
       "image": "https://static.wbsc.org/upload/271efdd4-78f7-782b-19e9-ca7fd00cfee2.png",
@@ -27,16 +31,21 @@
       "value": "2063"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/2b4c017d-41ab-0f88-0c43-a63a6080e50e.png",
-      "label": "Technika Brno",
-      "value": "2065"
-    },
-    {
       "type": "tournament",
-      "label": "Extraliga BB (CZ)",
-      "value": "CZE-EXL",
-      "federation_id": 6
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 31,
+    "0-1": 22,
+    "0-2": 17,
+    "1-0": 75,
+    "1-1": 91,
+    "1-2": 49,
+    "2-0": 139,
+    "2-1": 82,
+    "2-2": 102
+  }
 }

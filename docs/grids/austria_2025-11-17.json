@@ -1,15 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_hits",
-      "label": ">=15 Hit Season",
-      "value": 15,
-      "condition": "min"
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
     },
     {
-      "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
     },
     {
       "type": "tournament",
@@ -21,22 +20,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/3a067f16-f428-d6b9-450d-7ff6132d4207.png",
-      "label": "Feldkirch Cardinals",
-      "value": "1229"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a8c54b1a-0050-5d18-a2f6-2059dde33487.png",
+      "label": "Dornbirn Indians",
+      "value": "1225"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
-      "label": "Vienna Wanderers",
-      "value": "1222"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ad49a1e0-b481-4a1c-5780-9a7e8693fae9.png",
+      "label": "Traiskirchen Grasshoppers",
+      "value": "1226"
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
       "label": "Austria NT",
-      "value": "8",
-      "federation_id": 8
+      "value": "8"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 91,
+    "0-1": 5,
+    "0-2": 41,
+    "1-0": 53,
+    "1-1": 2,
+    "1-2": 42,
+    "2-0": 221,
+    "2-1": 18,
+    "2-2": 103
+  }
 }

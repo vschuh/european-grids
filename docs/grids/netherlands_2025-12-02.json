@@ -1,20 +1,20 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">0.350 OBP Season (min. 10 pa)",
-      "value": 0.35
+      "type": "position",
+      "label": "LF (min 1 PA)",
+      "value": "LF"
     },
     {
-      "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
-      "label": "Netherlands NT",
-      "value": "1"
+      "type": "tournament",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
+      "federation_id": 1
     }
   ],
   "rows": [
@@ -26,26 +26,26 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/24be214e-4c82-4f83-8fa3-56760624a195.jpg",
-      "label": "Quick Amersfoort Softball",
-      "value": "1308"
+      "image": "https://static.wbsc.org/upload/934e9ec8-bec3-79bd-a8a8-b040f4161d55.png",
+      "label": "Kinheim",
+      "value": "1263"
     },
     {
-      "type": "tournament",
-      "label": "Hoofdklasse Honkbal (NL)",
-      "value": "HOOFDKLASSE-HONKBAL",
-      "federation_id": 1
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
     }
   ],
   "answers": {
-    "0-0": 19,
-    "0-1": 49,
-    "0-2": 48,
-    "1-0": 14,
-    "1-1": 11,
-    "1-2": 14,
-    "2-0": 77,
-    "2-1": 237,
+    "0-0": 32,
+    "0-1": 52,
+    "0-2": 90,
+    "1-0": 38,
+    "1-1": 40,
+    "1-2": 79,
+    "2-0": 249,
+    "2-1": 328,
     "2-2": 149
   }
 }

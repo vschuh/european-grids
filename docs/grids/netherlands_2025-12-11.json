@@ -1,34 +1,34 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">0.300 avg Season (min. 10 pa)",
-      "value": 0.3
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
     },
     {
-      "type": "seasonal_sb",
-      "label": "10+ SB Season",
-      "value": 10
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
       "type": "tournament",
-      "label": "Hoofdklasse Honkbal (NL)",
-      "value": "HOOFDKLASSE-HONKBAL",
+      "label": "Hoofdklasse Softbal (NL)",
+      "value": "HOOFDKLASSE-SOFTBAL",
       "federation_id": 1
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/bdc06e75-2859-a6ba-74da-9a6e16207d72.png",
-      "label": "Twins Oosterhout",
-      "value": "1269"
+      "image": "https://static.wbsc.org/upload/2771d01c-919e-c952-c89c-0b6d09fae4a0.png",
+      "label": "Red Lions",
+      "value": "2596"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/7650db8c-fd99-d90e-fe5e-20bd94dff0d3.jpg",
-      "label": "Quick Amersfoort Baseball",
-      "value": "1267"
+      "image": "https://static.wbsc.org/upload/573978ca-25c1-9166-27d3-49a2572bcbe8.png",
+      "label": "Euro Stars",
+      "value": "2318"
     },
     {
       "type": "team",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 23,
-    "0-1": 10,
-    "0-2": 71,
-    "1-0": 17,
-    "1-1": 6,
-    "1-2": 83,
-    "2-0": 289,
-    "2-1": 45,
-    "2-2": 149
+    "0-0": 0,
+    "0-1": 6,
+    "0-2": 17,
+    "1-0": 1,
+    "1-1": 12,
+    "1-2": 24,
+    "2-0": 7,
+    "2-1": 203,
+    "2-2": 111
   }
 }

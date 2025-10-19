@@ -2,19 +2,19 @@
   "cols": [
     {
       "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
-      "type": "seasonal_pitching_ip",
-      "label": "50 IP+ Season",
-      "value": 105
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
     },
     {
-      "type": "tournament",
-      "label": "Softball Bundesliga (AT)",
-      "value": "SB-BUNDESLIGA",
-      "federation_id": 8
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
     }
   ],
   "rows": [
@@ -26,26 +26,26 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a8c54b1a-0050-5d18-a2f6-2059dde33487.png",
-      "label": "Dornbirn Indians",
-      "value": "1225"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/3a067f16-f428-d6b9-450d-7ff6132d4207.png",
+      "label": "Feldkirch Cardinals",
+      "value": "1229"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8"
+      "type": "tournament",
+      "label": "Softball Bundesliga (AT)",
+      "value": "SB-BUNDESLIGA",
+      "federation_id": 8
     }
   ],
   "answers": {
-    "0-0": 56,
-    "0-1": 16,
-    "0-2": 32,
-    "1-0": 72,
-    "1-1": 13,
-    "1-2": 41,
-    "2-0": 173,
-    "2-1": 39,
+    "0-0": 44,
+    "0-1": 112,
+    "0-2": 62,
+    "1-0": 49,
+    "1-1": 70,
+    "1-2": 19,
+    "2-0": 50,
+    "2-1": 106,
     "2-2": 63
   }
 }

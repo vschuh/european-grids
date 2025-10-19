@@ -2,33 +2,13 @@
   "cols": [
     {
       "type": "seasonal_rbi",
-      "label": "15+ RBI Season",
-      "value": 15
+      "label": "20+ RBI Season",
+      "value": 20
     },
     {
-      "type": "position",
-      "label": "LF (min 1 PA)",
-      "value": "LF"
-    },
-    {
-      "type": "tournament",
-      "label": "Extraliga SB (CZ)",
-      "value": "W-EXT-L",
-      "federation_id": 148
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg",
-      "label": "SK Joudrs Praha",
-      "value": "1348"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/0df1b8ac-31d1-a8bd-dae5-db1b7c541b03.jpg",
-      "label": "Painbusters Most",
-      "value": "1878"
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "6"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/a7dffba8-f8b9-2a89-1883-b07093f1e5b4.png",
+      "label": "Kotlářka Praha",
+      "value": "2071"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2b4c017d-41ab-0f88-0c43-a63a6080e50e.png",
+      "label": "Technika Brno",
+      "value": "2065"
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
+    }
+  ],
   "answers": {
-    "0-0": 35,
-    "0-1": 130,
-    "0-2": 44,
-    "1-0": 13,
-    "1-1": 46,
-    "1-2": 14,
-    "2-0": 159,
-    "2-1": 393,
+    "0-0": 5,
+    "0-1": 11,
+    "0-2": 27,
+    "1-0": 10,
+    "1-1": 6,
+    "1-2": 17,
+    "2-0": 21,
+    "2-1": 84,
     "2-2": 102
   }
 }

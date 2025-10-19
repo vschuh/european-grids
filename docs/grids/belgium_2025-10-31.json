@@ -1,14 +1,34 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "P (min 1 PA)",
-      "value": "P"
+      "type": "seasonal_ops",
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "value": 1
     },
     {
-      "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f7f05882-7810-d6a2-6bd7-06648e0a5fa8.png",
+      "label": "Beveren Lions",
+      "value": "1480"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a39fd931-7c83-ffd7-63b9-d21f6f0851d9.jpg",
+      "label": "Brasschaat Braves",
+      "value": "1414"
     },
     {
       "type": "tournament",
@@ -17,24 +37,15 @@
       "federation_id": 143
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/bd187a02-55c9-dbf3-3a25-668902bfcd8d.png",
-      "label": "Borgerhout Squirrels",
-      "value": "1473"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/b984f263-2924-2e02-6b23-7257a92a820c.png",
-      "label": "Gent Knights",
-      "value": "1475"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
-      "label": "Belgium NT",
-      "value": "143"
-    }
-  ]
+  "answers": {
+    "0-0": 53,
+    "0-1": 5,
+    "0-2": 23,
+    "1-0": 95,
+    "1-1": 35,
+    "1-2": 47,
+    "2-0": 181,
+    "2-1": 138,
+    "2-2": 100
+  }
 }

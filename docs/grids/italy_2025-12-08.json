@@ -1,14 +1,34 @@
 {
   "cols": [
     {
+      "type": "seasonal_avg",
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
+    },
+    {
       "type": "seasonal_rbi",
       "label": "20+ RBI Season",
       "value": 20
     },
     {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/2ce5351b-04a5-b1a2-0bcd-6f9ab3ee1977.jpg",
+      "label": "CERVIGNANO BASEBALL E SOFTBALL A.S.D.",
+      "value": "343"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/4452f9c9-4ae5-8a8f-94e6-6fc14dcf21a2.jpg",
+      "label": "A.S.D.  CATALANA BASEBALL SOFTBALL",
+      "value": "384"
     },
     {
       "type": "team",
@@ -17,35 +37,15 @@
       "value": "2"
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/fa0ea240-a831-b605-ddb9-629eb0bd8e56.jpg",
-      "label": "OLD PARMA BASEBALL SOFTBALL CLUB A.S.D.",
-      "value": "407"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a58c308c-b5b8-113c-a189-141d486177fd.jpg",
-      "label": "BOLLATE SOFTBALL 1969 A.S.D.",
-      "value": "387"
-    },
-    {
-      "type": "tournament",
-      "label": "Serie A1 Softball (IT)",
-      "value": "ITA-SERIE-A1-F-SB",
-      "federation_id": 2
-    }
-  ],
   "answers": {
-    "0-0": 12,
-    "0-1": 53,
-    "0-2": 12,
-    "1-0": 29,
-    "1-1": 74,
-    "1-2": 42,
-    "2-0": 129,
-    "2-1": 414,
-    "2-2": 125
+    "0-0": 20,
+    "0-1": 6,
+    "0-2": 38,
+    "1-0": 22,
+    "1-1": 11,
+    "1-2": 30,
+    "2-0": 343,
+    "2-1": 111,
+    "2-2": 223
   }
 }

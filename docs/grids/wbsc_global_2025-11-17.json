@@ -1,0 +1,54 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/USA.svg",
+      "label": "USA NT",
+      "value": "126",
+      "federation_id": 126
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CUB.svg",
+      "label": "Cuba NT",
+      "value": "121",
+      "federation_id": 121
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/DOM.svg",
+      "label": "Dominican Republic NT",
+      "value": "128",
+      "federation_id": 128
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women`s Baseball World Cup",
+      "value": "WBWC",
+      "federation_id": 0
+    },
+    {
+      "type": "position",
+      "label": "RF (min 1 PA)",
+      "value": "RF"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    }
+  ],
+  "answers": {
+    "0-0": 61,
+    "0-1": 55,
+    "0-2": 20,
+    "1-0": 114,
+    "1-1": 78,
+    "1-2": 99,
+    "2-0": 167,
+    "2-1": 147,
+    "2-2": 150
+  }
+}

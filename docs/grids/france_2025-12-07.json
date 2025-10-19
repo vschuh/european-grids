@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_sb",
-      "label": "10+ SB Season",
-      "value": 10
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
     },
     {
-      "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
-      "label": "France NT",
-      "value": "14"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/07067501-9be9-9d54-0187-4b5ce1bc028d.jpg",
-      "label": "Les Pharaons d`Evry-Courcouronnes",
-      "value": "1367"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/e20fa02b-5959-2c18-2def-c682eb6a540f.jpg",
-      "label": "Les Lions de Savigny-sur-Orge",
-      "value": "1715"
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
       "type": "tournament",
@@ -37,15 +17,35 @@
       "federation_id": 14
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c72832ba-21d5-2872-9a0c-2051b1cac815.png",
+      "label": "Cougars de Montigny-le-Bretonneux",
+      "value": "1716"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/ff7815ce-79aa-def3-c3c1-e7f2065bd8ec.jpg",
+      "label": "Les Rabbits de Clapiers-Jacou",
+      "value": "1514"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
+    }
+  ],
   "answers": {
-    "0-0": 5,
-    "0-1": 29,
-    "0-2": 21,
-    "1-0": 7,
-    "1-1": 37,
-    "1-2": 19,
-    "2-0": 4,
-    "2-1": 32,
+    "0-0": 58,
+    "0-1": 32,
+    "0-2": 3,
+    "1-0": 16,
+    "1-1": 9,
+    "1-2": 18,
+    "2-0": 203,
+    "2-1": 120,
     "2-2": 41
   }
 }

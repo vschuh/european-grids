@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "type": "seasonal_runs",
+      "label": "20+ Runs Season",
+      "value": 20
     },
     {
-      "type": "position",
-      "label": "P (min 1 PA)",
-      "value": "P"
+      "type": "seasonal_pitching_k",
+      "label": "35k+ Season",
+      "value": 35
     },
     {
       "type": "tournament",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/d84201d1-024c-068e-a445-3ebb5216a8c4.png",
-      "label": "Schwechat Blue Bats",
-      "value": "1261"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/3a067f16-f428-d6b9-450d-7ff6132d4207.png",
+      "label": "Feldkirch Cardinals",
+      "value": "1229"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a8c54b1a-0050-5d18-a2f6-2059dde33487.png",
-      "label": "Dornbirn Indians",
-      "value": "1225"
+      "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png",
+      "label": "Attnang-Puchheim Athletics",
+      "value": "1224"
     },
     {
       "type": "team",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 43,
-    "0-1": 65,
-    "0-2": 69,
-    "1-0": 72,
-    "1-1": 91,
-    "1-2": 41,
-    "2-0": 181,
-    "2-1": 221,
+    "0-0": 9,
+    "0-1": 10,
+    "0-2": 34,
+    "1-0": 17,
+    "1-1": 9,
+    "1-2": 26,
+    "2-0": 62,
+    "2-1": 34,
     "2-2": 103
   }
 }

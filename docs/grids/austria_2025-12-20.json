@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_ip",
-      "label": "50 IP+ Season",
-      "value": 105
-    },
-    {
       "type": "seasonal_avg",
-      "label": ">0.400 OBP Season (min. 10 pa)",
-      "value": 0.4
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
     },
     {
-      "type": "tournament",
-      "label": "Baseball Bundesliga (AT)",
-      "value": "BB-BUNDESLIGA",
-      "federation_id": 8
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/d84201d1-024c-068e-a445-3ebb5216a8c4.png",
-      "label": "Schwechat Blue Bats",
-      "value": "1261"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png",
-      "label": "Attnang-Puchheim Athletics",
-      "value": "1224"
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "8"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/3a067f16-f428-d6b9-450d-7ff6132d4207.png",
+      "label": "Feldkirch Cardinals",
+      "value": "1229"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png",
+      "label": "Attnang-Puchheim Athletics",
+      "value": "1224"
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball Bundesliga (AT)",
+      "value": "BB-BUNDESLIGA",
+      "federation_id": 8
+    }
+  ],
   "answers": {
-    "0-0": 11,
-    "0-1": 20,
-    "0-2": 69,
-    "1-0": 6,
-    "1-1": 34,
+    "0-0": 57,
+    "0-1": 72,
+    "0-2": 19,
+    "1-0": 54,
+    "1-1": 76,
     "1-2": 26,
-    "2-0": 39,
-    "2-1": 161,
+    "2-0": 208,
+    "2-1": 224,
     "2-2": 103
   }
 }

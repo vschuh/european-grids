@@ -1,50 +1,51 @@
 {
   "cols": [
     {
-      "type": "nationality",
-      "label": "Nationality: NED",
-      "value": "NED"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
-    },
-    {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
-      "label": "Belgium NT",
-      "value": "143"
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
+    },
+    {
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
+    },
+    {
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/bd187a02-55c9-dbf3-3a25-668902bfcd8d.png",
-      "label": "Borgerhout Squirrels",
-      "value": "1473"
+      "image": "https://static.wbsc.org/upload/e20fa02b-5959-2c18-2def-c682eb6a540f.jpg",
+      "label": "Les Lions de Savigny-sur-Orge",
+      "value": "1715"
     },
     {
-      "type": "position",
-      "label": "P (min 1 PA)",
-      "value": "P"
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1071d9a2-1565-7750-d6bd-c5b9217a804f.jpg",
+      "label": "Sénart Templiers",
+      "value": "1435"
     },
     {
       "type": "tournament",
-      "label": "Hoofdklasse Honkbal (NL)",
-      "value": "HOOFDKLASSE-HONKBAL",
-      "federation_id": 1
+      "label": "Women’s Softball European Cup Winners Cup “A” (EU)",
+      "value": "EU-WINNERS-CUP-A-W-SB",
+      "federation_id": 278
     }
   ],
   "answers": {
-    "0-0": 5,
-    "0-1": 42,
-    "0-2": 38,
-    "1-0": 1062,
-    "1-1": 4460,
-    "1-2": 235,
-    "2-0": 500,
-    "2-1": 294,
-    "2-2": 10
+    "0-0": 19,
+    "0-1": 14,
+    "0-2": 23,
+    "1-0": 24,
+    "1-1": 32,
+    "1-2": 39,
+    "2-0": 16,
+    "2-1": 195,
+    "2-2": 214
   }
 }

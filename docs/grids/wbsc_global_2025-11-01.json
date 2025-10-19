@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
+      "label": "SOFTBALL CLUB FORLI` A.S.D.",
+      "value": "395"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2",
+      "federation_id": 2
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/59758832-8743-44aa-9abc-c16b9bc847fc.jpg",
+      "label": "SARONNO SOFTBALL E BASEBALL A.S.D.",
+      "value": "390"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Softball Olympic Games",
+      "value": "OLYMPIC-SOFTBALL",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_triples",
+      "label": ">=5 Triples Season",
+      "value": 5,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    }
+  ],
+  "answers": {
+    "0-0": 10,
+    "0-1": 15,
+    "0-2": 5,
+    "1-0": 7,
+    "1-1": 27,
+    "1-2": 12,
+    "2-0": 46,
+    "2-1": 408,
+    "2-2": 59
+  }
+}

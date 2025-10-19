@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/83223b64-9ad3-657e-87fb-7698ccd027e7.jpg",
+      "label": "Skövde BSK",
+      "value": "309"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/IRL.svg",
+      "label": "Ireland NT",
+      "value": "21",
+      "federation_id": 21
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/cc315dc7-d0a5-5f89-e2f6-2273c2f548e9.png",
+      "label": "Team Sweden W",
+      "value": "1811"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-22 Women’s Softball European Championship (EU)",
+      "value": "EU-U-22-EURO-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_runs",
+      "label": ">=20 Runs Season",
+      "value": 20,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    }
+  ],
+  "answers": {
+    "0-0": 3,
+    "0-1": 22,
+    "0-2": 7,
+    "1-0": 14,
+    "1-1": 6,
+    "1-2": 8,
+    "2-0": 53,
+    "2-1": 82,
+    "2-2": 37
+  }
+}

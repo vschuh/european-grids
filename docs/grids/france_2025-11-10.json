@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
+      "type": "seasonal_pitching_ip",
+      "label": "35 IP+ Season",
+      "value": 105
     },
     {
-      "type": "seasonal_runs",
-      "label": "20+ Runs Season",
-      "value": 20
-    },
-    {
-      "type": "tournament",
-      "label": "Championnat de France D1 BB (FR)",
-      "value": "FRA-D1BB",
-      "federation_id": 14
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/54f7aee7-2dea-f878-4244-591fd30486d0.jpg",
-      "label": "Pirates de Béziers",
-      "value": "2309"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/c72832ba-21d5-2872-9a0c-2051b1cac815.png",
-      "label": "Cougars de Montigny-le-Bretonneux",
-      "value": "1716"
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "14"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/229a41eb-e61a-7ab8-e29f-3100fc34a2ce.jpg",
+      "label": "Les Comanches de Saint-Raphaël",
+      "value": "1352"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/83428e38-f463-52e1-0571-48f71aa9fc31.jpg",
+      "label": "Stade Toulousain Baseball Softball",
+      "value": "1713"
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France D1 BB (FR)",
+      "value": "FRA-D1BB",
+      "federation_id": 14
+    }
+  ],
   "answers": {
-    "0-0": 13,
-    "0-1": 3,
-    "0-2": 21,
-    "1-0": 32,
-    "1-1": 7,
-    "1-2": 26,
-    "2-0": 120,
-    "2-1": 25,
+    "0-0": 3,
+    "0-1": 27,
+    "0-2": 23,
+    "1-0": 4,
+    "1-1": 10,
+    "1-2": 14,
+    "2-0": 32,
+    "2-1": 69,
     "2-2": 85
   }
 }

@@ -1,42 +1,51 @@
 {
   "cols": [
     {
-      "type": "seasonal_runs",
-      "label": ">=15 Runs Season",
-      "value": 15,
-      "condition": "min"
+      "type": "seasonal_avg",
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
     },
     {
-      "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2",
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
       "federation_id": 2
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/004760b7-d768-4c26-2453-428db40dbc44.svg",
-      "label": "BASEBALL SOFTBALL CLUB GROSSETO 1952 S.S.D. A R.L.",
-      "value": "383"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/12f8bd4d-1eda-665a-5e81-446fa51508e2.jpg",
+      "label": "A.S.D. CODOGNO BAS. `67",
+      "value": "359"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/d444b5d6-e7b7-882c-c054-d868ea9d8977.jpg",
-      "label": "BRESCIA BASEBALL  SOFTBALL  ASS. SPORT. DIL.",
-      "value": "598"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e038a2d1-84e5-3d14-9e93-98eadfc2fb3f.jpg",
+      "label": "TORRE PEDRERA FALCONS BC ASS. SPORT. DILETT.",
+      "value": "381"
     },
     {
-      "type": "tournament",
-      "label": "Serie A1 Softball (IT)",
-      "value": "ITA-SERIE-A1-F-SB",
-      "federation_id": 2
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 22,
+    "0-1": 14,
+    "0-2": 45,
+    "1-0": 38,
+    "1-1": 26,
+    "1-2": 41,
+    "2-0": 343,
+    "2-1": 292,
+    "2-2": 223
+  }
 }

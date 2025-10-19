@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_rbi",
-      "label": "15+ RBI Season",
-      "value": 15
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
-      "type": "seasonal_runs",
-      "label": "20+ Runs Season",
-      "value": 20
+      "type": "position",
+      "label": "C (min 1 PA)",
+      "value": "C"
     },
     {
       "type": "tournament",
@@ -20,32 +20,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/a7dffba8-f8b9-2a89-1883-b07093f1e5b4.png",
-      "label": "Kotlářka Praha",
-      "value": "2071"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8594b98-58ba-b8a6-5518-10de4ae89d9d.png",
+      "label": "Wr. Neustadt Diving Ducks",
+      "value": "1227"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/b5fd66eb-b823-6714-12d7-69aa802dcc59.png",
-      "label": "A.S.D. LONGBRIDGE 2000 BASEBALL CLUB",
-      "value": "351"
+      "image": "https://static.wbsc.org/upload/8d59a636-d55a-b5f8-0f4c-c1c3978a1a8d.jpg",
+      "label": "LION`S  BASEBALL NETTUNO A.S.D.",
+      "value": "635"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/IRL.svg",
-      "label": "Ireland NT",
-      "value": "21"
+      "image": "https://static.wbsc.org/assets/flags/ioc/ISR.svg",
+      "label": "Israel NT",
+      "value": "33"
     }
   ],
   "answers": {
-    "0-0": 15,
-    "0-1": 10,
-    "0-2": 11,
-    "1-0": 23,
-    "1-1": 18,
+    "0-0": 53,
+    "0-1": 52,
+    "0-2": 14,
+    "1-0": 17,
+    "1-1": 11,
     "1-2": 5,
-    "2-0": 11,
-    "2-1": 6,
-    "2-2": 15
+    "2-0": 48,
+    "2-1": 53,
+    "2-2": 42
   }
 }

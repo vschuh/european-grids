@@ -2,40 +2,50 @@
   "cols": [
     {
       "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
+      "label": "LF (min 1 PA)",
+      "value": "LF"
     },
     {
       "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
       "label": "Austria NT",
-      "value": "8",
-      "federation_id": 8
+      "value": "8"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/ad49a1e0-b481-4a1c-5780-9a7e8693fae9.png",
-      "label": "Traiskirchen Grasshoppers",
-      "value": "1226"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/4137a8ec-106d-1408-1204-7266ed5c196a.png",
+      "label": "Linz Witches und Bandits",
+      "value": "1276"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/3a067f16-f428-d6b9-450d-7ff6132d4207.png",
-      "label": "Feldkirch Cardinals",
-      "value": "1229"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a8c54b1a-0050-5d18-a2f6-2059dde33487.png",
+      "label": "Dornbirn Indians",
+      "value": "1225"
     },
     {
       "type": "tournament",
-      "label": "Baseball Bundesliga (AT)",
-      "value": "BB-BUNDESLIGA",
+      "label": "Softball Bundesliga (AT)",
+      "value": "SB-BUNDESLIGA",
       "federation_id": 8
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 28,
+    "0-1": 31,
+    "0-2": 12,
+    "1-0": 95,
+    "1-1": 89,
+    "1-2": 38,
+    "2-0": 109,
+    "2-1": 114,
+    "2-2": 63
+  }
 }

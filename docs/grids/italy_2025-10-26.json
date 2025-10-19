@@ -1,14 +1,34 @@
 {
   "cols": [
     {
-      "type": "seasonal_rbi",
-      "label": "20+ RBI Season",
+      "type": "seasonal_runs",
+      "label": "20+ Runs Season",
       "value": 20
     },
     {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "type": "seasonal_runs",
+      "label": "15+ Runs Season",
+      "value": 15
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/12f8bd4d-1eda-665a-5e81-446fa51508e2.jpg",
+      "label": "A.S.D. CODOGNO BAS. `67",
+      "value": "359"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d444b5d6-e7b7-882c-c054-d868ea9d8977.jpg",
+      "label": "BRESCIA BASEBALL  SOFTBALL  ASS. SPORT. DIL.",
+      "value": "598"
     },
     {
       "type": "team",
@@ -17,24 +37,15 @@
       "value": "2"
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/b5fd66eb-b823-6714-12d7-69aa802dcc59.png",
-      "label": "A.S.D. LONGBRIDGE 2000 BASEBALL CLUB",
-      "value": "351"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/7e3e8f32-6d68-f75a-dbfe-7cf17095c499.jpg",
-      "label": "OLTRETORRENTE BASEBALL CLUB A.S.D.",
-      "value": "353"
-    },
-    {
-      "type": "tournament",
-      "label": "Serie A1 Softball (IT)",
-      "value": "ITA-SERIE-A1-F-SB",
-      "federation_id": 2
-    }
-  ]
+  "answers": {
+    "0-0": 14,
+    "0-1": 22,
+    "0-2": 45,
+    "1-0": 8,
+    "1-1": 11,
+    "1-2": 42,
+    "2-0": 140,
+    "2-1": 193,
+    "2-2": 223
+  }
 }

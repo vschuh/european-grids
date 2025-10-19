@@ -2,13 +2,13 @@
   "cols": [
     {
       "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
       "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "label": "Played in 2023 season",
+      "value": 2023
     },
     {
       "type": "team",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/db8cb428-f188-8cd5-1354-4006e912897a.jpg",
-      "label": "Metz Cometz",
-      "value": "1712"
+      "image": "https://static.wbsc.org/upload/c72832ba-21d5-2872-9a0c-2051b1cac815.png",
+      "label": "Cougars de Montigny-le-Bretonneux",
+      "value": "1716"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/51a28c3c-a894-cc4d-30ca-b8c705e5bd5d.png",
-      "label": "3M Barracudas Baseball Université Club",
-      "value": "1385"
+      "image": "https://static.wbsc.org/upload/ff7815ce-79aa-def3-c3c1-e7f2065bd8ec.jpg",
+      "label": "Les Rabbits de Clapiers-Jacou",
+      "value": "1514"
     },
     {
       "type": "tournament",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 24,
-    "0-1": 38,
-    "0-2": 8,
-    "1-0": 45,
-    "1-1": 74,
-    "1-2": 40,
-    "2-0": 118,
-    "2-1": 219,
+    "0-0": 36,
+    "0-1": 51,
+    "0-2": 10,
+    "1-0": 13,
+    "1-1": 30,
+    "1-2": 13,
+    "2-0": 100,
+    "2-1": 158,
     "2-2": 85
   }
 }

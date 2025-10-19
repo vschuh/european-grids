@@ -1,9 +1,9 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_fip",
-      "label": "<2.50 FIP Season (min. 10 ip)",
-      "value": 3
+      "type": "position",
+      "label": "C (min 1 PA)",
+      "value": "C"
     },
     {
       "type": "year",
@@ -20,9 +20,9 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/fa14f1a1-1762-f7f2-6a3d-84fc21f97071.png",
-      "label": "Hoofddorp Pioniers Baseball",
-      "value": "1265"
+      "image": "https://static.wbsc.org/upload/10b0171f-e179-ac20-62b1-ccd30810ac42.png",
+      "label": "Amsterdam Pirates Softball",
+      "value": "1307"
     },
     {
       "type": "team",
@@ -38,13 +38,13 @@
     }
   ],
   "answers": {
-    "0-0": 0,
-    "0-1": 59,
-    "0-2": 26,
-    "1-0": 1,
+    "0-0": 14,
+    "0-1": 27,
+    "0-2": 20,
+    "1-0": 17,
     "1-1": 48,
     "1-2": 29,
-    "2-0": 5,
+    "2-0": 91,
     "2-1": 318,
     "2-2": 149
   }

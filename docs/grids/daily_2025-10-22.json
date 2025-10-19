@@ -1,39 +1,51 @@
 {
   "cols": [
     {
-      "type": "nationality",
-      "label": "Nationality: ITA",
-      "value": "ITA"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
-    },
-    {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2"
+      "image": "https://static.wbsc.org/upload/20c6919f-5149-b21e-dc0e-34879b702f4f.png",
+      "label": "Braine Black Rickers",
+      "value": "1553"
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball Men D1 (BE)",
+      "value": "BD1",
+      "federation_id": 143
+    },
+    {
+      "type": "seasonal_pitching_k",
+      "label": "50k+ Season",
+      "value": 50
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/1d426774-e611-8acf-6a0c-5eace0905fcc.jpg",
-      "label": "NEW RIMINI BASEBALL SOFTBALL S.S.D. ARL",
-      "value": "1286"
+      "image": "https://static.wbsc.org/upload/7f689077-0110-b1f1-2ef9-4b2c962e00c8.png",
+      "label": "Namur Angels",
+      "value": "1478"
     },
     {
-      "type": "seasonal_rbi",
-      "label": "15+ RBI Season",
-      "value": 15
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143"
     },
     {
-      "type": "tournament",
-      "label": "Women's Softball European Championship (EU)",
-      "value": "EU-CHAMP-W-SB",
-      "federation_id": 278
+      "type": "seasonal_pitching_k",
+      "label": "35k+ Season",
+      "value": 35
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 3,
+    "0-1": 36,
+    "0-2": 4,
+    "1-0": 3,
+    "1-1": 100,
+    "1-2": 38,
+    "2-0": 7,
+    "2-1": 61,
+    "2-2": 1242
+  }
 }

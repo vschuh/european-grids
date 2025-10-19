@@ -1,51 +1,50 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">0.300 avg Season (min. 10 pa)",
-      "value": 0.3
-    },
-    {
-      "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/1ad273ca-49c9-52b7-3330-5aae326481f9.png",
+      "label": "Třebíč Nuclears",
+      "value": "2067"
     },
     {
       "type": "tournament",
       "label": "Baseball European Championship (EU)",
       "value": "EU-CHAMP-M-BB",
       "federation_id": 278
+    },
+    {
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/004760b7-d768-4c26-2453-428db40dbc44.svg",
-      "label": "BASEBALL SOFTBALL CLUB GROSSETO 1952 S.S.D. A R.L.",
-      "value": "383"
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
+      "label": "Tempo Praha",
+      "value": "2066"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/f3233b20-510f-5d48-d8d4-964b62bb3ae3.png",
-      "label": "BASE BALL CLUB GROSSETO ASD",
-      "value": "357"
+      "type": "nationality",
+      "label": "Nationality: CZE",
+      "value": "CZE"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/GRE.svg",
-      "label": "Greece NT",
-      "value": "151"
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
     }
   ],
   "answers": {
-    "0-0": 49,
-    "0-1": 41,
-    "0-2": 10,
-    "1-0": 39,
-    "1-1": 26,
-    "1-2": 7,
-    "2-0": 28,
-    "2-1": 21,
-    "2-2": 36
+    "0-0": 3,
+    "0-1": 6,
+    "0-2": 6,
+    "1-0": 105,
+    "1-1": 44,
+    "1-2": 92,
+    "2-0": 45,
+    "2-1": 260,
+    "2-2": 492
   }
 }

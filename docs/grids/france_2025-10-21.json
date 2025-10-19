@@ -1,9 +1,9 @@
 {
   "cols": [
     {
-      "type": "seasonal_ops",
-      "label": ">1.000 OPS Season (min. 10 pa)",
-      "value": 1
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
     },
     {
       "type": "year",
@@ -20,21 +20,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/db8cb428-f188-8cd5-1354-4006e912897a.jpg",
-      "label": "Metz Cometz",
-      "value": "1712"
+      "image": "https://static.wbsc.org/upload/ff7815ce-79aa-def3-c3c1-e7f2065bd8ec.jpg",
+      "label": "Les Rabbits de Clapiers-Jacou",
+      "value": "1514"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/e20fa02b-5959-2c18-2def-c682eb6a540f.jpg",
-      "label": "Les Lions de Savigny-sur-Orge",
-      "value": "1715"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/229a41eb-e61a-7ab8-e29f-3100fc34a2ce.jpg",
+      "label": "Les Comanches de Saint-Raphaël",
+      "value": "1352"
     },
     {
       "type": "tournament",
-      "label": "Championnat de France D1 BB (FR)",
-      "value": "FRA-D1BB",
+      "label": "Championnat de France Division 1 Féminine SB (FR)",
+      "value": "FRA-D1FSB",
       "federation_id": 14
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 17,
+    "0-1": 30,
+    "0-2": 13,
+    "1-0": 14,
+    "1-1": 12,
+    "1-2": 23,
+    "2-0": 39,
+    "2-1": 32,
+    "2-2": 41
+  }
 }

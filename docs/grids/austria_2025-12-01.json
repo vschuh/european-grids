@@ -1,14 +1,16 @@
 {
   "cols": [
     {
-      "type": "seasonal_rbi",
-      "label": "20+ RBI Season",
-      "value": 20
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d84201d1-024c-068e-a445-3ebb5216a8c4.png",
+      "label": "Schwechat Blue Bats",
+      "value": "1261"
     },
     {
-      "type": "seasonal_avg",
-      "label": ">0.400 OBP Season (min. 10 pa)",
-      "value": 0.4
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a8c54b1a-0050-5d18-a2f6-2059dde33487.png",
+      "label": "Dornbirn Indians",
+      "value": "1225"
     },
     {
       "type": "tournament",
@@ -19,33 +21,30 @@
   ],
   "rows": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8594b98-58ba-b8a6-5518-10de4ae89d9d.png",
-      "label": "Wr. Neustadt Diving Ducks",
-      "value": "1227"
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/acfef0c2-5af4-e797-cb4b-550d6173bb34.png",
-      "label": "Hard Bulls",
-      "value": "1228"
+      "type": "nationality",
+      "label": "Nationality: AUT",
+      "value": "AUT"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8"
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
     }
   ],
   "answers": {
-    "0-0": 25,
-    "0-1": 67,
-    "0-2": 43,
-    "1-0": 8,
-    "1-1": 41,
-    "1-2": 5,
-    "2-0": 50,
-    "2-1": 161,
-    "2-2": 63
+    "0-0": 5,
+    "0-1": 5,
+    "0-2": 9,
+    "1-0": 76,
+    "1-1": 103,
+    "1-2": 123,
+    "2-0": 42,
+    "2-1": 77,
+    "2-2": 100
   }
 }

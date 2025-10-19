@@ -2,12 +2,6 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
-      "label": "SOFTBALL CLUB FORLI A.S.D.",
-      "value": "395"
-    },
-    {
-      "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
       "label": "Italy NT",
       "value": "2",
@@ -15,22 +9,29 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
-      "label": "Vienna Wanderers",
-      "value": "1222"
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8",
+      "federation_id": 8
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg",
+      "label": "SK Joudrs Praha",
+      "value": "1348"
     }
   ],
   "rows": [
     {
       "type": "tournament",
-      "label": "Women's Softball European Premiere Cup (EU)",
-      "value": "EU-EURO-PREM-CUP-W-SB",
+      "label": "Women's Softball European Championship (EU)",
+      "value": "EU-CHAMP-W-SB",
       "federation_id": 278
     },
     {
-      "type": "seasonal_pitching_k",
-      "label": ">=35k Season",
-      "value": 35,
+      "type": "seasonal_homeruns",
+      "label": ">=10 HR Season",
+      "value": 10,
       "condition": "min"
     },
     {
@@ -41,13 +42,13 @@
   ],
   "answers": {
     "0-0": 32,
-    "0-1": 36,
-    "0-2": 13,
-    "1-0": 20,
-    "1-1": 111,
-    "1-2": 13,
-    "2-0": 36,
-    "2-1": 263,
-    "2-2": 56
+    "0-1": 24,
+    "0-2": 11,
+    "1-0": 8,
+    "1-1": 5,
+    "1-2": 7,
+    "2-0": 263,
+    "2-1": 150,
+    "2-2": 47
   }
 }

@@ -2,13 +2,13 @@
   "cols": [
     {
       "type": "seasonal_rbi",
-      "label": "15+ RBI Season",
-      "value": 15
+      "label": "20+ RBI Season",
+      "value": 20
     },
     {
       "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
+      "label": "Played in 2025 season",
+      "value": 2025
     },
     {
       "type": "team",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png",
-      "label": "Attnang-Puchheim Athletics",
-      "value": "1224"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/3a067f16-f428-d6b9-450d-7ff6132d4207.png",
+      "label": "Feldkirch Cardinals",
+      "value": "1229"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a8c54b1a-0050-5d18-a2f6-2059dde33487.png",
-      "label": "Dornbirn Indians",
-      "value": "1225"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1943295d-9bf7-e5b8-291c-021b311137ba.png",
+      "label": "Vienna Metrostars",
+      "value": "1223"
     },
     {
       "type": "tournament",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 15,
-    "0-1": 35,
-    "0-2": 26,
-    "1-0": 22,
-    "1-1": 58,
-    "1-2": 38,
-    "2-0": 38,
-    "2-1": 84,
+    "0-0": 4,
+    "0-1": 40,
+    "0-2": 19,
+    "1-0": 19,
+    "1-1": 59,
+    "1-2": 45,
+    "2-0": 21,
+    "2-1": 100,
     "2-2": 63
   }
 }

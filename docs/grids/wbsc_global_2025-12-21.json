@@ -1,0 +1,54 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/RSA.svg",
+      "label": "South Africa NT",
+      "value": "81",
+      "federation_id": 81
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/6ae286e1-9a68-99fc-9429-832b1c39d98c.jpg",
+      "label": "Olen Titans",
+      "value": "1621"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/38ed2f87-d5c1-caae-58f8-ddd93f46cd58.jpg",
+      "label": "Sparks Haarlem",
+      "value": "1272"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women`s Softball World Championship",
+      "value": "WSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "Olympic Softball Qualifiers",
+      "value": "OLYMPIC-SOFTBALL-Q",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_hits",
+      "label": ">=15 Hit Season",
+      "value": 15,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 28,
+    "0-1": 3,
+    "0-2": 11,
+    "1-0": 15,
+    "1-1": 3,
+    "1-2": 7,
+    "2-0": 8,
+    "2-1": 12,
+    "2-2": 34
+  }
+}

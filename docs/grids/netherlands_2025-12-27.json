@@ -1,51 +1,50 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">0.300 avg Season (min. 10 pa)",
-      "value": 0.3
-    },
-    {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/7650db8c-fd99-d90e-fe5e-20bd94dff0d3.jpg",
+      "label": "Quick Amersfoort Baseball",
+      "value": "1267"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
-      "label": "Netherlands NT",
-      "value": "1"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/6a057191-c5a2-e328-e9dc-1599fb6d475c.jpg",
+      "label": "Olympia Haarlem",
+      "value": "1270"
+    },
+    {
+      "type": "tournament",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
+      "federation_id": 1
     }
   ],
   "rows": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/24be214e-4c82-4f83-8fa3-56760624a195.jpg",
-      "label": "Quick Amersfoort Softball",
-      "value": "1308"
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/10b0171f-e179-ac20-62b1-ccd30810ac42.png",
-      "label": "Amsterdam Pirates Softball",
-      "value": "1307"
+      "type": "nationality",
+      "label": "Nationality: NED",
+      "value": "NED"
     },
     {
-      "type": "tournament",
-      "label": "Hoofdklasse Softbal (NL)",
-      "value": "HOOFDKLASSE-SOFTBAL",
-      "federation_id": 1
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
     }
   ],
   "answers": {
-    "0-0": 16,
-    "0-1": 16,
-    "0-2": 14,
-    "1-0": 19,
-    "1-1": 31,
-    "1-2": 20,
-    "2-0": 164,
-    "2-1": 191,
-    "2-2": 111
+    "0-0": 19,
+    "0-1": 21,
+    "0-2": 102,
+    "1-0": 80,
+    "1-1": 58,
+    "1-2": 500,
+    "2-0": 52,
+    "2-1": 55,
+    "2-2": 318
   }
 }

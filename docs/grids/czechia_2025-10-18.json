@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_bb",
-      "label": "10+ BB Season",
-      "value": 10
+      "type": "seasonal_pitching_ip",
+      "label": "35 IP+ Season",
+      "value": 105
     },
     {
       "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
+      "label": "Played in 2025 season",
+      "value": 2025
     },
     {
       "type": "team",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
-      "label": "Tempo Praha",
-      "value": "2066"
+      "image": "https://static.wbsc.org/upload/e0cdbe49-5118-1882-4882-f10fd522553d.png",
+      "label": "SaBaT Praha",
+      "value": "2074"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/a7dffba8-f8b9-2a89-1883-b07093f1e5b4.png",
-      "label": "Kotlářka Praha",
-      "value": "2071"
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
+      "label": "Tempo Praha",
+      "value": "2066"
     },
     {
       "type": "tournament",
@@ -36,5 +36,16 @@
       "value": "W-EXT-L",
       "federation_id": 148
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 14,
+    "0-1": 114,
+    "0-2": 29,
+    "1-0": 26,
+    "1-1": 152,
+    "1-2": 46,
+    "2-0": 43,
+    "2-1": 191,
+    "2-2": 102
+  }
 }

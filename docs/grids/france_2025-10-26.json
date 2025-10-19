@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">0.350 OBP Season (min. 10 pa)",
-      "value": 0.35
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
       "type": "position",
-      "label": "1B (min 1 PA)",
-      "value": "1B"
+      "label": "2B (min 1 PA)",
+      "value": "2B"
     },
     {
       "type": "tournament",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/db8cb428-f188-8cd5-1354-4006e912897a.jpg",
-      "label": "Metz Cometz",
-      "value": "1712"
+      "image": "https://static.wbsc.org/upload/ff7815ce-79aa-def3-c3c1-e7f2065bd8ec.jpg",
+      "label": "Les Rabbits de Clapiers-Jacou",
+      "value": "1514"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a18c7fc9-a3ce-81e9-0c12-f2a5ec8eab1e.jpg",
-      "label": "Rouen Huskies",
-      "value": "1428"
+      "image": "https://static.wbsc.org/upload/0050079f-5f9e-d803-8839-20992d9cfc18.jpg",
+      "label": "Les Boucaniers de La Rochelle",
+      "value": "1714"
     },
     {
       "type": "team",
@@ -36,5 +36,16 @@
       "label": "France NT",
       "value": "14"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 9,
+    "0-1": 17,
+    "0-2": 4,
+    "1-0": 18,
+    "1-1": 29,
+    "1-2": 34,
+    "2-0": 120,
+    "2-1": 141,
+    "2-2": 85
+  }
 }

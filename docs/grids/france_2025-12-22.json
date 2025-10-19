@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_wOBA",
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
       "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "label": "Played in 2025 season",
+      "value": 2025
     },
     {
       "type": "team",
@@ -20,32 +20,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/229a41eb-e61a-7ab8-e29f-3100fc34a2ce.jpg",
-      "label": "Les Comanches de Saint-Raphaël",
-      "value": "1352"
+      "image": "https://static.wbsc.org/upload/db8cb428-f188-8cd5-1354-4006e912897a.jpg",
+      "label": "Metz Cometz",
+      "value": "1712"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/83428e38-f463-52e1-0571-48f71aa9fc31.jpg",
-      "label": "Stade Toulousain Baseball Softball",
-      "value": "1713"
+      "image": "https://static.wbsc.org/upload/07067501-9be9-9d54-0187-4b5ce1bc028d.jpg",
+      "label": "Les Pharaons d`Evry-Courcouronnes",
+      "value": "1367"
     },
     {
       "type": "tournament",
-      "label": "Championnat de France D1 BB (FR)",
-      "value": "FRA-D1BB",
+      "label": "Championnat de France Division 1 Féminine SB (FR)",
+      "value": "FRA-D1FSB",
       "federation_id": 14
     }
   ],
   "answers": {
-    "0-0": 23,
-    "0-1": 27,
-    "0-2": 23,
-    "1-0": 28,
-    "1-1": 10,
-    "1-2": 14,
-    "2-0": 131,
-    "2-1": 69,
-    "2-2": 85
+    "0-0": 20,
+    "0-1": 38,
+    "0-2": 8,
+    "1-0": 27,
+    "1-1": 70,
+    "1-2": 21,
+    "2-0": 39,
+    "2-1": 104,
+    "2-2": 41
   }
 }

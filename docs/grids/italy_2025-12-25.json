@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">0.400 OBP Season (min. 10 pa)",
-      "value": 0.4
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
       "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
+      "label": "Played in 2025 season",
+      "value": 2025
     },
     {
       "type": "team",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/ef8ef30f-13d8-e1c8-7d06-5b8cb737fefa.jpg",
-      "label": "FIORENTINA BASEBALL  S.S.D. ARL",
-      "value": "349"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8f98a90-c051-6299-93f6-3406e7208031.jpg",
+      "label": "A.S.D. BASEBALL SOFTBALL CLUB ROVIGO",
+      "value": "371"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/d79c686b-d315-8ea2-9ce2-09dce8a65e3c.jpg",
-      "label": "PIANORO SOFTBALL A.S.D.",
-      "value": "392"
+      "image": "https://static.wbsc.org/upload/8d59a636-d55a-b5f8-0f4c-c1c3978a1a8d.jpg",
+      "label": "LION`S  BASEBALL NETTUNO A.S.D.",
+      "value": "635"
     },
     {
       "type": "tournament",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 22,
+    "0-0": 50,
     "0-1": 66,
-    "0-2": 5,
-    "1-0": 27,
-    "1-1": 53,
-    "1-2": 18,
-    "2-0": 267,
-    "2-1": 1063,
+    "0-2": 18,
+    "1-0": 29,
+    "1-1": 19,
+    "1-2": 7,
+    "2-0": 767,
+    "2-1": 935,
     "2-2": 223
   }
 }

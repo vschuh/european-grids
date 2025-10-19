@@ -1,36 +1,34 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_k",
-      "label": ">=35k Season",
-      "value": 35,
-      "condition": "min"
+      "type": "seasonal_bb",
+      "label": "10+ BB Season",
+      "value": 10
     },
     {
       "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
+      "label": "Played in 2025 season",
+      "value": 2025
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
       "label": "Czechia NT",
-      "value": "6",
-      "federation_id": 6
+      "value": "6"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/0df1b8ac-31d1-a8bd-dae5-db1b7c541b03.jpg",
-      "label": "Painbusters Most",
-      "value": "1878"
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
+      "label": "Tempo Praha",
+      "value": "2066"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/155cf629-9bb0-5fc6-2830-5ddd769d0d47.png",
-      "label": "Hvězdy Extraligy",
-      "value": "2210"
+      "image": "https://static.wbsc.org/upload/06ebf3e7-4094-4d7d-7bad-cd88e4ec3330.png",
+      "label": "Sokol Hluboká",
+      "value": "2064"
     },
     {
       "type": "tournament",
@@ -38,5 +36,16 @@
       "value": "CZE-EXL",
       "federation_id": 6
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 44,
+    "0-1": 152,
+    "0-2": 46,
+    "1-0": 25,
+    "1-1": 81,
+    "1-2": 17,
+    "2-0": 201,
+    "2-1": 316,
+    "2-2": 159
+  }
 }

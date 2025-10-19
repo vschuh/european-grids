@@ -1,41 +1,50 @@
 {
   "cols": [
     {
-      "type": "nationality",
-      "label": "Nationality: ITA",
-      "value": "ITA"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
-    },
-    {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2",
-      "federation_id": 2
+      "image": "https://static.wbsc.org/upload/2b4c017d-41ab-0f88-0c43-a63a6080e50e.png",
+      "label": "Technika Brno",
+      "value": "2065"
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
+    },
+    {
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/30444ddc-0622-85ef-a529-0a3ed3c7a7f9.png",
-      "label": "BASEBALL CLUB SETTIMO A.S.D.",
-      "value": "342"
+      "image": "https://static.wbsc.org/upload/dd134970-0bd6-d5fd-0abc-a138fc7d6868.jpg",
+      "label": "Arrows Ostrava",
+      "value": "1605"
     },
     {
-      "type": "seasonal_rbi",
-      "label": ">=20 RBI Season",
-      "value": 20,
-      "condition": "min"
+      "type": "nationality",
+      "label": "Nationality: CZE",
+      "value": "CZE"
     },
     {
-      "type": "tournament",
-      "label": "Serie A Baseball (IT)",
-      "value": "ITA-SERIE-A1-M-BB",
-      "federation_id": 2
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 4,
+    "0-1": 20,
+    "0-2": 91,
+    "1-0": 123,
+    "1-1": 195,
+    "1-2": 1227,
+    "2-0": 71,
+    "2-1": 101,
+    "2-2": 11403
+  }
 }

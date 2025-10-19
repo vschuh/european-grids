@@ -2,15 +2,13 @@
   "cols": [
     {
       "type": "seasonal_pitching_k",
-      "label": ">=35k Season",
-      "value": 35,
-      "condition": "min"
+      "label": "35k+ Season",
+      "value": 35
     },
     {
-      "type": "seasonal_pitching_ip",
-      "label": ">=35 IP Season",
-      "value": 105,
-      "condition": "min"
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
     },
     {
       "type": "tournament",
@@ -22,22 +20,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/1aba8bb9-6d31-0d64-b3ec-fbb43cc12c68.png",
-      "label": "Merchtem Cats",
-      "value": "1476"
+      "image": "https://static.wbsc.org/upload/c9a330c1-47a1-9f9a-0b51-c9d3b27c3822.png",
+      "label": "Brussels Kangaroos",
+      "value": "1477"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/20c6919f-5149-b21e-dc0e-34879b702f4f.png",
-      "label": "Braine Black Rickers",
-      "value": "1553"
+      "image": "https://static.wbsc.org/upload/450c82c4-90bc-6b3d-d1c7-88a8f4d96464.png",
+      "label": "Hoboken Pioneers",
+      "value": "1353"
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
       "label": "Belgium NT",
-      "value": "143",
-      "federation_id": 143
+      "value": "143"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 12,
+    "0-1": 11,
+    "0-2": 17,
+    "1-0": 26,
+    "1-1": 8,
+    "1-2": 32,
+    "2-0": 54,
+    "2-1": 45,
+    "2-2": 59
+  }
 }

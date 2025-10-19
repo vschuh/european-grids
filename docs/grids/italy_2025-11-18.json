@@ -1,16 +1,34 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/8fb617c6-4e1c-c448-01ff-5719cc33dd8a.jpg",
-      "label": "LANCERS BASEBALL CLUB A.S.D.",
-      "value": "356"
+      "type": "seasonal_runs",
+      "label": "20+ Runs Season",
+      "value": 20
+    },
+    {
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/f3233b20-510f-5d48-d8d4-964b62bb3ae3.png",
-      "label": "BASE BALL CLUB GROSSETO ASD",
-      "value": "357"
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/f5260415-3c46-7bca-9104-c3f5df539370.jpg",
+      "label": "A.S.D. PADOVA BAS. SOFT. CLUB",
+      "value": "574"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
+      "label": "SOFTBALL CLUB FORLI` A.S.D.",
+      "value": "395"
     },
     {
       "type": "tournament",
@@ -19,32 +37,15 @@
       "federation_id": 2
     }
   ],
-  "rows": [
-    {
-      "type": "seasonal_avg",
-      "label": ">0.300 avg Season (min. 10 pa)",
-      "value": 0.3
-    },
-    {
-      "type": "nationality",
-      "label": "Nationality: ITA",
-      "value": "ITA"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
-    }
-  ],
   "answers": {
-    "0-0": 24,
-    "0-1": 39,
-    "0-2": 767,
-    "1-0": 49,
-    "1-1": 46,
-    "1-2": 1589,
-    "2-0": 41,
-    "2-1": 53,
-    "2-2": 1098
+    "0-0": 25,
+    "0-1": 58,
+    "0-2": 11,
+    "1-0": 28,
+    "1-1": 36,
+    "1-2": 21,
+    "2-0": 551,
+    "2-1": 1065,
+    "2-2": 223
   }
 }

@@ -1,39 +1,51 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/b8e2f6c7-d381-cb53-2a82-a2f9e92daba9.jpg",
-      "label": "Beavers Chomutov",
-      "value": "1380"
-    },
-    {
-      "type": "tournament",
-      "label": "U-18 Women's European Softball Championship (EU)",
-      "value": "EU-U-18-EURO-CHAMP-W-SB",
-      "federation_id": 278
-    },
-    {
       "type": "seasonal_avg",
       "label": ">0.400 OBP Season (min. 10 pa)",
       "value": 0.4
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/21908af0-2814-b783-333b-41871a18b7e3.jpg",
-      "label": "Chemie - Kotlářka",
-      "value": "2367"
-    },
-    {
-      "type": "nationality",
-      "label": "Nationality: CZE",
-      "value": "CZE"
     },
     {
       "type": "seasonal_wOBA",
       "label": ">0.250 wOBA Season (min. 10 pa)",
       "value": 0.25
+    },
+    {
+      "type": "tournament",
+      "label": "European Baseball Champions Cup (EU)",
+      "value": "EU-CHAMP-CUP-M-BB",
+      "federation_id": 278
     }
-  ]
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/30da3795-69a2-d2ec-66bf-7059cd80b093.jpg",
+      "label": "Astros Valencia",
+      "value": "1433"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/fff73bb9-7f68-64a3-3973-8816620d097d.png",
+      "label": "UVV",
+      "value": "1825"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ],
+  "answers": {
+    "0-0": 24,
+    "0-1": 49,
+    "0-2": 18,
+    "1-0": 3,
+    "1-1": 13,
+    "1-2": 3,
+    "2-0": 365,
+    "2-1": 454,
+    "2-2": 70
+  }
 }

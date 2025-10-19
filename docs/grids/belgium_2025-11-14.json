@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
+      "type": "seasonal_avg",
+      "label": ">0.400 OBP Season (min. 10 pa)",
+      "value": 0.4
     },
     {
-      "type": "seasonal_pitching_ip",
-      "label": "35 IP+ Season",
-      "value": 105
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
     },
     {
       "type": "tournament",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/ef175e86-8a69-5cb4-6249-5c548df8b041.png",
-      "label": "Cantincrode Baseball en Softball Stars",
-      "value": "1394"
+      "image": "https://static.wbsc.org/upload/15ddbfc7-3582-aea3-55b6-9d40c3273eb0.png",
+      "label": "Zonhoven Tigers",
+      "value": "1545"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a39fd931-7c83-ffd7-63b9-d21f6f0851d9.jpg",
-      "label": "Brasschaat Braves",
-      "value": "1414"
+      "image": "https://static.wbsc.org/upload/1aba8bb9-6d31-0d64-b3ec-fbb43cc12c68.png",
+      "label": "Merchtem Cats",
+      "value": "1476"
     },
     {
       "type": "team",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 47,
-    "0-1": 6,
-    "0-2": 30,
-    "1-0": 103,
-    "1-1": 15,
-    "1-2": 50,
-    "2-0": 224,
-    "2-1": 55,
+    "0-0": 10,
+    "0-1": 21,
+    "0-2": 25,
+    "1-0": 91,
+    "1-1": 114,
+    "1-2": 41,
+    "2-0": 214,
+    "2-1": 278,
     "2-2": 100
   }
 }

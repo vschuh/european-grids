@@ -2,34 +2,35 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/09fa8d5d-3beb-0f14-7d8e-8d48078672a2.jpg",
-      "label": "A.S.D. SAN MARINO BASEBALL CLUB",
-      "value": "331"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/df0cbcf4-3d16-e1c8-110d-893c27d06fb3.jpg",
+      "label": "A.S.D. AVIGLIANA REBELS",
+      "value": "399"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/ef9c3699-433d-84cf-e297-da9743f94500.jpg",
-      "label": "FORTITUDO BASEBALL CLUB 1953 S.S.D. scarl",
-      "value": "336"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/38ed2f87-d5c1-caae-58f8-ddd93f46cd58.jpg",
+      "label": "Sparks Haarlem",
+      "value": "1272"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/893b32a8-88ec-82c1-3e46-7036f135c1fc.jpg",
-      "label": "Heidenheim Heideköpfe",
-      "value": "1429"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/6a057191-c5a2-e328-e9dc-1599fb6d475c.jpg",
+      "label": "Olympia Haarlem",
+      "value": "1270"
     }
   ],
   "rows": [
     {
       "type": "tournament",
-      "label": "European Baseball Champions Cup (EU)",
-      "value": "EU-CHAMP-CUP-M-BB",
+      "label": "U-18 Women's European Softball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-W-SB",
       "federation_id": 278
     },
     {
-      "type": "position",
-      "label": "LF (min 1 PA)",
-      "value": "LF"
+      "type": "seasonal_obp",
+      "label": ">=0.400 OBP Season (min. 10 pa)",
+      "value": 0.4,
+      "condition": "min"
     },
     {
       "type": "year",
@@ -38,14 +39,14 @@
     }
   ],
   "answers": {
-    "0-0": 29,
-    "0-1": 33,
-    "0-2": 46,
-    "1-0": 63,
-    "1-1": 71,
-    "1-2": 13,
-    "2-0": 70,
-    "2-1": 88,
-    "2-2": 18
+    "0-0": 3,
+    "0-1": 12,
+    "0-2": 6,
+    "1-0": 42,
+    "1-1": 38,
+    "1-2": 43,
+    "2-0": 60,
+    "2-1": 48,
+    "2-2": 55
   }
 }

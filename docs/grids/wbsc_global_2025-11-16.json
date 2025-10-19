@@ -1,0 +1,54 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/24be214e-4c82-4f83-8fa3-56760624a195.jpg",
+      "label": "Quick Amersfoort",
+      "value": "1308"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NZL.svg",
+      "label": "New Zealand NT",
+      "value": "170",
+      "federation_id": 170
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ISR.svg",
+      "label": "Israel NT",
+      "value": "33",
+      "federation_id": 33
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-18 Women`s Softball World Cup",
+      "value": "U-18WSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_bb",
+      "label": ">=10 BB Season",
+      "value": 10,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    }
+  ],
+  "answers": {
+    "0-0": 4,
+    "0-1": 45,
+    "0-2": 16,
+    "1-0": 8,
+    "1-1": 7,
+    "1-2": 4,
+    "2-0": 16,
+    "2-1": 29,
+    "2-2": 89
+  }
+}

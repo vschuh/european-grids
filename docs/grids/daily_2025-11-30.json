@@ -2,9 +2,9 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/dd134970-0bd6-d5fd-0abc-a138fc7d6868.jpg",
-      "label": "Arrows Ostrava",
-      "value": "1605"
+      "image": "https://static.wbsc.org/upload/867c2c87-a075-4811-3a29-71da8dafa1a7.svg",
+      "label": "1949 PARMA BASEBALL CLUB ASD",
+      "value": "333"
     },
     {
       "type": "tournament",
@@ -13,39 +13,39 @@
       "federation_id": 278
     },
     {
-      "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "type": "seasonal_avg",
+      "label": ">0.400 OBP Season (min. 10 pa)",
+      "value": 0.4
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/fd9b041a-199b-c526-ab4b-dda6af4f1a8e.png",
-      "label": "Skokani Olomouc",
-      "value": "2075"
+      "image": "https://static.wbsc.org/upload/e715ea59-748b-5200-77b6-63e4e2c8c96e.jpg",
+      "label": "Tenerife Marlins Puerto Cruz",
+      "value": "1421"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/SVK.svg",
-      "label": "Slovakia NT",
-      "value": "37"
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39"
     },
     {
-      "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
+      "type": "seasonal_sb",
+      "label": "10+ SB Season",
+      "value": 10
     }
   ],
   "answers": {
-    "0-0": 9,
-    "0-1": 4,
-    "0-2": 21,
+    "0-0": 5,
+    "0-1": 17,
+    "0-2": 32,
     "1-0": 4,
-    "1-1": 22,
-    "1-2": 117,
-    "2-0": 51,
-    "2-1": 216,
-    "2-2": 9335
+    "1-1": 46,
+    "1-2": 156,
+    "2-0": 8,
+    "2-1": 95,
+    "2-2": 2620
   }
 }

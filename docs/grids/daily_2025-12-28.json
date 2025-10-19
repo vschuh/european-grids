@@ -1,9 +1,9 @@
 {
   "cols": [
     {
-      "type": "seasonal_ops",
-      "label": ">1.000 OPS Season (min. 10 pa)",
-      "value": 1
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
     },
     {
       "type": "position",
@@ -12,40 +12,40 @@
     },
     {
       "type": "tournament",
-      "label": "U-18 Women's European Softball Championship (EU)",
-      "value": "EU-U-18-EURO-CHAMP-W-SB",
+      "label": "Women's Softball European Premiere Cup (EU)",
+      "value": "EU-EURO-PREM-CUP-W-SB",
       "federation_id": 278
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/6a057191-c5a2-e328-e9dc-1599fb6d475c.jpg",
-      "label": "Olympia Haarlem",
-      "value": "1270"
+      "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png",
+      "label": "Attnang-Puchheim Athletics",
+      "value": "1224"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
-      "label": "SOFTBALL CLUB FORLI` A.S.D.",
-      "value": "395"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/552eb909-5775-5ced-11cd-899ef3bdc14e.jpg",
+      "label": "THUNDERS & DRAGONS  SOFTBALL -  BASEBALL A.S.D. CASTELLANA",
+      "value": "346"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8"
+      "image": "https://static.wbsc.org/assets/flags/ioc/RUS.svg",
+      "label": "Russia NT",
+      "value": "242"
     }
   ],
   "answers": {
-    "0-0": 33,
-    "0-1": 39,
-    "0-2": 6,
-    "1-0": 40,
-    "1-1": 63,
-    "1-2": 5,
-    "2-0": 168,
-    "2-1": 209,
-    "2-2": 34
+    "0-0": 42,
+    "0-1": 77,
+    "0-2": 4,
+    "1-0": 30,
+    "1-1": 61,
+    "1-2": 8,
+    "2-0": 6,
+    "2-1": 6,
+    "2-2": 3
   }
 }

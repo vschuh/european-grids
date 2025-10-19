@@ -1,34 +1,34 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
-    },
-    {
       "type": "seasonal_sb",
       "label": "10+ SB Season",
       "value": 10
     },
     {
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
+    },
+    {
       "type": "tournament",
-      "label": "Softball Ladies D1 (BE)",
-      "value": "SLD1",
+      "label": "Baseball Men D1 (BE)",
+      "value": "BD1",
       "federation_id": 143
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/bd187a02-55c9-dbf3-3a25-668902bfcd8d.png",
-      "label": "Borgerhout Squirrels",
-      "value": "1473"
+      "image": "https://static.wbsc.org/upload/7784025f-15e3-9d72-ec0a-5cea1fb36fac.png",
+      "label": "Antwerp Eagles",
+      "value": "1474"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/f7f05882-7810-d6a2-6bd7-06648e0a5fa8.png",
-      "label": "Beveren Lions",
-      "value": "1480"
+      "image": "https://static.wbsc.org/upload/b984f263-2924-2e02-6b23-7257a92a820c.png",
+      "label": "Gent Knights",
+      "value": "1475"
     },
     {
       "type": "team",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 103,
-    "0-1": 33,
-    "0-2": 7,
-    "1-0": 60,
-    "1-1": 32,
-    "1-2": 39,
-    "2-0": 224,
-    "2-1": 124,
-    "2-2": 59
+    "0-0": 30,
+    "0-1": 57,
+    "0-2": 6,
+    "1-0": 48,
+    "1-1": 88,
+    "1-2": 25,
+    "2-0": 124,
+    "2-1": 225,
+    "2-2": 100
   }
 }

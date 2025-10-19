@@ -2,13 +2,33 @@
   "cols": [
     {
       "type": "position",
-      "label": "CF (min 1 PA)",
-      "value": "CF"
+      "label": "2B (min 1 PA)",
+      "value": "2B"
     },
     {
-      "type": "position",
-      "label": "P (min 1 PA)",
-      "value": "P"
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/0050079f-5f9e-d803-8839-20992d9cfc18.jpg",
+      "label": "Les Boucaniers de La Rochelle",
+      "value": "1714"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/83428e38-f463-52e1-0571-48f71aa9fc31.jpg",
+      "label": "Stade Toulousain Baseball Softball",
+      "value": "1713"
     },
     {
       "type": "tournament",
@@ -17,25 +37,15 @@
       "federation_id": 14
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/54f7aee7-2dea-f878-4244-591fd30486d0.jpg",
-      "label": "Pirates de Béziers",
-      "value": "2309"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/51a28c3c-a894-cc4d-30ca-b8c705e5bd5d.png",
-      "label": "3M Barracudas Baseball Université Club",
-      "value": "1385"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
-      "label": "France NT",
-      "value": "14",
-      "federation_id": 14
-    }
-  ]
+  "answers": {
+    "0-0": 29,
+    "0-1": 18,
+    "0-2": 13,
+    "1-0": 29,
+    "1-1": 22,
+    "1-2": 14,
+    "2-0": 121,
+    "2-1": 158,
+    "2-2": 85
+  }
 }

@@ -1,0 +1,55 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CUB.svg",
+      "label": "Cuba NT",
+      "value": "121",
+      "federation_id": 121
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/e0754d29-eea2-3d1c-aaed-bc382baa2d6a.svg",
+      "label": "Santa María Pirates",
+      "value": "1741"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/COL.svg",
+      "label": "Colombia NT",
+      "value": "88",
+      "federation_id": 88
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Baseball Champions League Americas",
+      "value": "BASEBALL-CHAMP-LEAGUE",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "Olympic Baseball Qualifiers",
+      "value": "OLYMPIC-BASEBALL-Q",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_pitching_k",
+      "label": ">=35k Season",
+      "value": 35,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 27,
+    "0-1": 23,
+    "0-2": 10,
+    "1-0": 24,
+    "1-1": 3,
+    "1-2": 23,
+    "2-0": 20,
+    "2-1": 9,
+    "2-2": 6
+  }
+}

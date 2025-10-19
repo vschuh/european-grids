@@ -2,24 +2,30 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
-      "label": "Vienna Wanderers",
-      "value": "1222"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/6a057191-c5a2-e328-e9dc-1599fb6d475c.jpg",
+      "label": "Olympia Haarlem",
+      "value": "1270"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/5ea48357-37d8-e9aa-a7e0-abf4e68783d7.jpg",
-      "label": "Wittenbach Panthers Softball",
-      "value": "1606"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8594b98-58ba-b8a6-5518-10de4ae89d9d.png",
+      "label": "Wr. Neustadt Diving Ducks",
+      "value": "1227"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
-      "label": "SOFTBALL CLUB FORLI A.S.D.",
-      "value": "395"
+      "image": "https://static.wbsc.org/upload/372d62f7-f498-84c1-f10f-62831565fe7d.png",
+      "label": "Neptunus",
+      "value": "287"
     }
   ],
   "rows": [
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup Winners Cup “A” (EU)",
+      "value": "EU-WINNERS-CUP-A-W-SB",
+      "federation_id": 278
+    },
     {
       "type": "tournament",
       "label": "U-18 Women's European Softball Championship (EU)",
@@ -27,27 +33,21 @@
       "federation_id": 278
     },
     {
-      "type": "tournament",
-      "label": "Women's Softball European Premiere Cup (EU)",
-      "value": "EU-EURO-PREM-CUP-W-SB",
-      "federation_id": 278
-    },
-    {
-      "type": "seasonal_pitching_hbp",
-      "label": "<=2 HB Season",
-      "value": 2,
-      "condition": "max"
+      "type": "seasonal_doubles",
+      "label": ">=10 Doubles Season",
+      "value": 10,
+      "condition": "min"
     }
   ],
   "answers": {
-    "0-0": 10,
-    "0-1": 6,
-    "0-2": 5,
-    "1-0": 13,
-    "1-1": 22,
-    "1-2": 32,
-    "2-0": 86,
-    "2-1": 14,
-    "2-2": 39
+    "0-0": 19,
+    "0-1": 26,
+    "0-2": 8,
+    "1-0": 6,
+    "1-1": 11,
+    "1-2": 8,
+    "2-0": 8,
+    "2-1": 11,
+    "2-2": 19
   }
 }

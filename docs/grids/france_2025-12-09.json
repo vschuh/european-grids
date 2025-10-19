@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_ops",
-      "label": ">1.000 OPS Season (min. 10 pa)",
-      "value": 1
-    },
-    {
       "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
+      "label": "RF (min 1 PA)",
+      "value": "RF"
     },
     {
-      "type": "tournament",
-      "label": "Championnat de France Division 1 Féminine SB (FR)",
-      "value": "FRA-D1FSB",
-      "federation_id": 14
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/00c226d7-a309-43bf-2e34-cf074ffb6e4c.png",
-      "label": "BASEBALL CLUB DES HAUTS DE SEINE WILDCATS",
-      "value": "2627"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/229a41eb-e61a-7ab8-e29f-3100fc34a2ce.jpg",
-      "label": "Les Comanches de Saint-Raphaël",
-      "value": "1352"
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "14"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c6f45770-2b34-bfcf-33e8-1909b6ef7bae.jpg",
+      "label": "Les Grizzlys de Grenoble",
+      "value": "1513"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/ff7815ce-79aa-def3-c3c1-e7f2065bd8ec.jpg",
+      "label": "Les Rabbits de Clapiers-Jacou",
+      "value": "1514"
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France D1 BB (FR)",
+      "value": "FRA-D1BB",
+      "federation_id": 14
+    }
+  ],
   "answers": {
-    "0-0": 8,
-    "0-1": 15,
-    "0-2": 17,
-    "1-0": 16,
-    "1-1": 17,
-    "1-2": 22,
-    "2-0": 165,
-    "2-1": 141,
-    "2-2": 41
+    "0-0": 49,
+    "0-1": 55,
+    "0-2": 9,
+    "1-0": 22,
+    "1-1": 25,
+    "1-2": 13,
+    "2-0": 144,
+    "2-1": 208,
+    "2-2": 85
   }
 }

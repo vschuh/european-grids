@@ -1,15 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">=0.350 OBP Season (min. 10 pa)",
-      "value": 0.35,
-      "condition": "min"
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
-      "type": "seasonal_pitching_ip",
-      "label": ">=35 IP Season",
-      "value": 105,
+      "type": "seasonal_avg",
+      "label": ">=0.300 avg Season (min. 10 pa)",
+      "value": 0.3,
       "condition": "min"
     },
     {
@@ -22,15 +21,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/2385052c-b349-ee0a-0368-a3c409cef452.png",
-      "label": "CBS Antorcha Valencia",
-      "value": "1653"
+      "image": "https://static.wbsc.org/upload/3084d3b0-293e-1776-d083-36810be4a442.png",
+      "label": "Club Atlético Deportivo Irabia/Izaga",
+      "value": "1960"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/9aa1aee4-5a37-b2fa-7992-1aa7244e07a0.png",
-      "label": "CBS Sant Boi",
-      "value": "1630"
+      "image": "https://static.wbsc.org/upload/bdcc92de-a9f2-29d6-4fc7-3303dad8dbe5.jpg",
+      "label": "CBS Cambre",
+      "value": "1626"
     },
     {
       "type": "team",
@@ -41,14 +40,14 @@
     }
   ],
   "answers": {
-    "0-0": 37,
-    "0-1": 10,
-    "0-2": 30,
-    "1-0": 52,
-    "1-1": 14,
-    "1-2": 39,
-    "2-0": 180,
-    "2-1": 46,
+    "0-0": 34,
+    "0-1": 52,
+    "0-2": 32,
+    "1-0": 11,
+    "1-1": 17,
+    "1-2": 13,
+    "2-0": 109,
+    "2-1": 204,
     "2-2": 77
   }
 }

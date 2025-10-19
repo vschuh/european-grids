@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_ip",
-      "label": "50 IP+ Season",
-      "value": 105
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
-      "label": "Czechia NT",
-      "value": "6"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/06ebf3e7-4094-4d7d-7bad-cd88e4ec3330.png",
-      "label": "Sokol Hluboká",
-      "value": "2064"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/252a5e3d-988d-51c1-d081-264639adc927.png",
-      "label": "Olympia Blansko",
-      "value": "2072"
+      "type": "seasonal_rbi",
+      "label": "20+ RBI Season",
+      "value": 20
     },
     {
       "type": "tournament",
@@ -37,15 +17,35 @@
       "federation_id": 148
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/e0cdbe49-5118-1882-4882-f10fd522553d.png",
+      "label": "SaBaT Praha",
+      "value": "2074"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
+      "label": "Tempo Praha",
+      "value": "2066"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ],
   "answers": {
-    "0-0": 13,
+    "0-0": 61,
     "0-1": 8,
-    "0-2": 17,
-    "1-0": 6,
-    "1-1": 3,
-    "1-2": 10,
-    "2-0": 43,
-    "2-1": 68,
+    "0-2": 22,
+    "1-0": 88,
+    "1-1": 12,
+    "1-2": 41,
+    "2-0": 316,
+    "2-1": 89,
     "2-2": 102
   }
 }

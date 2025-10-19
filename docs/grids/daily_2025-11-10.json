@@ -1,50 +1,51 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/2b4c017d-41ab-0f88-0c43-a63a6080e50e.png",
-      "label": "Technika Brno",
-      "value": "2065"
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
+    },
+    {
+      "type": "seasonal_rbi",
+      "label": "20+ RBI Season",
+      "value": 20
     },
     {
       "type": "tournament",
-      "label": "Extraliga SB (CZ)",
-      "value": "W-EXT-L",
-      "federation_id": 148
-    },
-    {
-      "type": "seasonal_wOBA",
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
+      "federation_id": 278
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/dd134970-0bd6-d5fd-0abc-a138fc7d6868.jpg",
-      "label": "Arrows Ostrava",
-      "value": "1605"
+      "image": "https://static.wbsc.org/upload/f3233b20-510f-5d48-d8d4-964b62bb3ae3.png",
+      "label": "BASE BALL CLUB GROSSETO ASD",
+      "value": "357"
     },
     {
-      "type": "nationality",
-      "label": "Nationality: CZE",
-      "value": "CZE"
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c9a330c1-47a1-9f9a-0b51-c9d3b27c3822.png",
+      "label": "Brussels Kangaroos",
+      "value": "1477"
     },
     {
-      "type": "position",
-      "label": "P (min 1 PA)",
-      "value": "P"
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39"
     }
   ],
   "answers": {
-    "0-0": 4,
-    "0-1": 20,
-    "0-2": 91,
-    "1-0": 123,
-    "1-1": 195,
-    "1-2": 1227,
-    "2-0": 71,
-    "2-1": 101,
-    "2-2": 11403
+    "0-0": 25,
+    "0-1": 23,
+    "0-2": 7,
+    "1-0": 138,
+    "1-1": 20,
+    "1-2": 3,
+    "2-0": 113,
+    "2-1": 48,
+    "2-2": 46
   }
 }

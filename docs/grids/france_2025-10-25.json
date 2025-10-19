@@ -1,14 +1,34 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
     },
     {
-      "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France D1 BB (FR)",
+      "value": "FRA-D1BB",
+      "federation_id": 14
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/db8cb428-f188-8cd5-1354-4006e912897a.jpg",
+      "label": "Metz Cometz",
+      "value": "1712"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a18c7fc9-a3ce-81e9-0c12-f2a5ec8eab1e.jpg",
+      "label": "Rouen Huskies",
+      "value": "1428"
     },
     {
       "type": "team",
@@ -17,24 +37,15 @@
       "value": "14"
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/e20fa02b-5959-2c18-2def-c682eb6a540f.jpg",
-      "label": "Les Lions de Savigny-sur-Orge",
-      "value": "1715"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/07067501-9be9-9d54-0187-4b5ce1bc028d.jpg",
-      "label": "Les Pharaons d`Evry-Courcouronnes",
-      "value": "1367"
-    },
-    {
-      "type": "tournament",
-      "label": "Championnat de France Division 1 Féminine SB (FR)",
-      "value": "FRA-D1FSB",
-      "federation_id": 14
-    }
-  ]
+  "answers": {
+    "0-0": 31,
+    "0-1": 20,
+    "0-2": 35,
+    "1-0": 37,
+    "1-1": 23,
+    "1-2": 37,
+    "2-0": 177,
+    "2-1": 130,
+    "2-2": 85
+  }
 }

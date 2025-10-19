@@ -1,41 +1,53 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">=0.300 avg Season (min. 10 pa)",
-      "value": 0.3,
+      "type": "seasonal_bb",
+      "label": ">=10 BB Season",
+      "value": 10,
       "condition": "min"
     },
     {
-      "type": "position",
-      "label": "P (min 1 PA)",
-      "value": "P"
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
     },
     {
-      "type": "tournament",
-      "label": "Liga Nacional de Béisbol Oro (ESP)",
-      "value": "ESP-LNDH-BB",
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
       "federation_id": 39
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/30da3795-69a2-d2ec-66bf-7059cd80b093.jpg",
-      "label": "Astros Valencia",
-      "value": "1433"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/12a3f46c-cb0a-0014-98f9-bff5d87890b5.jpg",
+      "label": "Club de Béisbol y Sóftbol Rivas",
+      "value": "1354"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/ac5c9f7f-d4d3-57b0-22f3-8490ad944e4c.png",
-      "label": "Club Béisbol Barcelona",
-      "value": "1648"
+      "image": "https://static.wbsc.org/upload/9aa1aee4-5a37-b2fa-7992-1aa7244e07a0.png",
+      "label": "CBS Sant Boi",
+      "value": "1630"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
-      "label": "Spain NT",
-      "value": "39"
+      "type": "tournament",
+      "label": "Liga Nacional de Sófbol Oro (ESP)",
+      "value": "ESP-LNDH-SB",
+      "federation_id": 39
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 30,
+    "0-1": 67,
+    "0-2": 18,
+    "1-0": 38,
+    "1-1": 84,
+    "1-2": 34,
+    "2-0": 98,
+    "2-1": 274,
+    "2-2": 77
+  }
 }

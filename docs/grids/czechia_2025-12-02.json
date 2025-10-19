@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "LF (min 1 PA)",
-      "value": "LF"
+      "type": "seasonal_pitching_k",
+      "label": "50k+ Season",
+      "value": 50
     },
     {
-      "type": "seasonal_wOBA",
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25
-    },
-    {
-      "type": "tournament",
-      "label": "Extraliga SB (CZ)",
-      "value": "W-EXT-L",
-      "federation_id": 148
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/b8e2f6c7-d381-cb53-2a82-a2f9e92daba9.jpg",
-      "label": "Beavers Chomutov",
-      "value": "1380"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/0df1b8ac-31d1-a8bd-dae5-db1b7c541b03.jpg",
-      "label": "Painbusters Most",
-      "value": "1878"
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "6"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
+      "label": "Tempo Praha",
+      "value": "2066"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/5a29afcd-b476-f5ea-549e-0a6ca0bf8551.png",
+      "label": "Žraloci Ledenice",
+      "value": "1381"
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
+    }
+  ],
   "answers": {
-    "0-0": 66,
-    "0-1": 41,
-    "0-2": 20,
-    "1-0": 46,
-    "1-1": 36,
-    "1-2": 14,
-    "2-0": 393,
-    "2-1": 454,
+    "0-0": 18,
+    "0-1": 178,
+    "0-2": 46,
+    "1-0": 10,
+    "1-1": 79,
+    "1-2": 29,
+    "2-0": 32,
+    "2-1": 211,
     "2-2": 102
   }
 }

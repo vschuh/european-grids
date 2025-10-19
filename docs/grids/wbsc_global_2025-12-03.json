@@ -1,0 +1,56 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NZL.svg",
+      "label": "New Zealand NT",
+      "value": "170",
+      "federation_id": 170
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CAN.svg",
+      "label": "Canada NT",
+      "value": "205",
+      "federation_id": 205
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/RSA.svg",
+      "label": "South Africa NT",
+      "value": "81",
+      "federation_id": 81
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Olympic Softball Qualifiers",
+      "value": "OLYMPIC-SOFTBALL-Q",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 Men`s Softball World Cup",
+      "value": "U-18MSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_pitching_hbp",
+      "label": "<=2 HB Season",
+      "value": 2,
+      "condition": "max"
+    }
+  ],
+  "answers": {
+    "0-0": 15,
+    "0-1": 15,
+    "0-2": 15,
+    "1-0": 47,
+    "1-1": 49,
+    "1-2": 32,
+    "2-0": 59,
+    "2-1": 58,
+    "2-2": 166
+  }
+}

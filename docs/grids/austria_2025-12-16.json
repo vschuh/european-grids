@@ -2,19 +2,19 @@
   "cols": [
     {
       "type": "position",
-      "label": "LF (min 1 PA)",
-      "value": "LF"
+      "label": "C (min 1 PA)",
+      "value": "C"
     },
     {
-      "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
+      "type": "seasonal_pitching_ip",
+      "label": "35 IP+ Season",
+      "value": 105
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8"
+      "type": "tournament",
+      "label": "Softball Bundesliga (AT)",
+      "value": "SB-BUNDESLIGA",
+      "federation_id": 8
     }
   ],
   "rows": [
@@ -26,26 +26,26 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/1943295d-9bf7-e5b8-291c-021b311137ba.png",
-      "label": "Vienna Metrostars",
-      "value": "1223"
+      "image": "https://static.wbsc.org/upload/acfef0c2-5af4-e797-cb4b-550d6173bb34.png",
+      "label": "Hard Bulls",
+      "value": "1228"
     },
     {
-      "type": "tournament",
-      "label": "Baseball Bundesliga (AT)",
-      "value": "BB-BUNDESLIGA",
-      "federation_id": 8
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
     }
   ],
   "answers": {
-    "0-0": 95,
-    "0-1": 89,
-    "0-2": 38,
-    "1-0": 77,
-    "1-1": 90,
-    "1-2": 45,
-    "2-0": 213,
-    "2-1": 224,
-    "2-2": 103
+    "0-0": 46,
+    "0-1": 13,
+    "0-2": 41,
+    "1-0": 34,
+    "1-1": 12,
+    "1-2": 5,
+    "2-0": 118,
+    "2-1": 39,
+    "2-2": 63
   }
 }

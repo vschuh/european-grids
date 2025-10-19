@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/COL.svg",
+      "label": "Colombia NT",
+      "value": "88",
+      "federation_id": 88
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c7cc78eb-9c0c-baaf-5073-77bd5abae096.svg",
+      "label": "Leñadores de Las Tunas",
+      "value": "2619"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CUB.svg",
+      "label": "Cuba NT",
+      "value": "121",
+      "federation_id": 121
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Baseball Champions League Americas",
+      "value": "BASEBALL-CHAMP-LEAGUE",
+      "federation_id": 0
+    },
+    {
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    }
+  ],
+  "answers": {
+    "0-0": 10,
+    "0-1": 24,
+    "0-2": 27,
+    "1-0": 27,
+    "1-1": 4,
+    "1-2": 51,
+    "2-0": 104,
+    "2-1": 10,
+    "2-2": 147
+  }
+}

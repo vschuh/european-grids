@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_rbi",
-      "label": "20+ RBI Season",
-      "value": 20
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
     },
     {
-      "type": "seasonal_runs",
-      "label": "15+ Runs Season",
-      "value": 15
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
       "type": "tournament",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/24be214e-4c82-4f83-8fa3-56760624a195.jpg",
-      "label": "Quick Amersfoort Softball",
-      "value": "1308"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e8944012-5266-bf86-740a-2b238e5d1d9a.jpg",
+      "label": "Onze Gezellen",
+      "value": "1273"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/8d053c81-1566-2518-b6ab-ab8274584916.jpg",
-      "label": "ROEF!",
-      "value": "1271"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/6a057191-c5a2-e328-e9dc-1599fb6d475c.jpg",
+      "label": "Olympia Haarlem",
+      "value": "1270"
     },
     {
       "type": "team",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 6,
-    "0-1": 11,
-    "0-2": 17,
-    "1-0": 17,
-    "1-1": 26,
-    "1-2": 67,
-    "2-0": 89,
-    "2-1": 142,
+    "0-0": 21,
+    "0-1": 24,
+    "0-2": 58,
+    "1-0": 26,
+    "1-1": 44,
+    "1-2": 49,
+    "2-0": 175,
+    "2-1": 203,
     "2-2": 111
   }
 }

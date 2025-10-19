@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_bb",
-      "label": "10+ BB Season",
-      "value": 10
+      "type": "seasonal_rbi",
+      "label": "20+ RBI Season",
+      "value": 20
     },
     {
       "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "label": "Played in 2023 season",
+      "value": 2023
     },
     {
       "type": "team",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
-      "label": "Tempo Praha",
-      "value": "2066"
+      "image": "https://static.wbsc.org/upload/dd134970-0bd6-d5fd-0abc-a138fc7d6868.jpg",
+      "label": "Arrows Ostrava",
+      "value": "1605"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/06ebf3e7-4094-4d7d-7bad-cd88e4ec3330.png",
-      "label": "Sokol Hluboká",
-      "value": "2064"
+      "image": "https://static.wbsc.org/upload/e0cdbe49-5118-1882-4882-f10fd522553d.png",
+      "label": "SaBaT Praha",
+      "value": "2074"
     },
     {
       "type": "tournament",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 44,
-    "0-1": 152,
-    "0-2": 46,
-    "1-0": 25,
-    "1-1": 81,
-    "1-2": 17,
-    "2-0": 201,
-    "2-1": 316,
+    "0-0": 15,
+    "0-1": 87,
+    "0-2": 40,
+    "1-0": 8,
+    "1-1": 61,
+    "1-2": 29,
+    "2-0": 82,
+    "2-1": 410,
     "2-2": 159
   }
 }

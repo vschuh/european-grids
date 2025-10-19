@@ -2,21 +2,22 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/f724d208-c028-ab99-a87f-ed0408d1b1d0.jpg",
-      "label": "Softball klub Novi Zagreb Lady Pirates",
-      "value": "1601"
+      "image": "https://static.wbsc.org/upload/b0b59bc1-5816-6673-3254-7a989bdd0d5e.jpg",
+      "label": "Sabat Praha",
+      "value": "2368"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/24be214e-4c82-4f83-8fa3-56760624a195.jpg",
-      "label": "Quick Amersfoort Softball",
-      "value": "1308"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
+      "label": "SOFTBALL CLUB FORLI A.S.D.",
+      "value": "395"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/1603ff99-c3b0-d27b-807f-84d84d54db0d.jpg",
-      "label": "A.B. CARONNO SOFTBALL ASD",
-      "value": "391"
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8",
+      "federation_id": 8
     }
   ],
   "rows": [
@@ -27,26 +28,26 @@
       "federation_id": 278
     },
     {
-      "type": "seasonal_avg",
-      "label": ">=0.300 avg Season (min. 10 pa)",
-      "value": 0.3,
+      "type": "seasonal_pitching_k",
+      "label": ">=35k Season",
+      "value": 35,
       "condition": "min"
     },
     {
       "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
+      "label": "Played in 2022 season",
+      "value": 2022
     }
   ],
   "answers": {
-    "0-0": 7,
-    "0-1": 4,
-    "0-2": 8,
-    "1-0": 9,
-    "1-1": 16,
-    "1-2": 36,
-    "2-0": 8,
-    "2-1": 30,
-    "2-2": 41
+    "0-0": 4,
+    "0-1": 12,
+    "0-2": 24,
+    "1-0": 5,
+    "1-1": 20,
+    "1-2": 34,
+    "2-0": 10,
+    "2-1": 49,
+    "2-2": 224
   }
 }

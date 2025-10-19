@@ -1,42 +1,51 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">=0.400 OBP Season (min. 10 pa)",
-      "value": 0.4,
-      "condition": "min"
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
       "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
       "label": "France NT",
-      "value": "14",
-      "federation_id": 14
+      "value": "14"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/ff7815ce-79aa-def3-c3c1-e7f2065bd8ec.jpg",
-      "label": "Les Rabbits de Clapiers-Jacou",
-      "value": "1514"
+      "image": "https://static.wbsc.org/upload/e20fa02b-5959-2c18-2def-c682eb6a540f.jpg",
+      "label": "Les Lions de Savigny-sur-Orge",
+      "value": "1715"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/77e94058-ac4d-db29-8258-7b792b239dbc.jpg",
-      "label": "Pessac Panthères",
-      "value": "1512"
+      "image": "https://static.wbsc.org/upload/0050079f-5f9e-d803-8839-20992d9cfc18.jpg",
+      "label": "Les Boucaniers de La Rochelle",
+      "value": "1714"
     },
     {
       "type": "tournament",
-      "label": "Championnat de France Division 1 Féminine SB (FR)",
-      "value": "FRA-D1FSB",
+      "label": "Championnat de France D1 BB (FR)",
+      "value": "FRA-D1BB",
       "federation_id": 14
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 14,
+    "0-1": 9,
+    "0-2": 19,
+    "1-0": 18,
+    "1-1": 8,
+    "1-2": 13,
+    "2-0": 72,
+    "2-1": 68,
+    "2-2": 85
+  }
 }

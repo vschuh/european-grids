@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_ops",
+      "label": ">=1.000 OPS Season (min. 10 pa)",
+      "value": 1,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
+      "federation_id": 39
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/9444406f-3c22-71e5-78dd-4770dedd5eaf.png",
+      "label": "Club Béisbol Viladecans",
+      "value": "1355"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/12a3f46c-cb0a-0014-98f9-bff5d87890b5.jpg",
+      "label": "Club de Béisbol y Sóftbol Rivas",
+      "value": "1354"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Sófbol Oro (ESP)",
+      "value": "ESP-LNDH-SB",
+      "federation_id": 39
+    }
+  ],
+  "answers": {
+    "0-0": 69,
+    "0-1": 28,
+    "0-2": 49,
+    "1-0": 49,
+    "1-1": 26,
+    "1-2": 18,
+    "2-0": 152,
+    "2-1": 45,
+    "2-2": 77
+  }
+}

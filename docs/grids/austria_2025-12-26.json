@@ -1,9 +1,9 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "CF (min 1 PA)",
-      "value": "CF"
+      "type": "seasonal_pitching_k",
+      "label": "50k+ Season",
+      "value": 50
     },
     {
       "type": "year",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/ad49a1e0-b481-4a1c-5780-9a7e8693fae9.png",
-      "label": "Traiskirchen Grasshoppers",
-      "value": "1226"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a8c54b1a-0050-5d18-a2f6-2059dde33487.png",
+      "label": "Dornbirn Indians",
+      "value": "1225"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/3a067f16-f428-d6b9-450d-7ff6132d4207.png",
-      "label": "Feldkirch Cardinals",
-      "value": "1229"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ad49a1e0-b481-4a1c-5780-9a7e8693fae9.png",
+      "label": "Traiskirchen Grasshoppers",
+      "value": "1226"
     },
     {
       "type": "tournament",
@@ -38,13 +38,13 @@
     }
   ],
   "answers": {
-    "0-0": 27,
-    "0-1": 24,
-    "0-2": 33,
-    "1-0": 72,
-    "1-1": 40,
-    "1-2": 19,
-    "2-0": 73,
+    "0-0": 9,
+    "0-1": 77,
+    "0-2": 38,
+    "1-0": 8,
+    "1-1": 24,
+    "1-2": 33,
+    "2-0": 11,
     "2-1": 100,
     "2-2": 63
   }

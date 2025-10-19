@@ -2,13 +2,13 @@
   "cols": [
     {
       "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
+      "label": "P (min 1 PA)",
+      "value": "P"
     },
     {
       "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/f3233b20-510f-5d48-d8d4-964b62bb3ae3.png",
-      "label": "BASE BALL CLUB GROSSETO ASD",
-      "value": "357"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/bad78fec-0b23-cfca-8d0f-5fb34cfab49c.jpg",
+      "label": "A.S.D. BOLZANO BASEBALL CLUB",
+      "value": "347"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/300b244a-687b-e9fe-dead-f938a53ecbed.jpg",
-      "label": "A.S.D. GRIZZLIES TORINO 48 B.S.C.",
-      "value": "337"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/5effd52b-7309-0dc5-b483-f973e3ede16e.jpg",
+      "label": "NEW BLACK PANTHERS A.S.D.",
+      "value": "345"
     },
     {
       "type": "tournament",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 26,
-    "0-1": 50,
-    "0-2": 17,
-    "1-0": 28,
-    "1-1": 46,
-    "1-2": 9,
-    "2-0": 686,
-    "2-1": 1083,
+    "0-0": 23,
+    "0-1": 27,
+    "0-2": 3,
+    "1-0": 37,
+    "1-1": 40,
+    "1-2": 12,
+    "2-0": 1249,
+    "2-1": 1063,
     "2-2": 223
   }
 }

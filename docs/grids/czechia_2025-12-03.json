@@ -1,51 +1,50 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_k",
-      "label": "50k+ Season",
-      "value": 50
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/1ad273ca-49c9-52b7-3330-5aae326481f9.png",
+      "label": "Třebíč Nuclears",
+      "value": "2067"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/21908af0-2814-b783-333b-41871a18b7e3.jpg",
+      "label": "Chemie - Kotlářka",
+      "value": "2367"
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga BB (CZ)",
+      "value": "CZE-EXL",
+      "federation_id": 6
+    }
+  ],
+  "rows": [
+    {
+      "type": "seasonal_pitching_ip",
+      "label": "50 IP+ Season",
+      "value": 105
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: CZE",
+      "value": "CZE"
     },
     {
       "type": "year",
       "label": "Played in 2024 season",
       "value": 2024
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
-      "label": "Czechia NT",
-      "value": "6"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
-      "label": "Tempo Praha",
-      "value": "2066"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/5a29afcd-b476-f5ea-549e-0a6ca0bf8551.png",
-      "label": "Žraloci Ledenice",
-      "value": "1381"
-    },
-    {
-      "type": "tournament",
-      "label": "Extraliga SB (CZ)",
-      "value": "W-EXT-L",
-      "federation_id": 148
     }
   ],
   "answers": {
-    "0-0": 18,
-    "0-1": 178,
-    "0-2": 46,
-    "1-0": 10,
-    "1-1": 79,
-    "1-2": 29,
-    "2-0": 32,
-    "2-1": 211,
-    "2-2": 102
+    "0-0": 14,
+    "0-1": 4,
+    "0-2": 92,
+    "1-0": 105,
+    "1-1": 27,
+    "1-2": 358,
+    "2-0": 93,
+    "2-1": 20,
+    "2-2": 350
   }
 }

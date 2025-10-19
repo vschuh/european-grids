@@ -1,31 +1,25 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">=0.350 OBP Season (min. 10 pa)",
-      "value": 0.35,
+      "type": "seasonal_wOBA",
+      "label": ">=0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25,
       "condition": "min"
     },
     {
-      "type": "seasonal_hbp",
-      "label": ">=5 HBP Season",
-      "value": 5,
+      "type": "seasonal_sb",
+      "label": ">=10 SB Season",
+      "value": 10,
       "condition": "min"
     },
     {
       "type": "tournament",
-      "label": "Liga Nacional de Béisbol Oro (ESP)",
-      "value": "ESP-LNDH-BB",
+      "label": "Liga Nacional de Sófbol Oro (ESP)",
+      "value": "ESP-LNDH-SB",
       "federation_id": 39
     }
   ],
   "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/e715ea59-748b-5200-77b6-63e4e2c8c96e.jpg",
-      "label": "Tenerife Marlins Puerto Cruz",
-      "value": "1421"
-    },
     {
       "type": "team",
       "image": "https://static.wbsc.org/upload/3084d3b0-293e-1776-d083-36810be4a442.png",
@@ -34,9 +28,26 @@
     },
     {
       "type": "team",
+      "image": "https://static.wbsc.org/upload/2648277a-0a77-53ab-7dde-0020537acc83.jpeg",
+      "label": "CS Fénix Valencia",
+      "value": "1624"
+    },
+    {
+      "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
       "label": "Spain NT",
       "value": "39"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 55,
+    "0-1": 6,
+    "0-2": 32,
+    "1-0": 32,
+    "1-1": 6,
+    "1-2": 30,
+    "2-0": 195,
+    "2-1": 21,
+    "2-2": 77
+  }
 }

@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "CF (min 1 PA)",
-      "value": "CF"
+      "type": "seasonal_runs",
+      "label": "20+ Runs Season",
+      "value": 20
     },
     {
       "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "label": "Played in 2023 season",
+      "value": 2023
     },
     {
       "type": "team",
@@ -20,32 +20,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/d84201d1-024c-068e-a445-3ebb5216a8c4.png",
-      "label": "Schwechat Blue Bats",
-      "value": "1261"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a8c54b1a-0050-5d18-a2f6-2059dde33487.png",
+      "label": "Dornbirn Indians",
+      "value": "1225"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/acfef0c2-5af4-e797-cb4b-550d6173bb34.png",
-      "label": "Hard Bulls",
-      "value": "1228"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8594b98-58ba-b8a6-5518-10de4ae89d9d.png",
+      "label": "Wr. Neustadt Diving Ducks",
+      "value": "1227"
     },
     {
       "type": "tournament",
-      "label": "Baseball Bundesliga (AT)",
-      "value": "BB-BUNDESLIGA",
+      "label": "Softball Bundesliga (AT)",
+      "value": "SB-BUNDESLIGA",
       "federation_id": 8
     }
   ],
   "answers": {
-    "0-0": 36,
-    "0-1": 42,
-    "0-2": 25,
-    "1-0": 63,
-    "1-1": 60,
-    "1-2": 17,
-    "2-0": 164,
-    "2-1": 195,
-    "2-2": 103
+    "0-0": 19,
+    "0-1": 85,
+    "0-2": 38,
+    "1-0": 31,
+    "1-1": 98,
+    "1-2": 45,
+    "2-0": 32,
+    "2-1": 106,
+    "2-2": 63
   }
 }

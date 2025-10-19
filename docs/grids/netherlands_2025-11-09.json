@@ -1,36 +1,34 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_ip",
-      "label": ">=35 IP Season",
-      "value": 105,
-      "condition": "min"
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
     },
     {
       "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
+      "label": "Played in 2025 season",
+      "value": 2025
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
       "label": "Netherlands NT",
-      "value": "1",
-      "federation_id": 1
+      "value": "1"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/24be214e-4c82-4f83-8fa3-56760624a195.jpg",
-      "label": "Quick Amersfoort Softball",
-      "value": "1308"
+      "image": "https://static.wbsc.org/upload/934e9ec8-bec3-79bd-a8a8-b040f4161d55.png",
+      "label": "Kinheim",
+      "value": "1263"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/2771d01c-919e-c952-c89c-0b6d09fae4a0.png",
-      "label": "Red Lions",
-      "value": "2596"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/7650db8c-fd99-d90e-fe5e-20bd94dff0d3.jpg",
+      "label": "Quick Amersfoort Baseball",
+      "value": "1267"
     },
     {
       "type": "tournament",
@@ -38,5 +36,16 @@
       "value": "HOOFDKLASSE-HONKBAL",
       "federation_id": 1
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 0,
+    "0-1": 44,
+    "0-2": 33,
+    "1-0": 3,
+    "1-1": 26,
+    "1-2": 8,
+    "2-0": 5,
+    "2-1": 237,
+    "2-2": 149
+  }
 }

@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_fip",
-      "label": "<2.50 FIP Season (min. 10 ip)",
-      "value": 3
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
       "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
-      "label": "Tempo Praha",
-      "value": "2066"
+      "image": "https://static.wbsc.org/upload/e0cdbe49-5118-1882-4882-f10fd522553d.png",
+      "label": "SaBaT Praha",
+      "value": "2074"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/155cf629-9bb0-5fc6-2830-5ddd769d0d47.png",
-      "label": "Hvězdy Extraligy",
-      "value": "2210"
+      "image": "https://static.wbsc.org/upload/21908af0-2814-b783-333b-41871a18b7e3.jpg",
+      "label": "Chemie - Kotlářka",
+      "value": "2367"
     },
     {
       "type": "tournament",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 6,
-    "0-1": 152,
-    "0-2": 46,
-    "1-0": 0,
-    "1-1": 30,
-    "1-2": 10,
-    "2-0": 14,
-    "2-1": 191,
+    "0-0": 52,
+    "0-1": 114,
+    "0-2": 29,
+    "1-0": 6,
+    "1-1": 20,
+    "1-2": 5,
+    "2-0": 94,
+    "2-1": 211,
     "2-2": 102
   }
 }

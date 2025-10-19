@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/397925d5-4055-249e-4cc7-4752062d9171.jpg",
+      "label": "H20 Softball",
+      "value": "1883"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/7b277a56-f1a2-d771-d7f9-1867b9b6c01d.jpg",
+      "label": "Bonn Capitals",
+      "value": "1430"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1943295d-9bf7-e5b8-291c-021b311137ba.png",
+      "label": "Vienna Metrostars",
+      "value": "1223"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup (EU)",
+      "value": "EU-EURO-CUP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_runs",
+      "label": ">=15 Runs Season",
+      "value": 15,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    }
+  ],
+  "answers": {
+    "0-0": 5,
+    "0-1": 3,
+    "0-2": 3,
+    "1-0": 8,
+    "1-1": 10,
+    "1-2": 34,
+    "2-0": 4,
+    "2-1": 43,
+    "2-2": 48
+  }
+}

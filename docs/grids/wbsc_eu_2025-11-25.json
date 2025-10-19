@@ -1,0 +1,51 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f939c1ad-e310-749b-e7ba-921a0cf0498f.png",
+      "label": "Baseball Klub Vindija Varaždin",
+      "value": "2409"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/29067cbd-40d1-f894-ec51-5ffc9387aaa1.jpg",
+      "label": "Budapest Red Wolves",
+      "value": "1799"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ada59a2e-961b-9749-29d8-673c989050e4.jpg",
+      "label": "Beisbolo klubas Utenos „Titanai“",
+      "value": "1419"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    }
+  ],
+  "answers": {
+    "0-0": 4,
+    "0-1": 10,
+    "0-2": 5,
+    "1-0": 16,
+    "1-1": 12,
+    "1-2": 23,
+    "2-0": 4,
+    "2-1": 19,
+    "2-2": 16
+  }
+}

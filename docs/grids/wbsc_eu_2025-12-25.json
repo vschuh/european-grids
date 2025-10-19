@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8",
+      "federation_id": 8
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a56ecb27-813b-b97e-c668-3d06269b6494.jpg",
+      "label": "Tex Town Tigers",
+      "value": "1274"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/b08344f3-ade1-b435-2443-311ee398786e.png",
+      "label": "Apollo Bratislava",
+      "value": "1427"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women's Softball European Premiere Cup (EU)",
+      "value": "EU-EURO-PREM-CUP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_sb",
+      "label": ">=10 SB Season",
+      "value": 10,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    }
+  ],
+  "answers": {
+    "0-0": 21,
+    "0-1": 26,
+    "0-2": 15,
+    "1-0": 38,
+    "1-1": 4,
+    "1-2": 3,
+    "2-0": 224,
+    "2-1": 38,
+    "2-2": 40
+  }
+}

@@ -1,14 +1,14 @@
 {
   "cols": [
     {
+      "type": "seasonal_avg",
+      "label": ">0.400 OBP Season (min. 10 pa)",
+      "value": 0.4
+    },
+    {
       "type": "seasonal_pitching_k",
       "label": "50k+ Season",
       "value": 50
-    },
-    {
-      "type": "position",
-      "label": "RF (min 1 PA)",
-      "value": "RF"
     },
     {
       "type": "tournament",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/fb648008-c9d5-2b15-fca8-960733ae99e3.png",
-      "label": "Deurne Spartans",
-      "value": "1377"
+      "image": "https://static.wbsc.org/upload/bd187a02-55c9-dbf3-3a25-668902bfcd8d.png",
+      "label": "Borgerhout Squirrels",
+      "value": "1473"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a39fd931-7c83-ffd7-63b9-d21f6f0851d9.jpg",
-      "label": "Brasschaat Braves",
-      "value": "1414"
+      "image": "https://static.wbsc.org/upload/d430c331-250b-b6d3-fc73-5e9348647ec8.png",
+      "label": "Mont-Saint-Guibert Phoenix",
+      "value": "1479"
     },
     {
       "type": "team",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 12,
-    "0-1": 80,
-    "0-2": 57,
-    "1-0": 8,
-    "1-1": 142,
-    "1-2": 50,
-    "2-0": 38,
-    "2-1": 246,
+    "0-0": 93,
+    "0-1": 12,
+    "0-2": 58,
+    "1-0": 82,
+    "1-1": 8,
+    "1-2": 57,
+    "2-0": 214,
+    "2-1": 38,
     "2-2": 100
   }
 }

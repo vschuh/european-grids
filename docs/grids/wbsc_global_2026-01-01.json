@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ef9c3699-433d-84cf-e297-da9743f94500.jpg",
+      "label": "FORTITUDO BASEBALL CLUB 1953 S.S.D. scarl",
+      "value": "336"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CUB.svg",
+      "label": "Cuba NT",
+      "value": "121",
+      "federation_id": 121
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/USA.svg",
+      "label": "USA NT",
+      "value": "126",
+      "federation_id": 126
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Premier12",
+      "value": "P-12",
+      "federation_id": 0
+    },
+    {
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    }
+  ],
+  "answers": {
+    "0-0": 18,
+    "0-1": 69,
+    "0-2": 82,
+    "1-0": 45,
+    "1-1": 51,
+    "1-2": 71,
+    "2-0": 69,
+    "2-1": 45,
+    "2-2": 68
+  }
+}

@@ -2,52 +2,51 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ISR.svg",
-      "label": "Israel NT",
-      "value": "33",
-      "federation_id": 33
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
+      "label": "Vienna Wanderers",
+      "value": "1222"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/57730099-9289-8c6b-e9f4-4aeb1af7014d.jpg",
-      "label": "Magos Tenerife",
-      "value": "1383"
+      "image": "https://static.wbsc.org/upload/65fd09a8-3d13-c9be-e020-8c154128996e.png",
+      "label": "Arrows Ostrava",
+      "value": "1431"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/72e7ef7c-df5b-42b9-ffb0-cb3102eacbb8.jpg",
-      "label": "Spectrum Praha",
-      "value": "1879"
+      "image": "https://static.wbsc.org/upload/867c2c87-a075-4811-3a29-71da8dafa1a7.svg",
+      "label": "1949 PARMA BASEBALL CLUB ASD",
+      "value": "333"
     }
   ],
   "rows": [
     {
       "type": "tournament",
-      "label": "U-23 Baseball European Championship (EU)",
-      "value": "EU-U-23-EURO-CHAMP-M-SB",
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
       "federation_id": 278
     },
     {
-      "type": "seasonal_avg",
-      "label": ">=0.400 OBP Season (min. 10 pa)",
-      "value": 0.4,
-      "condition": "min"
+      "type": "seasonal_pitching_era",
+      "label": "<=3.00 ERA Season (min. 10 ip)",
+      "value": 3,
+      "condition": "max"
     },
     {
       "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "label": "Played in 2024 season",
+      "value": 2024
     }
   ],
   "answers": {
-    "0-0": 15,
-    "0-1": 4,
-    "0-2": 3,
-    "1-0": 57,
-    "1-1": 26,
-    "1-2": 12,
-    "2-0": 68,
-    "2-1": 22,
-    "2-2": 42
+    "0-0": 12,
+    "0-1": 8,
+    "0-2": 21,
+    "1-0": 8,
+    "1-1": 5,
+    "1-2": 28,
+    "2-0": 91,
+    "2-1": 91,
+    "2-2": 65
   }
 }

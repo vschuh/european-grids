@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
     },
     {
-      "type": "seasonal_pitching_ip",
-      "label": "50 IP+ Season",
-      "value": 105
-    },
-    {
-      "type": "tournament",
-      "label": "Championnat de France Division 1 Féminine SB (FR)",
-      "value": "FRA-D1FSB",
-      "federation_id": 14
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/07067501-9be9-9d54-0187-4b5ce1bc028d.jpg",
-      "label": "Les Pharaons d`Evry-Courcouronnes",
-      "value": "1367"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/229a41eb-e61a-7ab8-e29f-3100fc34a2ce.jpg",
-      "label": "Les Comanches de Saint-Raphaël",
-      "value": "1352"
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "14"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/229a41eb-e61a-7ab8-e29f-3100fc34a2ce.jpg",
+      "label": "Les Comanches de Saint-Raphaël",
+      "value": "1352"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/83428e38-f463-52e1-0571-48f71aa9fc31.jpg",
+      "label": "Stade Toulousain Baseball Softball",
+      "value": "1713"
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France D1 BB (FR)",
+      "value": "FRA-D1BB",
+      "federation_id": 14
+    }
+  ],
   "answers": {
-    "0-0": 24,
-    "0-1": 11,
-    "0-2": 26,
-    "1-0": 13,
-    "1-1": 3,
-    "1-2": 22,
-    "2-0": 116,
-    "2-1": 22,
-    "2-2": 41
+    "0-0": 23,
+    "0-1": 27,
+    "0-2": 23,
+    "1-0": 28,
+    "1-1": 10,
+    "1-2": 14,
+    "2-0": 131,
+    "2-1": 69,
+    "2-2": 85
   }
 }

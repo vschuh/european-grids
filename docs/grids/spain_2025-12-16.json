@@ -1,0 +1,54 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_pitching_hbp",
+      "label": "<=2 HB Season",
+      "value": 2,
+      "condition": "max"
+    },
+    {
+      "type": "seasonal_hits",
+      "label": ">=15 Hit Season",
+      "value": 15,
+      "condition": "min"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Béisbol Oro (ESP)",
+      "value": "ESP-LNDH-BB",
+      "federation_id": 39
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f07f3dfb-77ee-f3e0-0242-7325665efdec.jpg",
+      "label": "Dridma Rivas Sófbol Club",
+      "value": "1625"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2385052c-b349-ee0a-0368-a3c409cef452.png",
+      "label": "CBS Antorcha Valencia",
+      "value": "1653"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
+      "federation_id": 39
+    }
+  ],
+  "answers": {
+    "0-0": 28,
+    "0-1": 21,
+    "0-2": 3,
+    "1-0": 59,
+    "1-1": 30,
+    "1-2": 42,
+    "2-0": 170,
+    "2-1": 103,
+    "2-2": 76
+  }
+}

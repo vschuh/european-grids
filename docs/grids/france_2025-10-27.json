@@ -2,13 +2,33 @@
   "cols": [
     {
       "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
-      "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/229a41eb-e61a-7ab8-e29f-3100fc34a2ce.jpg",
+      "label": "Les Comanches de Saint-Raphaël",
+      "value": "1352"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/db8cb428-f188-8cd5-1354-4006e912897a.jpg",
+      "label": "Metz Cometz",
+      "value": "1712"
     },
     {
       "type": "tournament",
@@ -17,24 +37,15 @@
       "federation_id": 14
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/ff7815ce-79aa-def3-c3c1-e7f2065bd8ec.jpg",
-      "label": "Les Rabbits de Clapiers-Jacou",
-      "value": "1514"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/0050079f-5f9e-d803-8839-20992d9cfc18.jpg",
-      "label": "Les Boucaniers de La Rochelle",
-      "value": "1714"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
-      "label": "France NT",
-      "value": "14"
-    }
-  ]
+  "answers": {
+    "0-0": 16,
+    "0-1": 28,
+    "0-2": 23,
+    "1-0": 20,
+    "1-1": 47,
+    "1-2": 8,
+    "2-0": 100,
+    "2-1": 208,
+    "2-2": 85
+  }
 }

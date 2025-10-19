@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/6ae286e1-9a68-99fc-9429-832b1c39d98c.jpg",
+      "label": "Olen Titans",
+      "value": "1621"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/USA.svg",
+      "label": "USA NT",
+      "value": "126",
+      "federation_id": 126
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8d053c81-1566-2518-b6ab-ab8274584916.jpg",
+      "label": "ROEF!",
+      "value": "1271"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women`s Softball World Championship",
+      "value": "WSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_pitching_k",
+      "label": ">=50k Season",
+      "value": 50,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    }
+  ],
+  "answers": {
+    "0-0": 3,
+    "0-1": 36,
+    "0-2": 3,
+    "1-0": 3,
+    "1-1": 4,
+    "1-2": 7,
+    "2-0": 7,
+    "2-1": 137,
+    "2-2": 44
+  }
+}

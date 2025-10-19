@@ -1,0 +1,55 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/GBR.svg",
+      "label": "Great Britain NT",
+      "value": "20",
+      "federation_id": 20
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1",
+      "federation_id": 1
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/MEX.svg",
+      "label": "Mexico NT",
+      "value": "3",
+      "federation_id": 3
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-23 Baseball World Cup",
+      "value": "U-23",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 Women`s Softball World Cup",
+      "value": "U-18WSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
+    }
+  ],
+  "answers": {
+    "0-0": 23,
+    "0-1": 94,
+    "0-2": 107,
+    "1-0": 30,
+    "1-1": 60,
+    "1-2": 70,
+    "2-0": 130,
+    "2-1": 203,
+    "2-2": 110
+  }
+}

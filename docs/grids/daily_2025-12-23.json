@@ -2,32 +2,32 @@
   "cols": [
     {
       "type": "nationality",
-      "label": "Nationality: BEL",
-      "value": "BEL"
+      "label": "Nationality: NED",
+      "value": "NED"
     },
     {
       "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "label": "Played in 2025 season",
+      "value": 2025
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
-      "label": "Netherlands NT",
-      "value": "1"
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a39fd931-7c83-ffd7-63b9-d21f6f0851d9.jpg",
-      "label": "Brasschaat Braves",
-      "value": "1414"
+      "image": "https://static.wbsc.org/upload/ef175e86-8a69-5cb4-6249-5c548df8b041.png",
+      "label": "Cantincrode Baseball en Softball Stars",
+      "value": "1394"
     },
     {
-      "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
     },
     {
       "type": "tournament",
@@ -37,14 +37,14 @@
     }
   ],
   "answers": {
-    "0-0": 181,
-    "0-1": 58,
-    "0-2": 3,
-    "1-0": 969,
-    "1-1": 4029,
-    "1-2": 156,
-    "2-0": 36,
-    "2-1": 379,
-    "2-2": 52
+    "0-0": 6,
+    "0-1": 55,
+    "0-2": 10,
+    "1-0": 688,
+    "1-1": 11571,
+    "1-2": 278,
+    "2-0": 52,
+    "2-1": 332,
+    "2-2": 36
   }
 }

@@ -1,16 +1,34 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/7650db8c-fd99-d90e-fe5e-20bd94dff0d3.jpg",
-      "label": "Quick Amersfoort Baseball",
-      "value": "1267"
+      "type": "seasonal_ops",
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "value": 1
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/6a057191-c5a2-e328-e9dc-1599fb6d475c.jpg",
-      "label": "Olympia Haarlem",
-      "value": "1270"
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/bdc06e75-2859-a6ba-74da-9a6e16207d72.png",
+      "label": "Twins Oosterhout",
+      "value": "1269"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/38ed2f87-d5c1-caae-58f8-ddd93f46cd58.jpg",
+      "label": "Sparks Haarlem",
+      "value": "1272"
     },
     {
       "type": "tournament",
@@ -19,32 +37,15 @@
       "federation_id": 1
     }
   ],
-  "rows": [
-    {
-      "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
-    },
-    {
-      "type": "nationality",
-      "label": "Nationality: NED",
-      "value": "NED"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
-    }
-  ],
   "answers": {
-    "0-0": 19,
-    "0-1": 21,
-    "0-2": 102,
-    "1-0": 80,
-    "1-1": 58,
-    "1-2": 500,
-    "2-0": 52,
-    "2-1": 55,
-    "2-2": 318
+    "0-0": 9,
+    "0-1": 48,
+    "0-2": 14,
+    "1-0": 30,
+    "1-1": 48,
+    "1-2": 29,
+    "2-0": 66,
+    "2-1": 318,
+    "2-2": 149
   }
 }

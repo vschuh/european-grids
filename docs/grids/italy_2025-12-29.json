@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_wOBA",
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
       "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
@@ -20,32 +20,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/552eb909-5775-5ced-11cd-899ef3bdc14e.jpg",
-      "label": "THUNDERS & DRAGONS  SOFTBALL -  BASEBALL A.S.D. CASTELLANA",
-      "value": "346"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/fa0ea240-a831-b605-ddb9-629eb0bd8e56.jpg",
+      "label": "OLD PARMA BASEBALL SOFTBALL CLUB A.S.D.",
+      "value": "407"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/204ee461-b8c4-8f9e-e8c4-6138b8fa9cc8.jpg",
-      "label": "A.S.D. NETTUNO B.C. 1945",
-      "value": "355"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/679d2360-7aba-32ca-cb27-a1818b537f03.jpg",
+      "label": "POL. CASERTA BAS. E SOFT. ACADEMY A.S.D.",
+      "value": "394"
     },
     {
       "type": "tournament",
-      "label": "Serie A Baseball (IT)",
-      "value": "ITA-SERIE-A1-M-BB",
+      "label": "Serie A1 Softball (IT)",
+      "value": "ITA-SERIE-A1-F-SB",
       "federation_id": 2
     }
   ],
   "answers": {
-    "0-0": 33,
-    "0-1": 54,
-    "0-2": 11,
-    "1-0": 53,
-    "1-1": 56,
-    "1-2": 30,
-    "2-0": 619,
-    "2-1": 1065,
-    "2-2": 223
+    "0-0": 35,
+    "0-1": 48,
+    "0-2": 12,
+    "1-0": 23,
+    "1-1": 11,
+    "1-2": 5,
+    "2-0": 340,
+    "2-1": 346,
+    "2-2": 125
   }
 }

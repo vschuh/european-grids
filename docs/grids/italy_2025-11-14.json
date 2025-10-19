@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "P (min 1 PA)",
-      "value": "P"
+      "type": "seasonal_ops",
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "value": 1
     },
     {
-      "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/ef9c3699-433d-84cf-e297-da9743f94500.jpg",
-      "label": "FORTITUDO BASEBALL CLUB 1953 S.S.D. scarl",
-      "value": "336"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/17fb42df-e156-f96b-aed7-4aa314731616.jpg",
-      "label": "BUSSOLENGO SOFTBALL 2.0 A.S.D.",
-      "value": "1282"
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
     },
     {
       "type": "tournament",
@@ -37,15 +17,35 @@
       "federation_id": 2
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/bad78fec-0b23-cfca-8d0f-5fb34cfab49c.jpg",
+      "label": "A.S.D. BOLZANO BASEBALL CLUB",
+      "value": "347"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/004760b7-d768-4c26-2453-428db40dbc44.svg",
+      "label": "BASEBALL SOFTBALL CLUB GROSSETO 1952 S.S.D. A R.L.",
+      "value": "383"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ],
   "answers": {
-    "0-0": 110,
-    "0-1": 88,
-    "0-2": 48,
-    "1-0": 10,
-    "1-1": 26,
-    "1-2": 8,
-    "2-0": 1249,
-    "2-1": 1083,
+    "0-0": 6,
+    "0-1": 2,
+    "0-2": 20,
+    "1-0": 30,
+    "1-1": 1,
+    "1-2": 77,
+    "2-0": 268,
+    "2-1": 5,
     "2-2": 223
   }
 }

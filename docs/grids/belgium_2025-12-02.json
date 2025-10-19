@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_doubles",
-      "label": "10+ Doubles Season",
+      "type": "seasonal_bb",
+      "label": "10+ BB Season",
       "value": 10
     },
     {
       "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "label": "Played in 2023 season",
+      "value": 2023
     },
     {
       "type": "team",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/7f689077-0110-b1f1-2ef9-4b2c962e00c8.png",
-      "label": "Namur Angels",
-      "value": "1478"
+      "image": "https://static.wbsc.org/upload/20c6919f-5149-b21e-dc0e-34879b702f4f.png",
+      "label": "Braine Black Rickers",
+      "value": "1553"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a39fd931-7c83-ffd7-63b9-d21f6f0851d9.jpg",
-      "label": "Brasschaat Braves",
-      "value": "1414"
+      "image": "https://static.wbsc.org/upload/b984f263-2924-2e02-6b23-7257a92a820c.png",
+      "label": "Gent Knights",
+      "value": "1475"
     },
     {
       "type": "tournament",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 4,
-    "0-1": 58,
-    "0-2": 7,
-    "1-0": 10,
-    "1-1": 150,
-    "1-2": 47,
-    "2-0": 33,
-    "2-1": 261,
+    "0-0": 59,
+    "0-1": 123,
+    "0-2": 3,
+    "1-0": 26,
+    "1-1": 82,
+    "1-2": 12,
+    "2-0": 193,
+    "2-1": 306,
     "2-2": 100
   }
 }

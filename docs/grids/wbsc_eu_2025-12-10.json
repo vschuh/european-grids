@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/7508dcab-3224-69b1-99ca-fa482a5bdb03.jpg",
+      "label": "BK Olimpija Karlovac",
+      "value": "1415"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
+      "federation_id": 39
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/e715ea59-748b-5200-77b6-63e4e2c8c96e.jpg",
+      "label": "Tenerife Marlins Puerto Cruz",
+      "value": "1421"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "European Baseball Champions Cup (EU)",
+      "value": "EU-CHAMP-CUP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    }
+  ],
+  "answers": {
+    "0-0": 14,
+    "0-1": 9,
+    "0-2": 5,
+    "1-0": 13,
+    "1-1": 109,
+    "1-2": 19,
+    "2-0": 25,
+    "2-1": 147,
+    "2-2": 42
+  }
+}

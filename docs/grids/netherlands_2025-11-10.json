@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_fip",
-      "label": "<2.50 FIP Season (min. 10 ip)",
-      "value": 3
+      "type": "seasonal_pitching_ip",
+      "label": "35 IP+ Season",
+      "value": 105
     },
     {
-      "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
-      "label": "Netherlands NT",
-      "value": "1"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/934e9ec8-bec3-79bd-a8a8-b040f4161d55.png",
-      "label": "Kinheim",
-      "value": "1263"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/7650db8c-fd99-d90e-fe5e-20bd94dff0d3.jpg",
-      "label": "Quick Amersfoort Baseball",
-      "value": "1267"
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
     },
     {
       "type": "tournament",
@@ -37,15 +17,35 @@
       "federation_id": 1
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/7650db8c-fd99-d90e-fe5e-20bd94dff0d3.jpg",
+      "label": "Quick Amersfoort Baseball",
+      "value": "1267"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/b83640ca-dd8f-2651-7ed7-c1c324b9ef58.png",
+      "label": "RCH-Pinguïns",
+      "value": "1521"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
+    }
+  ],
   "answers": {
-    "0-0": 0,
-    "0-1": 44,
-    "0-2": 33,
-    "1-0": 3,
-    "1-1": 26,
-    "1-2": 8,
-    "2-0": 5,
-    "2-1": 237,
+    "0-0": 19,
+    "0-1": 12,
+    "0-2": 83,
+    "1-0": 17,
+    "1-1": 11,
+    "1-2": 72,
+    "2-0": 74,
+    "2-1": 262,
     "2-2": 149
   }
 }

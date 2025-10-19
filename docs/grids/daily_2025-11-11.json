@@ -1,51 +1,50 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "CF (min 1 PA)",
-      "value": "CF"
+      "type": "nationality",
+      "label": "Nationality: AUT",
+      "value": "AUT"
     },
     {
-      "type": "seasonal_rbi",
-      "label": "20+ RBI Season",
-      "value": 20
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
     },
     {
-      "type": "tournament",
-      "label": "Baseball European Championship (EU)",
-      "value": "EU-CHAMP-M-BB",
-      "federation_id": 278
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/f3233b20-510f-5d48-d8d4-964b62bb3ae3.png",
-      "label": "BASE BALL CLUB GROSSETO ASD",
-      "value": "357"
+      "image": "https://static.wbsc.org/upload/d84201d1-024c-068e-a445-3ebb5216a8c4.png",
+      "label": "Schwechat Blue Bats",
+      "value": "1261"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/c9a330c1-47a1-9f9a-0b51-c9d3b27c3822.png",
-      "label": "Brussels Kangaroos",
-      "value": "1477"
+      "type": "seasonal_runs",
+      "label": "15+ Runs Season",
+      "value": 15
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
-      "label": "Spain NT",
-      "value": "39"
+      "type": "tournament",
+      "label": "Baseball Bundesliga (AT)",
+      "value": "BB-BUNDESLIGA",
+      "federation_id": 8
     }
   ],
   "answers": {
-    "0-0": 25,
-    "0-1": 23,
-    "0-2": 7,
-    "1-0": 138,
-    "1-1": 20,
-    "1-2": 3,
-    "2-0": 113,
-    "2-1": 48,
-    "2-2": 46
+    "0-0": 76,
+    "0-1": 42,
+    "0-2": 25,
+    "1-0": 159,
+    "1-1": 3910,
+    "1-2": 84,
+    "2-0": 222,
+    "2-1": 195,
+    "2-2": 103
   }
 }

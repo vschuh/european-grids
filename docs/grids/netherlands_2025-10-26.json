@@ -2,33 +2,33 @@
   "cols": [
     {
       "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
+      "label": "P (min 1 PA)",
+      "value": "P"
     },
     {
-      "type": "position",
-      "label": "1B (min 1 PA)",
-      "value": "1B"
+      "type": "seasonal_pitching_k",
+      "label": "50k+ Season",
+      "value": 50
     },
     {
       "type": "tournament",
-      "label": "Hoofdklasse Softbal (NL)",
-      "value": "HOOFDKLASSE-SOFTBAL",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
       "federation_id": 1
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/2771d01c-919e-c952-c89c-0b6d09fae4a0.png",
-      "label": "Red Lions",
-      "value": "2596"
+      "image": "https://static.wbsc.org/upload/372d62f7-f498-84c1-f10f-62831565fe7d.png",
+      "label": "Neptunus",
+      "value": "287"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/e8944012-5266-bf86-740a-2b238e5d1d9a.jpg",
-      "label": "Onze Gezellen",
-      "value": "1273"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/7650db8c-fd99-d90e-fe5e-20bd94dff0d3.jpg",
+      "label": "Quick Amersfoort Baseball",
+      "value": "1267"
     },
     {
       "type": "team",
@@ -36,5 +36,16 @@
       "label": "Netherlands NT",
       "value": "1"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 56,
+    "0-1": 19,
+    "0-2": 73,
+    "1-0": 50,
+    "1-1": 5,
+    "1-2": 83,
+    "2-0": 328,
+    "2-1": 43,
+    "2-2": 149
+  }
 }

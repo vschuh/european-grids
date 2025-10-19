@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/6a057191-c5a2-e328-e9dc-1599fb6d475c.jpg",
+      "label": "Olympia Haarlem",
+      "value": "1270"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/229a41eb-e61a-7ab8-e29f-3100fc34a2ce.jpg",
+      "label": "Les Comanches de Saint-Raphaël",
+      "value": "1352"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg",
+      "label": "SK Joudrs Praha",
+      "value": "1348"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Olympic Softball Qualifiers",
+      "value": "OLYMPIC-SOFTBALL-Q",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_rbi",
+      "label": ">=20 RBI Season",
+      "value": 20,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    }
+  ],
+  "answers": {
+    "0-0": 5,
+    "0-1": 5,
+    "0-2": 5,
+    "1-0": 16,
+    "1-1": 4,
+    "1-2": 13,
+    "2-0": 53,
+    "2-1": 28,
+    "2-2": 166
+  }
+}

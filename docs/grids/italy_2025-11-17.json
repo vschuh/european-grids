@@ -1,15 +1,16 @@
 {
   "cols": [
     {
-      "type": "seasonal_rbi",
-      "label": ">=20 RBI Season",
-      "value": 20,
-      "condition": "min"
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8fb617c6-4e1c-c448-01ff-5719cc33dd8a.jpg",
+      "label": "LANCERS BASEBALL CLUB A.S.D.",
+      "value": "356"
     },
     {
-      "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f3233b20-510f-5d48-d8d4-964b62bb3ae3.png",
+      "label": "BASE BALL CLUB GROSSETO ASD",
+      "value": "357"
     },
     {
       "type": "tournament",
@@ -20,23 +21,30 @@
   ],
   "rows": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/e1ef1319-7b78-4944-384c-2dec6a4dca49.jpg",
-      "label": "MILANO 1946 BASEBALL E SOFTBALL A. S. D.",
-      "value": "360"
+      "type": "seasonal_avg",
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/300b244a-687b-e9fe-dead-f938a53ecbed.jpg",
-      "label": "A.S.D. GRIZZLIES TORINO 48 B.S.C.",
-      "value": "337"
+      "type": "nationality",
+      "label": "Nationality: ITA",
+      "value": "ITA"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2",
-      "federation_id": 2
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 24,
+    "0-1": 39,
+    "0-2": 767,
+    "1-0": 49,
+    "1-1": 46,
+    "1-2": 1589,
+    "2-0": 41,
+    "2-1": 53,
+    "2-2": 1098
+  }
 }

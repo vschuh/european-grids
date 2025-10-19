@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_bb",
-      "label": "10+ BB Season",
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
+    },
+    {
+      "type": "seasonal_sb",
+      "label": "10+ SB Season",
       "value": 10
-    },
-    {
-      "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
-      "label": "Czechia NT",
-      "value": "6"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/0df1b8ac-31d1-a8bd-dae5-db1b7c541b03.jpg",
-      "label": "Painbusters Most",
-      "value": "1878"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/eae8ffb8-03e7-dda6-7424-3f299e45baf3.png",
-      "label": "Draci Brno",
-      "value": "1434"
     },
     {
       "type": "tournament",
@@ -37,15 +17,35 @@
       "federation_id": 6
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/271efdd4-78f7-782b-19e9-ca7fd00cfee2.png",
+      "label": "Hroši Brno",
+      "value": "2063"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d41ed6a3-9cb2-6629-99f3-c02c2861b626.png",
+      "label": "Eagles Praha",
+      "value": "2060"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ],
   "answers": {
-    "0-0": 11,
-    "0-1": 47,
-    "0-2": 17,
-    "1-0": 37,
-    "1-1": 104,
-    "1-2": 54,
-    "2-0": 201,
-    "2-1": 316,
+    "0-0": 88,
+    "0-1": 19,
+    "0-2": 47,
+    "1-0": 120,
+    "1-1": 19,
+    "1-2": 48,
+    "2-0": 454,
+    "2-1": 55,
     "2-2": 159
   }
 }

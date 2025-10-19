@@ -1,53 +1,52 @@
 {
   "cols": [
     {
-      "type": "tournament",
-      "label": "U-18 Women's European Softball Championship (EU)",
-      "value": "EU-U-18-EURO-CHAMP-W-SB",
-      "federation_id": 278
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
+      "label": "SOFTBALL CLUB FORLI A.S.D.",
+      "value": "395"
     },
     {
-      "type": "seasonal_ops",
-      "label": ">=1.000 OPS Season (min. 10 pa)",
-      "value": 1,
-      "condition": "min"
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8d053c81-1566-2518-b6ab-ab8274584916.jpg",
+      "label": "ROEF!",
+      "value": "1271"
     },
     {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
+      "label": "Vienna Wanderers",
+      "value": "1222"
     }
   ],
   "rows": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8",
-      "federation_id": 8
+      "type": "tournament",
+      "label": "Women’s Softball European Cup Winners Cup “A” (EU)",
+      "value": "EU-WINNERS-CUP-A-W-SB",
+      "federation_id": 278
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/2648277a-0a77-53ab-7dde-0020537acc83.jpeg",
-      "label": "CS Fénix Valencia",
-      "value": "1624"
+      "type": "seasonal_pitching_fip",
+      "label": "<=3.00 FIP Season (min. 10 ip)",
+      "value": 3,
+      "condition": "max"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a8c54b1a-0050-5d18-a2f6-2059dde33487.png",
-      "label": "Dornbirn Indians",
-      "value": "1225"
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
     }
   ],
   "answers": {
-    "0-0": 34,
-    "0-1": 168,
-    "0-2": 150,
-    "1-0": 6,
-    "1-1": 24,
-    "1-2": 5,
-    "2-0": 5,
-    "2-1": 62,
-    "2-2": 58
+    "0-0": 8,
+    "0-1": 28,
+    "0-2": 4,
+    "1-0": 20,
+    "1-1": 10,
+    "1-2": 15,
+    "2-0": 46,
+    "2-1": 37,
+    "2-2": 91
   }
 }

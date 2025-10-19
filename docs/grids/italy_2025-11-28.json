@@ -1,34 +1,34 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">0.350 OBP Season (min. 10 pa)",
-      "value": 0.35
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
     },
     {
-      "type": "seasonal_avg",
-      "label": ">0.300 avg Season (min. 10 pa)",
-      "value": 0.3
+      "type": "position",
+      "label": "C (min 1 PA)",
+      "value": "C"
     },
     {
       "type": "tournament",
-      "label": "Serie A1 Softball (IT)",
-      "value": "ITA-SERIE-A1-F-SB",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
       "federation_id": 2
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/1603ff99-c3b0-d27b-807f-84d84d54db0d.jpg",
-      "label": "A.B. CARONNO SOFTBALL ASD",
-      "value": "391"
+      "image": "https://static.wbsc.org/upload/15e17f14-1564-cf9d-3db7-2a502ccd9535.png",
+      "label": "POVIGLIO BASEBALL A.S.D.",
+      "value": "364"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/4dd71fbd-6865-78fc-431a-fe648a41d21b.jpg",
-      "label": "LEGNANO BASEBALL  SOFTBALL A.S.D.",
-      "value": "398"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e038a2d1-84e5-3d14-9e93-98eadfc2fb3f.jpg",
+      "label": "TORRE PEDRERA FALCONS BC ASS. SPORT. DILETT.",
+      "value": "381"
     },
     {
       "type": "team",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 29,
-    "0-1": 36,
-    "0-2": 94,
-    "1-0": 31,
-    "1-1": 45,
-    "1-2": 30,
-    "2-0": 292,
-    "2-1": 343,
-    "2-2": 125
+    "0-0": 0,
+    "0-1": 10,
+    "0-2": 47,
+    "1-0": 1,
+    "1-1": 21,
+    "1-2": 41,
+    "2-0": 5,
+    "2-1": 158,
+    "2-2": 223
   }
 }

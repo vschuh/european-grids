@@ -1,14 +1,34 @@
 {
   "cols": [
     {
-      "type": "seasonal_rbi",
-      "label": "20+ RBI Season",
-      "value": 20
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
     },
     {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
+      "type": "seasonal_sb",
+      "label": "10+ SB Season",
+      "value": 10
+    },
+    {
+      "type": "tournament",
+      "label": "Softball Ladies D1 (BE)",
+      "value": "SLD1",
+      "federation_id": 143
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/bd187a02-55c9-dbf3-3a25-668902bfcd8d.png",
+      "label": "Borgerhout Squirrels",
+      "value": "1473"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f7f05882-7810-d6a2-6bd7-06648e0a5fa8.png",
+      "label": "Beveren Lions",
+      "value": "1480"
     },
     {
       "type": "team",
@@ -17,35 +37,15 @@
       "value": "143"
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a39fd931-7c83-ffd7-63b9-d21f6f0851d9.jpg",
-      "label": "Brasschaat Braves",
-      "value": "1414"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/b984f263-2924-2e02-6b23-7257a92a820c.png",
-      "label": "Gent Knights",
-      "value": "1475"
-    },
-    {
-      "type": "tournament",
-      "label": "Baseball Men D1 (BE)",
-      "value": "BD1",
-      "federation_id": 143
-    }
-  ],
   "answers": {
-    "0-0": 21,
-    "0-1": 35,
-    "0-2": 47,
-    "1-0": 11,
-    "1-1": 3,
-    "1-2": 12,
-    "2-0": 85,
-    "2-1": 138,
-    "2-2": 100
+    "0-0": 103,
+    "0-1": 33,
+    "0-2": 7,
+    "1-0": 60,
+    "1-1": 32,
+    "1-2": 39,
+    "2-0": 224,
+    "2-1": 124,
+    "2-2": 59
   }
 }

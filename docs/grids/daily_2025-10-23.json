@@ -1,40 +1,50 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/20c6919f-5149-b21e-dc0e-34879b702f4f.png",
-      "label": "Braine Black Rickers",
-      "value": "1553"
+      "type": "nationality",
+      "label": "Nationality: BEL",
+      "value": "BEL"
     },
     {
-      "type": "tournament",
-      "label": "Baseball Men D1 (BE)",
-      "value": "BD1",
-      "federation_id": 143
-    },
-    {
-      "type": "seasonal_pitching_k",
-      "label": "50k+ Season",
-      "value": 50
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/7f689077-0110-b1f1-2ef9-4b2c962e00c8.png",
-      "label": "Namur Angels",
-      "value": "1478"
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
       "label": "Belgium NT",
       "value": "143"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/dfb15b29-c3d5-e17b-16ce-fea5adbc7c83.png",
+      "label": "Stabroek Chicaboo`s",
+      "value": "1361"
     },
     {
-      "type": "seasonal_pitching_k",
-      "label": "35k+ Season",
-      "value": 35
+      "type": "seasonal_triples",
+      "label": "5+ Triples Season",
+      "value": 5
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball Men D1 (BE)",
+      "value": "BD1",
+      "federation_id": 143
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 121,
+    "0-1": 121,
+    "0-2": 19,
+    "1-0": 36,
+    "1-1": 222,
+    "1-2": 23,
+    "2-0": 292,
+    "2-1": 271,
+    "2-2": 100
+  }
 }

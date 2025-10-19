@@ -2,54 +2,53 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ISR.svg",
-      "label": "Israel NT",
-      "value": "33",
-      "federation_id": 33
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
+      "federation_id": 6
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/HUN.svg",
-      "label": "Hungary NT",
-      "value": "42",
-      "federation_id": 42
+      "image": "https://static.wbsc.org/upload/806638c7-4c47-3f4f-575e-d80ad64081b8.png",
+      "label": "Amsterdam Pirates Baseball",
+      "value": "1266"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/SWE.svg",
-      "label": "Sweden NT",
-      "value": "34",
-      "federation_id": 34
+      "image": "https://static.wbsc.org/upload/867c2c87-a075-4811-3a29-71da8dafa1a7.svg",
+      "label": "1949 PARMA BASEBALL CLUB ASD",
+      "value": "333"
     }
   ],
   "rows": [
     {
       "type": "tournament",
-      "label": "Baseball European Championship (EU)",
-      "value": "EU-CHAMP-M-BB",
+      "label": "European Baseball Champions Cup (EU)",
+      "value": "EU-CHAMP-CUP-M-BB",
       "federation_id": 278
     },
     {
       "type": "tournament",
-      "label": "Women's Softball European Championship (EU)",
-      "value": "EU-CHAMP-W-SB",
+      "label": "U-18 European Baseball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-M-BB",
       "federation_id": 278
     },
     {
-      "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
+      "type": "seasonal_bb",
+      "label": ">=10 BB Season",
+      "value": 10,
+      "condition": "min"
     }
   ],
   "answers": {
-    "0-0": 43,
-    "0-1": 36,
-    "0-2": 36,
-    "1-0": 30,
-    "1-1": 21,
-    "1-2": 19,
-    "2-0": 68,
-    "2-1": 84,
-    "2-2": 127
+    "0-0": 70,
+    "0-1": 48,
+    "0-2": 37,
+    "1-0": 50,
+    "1-1": 12,
+    "1-2": 5,
+    "2-0": 181,
+    "2-1": 38,
+    "2-2": 52
   }
 }

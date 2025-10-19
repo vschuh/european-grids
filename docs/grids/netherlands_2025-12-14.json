@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
+      "type": "seasonal_pitching_era",
+      "label": "<3.00 ERA Season (min. 10 ip)",
+      "value": 3
     },
     {
       "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
+      "label": "Played in 2025 season",
+      "value": 2025
     },
     {
       "type": "team",
@@ -20,32 +20,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/10b0171f-e179-ac20-62b1-ccd30810ac42.png",
-      "label": "Amsterdam Pirates Softball",
-      "value": "1307"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e8944012-5266-bf86-740a-2b238e5d1d9a.jpg",
+      "label": "Onze Gezellen",
+      "value": "1273"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/38ed2f87-d5c1-caae-58f8-ddd93f46cd58.jpg",
-      "label": "Sparks Haarlem",
-      "value": "1272"
+      "image": "https://static.wbsc.org/upload/fa14f1a1-1762-f7f2-6a3d-84fc21f97071.png",
+      "label": "Hoofddorp Pioniers Baseball",
+      "value": "1265"
     },
     {
       "type": "tournament",
-      "label": "Hoofdklasse Honkbal (NL)",
-      "value": "HOOFDKLASSE-HONKBAL",
+      "label": "Hoofdklasse Softbal (NL)",
+      "value": "HOOFDKLASSE-SOFTBAL",
       "federation_id": 1
     }
   ],
   "answers": {
-    "0-0": 14,
-    "0-1": 27,
-    "0-2": 20,
-    "1-0": 17,
-    "1-1": 48,
-    "1-2": 29,
-    "2-0": 91,
-    "2-1": 318,
-    "2-2": 149
+    "0-0": 12,
+    "0-1": 37,
+    "0-2": 14,
+    "1-0": 22,
+    "1-1": 42,
+    "1-2": 26,
+    "2-0": 63,
+    "2-1": 189,
+    "2-2": 111
   }
 }

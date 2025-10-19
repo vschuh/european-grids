@@ -1,24 +1,6 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
-      "label": "France NT",
-      "value": "14"
-    }
-  ],
-  "rows": [
-    {
       "type": "team",
       "image": "https://static.wbsc.org/upload/e20fa02b-5959-2c18-2def-c682eb6a540f.jpg",
       "label": "Les Lions de Savigny-sur-Orge",
@@ -26,26 +8,43 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/ff7815ce-79aa-def3-c3c1-e7f2065bd8ec.jpg",
-      "label": "Les Rabbits de Clapiers-Jacou",
-      "value": "1514"
+      "image": "https://static.wbsc.org/upload/07067501-9be9-9d54-0187-4b5ce1bc028d.jpg",
+      "label": "Les Pharaons d`Evry-Courcouronnes",
+      "value": "1367"
     },
     {
       "type": "tournament",
-      "label": "Championnat de France Division 1 Féminine SB (FR)",
-      "value": "FRA-D1FSB",
+      "label": "Championnat de France D1 BB (FR)",
+      "value": "FRA-D1BB",
       "federation_id": 14
     }
   ],
+  "rows": [
+    {
+      "type": "seasonal_sb",
+      "label": "10+ SB Season",
+      "value": 10
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: FRA",
+      "value": "FRA"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    }
+  ],
   "answers": {
-    "0-0": 13,
-    "0-1": 9,
-    "0-2": 19,
-    "1-0": 10,
-    "1-1": 6,
-    "1-2": 13,
-    "2-0": 30,
-    "2-1": 21,
-    "2-2": 41
+    "0-0": 7,
+    "0-1": 5,
+    "0-2": 24,
+    "1-0": 48,
+    "1-1": 60,
+    "1-2": 180,
+    "2-0": 37,
+    "2-1": 29,
+    "2-2": 158
   }
 }

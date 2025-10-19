@@ -1,42 +1,50 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/dfb15b29-c3d5-e17b-16ce-fea5adbc7c83.png",
-      "label": "Stabroek Chicaboo`s",
-      "value": "1361"
-    },
-    {
       "type": "nationality",
-      "label": "Nationality: NED",
-      "value": "NED"
+      "label": "Nationality: ITA",
+      "value": "ITA"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
-      "label": "Netherlands NT",
-      "value": "1",
-      "federation_id": 1
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
     }
   ],
   "rows": [
     {
-      "type": "tournament",
-      "label": "Hoofdklasse Softbal (NL)",
-      "value": "HOOFDKLASSE-SOFTBAL",
-      "federation_id": 1
-    },
-    {
-      "type": "seasonal_pitching_ip",
-      "label": ">=50 IP Season",
-      "value": 105,
-      "condition": "min"
-    },
-    {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a39fd931-7c83-ffd7-63b9-d21f6f0851d9.jpg",
-      "label": "Brasschaat Braves",
-      "value": "1414"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/f5260415-3c46-7bca-9104-c3f5df539370.jpg",
+      "label": "A.S.D. PADOVA BAS. SOFT. CLUB",
+      "value": "574"
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 82,
+    "0-1": 58,
+    "0-2": 11,
+    "1-0": 1081,
+    "1-1": 5974,
+    "1-2": 292,
+    "2-0": 1589,
+    "2-1": 1098,
+    "2-2": 223
+  }
 }

@@ -2,33 +2,33 @@
   "cols": [
     {
       "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
+    },
+    {
+      "type": "seasonal_avg",
       "label": ">0.400 OBP Season (min. 10 pa)",
       "value": 0.4
     },
     {
-      "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
-    },
-    {
       "type": "tournament",
-      "label": "Baseball Men D1 (BE)",
-      "value": "BD1",
+      "label": "Softball Ladies D1 (BE)",
+      "value": "SLD1",
       "federation_id": 143
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/d430c331-250b-b6d3-fc73-5e9348647ec8.png",
-      "label": "Mont-Saint-Guibert Phoenix",
-      "value": "1479"
+      "image": "https://static.wbsc.org/upload/20c6919f-5149-b21e-dc0e-34879b702f4f.png",
+      "label": "Braine Black Rickers",
+      "value": "1553"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/ef175e86-8a69-5cb4-6249-5c548df8b041.png",
-      "label": "Cantincrode Baseball en Softball Stars",
-      "value": "1394"
+      "image": "https://static.wbsc.org/upload/7784025f-15e3-9d72-ec0a-5cea1fb36fac.png",
+      "label": "Antwerp Eagles",
+      "value": "1474"
     },
     {
       "type": "team",
@@ -36,5 +36,16 @@
       "label": "Belgium NT",
       "value": "143"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 85,
+    "0-1": 64,
+    "0-2": 16,
+    "1-0": 65,
+    "1-1": 55,
+    "1-2": 34,
+    "2-0": 243,
+    "2-1": 214,
+    "2-2": 59
+  }
 }

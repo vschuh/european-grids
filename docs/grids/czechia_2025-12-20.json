@@ -2,19 +2,19 @@
   "cols": [
     {
       "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "label": "3B (min 1 PA)",
+      "value": "3B"
     },
     {
-      "type": "position",
-      "label": "1B (min 1 PA)",
-      "value": "1B"
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
     },
     {
-      "type": "tournament",
-      "label": "Extraliga SB (CZ)",
-      "value": "W-EXT-L",
-      "federation_id": 148
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
     }
   ],
   "rows": [
@@ -26,26 +26,26 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/5a29afcd-b476-f5ea-549e-0a6ca0bf8551.png",
-      "label": "Žraloci Ledenice",
-      "value": "1381"
+      "image": "https://static.wbsc.org/upload/a7dffba8-f8b9-2a89-1883-b07093f1e5b4.png",
+      "label": "Kotlářka Praha",
+      "value": "2071"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
-      "label": "Czechia NT",
-      "value": "6"
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
     }
   ],
   "answers": {
-    "0-0": 89,
-    "0-1": 92,
-    "0-2": 44,
-    "1-0": 25,
-    "1-1": 36,
-    "1-2": 28,
-    "2-0": 321,
-    "2-1": 316,
+    "0-0": 82,
+    "0-1": 124,
+    "0-2": 63,
+    "1-0": 45,
+    "1-1": 74,
+    "1-2": 27,
+    "2-0": 118,
+    "2-1": 191,
     "2-2": 102
   }
 }

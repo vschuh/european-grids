@@ -1,0 +1,54 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
+      "label": "Tempo Praha",
+      "value": "2066"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
+      "federation_id": 6
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/COL.svg",
+      "label": "Colombia NT",
+      "value": "88",
+      "federation_id": 88
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "WBSC Men`s Softball World Cup",
+      "value": "MSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 Baseball World Cup",
+      "value": "U-18",
+      "federation_id": 0
+    },
+    {
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
+    }
+  ],
+  "answers": {
+    "0-0": 7,
+    "0-1": 37,
+    "0-2": 15,
+    "1-0": 3,
+    "1-1": 67,
+    "1-2": 39,
+    "2-0": 98,
+    "2-1": 342,
+    "2-2": 38
+  }
+}

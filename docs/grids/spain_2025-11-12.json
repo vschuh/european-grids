@@ -1,16 +1,14 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/f62896a9-35c6-1383-7685-484ec01f3358.jpg",
-      "label": "CBS Capitalinos Gran Canaria",
-      "value": "1628"
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/30da3795-69a2-d2ec-66bf-7059cd80b093.jpg",
-      "label": "Astros Valencia",
-      "value": "1433"
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
       "type": "team",
@@ -22,31 +20,33 @@
   ],
   "rows": [
     {
-      "type": "seasonal_bb",
-      "label": ">=10 BB Season",
-      "value": 10,
-      "condition": "min"
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d557958c-5454-415d-064f-d5630ddfd6e1.png",
+      "label": "Club Deportivo Arga",
+      "value": "1623"
     },
     {
-      "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f07f3dfb-77ee-f3e0-0242-7325665efdec.jpg",
+      "label": "Dridma Rivas Sófbol Club",
+      "value": "1625"
     },
     {
-      "type": "nationality",
-      "label": "Nationality: ESP",
-      "value": "ESP"
+      "type": "tournament",
+      "label": "Liga Nacional de Sófbol Oro (ESP)",
+      "value": "ESP-LNDH-SB",
+      "federation_id": 39
     }
   ],
   "answers": {
-    "0-0": 6,
-    "0-1": 19,
-    "0-2": 84,
-    "1-0": 51,
-    "1-1": 78,
-    "1-2": 192,
-    "2-0": 56,
-    "2-1": 69,
-    "2-2": 285
+    "0-0": 43,
+    "0-1": 27,
+    "0-2": 10,
+    "1-0": 44,
+    "1-1": 18,
+    "1-2": 12,
+    "2-0": 153,
+    "2-1": 155,
+    "2-2": 77
   }
 }

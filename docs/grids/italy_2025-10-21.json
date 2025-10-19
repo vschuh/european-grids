@@ -1,34 +1,34 @@
 {
   "cols": [
     {
-      "type": "seasonal_runs",
-      "label": "15+ Runs Season",
+      "type": "seasonal_hits",
+      "label": "15+ Hit Season",
       "value": 15
     },
     {
-      "type": "seasonal_wOBA",
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
     },
     {
       "type": "tournament",
-      "label": "Serie A1 Softball (IT)",
-      "value": "ITA-SERIE-A1-F-SB",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
       "federation_id": 2
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/d79c686b-d315-8ea2-9ce2-09dce8a65e3c.jpg",
-      "label": "PIANORO SOFTBALL A.S.D.",
-      "value": "392"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8eb5acf-6b79-4503-b7ee-6fde7f0aee89.jpg",
+      "label": "A.S.D. B.S.C. GODO",
+      "value": "332"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/258288f1-589e-cb4b-1b00-f42003a7182f.jpg",
-      "label": "NEW BOLLATE A.S.D.",
-      "value": "397"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/c41b0457-80bc-8157-a9d5-3b4a16ba654d.jpg",
+      "label": "A.S.D. SESTESE SOFTBALL",
+      "value": "393"
     },
     {
       "type": "team",
@@ -36,5 +36,16 @@
       "label": "Italy NT",
       "value": "2"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 72,
+    "0-1": 1,
+    "0-2": 156,
+    "1-0": 20,
+    "1-1": 0,
+    "1-2": 8,
+    "2-0": 246,
+    "2-1": 5,
+    "2-2": 223
+  }
 }

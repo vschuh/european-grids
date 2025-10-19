@@ -1,51 +1,50 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "CF (min 1 PA)",
-      "value": "CF"
+      "type": "nationality",
+      "label": "Nationality: ITA",
+      "value": "ITA"
     },
     {
-      "type": "seasonal_avg",
-      "label": ">0.350 OBP Season (min. 10 pa)",
-      "value": 0.35
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
-      "type": "tournament",
-      "label": "U-22 Women’s Softball European Championship (EU)",
-      "value": "EU-U-22-EURO-CHAMP-W-SB",
-      "federation_id": 278
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/b5fd66eb-b823-6714-12d7-69aa802dcc59.png",
-      "label": "A.S.D. LONGBRIDGE 2000 BASEBALL CLUB",
-      "value": "351"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/fc527c4a-a05c-5fe4-bb98-7a1f8b830033.jpg",
+      "label": "A.S.D. ACADEMY OF NETTUNO B.C.",
+      "value": "386"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a58c308c-b5b8-113c-a189-141d486177fd.jpg",
-      "label": "BOLLATE SOFTBALL 1969 A.S.D.",
-      "value": "387"
+      "type": "seasonal_runs",
+      "label": "20+ Runs Season",
+      "value": 20
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
-      "label": "Netherlands NT",
-      "value": "1"
+      "type": "tournament",
+      "label": "Serie A1 Softball (IT)",
+      "value": "ITA-SERIE-A1-F-SB",
+      "federation_id": 2
     }
   ],
   "answers": {
-    "0-0": 24,
-    "0-1": 29,
-    "0-2": 4,
-    "1-0": 58,
-    "1-1": 55,
-    "1-2": 7,
-    "2-0": 175,
-    "2-1": 234,
-    "2-2": 28
+    "0-0": 64,
+    "0-1": 50,
+    "0-2": 11,
+    "1-0": 623,
+    "1-1": 1937,
+    "1-2": 140,
+    "2-0": 797,
+    "2-1": 414,
+    "2-2": 125
   }
 }

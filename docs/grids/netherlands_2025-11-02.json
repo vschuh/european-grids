@@ -1,34 +1,34 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "type": "seasonal_hits",
+      "label": "15+ Hit Season",
+      "value": 15
     },
     {
       "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
+      "label": "CF (min 1 PA)",
+      "value": "CF"
     },
     {
       "type": "tournament",
-      "label": "Hoofdklasse Honkbal (NL)",
-      "value": "HOOFDKLASSE-HONKBAL",
+      "label": "Hoofdklasse Softbal (NL)",
+      "value": "HOOFDKLASSE-SOFTBAL",
       "federation_id": 1
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/fa14f1a1-1762-f7f2-6a3d-84fc21f97071.png",
-      "label": "Hoofddorp Pioniers Baseball",
-      "value": "1265"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8d053c81-1566-2518-b6ab-ab8274584916.jpg",
+      "label": "ROEF!",
+      "value": "1271"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/c0bd7be4-e313-1ce3-fd74-137717685f9f.png",
-      "label": "HCAW",
-      "value": "1264"
+      "image": "https://static.wbsc.org/upload/fff73bb9-7f68-64a3-3973-8816620d097d.png",
+      "label": "UVV",
+      "value": "1825"
     },
     {
       "type": "team",
@@ -36,5 +36,16 @@
       "label": "Netherlands NT",
       "value": "1"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 29,
+    "0-1": 21,
+    "0-2": 67,
+    "1-0": 30,
+    "1-1": 26,
+    "1-2": 18,
+    "2-0": 170,
+    "2-1": 175,
+    "2-2": 111
+  }
 }

@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/229a41eb-e61a-7ab8-e29f-3100fc34a2ce.jpg",
+      "label": "Les Comanches de Saint-Raphaël",
+      "value": "1352"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f724d208-c028-ab99-a87f-ed0408d1b1d0.jpg",
+      "label": "Softball klub Novi Zagreb Lady Pirates",
+      "value": "1601"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/DEN.svg",
+      "label": "Denmark NT",
+      "value": "149",
+      "federation_id": 149
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup Winners Cup “B” (EU)",
+      "value": "EU-WINNERS-CUP-B-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "C (min 1 PA)",
+      "value": "C"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    }
+  ],
+  "answers": {
+    "0-0": 3,
+    "0-1": 15,
+    "0-2": 6,
+    "1-0": 13,
+    "1-1": 9,
+    "1-2": 44,
+    "2-0": 28,
+    "2-1": 9,
+    "2-2": 61
+  }
+}

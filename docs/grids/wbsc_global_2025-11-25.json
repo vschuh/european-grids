@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/24be214e-4c82-4f83-8fa3-56760624a195.jpg",
+      "label": "Quick Amersfoort",
+      "value": "1308"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CAN.svg",
+      "label": "Canada NT",
+      "value": "205",
+      "federation_id": 205
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/38ed2f87-d5c1-caae-58f8-ddd93f46cd58.jpg",
+      "label": "Sparks Haarlem",
+      "value": "1272"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "The World Games SB",
+      "value": "WORLD-GAMES-W-SB",
+      "federation_id": 0
+    },
+    {
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    }
+  ],
+  "answers": {
+    "0-0": 4,
+    "0-1": 22,
+    "0-2": 8,
+    "1-0": 12,
+    "1-1": 61,
+    "1-2": 33,
+    "2-0": 18,
+    "2-1": 50,
+    "2-2": 48
+  }
+}

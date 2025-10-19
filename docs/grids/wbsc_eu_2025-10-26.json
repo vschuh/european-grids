@@ -2,52 +2,50 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
-      "label": "Tempo Praha",
-      "value": "2066"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/09fa8d5d-3beb-0f14-7d8e-8d48078672a2.jpg",
+      "label": "A.S.D. SAN MARINO BASEBALL CLUB",
+      "value": "331"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/9444406f-3c22-71e5-78dd-4770dedd5eaf.png",
-      "label": "Club Béisbol Viladecans",
-      "value": "1355"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ef9c3699-433d-84cf-e297-da9743f94500.jpg",
+      "label": "FORTITUDO BASEBALL CLUB 1953 S.S.D. scarl",
+      "value": "336"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/GER.svg",
-      "label": "Germany NT",
-      "value": "18",
-      "federation_id": 18
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/893b32a8-88ec-82c1-3e46-7036f135c1fc.jpg",
+      "label": "Heidenheim Heideköpfe",
+      "value": "1429"
     }
   ],
   "rows": [
     {
       "type": "tournament",
-      "label": "Women's Softball European Championship (EU)",
-      "value": "EU-CHAMP-W-SB",
-      "federation_id": 278
-    },
-    {
-      "type": "tournament",
-      "label": "U-18 European Baseball Championship (EU)",
-      "value": "EU-U-18-EURO-CHAMP-M-BB",
+      "label": "European Baseball Champions Cup (EU)",
+      "value": "EU-CHAMP-CUP-M-BB",
       "federation_id": 278
     },
     {
       "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
+      "label": "LF (min 1 PA)",
+      "value": "LF"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
     }
   ],
   "answers": {
-    "0-0": 8,
-    "0-1": 12,
-    "0-2": 36,
-    "1-0": 6,
-    "1-1": 4,
-    "1-2": 44,
-    "2-0": 67,
-    "2-1": 41,
-    "2-2": 70
+    "0-0": 29,
+    "0-1": 33,
+    "0-2": 46,
+    "1-0": 63,
+    "1-1": 71,
+    "1-2": 13,
+    "2-0": 70,
+    "2-1": 88,
+    "2-2": 18
   }
 }

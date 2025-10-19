@@ -1,40 +1,50 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/ad49a1e0-b481-4a1c-5780-9a7e8693fae9.png",
-      "label": "Traiskirchen Grasshoppers",
-      "value": "1226"
+      "type": "nationality",
+      "label": "Nationality: AUT",
+      "value": "AUT"
     },
     {
-      "type": "tournament",
-      "label": "U-18 Women's European Softball Championship (EU)",
-      "value": "EU-U-18-EURO-CHAMP-W-SB",
-      "federation_id": 278
-    },
-    {
-      "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8594b98-58ba-b8a6-5518-10de4ae89d9d.png",
-      "label": "Wr. Neustadt Diving Ducks",
-      "value": "1227"
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
       "label": "Austria NT",
       "value": "8"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/4137a8ec-106d-1408-1204-7266ed5c196a.png",
+      "label": "Linz Witches und Bandits",
+      "value": "1276"
     },
     {
-      "type": "seasonal_rbi",
-      "label": "15+ RBI Season",
-      "value": 15
+      "type": "seasonal_pitching_k",
+      "label": "50k+ Season",
+      "value": 50
+    },
+    {
+      "type": "tournament",
+      "label": "Softball Bundesliga (AT)",
+      "value": "SB-BUNDESLIGA",
+      "federation_id": 8
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 32,
+    "0-1": 27,
+    "0-2": 12,
+    "1-0": 28,
+    "1-1": 816,
+    "1-2": 22,
+    "2-0": 123,
+    "2-1": 106,
+    "2-2": 63
+  }
 }

@@ -1,0 +1,51 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/f3774933-2d59-cb94-2a83-9528faf5139f.jpg",
+      "label": "Gepardy Żory Softball",
+      "value": "1362"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/69f57ec8-1065-bc15-8565-29dc0289f100.jpg",
+      "label": "Akademiks Sofia",
+      "value": "1395"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
+      "label": "Tempo Praha",
+      "value": "2066"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women's Softball European Championship (EU)",
+      "value": "EU-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    }
+  ],
+  "answers": {
+    "0-0": 14,
+    "0-1": 11,
+    "0-2": 8,
+    "1-0": 5,
+    "1-1": 14,
+    "1-2": 73,
+    "2-0": 16,
+    "2-1": 26,
+    "2-2": 30
+  }
+}

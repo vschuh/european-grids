@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
+      "type": "seasonal_runs",
+      "label": "20+ Runs Season",
+      "value": 20
     },
     {
       "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
       "type": "team",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/573978ca-25c1-9166-27d3-49a2572bcbe8.png",
-      "label": "Euro Stars",
-      "value": "2318"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e8944012-5266-bf86-740a-2b238e5d1d9a.jpg",
+      "label": "Onze Gezellen",
+      "value": "1273"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a56ecb27-813b-b97e-c668-3d06269b6494.jpg",
-      "label": "Tex Town Tigers",
-      "value": "1274"
+      "image": "https://static.wbsc.org/upload/fa14f1a1-1762-f7f2-6a3d-84fc21f97071.png",
+      "label": "Hoofddorp Pioniers Baseball",
+      "value": "1265"
     },
     {
       "type": "tournament",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 5,
-    "0-1": 24,
-    "0-2": 3,
-    "1-0": 25,
-    "1-1": 40,
-    "1-2": 25,
-    "2-0": 103,
-    "2-1": 213,
+    "0-0": 8,
+    "0-1": 37,
+    "0-2": 14,
+    "1-0": 15,
+    "1-1": 51,
+    "1-2": 26,
+    "2-0": 77,
+    "2-1": 191,
     "2-2": 111
   }
 }

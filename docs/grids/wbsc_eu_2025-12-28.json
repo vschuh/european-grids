@@ -1,0 +1,55 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/DEN.svg",
+      "label": "Denmark NT",
+      "value": "149",
+      "federation_id": 149
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/dfb15b29-c3d5-e17b-16ce-fea5adbc7c83.png",
+      "label": "Stabroek Chicaboo`s",
+      "value": "1361"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143",
+      "federation_id": 143
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup (EU)",
+      "value": "EU-EURO-CUP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "tournament",
+      "label": "U-23 Baseball European Championship (EU)",
+      "value": "EU-U-23-EURO-CHAMP-M-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_pitching_hbp",
+      "label": "<=2 HB Season",
+      "value": 2,
+      "condition": "max"
+    }
+  ],
+  "answers": {
+    "0-0": 12,
+    "0-1": 17,
+    "0-2": 4,
+    "1-0": 23,
+    "1-1": 5,
+    "1-2": 15,
+    "2-0": 49,
+    "2-1": 77,
+    "2-2": 222
+  }
+}

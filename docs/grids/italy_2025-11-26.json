@@ -1,36 +1,14 @@
 {
   "cols": [
     {
+      "type": "seasonal_pitching_ip",
+      "label": "50 IP+ Season",
+      "value": 105
+    },
+    {
       "type": "seasonal_pitching_fip",
-      "label": "<=2.50 FIP Season (min. 10 ip)",
-      "value": 3,
-      "condition": "max"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2",
-      "federation_id": 2
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/0e55260d-39d4-47bb-6aa1-686676ed3765.jpg",
-      "label": "CAGLIARI BASEBALL CLUB A.S.D.",
-      "value": "338"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/d444b5d6-e7b7-882c-c054-d868ea9d8977.jpg",
-      "label": "BRESCIA BASEBALL  SOFTBALL  ASS. SPORT. DIL.",
-      "value": "598"
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
     },
     {
       "type": "tournament",
@@ -38,5 +16,36 @@
       "value": "ITA-SERIE-A1-M-BB",
       "federation_id": 2
     }
-  ]
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/12f8bd4d-1eda-665a-5e81-446fa51508e2.jpg",
+      "label": "A.S.D. CODOGNO BAS. `67",
+      "value": "359"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/867c2c87-a075-4811-3a29-71da8dafa1a7.svg",
+      "label": "1949 PARMA BASEBALL CLUB ASD",
+      "value": "333"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    }
+  ],
+  "answers": {
+    "0-0": 13,
+    "0-1": 1,
+    "0-2": 45,
+    "1-0": 42,
+    "1-1": 0,
+    "1-2": 107,
+    "2-0": 111,
+    "2-1": 5,
+    "2-2": 223
+  }
 }

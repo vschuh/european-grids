@@ -1,36 +1,34 @@
 {
   "cols": [
     {
-      "type": "seasonal_ops",
-      "label": ">=1.000 OPS Season (min. 10 pa)",
-      "value": 1,
-      "condition": "min"
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
       "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
       "label": "Netherlands NT",
-      "value": "1",
-      "federation_id": 1
+      "value": "1"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/e8944012-5266-bf86-740a-2b238e5d1d9a.jpg",
-      "label": "Onze Gezellen",
-      "value": "1273"
+      "image": "https://static.wbsc.org/upload/10b0171f-e179-ac20-62b1-ccd30810ac42.png",
+      "label": "Amsterdam Pirates Softball",
+      "value": "1307"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/fa14f1a1-1762-f7f2-6a3d-84fc21f97071.png",
-      "label": "Hoofddorp Pioniers Baseball",
-      "value": "1265"
+      "image": "https://static.wbsc.org/upload/934e9ec8-bec3-79bd-a8a8-b040f4161d55.png",
+      "label": "Kinheim",
+      "value": "1263"
     },
     {
       "type": "tournament",
@@ -38,5 +36,16 @@
       "value": "HOOFDKLASSE-SOFTBAL",
       "federation_id": 1
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 26,
+    "0-1": 28,
+    "0-2": 20,
+    "1-0": 25,
+    "1-1": 50,
+    "1-2": 33,
+    "2-0": 178,
+    "2-1": 213,
+    "2-2": 111
+  }
 }

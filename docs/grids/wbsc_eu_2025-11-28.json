@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/eae8ffb8-03e7-dda6-7424-3f299e45baf3.png",
+      "label": "Draci Brno",
+      "value": "1434"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1943295d-9bf7-e5b8-291c-021b311137ba.png",
+      "label": "Vienna Metrostars",
+      "value": "1223"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/d6b2ca71-dd49-eaa8-cf78-982998354a4a.jpg",
+      "label": "London Mets Baseball Club (Mets)",
+      "value": "1296"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_pitching_k",
+      "label": ">=50k Season",
+      "value": 50,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    }
+  ],
+  "answers": {
+    "0-0": 11,
+    "0-1": 13,
+    "0-2": 7,
+    "1-0": 12,
+    "1-1": 13,
+    "1-2": 10,
+    "2-0": 29,
+    "2-1": 77,
+    "2-2": 54
+  }
+}

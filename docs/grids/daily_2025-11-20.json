@@ -1,40 +1,51 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/f7f05882-7810-d6a2-6bd7-06648e0a5fa8.png",
-      "label": "Beveren Lions",
-      "value": "1480"
+      "type": "seasonal_pitching_k",
+      "label": "50k+ Season",
+      "value": 50
+    },
+    {
+      "type": "seasonal_pitching_k",
+      "label": "35k+ Season",
+      "value": 35
     },
     {
       "type": "tournament",
-      "label": "Women’s Softball European Cup Winners Cup “A” (EU)",
-      "value": "EU-WINNERS-CUP-A-W-SB",
+      "label": "Women's Softball European Premiere Cup (EU)",
+      "value": "EU-EURO-PREM-CUP-W-SB",
       "federation_id": 278
-    },
-    {
-      "type": "position",
-      "label": "LF (min 1 PA)",
-      "value": "LF"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/7784025f-15e3-9d72-ec0a-5cea1fb36fac.png",
-      "label": "Antwerp Eagles",
-      "value": "1474"
+      "image": "https://static.wbsc.org/upload/9444406f-3c22-71e5-78dd-4770dedd5eaf.png",
+      "label": "Club Béisbol Viladecans",
+      "value": "1355"
     },
     {
-      "type": "nationality",
-      "label": "Nationality: BEL",
-      "value": "BEL"
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/5a29afcd-b476-f5ea-549e-0a6ca0bf8551.png",
+      "label": "Žraloci Ledenice",
+      "value": "1381"
     },
     {
-      "type": "seasonal_pitching_era",
-      "label": "<=3.00 ERA Season (min. 10 ip)",
-      "value": 3,
-      "condition": "max"
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/SVK.svg",
+      "label": "Slovakia NT",
+      "value": "37"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 15,
+    "0-1": 18,
+    "0-2": 4,
+    "1-0": 10,
+    "1-1": 14,
+    "1-2": 5,
+    "2-0": 9,
+    "2-1": 18,
+    "2-2": 9
+  }
 }

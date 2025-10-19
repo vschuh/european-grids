@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "1B (min 1 PA)",
-      "value": "1B"
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
     },
     {
       "type": "position",
-      "label": "P (min 1 PA)",
-      "value": "P"
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
       "type": "tournament",
@@ -20,22 +20,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/c0bd7be4-e313-1ce3-fd74-137717685f9f.png",
-      "label": "HCAW",
-      "value": "1264"
+      "image": "https://static.wbsc.org/upload/b83640ca-dd8f-2651-7ed7-c1c324b9ef58.png",
+      "label": "RCH-Pinguïns",
+      "value": "1521"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/fa14f1a1-1762-f7f2-6a3d-84fc21f97071.png",
-      "label": "Hoofddorp Pioniers Baseball",
-      "value": "1265"
+      "image": "https://static.wbsc.org/upload/bdc06e75-2859-a6ba-74da-9a6e16207d72.png",
+      "label": "Twins Oosterhout",
+      "value": "1269"
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
       "label": "Netherlands NT",
-      "value": "1",
-      "federation_id": 1
+      "value": "1"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 1,
+    "0-1": 14,
+    "0-2": 72,
+    "1-0": 2,
+    "1-1": 13,
+    "1-2": 71,
+    "2-0": 7,
+    "2-1": 152,
+    "2-2": 149
+  }
 }

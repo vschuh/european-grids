@@ -1,20 +1,20 @@
 {
   "cols": [
     {
-      "type": "seasonal_runs",
-      "label": "15+ Runs Season",
-      "value": 15
-    },
-    {
       "type": "seasonal_avg",
-      "label": ">0.300 avg Season (min. 10 pa)",
-      "value": 0.3
+      "label": ">0.400 OBP Season (min. 10 pa)",
+      "value": 0.4
     },
     {
-      "type": "tournament",
-      "label": "Extraliga BB (CZ)",
-      "value": "CZE-EXL",
-      "federation_id": 6
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
     }
   ],
   "rows": [
@@ -26,26 +26,26 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
-      "label": "Tempo Praha",
-      "value": "2066"
+      "image": "https://static.wbsc.org/upload/155cf629-9bb0-5fc6-2830-5ddd769d0d47.png",
+      "label": "Hvězdy Extraligy",
+      "value": "2210"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
-      "label": "Czechia NT",
-      "value": "6"
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
     }
   ],
   "answers": {
-    "0-0": 23,
-    "0-1": 62,
-    "0-2": 45,
-    "1-0": 39,
-    "1-1": 100,
-    "1-2": 45,
-    "2-0": 219,
-    "2-1": 459,
-    "2-2": 159
+    "0-0": 41,
+    "0-1": 87,
+    "0-2": 35,
+    "1-0": 12,
+    "1-1": 30,
+    "1-2": 10,
+    "2-0": 123,
+    "2-1": 191,
+    "2-2": 102
   }
 }

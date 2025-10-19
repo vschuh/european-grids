@@ -1,0 +1,55 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/MEX.svg",
+      "label": "Mexico NT",
+      "value": "3",
+      "federation_id": 3
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CUB.svg",
+      "label": "Cuba NT",
+      "value": "121",
+      "federation_id": 121
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/VEN.svg",
+      "label": "Venezuela NT",
+      "value": "103",
+      "federation_id": 103
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Baseball Champions League Americas",
+      "value": "BASEBALL-CHAMP-LEAGUE",
+      "federation_id": 0
+    },
+    {
+      "type": "no_hitter",
+      "label": "No Hitter (CG & min 5 IP)",
+      "value": 5,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    }
+  ],
+  "answers": {
+    "0-0": 13,
+    "0-1": 27,
+    "0-2": 4,
+    "1-0": 3,
+    "1-1": 7,
+    "1-2": 10,
+    "2-0": 56,
+    "2-1": 45,
+    "2-2": 109
+  }
+}

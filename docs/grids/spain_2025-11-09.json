@@ -1,15 +1,16 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_ip",
-      "label": ">=50 IP Season",
-      "value": 105,
+      "type": "seasonal_bb",
+      "label": ">=10 BB Season",
+      "value": 10,
       "condition": "min"
     },
     {
-      "type": "position",
-      "label": "CF (min 1 PA)",
-      "value": "CF"
+      "type": "seasonal_ops",
+      "label": ">=1.000 OPS Season (min. 10 pa)",
+      "value": 1,
+      "condition": "min"
     },
     {
       "type": "tournament",
@@ -21,15 +22,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/f62896a9-35c6-1383-7685-484ec01f3358.jpg",
-      "label": "CBS Capitalinos Gran Canaria",
-      "value": "1628"
+      "image": "https://static.wbsc.org/upload/c0e15d0a-f6ea-e019-b9cb-79d9892ea780.jpg",
+      "label": "OBB Bizkorrak",
+      "value": "1627"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/3084d3b0-293e-1776-d083-36810be4a442.png",
-      "label": "Club Atlético Deportivo Irabia/Izaga",
-      "value": "1960"
+      "image": "https://static.wbsc.org/upload/d557958c-5454-415d-064f-d5630ddfd6e1.png",
+      "label": "Club Deportivo Arga",
+      "value": "1623"
     },
     {
       "type": "team",
@@ -38,5 +39,16 @@
       "value": "39",
       "federation_id": 39
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 10,
+    "0-1": 15,
+    "0-2": 28,
+    "1-0": 21,
+    "1-1": 49,
+    "1-2": 32,
+    "2-0": 84,
+    "2-1": 166,
+    "2-2": 77
+  }
 }

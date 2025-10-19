@@ -1,40 +1,51 @@
 {
   "cols": [
     {
-      "type": "seasonal_ops",
-      "label": ">1.000 OPS Season (min. 10 pa)",
-      "value": 1
+      "type": "position",
+      "label": "LF (min 1 PA)",
+      "value": "LF"
     },
     {
-      "type": "seasonal_rbi",
-      "label": "15+ RBI Season",
-      "value": 15
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
     },
     {
       "type": "tournament",
-      "label": "U-18 European Baseball Championship (EU)",
-      "value": "EU-U-18-EURO-CHAMP-M-BB",
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
       "federation_id": 278
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/51a28c3c-a894-cc4d-30ca-b8c705e5bd5d.png",
-      "label": "3M Barracudas Baseball Université Club",
-      "value": "1385"
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
+      "label": "Tempo Praha",
+      "value": "2066"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/bd187a02-55c9-dbf3-3a25-668902bfcd8d.png",
-      "label": "Borgerhout Squirrels",
-      "value": "1473"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/09fa8d5d-3beb-0f14-7d8e-8d48078672a2.jpg",
+      "label": "A.S.D. SAN MARINO BASEBALL CLUB",
+      "value": "331"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/GER.svg",
-      "label": "Germany NT",
-      "value": "18"
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 139,
+    "0-1": 6,
+    "0-2": 6,
+    "1-0": 63,
+    "1-1": 0,
+    "1-2": 28,
+    "2-0": 249,
+    "2-1": 7,
+    "2-2": 43
+  }
 }

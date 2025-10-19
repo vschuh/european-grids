@@ -1,34 +1,34 @@
 {
   "cols": [
     {
-      "type": "seasonal_ops",
-      "label": ">1.000 OPS Season (min. 10 pa)",
-      "value": 1
+      "type": "seasonal_sb",
+      "label": "10+ SB Season",
+      "value": 10
     },
     {
-      "type": "position",
-      "label": "LF (min 1 PA)",
-      "value": "LF"
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
     },
     {
       "type": "tournament",
-      "label": "Serie A Baseball (IT)",
-      "value": "ITA-SERIE-A1-M-BB",
+      "label": "Serie A1 Softball (IT)",
+      "value": "ITA-SERIE-A1-F-SB",
       "federation_id": 2
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/6ab27046-f495-c765-4070-a15fd6ef9dd5.jpg",
-      "label": "WHITE SOX BUTTRIO BASEBALL A.S.D.",
-      "value": "375"
+      "image": "https://static.wbsc.org/upload/59758832-8743-44aa-9abc-c16b9bc847fc.jpg",
+      "label": "SARONNO SOFTBALL  E BASEBALL A.S.D.",
+      "value": "390"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/552eb909-5775-5ced-11cd-899ef3bdc14e.jpg",
-      "label": "THUNDERS & DRAGONS  SOFTBALL -  BASEBALL A.S.D. CASTELLANA",
-      "value": "346"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8cce5d11-c711-787c-828e-01916972f160.jpg",
+      "label": "A.S.D. SOFTBALL MACERATA",
+      "value": "409"
     },
     {
       "type": "team",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 5,
-    "0-1": 26,
-    "0-2": 29,
-    "1-0": 24,
-    "1-1": 52,
-    "1-2": 36,
-    "2-0": 268,
-    "2-1": 328,
-    "2-2": 223
+    "0-0": 13,
+    "0-1": 0,
+    "0-2": 90,
+    "1-0": 6,
+    "1-1": 0,
+    "1-2": 72,
+    "2-0": 57,
+    "2-1": 5,
+    "2-2": 125
   }
 }

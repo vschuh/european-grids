@@ -1,53 +1,53 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
-      "label": "SOFTBALL CLUB FORLI A.S.D.",
-      "value": "395"
+      "type": "tournament",
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
+      "federation_id": 278
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/372d62f7-f498-84c1-f10f-62831565fe7d.png",
-      "label": "Neptunus",
-      "value": "287"
+      "type": "seasonal_avg",
+      "label": ">=0.300 avg Season (min. 10 pa)",
+      "value": 0.3,
+      "condition": "min"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/c6f45770-2b34-bfcf-33e8-1909b6ef7bae.jpg",
-      "label": "Les Grizzlys de Grenoble",
-      "value": "1513"
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
     }
   ],
   "rows": [
     {
-      "type": "tournament",
-      "label": "U-18 Women's European Softball Championship (EU)",
-      "value": "EU-U-18-EURO-CHAMP-W-SB",
-      "federation_id": 278
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/b521bda5-fefa-b959-19cf-33151b9c6caa.jpg",
+      "label": "Guggenberger Legionäre",
+      "value": "2410"
     },
     {
-      "type": "tournament",
-      "label": "Women's Softball European Championship (EU)",
-      "value": "EU-CHAMP-W-SB",
-      "federation_id": 278
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/e715ea59-748b-5200-77b6-63e4e2c8c96e.jpg",
+      "label": "Tenerife Marlins Puerto Cruz",
+      "value": "1421"
     },
     {
-      "type": "seasonal_sb",
-      "label": ">=10 SB Season",
-      "value": 10,
-      "condition": "min"
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/GBR.svg",
+      "label": "Great Britain NT",
+      "value": "20",
+      "federation_id": 20
     }
   ],
   "answers": {
-    "0-0": 5,
-    "0-1": 8,
-    "0-2": 7,
-    "1-0": 12,
-    "1-1": 6,
-    "1-2": 3,
-    "2-0": 11,
-    "2-1": 19,
-    "2-2": 5
+    "0-0": 8,
+    "0-1": 11,
+    "0-2": 21,
+    "1-0": 17,
+    "1-1": 43,
+    "1-2": 64,
+    "2-0": 52,
+    "2-1": 200,
+    "2-2": 200
   }
 }

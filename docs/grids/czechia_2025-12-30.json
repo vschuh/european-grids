@@ -1,14 +1,16 @@
 {
   "cols": [
     {
-      "type": "seasonal_wOBA",
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
+      "label": "Tempo Praha",
+      "value": "2066"
     },
     {
-      "type": "seasonal_avg",
-      "label": ">0.350 OBP Season (min. 10 pa)",
-      "value": 0.35
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/271efdd4-78f7-782b-19e9-ca7fd00cfee2.png",
+      "label": "Hroši Brno",
+      "value": "2063"
     },
     {
       "type": "tournament",
@@ -19,33 +21,30 @@
   ],
   "rows": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/eae8ffb8-03e7-dda6-7424-3f299e45baf3.png",
-      "label": "Draci Brno",
-      "value": "1434"
+      "type": "seasonal_doubles",
+      "label": "10+ Doubles Season",
+      "value": 10
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/06ebf3e7-4094-4d7d-7bad-cd88e4ec3330.png",
-      "label": "Sokol Hluboká",
-      "value": "2064"
+      "type": "nationality",
+      "label": "Nationality: USA",
+      "value": "USA"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
-      "label": "Czechia NT",
-      "value": "6"
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
     }
   ],
   "answers": {
-    "0-0": 90,
-    "0-1": 81,
-    "0-2": 58,
-    "1-0": 54,
-    "1-1": 45,
-    "1-2": 47,
-    "2-0": 454,
-    "2-1": 408,
-    "2-2": 159
+    "0-0": 5,
+    "0-1": 7,
+    "0-2": 27,
+    "1-0": 3,
+    "1-1": 4,
+    "1-2": 30,
+    "2-0": 152,
+    "2-1": 111,
+    "2-2": 316
   }
 }

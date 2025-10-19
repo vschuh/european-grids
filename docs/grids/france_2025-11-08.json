@@ -1,28 +1,28 @@
 {
   "cols": [
     {
-      "type": "seasonal_bb",
-      "label": "10+ BB Season",
-      "value": 10
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
-      "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
+      "type": "seasonal_ops",
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "value": 1
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
-      "label": "France NT",
-      "value": "14"
+      "type": "tournament",
+      "label": "Championnat de France D1 BB (FR)",
+      "value": "FRA-D1BB",
+      "federation_id": 14
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/229a41eb-e61a-7ab8-e29f-3100fc34a2ce.jpg",
-      "label": "Les Comanches de Saint-Raphaël",
-      "value": "1352"
+      "image": "https://static.wbsc.org/upload/0050079f-5f9e-d803-8839-20992d9cfc18.jpg",
+      "label": "Les Boucaniers de La Rochelle",
+      "value": "1714"
     },
     {
       "type": "team",
@@ -31,21 +31,21 @@
       "value": "1713"
     },
     {
-      "type": "tournament",
-      "label": "Championnat de France Division 1 Féminine SB (FR)",
-      "value": "FRA-D1FSB",
-      "federation_id": 14
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
     }
   ],
   "answers": {
-    "0-0": 5,
-    "0-1": 28,
-    "0-2": 23,
-    "1-0": 11,
-    "1-1": 42,
-    "1-2": 14,
-    "2-0": 10,
-    "2-1": 69,
-    "2-2": 41
+    "0-0": 20,
+    "0-1": 15,
+    "0-2": 34,
+    "1-0": 17,
+    "1-1": 17,
+    "1-2": 34,
+    "2-0": 130,
+    "2-1": 165,
+    "2-2": 85
   }
 }

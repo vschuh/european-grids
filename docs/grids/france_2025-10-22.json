@@ -2,19 +2,19 @@
   "cols": [
     {
       "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
+    },
+    {
+      "type": "position",
       "label": "2B (min 1 PA)",
       "value": "2B"
     },
     {
-      "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
-      "label": "France NT",
-      "value": "14"
+      "type": "tournament",
+      "label": "Championnat de France Division 1 Féminine SB (FR)",
+      "value": "FRA-D1FSB",
+      "federation_id": 14
     }
   ],
   "rows": [
@@ -26,15 +26,26 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/229a41eb-e61a-7ab8-e29f-3100fc34a2ce.jpg",
-      "label": "Les Comanches de Saint-Raphaël",
-      "value": "1352"
+      "image": "https://static.wbsc.org/upload/c6f45770-2b34-bfcf-33e8-1909b6ef7bae.jpg",
+      "label": "Les Grizzlys de Grenoble",
+      "value": "1513"
     },
     {
-      "type": "tournament",
-      "label": "Championnat de France Division 1 Féminine SB (FR)",
-      "value": "FRA-D1FSB",
-      "federation_id": 14
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 12,
+    "0-1": 17,
+    "0-2": 18,
+    "1-0": 27,
+    "1-1": 38,
+    "1-2": 19,
+    "2-0": 116,
+    "2-1": 141,
+    "2-2": 41
+  }
 }

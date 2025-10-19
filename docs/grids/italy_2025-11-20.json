@@ -1,50 +1,51 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/c41b0457-80bc-8157-a9d5-3b4a16ba654d.jpg",
-      "label": "A.S.D. SESTESE SOFTBALL",
-      "value": "393"
+      "type": "seasonal_pitching_k",
+      "label": "50k+ Season",
+      "value": 50
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/b5fd66eb-b823-6714-12d7-69aa802dcc59.png",
-      "label": "A.S.D. LONGBRIDGE 2000 BASEBALL CLUB",
-      "value": "351"
-    },
-    {
-      "type": "tournament",
-      "label": "Serie A1 Softball (IT)",
-      "value": "ITA-SERIE-A1-F-SB",
-      "federation_id": 2
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
     }
   ],
   "rows": [
     {
-      "type": "seasonal_avg",
-      "label": ">0.350 OBP Season (min. 10 pa)",
-      "value": 0.35
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/8d59a636-d55a-b5f8-0f4c-c1c3978a1a8d.jpg",
+      "label": "LION`S  BASEBALL NETTUNO A.S.D.",
+      "value": "635"
     },
     {
-      "type": "nationality",
-      "label": "Nationality: ITA",
-      "value": "ITA"
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e038a2d1-84e5-3d14-9e93-98eadfc2fb3f.jpg",
+      "label": "TORRE PEDRERA FALCONS BC ASS. SPORT. DILETT.",
+      "value": "381"
     },
     {
-      "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
     }
   ],
   "answers": {
-    "0-0": 25,
-    "0-1": 29,
-    "0-2": 350,
-    "1-0": 71,
-    "1-1": 86,
-    "1-2": 797,
-    "2-0": 53,
-    "2-1": 58,
-    "2-2": 346
+    "0-0": 5,
+    "0-1": 19,
+    "0-2": 7,
+    "1-0": 10,
+    "1-1": 53,
+    "1-2": 8,
+    "2-0": 364,
+    "2-1": 935,
+    "2-2": 223
   }
 }

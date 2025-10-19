@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_hits",
-      "label": "15+ Hit Season",
-      "value": 15
+      "type": "seasonal_rbi",
+      "label": "20+ RBI Season",
+      "value": 20
     },
     {
-      "type": "seasonal_pitching_fip",
-      "label": "<2.50 FIP Season (min. 10 ip)",
-      "value": 3
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
       "type": "tournament",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8eb5acf-6b79-4503-b7ee-6fde7f0aee89.jpg",
-      "label": "A.S.D. B.S.C. GODO",
-      "value": "332"
+      "image": "https://static.wbsc.org/upload/b5fd66eb-b823-6714-12d7-69aa802dcc59.png",
+      "label": "A.S.D. LONGBRIDGE 2000 BASEBALL CLUB",
+      "value": "351"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/c41b0457-80bc-8157-a9d5-3b4a16ba654d.jpg",
-      "label": "A.S.D. SESTESE SOFTBALL",
-      "value": "393"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/703fcf50-a4a9-5fc2-8e8e-cfb114713e30.jpg",
+      "label": "A.S.D. BASEBALL CLUB SALA BAGANZA",
+      "value": "350"
     },
     {
       "type": "team",
@@ -36,5 +36,16 @@
       "label": "Italy NT",
       "value": "2"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 10,
+    "0-1": 28,
+    "0-2": 39,
+    "1-0": 10,
+    "1-1": 21,
+    "1-2": 58,
+    "2-0": 111,
+    "2-1": 247,
+    "2-2": 223
+  }
 }

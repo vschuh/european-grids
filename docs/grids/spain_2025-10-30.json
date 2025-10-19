@@ -1,35 +1,34 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_k",
-      "label": ">=35k Season",
-      "value": 35,
-      "condition": "min"
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
       "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
+      "label": "LF (min 1 PA)",
+      "value": "LF"
     },
     {
       "type": "tournament",
-      "label": "Liga Nacional de Béisbol Oro (ESP)",
-      "value": "ESP-LNDH-BB",
+      "label": "Liga Nacional de Sófbol Oro (ESP)",
+      "value": "ESP-LNDH-SB",
       "federation_id": 39
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/179791bc-b8d7-eb39-15be-3014d6acd0bf.jpg",
-      "label": "San Inazio Bilbao Bizkaia",
-      "value": "1622"
+      "image": "https://static.wbsc.org/upload/9444406f-3c22-71e5-78dd-4770dedd5eaf.png",
+      "label": "Club Béisbol Viladecans",
+      "value": "1355"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/2385052c-b349-ee0a-0368-a3c409cef452.png",
-      "label": "CBS Antorcha Valencia",
-      "value": "1653"
+      "image": "https://static.wbsc.org/upload/9aa1aee4-5a37-b2fa-7992-1aa7244e07a0.png",
+      "label": "CBS Sant Boi",
+      "value": "1630"
     },
     {
       "type": "team",
@@ -37,5 +36,16 @@
       "label": "Spain NT",
       "value": "39"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 71,
+    "0-1": 92,
+    "0-2": 55,
+    "1-0": 42,
+    "1-1": 65,
+    "1-2": 39,
+    "2-0": 115,
+    "2-1": 144,
+    "2-2": 77
+  }
 }

@@ -1,29 +1,23 @@
 {
   "cols": [
     {
-      "type": "seasonal_sb",
-      "label": "10+ SB Season",
-      "value": 10
+      "type": "seasonal_runs",
+      "label": "15+ Runs Season",
+      "value": 15
     },
     {
-      "type": "seasonal_ops",
-      "label": ">1.000 OPS Season (min. 10 pa)",
-      "value": 1
+      "type": "position",
+      "label": "C (min 1 PA)",
+      "value": "C"
     },
     {
       "type": "tournament",
-      "label": "Softball Bundesliga (AT)",
-      "value": "SB-BUNDESLIGA",
+      "label": "Baseball Bundesliga (AT)",
+      "value": "BB-BUNDESLIGA",
       "federation_id": 8
     }
   ],
   "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/acfef0c2-5af4-e797-cb4b-550d6173bb34.png",
-      "label": "Hard Bulls",
-      "value": "1228"
-    },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/cms/teams/logo/3a067f16-f428-d6b9-450d-7ff6132d4207.png",
@@ -32,9 +26,26 @@
     },
     {
       "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1943295d-9bf7-e5b8-291c-021b311137ba.png",
+      "label": "Vienna Metrostars",
+      "value": "1223"
+    },
+    {
+      "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
       "label": "Austria NT",
       "value": "8"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 15,
+    "0-1": 34,
+    "0-2": 34,
+    "1-0": 34,
+    "1-1": 38,
+    "1-2": 47,
+    "2-0": 84,
+    "2-1": 118,
+    "2-2": 103
+  }
 }

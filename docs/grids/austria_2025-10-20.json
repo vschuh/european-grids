@@ -1,24 +1,6 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_ip",
-      "label": "35 IP+ Season",
-      "value": 105
-    },
-    {
-      "type": "seasonal_runs",
-      "label": "15+ Runs Season",
-      "value": 15
-    },
-    {
-      "type": "tournament",
-      "label": "Softball Bundesliga (AT)",
-      "value": "SB-BUNDESLIGA",
-      "federation_id": 8
-    }
-  ],
-  "rows": [
-    {
       "type": "team",
       "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png",
       "label": "Attnang-Puchheim Athletics",
@@ -26,15 +8,43 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
-      "label": "Vienna Wanderers",
-      "value": "1222"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/4137a8ec-106d-1408-1204-7266ed5c196a.png",
+      "label": "Linz Witches und Bandits",
+      "value": "1276"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8"
+      "type": "tournament",
+      "label": "Baseball Bundesliga (AT)",
+      "value": "BB-BUNDESLIGA",
+      "federation_id": 8
     }
-  ]
+  ],
+  "rows": [
+    {
+      "type": "seasonal_hits",
+      "label": "15+ Hit Season",
+      "value": 15
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: GER",
+      "value": "GER"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    }
+  ],
+  "answers": {
+    "0-0": 29,
+    "0-1": 11,
+    "0-2": 169,
+    "1-0": 6,
+    "1-1": 4,
+    "1-2": 11,
+    "2-0": 63,
+    "2-1": 27,
+    "2-2": 233
+  }
 }

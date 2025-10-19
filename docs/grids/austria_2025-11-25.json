@@ -1,42 +1,51 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_k",
-      "label": ">=35k Season",
-      "value": 35,
-      "condition": "min"
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
       "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
       "label": "Austria NT",
-      "value": "8",
-      "federation_id": 8
+      "value": "8"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8594b98-58ba-b8a6-5518-10de4ae89d9d.png",
-      "label": "Wr. Neustadt Diving Ducks",
-      "value": "1227"
+      "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png",
+      "label": "Attnang-Puchheim Athletics",
+      "value": "1224"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/acfef0c2-5af4-e797-cb4b-550d6173bb34.png",
-      "label": "Hard Bulls",
-      "value": "1228"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/4137a8ec-106d-1408-1204-7266ed5c196a.png",
+      "label": "Linz Witches und Bandits",
+      "value": "1276"
     },
     {
       "type": "tournament",
-      "label": "Baseball Bundesliga (AT)",
-      "value": "BB-BUNDESLIGA",
+      "label": "Softball Bundesliga (AT)",
+      "value": "SB-BUNDESLIGA",
       "federation_id": 8
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 44,
+    "0-1": 76,
+    "0-2": 26,
+    "1-0": 16,
+    "1-1": 31,
+    "1-2": 12,
+    "2-0": 74,
+    "2-1": 114,
+    "2-2": 63
+  }
 }

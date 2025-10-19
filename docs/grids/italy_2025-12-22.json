@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_ops",
-      "label": ">1.000 OPS Season (min. 10 pa)",
-      "value": 1
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
     },
     {
-      "type": "seasonal_runs",
-      "label": "20+ Runs Season",
-      "value": 20
-    },
-    {
-      "type": "tournament",
-      "label": "Serie A Baseball (IT)",
-      "value": "ITA-SERIE-A1-M-BB",
-      "federation_id": 2
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/c94f3613-2aac-5ee9-848e-7e0259fc86f8.jpg",
-      "label": "MONTEFIASCONE BASEBALL SOFTBALL 67 A.S.D.",
-      "value": "354"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/15e17f14-1564-cf9d-3db7-2a502ccd9535.png",
-      "label": "POVIGLIO BASEBALL A.S.D.",
-      "value": "364"
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "2"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e9e5a7d2-0d88-430a-cbd6-bcebfd3a9c51.jpg",
+      "label": "COLLECCHIO B.C. A.S.D.",
+      "value": "334"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
+      "label": "SOFTBALL CLUB FORLI` A.S.D.",
+      "value": "395"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ],
   "answers": {
-    "0-0": 4,
-    "0-1": 4,
-    "0-2": 27,
-    "1-0": 8,
-    "1-1": 9,
-    "1-2": 47,
-    "2-0": 268,
-    "2-1": 140,
+    "0-0": 32,
+    "0-1": 46,
+    "0-2": 21,
+    "1-0": 47,
+    "1-1": 36,
+    "1-2": 21,
+    "2-0": 686,
+    "2-1": 1065,
     "2-2": 223
   }
 }

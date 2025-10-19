@@ -1,40 +1,51 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/07067501-9be9-9d54-0187-4b5ce1bc028d.jpg",
-      "label": "Les Pharaons d`Evry-Courcouronnes",
-      "value": "1367"
+      "type": "seasonal_avg",
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a18c7fc9-a3ce-81e9-0c12-f2a5ec8eab1e.jpg",
-      "label": "Rouen Huskies",
-      "value": "1428"
-    },
-    {
-      "type": "tournament",
-      "label": "Championnat de France D1 BB (FR)",
-      "value": "FRA-D1BB",
-      "federation_id": 14
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
     }
   ],
   "rows": [
     {
-      "type": "seasonal_avg",
-      "label": ">=0.300 avg Season (min. 10 pa)",
-      "value": 0.3,
-      "condition": "min"
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/77e94058-ac4d-db29-8258-7b792b239dbc.jpg",
+      "label": "Pessac Panthères",
+      "value": "1512"
     },
     {
-      "type": "nationality",
-      "label": "Nationality: USA",
-      "value": "USA"
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c72832ba-21d5-2872-9a0c-2051b1cac815.png",
+      "label": "Cougars de Montigny-le-Bretonneux",
+      "value": "1716"
     },
     {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "type": "tournament",
+      "label": "Championnat de France Division 1 Féminine SB (FR)",
+      "value": "FRA-D1FSB",
+      "federation_id": 14
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 25,
+    "0-1": 53,
+    "0-2": 8,
+    "1-0": 42,
+    "1-1": 79,
+    "1-2": 10,
+    "2-0": 58,
+    "2-1": 104,
+    "2-2": 41
+  }
 }

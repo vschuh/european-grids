@@ -1,0 +1,54 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CRO.svg",
+      "label": "Croatia NT",
+      "value": "15",
+      "federation_id": 15
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
+      "label": "Tempo Praha",
+      "value": "2066"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/24be214e-4c82-4f83-8fa3-56760624a195.jpg",
+      "label": "Quick Amersfoort Softball",
+      "value": "1308"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women's Softball European Championship (EU)",
+      "value": "EU-CHAMP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup Winners Cup “A” (EU)",
+      "value": "EU-WINNERS-CUP-A-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_doubles",
+      "label": ">=10 Doubles Season",
+      "value": 10,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 33,
+    "0-1": 8,
+    "0-2": 4,
+    "1-0": 4,
+    "1-1": 20,
+    "1-2": 4,
+    "2-0": 7,
+    "2-1": 5,
+    "2-2": 3
+  }
+}

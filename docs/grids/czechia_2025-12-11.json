@@ -1,14 +1,34 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "RF (min 1 PA)",
-      "value": "RF"
+      "type": "seasonal_ops",
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "value": 1
     },
     {
-      "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga BB (CZ)",
+      "value": "CZE-EXL",
+      "federation_id": 6
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/06ebf3e7-4094-4d7d-7bad-cd88e4ec3330.png",
+      "label": "Sokol Hluboká",
+      "value": "2064"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/1ad273ca-49c9-52b7-3330-5aae326481f9.png",
+      "label": "Třebíč Nuclears",
+      "value": "2067"
     },
     {
       "type": "team",
@@ -17,35 +37,15 @@
       "value": "6"
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/b8e2f6c7-d381-cb53-2a82-a2f9e92daba9.jpg",
-      "label": "Beavers Chomutov",
-      "value": "1380"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
-      "label": "Tempo Praha",
-      "value": "2066"
-    },
-    {
-      "type": "tournament",
-      "label": "Extraliga SB (CZ)",
-      "value": "W-EXT-L",
-      "federation_id": 148
-    }
-  ],
   "answers": {
-    "0-0": 64,
-    "0-1": 61,
-    "0-2": 26,
-    "1-0": 146,
-    "1-1": 152,
-    "1-2": 46,
-    "2-0": 158,
-    "2-1": 191,
-    "2-2": 102
+    "0-0": 41,
+    "0-1": 54,
+    "0-2": 47,
+    "1-0": 46,
+    "1-1": 60,
+    "1-2": 45,
+    "2-0": 386,
+    "2-1": 454,
+    "2-2": 159
   }
 }

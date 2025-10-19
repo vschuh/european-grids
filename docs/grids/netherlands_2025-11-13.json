@@ -1,36 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_sb",
-      "label": ">=10 SB Season",
-      "value": 10,
-      "condition": "min"
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
     },
     {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
-      "label": "Netherlands NT",
-      "value": "1",
-      "federation_id": 1
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/372d62f7-f498-84c1-f10f-62831565fe7d.png",
-      "label": "Neptunus",
-      "value": "287"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/8d053c81-1566-2518-b6ab-ab8274584916.jpg",
-      "label": "ROEF!",
-      "value": "1271"
+      "type": "seasonal_avg",
+      "label": ">0.400 OBP Season (min. 10 pa)",
+      "value": 0.4
     },
     {
       "type": "tournament",
@@ -38,5 +16,36 @@
       "value": "HOOFDKLASSE-SOFTBAL",
       "federation_id": 1
     }
-  ]
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e8944012-5266-bf86-740a-2b238e5d1d9a.jpg",
+      "label": "Onze Gezellen",
+      "value": "1273"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/6a057191-c5a2-e328-e9dc-1599fb6d475c.jpg",
+      "label": "Olympia Haarlem",
+      "value": "1270"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
+    }
+  ],
+  "answers": {
+    "0-0": 21,
+    "0-1": 11,
+    "0-2": 58,
+    "1-0": 26,
+    "1-1": 32,
+    "1-2": 49,
+    "2-0": 175,
+    "2-1": 184,
+    "2-2": 111
+  }
 }

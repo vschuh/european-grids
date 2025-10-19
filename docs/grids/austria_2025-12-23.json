@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
+      "type": "seasonal_pitching_k",
+      "label": "50k+ Season",
+      "value": 50
     },
     {
-      "type": "seasonal_rbi",
-      "label": "20+ RBI Season",
-      "value": 20
-    },
-    {
-      "type": "tournament",
-      "label": "Baseball Bundesliga (AT)",
-      "value": "BB-BUNDESLIGA",
-      "federation_id": 8
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png",
-      "label": "Attnang-Puchheim Athletics",
-      "value": "1224"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/1943295d-9bf7-e5b8-291c-021b311137ba.png",
-      "label": "Vienna Metrostars",
-      "value": "1223"
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "8"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/acfef0c2-5af4-e797-cb4b-550d6173bb34.png",
+      "label": "Hard Bulls",
+      "value": "1228"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a8c54b1a-0050-5d18-a2f6-2059dde33487.png",
+      "label": "Dornbirn Indians",
+      "value": "1225"
+    },
+    {
+      "type": "tournament",
+      "label": "Softball Bundesliga (AT)",
+      "value": "SB-BUNDESLIGA",
+      "federation_id": 8
+    }
+  ],
   "answers": {
-    "0-0": 59,
-    "0-1": 12,
-    "0-2": 26,
-    "1-0": 55,
-    "1-1": 19,
-    "1-2": 47,
-    "2-0": 173,
-    "2-1": 50,
-    "2-2": 103
+    "0-0": 6,
+    "0-1": 49,
+    "0-2": 17,
+    "1-0": 9,
+    "1-1": 58,
+    "1-2": 38,
+    "2-0": 11,
+    "2-1": 84,
+    "2-2": 63
   }
 }

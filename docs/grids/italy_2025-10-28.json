@@ -1,9 +1,9 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">0.300 avg Season (min. 10 pa)",
-      "value": 0.3
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
     },
     {
       "type": "seasonal_bb",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/5d9a261e-f8a2-4672-e66f-8fb7a851095d.jpg",
-      "label": "BOLOGNA ATHLETICS A.S.D.",
-      "value": "348"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/703fcf50-a4a9-5fc2-8e8e-cfb114713e30.jpg",
+      "label": "A.S.D. BASEBALL CLUB SALA BAGANZA",
+      "value": "350"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/15e17f14-1564-cf9d-3db7-2a502ccd9535.png",
-      "label": "POVIGLIO BASEBALL A.S.D.",
-      "value": "364"
+      "image": "https://static.wbsc.org/upload/531c9e94-8b15-5d21-6f6e-b405d73f79e9.jpeg",
+      "label": "SICILY RED SOX  A.S.D.",
+      "value": "358"
     },
     {
       "type": "team",
@@ -36,5 +36,16 @@
       "label": "Italy NT",
       "value": "2"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 17,
+    "0-1": 29,
+    "0-2": 58,
+    "1-0": 13,
+    "1-1": 16,
+    "1-2": 35,
+    "2-0": 316,
+    "2-1": 187,
+    "2-2": 223
+  }
 }

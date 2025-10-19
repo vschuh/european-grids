@@ -1,36 +1,15 @@
 {
   "cols": [
     {
-      "type": "seasonal_wOBA",
-      "label": ">=0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25,
+      "type": "seasonal_hbp",
+      "label": ">=5 HBP Season",
+      "value": 5,
       "condition": "min"
     },
     {
-      "type": "seasonal_pitching_k",
-      "label": ">=35k Season",
-      "value": 35,
-      "condition": "min"
-    },
-    {
-      "type": "tournament",
-      "label": "Liga Nacional de Béisbol Oro (ESP)",
-      "value": "ESP-LNDH-BB",
-      "federation_id": 39
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/f14607c0-9bb5-122e-4481-f1475f202b0f.png",
-      "label": "CBS Toros",
-      "value": "1654"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/179791bc-b8d7-eb39-15be-3014d6acd0bf.jpg",
-      "label": "San Inazio Bilbao Bizkaia",
-      "value": "1622"
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
@@ -39,5 +18,36 @@
       "value": "39",
       "federation_id": 39
     }
-  ]
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/01289c10-7afa-a307-4c35-8395b5f03899.jpg",
+      "label": "Miralbueno Zaragoza",
+      "value": "1629"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/179791bc-b8d7-eb39-15be-3014d6acd0bf.jpg",
+      "label": "San Inazio Bilbao Bizkaia",
+      "value": "1622"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Sófbol Oro (ESP)",
+      "value": "ESP-LNDH-SB",
+      "federation_id": 39
+    }
+  ],
+  "answers": {
+    "0-0": 7,
+    "0-1": 54,
+    "0-2": 5,
+    "1-0": 5,
+    "1-1": 38,
+    "1-2": 4,
+    "2-0": 22,
+    "2-1": 247,
+    "2-2": 77
+  }
 }

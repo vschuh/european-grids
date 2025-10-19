@@ -2,52 +2,52 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
-      "label": "Vienna Wanderers",
-      "value": "1222"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ef9c3699-433d-84cf-e297-da9743f94500.jpg",
+      "label": "FORTITUDO BASEBALL CLUB 1953 S.S.D. scarl",
+      "value": "336"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/372d62f7-f498-84c1-f10f-62831565fe7d.png",
-      "label": "Neptunus",
-      "value": "287"
+      "image": "https://static.wbsc.org/upload/1ad273ca-49c9-52b7-3330-5aae326481f9.png",
+      "label": "Třebíč Nuclears",
+      "value": "2067"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/b0b59bc1-5816-6673-3254-7a989bdd0d5e.jpg",
-      "label": "Sabat Praha",
-      "value": "2368"
+      "image": "https://static.wbsc.org/assets/flags/ioc/GER.svg",
+      "label": "Germany NT",
+      "value": "18",
+      "federation_id": 18
     }
   ],
   "rows": [
     {
       "type": "tournament",
-      "label": "U-22 Women’s Softball European Championship (EU)",
-      "value": "EU-U-22-EURO-CHAMP-W-SB",
+      "label": "European Baseball Champions Cup (EU)",
+      "value": "EU-CHAMP-CUP-M-BB",
       "federation_id": 278
     },
     {
-      "type": "tournament",
-      "label": "Women’s Softball European Cup Winners Cup “A” (EU)",
-      "value": "EU-WINNERS-CUP-A-W-SB",
-      "federation_id": 278
-    },
-    {
-      "type": "seasonal_ops",
-      "label": ">=1.000 OPS Season (min. 10 pa)",
-      "value": 1,
+      "type": "seasonal_bb",
+      "label": ">=10 BB Season",
+      "value": 10,
       "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
     }
   ],
   "answers": {
-    "0-0": 6,
-    "0-1": 5,
-    "0-2": 7,
-    "1-0": 4,
-    "1-1": 8,
-    "1-2": 17,
-    "2-0": 61,
-    "2-1": 36,
-    "2-2": 21
+    "0-0": 33,
+    "0-1": 24,
+    "0-2": 55,
+    "1-0": 101,
+    "1-1": 25,
+    "1-2": 3,
+    "2-0": 75,
+    "2-1": 6,
+    "2-2": 150
   }
 }

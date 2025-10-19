@@ -1,14 +1,34 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_ip",
-      "label": "35 IP+ Season",
-      "value": 105
+      "type": "position",
+      "label": "RF (min 1 PA)",
+      "value": "RF"
     },
     {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
+      "type": "seasonal_avg",
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France Division 1 Féminine SB (FR)",
+      "value": "FRA-D1FSB",
+      "federation_id": 14
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/77e94058-ac4d-db29-8258-7b792b239dbc.jpg",
+      "label": "Pessac Panthères",
+      "value": "1512"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c6f45770-2b34-bfcf-33e8-1909b6ef7bae.jpg",
+      "label": "Les Grizzlys de Grenoble",
+      "value": "1513"
     },
     {
       "type": "team",
@@ -17,35 +37,15 @@
       "value": "14"
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/51a28c3c-a894-cc4d-30ca-b8c705e5bd5d.png",
-      "label": "3M Barracudas Baseball Université Club",
-      "value": "1385"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a18c7fc9-a3ce-81e9-0c12-f2a5ec8eab1e.jpg",
-      "label": "Rouen Huskies",
-      "value": "1428"
-    },
-    {
-      "type": "tournament",
-      "label": "Championnat de France D1 BB (FR)",
-      "value": "FRA-D1BB",
-      "federation_id": 14
-    }
-  ],
   "answers": {
-    "0-0": 9,
-    "0-1": 43,
-    "0-2": 40,
-    "1-0": 6,
-    "1-1": 22,
-    "1-2": 18,
-    "2-0": 32,
-    "2-1": 68,
-    "2-2": 85
+    "0-0": 22,
+    "0-1": 25,
+    "0-2": 16,
+    "1-0": 49,
+    "1-1": 39,
+    "1-2": 19,
+    "2-0": 152,
+    "2-1": 205,
+    "2-2": 41
   }
 }

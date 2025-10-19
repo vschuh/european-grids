@@ -1,0 +1,56 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/USA.svg",
+      "label": "USA NT",
+      "value": "126",
+      "federation_id": 126
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/VEN.svg",
+      "label": "Venezuela NT",
+      "value": "103",
+      "federation_id": 103
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CAN.svg",
+      "label": "Canada NT",
+      "value": "205",
+      "federation_id": 205
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women`s Softball World Championship",
+      "value": "WSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 Men`s Softball World Cup",
+      "value": "U-18MSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">=0.300 avg Season (min. 10 pa)",
+      "value": 0.3,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 36,
+    "0-1": 28,
+    "0-2": 31,
+    "1-0": 41,
+    "1-1": 15,
+    "1-2": 49,
+    "2-0": 207,
+    "2-1": 283,
+    "2-2": 66
+  }
+}

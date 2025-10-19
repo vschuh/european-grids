@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_pitching_hbp",
+      "label": "<=2 HB Season",
+      "value": 2,
+      "condition": "max"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
+      "federation_id": 39
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c0e15d0a-f6ea-e019-b9cb-79d9892ea780.jpg",
+      "label": "OBB Bizkorrak",
+      "value": "1627"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/01289c10-7afa-a307-4c35-8395b5f03899.jpg",
+      "label": "Miralbueno Zaragoza",
+      "value": "1629"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Béisbol Oro (ESP)",
+      "value": "ESP-LNDH-BB",
+      "federation_id": 39
+    }
+  ],
+  "answers": {
+    "0-0": 16,
+    "0-1": 20,
+    "0-2": 7,
+    "1-0": 53,
+    "1-1": 27,
+    "1-2": 5,
+    "2-0": 208,
+    "2-1": 192,
+    "2-2": 76
+  }
+}

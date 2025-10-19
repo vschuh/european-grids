@@ -2,33 +2,13 @@
   "cols": [
     {
       "type": "position",
-      "label": "CF (min 1 PA)",
-      "value": "CF"
+      "label": "2B (min 1 PA)",
+      "value": "2B"
     },
     {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
-      "label": "France NT",
-      "value": "14"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/83428e38-f463-52e1-0571-48f71aa9fc31.jpg",
-      "label": "Stade Toulousain Baseball Softball",
-      "value": "1713"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a18c7fc9-a3ce-81e9-0c12-f2a5ec8eab1e.jpg",
-      "label": "Rouen Huskies",
-      "value": "1428"
+      "type": "seasonal_hits",
+      "label": "15+ Hit Season",
+      "value": 15
     },
     {
       "type": "tournament",
@@ -37,15 +17,35 @@
       "federation_id": 14
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a18c7fc9-a3ce-81e9-0c12-f2a5ec8eab1e.jpg",
+      "label": "Rouen Huskies",
+      "value": "1428"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/e20fa02b-5959-2c18-2def-c682eb6a540f.jpg",
+      "label": "Les Lions de Savigny-sur-Orge",
+      "value": "1715"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
+    }
+  ],
   "answers": {
-    "0-0": 14,
-    "0-1": 8,
-    "0-2": 14,
-    "1-0": 16,
-    "1-1": 22,
-    "1-2": 18,
-    "2-0": 88,
-    "2-1": 68,
+    "0-0": 32,
+    "0-1": 19,
+    "0-2": 37,
+    "1-0": 23,
+    "1-1": 13,
+    "1-2": 33,
+    "2-0": 141,
+    "2-1": 72,
     "2-2": 85
   }
 }

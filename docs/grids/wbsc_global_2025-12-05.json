@@ -1,0 +1,54 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/372d62f7-f498-84c1-f10f-62831565fe7d.png",
+      "label": "Neptunus",
+      "value": "287"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/KOR.svg",
+      "label": "Korea NT",
+      "value": "191",
+      "federation_id": 191
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Premier12",
+      "value": "P-12",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 Women`s Softball World Cup",
+      "value": "U-18WSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
+    }
+  ],
+  "answers": {
+    "0-0": 14,
+    "0-1": 73,
+    "0-2": 28,
+    "1-0": 10,
+    "1-1": 17,
+    "1-2": 46,
+    "2-0": 46,
+    "2-1": 73,
+    "2-2": 247
+  }
+}

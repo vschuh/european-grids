@@ -2,26 +2,33 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2",
-      "federation_id": 2
+      "image": "https://static.wbsc.org/assets/flags/ioc/ISR.svg",
+      "label": "Israel NT",
+      "value": "33",
+      "federation_id": 33
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8",
-      "federation_id": 8
+      "image": "https://static.wbsc.org/assets/flags/ioc/HUN.svg",
+      "label": "Hungary NT",
+      "value": "42",
+      "federation_id": 42
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg",
-      "label": "SK Joudrs Praha",
-      "value": "1348"
+      "image": "https://static.wbsc.org/assets/flags/ioc/SWE.svg",
+      "label": "Sweden NT",
+      "value": "34",
+      "federation_id": 34
     }
   ],
   "rows": [
+    {
+      "type": "tournament",
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
+      "federation_id": 278
+    },
     {
       "type": "tournament",
       "label": "Women's Softball European Championship (EU)",
@@ -29,26 +36,20 @@
       "federation_id": 278
     },
     {
-      "type": "seasonal_homeruns",
-      "label": ">=10 HR Season",
-      "value": 10,
-      "condition": "min"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
     }
   ],
   "answers": {
-    "0-0": 32,
-    "0-1": 24,
-    "0-2": 11,
-    "1-0": 8,
-    "1-1": 5,
-    "1-2": 7,
-    "2-0": 263,
-    "2-1": 150,
-    "2-2": 47
+    "0-0": 43,
+    "0-1": 36,
+    "0-2": 36,
+    "1-0": 30,
+    "1-1": 21,
+    "1-2": 19,
+    "2-0": 68,
+    "2-1": 84,
+    "2-2": 127
   }
 }

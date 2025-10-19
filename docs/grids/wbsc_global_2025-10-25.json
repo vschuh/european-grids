@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c0bd7be4-e313-1ce3-fd74-137717685f9f.png",
+      "label": "HCAW",
+      "value": "1264"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/e0754d29-eea2-3d1c-aaed-bc382baa2d6a.svg",
+      "label": "Santa María Pirates",
+      "value": "1741"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1",
+      "federation_id": 1
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-23 Baseball World Cup",
+      "value": "U-23",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_pitching_ip",
+      "label": ">=50 IP Season",
+      "value": 105,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    }
+  ],
+  "answers": {
+    "0-0": 11,
+    "0-1": 3,
+    "0-2": 94,
+    "1-0": 15,
+    "1-1": 13,
+    "1-2": 74,
+    "2-0": 49,
+    "2-1": 91,
+    "2-2": 415
+  }
+}

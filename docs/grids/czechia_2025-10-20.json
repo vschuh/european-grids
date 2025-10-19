@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_k",
-      "label": "50k+ Season",
-      "value": 50
+      "type": "position",
+      "label": "LF (min 1 PA)",
+      "value": "LF"
     },
     {
       "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/1ad273ca-49c9-52b7-3330-5aae326481f9.png",
-      "label": "Třebíč Nuclears",
-      "value": "2067"
+      "image": "https://static.wbsc.org/upload/b8e2f6c7-d381-cb53-2a82-a2f9e92daba9.jpg",
+      "label": "Beavers Chomutov",
+      "value": "1380"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/0df1b8ac-31d1-a8bd-dae5-db1b7c541b03.jpg",
-      "label": "Painbusters Most",
-      "value": "1878"
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
+      "label": "Tempo Praha",
+      "value": "2066"
     },
     {
       "type": "tournament",
@@ -36,5 +36,16 @@
       "value": "W-EXT-L",
       "federation_id": 148
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 66,
+    "0-1": 23,
+    "0-2": 26,
+    "1-0": 139,
+    "1-1": 32,
+    "1-2": 46,
+    "2-0": 164,
+    "2-1": 68,
+    "2-2": 102
+  }
 }

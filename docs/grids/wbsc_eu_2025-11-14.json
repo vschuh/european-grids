@@ -2,52 +2,51 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/b8e2f6c7-d381-cb53-2a82-a2f9e92daba9.jpg",
-      "label": "Beavers Chomutov",
-      "value": "1380"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/12a3f46c-cb0a-0014-98f9-bff5d87890b5.jpg",
+      "label": "Club de Béisbol y Sóftbol Rivas",
+      "value": "1354"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg",
-      "label": "SK Joudrs Praha",
-      "value": "1348"
+      "image": "https://static.wbsc.org/assets/flags/ioc/GER.svg",
+      "label": "Germany NT",
+      "value": "18",
+      "federation_id": 18
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/450c82c4-90bc-6b3d-d1c7-88a8f4d96464.png",
-      "label": "Hoboken Pioneers",
-      "value": "1353"
+      "image": "https://static.wbsc.org/upload/f07f3dfb-77ee-f3e0-0242-7325665efdec.jpg",
+      "label": "Dridma Rivas Sófbol Club",
+      "value": "1625"
     }
   ],
   "rows": [
     {
       "type": "tournament",
-      "label": "U-23 Baseball European Championship (EU)",
-      "value": "EU-U-23-EURO-CHAMP-M-SB",
+      "label": "Women’s Softball European Cup Winners Cup “A” (EU)",
+      "value": "EU-WINNERS-CUP-A-W-SB",
       "federation_id": 278
     },
     {
-      "type": "tournament",
-      "label": "U-18 Women's European Softball Championship (EU)",
-      "value": "EU-U-18-EURO-CHAMP-W-SB",
-      "federation_id": 278
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
-      "type": "seasonal_runs",
-      "label": ">=20 Runs Season",
-      "value": 20,
-      "condition": "min"
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
     }
   ],
   "answers": {
-    "0-0": 3,
-    "0-1": 4,
-    "0-2": 4,
-    "1-0": 4,
-    "1-1": 16,
-    "1-2": 4,
-    "2-0": 9,
-    "2-1": 27,
-    "2-2": 47
+    "0-0": 13,
+    "0-1": 26,
+    "0-2": 3,
+    "1-0": 27,
+    "1-1": 65,
+    "1-2": 23,
+    "2-0": 40,
+    "2-1": 150,
+    "2-2": 18
   }
 }

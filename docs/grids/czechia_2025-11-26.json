@@ -1,36 +1,34 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">=0.300 avg Season (min. 10 pa)",
-      "value": 0.3,
-      "condition": "min"
+      "type": "seasonal_pitching_ip",
+      "label": "50 IP+ Season",
+      "value": 105
     },
     {
       "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
       "label": "Czechia NT",
-      "value": "6",
-      "federation_id": 6
+      "value": "6"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/d7f20b47-403a-b08b-4684-ca741b059bb8.png",
-      "label": "Blesk Jablonec",
-      "value": "2068"
+      "image": "https://static.wbsc.org/upload/06ebf3e7-4094-4d7d-7bad-cd88e4ec3330.png",
+      "label": "Sokol Hluboká",
+      "value": "2064"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/d41ed6a3-9cb2-6629-99f3-c02c2861b626.png",
-      "label": "Eagles Praha",
-      "value": "2060"
+      "image": "https://static.wbsc.org/upload/252a5e3d-988d-51c1-d081-264639adc927.png",
+      "label": "Olympia Blansko",
+      "value": "2072"
     },
     {
       "type": "tournament",
@@ -38,5 +36,16 @@
       "value": "W-EXT-L",
       "federation_id": 148
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 13,
+    "0-1": 8,
+    "0-2": 17,
+    "1-0": 6,
+    "1-1": 3,
+    "1-2": 10,
+    "2-0": 43,
+    "2-1": 68,
+    "2-2": 102
+  }
 }

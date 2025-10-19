@@ -1,0 +1,55 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
+      "federation_id": 39
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/VEN.svg",
+      "label": "Venezuela NT",
+      "value": "103",
+      "federation_id": 103
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/MEX.svg",
+      "label": "Mexico NT",
+      "value": "3",
+      "federation_id": 3
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-18 Baseball World Cup",
+      "value": "U-18",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_pitching_era",
+      "label": "<=3.00 ERA Season (min. 10 ip)",
+      "value": 3,
+      "condition": "max"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    }
+  ],
+  "answers": {
+    "0-0": 40,
+    "0-1": 56,
+    "0-2": 98,
+    "1-0": 16,
+    "1-1": 15,
+    "1-2": 3,
+    "2-0": 192,
+    "2-1": 109,
+    "2-2": 56
+  }
+}

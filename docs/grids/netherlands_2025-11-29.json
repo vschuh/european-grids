@@ -2,33 +2,13 @@
   "cols": [
     {
       "type": "seasonal_pitching_ip",
-      "label": "35 IP+ Season",
+      "label": "50 IP+ Season",
       "value": 105
     },
     {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
-      "label": "Netherlands NT",
-      "value": "1"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/b83640ca-dd8f-2651-7ed7-c1c324b9ef58.png",
-      "label": "RCH-Pinguïns",
-      "value": "1521"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/38ed2f87-d5c1-caae-58f8-ddd93f46cd58.jpg",
-      "label": "Sparks Haarlem",
-      "value": "1272"
+      "type": "seasonal_pitching_k",
+      "label": "35k+ Season",
+      "value": 35
     },
     {
       "type": "tournament",
@@ -37,15 +17,35 @@
       "federation_id": 1
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/806638c7-4c47-3f4f-575e-d80ad64081b8.png",
+      "label": "Amsterdam Pirates Baseball",
+      "value": "1266"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/fa14f1a1-1762-f7f2-6a3d-84fc21f97071.png",
+      "label": "Hoofddorp Pioniers Baseball",
+      "value": "1265"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
+    }
+  ],
   "answers": {
-    "0-0": 17,
-    "0-1": 28,
-    "0-2": 13,
-    "1-0": 20,
-    "1-1": 42,
-    "1-2": 29,
-    "2-0": 111,
-    "2-1": 294,
+    "0-0": 20,
+    "0-1": 15,
+    "0-2": 90,
+    "1-0": 22,
+    "1-1": 14,
+    "1-2": 83,
+    "2-0": 74,
+    "2-1": 65,
     "2-2": 149
   }
 }

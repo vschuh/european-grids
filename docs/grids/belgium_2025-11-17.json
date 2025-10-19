@@ -1,10 +1,9 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">=0.350 OBP Season (min. 10 pa)",
-      "value": 0.35,
-      "condition": "min"
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
     },
     {
       "type": "year",
@@ -15,22 +14,21 @@
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
       "label": "Belgium NT",
-      "value": "143",
-      "federation_id": 143
+      "value": "143"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/20c6919f-5149-b21e-dc0e-34879b702f4f.png",
-      "label": "Braine Black Rickers",
-      "value": "1553"
+      "image": "https://static.wbsc.org/upload/1aba8bb9-6d31-0d64-b3ec-fbb43cc12c68.png",
+      "label": "Merchtem Cats",
+      "value": "1476"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/d430c331-250b-b6d3-fc73-5e9348647ec8.png",
-      "label": "Mont-Saint-Guibert Phoenix",
-      "value": "1479"
+      "image": "https://static.wbsc.org/upload/7784025f-15e3-9d72-ec0a-5cea1fb36fac.png",
+      "label": "Antwerp Eagles",
+      "value": "1474"
     },
     {
       "type": "tournament",
@@ -38,5 +36,16 @@
       "value": "SLD1",
       "federation_id": 143
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 109,
+    "0-1": 6,
+    "0-2": 24,
+    "1-0": 50,
+    "1-1": 3,
+    "1-2": 12,
+    "2-0": 114,
+    "2-1": 15,
+    "2-2": 59
+  }
 }

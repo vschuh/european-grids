@@ -8,8 +8,8 @@
     },
     {
       "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
@@ -22,15 +22,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/30da3795-69a2-d2ec-66bf-7059cd80b093.jpg",
-      "label": "Astros Valencia",
-      "value": "1433"
+      "image": "https://static.wbsc.org/upload/2648277a-0a77-53ab-7dde-0020537acc83.jpeg",
+      "label": "CS Fénix Valencia",
+      "value": "1624"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/3084d3b0-293e-1776-d083-36810be4a442.png",
-      "label": "Club Atlético Deportivo Irabia/Izaga",
-      "value": "1960"
+      "image": "https://static.wbsc.org/upload/9aa1aee4-5a37-b2fa-7992-1aa7244e07a0.png",
+      "label": "CBS Sant Boi",
+      "value": "1630"
     },
     {
       "type": "tournament",
@@ -38,5 +38,16 @@
       "value": "ESP-LNDH-SB",
       "federation_id": 39
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 14,
+    "0-1": 5,
+    "0-2": 18,
+    "1-0": 40,
+    "1-1": 16,
+    "1-2": 34,
+    "2-0": 117,
+    "2-1": 45,
+    "2-2": 77
+  }
 }

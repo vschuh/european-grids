@@ -1,14 +1,34 @@
 {
   "cols": [
     {
-      "type": "seasonal_hits",
-      "label": "15+ Hit Season",
-      "value": 15
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A1 Softball (IT)",
+      "value": "ITA-SERIE-A1-F-SB",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ef8ef30f-13d8-e1c8-7d06-5b8cb737fefa.jpg",
+      "label": "FIORENTINA BASEBALL  S.S.D. ARL",
+      "value": "349"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/59758832-8743-44aa-9abc-c16b9bc847fc.jpg",
+      "label": "SARONNO SOFTBALL  E BASEBALL A.S.D.",
+      "value": "390"
     },
     {
       "type": "team",
@@ -17,35 +37,15 @@
       "value": "2"
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/f5260415-3c46-7bca-9104-c3f5df539370.jpg",
-      "label": "A.S.D. PADOVA BAS. SOFT. CLUB",
-      "value": "574"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/15e17f14-1564-cf9d-3db7-2a502ccd9535.png",
-      "label": "POVIGLIO BASEBALL A.S.D.",
-      "value": "364"
-    },
-    {
-      "type": "tournament",
-      "label": "Serie A Baseball (IT)",
-      "value": "ITA-SERIE-A1-M-BB",
-      "federation_id": 2
-    }
-  ],
   "answers": {
-    "0-0": 50,
-    "0-1": 58,
-    "0-2": 11,
-    "1-0": 22,
-    "1-1": 41,
-    "1-2": 7,
-    "2-0": 952,
-    "2-1": 1098,
-    "2-2": 223
+    "0-0": 30,
+    "0-1": 37,
+    "0-2": 9,
+    "1-0": 34,
+    "1-1": 44,
+    "1-2": 90,
+    "2-0": 218,
+    "2-1": 247,
+    "2-2": 125
   }
 }

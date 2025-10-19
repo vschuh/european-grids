@@ -1,15 +1,15 @@
 {
   "cols": [
     {
-      "type": "seasonal_hbp",
-      "label": ">=5 HBP Season",
-      "value": 5,
+      "type": "seasonal_pitching_ip",
+      "label": ">=50 IP Season",
+      "value": 105,
       "condition": "min"
     },
     {
       "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
@@ -21,21 +21,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/ac5c9f7f-d4d3-57b0-22f3-8490ad944e4c.png",
-      "label": "Club Béisbol Barcelona",
-      "value": "1648"
+      "image": "https://static.wbsc.org/upload/9444406f-3c22-71e5-78dd-4770dedd5eaf.png",
+      "label": "Club Béisbol Viladecans",
+      "value": "1355"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/12a3f46c-cb0a-0014-98f9-bff5d87890b5.jpg",
-      "label": "Club de Béisbol y Sóftbol Rivas",
-      "value": "1354"
+      "image": "https://static.wbsc.org/upload/2385052c-b349-ee0a-0368-a3c409cef452.png",
+      "label": "CBS Antorcha Valencia",
+      "value": "1653"
     },
     {
       "type": "tournament",
-      "label": "Liga Nacional de Sófbol Oro (ESP)",
-      "value": "ESP-LNDH-SB",
+      "label": "Liga Nacional de Béisbol Oro (ESP)",
+      "value": "ESP-LNDH-BB",
       "federation_id": 39
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 22,
+    "0-1": 114,
+    "0-2": 49,
+    "1-0": 10,
+    "1-1": 88,
+    "1-2": 16,
+    "2-0": 57,
+    "2-1": 265,
+    "2-2": 76
+  }
 }

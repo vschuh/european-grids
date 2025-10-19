@@ -1,9 +1,9 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
+      "type": "seasonal_pitching_ip",
+      "label": "50 IP+ Season",
+      "value": 105
     },
     {
       "type": "seasonal_rbi",
@@ -12,23 +12,23 @@
     },
     {
       "type": "tournament",
-      "label": "Serie A Baseball (IT)",
-      "value": "ITA-SERIE-A1-M-BB",
+      "label": "Serie A1 Softball (IT)",
+      "value": "ITA-SERIE-A1-F-SB",
       "federation_id": 2
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/ba64cf79-fdcc-54a8-18e1-6bf30bb0f352.jpg",
-      "label": "A.S.D. JUNIOR ALPINA B. E S.",
-      "value": "568"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/258288f1-589e-cb4b-1b00-f42003a7182f.jpg",
+      "label": "NEW BOLLATE A.S.D.",
+      "value": "397"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/8d59a636-d55a-b5f8-0f4c-c1c3978a1a8d.jpg",
-      "label": "LION`S  BASEBALL NETTUNO A.S.D.",
-      "value": "635"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/1ce4ab82-9bba-e4d8-320b-d6dd0e76eec2.jpg",
+      "label": "A. S. D. NUORO SOFTBALL",
+      "value": "401"
     },
     {
       "type": "team",
@@ -36,5 +36,16 @@
       "label": "Italy NT",
       "value": "2"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 9,
+    "0-1": 14,
+    "0-2": 45,
+    "1-0": 24,
+    "1-1": 15,
+    "1-2": 116,
+    "2-0": 111,
+    "2-1": 167,
+    "2-2": 125
+  }
 }

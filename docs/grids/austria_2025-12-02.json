@@ -1,6 +1,24 @@
 {
   "cols": [
     {
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
+    },
+    {
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball Bundesliga (AT)",
+      "value": "BB-BUNDESLIGA",
+      "federation_id": 8
+    }
+  ],
+  "rows": [
+    {
       "type": "team",
       "image": "https://static.wbsc.org/upload/d84201d1-024c-068e-a445-3ebb5216a8c4.png",
       "label": "Schwechat Blue Bats",
@@ -13,38 +31,21 @@
       "value": "1225"
     },
     {
-      "type": "tournament",
-      "label": "Softball Bundesliga (AT)",
-      "value": "SB-BUNDESLIGA",
-      "federation_id": 8
-    }
-  ],
-  "rows": [
-    {
-      "type": "seasonal_pitching_fip",
-      "label": "<2.50 FIP Season (min. 10 ip)",
-      "value": 3
-    },
-    {
-      "type": "nationality",
-      "label": "Nationality: AUT",
-      "value": "AUT"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
     }
   ],
   "answers": {
-    "0-0": 5,
-    "0-1": 5,
-    "0-2": 9,
-    "1-0": 76,
-    "1-1": 103,
-    "1-2": 123,
-    "2-0": 42,
-    "2-1": 77,
-    "2-2": 100
+    "0-0": 43,
+    "0-1": 65,
+    "0-2": 69,
+    "1-0": 72,
+    "1-1": 91,
+    "1-2": 41,
+    "2-0": 181,
+    "2-1": 221,
+    "2-2": 103
   }
 }

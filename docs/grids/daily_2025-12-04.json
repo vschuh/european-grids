@@ -1,51 +1,51 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
-      "label": "Netherlands NT",
-      "value": "1"
-    },
-    {
-      "type": "seasonal_ops",
-      "label": ">1.000 OPS Season (min. 10 pa)",
-      "value": 1
+      "type": "seasonal_avg",
+      "label": ">0.400 OBP Season (min. 10 pa)",
+      "value": 0.4
     },
     {
       "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
+      "label": "RF (min 1 PA)",
+      "value": "RF"
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 Women's European Softball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-W-SB",
+      "federation_id": 278
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/c0bd7be4-e313-1ce3-fd74-137717685f9f.png",
-      "label": "HCAW",
-      "value": "1264"
+      "image": "https://static.wbsc.org/upload/07067501-9be9-9d54-0187-4b5ce1bc028d.jpg",
+      "label": "Les Pharaons d`Evry-Courcouronnes",
+      "value": "1367"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/10b0171f-e179-ac20-62b1-ccd30810ac42.png",
-      "label": "Amsterdam Pirates Softball",
-      "value": "1307"
+      "image": "https://static.wbsc.org/upload/ff7815ce-79aa-def3-c3c1-e7f2065bd8ec.jpg",
+      "label": "Les Rabbits de Clapiers-Jacou",
+      "value": "1514"
     },
     {
-      "type": "tournament",
-      "label": "U-22 Women’s Softball European Championship (EU)",
-      "value": "EU-U-22-EURO-CHAMP-W-SB",
-      "federation_id": 278
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/SUI.svg",
+      "label": "Switzerland NT",
+      "value": "35"
     }
   ],
   "answers": {
-    "0-0": 26,
-    "0-1": 11,
-    "0-2": 13,
-    "1-0": 20,
-    "1-1": 11,
-    "1-2": 14,
-    "2-0": 28,
-    "2-1": 224,
-    "2-2": 136
+    "0-0": 28,
+    "0-1": 45,
+    "0-2": 12,
+    "1-0": 19,
+    "1-1": 22,
+    "1-2": 4,
+    "2-0": 31,
+    "2-1": 75,
+    "2-2": 16
   }
 }

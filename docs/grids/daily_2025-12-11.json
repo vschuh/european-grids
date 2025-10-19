@@ -1,50 +1,50 @@
 {
   "cols": [
     {
+      "type": "nationality",
+      "label": "Nationality: ESP",
+      "value": "ESP"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    },
+    {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/1943295d-9bf7-e5b8-291c-021b311137ba.png",
-      "label": "Vienna Metrostars",
-      "value": "1223"
-    },
-    {
-      "type": "tournament",
-      "label": "Baseball European Championship (EU)",
-      "value": "EU-CHAMP-M-BB",
-      "federation_id": 278
-    },
-    {
-      "type": "position",
-      "label": "LF (min 1 PA)",
-      "value": "LF"
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/d84201d1-024c-068e-a445-3ebb5216a8c4.png",
-      "label": "Schwechat Blue Bats",
-      "value": "1261"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a253f065-f476-fd22-2ea4-7cf450180fe4.jpg",
+      "label": "MACERATA ANGELS A.S.D.",
+      "value": "330"
     },
     {
-      "type": "nationality",
-      "label": "Nationality: AUT",
-      "value": "AUT"
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
     },
     {
-      "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
     }
   ],
   "answers": {
-    "0-0": 10,
-    "0-1": 5,
-    "0-2": 56,
-    "1-0": 93,
-    "1-1": 43,
-    "1-2": 639,
-    "2-0": 50,
-    "2-1": 250,
-    "2-2": 10457
+    "0-0": 9,
+    "0-1": 66,
+    "0-2": 3,
+    "1-0": 568,
+    "1-1": 9573,
+    "1-2": 180,
+    "2-0": 102,
+    "2-1": 1083,
+    "2-2": 32
   }
 }

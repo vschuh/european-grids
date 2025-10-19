@@ -2,41 +2,50 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg",
-      "label": "SK Joudrs Praha",
-      "value": "1348"
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
     },
     {
-      "type": "nationality",
-      "label": "Nationality: CZE",
-      "value": "CZE"
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
-      "label": "Czechia NT",
-      "value": "6",
-      "federation_id": 6
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
     }
   ],
   "rows": [
     {
-      "type": "tournament",
-      "label": "Extraliga SB (CZ)",
-      "value": "W-EXT-L",
-      "federation_id": 148
-    },
-    {
-      "type": "seasonal_pitching_k",
-      "label": ">=50k Season",
-      "value": 50,
-      "condition": "min"
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/679d2360-7aba-32ca-cb27-a1818b537f03.jpg",
+      "label": "POL. CASERTA BAS. E SOFT. ACADEMY A.S.D.",
+      "value": "394"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/d41ed6a3-9cb2-6629-99f3-c02c2861b626.png",
-      "label": "Eagles Praha",
-      "value": "2060"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ba64cf79-fdcc-54a8-18e1-6bf30bb0f352.jpg",
+      "label": "A.S.D. JUNIOR ALPINA B. E S.",
+      "value": "568"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 5,
+    "0-1": 29,
+    "0-2": 18,
+    "1-0": 6,
+    "1-1": 26,
+    "1-2": 22,
+    "2-0": 223,
+    "2-1": 686,
+    "2-2": 619
+  }
 }

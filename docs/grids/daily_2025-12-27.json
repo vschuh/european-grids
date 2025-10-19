@@ -1,50 +1,51 @@
 {
   "cols": [
     {
-      "type": "nationality",
-      "label": "Nationality: ITA",
-      "value": "ITA"
+      "type": "seasonal_ops",
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "value": 1
     },
     {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "type": "position",
+      "label": "RF (min 1 PA)",
+      "value": "RF"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2"
+      "type": "tournament",
+      "label": "U-18 Women's European Softball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-W-SB",
+      "federation_id": 278
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/fc527c4a-a05c-5fe4-bb98-7a1f8b830033.jpg",
-      "label": "A.S.D. ACADEMY OF NETTUNO B.C.",
-      "value": "386"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/6a057191-c5a2-e328-e9dc-1599fb6d475c.jpg",
+      "label": "Olympia Haarlem",
+      "value": "1270"
     },
     {
-      "type": "seasonal_runs",
-      "label": "20+ Runs Season",
-      "value": 20
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
+      "label": "SOFTBALL CLUB FORLI` A.S.D.",
+      "value": "395"
     },
     {
-      "type": "tournament",
-      "label": "Serie A1 Softball (IT)",
-      "value": "ITA-SERIE-A1-F-SB",
-      "federation_id": 2
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
     }
   ],
   "answers": {
-    "0-0": 64,
-    "0-1": 50,
-    "0-2": 11,
-    "1-0": 623,
-    "1-1": 1937,
-    "1-2": 140,
-    "2-0": 797,
-    "2-1": 414,
-    "2-2": 125
+    "0-0": 33,
+    "0-1": 39,
+    "0-2": 6,
+    "1-0": 40,
+    "1-1": 63,
+    "1-2": 5,
+    "2-0": 168,
+    "2-1": 209,
+    "2-2": 34
   }
 }

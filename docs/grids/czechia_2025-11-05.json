@@ -1,16 +1,34 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">=0.350 OBP Season (min. 10 pa)",
-      "value": 0.35,
-      "condition": "min"
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
     },
     {
-      "type": "seasonal_avg",
-      "label": ">=0.300 avg Season (min. 10 pa)",
-      "value": 0.3,
-      "condition": "min"
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/fd9b041a-199b-c526-ab4b-dda6af4f1a8e.png",
+      "label": "Skokani Olomouc",
+      "value": "2075"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d7f20b47-403a-b08b-4684-ca741b059bb8.png",
+      "label": "Blesk Jablonec",
+      "value": "2068"
     },
     {
       "type": "tournament",
@@ -19,25 +37,15 @@
       "federation_id": 6
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/252a5e3d-988d-51c1-d081-264639adc927.png",
-      "label": "Olympia Blansko",
-      "value": "2072"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/06ebf3e7-4094-4d7d-7bad-cd88e4ec3330.png",
-      "label": "Sokol Hluboká",
-      "value": "2064"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
-      "label": "Czechia NT",
-      "value": "6",
-      "federation_id": 6
-    }
-  ]
+  "answers": {
+    "0-0": 11,
+    "0-1": 7,
+    "0-2": 6,
+    "1-0": 33,
+    "1-1": 3,
+    "1-2": 8,
+    "2-0": 220,
+    "2-1": 95,
+    "2-2": 159
+  }
 }

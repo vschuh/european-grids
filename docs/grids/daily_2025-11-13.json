@@ -2,40 +2,49 @@
   "cols": [
     {
       "type": "nationality",
-      "label": "Nationality: BEL",
-      "value": "BEL"
+      "label": "Nationality: NED",
+      "value": "NED"
     },
     {
       "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
-      "label": "Belgium NT",
-      "value": "143",
-      "federation_id": 143
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/ef175e86-8a69-5cb4-6249-5c548df8b041.png",
-      "label": "Cantincrode Baseball en Softball Stars",
-      "value": "1394"
+      "image": "https://static.wbsc.org/upload/c0bd7be4-e313-1ce3-fd74-137717685f9f.png",
+      "label": "HCAW",
+      "value": "1264"
     },
     {
-      "type": "seasonal_avg",
-      "label": ">=0.400 OBP Season (min. 10 pa)",
-      "value": 0.4,
-      "condition": "min"
+      "type": "position",
+      "label": "C (min 1 PA)",
+      "value": "C"
     },
     {
       "type": "tournament",
-      "label": "U-18 European Baseball Championship (EU)",
-      "value": "EU-U-18-EURO-CHAMP-M-BB",
-      "federation_id": 278
+      "label": "Softball Ladies D1 (BE)",
+      "value": "SLD1",
+      "federation_id": 143
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 75,
+    "0-1": 54,
+    "0-2": 26,
+    "1-0": 455,
+    "1-1": 7237,
+    "1-2": 156,
+    "2-0": 16,
+    "2-1": 160,
+    "2-2": 6
+  }
 }

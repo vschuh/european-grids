@@ -1,0 +1,56 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/DOM.svg",
+      "label": "Dominican Republic NT",
+      "value": "128",
+      "federation_id": 128
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/KOR.svg",
+      "label": "Korea NT",
+      "value": "191",
+      "federation_id": 191
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ISR.svg",
+      "label": "Israel NT",
+      "value": "33",
+      "federation_id": 33
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-18 Women`s Softball World Cup",
+      "value": "U-18WSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball Olympic Games",
+      "value": "OLYMPIC-BASEBALL",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">=0.300 avg Season (min. 10 pa)",
+      "value": 0.3,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 17,
+    "0-1": 17,
+    "0-2": 16,
+    "1-0": 24,
+    "1-1": 24,
+    "1-2": 24,
+    "2-0": 145,
+    "2-1": 108,
+    "2-2": 100
+  }
+}

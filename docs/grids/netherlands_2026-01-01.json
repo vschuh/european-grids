@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
+      "type": "seasonal_runs",
+      "label": "15+ Runs Season",
+      "value": 15
     },
     {
-      "type": "seasonal_pitching_fip",
-      "label": "<2.50 FIP Season (min. 10 ip)",
-      "value": 3
-    },
-    {
-      "type": "tournament",
-      "label": "Hoofdklasse Honkbal (NL)",
-      "value": "HOOFDKLASSE-HONKBAL",
-      "federation_id": 1
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/b83640ca-dd8f-2651-7ed7-c1c324b9ef58.png",
-      "label": "RCH-Pinguïns",
-      "value": "1521"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/7650db8c-fd99-d90e-fe5e-20bd94dff0d3.jpg",
-      "label": "Quick Amersfoort Baseball",
-      "value": "1267"
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "1"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/bdc06e75-2859-a6ba-74da-9a6e16207d72.png",
+      "label": "Twins Oosterhout",
+      "value": "1269"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/38ed2f87-d5c1-caae-58f8-ddd93f46cd58.jpg",
+      "label": "Sparks Haarlem",
+      "value": "1272"
+    },
+    {
+      "type": "tournament",
+      "label": "Hoofdklasse Softbal (NL)",
+      "value": "HOOFDKLASSE-SOFTBAL",
+      "federation_id": 1
+    }
+  ],
   "answers": {
-    "0-0": 14,
-    "0-1": 1,
-    "0-2": 72,
-    "1-0": 16,
-    "1-1": 3,
-    "1-2": 83,
-    "2-0": 156,
-    "2-1": 7,
-    "2-2": 149
+    "0-0": 28,
+    "0-1": 39,
+    "0-2": 14,
+    "1-0": 29,
+    "1-1": 38,
+    "1-2": 29,
+    "2-0": 108,
+    "2-1": 189,
+    "2-2": 111
   }
 }

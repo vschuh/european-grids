@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/b521bda5-fefa-b959-19cf-33151b9c6caa.jpg",
+      "label": "Guggenberger Legionäre",
+      "value": "2410"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CRO.svg",
+      "label": "Croatia NT",
+      "value": "15",
+      "federation_id": 15
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/867c2c87-a075-4811-3a29-71da8dafa1a7.svg",
+      "label": "1949 PARMA BASEBALL CLUB ASD",
+      "value": "333"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "European Baseball Champions Cup (EU)",
+      "value": "EU-CHAMP-CUP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    }
+  ],
+  "answers": {
+    "0-0": 21,
+    "0-1": 11,
+    "0-2": 37,
+    "1-0": 4,
+    "1-1": 103,
+    "1-2": 35,
+    "2-0": 10,
+    "2-1": 123,
+    "2-2": 60
+  }
+}

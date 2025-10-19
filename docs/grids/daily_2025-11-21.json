@@ -1,51 +1,50 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_k",
-      "label": "50k+ Season",
-      "value": 50
+      "type": "nationality",
+      "label": "Nationality: NED",
+      "value": "NED"
     },
     {
-      "type": "seasonal_pitching_k",
-      "label": "35k+ Season",
-      "value": 35
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
     },
     {
-      "type": "tournament",
-      "label": "Women's Softball European Premiere Cup (EU)",
-      "value": "EU-EURO-PREM-CUP-W-SB",
-      "federation_id": 278
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/9444406f-3c22-71e5-78dd-4770dedd5eaf.png",
-      "label": "Club Béisbol Viladecans",
-      "value": "1355"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/7650db8c-fd99-d90e-fe5e-20bd94dff0d3.jpg",
+      "label": "Quick Amersfoort Baseball",
+      "value": "1267"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/5a29afcd-b476-f5ea-549e-0a6ca0bf8551.png",
-      "label": "Žraloci Ledenice",
-      "value": "1381"
+      "type": "seasonal_runs",
+      "label": "20+ Runs Season",
+      "value": 20
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/SVK.svg",
-      "label": "Slovakia NT",
-      "value": "37"
+      "type": "tournament",
+      "label": "Softball Ladies D1 (BE)",
+      "value": "SLD1",
+      "federation_id": 143
     }
   ],
   "answers": {
-    "0-0": 15,
-    "0-1": 18,
-    "0-2": 4,
-    "1-0": 10,
-    "1-1": 14,
-    "1-2": 5,
-    "2-0": 9,
-    "2-1": 18,
-    "2-2": 9
+    "0-0": 80,
+    "0-1": 26,
+    "0-2": 8,
+    "1-0": 251,
+    "1-1": 2376,
+    "1-2": 102,
+    "2-0": 16,
+    "2-1": 148,
+    "2-2": 6
   }
 }

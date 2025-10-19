@@ -1,9 +1,9 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_fip",
-      "label": "<2.50 FIP Season (min. 10 ip)",
-      "value": 3
+      "type": "position",
+      "label": "CF (min 1 PA)",
+      "value": "CF"
     },
     {
       "type": "seasonal_avg",
@@ -12,40 +12,40 @@
     },
     {
       "type": "tournament",
-      "label": "Women's Softball European Championship (EU)",
-      "value": "EU-CHAMP-W-SB",
+      "label": "U-22 Women’s Softball European Championship (EU)",
+      "value": "EU-U-22-EURO-CHAMP-W-SB",
       "federation_id": 278
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/679d2360-7aba-32ca-cb27-a1818b537f03.jpg",
-      "label": "POL. CASERTA BAS. E SOFT. ACADEMY A.S.D.",
-      "value": "394"
+      "image": "https://static.wbsc.org/upload/b5fd66eb-b823-6714-12d7-69aa802dcc59.png",
+      "label": "A.S.D. LONGBRIDGE 2000 BASEBALL CLUB",
+      "value": "351"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/38ed2f87-d5c1-caae-58f8-ddd93f46cd58.jpg",
-      "label": "Sparks Haarlem",
-      "value": "1272"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a58c308c-b5b8-113c-a189-141d486177fd.jpg",
+      "label": "BOLLATE SOFTBALL 1969 A.S.D.",
+      "value": "387"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ISR.svg",
-      "label": "Israel NT",
-      "value": "33"
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
     }
   ],
   "answers": {
-    "0-0": 0,
-    "0-1": 18,
-    "0-2": 5,
-    "1-0": 1,
-    "1-1": 36,
-    "1-2": 14,
-    "2-0": 1,
-    "2-1": 79,
-    "2-2": 30
+    "0-0": 24,
+    "0-1": 29,
+    "0-2": 4,
+    "1-0": 58,
+    "1-1": 55,
+    "1-2": 7,
+    "2-0": 175,
+    "2-1": 234,
+    "2-2": 28
   }
 }

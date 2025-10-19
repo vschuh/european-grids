@@ -1,53 +1,53 @@
 {
   "cols": [
     {
-      "type": "tournament",
-      "label": "Baseball European Championship (EU)",
-      "value": "EU-CHAMP-M-BB",
-      "federation_id": 278
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
+      "label": "Vienna Wanderers",
+      "value": "1222"
     },
     {
-      "type": "tournament",
-      "label": "U-18 European Baseball Championship (EU)",
-      "value": "EU-U-18-EURO-CHAMP-M-BB",
-      "federation_id": 278
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/372d62f7-f498-84c1-f10f-62831565fe7d.png",
+      "label": "Neptunus",
+      "value": "287"
     },
     {
-      "type": "position",
-      "label": "RF (min 1 PA)",
-      "value": "RF"
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/b0b59bc1-5816-6673-3254-7a989bdd0d5e.jpg",
+      "label": "Sabat Praha",
+      "value": "2368"
     }
   ],
   "rows": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ISR.svg",
-      "label": "Israel NT",
-      "value": "33",
-      "federation_id": 33
+      "type": "tournament",
+      "label": "U-22 Women’s Softball European Championship (EU)",
+      "value": "EU-U-22-EURO-CHAMP-W-SB",
+      "federation_id": 278
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/1071d9a2-1565-7750-d6bd-c5b9217a804f.jpg",
-      "label": "Sénart Templiers",
-      "value": "1435"
+      "type": "tournament",
+      "label": "Women’s Softball European Cup Winners Cup “A” (EU)",
+      "value": "EU-WINNERS-CUP-A-W-SB",
+      "federation_id": 278
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/c8594b98-58ba-b8a6-5518-10de4ae89d9d.png",
-      "label": "Wr. Neustadt Diving Ducks",
-      "value": "1227"
+      "type": "seasonal_ops",
+      "label": ">=1.000 OPS Season (min. 10 pa)",
+      "value": 1,
+      "condition": "min"
     }
   ],
   "answers": {
-    "0-0": 43,
-    "0-1": 42,
-    "0-2": 113,
-    "1-0": 8,
-    "1-1": 9,
-    "1-2": 54,
-    "2-0": 12,
-    "2-1": 14,
-    "2-2": 96
+    "0-0": 6,
+    "0-1": 5,
+    "0-2": 7,
+    "1-0": 4,
+    "1-1": 8,
+    "1-2": 17,
+    "2-0": 61,
+    "2-1": 36,
+    "2-2": 21
   }
 }

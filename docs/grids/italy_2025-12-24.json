@@ -1,9 +1,9 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "CF (min 1 PA)",
-      "value": "CF"
+      "type": "seasonal_avg",
+      "label": ">0.400 OBP Season (min. 10 pa)",
+      "value": 0.4
     },
     {
       "type": "year",
@@ -20,32 +20,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/fa0ea240-a831-b605-ddb9-629eb0bd8e56.jpg",
-      "label": "OLD PARMA BASEBALL SOFTBALL CLUB A.S.D.",
-      "value": "407"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/ef8ef30f-13d8-e1c8-7d06-5b8cb737fefa.jpg",
+      "label": "FIORENTINA BASEBALL  S.S.D. ARL",
+      "value": "349"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/09fa8d5d-3beb-0f14-7d8e-8d48078672a2.jpg",
-      "label": "A.S.D. SAN MARINO BASEBALL CLUB",
-      "value": "331"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/d79c686b-d315-8ea2-9ce2-09dce8a65e3c.jpg",
+      "label": "PIANORO SOFTBALL A.S.D.",
+      "value": "392"
     },
     {
       "type": "tournament",
-      "label": "Serie A1 Softball (IT)",
-      "value": "ITA-SERIE-A1-F-SB",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
       "federation_id": 2
     }
   ],
   "answers": {
-    "0-0": 47,
-    "0-1": 48,
-    "0-2": 12,
-    "1-0": 39,
-    "1-1": 68,
-    "1-2": 35,
-    "2-0": 419,
-    "2-1": 346,
-    "2-2": 125
+    "0-0": 22,
+    "0-1": 66,
+    "0-2": 5,
+    "1-0": 27,
+    "1-1": 53,
+    "1-2": 18,
+    "2-0": 267,
+    "2-1": 1063,
+    "2-2": 223
   }
 }

@@ -1,0 +1,55 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CUB.svg",
+      "label": "Cuba NT",
+      "value": "121",
+      "federation_id": 121
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/COL.svg",
+      "label": "Colombia NT",
+      "value": "88",
+      "federation_id": 88
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2e9409c9-689a-8551-d9e2-5b86cce1fbe8.svg",
+      "label": "Tigres de Chinandega",
+      "value": "1488"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Baseball Champions League Americas",
+      "value": "BASEBALL-CHAMP-LEAGUE",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "U-23 Baseball World Cup",
+      "value": "U-23",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_wOBA",
+      "label": ">=0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 27,
+    "0-1": 10,
+    "0-2": 27,
+    "1-0": 39,
+    "1-1": 76,
+    "1-2": 13,
+    "2-0": 113,
+    "2-1": 47,
+    "2-2": 11
+  }
+}

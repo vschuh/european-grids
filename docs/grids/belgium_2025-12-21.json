@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_ip",
-      "label": "35 IP+ Season",
-      "value": 105
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
     },
     {
       "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
@@ -20,32 +20,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/f7f05882-7810-d6a2-6bd7-06648e0a5fa8.png",
-      "label": "Beveren Lions",
-      "value": "1480"
+      "image": "https://static.wbsc.org/upload/bd187a02-55c9-dbf3-3a25-668902bfcd8d.png",
+      "label": "Borgerhout Squirrels",
+      "value": "1473"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/7f689077-0110-b1f1-2ef9-4b2c962e00c8.png",
-      "label": "Namur Angels",
-      "value": "1478"
+      "image": "https://static.wbsc.org/upload/450c82c4-90bc-6b3d-d1c7-88a8f4d96464.png",
+      "label": "Hoboken Pioneers",
+      "value": "1353"
     },
     {
       "type": "tournament",
-      "label": "Baseball Men D1 (BE)",
-      "value": "BD1",
+      "label": "Softball Ladies D1 (BE)",
+      "value": "SLD1",
       "federation_id": 143
     }
   ],
   "answers": {
-    "0-0": 13,
-    "0-1": 66,
-    "0-2": 23,
-    "1-0": 10,
-    "1-1": 67,
-    "1-2": 7,
-    "2-0": 73,
-    "2-1": 271,
-    "2-2": 100
+    "0-0": 103,
+    "0-1": 42,
+    "0-2": 38,
+    "1-0": 92,
+    "1-1": 48,
+    "1-2": 49,
+    "2-0": 144,
+    "2-1": 15,
+    "2-2": 59
   }
 }

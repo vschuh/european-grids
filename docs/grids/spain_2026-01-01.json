@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_rbi",
+      "label": ">=15 RBI Season",
+      "value": 15,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
+      "federation_id": 39
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f62896a9-35c6-1383-7685-484ec01f3358.jpg",
+      "label": "CBS Capitalinos Gran Canaria",
+      "value": "1628"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f14607c0-9bb5-122e-4481-f1475f202b0f.png",
+      "label": "CBS Toros",
+      "value": "1654"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Sófbol Oro (ESP)",
+      "value": "ESP-LNDH-SB",
+      "federation_id": 39
+    }
+  ],
+  "answers": {
+    "0-0": 5,
+    "0-1": 40,
+    "0-2": 4,
+    "1-0": 6,
+    "1-1": 29,
+    "1-2": 3,
+    "2-0": 81,
+    "2-1": 274,
+    "2-2": 77
+  }
+}

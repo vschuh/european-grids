@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
+      "federation_id": 39
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f62896a9-35c6-1383-7685-484ec01f3358.jpg",
+      "label": "CBS Capitalinos Gran Canaria",
+      "value": "1628"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d557958c-5454-415d-064f-d5630ddfd6e1.png",
+      "label": "Club Deportivo Arga",
+      "value": "1623"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Béisbol Oro (ESP)",
+      "value": "ESP-LNDH-BB",
+      "federation_id": 39
+    }
+  ],
+  "answers": {
+    "0-0": 24,
+    "0-1": 43,
+    "0-2": 4,
+    "1-0": 43,
+    "1-1": 83,
+    "1-2": 10,
+    "2-0": 139,
+    "2-1": 265,
+    "2-2": 76
+  }
+}

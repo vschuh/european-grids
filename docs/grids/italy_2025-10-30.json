@@ -1,14 +1,34 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "P (min 1 PA)",
-      "value": "P"
+      "type": "seasonal_pitching_ip",
+      "label": "50 IP+ Season",
+      "value": 105
     },
     {
-      "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/6ab27046-f495-c765-4070-a15fd6ef9dd5.jpg",
+      "label": "WHITE SOX BUTTRIO BASEBALL A.S.D.",
+      "value": "375"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a253f065-f476-fd22-2ea4-7cf450180fe4.jpg",
+      "label": "MACERATA ANGELS A.S.D.",
+      "value": "330"
     },
     {
       "type": "team",
@@ -17,24 +37,15 @@
       "value": "2"
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/1603ff99-c3b0-d27b-807f-84d84d54db0d.jpg",
-      "label": "A.B. CARONNO SOFTBALL ASD",
-      "value": "391"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/258288f1-589e-cb4b-1b00-f42003a7182f.jpg",
-      "label": "NEW BOLLATE A.S.D.",
-      "value": "397"
-    },
-    {
-      "type": "tournament",
-      "label": "Serie A1 Softball (IT)",
-      "value": "ITA-SERIE-A1-F-SB",
-      "federation_id": 2
-    }
-  ]
+  "answers": {
+    "0-0": 11,
+    "0-1": 13,
+    "0-2": 29,
+    "1-0": 22,
+    "1-1": 39,
+    "1-2": 91,
+    "2-0": 111,
+    "2-1": 316,
+    "2-2": 223
+  }
 }

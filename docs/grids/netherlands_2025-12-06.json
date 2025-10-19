@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "LF (min 1 PA)",
-      "value": "LF"
+      "type": "seasonal_avg",
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
     },
     {
-      "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
-    },
-    {
-      "type": "tournament",
-      "label": "Hoofdklasse Softbal (NL)",
-      "value": "HOOFDKLASSE-SOFTBAL",
-      "federation_id": 1
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a56ecb27-813b-b97e-c668-3d06269b6494.jpg",
-      "label": "Tex Town Tigers",
-      "value": "1274"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/372d62f7-f498-84c1-f10f-62831565fe7d.png",
-      "label": "Neptunus",
-      "value": "287"
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "1"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/fff73bb9-7f68-64a3-3973-8816620d097d.png",
+      "label": "UVV",
+      "value": "1825"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e8944012-5266-bf86-740a-2b238e5d1d9a.jpg",
+      "label": "Onze Gezellen",
+      "value": "1273"
+    },
+    {
+      "type": "tournament",
+      "label": "Hoofdklasse Softbal (NL)",
+      "value": "HOOFDKLASSE-SOFTBAL",
+      "federation_id": 1
+    }
+  ],
   "answers": {
-    "0-0": 37,
-    "0-1": 22,
-    "0-2": 49,
-    "1-0": 63,
-    "1-1": 34,
-    "1-2": 51,
-    "2-0": 249,
-    "2-1": 152,
+    "0-0": 16,
+    "0-1": 66,
+    "0-2": 13,
+    "1-0": 22,
+    "1-1": 43,
+    "1-2": 14,
+    "2-0": 164,
+    "2-1": 218,
     "2-2": 111
   }
 }

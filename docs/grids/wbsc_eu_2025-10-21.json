@@ -2,34 +2,35 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/d430c331-250b-b6d3-fc73-5e9348647ec8.png",
-      "label": "Mont-Saint-Guibert Phoenix",
-      "value": "1479"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
+      "label": "SOFTBALL CLUB FORLI A.S.D.",
+      "value": "395"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/65fd09a8-3d13-c9be-e020-8c154128996e.png",
-      "label": "Arrows Ostrava",
-      "value": "1431"
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2",
+      "federation_id": 2
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/7508dcab-3224-69b1-99ca-fa482a5bdb03.jpg",
-      "label": "BK Olimpija Karlovac",
-      "value": "1415"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/da6c3426-1987-9a06-d2de-86b2d441d13a.png",
+      "label": "Vienna Wanderers",
+      "value": "1222"
     }
   ],
   "rows": [
     {
       "type": "tournament",
-      "label": "U-18 European Baseball Championship (EU)",
-      "value": "EU-U-18-EURO-CHAMP-M-BB",
+      "label": "Women's Softball European Premiere Cup (EU)",
+      "value": "EU-EURO-PREM-CUP-W-SB",
       "federation_id": 278
     },
     {
-      "type": "seasonal_bb",
-      "label": ">=10 BB Season",
-      "value": 10,
+      "type": "seasonal_pitching_k",
+      "label": ">=35k Season",
+      "value": 35,
       "condition": "min"
     },
     {
@@ -39,14 +40,14 @@
     }
   ],
   "answers": {
-    "0-0": 10,
-    "0-1": 4,
-    "0-2": 4,
-    "1-0": 59,
-    "1-1": 24,
-    "1-2": 9,
-    "2-0": 26,
-    "2-1": 31,
-    "2-2": 17
+    "0-0": 32,
+    "0-1": 36,
+    "0-2": 13,
+    "1-0": 20,
+    "1-1": 111,
+    "1-2": 13,
+    "2-0": 36,
+    "2-1": 263,
+    "2-2": 56
   }
 }

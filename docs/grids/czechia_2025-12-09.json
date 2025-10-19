@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_k",
-      "label": "50k+ Season",
-      "value": 50
+      "type": "seasonal_hits",
+      "label": "15+ Hit Season",
+      "value": 15
     },
     {
       "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
+      "label": "Played in 2023 season",
+      "value": 2023
     },
     {
       "type": "team",
@@ -20,32 +20,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/2b4c017d-41ab-0f88-0c43-a63a6080e50e.png",
-      "label": "Technika Brno",
-      "value": "2065"
+      "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg",
+      "label": "SK Joudrs Praha",
+      "value": "1348"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/5a29afcd-b476-f5ea-549e-0a6ca0bf8551.png",
-      "label": "Žraloci Ledenice",
-      "value": "1381"
+      "image": "https://static.wbsc.org/upload/e0cdbe49-5118-1882-4882-f10fd522553d.png",
+      "label": "SaBaT Praha",
+      "value": "2074"
     },
     {
       "type": "tournament",
-      "label": "Extraliga SB (CZ)",
-      "value": "W-EXT-L",
-      "federation_id": 148
+      "label": "Extraliga BB (CZ)",
+      "value": "CZE-EXL",
+      "federation_id": 6
     }
   ],
   "answers": {
-    "0-0": 4,
-    "0-1": 4,
-    "0-2": 17,
-    "1-0": 10,
-    "1-1": 26,
+    "0-0": 49,
+    "0-1": 91,
+    "0-2": 63,
+    "1-0": 40,
+    "1-1": 61,
     "1-2": 29,
-    "2-0": 32,
-    "2-1": 68,
-    "2-2": 102
+    "2-0": 212,
+    "2-1": 410,
+    "2-2": 159
   }
 }

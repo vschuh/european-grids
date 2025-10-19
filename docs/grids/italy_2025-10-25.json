@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "1B (min 1 PA)",
-      "value": "1B"
+      "type": "seasonal_rbi",
+      "label": "20+ RBI Season",
+      "value": 20
     },
     {
       "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
       "type": "team",
@@ -20,21 +20,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/17fb42df-e156-f96b-aed7-4aa314731616.jpg",
-      "label": "BUSSOLENGO SOFTBALL 2.0 A.S.D.",
-      "value": "1282"
+      "image": "https://static.wbsc.org/upload/b5fd66eb-b823-6714-12d7-69aa802dcc59.png",
+      "label": "A.S.D. LONGBRIDGE 2000 BASEBALL CLUB",
+      "value": "351"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/30444ddc-0622-85ef-a529-0a3ed3c7a7f9.png",
-      "label": "BASEBALL CLUB SETTIMO A.S.D.",
-      "value": "342"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/7e3e8f32-6d68-f75a-dbfe-7cf17095c499.jpg",
+      "label": "OLTRETORRENTE BASEBALL CLUB A.S.D.",
+      "value": "353"
     },
     {
       "type": "tournament",
-      "label": "Serie A Baseball (IT)",
-      "value": "ITA-SERIE-A1-M-BB",
+      "label": "Serie A1 Softball (IT)",
+      "value": "ITA-SERIE-A1-F-SB",
       "federation_id": 2
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 10,
+    "0-1": 61,
+    "0-2": 22,
+    "1-0": 8,
+    "1-1": 57,
+    "1-2": 11,
+    "2-0": 129,
+    "2-1": 414,
+    "2-2": 125
+  }
 }

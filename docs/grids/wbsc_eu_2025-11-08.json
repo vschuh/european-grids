@@ -2,52 +2,53 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/b0b59bc1-5816-6673-3254-7a989bdd0d5e.jpg",
-      "label": "Sabat Praha",
-      "value": "2368"
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
+      "federation_id": 6
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
-      "label": "SOFTBALL CLUB FORLI A.S.D.",
-      "value": "395"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a8c54b1a-0050-5d18-a2f6-2059dde33487.png",
+      "label": "Dornbirn Indians",
+      "value": "1225"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8",
-      "federation_id": 8
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/7b277a56-f1a2-d771-d7f9-1867b9b6c01d.jpg",
+      "label": "Bonn Capitals",
+      "value": "1430"
     }
   ],
   "rows": [
     {
       "type": "tournament",
-      "label": "Women's Softball European Championship (EU)",
-      "value": "EU-CHAMP-W-SB",
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
       "federation_id": 278
     },
     {
-      "type": "seasonal_pitching_k",
-      "label": ">=35k Season",
-      "value": 35,
-      "condition": "min"
+      "type": "tournament",
+      "label": "U-18 Women's European Softball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-W-SB",
+      "federation_id": 278
     },
     {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "type": "seasonal_pitching_ip",
+      "label": ">=50 IP Season",
+      "value": 105,
+      "condition": "min"
     }
   ],
   "answers": {
-    "0-0": 4,
-    "0-1": 12,
-    "0-2": 24,
-    "1-0": 5,
-    "1-1": 20,
-    "1-2": 34,
-    "2-0": 10,
-    "2-1": 49,
-    "2-2": 224
+    "0-0": 45,
+    "0-1": 6,
+    "0-2": 16,
+    "1-0": 45,
+    "1-1": 5,
+    "1-2": 5,
+    "2-0": 93,
+    "2-1": 13,
+    "2-2": 9
   }
 }

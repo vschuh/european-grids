@@ -2,13 +2,33 @@
   "cols": [
     {
       "type": "position",
-      "label": "RF (min 1 PA)",
-      "value": "RF"
+      "label": "C (min 1 PA)",
+      "value": "C"
     },
     {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
+    },
+    {
+      "type": "tournament",
+      "label": "Hoofdklasse Softbal (NL)",
+      "value": "HOOFDKLASSE-SOFTBAL",
+      "federation_id": 1
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a56ecb27-813b-b97e-c668-3d06269b6494.jpg",
+      "label": "Tex Town Tigers",
+      "value": "1274"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2771d01c-919e-c952-c89c-0b6d09fae4a0.png",
+      "label": "Red Lions",
+      "value": "2596"
     },
     {
       "type": "team",
@@ -17,35 +37,15 @@
       "value": "1"
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/8cea480b-e009-b08e-8d12-c3f85ab33091.jpg",
-      "label": "Hoofddorp Pioniers Softball",
-      "value": "1306"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/bdc06e75-2859-a6ba-74da-9a6e16207d72.png",
-      "label": "Twins Oosterhout",
-      "value": "1269"
-    },
-    {
-      "type": "tournament",
-      "label": "Hoofdklasse Honkbal (NL)",
-      "value": "HOOFDKLASSE-HONKBAL",
-      "federation_id": 1
-    }
-  ],
   "answers": {
-    "0-0": 14,
-    "0-1": 4,
-    "0-2": 4,
-    "1-0": 35,
-    "1-1": 47,
-    "1-2": 14,
-    "2-0": 220,
-    "2-1": 300,
-    "2-2": 149
+    "0-0": 25,
+    "0-1": 39,
+    "0-2": 49,
+    "1-0": 5,
+    "1-1": 6,
+    "1-2": 17,
+    "2-0": 156,
+    "2-1": 203,
+    "2-2": 111
   }
 }

@@ -2,40 +2,49 @@
   "cols": [
     {
       "type": "nationality",
-      "label": "Nationality: ESP",
-      "value": "ESP"
+      "label": "Nationality: ITA",
+      "value": "ITA"
     },
     {
       "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
-      "label": "Spain NT",
-      "value": "39",
-      "federation_id": 39
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/12a3f46c-cb0a-0014-98f9-bff5d87890b5.jpg",
-      "label": "Club de Béisbol y Sóftbol Rivas",
-      "value": "1354"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/4dd71fbd-6865-78fc-431a-fe648a41d21b.jpg",
+      "label": "LEGNANO BASEBALL  SOFTBALL A.S.D.",
+      "value": "398"
     },
     {
-      "type": "perfect_game",
-      "label": "Perfect Game (CG & min 5 IP)",
-      "value": 5,
-      "condition": "min"
+      "type": "seasonal_pitching_k",
+      "label": "50k+ Season",
+      "value": 50
     },
     {
       "type": "tournament",
-      "label": "Baseball European Championship (EU)",
-      "value": "EU-CHAMP-M-BB",
+      "label": "U-22 Women’s Softball European Championship (EU)",
+      "value": "EU-U-22-EURO-CHAMP-W-SB",
       "federation_id": 278
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 68,
+    "0-1": 49,
+    "0-2": 5,
+    "1-0": 278,
+    "1-1": 669,
+    "1-2": 88,
+    "2-0": 29,
+    "2-1": 322,
+    "2-2": 29
+  }
 }

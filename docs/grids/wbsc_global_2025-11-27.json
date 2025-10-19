@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "tournament",
+      "label": "U-18 Women`s Softball World Cup",
+      "value": "U-18WSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">=0.300 avg Season (min. 10 pa)",
+      "value": 0.3,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/26b428e0-3173-0f98-e54c-92274ddfcdf0.jpg",
+      "label": "Thunderbirds",
+      "value": "1372"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/e0cdbe49-5118-1882-4882-f10fd522553d.png",
+      "label": "Sabat Praha",
+      "value": "2074"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/24be214e-4c82-4f83-8fa3-56760624a195.jpg",
+      "label": "Quick Amersfoort",
+      "value": "1308"
+    }
+  ],
+  "answers": {
+    "0-0": 4,
+    "0-1": 8,
+    "0-2": 5,
+    "1-0": 8,
+    "1-1": 66,
+    "1-2": 114,
+    "2-0": 4,
+    "2-1": 16,
+    "2-2": 15
+  }
+}

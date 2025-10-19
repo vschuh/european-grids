@@ -1,51 +1,50 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_k",
-      "label": "50k+ Season",
-      "value": 50
+      "type": "nationality",
+      "label": "Nationality: NED",
+      "value": "NED"
     },
     {
-      "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
-      "type": "tournament",
-      "label": "U-18 European Baseball Championship (EU)",
-      "value": "EU-U-18-EURO-CHAMP-M-BB",
-      "federation_id": 278
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/271efdd4-78f7-782b-19e9-ca7fd00cfee2.png",
-      "label": "Hroši Brno",
-      "value": "2063"
+      "image": "https://static.wbsc.org/upload/bd187a02-55c9-dbf3-3a25-668902bfcd8d.png",
+      "label": "Borgerhout Squirrels",
+      "value": "1473"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/acfef0c2-5af4-e797-cb4b-550d6173bb34.png",
-      "label": "Hard Bulls",
-      "value": "1228"
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/LTU.svg",
-      "label": "Lithuania NT",
-      "value": "156"
+      "type": "tournament",
+      "label": "Hoofdklasse Honkbal (NL)",
+      "value": "HOOFDKLASSE-HONKBAL",
+      "federation_id": 1
     }
   ],
   "answers": {
-    "0-0": 12,
-    "0-1": 73,
-    "0-2": 9,
-    "1-0": 6,
-    "1-1": 60,
-    "1-2": 3,
-    "2-0": 6,
-    "2-1": 108,
-    "2-2": 24
+    "0-0": 5,
+    "0-1": 42,
+    "0-2": 38,
+    "1-0": 1062,
+    "1-1": 4460,
+    "1-2": 235,
+    "2-0": 500,
+    "2-1": 294,
+    "2-2": 10
   }
 }

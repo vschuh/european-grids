@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_wOBA",
+      "label": ">=0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25,
+      "condition": "min"
+    },
+    {
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Béisbol Oro (ESP)",
+      "value": "ESP-LNDH-BB",
+      "federation_id": 39
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/3084d3b0-293e-1776-d083-36810be4a442.png",
+      "label": "Club Atlético Deportivo Irabia/Izaga",
+      "value": "1960"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/e715ea59-748b-5200-77b6-63e4e2c8c96e.jpg",
+      "label": "Tenerife Marlins Puerto Cruz",
+      "value": "1421"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
+      "federation_id": 39
+    }
+  ],
+  "answers": {
+    "0-0": 55,
+    "0-1": 44,
+    "0-2": 30,
+    "1-0": 45,
+    "1-1": 25,
+    "1-2": 52,
+    "2-0": 195,
+    "2-1": 115,
+    "2-2": 76
+  }
+}

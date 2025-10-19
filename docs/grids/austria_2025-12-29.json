@@ -1,34 +1,14 @@
 {
   "cols": [
     {
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
+    },
+    {
       "type": "seasonal_runs",
-      "label": "20+ Runs Season",
-      "value": 20
-    },
-    {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/1943295d-9bf7-e5b8-291c-021b311137ba.png",
-      "label": "Vienna Metrostars",
-      "value": "1223"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/d84201d1-024c-068e-a445-3ebb5216a8c4.png",
-      "label": "Schwechat Blue Bats",
-      "value": "1261"
+      "label": "15+ Runs Season",
+      "value": 15
     },
     {
       "type": "tournament",
@@ -37,15 +17,35 @@
       "federation_id": 8
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d84201d1-024c-068e-a445-3ebb5216a8c4.png",
+      "label": "Schwechat Blue Bats",
+      "value": "1261"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/723b1083-3eef-437a-f680-513c00d6556e.png",
+      "label": "Attnang-Puchheim Athletics",
+      "value": "1224"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
+    }
+  ],
   "answers": {
     "0-0": 23,
-    "0-1": 77,
-    "0-2": 45,
-    "1-0": 12,
-    "1-1": 56,
-    "1-2": 25,
-    "2-0": 100,
-    "2-1": 246,
+    "0-1": 19,
+    "0-2": 69,
+    "1-0": 38,
+    "1-1": 27,
+    "1-2": 26,
+    "2-0": 149,
+    "2-1": 84,
     "2-2": 103
   }
 }

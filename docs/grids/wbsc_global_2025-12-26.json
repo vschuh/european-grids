@@ -1,0 +1,55 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1",
+      "federation_id": 1
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
+      "federation_id": 6
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2e9409c9-689a-8551-d9e2-5b86cce1fbe8.svg",
+      "label": "Tigres de Chinandega",
+      "value": "1488"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-23 Baseball World Cup",
+      "value": "U-23",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "Olympic Baseball Qualifiers",
+      "value": "OLYMPIC-BASEBALL-Q",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_pitching_hbp",
+      "label": "<=2 HB Season",
+      "value": 2,
+      "condition": "max"
+    }
+  ],
+  "answers": {
+    "0-0": 94,
+    "0-1": 54,
+    "0-2": 13,
+    "1-0": 32,
+    "1-1": 24,
+    "1-2": 5,
+    "2-0": 343,
+    "2-1": 411,
+    "2-2": 13
+  }
+}

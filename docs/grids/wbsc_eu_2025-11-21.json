@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/dfb15b29-c3d5-e17b-16ce-fea5adbc7c83.png",
+      "label": "Stabroek Chicaboo`s",
+      "value": "1361"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/7888c62f-175d-1cc0-6c19-a41a61802160.png",
+      "label": "Royal Greys",
+      "value": "1482"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/064dd87a-45a5-96d7-f1fa-bfef4c995785.jpg",
+      "label": "Stags Softball",
+      "value": "1604"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-23 Baseball European Championship (EU)",
+      "value": "EU-U-23-EURO-CHAMP-M-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_ops",
+      "label": ">=1.000 OPS Season (min. 10 pa)",
+      "value": 1,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
+    }
+  ],
+  "answers": {
+    "0-0": 5,
+    "0-1": 8,
+    "0-2": 8,
+    "1-0": 100,
+    "1-1": 92,
+    "1-2": 10,
+    "2-0": 31,
+    "2-1": 6,
+    "2-2": 7
+  }
+}

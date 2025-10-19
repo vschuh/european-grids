@@ -2,54 +2,54 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
-      "label": "France NT",
-      "value": "14",
-      "federation_id": 14
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143",
+      "federation_id": 143
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CRO.svg",
-      "label": "Croatia NT",
-      "value": "15",
-      "federation_id": 15
+      "image": "https://static.wbsc.org/assets/flags/ioc/DEN.svg",
+      "label": "Denmark NT",
+      "value": "149",
+      "federation_id": 149
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/5ea48357-37d8-e9aa-a7e0-abf4e68783d7.jpg",
-      "label": "Wittenbach Panthers Softball",
-      "value": "1606"
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6",
+      "federation_id": 6
     }
   ],
   "rows": [
     {
       "type": "tournament",
-      "label": "Women’s Softball European Cup Winners Cup “B” (EU)",
-      "value": "EU-WINNERS-CUP-B-W-SB",
+      "label": "U-22 Women’s Softball European Championship (EU)",
+      "value": "EU-U-22-EURO-CHAMP-W-SB",
       "federation_id": 278
     },
     {
       "type": "tournament",
-      "label": "Women's Softball European Premiere Cup (EU)",
-      "value": "EU-EURO-PREM-CUP-W-SB",
+      "label": "U-23 Baseball European Championship (EU)",
+      "value": "EU-U-23-EURO-CHAMP-M-SB",
       "federation_id": 278
     },
     {
-      "type": "seasonal_hits",
-      "label": ">=15 Hit Season",
-      "value": 15,
-      "condition": "min"
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
     }
   ],
   "answers": {
-    "0-0": 8,
-    "0-1": 6,
-    "0-2": 16,
-    "1-0": 20,
-    "1-1": 9,
-    "1-2": 22,
-    "2-0": 72,
-    "2-1": 32,
-    "2-2": 4
+    "0-0": 26,
+    "0-1": 13,
+    "0-2": 28,
+    "1-0": 15,
+    "1-1": 23,
+    "1-2": 29,
+    "2-0": 220,
+    "2-1": 65,
+    "2-2": 342
   }
 }

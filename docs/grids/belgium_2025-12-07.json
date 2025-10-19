@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_wOBA",
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25
+      "type": "seasonal_pitching_ip",
+      "label": "35 IP+ Season",
+      "value": 105
     },
     {
       "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
       "type": "team",
@@ -20,9 +20,9 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/15ddbfc7-3582-aea3-55b6-9d40c3273eb0.png",
-      "label": "Zonhoven Tigers",
-      "value": "1545"
+      "image": "https://static.wbsc.org/upload/ef175e86-8a69-5cb4-6249-5c548df8b041.png",
+      "label": "Cantincrode Baseball en Softball Stars",
+      "value": "1394"
     },
     {
       "type": "team",
@@ -32,20 +32,20 @@
     },
     {
       "type": "tournament",
-      "label": "Baseball Men D1 (BE)",
-      "value": "BD1",
+      "label": "Softball Ladies D1 (BE)",
+      "value": "SLD1",
       "federation_id": 143
     }
   ],
   "answers": {
-    "0-0": 21,
-    "0-1": 29,
-    "0-2": 3,
-    "1-0": 83,
-    "1-1": 82,
+    "0-0": 6,
+    "0-1": 28,
+    "0-2": 10,
+    "1-0": 6,
+    "1-1": 29,
     "1-2": 12,
-    "2-0": 275,
-    "2-1": 306,
-    "2-2": 100
+    "2-0": 36,
+    "2-1": 118,
+    "2-2": 59
   }
 }

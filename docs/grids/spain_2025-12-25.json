@@ -1,0 +1,54 @@
+{
+  "cols": [
+    {
+      "type": "seasonal_pitching_ip",
+      "label": ">=50 IP Season",
+      "value": 105,
+      "condition": "min"
+    },
+    {
+      "type": "seasonal_rbi",
+      "label": ">=20 RBI Season",
+      "value": 20,
+      "condition": "min"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Sófbol Oro (ESP)",
+      "value": "ESP-LNDH-SB",
+      "federation_id": 39
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2385052c-b349-ee0a-0368-a3c409cef452.png",
+      "label": "CBS Antorcha Valencia",
+      "value": "1653"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/c0e15d0a-f6ea-e019-b9cb-79d9892ea780.jpg",
+      "label": "OBB Bizkorrak",
+      "value": "1627"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39",
+      "federation_id": 39
+    }
+  ],
+  "answers": {
+    "0-0": 10,
+    "0-1": 8,
+    "0-2": 30,
+    "1-0": 5,
+    "1-1": 7,
+    "1-2": 28,
+    "2-0": 46,
+    "2-1": 48,
+    "2-2": 77
+  }
+}

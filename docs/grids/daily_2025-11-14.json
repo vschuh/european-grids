@@ -1,50 +1,51 @@
 {
   "cols": [
     {
-      "type": "nationality",
-      "label": "Nationality: NED",
-      "value": "NED"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
-    },
-    {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
-      "label": "Netherlands NT",
-      "value": "1"
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
+    },
+    {
+      "type": "seasonal_rbi",
+      "label": "20+ RBI Season",
+      "value": 20
+    },
+    {
+      "type": "position",
+      "label": "RF (min 1 PA)",
+      "value": "RF"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/c0bd7be4-e313-1ce3-fd74-137717685f9f.png",
-      "label": "HCAW",
-      "value": "1264"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/9969ab27-9aed-dea0-400f-8755360e76e0.jpg",
+      "label": "SOFTBALL CLUB FORLI` A.S.D.",
+      "value": "395"
     },
     {
-      "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8cce5d11-c711-787c-828e-01916972f160.jpg",
+      "label": "A.S.D. SOFTBALL MACERATA",
+      "value": "409"
     },
     {
       "type": "tournament",
-      "label": "Softball Ladies D1 (BE)",
-      "value": "SLD1",
-      "federation_id": 143
+      "label": "U-18 Women's European Softball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-W-SB",
+      "federation_id": 278
     }
   ],
   "answers": {
-    "0-0": 75,
-    "0-1": 54,
-    "0-2": 26,
-    "1-0": 455,
-    "1-1": 7237,
-    "1-2": 156,
-    "2-0": 16,
-    "2-1": 160,
-    "2-2": 6
+    "0-0": 21,
+    "0-1": 24,
+    "0-2": 63,
+    "1-0": 4,
+    "1-1": 8,
+    "1-2": 40,
+    "2-0": 48,
+    "2-1": 46,
+    "2-2": 449
   }
 }

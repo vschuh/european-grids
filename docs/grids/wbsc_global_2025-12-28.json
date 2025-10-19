@@ -1,0 +1,56 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/CUB.svg",
+      "label": "Cuba NT",
+      "value": "121",
+      "federation_id": 121
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/JPN.svg",
+      "label": "Japan NT",
+      "value": "182",
+      "federation_id": 182
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NZL.svg",
+      "label": "New Zealand NT",
+      "value": "170",
+      "federation_id": 170
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women`s Softball World Championship",
+      "value": "WSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "WBSC Men`s Softball World Cup",
+      "value": "MSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_pitching_k",
+      "label": ">=35k Season",
+      "value": 35,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 15,
+    "0-1": 33,
+    "0-2": 29,
+    "1-0": 21,
+    "1-1": 41,
+    "1-2": 36,
+    "2-0": 20,
+    "2-1": 3,
+    "2-2": 8
+  }
+}

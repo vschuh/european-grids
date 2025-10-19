@@ -1,9 +1,9 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "3B (min 1 PA)",
-      "value": "3B"
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
     },
     {
       "type": "year",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/934e9ec8-bec3-79bd-a8a8-b040f4161d55.png",
-      "label": "Kinheim",
-      "value": "1263"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/8b309cc3-df97-4cc5-e994-7961b147ef60.jpg",
+      "label": "Storks",
+      "value": "1268"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/2771d01c-919e-c952-c89c-0b6d09fae4a0.png",
-      "label": "Red Lions",
-      "value": "2596"
+      "image": "https://static.wbsc.org/upload/fa14f1a1-1762-f7f2-6a3d-84fc21f97071.png",
+      "label": "Hoofddorp Pioniers Baseball",
+      "value": "1265"
     },
     {
       "type": "tournament",
@@ -36,5 +36,16 @@
       "value": "HOOFDKLASSE-HONKBAL",
       "federation_id": 1
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 3,
+    "0-1": 10,
+    "0-2": 6,
+    "1-0": 15,
+    "1-1": 42,
+    "1-2": 26,
+    "2-0": 111,
+    "2-1": 237,
+    "2-2": 149
+  }
 }

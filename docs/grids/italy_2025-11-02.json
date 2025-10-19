@@ -1,15 +1,34 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_era",
-      "label": "<=3.00 ERA Season (min. 10 ip)",
-      "value": 3,
-      "condition": "max"
+      "type": "seasonal_pitching_k",
+      "label": "35k+ Season",
+      "value": 35
     },
     {
-      "type": "year",
-      "label": "Played in 2022 season",
-      "value": 2022
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/d3da29df-dd87-12e9-a63d-0c5cd519d09e.jpg",
+      "label": "A.S.D. SENAGO MILANO UNITED B.C.",
+      "value": "340"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/b5fd66eb-b823-6714-12d7-69aa802dcc59.png",
+      "label": "A.S.D. LONGBRIDGE 2000 BASEBALL CLUB",
+      "value": "351"
     },
     {
       "type": "team",
@@ -18,24 +37,15 @@
       "value": "2"
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/e038a2d1-84e5-3d14-9e93-98eadfc2fb3f.jpg",
-      "label": "TORRE PEDRERA FALCONS BC ASS. SPORT. DILETT.",
-      "value": "381"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/8d59a636-d55a-b5f8-0f4c-c1c3978a1a8d.jpg",
-      "label": "LION`S  BASEBALL NETTUNO A.S.D.",
-      "value": "635"
-    },
-    {
-      "type": "tournament",
-      "label": "Serie A Baseball (IT)",
-      "value": "ITA-SERIE-A1-M-BB",
-      "federation_id": 2
-    }
-  ]
+  "answers": {
+    "0-0": 10,
+    "0-1": 7,
+    "0-2": 49,
+    "1-0": 17,
+    "1-1": 29,
+    "1-2": 39,
+    "2-0": 111,
+    "2-1": 292,
+    "2-2": 223
+  }
 }

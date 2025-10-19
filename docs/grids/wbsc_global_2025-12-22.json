@@ -1,0 +1,55 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/372d62f7-f498-84c1-f10f-62831565fe7d.png",
+      "label": "Neptunus",
+      "value": "287"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/VEN.svg",
+      "label": "Venezuela NT",
+      "value": "103",
+      "federation_id": 103
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1",
+      "federation_id": 1
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Olympic Baseball Qualifiers",
+      "value": "OLYMPIC-BASEBALL-Q",
+      "federation_id": 0
+    },
+    {
+      "type": "tournament",
+      "label": "Women`s Softball World Championship",
+      "value": "WSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_rbi",
+      "label": ">=20 RBI Season",
+      "value": 20,
+      "condition": "min"
+    }
+  ],
+  "answers": {
+    "0-0": 12,
+    "0-1": 39,
+    "0-2": 32,
+    "1-0": 3,
+    "1-1": 28,
+    "1-2": 24,
+    "2-0": 35,
+    "2-1": 16,
+    "2-2": 89
+  }
+}

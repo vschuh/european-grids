@@ -1,43 +1,51 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_k",
-      "label": ">=50k Season",
-      "value": 50,
-      "condition": "min"
+      "type": "position",
+      "label": "LF (min 1 PA)",
+      "value": "LF"
     },
     {
-      "type": "seasonal_pitching_ip",
-      "label": ">=50 IP Season",
-      "value": 105,
-      "condition": "min"
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
     },
     {
       "type": "tournament",
-      "label": "Hoofdklasse Honkbal (NL)",
-      "value": "HOOFDKLASSE-HONKBAL",
+      "label": "Hoofdklasse Softbal (NL)",
+      "value": "HOOFDKLASSE-SOFTBAL",
       "federation_id": 1
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/934e9ec8-bec3-79bd-a8a8-b040f4161d55.png",
-      "label": "Kinheim",
-      "value": "1263"
+      "image": "https://static.wbsc.org/upload/10b0171f-e179-ac20-62b1-ccd30810ac42.png",
+      "label": "Amsterdam Pirates Softball",
+      "value": "1307"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/c0bd7be4-e313-1ce3-fd74-137717685f9f.png",
-      "label": "HCAW",
-      "value": "1264"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/6a057191-c5a2-e328-e9dc-1599fb6d475c.jpg",
+      "label": "Olympia Haarlem",
+      "value": "1270"
     },
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
       "label": "Netherlands NT",
-      "value": "1",
-      "federation_id": 1
+      "value": "1"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 31,
+    "0-1": 16,
+    "0-2": 50,
+    "1-0": 41,
+    "1-1": 31,
+    "1-2": 49,
+    "2-0": 249,
+    "2-1": 195,
+    "2-2": 111
+  }
 }

@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">0.350 OBP Season (min. 10 pa)",
-      "value": 0.35
+      "type": "position",
+      "label": "RF (min 1 PA)",
+      "value": "RF"
     },
     {
       "type": "year",
-      "label": "Played in 2025 season",
-      "value": 2025
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
       "type": "team",
@@ -20,32 +20,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/bd187a02-55c9-dbf3-3a25-668902bfcd8d.png",
-      "label": "Borgerhout Squirrels",
-      "value": "1473"
+      "image": "https://static.wbsc.org/upload/f7f05882-7810-d6a2-6bd7-06648e0a5fa8.png",
+      "label": "Beveren Lions",
+      "value": "1480"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/450c82c4-90bc-6b3d-d1c7-88a8f4d96464.png",
-      "label": "Hoboken Pioneers",
-      "value": "1353"
+      "image": "https://static.wbsc.org/upload/1aba8bb9-6d31-0d64-b3ec-fbb43cc12c68.png",
+      "label": "Merchtem Cats",
+      "value": "1476"
     },
     {
       "type": "tournament",
-      "label": "Baseball Men D1 (BE)",
-      "value": "BD1",
+      "label": "Softball Ladies D1 (BE)",
+      "value": "SLD1",
       "federation_id": 143
     }
   ],
   "answers": {
-    "0-0": 106,
-    "0-1": 139,
-    "0-2": 38,
-    "1-0": 85,
-    "1-1": 111,
-    "1-2": 49,
-    "2-0": 205,
-    "2-1": 261,
-    "2-2": 100
+    "0-0": 74,
+    "0-1": 36,
+    "0-2": 23,
+    "1-0": 157,
+    "1-1": 43,
+    "1-2": 24,
+    "2-0": 172,
+    "2-1": 118,
+    "2-2": 59
   }
 }

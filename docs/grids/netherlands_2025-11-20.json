@@ -2,33 +2,13 @@
   "cols": [
     {
       "type": "position",
-      "label": "SS (min 1 PA)",
-      "value": "SS"
+      "label": "CF (min 1 PA)",
+      "value": "CF"
     },
     {
-      "type": "seasonal_sb",
-      "label": "10+ SB Season",
-      "value": 10
-    },
-    {
-      "type": "tournament",
-      "label": "Hoofdklasse Softbal (NL)",
-      "value": "HOOFDKLASSE-SOFTBAL",
-      "federation_id": 1
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/10b0171f-e179-ac20-62b1-ccd30810ac42.png",
-      "label": "Amsterdam Pirates Softball",
-      "value": "1307"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a56ecb27-813b-b97e-c668-3d06269b6494.jpg",
-      "label": "Tex Town Tigers",
-      "value": "1274"
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "1"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/573978ca-25c1-9166-27d3-49a2572bcbe8.png",
+      "label": "Euro Stars",
+      "value": "2318"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/e8944012-5266-bf86-740a-2b238e5d1d9a.jpg",
+      "label": "Onze Gezellen",
+      "value": "1273"
+    },
+    {
+      "type": "tournament",
+      "label": "Hoofdklasse Softbal (NL)",
+      "value": "HOOFDKLASSE-SOFTBAL",
+      "federation_id": 1
+    }
+  ],
   "answers": {
-    "0-0": 14,
-    "0-1": 6,
-    "0-2": 50,
-    "1-0": 22,
-    "1-1": 4,
-    "1-2": 49,
-    "2-0": 152,
-    "2-1": 45,
+    "0-0": 3,
+    "0-1": 4,
+    "0-2": 3,
+    "1-0": 21,
+    "1-1": 37,
+    "1-2": 14,
+    "2-0": 118,
+    "2-1": 191,
     "2-2": 111
   }
 }

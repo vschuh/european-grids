@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_runs",
-      "label": "20+ Runs Season",
+      "type": "seasonal_rbi",
+      "label": "20+ RBI Season",
       "value": 20
     },
     {
-      "type": "position",
-      "label": "P (min 1 PA)",
-      "value": "P"
-    },
-    {
-      "type": "tournament",
-      "label": "Serie A Baseball (IT)",
-      "value": "ITA-SERIE-A1-M-BB",
-      "federation_id": 2
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/703fcf50-a4a9-5fc2-8e8e-cfb114713e30.jpg",
-      "label": "A.S.D. BASEBALL CLUB SALA BAGANZA",
-      "value": "350"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/b5fd66eb-b823-6714-12d7-69aa802dcc59.png",
-      "label": "A.S.D. LONGBRIDGE 2000 BASEBALL CLUB",
-      "value": "351"
+      "type": "year",
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "2"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/fa0ea240-a831-b605-ddb9-629eb0bd8e56.jpg",
+      "label": "OLD PARMA BASEBALL SOFTBALL CLUB A.S.D.",
+      "value": "407"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a58c308c-b5b8-113c-a189-141d486177fd.jpg",
+      "label": "BOLLATE SOFTBALL 1969 A.S.D.",
+      "value": "387"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A1 Softball (IT)",
+      "value": "ITA-SERIE-A1-F-SB",
+      "federation_id": 2
+    }
+  ],
   "answers": {
-    "0-0": 15,
-    "0-1": 38,
-    "0-2": 58,
-    "1-0": 18,
-    "1-1": 41,
-    "1-2": 39,
-    "2-0": 140,
-    "2-1": 349,
-    "2-2": 223
+    "0-0": 12,
+    "0-1": 53,
+    "0-2": 12,
+    "1-0": 29,
+    "1-1": 74,
+    "1-2": 42,
+    "2-0": 129,
+    "2-1": 414,
+    "2-2": 125
   }
 }

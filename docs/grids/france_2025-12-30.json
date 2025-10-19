@@ -2,33 +2,13 @@
   "cols": [
     {
       "type": "position",
-      "label": "P (min 1 PA)",
-      "value": "P"
+      "label": "3B (min 1 PA)",
+      "value": "3B"
     },
     {
-      "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
-    },
-    {
-      "type": "tournament",
-      "label": "Championnat de France D1 BB (FR)",
-      "value": "FRA-D1BB",
-      "federation_id": 14
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/e20fa02b-5959-2c18-2def-c682eb6a540f.jpg",
-      "label": "Les Lions de Savigny-sur-Orge",
-      "value": "1715"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/a18c7fc9-a3ce-81e9-0c12-f2a5ec8eab1e.jpg",
-      "label": "Rouen Huskies",
-      "value": "1428"
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "14"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/db8cb428-f188-8cd5-1354-4006e912897a.jpg",
+      "label": "Metz Cometz",
+      "value": "1712"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/51a28c3c-a894-cc4d-30ca-b8c705e5bd5d.png",
+      "label": "3M Barracudas Baseball Université Club",
+      "value": "1385"
+    },
+    {
+      "type": "tournament",
+      "label": "Championnat de France D1 BB (FR)",
+      "value": "FRA-D1BB",
+      "federation_id": 14
+    }
+  ],
   "answers": {
-    "0-0": 30,
-    "0-1": 23,
-    "0-2": 33,
-    "1-0": 53,
-    "1-1": 32,
-    "1-2": 37,
-    "2-0": 203,
-    "2-1": 141,
+    "0-0": 24,
+    "0-1": 38,
+    "0-2": 8,
+    "1-0": 45,
+    "1-1": 74,
+    "1-2": 40,
+    "2-0": 118,
+    "2-1": 219,
     "2-2": 85
   }
 }

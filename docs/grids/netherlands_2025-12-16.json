@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_fip",
-      "label": "<2.50 FIP Season (min. 10 ip)",
-      "value": 3
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
       "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
+      "label": "Played in 2022 season",
+      "value": 2022
     },
     {
       "type": "team",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/372d62f7-f498-84c1-f10f-62831565fe7d.png",
-      "label": "Neptunus",
-      "value": "287"
-    },
-    {
-      "type": "team",
       "image": "https://static.wbsc.org/upload/fa14f1a1-1762-f7f2-6a3d-84fc21f97071.png",
       "label": "Hoofddorp Pioniers Baseball",
       "value": "1265"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/934e9ec8-bec3-79bd-a8a8-b040f4161d55.png",
+      "label": "Kinheim",
+      "value": "1263"
     },
     {
       "type": "tournament",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 0,
-    "0-1": 70,
-    "0-2": 59,
-    "1-0": 0,
+    "0-0": 20,
+    "0-1": 51,
+    "0-2": 26,
+    "1-0": 25,
     "1-1": 46,
-    "1-2": 26,
-    "2-0": 5,
-    "2-1": 294,
+    "1-2": 33,
+    "2-0": 152,
+    "2-1": 300,
     "2-2": 149
   }
 }

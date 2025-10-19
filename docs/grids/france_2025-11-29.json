@@ -1,14 +1,14 @@
 {
   "cols": [
     {
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
+    },
+    {
       "type": "seasonal_ops",
       "label": ">1.000 OPS Season (min. 10 pa)",
       "value": 1
-    },
-    {
-      "type": "seasonal_bb",
-      "label": "10+ BB Season",
-      "value": 10
     },
     {
       "type": "tournament",
@@ -26,9 +26,9 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/c6f45770-2b34-bfcf-33e8-1909b6ef7bae.jpg",
-      "label": "Les Grizzlys de Grenoble",
-      "value": "1513"
+      "image": "https://static.wbsc.org/upload/ff7815ce-79aa-def3-c3c1-e7f2065bd8ec.jpg",
+      "label": "Les Rabbits de Clapiers-Jacou",
+      "value": "1514"
     },
     {
       "type": "team",
@@ -39,13 +39,13 @@
   ],
   "answers": {
     "0-0": 16,
-    "0-1": 5,
+    "0-1": 16,
     "0-2": 22,
-    "1-0": 27,
-    "1-1": 5,
-    "1-2": 19,
-    "2-0": 165,
-    "2-1": 44,
+    "1-0": 13,
+    "1-1": 18,
+    "1-2": 18,
+    "2-0": 130,
+    "2-1": 165,
     "2-2": 41
   }
 }

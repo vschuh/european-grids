@@ -1,9 +1,9 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_ip",
-      "label": "35 IP+ Season",
-      "value": 105
+      "type": "seasonal_avg",
+      "label": ">0.400 OBP Season (min. 10 pa)",
+      "value": 0.4
     },
     {
       "type": "year",
@@ -20,32 +20,32 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/ef175e86-8a69-5cb4-6249-5c548df8b041.png",
-      "label": "Cantincrode Baseball en Softball Stars",
-      "value": "1394"
+      "image": "https://static.wbsc.org/upload/bd187a02-55c9-dbf3-3a25-668902bfcd8d.png",
+      "label": "Borgerhout Squirrels",
+      "value": "1473"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/b984f263-2924-2e02-6b23-7257a92a820c.png",
-      "label": "Gent Knights",
-      "value": "1475"
+      "image": "https://static.wbsc.org/upload/15ddbfc7-3582-aea3-55b6-9d40c3273eb0.png",
+      "label": "Zonhoven Tigers",
+      "value": "1545"
     },
     {
       "type": "tournament",
-      "label": "Softball Ladies D1 (BE)",
-      "value": "SLD1",
+      "label": "Baseball Men D1 (BE)",
+      "value": "BD1",
       "federation_id": 143
     }
   ],
   "answers": {
-    "0-0": 6,
-    "0-1": 28,
-    "0-2": 10,
-    "1-0": 6,
-    "1-1": 29,
-    "1-2": 12,
-    "2-0": 36,
-    "2-1": 118,
-    "2-2": 59
+    "0-0": 93,
+    "0-1": 57,
+    "0-2": 38,
+    "1-0": 10,
+    "1-1": 25,
+    "1-2": 3,
+    "2-0": 166,
+    "2-1": 264,
+    "2-2": 100
   }
 }

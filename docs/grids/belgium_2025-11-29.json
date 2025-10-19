@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_ip",
-      "label": "50 IP+ Season",
-      "value": 105
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
     },
     {
-      "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
-      "label": "Belgium NT",
-      "value": "143"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/1aba8bb9-6d31-0d64-b3ec-fbb43cc12c68.png",
-      "label": "Merchtem Cats",
-      "value": "1476"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/7784025f-15e3-9d72-ec0a-5cea1fb36fac.png",
-      "label": "Antwerp Eagles",
-      "value": "1474"
+      "type": "seasonal_hits",
+      "label": "15+ Hit Season",
+      "value": 15
     },
     {
       "type": "tournament",
@@ -37,15 +17,35 @@
       "federation_id": 143
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/20c6919f-5149-b21e-dc0e-34879b702f4f.png",
+      "label": "Braine Black Rickers",
+      "value": "1553"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/f7f05882-7810-d6a2-6bd7-06648e0a5fa8.png",
+      "label": "Beveren Lions",
+      "value": "1480"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143"
+    }
+  ],
   "answers": {
-    "0-0": 14,
-    "0-1": 137,
-    "0-2": 24,
-    "1-0": 11,
-    "1-1": 81,
-    "1-2": 12,
-    "2-0": 36,
-    "2-1": 173,
+    "0-0": 96,
+    "0-1": 32,
+    "0-2": 16,
+    "1-0": 60,
+    "1-1": 41,
+    "1-2": 39,
+    "2-0": 224,
+    "2-1": 174,
     "2-2": 59
   }
 }

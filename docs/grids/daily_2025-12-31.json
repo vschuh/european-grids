@@ -1,50 +1,51 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/51a28c3c-a894-cc4d-30ca-b8c705e5bd5d.png",
-      "label": "3M Barracudas Baseball Université Club",
-      "value": "1385"
-    },
-    {
-      "type": "tournament",
-      "label": "Baseball European Championship (EU)",
-      "value": "EU-CHAMP-M-BB",
-      "federation_id": 278
+      "type": "seasonal_ops",
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "value": 1
     },
     {
       "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "label": "RF (min 1 PA)",
+      "value": "RF"
+    },
+    {
+      "type": "tournament",
+      "label": "U-18 Women's European Softball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-W-SB",
+      "federation_id": 278
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/83428e38-f463-52e1-0571-48f71aa9fc31.jpg",
-      "label": "Stade Toulousain Baseball Softball",
-      "value": "1713"
+      "image": "https://static.wbsc.org/upload/b5fd66eb-b823-6714-12d7-69aa802dcc59.png",
+      "label": "A.S.D. LONGBRIDGE 2000 BASEBALL CLUB",
+      "value": "351"
     },
     {
-      "type": "nationality",
-      "label": "Nationality: FRA",
-      "value": "FRA"
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/ff7815ce-79aa-def3-c3c1-e7f2065bd8ec.jpg",
+      "label": "Les Rabbits de Clapiers-Jacou",
+      "value": "1514"
     },
     {
-      "type": "seasonal_pitching_fip",
-      "label": "<2.50 FIP Season (min. 10 ip)",
-      "value": 3
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143"
     }
   ],
   "answers": {
-    "0-0": 3,
-    "0-1": 4,
-    "0-2": 29,
-    "1-0": 83,
-    "1-1": 37,
-    "1-2": 979,
-    "2-0": 1,
-    "2-1": 25,
-    "2-2": 461
+    "0-0": 22,
+    "0-1": 46,
+    "0-2": 8,
+    "1-0": 18,
+    "1-1": 22,
+    "1-2": 4,
+    "2-0": 233,
+    "2-1": 246,
+    "2-2": 27
   }
 }

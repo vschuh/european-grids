@@ -1,0 +1,55 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/SUI.svg",
+      "label": "Switzerland NT",
+      "value": "35",
+      "federation_id": 35
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/SWE.svg",
+      "label": "Sweden NT",
+      "value": "34",
+      "federation_id": 34
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ISR.svg",
+      "label": "Israel NT",
+      "value": "33",
+      "federation_id": 33
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "Women’s Softball European Cup Winners Cup “B” (EU)",
+      "value": "EU-WINNERS-CUP-B-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
+      "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "RF (min 1 PA)",
+      "value": "RF"
+    }
+  ],
+  "answers": {
+    "0-0": 11,
+    "0-1": 4,
+    "0-2": 4,
+    "1-0": 34,
+    "1-1": 36,
+    "1-2": 43,
+    "2-0": 75,
+    "2-1": 139,
+    "2-2": 113
+  }
+}

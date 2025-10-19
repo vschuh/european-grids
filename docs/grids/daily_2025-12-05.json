@@ -1,51 +1,51 @@
 {
   "cols": [
     {
-      "type": "seasonal_obp",
-      "label": ">0.400 OBP Season (min. 10 pa)",
-      "value": 0.4
+      "type": "seasonal_pitching_k",
+      "label": "50k+ Season",
+      "value": 50
     },
     {
       "type": "position",
-      "label": "RF (min 1 PA)",
-      "value": "RF"
+      "label": "3B (min 1 PA)",
+      "value": "3B"
     },
     {
       "type": "tournament",
-      "label": "U-18 Women's European Softball Championship (EU)",
-      "value": "EU-U-18-EURO-CHAMP-W-SB",
+      "label": "U-18 European Baseball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-M-BB",
       "federation_id": 278
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/07067501-9be9-9d54-0187-4b5ce1bc028d.jpg",
-      "label": "Les Pharaons d`Evry-Courcouronnes",
-      "value": "1367"
+      "image": "https://static.wbsc.org/upload/271efdd4-78f7-782b-19e9-ca7fd00cfee2.png",
+      "label": "Hroši Brno",
+      "value": "2063"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/ff7815ce-79aa-def3-c3c1-e7f2065bd8ec.jpg",
-      "label": "Les Rabbits de Clapiers-Jacou",
-      "value": "1514"
+      "image": "https://static.wbsc.org/upload/acfef0c2-5af4-e797-cb4b-550d6173bb34.png",
+      "label": "Hard Bulls",
+      "value": "1228"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/SUI.svg",
-      "label": "Switzerland NT",
-      "value": "35"
+      "image": "https://static.wbsc.org/assets/flags/ioc/LTU.svg",
+      "label": "Lithuania NT",
+      "value": "156"
     }
   ],
   "answers": {
-    "0-0": 28,
-    "0-1": 45,
-    "0-2": 12,
-    "1-0": 19,
-    "1-1": 22,
-    "1-2": 4,
-    "2-0": 31,
-    "2-1": 75,
-    "2-2": 16
+    "0-0": 12,
+    "0-1": 73,
+    "0-2": 9,
+    "1-0": 6,
+    "1-1": 60,
+    "1-2": 3,
+    "2-0": 6,
+    "2-1": 108,
+    "2-2": 24
   }
 }

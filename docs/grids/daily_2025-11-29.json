@@ -1,51 +1,51 @@
 {
   "cols": [
     {
-      "type": "position",
-      "label": "RF (min 1 PA)",
-      "value": "RF"
-    },
-    {
-      "type": "seasonal_runs",
-      "label": "15+ Runs Season",
-      "value": 15
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/dd134970-0bd6-d5fd-0abc-a138fc7d6868.jpg",
+      "label": "Arrows Ostrava",
+      "value": "1605"
     },
     {
       "type": "tournament",
-      "label": "Women's Softball European Premiere Cup (EU)",
-      "value": "EU-EURO-PREM-CUP-W-SB",
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
       "federation_id": 278
+    },
+    {
+      "type": "position",
+      "label": "2B (min 1 PA)",
+      "value": "2B"
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/679d2360-7aba-32ca-cb27-a1818b537f03.jpg",
-      "label": "POL. CASERTA BAS. E SOFT. ACADEMY A.S.D.",
-      "value": "394"
+      "image": "https://static.wbsc.org/upload/fd9b041a-199b-c526-ab4b-dda6af4f1a8e.png",
+      "label": "Skokani Olomouc",
+      "value": "2075"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/870076ab-9157-c992-8e9b-9a8443bf2bd7.jpg",
-      "label": "U.S. GIOVANILE COLLECCHIO SOFT. A.S.D.",
-      "value": "396"
+      "image": "https://static.wbsc.org/assets/flags/ioc/SVK.svg",
+      "label": "Slovakia NT",
+      "value": "37"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
-      "label": "Italy NT",
-      "value": "2"
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     }
   ],
   "answers": {
-    "0-0": 37,
-    "0-1": 16,
-    "0-2": 5,
-    "1-0": 54,
-    "1-1": 23,
-    "1-2": 3,
-    "2-0": 328,
-    "2-1": 193,
-    "2-2": 36
+    "0-0": 9,
+    "0-1": 4,
+    "0-2": 21,
+    "1-0": 4,
+    "1-1": 22,
+    "1-2": 117,
+    "2-0": 51,
+    "2-1": 216,
+    "2-2": 9335
   }
 }

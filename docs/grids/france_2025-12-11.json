@@ -1,16 +1,34 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/229a41eb-e61a-7ab8-e29f-3100fc34a2ce.jpg",
-      "label": "Les Comanches de Saint-Raphaël",
-      "value": "1352"
+      "type": "seasonal_avg",
+      "label": ">0.300 avg Season (min. 10 pa)",
+      "value": 0.3
     },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
+    }
+  ],
+  "rows": [
     {
       "type": "team",
       "image": "https://static.wbsc.org/assets/cms/teams/logo/a18c7fc9-a3ce-81e9-0c12-f2a5ec8eab1e.jpg",
       "label": "Rouen Huskies",
       "value": "1428"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/0050079f-5f9e-d803-8839-20992d9cfc18.jpg",
+      "label": "Les Boucaniers de La Rochelle",
+      "value": "1714"
     },
     {
       "type": "tournament",
@@ -19,32 +37,15 @@
       "federation_id": 14
     }
   ],
-  "rows": [
-    {
-      "type": "seasonal_ops",
-      "label": ">1.000 OPS Season (min. 10 pa)",
-      "value": 1
-    },
-    {
-      "type": "nationality",
-      "label": "Nationality: FRA",
-      "value": "FRA"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
-    }
-  ],
   "answers": {
-    "0-0": 16,
-    "0-1": 34,
-    "0-2": 35,
-    "1-0": 35,
-    "1-1": 79,
-    "1-2": 105,
-    "2-0": 28,
-    "2-1": 51,
-    "2-2": 69
+    "0-0": 49,
+    "0-1": 51,
+    "0-2": 18,
+    "1-0": 22,
+    "1-1": 41,
+    "1-2": 13,
+    "2-0": 58,
+    "2-1": 69,
+    "2-2": 41
   }
 }

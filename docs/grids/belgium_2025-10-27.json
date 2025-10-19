@@ -2,22 +2,28 @@
   "cols": [
     {
       "type": "position",
-      "label": "2B (min 1 PA)",
-      "value": "2B"
+      "label": "LF (min 1 PA)",
+      "value": "LF"
     },
     {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
+      "type": "seasonal_wOBA",
+      "label": ">0.250 wOBA Season (min. 10 pa)",
+      "value": 0.25
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
-      "label": "Belgium NT",
-      "value": "143"
+      "type": "tournament",
+      "label": "Baseball Men D1 (BE)",
+      "value": "BD1",
+      "federation_id": 143
     }
   ],
   "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/15ddbfc7-3582-aea3-55b6-9d40c3273eb0.png",
+      "label": "Zonhoven Tigers",
+      "value": "1545"
+    },
     {
       "type": "team",
       "image": "https://static.wbsc.org/upload/dfb15b29-c3d5-e17b-16ce-fea5adbc7c83.png",
@@ -26,15 +32,20 @@
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/f7f05882-7810-d6a2-6bd7-06648e0a5fa8.png",
-      "label": "Beveren Lions",
-      "value": "1480"
-    },
-    {
-      "type": "tournament",
-      "label": "Softball Ladies D1 (BE)",
-      "value": "SLD1",
-      "federation_id": 143
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 25,
+    "0-1": 21,
+    "0-2": 25,
+    "1-0": 116,
+    "1-1": 119,
+    "1-2": 7,
+    "2-0": 249,
+    "2-1": 278,
+    "2-2": 100
+  }
 }

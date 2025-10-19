@@ -1,9 +1,9 @@
 {
   "cols": [
     {
-      "type": "seasonal_ops",
-      "label": ">1.000 OPS Season (min. 10 pa)",
-      "value": 1
+      "type": "position",
+      "label": "LF (min 1 PA)",
+      "value": "LF"
     },
     {
       "type": "year",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/bdc06e75-2859-a6ba-74da-9a6e16207d72.png",
-      "label": "Twins Oosterhout",
-      "value": "1269"
+      "image": "https://static.wbsc.org/upload/c0bd7be4-e313-1ce3-fd74-137717685f9f.png",
+      "label": "HCAW",
+      "value": "1264"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/38ed2f87-d5c1-caae-58f8-ddd93f46cd58.jpg",
-      "label": "Sparks Haarlem",
-      "value": "1272"
+      "image": "https://static.wbsc.org/upload/2771d01c-919e-c952-c89c-0b6d09fae4a0.png",
+      "label": "Red Lions",
+      "value": "2596"
     },
     {
       "type": "tournament",
@@ -38,13 +38,13 @@
     }
   ],
   "answers": {
-    "0-0": 9,
-    "0-1": 48,
-    "0-2": 14,
-    "1-0": 30,
-    "1-1": 48,
-    "1-2": 29,
-    "2-0": 66,
+    "0-0": 31,
+    "0-1": 51,
+    "0-2": 26,
+    "1-0": 4,
+    "1-1": 6,
+    "1-2": 3,
+    "2-0": 204,
     "2-1": 318,
     "2-2": 149
   }

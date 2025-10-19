@@ -2,33 +2,13 @@
   "cols": [
     {
       "type": "position",
-      "label": "LF (min 1 PA)",
-      "value": "LF"
+      "label": "CF (min 1 PA)",
+      "value": "CF"
     },
     {
-      "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
-      "label": "France NT",
-      "value": "14"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/e20fa02b-5959-2c18-2def-c682eb6a540f.jpg",
-      "label": "Les Lions de Savigny-sur-Orge",
-      "value": "1715"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/51a28c3c-a894-cc4d-30ca-b8c705e5bd5d.png",
-      "label": "3M Barracudas Baseball Université Club",
-      "value": "1385"
+      "type": "seasonal_pitching_fip",
+      "label": "<2.50 FIP Season (min. 10 ip)",
+      "value": 3
     },
     {
       "type": "tournament",
@@ -37,15 +17,35 @@
       "federation_id": 14
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/51a28c3c-a894-cc4d-30ca-b8c705e5bd5d.png",
+      "label": "3M Barracudas Baseball Université Club",
+      "value": "1385"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/54f7aee7-2dea-f878-4244-591fd30486d0.jpg",
+      "label": "Pirates de Béziers",
+      "value": "2309"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
+      "label": "France NT",
+      "value": "14"
+    }
+  ],
   "answers": {
-    "0-0": 33,
-    "0-1": 37,
-    "0-2": 19,
-    "1-0": 60,
-    "1-1": 55,
-    "1-2": 40,
-    "2-0": 146,
-    "2-1": 158,
+    "0-0": 37,
+    "0-1": 1,
+    "0-2": 44,
+    "1-0": 17,
+    "1-1": 0,
+    "1-2": 21,
+    "2-0": 116,
+    "2-1": 4,
     "2-2": 85
   }
 }

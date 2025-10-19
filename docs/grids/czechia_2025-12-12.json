@@ -1,9 +1,9 @@
 {
   "cols": [
     {
-      "type": "seasonal_ops",
-      "label": ">1.000 OPS Season (min. 10 pa)",
-      "value": 1
+      "type": "position",
+      "label": "P (min 1 PA)",
+      "value": "P"
     },
     {
       "type": "seasonal_wOBA",
@@ -12,23 +12,23 @@
     },
     {
       "type": "tournament",
-      "label": "Extraliga BB (CZ)",
-      "value": "CZE-EXL",
-      "federation_id": 6
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/06ebf3e7-4094-4d7d-7bad-cd88e4ec3330.png",
-      "label": "Sokol Hluboká",
-      "value": "2064"
+      "image": "https://static.wbsc.org/upload/0df1b8ac-31d1-a8bd-dae5-db1b7c541b03.jpg",
+      "label": "Painbusters Most",
+      "value": "1878"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/1ad273ca-49c9-52b7-3330-5aae326481f9.png",
-      "label": "Třebíč Nuclears",
-      "value": "2067"
+      "image": "https://static.wbsc.org/upload/dd134970-0bd6-d5fd-0abc-a138fc7d6868.jpg",
+      "label": "Arrows Ostrava",
+      "value": "1605"
     },
     {
       "type": "team",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 41,
-    "0-1": 54,
-    "0-2": 47,
-    "1-0": 46,
-    "1-1": 60,
-    "1-2": 45,
-    "2-0": 386,
+    "0-0": 21,
+    "0-1": 36,
+    "0-2": 14,
+    "1-0": 84,
+    "1-1": 91,
+    "1-2": 20,
+    "2-0": 387,
     "2-1": 454,
-    "2-2": 159
+    "2-2": 102
   }
 }

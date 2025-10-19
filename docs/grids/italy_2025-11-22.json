@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_ip",
-      "label": "35 IP+ Season",
-      "value": 105
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
     },
     {
-      "type": "seasonal_bb",
-      "label": "10+ BB Season",
-      "value": 10
-    },
-    {
-      "type": "tournament",
-      "label": "Serie A Baseball (IT)",
-      "value": "ITA-SERIE-A1-M-BB",
-      "federation_id": 2
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/2fb7950d-9064-a0f8-8c09-f9c84a7a5421.jpg",
-      "label": "S.S.D. MODENA B.S.C.- SOC. COOP.",
-      "value": "352"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/004760b7-d768-4c26-2453-428db40dbc44.svg",
-      "label": "BASEBALL SOFTBALL CLUB GROSSETO 1952 S.S.D. A R.L.",
-      "value": "383"
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "2"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/fa0ea240-a831-b605-ddb9-629eb0bd8e56.jpg",
+      "label": "OLD PARMA BASEBALL SOFTBALL CLUB A.S.D.",
+      "value": "407"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/bad78fec-0b23-cfca-8d0f-5fb34cfab49c.jpg",
+      "label": "A.S.D. BOLZANO BASEBALL CLUB",
+      "value": "347"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A Baseball (IT)",
+      "value": "ITA-SERIE-A1-M-BB",
+      "federation_id": 2
+    }
+  ],
   "answers": {
-    "0-0": 12,
-    "0-1": 25,
-    "0-2": 53,
-    "1-0": 17,
-    "1-1": 31,
-    "1-2": 77,
-    "2-0": 111,
-    "2-1": 187,
+    "0-0": 36,
+    "0-1": 45,
+    "0-2": 12,
+    "1-0": 7,
+    "1-1": 21,
+    "1-2": 3,
+    "2-0": 493,
+    "2-1": 1065,
     "2-2": 223
   }
 }

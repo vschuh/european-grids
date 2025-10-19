@@ -1,0 +1,52 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/716db3e3-a667-3623-c8b9-f576cbd77c2c.jpg",
+      "label": "Locos Břeclav",
+      "value": "1603"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/dfb15b29-c3d5-e17b-16ce-fea5adbc7c83.png",
+      "label": "Stabroek Chicaboo`s",
+      "value": "1361"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/0df1b8ac-31d1-a8bd-dae5-db1b7c541b03.jpg",
+      "label": "Painbusters Most",
+      "value": "1878"
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-18 Men`s Softball World Cup",
+      "value": "U-18MSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_triples",
+      "label": ">=5 Triples Season",
+      "value": 5,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
+    }
+  ],
+  "answers": {
+    "0-0": 9,
+    "0-1": 4,
+    "0-2": 8,
+    "1-0": 3,
+    "1-1": 4,
+    "1-2": 6,
+    "2-0": 44,
+    "2-1": 121,
+    "2-2": 46
+  }
+}

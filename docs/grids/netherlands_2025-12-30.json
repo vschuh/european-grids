@@ -1,34 +1,14 @@
 {
   "cols": [
     {
+      "type": "seasonal_pitching_ip",
+      "label": "50 IP+ Season",
+      "value": 105
+    },
+    {
       "type": "position",
-      "label": "LF (min 1 PA)",
-      "value": "LF"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
-      "label": "Netherlands NT",
-      "value": "1"
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/c0bd7be4-e313-1ce3-fd74-137717685f9f.png",
-      "label": "HCAW",
-      "value": "1264"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/2771d01c-919e-c952-c89c-0b6d09fae4a0.png",
-      "label": "Red Lions",
-      "value": "2596"
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
       "type": "tournament",
@@ -37,15 +17,35 @@
       "federation_id": 1
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/806638c7-4c47-3f4f-575e-d80ad64081b8.png",
+      "label": "Amsterdam Pirates Baseball",
+      "value": "1266"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/fa14f1a1-1762-f7f2-6a3d-84fc21f97071.png",
+      "label": "Hoofddorp Pioniers Baseball",
+      "value": "1265"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NED.svg",
+      "label": "Netherlands NT",
+      "value": "1"
+    }
+  ],
   "answers": {
-    "0-0": 31,
-    "0-1": 51,
-    "0-2": 26,
-    "1-0": 4,
-    "1-1": 6,
-    "1-2": 3,
-    "2-0": 204,
-    "2-1": 318,
+    "0-0": 20,
+    "0-1": 30,
+    "0-2": 90,
+    "1-0": 22,
+    "1-1": 20,
+    "1-2": 83,
+    "2-0": 74,
+    "2-1": 203,
     "2-2": 149
   }
 }

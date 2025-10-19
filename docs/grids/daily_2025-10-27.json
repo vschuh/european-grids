@@ -1,40 +1,51 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">0.400 OBP Season (min. 10 pa)",
-      "value": 0.4
-    },
-    {
-      "type": "seasonal_wOBA",
-      "label": ">0.250 wOBA Season (min. 10 pa)",
-      "value": 0.25
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/8d59a636-d55a-b5f8-0f4c-c1c3978a1a8d.jpg",
+      "label": "LION`S  BASEBALL NETTUNO A.S.D.",
+      "value": "635"
     },
     {
       "type": "tournament",
-      "label": "European Baseball Champions Cup (EU)",
-      "value": "EU-CHAMP-CUP-M-BB",
+      "label": "U-18 European Baseball Championship (EU)",
+      "value": "EU-U-18-EURO-CHAMP-M-BB",
       "federation_id": 278
+    },
+    {
+      "type": "seasonal_ops",
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "value": 1
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/30da3795-69a2-d2ec-66bf-7059cd80b093.jpg",
-      "label": "Astros Valencia",
-      "value": "1433"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/fc527c4a-a05c-5fe4-bb98-7a1f8b830033.jpg",
+      "label": "A.S.D. ACADEMY OF NETTUNO B.C.",
+      "value": "386"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/fff73bb9-7f68-64a3-3973-8816620d097d.png",
-      "label": "UVV",
-      "value": "1825"
+      "image": "https://static.wbsc.org/assets/flags/ioc/ITA.svg",
+      "label": "Italy NT",
+      "value": "2"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
-      "label": "Czechia NT",
-      "value": "6"
+      "type": "position",
+      "label": "3B (min 1 PA)",
+      "value": "3B"
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 19,
+    "0-1": 9,
+    "0-2": 21,
+    "1-0": 7,
+    "1-1": 51,
+    "1-2": 268,
+    "2-0": 27,
+    "2-1": 270,
+    "2-2": 7751
+  }
 }

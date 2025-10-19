@@ -1,50 +1,51 @@
 {
   "cols": [
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/1ad273ca-49c9-52b7-3330-5aae326481f9.png",
-      "label": "Třebíč Nuclears",
-      "value": "2067"
+      "type": "seasonal_ops",
+      "label": ">1.000 OPS Season (min. 10 pa)",
+      "value": 1
+    },
+    {
+      "type": "year",
+      "label": "Played in 2021 season",
+      "value": 2021
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/21908af0-2814-b783-333b-41871a18b7e3.jpg",
-      "label": "Chemie - Kotlářka",
-      "value": "2367"
-    },
-    {
-      "type": "tournament",
-      "label": "Extraliga BB (CZ)",
-      "value": "CZE-EXL",
-      "federation_id": 6
+      "image": "https://static.wbsc.org/assets/flags/ioc/CZE.svg",
+      "label": "Czechia NT",
+      "value": "6"
     }
   ],
   "rows": [
     {
-      "type": "seasonal_pitching_ip",
-      "label": "50 IP+ Season",
-      "value": 105
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
+      "label": "Tempo Praha",
+      "value": "2066"
     },
     {
-      "type": "nationality",
-      "label": "Nationality: CZE",
-      "value": "CZE"
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/b8e2f6c7-d381-cb53-2a82-a2f9e92daba9.jpg",
+      "label": "Beavers Chomutov",
+      "value": "1380"
     },
     {
-      "type": "year",
-      "label": "Played in 2024 season",
-      "value": 2024
+      "type": "tournament",
+      "label": "Extraliga SB (CZ)",
+      "value": "W-EXT-L",
+      "federation_id": 148
     }
   ],
   "answers": {
-    "0-0": 14,
-    "0-1": 4,
-    "0-2": 92,
-    "1-0": 105,
-    "1-1": 27,
-    "1-2": 358,
-    "2-0": 93,
-    "2-1": 20,
-    "2-2": 350
+    "0-0": 65,
+    "0-1": 32,
+    "0-2": 46,
+    "1-0": 38,
+    "1-1": 23,
+    "1-2": 26,
+    "2-0": 128,
+    "2-1": 68,
+    "2-2": 102
   }
 }

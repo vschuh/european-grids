@@ -1,0 +1,53 @@
+{
+  "cols": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/716db3e3-a667-3623-c8b9-f576cbd77c2c.jpg",
+      "label": "Locos Břeclav",
+      "value": "1603"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/b852a873-f1c6-8257-447b-f6e08655dafd.jpg",
+      "label": "Hroši Havl Brod",
+      "value": "1379"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/NZL.svg",
+      "label": "New Zealand NT",
+      "value": "170",
+      "federation_id": 170
+    }
+  ],
+  "rows": [
+    {
+      "type": "tournament",
+      "label": "U-23 Men`s Softball World Cup",
+      "value": "U-23MSWC",
+      "federation_id": 0
+    },
+    {
+      "type": "seasonal_pitching_ip",
+      "label": ">=50 IP Season",
+      "value": 105,
+      "condition": "min"
+    },
+    {
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
+    }
+  ],
+  "answers": {
+    "0-0": 8,
+    "0-1": 5,
+    "0-2": 16,
+    "1-0": 6,
+    "1-1": 10,
+    "1-2": 3,
+    "2-0": 29,
+    "2-1": 18,
+    "2-2": 92
+  }
+}

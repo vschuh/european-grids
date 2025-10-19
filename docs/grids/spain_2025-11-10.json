@@ -1,36 +1,15 @@
 {
   "cols": [
     {
-      "type": "seasonal_bb",
-      "label": ">=10 BB Season",
-      "value": 10,
+      "type": "seasonal_rbi",
+      "label": ">=15 RBI Season",
+      "value": 15,
       "condition": "min"
     },
     {
-      "type": "seasonal_ops",
-      "label": ">=1.000 OPS Season (min. 10 pa)",
-      "value": 1,
-      "condition": "min"
-    },
-    {
-      "type": "tournament",
-      "label": "Liga Nacional de Sófbol Oro (ESP)",
-      "value": "ESP-LNDH-SB",
-      "federation_id": 39
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/c0e15d0a-f6ea-e019-b9cb-79d9892ea780.jpg",
-      "label": "OBB Bizkorrak",
-      "value": "1627"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/d557958c-5454-415d-064f-d5630ddfd6e1.png",
-      "label": "Club Deportivo Arga",
-      "value": "1623"
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
     },
     {
       "type": "team",
@@ -40,15 +19,35 @@
       "federation_id": 39
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/2648277a-0a77-53ab-7dde-0020537acc83.jpeg",
+      "label": "CS Fénix Valencia",
+      "value": "1624"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/d557958c-5454-415d-064f-d5630ddfd6e1.png",
+      "label": "Club Deportivo Arga",
+      "value": "1623"
+    },
+    {
+      "type": "tournament",
+      "label": "Liga Nacional de Béisbol Oro (ESP)",
+      "value": "ESP-LNDH-BB",
+      "federation_id": 39
+    }
+  ],
   "answers": {
-    "0-0": 10,
-    "0-1": 15,
-    "0-2": 28,
-    "1-0": 21,
-    "1-1": 49,
-    "1-2": 32,
-    "2-0": 84,
-    "2-1": 166,
-    "2-2": 77
+    "0-0": 11,
+    "0-1": 40,
+    "0-2": 18,
+    "1-0": 10,
+    "1-1": 87,
+    "1-2": 10,
+    "2-0": 79,
+    "2-1": 276,
+    "2-2": 76
   }
 }

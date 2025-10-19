@@ -1,15 +1,35 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_k",
-      "label": ">=35k Season",
-      "value": 35,
+      "type": "seasonal_hbp",
+      "label": ">=5 HBP Season",
+      "value": 5,
       "condition": "min"
     },
     {
-      "type": "position",
-      "label": "CF (min 1 PA)",
-      "value": "CF"
+      "type": "year",
+      "label": "Played in 2025 season",
+      "value": 2025
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
+      "label": "Spain NT",
+      "value": "39"
+    }
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/ac5c9f7f-d4d3-57b0-22f3-8490ad944e4c.png",
+      "label": "Club Béisbol Barcelona",
+      "value": "1648"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/12a3f46c-cb0a-0014-98f9-bff5d87890b5.jpg",
+      "label": "Club de Béisbol y Sóftbol Rivas",
+      "value": "1354"
     },
     {
       "type": "tournament",
@@ -18,24 +38,15 @@
       "federation_id": 39
     }
   ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/f62896a9-35c6-1383-7685-484ec01f3358.jpg",
-      "label": "CBS Capitalinos Gran Canaria",
-      "value": "1628"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/01289c10-7afa-a307-4c35-8395b5f03899.jpg",
-      "label": "Miralbueno Zaragoza",
-      "value": "1629"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/ESP.svg",
-      "label": "Spain NT",
-      "value": "39"
-    }
-  ]
+  "answers": {
+    "0-0": 4,
+    "0-1": 76,
+    "0-2": 19,
+    "1-0": 8,
+    "1-1": 69,
+    "1-2": 18,
+    "2-0": 22,
+    "2-1": 206,
+    "2-2": 77
+  }
 }

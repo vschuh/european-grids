@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_fip",
-      "label": "<2.50 FIP Season (min. 10 ip)",
-      "value": 3
-    },
-    {
       "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
+      "label": "CF (min 1 PA)",
+      "value": "CF"
     },
     {
-      "type": "tournament",
-      "label": "Serie A Baseball (IT)",
-      "value": "ITA-SERIE-A1-M-BB",
-      "federation_id": 2
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/15e17f14-1564-cf9d-3db7-2a502ccd9535.png",
-      "label": "POVIGLIO BASEBALL A.S.D.",
-      "value": "364"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/e038a2d1-84e5-3d14-9e93-98eadfc2fb3f.jpg",
-      "label": "TORRE PEDRERA FALCONS BC ASS. SPORT. DILETT.",
-      "value": "381"
+      "type": "year",
+      "label": "Played in 2024 season",
+      "value": 2024
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "2"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/867c2c87-a075-4811-3a29-71da8dafa1a7.svg",
+      "label": "1949 PARMA BASEBALL CLUB ASD",
+      "value": "333"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a58c308c-b5b8-113c-a189-141d486177fd.jpg",
+      "label": "BOLLATE SOFTBALL 1969 A.S.D.",
+      "value": "387"
+    },
+    {
+      "type": "tournament",
+      "label": "Serie A1 Softball (IT)",
+      "value": "ITA-SERIE-A1-F-SB",
+      "federation_id": 2
+    }
+  ],
   "answers": {
-    "0-0": 0,
-    "0-1": 10,
-    "0-2": 47,
-    "1-0": 1,
-    "1-1": 21,
-    "1-2": 41,
-    "2-0": 5,
-    "2-1": 158,
-    "2-2": 223
+    "0-0": 29,
+    "0-1": 65,
+    "0-2": 37,
+    "1-0": 58,
+    "1-1": 64,
+    "1-2": 42,
+    "2-0": 419,
+    "2-1": 346,
+    "2-2": 125
   }
 }

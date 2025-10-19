@@ -1,34 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_k",
-      "label": "50k+ Season",
-      "value": 50
+      "type": "seasonal_pitching_ip",
+      "label": "50 IP+ Season",
+      "value": 105
     },
     {
-      "type": "position",
-      "label": "C (min 1 PA)",
-      "value": "C"
-    },
-    {
-      "type": "tournament",
-      "label": "Extraliga SB (CZ)",
-      "value": "W-EXT-L",
-      "federation_id": 148
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/5a29afcd-b476-f5ea-549e-0a6ca0bf8551.png",
-      "label": "Žraloci Ledenice",
-      "value": "1381"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/4352bde4-4bcc-cdf7-47a6-c6dcc5d2593e.png",
-      "label": "Tempo Praha",
-      "value": "2066"
+      "type": "year",
+      "label": "Played in 2023 season",
+      "value": 2023
     },
     {
       "type": "team",
@@ -37,15 +17,35 @@
       "value": "6"
     }
   ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/06ebf3e7-4094-4d7d-7bad-cd88e4ec3330.png",
+      "label": "Sokol Hluboká",
+      "value": "2064"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/07e18cd7-f1d8-7d37-9604-6982e1267bba.jpg",
+      "label": "SK Joudrs Praha",
+      "value": "1348"
+    },
+    {
+      "type": "tournament",
+      "label": "Extraliga BB (CZ)",
+      "value": "CZE-EXL",
+      "federation_id": 6
+    }
+  ],
   "answers": {
-    "0-0": 10,
-    "0-1": 25,
-    "0-2": 28,
-    "1-0": 18,
-    "1-1": 67,
-    "1-2": 41,
-    "2-0": 65,
-    "2-1": 223,
-    "2-2": 102
+    "0-0": 13,
+    "0-1": 76,
+    "0-2": 17,
+    "1-0": 15,
+    "1-1": 91,
+    "1-2": 63,
+    "2-0": 92,
+    "2-1": 410,
+    "2-2": 159
   }
 }

@@ -1,36 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_pitching_era",
-      "label": "<=3.00 ERA Season (min. 10 ip)",
-      "value": 3,
-      "condition": "max"
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     },
     {
-      "type": "year",
-      "label": "Played in 2021 season",
-      "value": 2021
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
-      "label": "Belgium NT",
-      "value": "143",
-      "federation_id": 143
-    }
-  ],
-  "rows": [
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/f7f05882-7810-d6a2-6bd7-06648e0a5fa8.png",
-      "label": "Beveren Lions",
-      "value": "1480"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/dfb15b29-c3d5-e17b-16ce-fea5adbc7c83.png",
-      "label": "Stabroek Chicaboo`s",
-      "value": "1361"
+      "type": "seasonal_pitching_ip",
+      "label": "35 IP+ Season",
+      "value": 105
     },
     {
       "type": "tournament",
@@ -38,5 +16,36 @@
       "value": "BD1",
       "federation_id": 143
     }
-  ]
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/ef175e86-8a69-5cb4-6249-5c548df8b041.png",
+      "label": "Cantincrode Baseball en Softball Stars",
+      "value": "1394"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/a39fd931-7c83-ffd7-63b9-d21f6f0851d9.jpg",
+      "label": "Brasschaat Braves",
+      "value": "1414"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/flags/ioc/BEL.svg",
+      "label": "Belgium NT",
+      "value": "143"
+    }
+  ],
+  "answers": {
+    "0-0": 47,
+    "0-1": 6,
+    "0-2": 30,
+    "1-0": 103,
+    "1-1": 15,
+    "1-2": 50,
+    "2-0": 224,
+    "2-1": 55,
+    "2-2": 100
+  }
 }

@@ -2,29 +2,9 @@
   "cols": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/upload/ff7815ce-79aa-def3-c3c1-e7f2065bd8ec.jpg",
-      "label": "Les Rabbits de Clapiers-Jacou",
-      "value": "1514"
-    },
-    {
-      "type": "nationality",
-      "label": "Nationality: FRA",
-      "value": "FRA"
-    },
-    {
-      "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/FRA.svg",
-      "label": "France NT",
-      "value": "14",
-      "federation_id": 14
-    }
-  ],
-  "rows": [
-    {
-      "type": "tournament",
-      "label": "Championnat de France Division 1 Féminine SB (FR)",
-      "value": "FRA-D1FSB",
-      "federation_id": 14
+      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
+      "label": "Austria NT",
+      "value": "8"
     },
     {
       "type": "position",
@@ -32,10 +12,40 @@
       "value": "1B"
     },
     {
-      "type": "team",
-      "image": "https://static.wbsc.org/upload/51a28c3c-a894-cc4d-30ca-b8c705e5bd5d.png",
-      "label": "3M Barracudas Baseball Université Club",
-      "value": "1385"
+      "type": "position",
+      "label": "SS (min 1 PA)",
+      "value": "SS"
     }
-  ]
+  ],
+  "rows": [
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/4137a8ec-106d-1408-1204-7266ed5c196a.png",
+      "label": "Linz Witches und Bandits",
+      "value": "1276"
+    },
+    {
+      "type": "team",
+      "image": "https://static.wbsc.org/upload/acfef0c2-5af4-e797-cb4b-550d6173bb34.png",
+      "label": "Hard Bulls",
+      "value": "1228"
+    },
+    {
+      "type": "tournament",
+      "label": "Baseball European Championship (EU)",
+      "value": "EU-CHAMP-M-BB",
+      "federation_id": 278
+    }
+  ],
+  "answers": {
+    "0-0": 12,
+    "0-1": 16,
+    "0-2": 9,
+    "1-0": 17,
+    "1-1": 56,
+    "1-2": 46,
+    "2-0": 44,
+    "2-1": 285,
+    "2-2": 216
+  }
 }

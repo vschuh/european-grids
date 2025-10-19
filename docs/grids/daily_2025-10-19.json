@@ -1,39 +1,50 @@
 {
   "cols": [
     {
-      "type": "nationality",
-      "label": "Nationality: AUT",
-      "value": "AUT"
-    },
-    {
-      "type": "year",
-      "label": "Played in 2023 season",
-      "value": 2023
-    },
-    {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/flags/ioc/AUT.svg",
-      "label": "Austria NT",
-      "value": "8"
+      "image": "https://static.wbsc.org/upload/59758832-8743-44aa-9abc-c16b9bc847fc.jpg",
+      "label": "SARONNO SOFTBALL  E BASEBALL A.S.D.",
+      "value": "390"
+    },
+    {
+      "type": "tournament",
+      "label": "Women's Softball European Premiere Cup (EU)",
+      "value": "EU-EURO-PREM-CUP-W-SB",
+      "federation_id": 278
+    },
+    {
+      "type": "seasonal_avg",
+      "label": ">0.350 OBP Season (min. 10 pa)",
+      "value": 0.35
     }
   ],
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/4137a8ec-106d-1408-1204-7266ed5c196a.png",
-      "label": "Linz Witches und Bandits",
-      "value": "1276"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/12a3f46c-cb0a-0014-98f9-bff5d87890b5.jpg",
+      "label": "Club de Béisbol y Sóftbol Rivas",
+      "value": "1354"
+    },
+    {
+      "type": "nationality",
+      "label": "Nationality: USA",
+      "value": "USA"
     },
     {
       "type": "seasonal_pitching_k",
-      "label": "50k+ Season",
-      "value": 50
-    },
-    {
-      "type": "tournament",
-      "label": "Softball Bundesliga (AT)",
-      "value": "SB-BUNDESLIGA",
-      "federation_id": 8
+      "label": "35k+ Season",
+      "value": 35
     }
-  ]
+  ],
+  "answers": {
+    "0-0": 3,
+    "0-1": 42,
+    "0-2": 52,
+    "1-0": 9,
+    "1-1": 62,
+    "1-2": 799,
+    "2-0": 23,
+    "2-1": 72,
+    "2-2": 829
+  }
 }

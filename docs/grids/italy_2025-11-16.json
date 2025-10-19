@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-      "type": "seasonal_avg",
-      "label": ">0.300 avg Season (min. 10 pa)",
-      "value": 0.3
+      "type": "seasonal_rbi",
+      "label": "20+ RBI Season",
+      "value": 20
     },
     {
-      "type": "seasonal_avg",
-      "label": ">0.350 OBP Season (min. 10 pa)",
-      "value": 0.35
+      "type": "position",
+      "label": "1B (min 1 PA)",
+      "value": "1B"
     },
     {
       "type": "tournament",
@@ -20,15 +20,15 @@
   "rows": [
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/12f8bd4d-1eda-665a-5e81-446fa51508e2.jpg",
-      "label": "A.S.D. CODOGNO BAS. `67",
-      "value": "359"
+      "image": "https://static.wbsc.org/upload/867c2c87-a075-4811-3a29-71da8dafa1a7.svg",
+      "label": "1949 PARMA BASEBALL CLUB ASD",
+      "value": "333"
     },
     {
       "type": "team",
-      "image": "https://static.wbsc.org/assets/cms/teams/logo/e038a2d1-84e5-3d14-9e93-98eadfc2fb3f.jpg",
-      "label": "TORRE PEDRERA FALCONS BC ASS. SPORT. DILETT.",
-      "value": "381"
+      "image": "https://static.wbsc.org/assets/cms/teams/logo/5effd52b-7309-0dc5-b483-f973e3ede16e.jpg",
+      "label": "NEW BLACK PANTHERS A.S.D.",
+      "value": "345"
     },
     {
       "type": "team",
@@ -38,14 +38,14 @@
     }
   ],
   "answers": {
-    "0-0": 22,
-    "0-1": 14,
-    "0-2": 45,
-    "1-0": 38,
-    "1-1": 26,
-    "1-2": 41,
-    "2-0": 343,
-    "2-1": 292,
+    "0-0": 30,
+    "0-1": 39,
+    "0-2": 107,
+    "1-0": 12,
+    "1-1": 19,
+    "1-2": 65,
+    "2-0": 111,
+    "2-1": 247,
     "2-2": 223
   }
 }
